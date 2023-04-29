@@ -1,0 +1,336 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/ourservice.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- bs-4 -->
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <!-- carousel -->
+    <!-- cdn link -->
+
+
+
+    <!-- cdn link -->
+    <title>Onwords</title>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="{% static 'images/logos.png' %}" alt="logo"
+                        class="img-fluid logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 sticky">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active-nav" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Our Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/ourservices">Smart Home</a>
+                                <li>
+                                <li><a class="dropdown-item" href="/gateautomation">Gate Automation</a></li>
+                                <li><a class="dropdown-item" href="/agriautomation">Agri Automation</a></li>
+                                <li><a class="dropdown-item" href="#">Software & Hardware</a></li>
+                                <li><a class="dropdown-item" href="#">Web/App Devlopment</a></li>
+                                <li><a class="dropdown-item" href="#">Ui&Ux Designing</a></li>
+                                <li><a class="dropdown-item" href="#">Graphics Designing</a></li>
+                                <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                                <li><a class="dropdown-item" href="#">Onwords Construction</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Security System</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-warning text-dark bg-warning fw-bold" type="submit"><i
+                                class="fa-solid fa-phone"></i>
+                            SCHEDULE A
+                            CALL</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- navbar end -->
+    <div class="backto-top" id="btn-back-to-top">
+        <div class="container">
+            <div class="resdf">
+               <button><i class="fa-solid fa-angle-up"></i></button>  
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <section class="ourservice-sec">
+            <div class="container">
+                <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
+                    <h2>Agri Automation</h2>
+                </div>
+                <div class="row">
+                    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="anim-style">
+                                    <div class="anim-box">
+                                        <p class="pos"> <img src="{% static 'images/agridron.png' %}" alt="web"
+                                                class="img-fluid"></p>
+                                        <p class="pos-1">Farming & <br> Robotics
+                                        </p>
+                                    </div>
+                                    <div class="anim-box">
+                                        <p class="pos"> <img src="{% static 'images/agrimobi.png'%}" alt="web"
+                                                class="img-fluid"></p>
+                                        <p class="pos-1">RFID Sensors & <br> Tracking</p>
+                                    </div>
+                                    <div class="anim-box">
+                                        <p class="pos"> <img src="{% static 'images/soil.png' %}" alt="web"
+                                                class="img-fluid"></p>
+                                        <p class="pos-1">Soil moisture <br> humidity sensor</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="anim-style">
+                                    <div class="anim-box">
+                                        <p class="pos"> <img src="{% static 'images/water.png' %}" alt="web"
+                                                class="img-fluid"></p>
+                                        <p class="pos-1">Smart Irrigation <br> Systems</p>
+                                    </div>
+                                    <div class="anim-box">
+                                        <p class="pos"> <img src="{% static 'images/agridron.png' %}" alt="web"
+                                                class="img-fluid"></p>
+                                        <p class="pos-1">Farming & <br> Robotics</p>
+                                    </div>
+                                    <div class="anim-box">
+                                        <p class="pos"> <img src="{% static 'images/agrimobi.png' %}" alt="web"
+                                                class="img-fluid"></p>
+                                        <p class="pos-1">RFID Sensors & <br> Tracking</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row my-4 align-items-center">
+                    <div class="col">
+                        <img src="{% static 'images/robots-agri.jpg' %}" alt="" class="img-fluid jk">
+                    </div>
+                    <div class="col">
+                        <h2>Farming and Robotics</h2>
+                        <p>Much like using robots and artificial intelligence in other industries, robotics within agriculture would improve productivity and would result in higher and faster yields. Such robots like the spraying and weeding robots recently acquired by John Deere can reduce agrochemical use by an incredible 90%. Other startup robotics companies are experimenting with laser and camera guidance for identifying and removing weeds without human intervention. These robots can use the guidance to navigate between rows of crops on its own, reducing the manpower behind it. Other companies are creating plant- transplanting robots that add a new level of efficiency to traditional methods and finally, automation is being tested for fruit-picking and nut harvesting, something that has always seemed to be too delicate for robotics in the past.
+
+
+                        </p>
+                    </div>
+                </div>
+                <div class="row my-4 align-items-center">
+
+                    <div class="col">
+                        <h2>RFID Sensors and Tracking</h2>
+                        <p>After crops are harvested, RFID sensors can be used to track food from the field to the store. The end user, or the consumer, will be able to follow a detailed trail about the food they consume from the farm it came to the location where it was purchased. This technology could increase trustworthiness for manufacturers and their responsibility to provide fresh produce and goods.</p>
+                    </div>
+                    <div class="col">
+                        <img src="{% static 'images/rfid.jfif' %}" alt="" class="img-fluid jk">
+                    </div>
+                </div>
+                <div class="row my-4 align-items-center">
+                    <div class="col">
+                        <img src="{% static 'images/-moiser.jpg' %}" alt="" class="img-fluid jk">
+                    </div>
+                    <div class="col">
+                        <h2>Soil moisture humidity sensor</h2>
+                        <p>“Smart lighting” is one of those things that, as trends for “smart” everything grow,
+                            electrical contractors are dealing with more and more. In fact, it’s not just smart homes,
+                            but plans for entire smart cities that represent opportunities for electrical contractors to
+                            expand their skills and sign on to new, profitable projects. According to the US-based
+                            Independent Electrical Contractors, smart lighting controls are a key to success for the
+                            people who use them, in more ways than one: “A well-chosen solution also enables superior
+                            lighting performance, code compliance, better space utilization, and delivers the right
+                            lighting environment for the people in the space.” As an area that is creating considerable
+                            new opportunities for contractors, it’s a good idea to be familiar with the various
+                            benefits. </p>
+                    </div>
+                    
+                </div>
+                <div class="row my-4 align-items-center">
+                  
+                    <div class="col">
+                        <h2>Smart Irrigation Systems</h2>
+                        <p>The major problem in Indian Agriculture with respect to irrigation is Rainfall and Water availability which has huge imbalance. Demand for water is increasing rapidly because of which there is need to save water and use the water efficiently to get productive yield , Smart Irrigation Systems comes into picture. The Water Level Controllers, Cyclic Timers , Auto Start Units for Submersible Pumps which control and monitor the activity of Irrigation plays a major role in saving water effectively.</p>
+                    </div>
+                    <div class="col">
+                        <img src="{% static 'images/smrf.jpg' %}" alt="" class="img-fluid jk">
+                    </div>
+
+                </div>
+               
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="{% static 'images/logos.png' %}" alt="" class="img-fluid sdf">
+                        <p class="text-white">Onwords Smart Solutions <br>
+                            RR Garden, Zamin Muthur, <br>
+                            Pollachi,
+                            Coimbatore, IN - 642 005 <br>
+                        <div class="fgh">
+                            <span><a href="tel:7708630275"><i class="fa-solid fa-phone"></i> 77086 30275</a></span>
+                            <br><br>
+                            <span><a href="mailto:cs@onwords.in"><i
+                                        class="fa-solid fa-envelope"></i>cs@onwords.in</a></span>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="col-md-2">
+
+                        <ul class="listx">
+                            <h5 class="text-white">Quick Links</h5>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Our Services</a></li>
+                            <li><a href="">Ajax</a></li>
+                            <li><a href="">Our App</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="listx">
+                            <h5 class="text-white">Our Services</h5>
+                            <li><a href="">Smart Home</a></li>
+                            <li><a href="">Web /App Devlopment</a></li>
+                            <li><a href="">Digital Marketing</a></li>
+                            <li><a href="">UI & UX Designing</a></li>
+                            <li><a href="">Graphic Designing</a></li>
+                            <li><a href="">Construction</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5 class="text-white">Subscribe Us</h5>
+                        <input type="email" name="" id="" class="mails" placeholder="Enter Your Email"><br>
+                        <button type="submit" class="sub">Subscribe</button>
+                        <div class="row my-4">
+                            <div class="col df">
+                                <a href="https://www.youtube.com/@OnwordsSmartSolutions" target="_blank"><img
+                                        src="{% static 'images/youtube.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col df">
+                                <a href="https://www.facebook.com/teamonwords" target="_blank">
+                                    <img src="{% static 'images/facebook.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col df">
+                                <a href="https://www.instagram.com/team.onwords/
+                               " target="_blank">
+                                    <img src="{% static 'images/instagram.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col df">
+                                <a href="" target="_blank">
+                                    <img src="{% static 'images/linkedin.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col df">
+                                <a href="https://twitter.com/TeamOnwords
+                              " target="_blank">
+                                    <img src="{% static 'images/twitter.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="jg">
+                                <div class="jg">
+                                    <a href="https://play.google.com/store/apps/details?id=com.onwords.smarthome">
+                                        <img src="{% static 'images/play.png' %}" alt="df" class="img-fluid">
+                                    </a>
+                                    <a href="https://apps.apple.com/in/app/onwords-smart-home/id1598367434"><img
+                                            src="{% static 'images/apple.png' %}" alt="" class="img-fluid"></a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="text-white">
+                    <span class="text-center" style="text-align: center;color: #ccc !important;"> © Copyright ©2023
+                        Onwords. All Rights Reserved | Privacy Policy</span>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+
+    <!-- bootstrap js -->
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+    <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
+    <!-- bootstrap js -->
+    <script src="{%static 'js/main.js' %}"></script>
+    <!-- carousel slider end -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+
+    <!-- Calling Slick Library -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- carousel slider script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- bs-4 -->
+</body>
+
+</html>

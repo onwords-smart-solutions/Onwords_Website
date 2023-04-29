@@ -1,0 +1,232 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/demo.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- bs-4 -->
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <!-- carousel -->
+
+    <!-- cdn link -->
+
+
+
+    <!-- cdn link -->
+    <title>Onwords</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- navbar start -->
+        <button type="button" class="backtop" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <header>
+            <nav class="navbar navbar-expand-lg sticky-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/"><img src="{% static 'images/logos.png' %}" alt="logo"
+                            class="img-fluid logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 sticky">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active-nav" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Our Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/ourservices">Smart Home</a></li>
+                                    <li><a class="dropdown-item" href="/gateautomation">Gate Automation</a></li>
+                                    <li><a class="dropdown-item" href="/agriautomation">Agri Automation</a></li>
+                                    <li><a class="dropdown-item" href="#">Software & Hardware</a></li>
+                                    <li><a class="dropdown-item" href="#">Web/App Devlopment</a></li>
+                                    <li><a class="dropdown-item" href="#">Ui&Ux Designing</a></li>
+                                    <li><a class="dropdown-item" href="#">Graphics Designing</a></li>
+                                    <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                                    <li><a class="dropdown-item" href="#">Onwords Construction</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Security System</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Our App</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex">
+                            <div class="module-border-wrap">
+                                <div class="module">
+                                    Get Started
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- navbar end -->
+
+        <section class="demo">
+            <div class="sf">
+                <!-- <video src="{% static 'images/anim-night.mp4' %}" class="img-fluid night-tv" muted loop
+                    autoplay></video> -->
+                     <audio id="audio" src="{% static 'images/hueaudio.mp3' %}"></audio>
+                <video src="{% static 'images/day-4k.mp4' %}" class="img-fluid day" muted loop
+                    autoplay></video>
+                <video src="{% static 'images/night-out.mp4' %}" class="img-fluid night" muted loop
+                    autoplay></video>
+                <!-- <video src="{% static 'images/animation-dark.mp4' %}" class="img-fluid day" muted loop autoplay></video>
+                <video src="{% static 'images/day-tv-on.mp4' %}" class="img-fluid day-tv" muted loop autoplay></video>
+                <video src="{% static 'images/day.mp4' %}" class="img-fluid night" muted loop autoplay></video> -->
+                <video src="{% static 'images/nigh.mp4' %}" class="img-fluid hue" muted loop autoplay></video>
+                <!-- <video src="{% static 'images/tv-on-anim.mp4' %}" class="img-fluid hue-off" muted loop autoplay></video> -->
+            </div>
+            <div class="sfh">
+                <div class="jh">
+                    <h6 class="title-word text-white">
+                        Press play to start Syncing
+                    </h6>
+                    <div class=" blurred-box">
+                        <img src="{% static 'images/scene.png' %}" alt="scene">
+                        <p class="display">
+                            <span>Night</span>
+                            <span class="TvText">Off</span>
+                        </p>
+                        <p>
+                            <label class="switch">
+                                <input type="checkbox" onclick="tv()" id="tv">
+                                <span class="slider round"></span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class=" blurred-box">
+                        <img src="{% static 'images/hue.png' %}" alt="scene">
+                        <p class="display">
+                            <span>Hue</span>
+                            <span class="hueText">Off</span>
+                        </p>
+                        <p>
+                            <label class="switch">
+                                <input type="checkbox" onclick="hue()" id="hueBtn">
+                                <span class="slider round"></span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+                <div class="mic"onclick="play()">
+                    <img src="{% static 'images/w-volume.svg' %}" alt="" class="volume-black-slash">
+                    <img src="{% static 'images/volumeup-white.svg' %}" alt="" class="volume-black">
+                </div>
+                <div class="micoff"onclick="playoff()">
+                    <img src="{% static 'images/w-volume.svg' %}" alt="" class="volume-black-slash">
+                </div>
+            </div>
+        </section>
+        <div class="second-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <img src="{% static 'images/movie-show.png' %}" alt="movie" class="img-fluid"
+                            style="border-radius: 20px;">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h1 class="fs">
+                            Sync with movies and shows
+                        </h1>
+                        <p class="para-movie">
+                            The Hue Sync TV app works with native smart apps such as Netflix and Disney+, HDMI devices,
+                            and set-top boxes. In short: anything you watch on your screen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <section class="curtain">
+                <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
+                    <h2>Smart Curtains</h2>
+                </div>
+                <div class="container">
+                    <p class="text-center fs-5">
+                        Smart curtains can be remote-controlled, so say goodbye to getting up from your comfortable
+                        perch and pulling curtains by hand. With just a simple click or the tap of a button, your
+                        curtains will open and close with an elegantly smooth and—most importantly—silent motion
+                    </p>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+
+    <!-- Preloader -->
+
+
+    <!-- bootstrap js -->
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+    <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
+    <!-- bootstrap js -->
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/demo.js' %}"></script>
+    <!-- carousel slider end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+
+    <!-- Calling Slick Library -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- carousel slider script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+    <script>
+        $(function () {
+            $('#toggle-one').bootstrapToggle();
+        })
+    </script>
+
+    <!-- bs-4 -->
+</body>
+
+</html>
