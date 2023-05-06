@@ -245,10 +245,49 @@ font-size: 50px;
   }
   
   /* ---curtain start */
-  .curtain{
+  /* .curtain{
     height: 70vh;
     background-color: #020b1f;
     color: #fff;
+  } */
+  .curtain-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/curtain-main.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .curtain-work{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .curtain-tex{
+    font-size: 18px;
+    padding-left: 20px;
+  }
+  .curtain-texs img{
+    width: 40px;
+  }
+  .curtain-command img{
+    transform: rotate(90deg);
+  }
+  .center-head h2{
+    margin: 20px 0px;
+  }
+  .img-handphone{
+    background-image: url(../images/hand-phone.png);
+    background-position: left;
+    background-size: contain;
+    height: 60vh;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .hgf{
+    width: 100%;
+    object-fit: contain;
   }
   /* ---curtain end */
 

@@ -93,12 +93,7 @@
     <button type="button" class="backtop" id="btn-back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
-    <div class="backto-top" id="btn-back-to-top">
-        <div class="container">
-            <div class="resdf">
-                <button><i class="fa-solid fa-angle-up"></i></button>
-            </div>
-        </div>
+   
     </div>
     <div class="wrapper">
         <section class="our-service-banner">
@@ -160,7 +155,7 @@
                 <h2></h2>
             </div>
             <div class="container">
-                <div class="row">
+                <div class="row my-4">
                     <div class="col-md-6">
                         <div class="col-banner">
                             <img src="{% static 'images/sh-1.png' %}" alt="sh" class="img-fluid">
@@ -175,28 +170,87 @@
                             weather.
                         </p>
                         <a href="#" class="d-flex align-items-center">
-                            <p class=" sec-btn-test"onclick="location.href='/seedemo'">See Demo</p>
+                            <p class=" sec-btn-test" onclick="location.href='/seedemo'">See Demo</p>
                             <p><i class="fa-solid fa-chevron-right anim-icon"></i></p>
                         </a>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
                 <div class="row my-4">
                     <div class="col-md-6">
                         <h2>Smart Curtains</h2>
                         <p>
-                            Smart curtains are automated window coverings that can be opened, closed, and adjusted via remote control or integrated with home automation systems. They can help save energy by managing the amount of sunlight that enters your home while also improving your home security.
+                            Smart curtains are automated window coverings that can be opened, closed, and adjusted via
+                            remote control or integrated with home automation systems. They can help save energy by
+                            managing the amount of sunlight that enters your home while also improving your home
+                            security.
                         </p>
                         <a href="#" class="d-flex align-items-center">
-                            <p class=" sec-btn-test"onclick="location.href='/seedemo'">See Demo</p>
+                            <p class=" sec-btn-test" onclick="location.href='/curtain'">See Demo</p>
                             <p><i class="fa-solid fa-chevron-right anim-icon"></i></p>
                         </a>
                     </div>
                     <div class="col-md-6">
                         <div class="col-banner">
-                            <img src="{% static 'images/sh-1.png' %}" alt="sh" class="img-fluid">
+                            <img src="{% static 'images/curtains.png' %}" alt="sh" class="img-fluid">
                         </div>
                     </div>
                 </div>
+               
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row my-4">
+                    <div class="col-md-6">
+                        <div class="col-banner">
+                            <img src="{% static 'images/vaccum-cleaner.png' %}" alt="sh" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>SMART VACCUM CLEANER</h2>
+                        <p>
+                            Smart homes allow you to have greater control of your
+                            energy use, all while automating things like adjusting temperature turning on and off
+                            lights, opening and closing window treatments, and adjusting irrigation based on the
+                            weather. Smart curtains are automated window coverings that can be opened, closed, and
+                            adjusted via remote control or integrated with home automation systems. They can help save
+                            energy by managing the amount of sunlight that enters your home while also improving your
+                            home security.
+                        </p>
+                        <a href="#" class="d-flex align-items-center">
+                            <p class=" sec-btn-test" onclick="location.href='/curtain'">See Demo</p>
+                            <p><i class="fa-solid fa-chevron-right anim-icon"></i>
+                            </p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row my-4">
+                    <div class="col-md-6">
+                        <h2>Security system</h2>
+                        <p>
+                            The future of curtains and blinds is here Add a curtain controller to your curtains and have a convenient and stylish way to manage natural light and privacy in your home.
+                        </p>
+                        <a href="#" class="d-flex align-items-center">
+                            <p class=" sec-btn-test" onclick="location.href='/curtain'">See Demo</p>
+                            <p><i class="fa-solid fa-chevron-right anim-icon"></i></p>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-banner">
+                            <img src="{% static 'images/security.png' %}" alt="sh" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+               
             </div>
         </section>
         <!-- <section class="ourservice-sec">
@@ -489,7 +543,7 @@
             </div>
         </section>
     </div>
-   
+
 
     <!-- bootstrap js -->
     <script src="{%static 'js/bootstrap.min.js'%}"></script>
@@ -532,9 +586,7 @@
         })
 
 
-    </script>
-    <script>
-        // ---topbtn start
+            // ---topbtn start
         //Get the button
         let mybutton = document.getElementById("btn-back-to-top");
 
@@ -561,7 +613,9 @@
             document.documentElement.scrollTop = 0;
         }
         // ---topbtn end
+
     </script>
+  
 
 
 

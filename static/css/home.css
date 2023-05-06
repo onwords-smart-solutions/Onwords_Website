@@ -1663,3 +1663,8 @@ footer {
                  0px 4px 4px rgb(100,93,93,0.25);
 
 }
+#whatsapp{
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+}
