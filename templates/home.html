@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
     <!-- bs-4 -->
     <!-- bootstrap css -->
     <link rel="stylesheet" type="text/css"
@@ -134,10 +135,15 @@
         <!-- navbar end -->
 
         <button type="button" class="backtop" id="btn-back-to-top">
-            <i class="fas fa-arrow-up"></i>
+            <a href=""><i class="fas fa-arrow-up"></i></a>
         </button>
-        <button id="whatsapp">whatsapp</button>
+        <button id="whatsapp">
+            <a href="whatsapp:contact=0123456789@s.whatsapp.com&message='' ">
+                <img src="{% static 'images/whatsapp-ico.svg' %}" alt="whatsapp">
+            </a>
+        </button>
 
+        
         <section class="homes">
             <div class="home" id="withlight">
             </div>
@@ -327,12 +333,12 @@
         </section>
         <section class="product">
             <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
-                <h2>PRODUCTS & SERVICES </h2>
+                <h2 class="text-center">PRODUCTS & SERVICES </h2>
             </div>
             <div class="blursdleft">
                 <div class="row">
                     <div class="col-md-2"></div>
-                    <div class="col-md-8">
+                    <div class="col-sm-12 col-md-8">
                         <p>
                             Our Smart Home Products are being enjoyed by a large audience ,thus shedding the automation
                             experience to all the nooks of rural and suburban areas. We develop our smart products by
@@ -348,12 +354,12 @@
                 <div class="box-scroll">
                     <div class="cards ml">
                         <div class="row card-lis">
-                            <div class="col-md-6">
+                            <div class="col-sm-6 col-md-6">
                                 <div class="card-box-img">
                                     <img src="{% static 'images/smarth.png'%}" alt="" class="img-fluid">
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-sm-6 col-md-6">
                                 <div class="d-flex">
                                     <div class="stickline"></div>
                                     <div class="">
@@ -381,12 +387,12 @@
                     </div>
                     <div class="cards ml">
                         <div class="row card-lis">
-                            <div class="col-md-6">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="card-box-img">
                                     <img src="{% static 'images/gateauto.png'%}" alt="" class="img-fluid">
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="d-flex">
                                     <div class="stickline"></div>
                                     <div class="">
@@ -661,7 +667,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class=" col-sm-12 col-md-12">
                         <div class="d-sd">
                             <div class="d-sds reveal fade-left" data-wow-delay="0.1s">
                                 <span><img src="{% static 'images/g-logo.png' %}" alt="" class="img-fluid"></span><span
@@ -695,21 +701,21 @@
                         and join us in the race!!
                     </p>
                     <div class="etg">
-                        <div class="col-md-5">
-                            <img src="{% static 'images/home3d-png.png' %}" alt="" class="img-fluid">
+                        <div class="col-sm-12 col-md-5">
+                            <img src="{% static 'images/home3d-png.png' %}" alt="" class="img-fluid etg-f-img">
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-sm-12 col-md-7">
                             <div class="counter-boxs reveal fade-left" data-wow-delay="0.1s" onkeyup="reloads()">
                                 <div class="lead-boxs lead-1">
-                                    <h1 id="count1" class="display-4"></h1>
+                                    <h2 id="count1" class="display-4"></h2>
                                     <h5>LEADS</h5>
                                 </div>
                                 <div class="lead-boxs lead-2">
-                                    <h1 id="count2" class="display-4"></h1>
+                                    <h2 id="count2" class="display-4"></h2>
                                     <h5>REACH</h5>
                                 </div>
                                 <div class="lead-boxs lead-3">
-                                    <h1 id="count3" class="display-4"></h1>
+                                    <h2 id="count3" class="display-4"></h2>
                                     <h5>CLICKS</h5>
                                 </div>
                             </div>
@@ -798,7 +804,7 @@
         <section class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-sm-12 col-md-3">
                         <img src="{% static 'images/logos.png' %}" alt="" class="img-fluid sdf">
                         <p class="text-white">Onwords Smart Solutions <br>
                             RR Garden, Zamin Muthur, <br>
@@ -812,7 +818,7 @@
                         </div>
                         </p>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-sm-6 col-md-2">
 
                         <ul class="listx">
                             <h5 class="text-white">Quick Links</h5>
@@ -830,7 +836,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-6 col-md-3">
                         <ul class="listx">
                             <h5 class="text-white">Our Services</h5>
                             <li><a href="">Smart Home</a></li>
@@ -843,7 +849,7 @@
 
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-sm-12 col-md-4">
                         <h5 class="text-white">Subscribe Us</h5>
                         <input type="email" name="" id="" class="mails" placeholder="Enter Your Email"><br>
                         <button type="submit" class="sub">Subscribe</button>
@@ -1000,6 +1006,7 @@
         // ---topbtn start
         //Get the button
         let mybutton = document.getElementById("btn-back-to-top");
+        let whatsapp = document.getElementById("whatsapp")
 
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function () {
@@ -1012,8 +1019,10 @@
                 document.documentElement.scrollTop > 20
             ) {
                 mybutton.style.display = "block";
+                whatsapp.style.display='block'
             } else {
                 mybutton.style.display = "none";
+                whatsapp.style.display='none'
             }
         }
         // When the user clicks on the button, scroll to the top of the document
