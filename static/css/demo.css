@@ -163,7 +163,8 @@ input:checked+.slider:before {
 
 /* --second video section start */
 .second-section {
-    height: 100vh;
+    height:auto;
+    padding-bottom: 130px;
     background-color: #020b1f;
     margin-top: 100%;
     color: #fff;
@@ -288,6 +289,9 @@ font-size: 50px;
   .hgf{
     width: 100%;
     object-fit: contain;
+  }
+  .center-tex-hue{
+    padding: 30px 0px;
   }
   /* ---curtain end */
 
