@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/darkmode.css' %}">
     <!-- bs-4 -->
     <!-- bootstrap css -->
     <link rel="stylesheet" type="text/css"
@@ -93,7 +94,7 @@
                                     Get Started
                                 </div>
                             </div>
-                         </form>
+                        </form>
                     </div>
                 </div>
             </nav>
@@ -141,13 +142,17 @@
             </a>
         </button>
 
-        
+
         <section class="homes">
             <div class="home" id="withlight">
             </div>
             <div class="homeoff" id="withoutlight"></div>
             <div class="main-bgs">
                 <div class="container-fluid">
+                    <div class="darkmode">
+                     <label for="" id="day">Day</label>
+                     <label for="" id="night">Night</label>
+                    </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="main-bg-size">
@@ -220,13 +225,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="{% static 'images/adv-img.png' %}" alt="ad-img"class="img-fluid adv-img">
-                    </div>        
-                    <div class="col-md-3"></div>        
+                        <img src="{% static 'images/adv-img.png' %}" alt="ad-img" class="img-fluid adv-img">
+                    </div>
+                    <div class="col-md-3"></div>
                     <div class="col-md-5">
                         <div class="con-adv">
                             <div class="child-adv">
-                                <span><img src="{% static 'images/interconnectivity.png' %}" alt="interconnectivity"></span>
+                                <span><img src="{% static 'images/interconnectivity.png' %}"
+                                        alt="interconnectivity"></span>
                                 <span>Interconnectivity</span>
                             </div>
                             <div class="child-adv">
@@ -238,7 +244,7 @@
                                 <span>Customization</span>
                             </div>
                         </div>
-                    </div>        
+                    </div>
 
                 </div>
 
@@ -986,10 +992,10 @@
                 document.documentElement.scrollTop > 20
             ) {
                 mybutton.style.display = "block";
-                whatsapp.style.display='block'
+                whatsapp.style.display = 'block'
             } else {
                 mybutton.style.display = "none";
-                whatsapp.style.display='none'
+                whatsapp.style.display = 'none'
             }
         }
         // When the user clicks on the button, scroll to the top of the document
@@ -1001,42 +1007,42 @@
         }
         // ---topbtn end
 
-        const blob = document.querySelector('.blob');
-        window.addEventListener('pointermove', (e) => {
-            const { clientX, clientY } = e;
-            console.log(clientX, clientY)
-            blob.animate({
-                left: `${clientX}px`,
-                top: `${clientY}px`
-            }, { duration: 3000, fill: "forwards" })
-        })
-        var cursor = document.querySelector('.cursor'),
-        mouseX =0,
-        mouseY =0
-        gsap.to({},0.016,{
-            repeat:-1,
-            onRepeat:function(){
-                gsap.set(cursor,{
-                    css:{
-                        left:mouseX,
-                        top:mouseY
-                    }
-                })
-            }
-        });
-        window.addEventListener("mousemove",function(e){
-            mouseX = e.clientX;
-            mouseY = e.clientY
-        })
+        // const blob = document.querySelector('.blob');
+        // window.addEventListener('pointermove', (e) => {
+        //     const { clientX, clientY } = e;
+        //     console.log(clientX, clientY)
+        //     blob.animate({
+        //         left: `${clientX}px`,
+        //         top: `${clientY}px`
+        //     }, { duration: 3000, fill: "forwards" })
+        // })
+        // var cursor = document.querySelector('.cursor'),
+        //     mouseX = 0,
+        //     mouseY = 0
+        //     gsap.to({}, 0.016, {
+        //     repeat: -1,
+        //     onRepeat: function () {
+        //         gsap.set(cursor, {
+        //             css: {
+        //                 left: mouseX,
+        //                 top: mouseY
+        //             }
+        //         })
+        //     }
+        // });
+        // window.addEventListener("mousemove", function (e) {
+        //     mouseX = e.clientX;
+        //     mouseY = e.clientY
+        // })
 
-        cursorScale.forEach(link=>{
-            link.addEventListener('mouseleave',()=>{
-                cursor.classList.remove('grow');
-            })
-            link.addEventListener('mousemove',()=>{
-                cursor.classList.add('grow');
-            })
-        })
+        // cursorScale.forEach(link => {
+        //     link.addEventListener('mouseleave', () => {
+        //         cursor.classList.remove('grow');
+        //     })
+        //     link.addEventListener('mousemove', () => {
+        //         cursor.classList.add('grow');
+        //     })
+        // })
 
         // ---strat mouse wheel--
         const mouseWheel = document.querySelector('.box-scroll');
@@ -1055,27 +1061,41 @@
     </script>
 
 
-    <script>
-        function toggle() {
-            const blur = document.getElementById('blur')
-            const popupForm = document.querySelector('.popup-form')
-            popupForm.style.display = 'block'
-            blur.classList.add('activeblur')
-        }
-        function closepopup() {
-            const blur = document.getElementById('blur')
-            const contactForm = document.querySelector('.contact-form')
-            const popupForm = document.querySelector('.popup-form')
-            contactForm.style.display = 'none'
-            popupForm.style.display = 'none'
-            blur.classList.remove('activeblur')
-        }
+    
+<script>
+    
 //         window.setTimeout( function reloads() {
-//   window.location.reload();
-// }, 20000);
-    </script>
+    //   window.location.reload();
+    // }, 20000);
 
+</script>  
+<script>
+    document.addEventListener('mousemove', function(e){
+	const x = e.clientX;
+	const y = e.clientY;
 
+	secondCircle.style.transform = `translate(${x}px, ${y}px)`;
+	mainCircle.style.transform = `translate(${x}px, ${y}px)`;
+
+	const hoverables = document.querySelectorAll('.hoverable');
+
+	Array.from(hoverables).forEach((hoverEl) => {
+		hoverEl.addEventListener('mouseover', (e) => {
+			mainCircle.classList.add('circle-hide');
+			secondCircle.classList.add('circle-scale');
+		})
+	})
+
+	Array.from(hoverables).forEach((hoverEl) => {
+		hoverEl.addEventListener('mouseout', (e) => {
+			mainCircle.classList.remove('circle-hide');
+			secondCircle.classList.remove('circle-scale');
+		})
+	});
+
+});
+    
+</script> 
 </body>
 
 </html>

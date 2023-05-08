@@ -1,9 +1,9 @@
-const democancel = document.getElementById('democancel')
-const demo = document.getElementById('demo')
-democancel.addEventListener('click', (e) => {
-    event.preventDefault();
-    demo.style.display = 'none'
-})
+// const democancel = document.getElementById('democancel')
+// const demo = document.getElementById('demo')
+// democancel.addEventListener('click', (e) => {
+//     event.preventDefault();
+//     demo.style.display = 'none'
+// })
 // --back-top-btn start
 let mybutton = document.getElementById("btn-back-to-top");
 window.onscroll = function () {
@@ -158,3 +158,4 @@ function backToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
