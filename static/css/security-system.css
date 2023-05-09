@@ -1,8 +1,46 @@
 .security-home{
     width: 100%;
     height: 100vh;
-    background-image: url(../images/curtain-main.png);
+    /* background-image: url(../images/ajax-main.png); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .security-home video{
+    width: 100%;
+    height: 100%;
+  }
+  .second-ajax-sec{
+    background: url(../images/second-ajax.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .third-ajax-sec{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: url(../images/third-ajax.png);
+  }
+  .fourth-ajax{
+    background-position: center;
+    background-size: cover;
+    background: url(../images/fourth-ajax.png);
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+  }
+  .dg-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .ajax-tex{
+    font-size: 12px;
   }
