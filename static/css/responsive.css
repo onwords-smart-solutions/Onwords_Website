@@ -90,6 +90,7 @@
 
    .box-main-con>.text-containers {
       width: 100%;
+      z-index: 1  c;
       padding: 10px 20px;
    }
 
@@ -117,5 +118,6 @@
    .nav-item {
       margin: 0px 2px;
    }
+  
 
 }

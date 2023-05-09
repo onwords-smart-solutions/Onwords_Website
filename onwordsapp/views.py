@@ -13,3 +13,5 @@ def seedemo(request):
     return render(request,'seedemo.html')
 def curtain(request):
     return render(request,'curtain.html')
+def securitySystem(request):
+    return render(request,'security-system.html')

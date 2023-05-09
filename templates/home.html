@@ -37,7 +37,7 @@
 </head>
 
 <body>
-
+    <div class="blob"></div>
     <div class="wrapper" id="blur">
         <!-- navbar start -->
         <header>
@@ -74,7 +74,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Security System</a>
+                                <a class="nav-link" href="/securitySystem">Security System</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Our App</a>
@@ -130,7 +130,7 @@
                 </div>
             </div>
         </div>
-        <div class="blob"></div>
+        
         <!-- navbar end -->
 
         <button type="button" class="backtop" id="btn-back-to-top">
@@ -150,8 +150,8 @@
             <div class="main-bgs">
                 <div class="container-fluid">
                     <div class="darkmode">
-                     <label for="" id="day">Day</label>
-                     <label for="" id="night">Night</label>
+                     <label for="" id="days">Day</label>
+                     <label for="" id="nights">Night</label>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
@@ -906,6 +906,7 @@
     <!-- bootstrap js -->
     <script src="{% static 'js/main.js' %}"></script>
     <script src="{% static 'images/demo.js' %}"></script>
+    <script src="{% static 'images/darkmode.js' %}"></script>
     <!-- carousel slider end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -1007,43 +1008,7 @@
         }
         // ---topbtn end
 
-        // const blob = document.querySelector('.blob');
-        // window.addEventListener('pointermove', (e) => {
-        //     const { clientX, clientY } = e;
-        //     console.log(clientX, clientY)
-        //     blob.animate({
-        //         left: `${clientX}px`,
-        //         top: `${clientY}px`
-        //     }, { duration: 3000, fill: "forwards" })
-        // })
-        // var cursor = document.querySelector('.cursor'),
-        //     mouseX = 0,
-        //     mouseY = 0
-        //     gsap.to({}, 0.016, {
-        //     repeat: -1,
-        //     onRepeat: function () {
-        //         gsap.set(cursor, {
-        //             css: {
-        //                 left: mouseX,
-        //                 top: mouseY
-        //             }
-        //         })
-        //     }
-        // });
-        // window.addEventListener("mousemove", function (e) {
-        //     mouseX = e.clientX;
-        //     mouseY = e.clientY
-        // })
-
-        // cursorScale.forEach(link => {
-        //     link.addEventListener('mouseleave', () => {
-        //         cursor.classList.remove('grow');
-        //     })
-        //     link.addEventListener('mousemove', () => {
-        //         cursor.classList.add('grow');
-        //     })
-        // })
-
+      
         // ---strat mouse wheel--
         const mouseWheel = document.querySelector('.box-scroll');
 
@@ -1058,10 +1023,7 @@
         });
         // ---strat mouse wheel--
 
-    </script>
-
-
-    
+    </script>    
 <script>
     
 //         window.setTimeout( function reloads() {
@@ -1070,32 +1032,47 @@
 
 </script>  
 <script>
-    document.addEventListener('mousemove', function(e){
-	const x = e.clientX;
-	const y = e.clientY;
+      const blob = document.querySelector('.blob');
+        window.addEventListener('pointermove', (e) => {
+            const { clientX, clientY } = e;
+            console.log(clientX, clientY)
+            blob.animate({
+                left: `${clientX}px`,
+                top: `${clientY}px`
+            }, { duration: 3000, fill: "forwards" })
+        })
+        var cursor = document.querySelector('.cursor'),
+            mouseX = 0,
+            mouseY = 0
+            gsap.to({}, 0.016, {
+            repeat: -1,
+            onRepeat: function () {
+                gsap.set(cursor, {
+                    css: {
+                        left: mouseX,
+                        top: mouseY
+                    }
+                })
+            }
+        });
+        window.addEventListener("mousemove", function (e) {
+            mouseX = e.clientX;
+            mouseY = e.clientY
+        })
 
-	secondCircle.style.transform = `translate(${x}px, ${y}px)`;
-	mainCircle.style.transform = `translate(${x}px, ${y}px)`;
+      
 
-	const hoverables = document.querySelectorAll('.hoverable');
+        cursorScale.forEach(link => {
+            link.addEventListener('mouseleave', () => {
+                cursor.classList.remove('grow');
+            })
+            link.addEventListener('mousemove', () => {
+                cursor.classList.add('grow');
+              
+            })
+        })
 
-	Array.from(hoverables).forEach((hoverEl) => {
-		hoverEl.addEventListener('mouseover', (e) => {
-			mainCircle.classList.add('circle-hide');
-			secondCircle.classList.add('circle-scale');
-		})
-	})
-
-	Array.from(hoverables).forEach((hoverEl) => {
-		hoverEl.addEventListener('mouseout', (e) => {
-			mainCircle.classList.remove('circle-hide');
-			secondCircle.classList.remove('circle-scale');
-		})
-	});
-
-});
-    
-</script> 
+</script>
 </body>
 
 </html>

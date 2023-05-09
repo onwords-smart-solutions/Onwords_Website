@@ -159,3 +159,31 @@ function backToTop() {
     document.documentElement.scrollTop = 0;
 }
 
+    document.addEventListener('mousemove', function(e){
+	const x = e.clientX;
+	const y = e.clientY;
+
+	secondCircle.style.transform = `translate(${x}px, ${y}px)`;
+	mainCircle.style.transform = `translate(${x}px, ${y}px)`;
+
+	const hoverables = document.querySelectorAll('.hoverable');
+
+	Array.from(hoverables).forEach((hoverEl) => {
+		hoverEl.addEventListener('mouseover', (e) => {
+			mainCircle.classList.add('circle-hide');
+			secondCircle.classList.add('circle-scale');
+		})
+	})
+
+	Array.from(hoverables).forEach((hoverEl) => {
+		hoverEl.addEventListener('mouseout', (e) => {
+			mainCircle.classList.remove('circle-hide');
+			secondCircle.classList.remove('circle-scale');
+		})
+	});
+
+});
+    
+
+
+
