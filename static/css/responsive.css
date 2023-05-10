@@ -194,14 +194,22 @@
    }
    .security-home{
       width: 100%;
-      height: 50vh;
+      height: auto !important;
       background-position: center;
       background-size: cover;
+      margin-top: 80px;
       background-repeat: no-repeat;
    }
    .security-home video{
       height: 100%;
       width: 50%;
+   }
+   .second-ajax-sec{
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
    }
 
    /* ---our services end */
