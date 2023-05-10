@@ -9,6 +9,7 @@
     <!-- bootstrap css -->
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
     <link rel="stylesheet" href="{% static 'css/ourservice.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <!-- bs-4 -->
@@ -38,7 +39,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 sticky">
@@ -64,7 +65,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Security System</a>
+                            <a class="nav-link" href="/securitySystem">Security System</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Our App</a>
@@ -75,7 +76,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
-
                     </ul>
 
                     <form class="d-flex">
@@ -236,7 +236,7 @@
                             The future of curtains and blinds is here Add a curtain controller to your curtains and have a convenient and stylish way to manage natural light and privacy in your home.
                         </p>
                         <a href="#" class="d-flex align-items-center">
-                            <p class=" sec-btn-test" onclick="location.href='/curtain'">See Demo</p>
+                            <p class=" sec-btn-test" onclick="location.href='/securitySystem'">See Demo</p>
                             <p><i class="fa-solid fa-chevron-right anim-icon"></i></p>
                         </a>
                     </div>

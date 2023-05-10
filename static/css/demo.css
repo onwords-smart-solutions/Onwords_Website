@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     position: fixed;
-    background-color: #020b1f;
+    background-color: #040507;
     z-index: -1;
     /* margin-top: 100%; */
 }
@@ -165,7 +165,7 @@ input:checked+.slider:before {
 .second-section {
     height:auto;
     padding-bottom: 130px;
-    background-color: #020b1f;
+    background-color: #040507;
     margin-top: 100%;
     color: #fff;
 }

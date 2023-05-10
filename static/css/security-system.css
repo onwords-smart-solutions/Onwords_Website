@@ -29,8 +29,12 @@
   }
   .fourth-ajax{
     height: 50vh;
-    /* object-fit: contain; */
+    object-fit: contain;
     width: 100%;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    background: url(../images/fourth-ajax.png);
   }
   .dg-col{
     display: flex;
@@ -48,8 +52,9 @@
   }
   .last-ajax{
     width: 100%;
-    height: 60vh;
+    height: 100vh;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
   }
@@ -60,15 +65,13 @@
     /* line-height: 40vh; */
 
   }
-  .d-aja{
-    text-align: right;
-    display: flex;
-    align-items: end;
-    justify-content: end;
-  }
+
   .d-gif{
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
   }
   .d-gif img{
@@ -76,8 +79,35 @@
     height: 100%;
     object-fit: contain;
   }
-  .dg-gif{
-    object-fit: contain;
+  .left-ajax{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    position: absolute;
+    left: 230px;
+
+  }
+  .right-ajax{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    position: absolute;
+    right: 180px;
+  }
+  .e-ajx{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+  }
+  .e-ajx img{
     width: 100%;
     height: 100%;
+    object-fit: contain;
   }
+  .boxro{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+  }
+
+ 
