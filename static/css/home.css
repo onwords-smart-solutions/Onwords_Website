@@ -7,9 +7,12 @@
 }
 
 body {
-    background-color: #040507 !important;
     scroll-behavior: smooth;
     font-family: 'Rancho', cursive;
+}
+#bodyTag{
+    color: #fff;
+    background: #040507;  
 }
 
 
@@ -33,7 +36,7 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: #fff;
+    
 }
 
 .btns-model {
@@ -212,8 +215,6 @@ nav {
     border: none;
     outline: none;
     /* z-index: -1; */
-
-
 }
 
 .df,
@@ -270,14 +271,14 @@ color: #fff;
 
 
 .module {
-    background: #040507;
+    background: transparent;
     color: white;
     padding: 7px 14px;
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 50px;
 }
 
-.modules {
+.module {
     background: transparent;
 }
 
@@ -367,9 +368,7 @@ color: #fff;
     border-bottom: 2px solid rgb(134, 22, 87);
 }
 
-.home-main-con {
-    color: aliceblue;
-}
+
 
 .home-main-con button {
     border: none;
@@ -403,17 +402,17 @@ color: #fff;
     font-size: 55px;
     font-weight: 700;
     text-shadow: 2px solid black;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .home-main-con h2 {
     font-size: 50px;
     font-weight: 600;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .home-main-con p {
-    color: #fff;
+    /* color: #fff; */
     font-size: 20px;
     font-weight: 600;
 }
@@ -468,6 +467,7 @@ color: #fff;
     width: 100%;
     height: auto;
     position: relative;
+ 
 }
 /* #blur{
     background-color: #020b1f;
@@ -479,7 +479,6 @@ color: #fff;
 
 section {
     width: 100%;
-    color: #fff;
     margin: 50px 0px;
 }
 
@@ -655,8 +654,8 @@ section {
     background-image: url(../images/sdh.gif);
     background-position: center;
     background-repeat: no-repeat;
-    background-blend-mode: lighten;
-    background-color: #040507;
+    background-blend-mode: lighten
+    /* background-color: #040507; */
     background-size: 500px;
     width: 100%;
     position: relative;
@@ -1248,14 +1247,14 @@ footer {
     display: inline-block;
     /* border: 1px solid gray; */
     border-radius: 5px;
-    background-color: #040507;
+    /* background-color: #040507; */
     min-width: 100%;
     scroll-snap-align: start;
 }
 
 .ml {
     margin-right: 10px;
-    background-color: #040507;
+    /* background-color: #040507; */
 }
 
 .stickline {
@@ -1678,10 +1677,12 @@ footer {
     width: 35px;
 }
 .darkmode{
-    width: 100%;
+    width: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* position: absolute; */
+    /* margin-top: 90px; */
 }
 .darkmode label{
     cursor: pointer !important;

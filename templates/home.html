@@ -36,7 +36,7 @@
     <title>Onwords</title>
 </head>
 
-<body>
+<body id="bodyTag">
     <div class="blob"></div>
     <div class="wrapper" id="blur">
         <!-- navbar start -->
@@ -130,7 +130,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- navbar end -->
 
         <button type="button" class="backtop" id="btn-back-to-top">
@@ -149,10 +149,10 @@
             <div class="homeoff" id="withoutlight"></div>
             <div class="main-bgs">
                 <div class="container-fluid">
-                    <div class="darkmode">
-                     <label for="" id="days">Day</label>
-                     <label for="" id="nights">Night</label>
-                    </div>
+                    <!-- <div class="darkmode">
+                        <label for="" id="daysBtn" onclick="dayMode()">Day</label>
+                        <label for="" id="nightsBtn" onclick="nightMode()">Night</label>
+                    </div> -->
                     <div class="row">
                         <div class="col-md-6">
                             <div class="main-bg-size">
@@ -627,7 +627,7 @@
             </div>
 
         </section>
-        <section class="works-with">
+        <section class="works-with" id="wrk-with">
             <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
                 <h2>Works with Voice Assistant</h2>
             </div>
@@ -881,6 +881,8 @@
         <div class="contact-form">
 
             <h2>Enquery Now</h2>
+
+            
             <form action="">
                 <input type="text" placeholder="Enter Your Full Name"><br>
                 <input type="email" placeholder="Enter Your Email"><br>
@@ -1009,7 +1011,7 @@
         }
         // ---topbtn end
 
-      
+
         // ---strat mouse wheel--
         const mouseWheel = document.querySelector('.box-scroll');
 
@@ -1024,16 +1026,16 @@
         });
         // ---strat mouse wheel--
 
-    </script>    
-<script>
-    
+    </script>
+    <script>
+
 //         window.setTimeout( function reloads() {
     //   window.location.reload();
     // }, 20000);
 
-</script>  
-<script>
-      const blob = document.querySelector('.blob');
+    </script>
+    <script>
+        const blob = document.querySelector('.blob');
         window.addEventListener('pointermove', (e) => {
             const { clientX, clientY } = e;
             console.log(clientX, clientY)
@@ -1042,38 +1044,55 @@
                 top: `${clientY}px`
             }, { duration: 3000, fill: "forwards" })
         })
-        var cursor = document.querySelector('.cursor'),
-            mouseX = 0,
-            mouseY = 0
-            gsap.to({}, 0.016, {
-            repeat: -1,
-            onRepeat: function () {
-                gsap.set(cursor, {
-                    css: {
-                        left: mouseX,
-                        top: mouseY
-                    }
-                })
-            }
-        });
+        // var cursor = document.querySelector('.cursor'),
+        //     mouseX = 0,
+        //     mouseY = 0
+        // gsap.to({}, 0.016, {
+        //     repeat: -1,
+        //     onRepeat: function () {
+        //         gsap.set(cursor, {
+        //             css: {
+        //                 left: mouseX,
+        //                 top: mouseY
+        //             }
+        //         })
+        //     }
+        // });
         window.addEventListener("mousemove", function (e) {
             mouseX = e.clientX;
             mouseY = e.clientY
         })
 
-      
 
-        cursorScale.forEach(link => {
-            link.addEventListener('mouseleave', () => {
-                cursor.classList.remove('grow');
-            })
-            link.addEventListener('mousemove', () => {
-                cursor.classList.add('grow');
-              
-            })
-        })
 
-</script>
+        // cursorScale.forEach(link => {
+        //     link.addEventListener('mouseleave', () => {
+        //         cursor.classList.remove('grow');
+        //     })
+        //     link.addEventListener('mousemove', () => {
+        //         cursor.classList.add('grow');
+
+        //     })
+        // })
+
+    </script>
+   <script>
+    // function dayMode(){
+    //     const BodyTag = document.getElementById('bodyTag')
+    //     const section = document.querySelectorAll('section')
+    //     BodyTag.style.backgroundColor='#fff'
+    //     BodyTag.style.color='#000'
+       
+    // }
+    // function nightMode(){
+    //     const BodyTag = document.getElementById('bodyTag')
+    //     const section = document.getElementsByTagName('section')
+    //     BodyTag.style.backgroundColor='#040507'
+    //     BodyTag.style.color='#fff'
+    // }
+   
+    
+   </script>
 </body>
 
 </html>

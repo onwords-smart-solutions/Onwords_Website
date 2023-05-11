@@ -62,3 +62,18 @@ $(document).ready(function () {
   });
 
 });
+
+function dayMode(){
+  const BodyTag = document.getElementById('bodyTag')
+  const anchorTag = document.getElementsByTagName('a')
+  BodyTag.style.backgroundColor='#fff'
+  BodyTag.style.color='#232323'
+  anchorTag.style.color ='#232323'
+ 
+ 
+}
+function nightMode(){
+  const BodyTag = document.getElementById('bodyTag')
+  BodyTag.style.backgroundColor='#040507'
+  BodyTag.style.color='#fff'
+}
