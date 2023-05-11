@@ -33,7 +33,7 @@
     <title>Onwords</title>
 </head>
 
-<body>
+<body id="bodyTag">
     <div class="wrapper">
         <!-- navbar start -->
         <button type="button" class="backtop" id="btn-back-to-top">
@@ -103,17 +103,23 @@
         </div>
         <section>
             <div class="container">
-                <div class="security-sec">
-                    <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
-                        <h2>Your Protection in an imperfection world </h2>
+              <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="security-sec">
+                        <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
+                            <h2>Your Protection in an imperfection world </h2>
+                        </div>
+                        <p class="text-center">
+                            At Ajax, we believe that people shouldn’t have to live in fear in today's world. Our continually
+                            evolving security system gives people peace of mind. When you're under the reliable protection
+                            of Ajax, you're safe from thieves, fires or leaks that can cause real harm to property and
+                            people.
+                        </p>
                     </div>
-                    <p>
-                        At Ajax, we believe that people shouldn’t have to live in fear in today's world. Our continually
-                        evolving security system gives people peace of mind. When you're under the reliable protection
-                        of Ajax, you're safe from thieves, fires or leaks that can cause real harm to property and
-                        people.
-                    </p>
                 </div>
+                <div class="col-md-1"></div>
+              </div>
             </div>
         </section>
         <section class="second-ajax-sec reveal fade-bottom " data-wow-delay="0.1s"></section>
@@ -242,11 +248,11 @@
                 </div>
             </div>
         </section>
-        <section>
+        <!-- <section>
             <div id="ex1" class="container">
                 <div id="ex1-layer" class="boxro"></div>
               </div>
-        </section>
+        </section> -->
 
 
     </div>
@@ -379,7 +385,7 @@
             $('#toggle-one').bootstrapToggle();
         })
     </script>
-    <script>
+    <!-- <script>
         let constrain = 20;
 let mouseOverContainer = document.getElementById("ex1");
 let ex1Layer = document.getElementById("ex1-layer");
@@ -407,7 +413,7 @@ mouseOverContainer.onmousemove = function(e) {
   });
 };
 
-    </script>
+    </script> -->
 
     <!-- bs-4 -->
 </body>

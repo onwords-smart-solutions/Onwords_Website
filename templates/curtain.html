@@ -36,7 +36,7 @@
     <title>Onwords</title>
 </head>
 
-<body>
+<body id="bodyTag">
     <div class="wrapper">
         <!-- navbar start -->
         <button type="button" class="backtop" id="btn-back-to-top">
@@ -76,7 +76,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Security System</a>
+                                <a class="nav-link" href="/securitySystem">Security System</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Our App</a>
@@ -103,12 +103,14 @@
         <!-- navbar end -->
         <div class="curtain-home"></div>
         <section class="fg">
-            <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
-                <h2>Advantage of making smart Curtain</h2>
-            </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 text-center">
+                    <div class="col-md-1"></div>
+                  
+                    <div class="col-md-10 text-center">
+                        <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
+                            <h2>Advantage of making smart Curtain</h2>
+                        </div>
                         <p>
                             Smart curtains are automated window coverings that can be opened, closed, and adjusted via
                             remote control or integrated with home automation systems. They can help save energy by
@@ -116,6 +118,7 @@
                             security.
                         </p>
                     </div>
+                    <div class="col-md-1"></div>
                 </div>
 
             </div>
@@ -164,8 +167,8 @@
         <section class="img-handphone reveal fade-bottom" data-wow-delay="0.1s">
             <div class="container">
                 <div class="row my-4">
-                    <div class="col-md-6"></div>
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-sm-12 col-md-6"></div>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
                         <h2>Control From Anywhere</h2>
                         <p>
                             Access your smart home from anywhere in the world. Create unique scenes, define your
@@ -215,18 +218,20 @@
         <section class="blursdleft">
             <div class="container">
                 <div class="row">
-                   
+
                     <div class="col-md-5">
                         <img src="{% static 'images/schedule.png' %}" alt="softtocuh" class="img-fluid hgf">
                     </div>
-                     
+
                     <div class="col-md-1"></div>
                     <div class="col-md-6">
                         <div class="text-left reveal fade-left" data-wow-delay="0.1s">
                             <h2>Set Schedules</h2>
                         </div>
                         <p>
-                            Start your day feeling refreshed and ready to tackle anything with the subtle automation of our smart curtains. Program them to gently wake you up each morning, so you can begin your day feeling invigorated and ready for anything.
+                            Start your day feeling refreshed and ready to tackle anything with the subtle automation of
+                            our smart curtains. Program them to gently wake you up each morning, so you can begin your
+                            day feeling invigorated and ready for anything.
                         </p>
                     </div>
                 </div>
