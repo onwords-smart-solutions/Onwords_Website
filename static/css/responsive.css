@@ -358,6 +358,12 @@
    width: 100%;
    padding: 0px 20px;
   }
+  .darkmodeMob{
+   display: block;
+}
+.darkmode{
+   display: none;
+}
    /* ---our services end */
 
 

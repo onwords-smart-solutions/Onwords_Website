@@ -65,15 +65,27 @@ $(document).ready(function () {
 
 function dayMode(){
   const BodyTag = document.getElementById('bodyTag')
-  const anchorTag = document.getElementsByTagName('a')
-  BodyTag.style.backgroundColor='#fff'
+  const footer = document.querySelectorAll('.footer-list')
+  const dayBright = document.getElementById('daybright')
+  const moon = document.getElementById('moon')
+  BodyTag.style.backgroundColor='#f0f0f0'
+  dayBright.style.display='none'
+  moon.style.display='block'
   BodyTag.style.color='#232323'
-  anchorTag.style.color ='#232323'
- 
- 
+  for (const footers of footer) {
+    footers.style.color ='#232323'
+  }
 }
 function nightMode(){
   const BodyTag = document.getElementById('bodyTag')
+  const dayBright = document.getElementById('daybright')
+  const moon = document.getElementById('moon')
+  const footer = document.querySelectorAll('.footer-list')
   BodyTag.style.backgroundColor='#040507'
   BodyTag.style.color='#fff'
+  dayBright.style.display='block'
+  moon.style.display='none'
+  for (const footers of footer) {
+    footers.style.color ='#fff'
+  }
 }

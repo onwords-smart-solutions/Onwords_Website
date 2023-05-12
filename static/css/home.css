@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 
+@font-face {
+    font-family: SfPro;
+    src: url("../fonts/SFPRODISPLAYMEDIUM.OTF") format("opentype");
+}
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +41,6 @@ ul li {
 ul li a {
     text-decoration: none;
     color: #fff;
-    
 }
 
 .btns-model {
@@ -352,14 +355,18 @@ color: #fff;
 }
 
 .nav-item a {
-    color: #fff;
+    color: #ccc;
     font-size: 16px;
     font-weight: 600;
 }
 
 .nav-link a,
 .active-nav {
-    color: rgb(134, 22, 87) !important;
+    background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
     border-bottom: 2px solid rgb(134, 22, 87);
 }
 
@@ -519,11 +526,37 @@ section {
 }
 .child-adv{
     margin: 30px 0px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.child-adv span{
+    margin: 0px 20px;
+}
+.child-adv :nth-child(1){
+    width: 50px;
+    /* margin: 0px 20px; */
+    text-align: left;
+    background: linear-gradient(to right, #7353ef, #ce4da4);
+    border-radius: 50%;
+    height: 50px;
+    /* padding: 3px; */
+    position: relative;
+
+}
+.child-adv:last-child{
+    margin: 0px 10px;
 }
 .child-adv img{
-    width: 30px;
-    margin: 0px 20px;
-    text-align: left;
+    background: none !important;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 4px;
 }
 
 
@@ -857,17 +890,15 @@ footer {
 } */
 .fgh span a {
     padding: 10px 0px;
-    color: #fff;
+    /* color: #fff; */
     text-decoration: none;
 }
 
 .fgh span i {
     padding: 10px;
 }
-
 .mails {
     padding: 10px;
-    color: #fff;
     outline: none;
     border: 0;
     border-bottom: 1px solid #ffff;
@@ -1682,12 +1713,21 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* position: absolute; */
-    /* margin-top: 90px; */
-}
-.darkmode label{
-    cursor: pointer !important;
     padding: 0px 20px;
+}
+.darkmodeMob{
+    display: none;
+}
+.darkmode{
+    display: block;
+}
+.darkmode img{
+    cursor: pointer !important;
+}
+#moon{
+    display: none;
+    width: 15px;
+    height: 15px;
 }
 
 
@@ -1742,4 +1782,7 @@ footer {
 	height: calc(var(--second-circle-size) * 2);
 	margin-top: calc(-1 * var(--second-circle-size));
 	margin-left: calc(-1 * var(--second-circle-size));
+}
+.footer-list{
+    color: #fff !important;
 }
