@@ -163,7 +163,7 @@ input:checked+.slider:before {
 
 /* --second video section start */
 .second-section {
-    height:auto;
+    height:max-content;
     padding-bottom: 130px;
     background-color: #040507;
     margin-top: 100%;

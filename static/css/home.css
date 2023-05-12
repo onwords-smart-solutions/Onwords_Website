@@ -1784,5 +1784,5 @@ footer {
 	margin-left: calc(-1 * var(--second-circle-size));
 }
 .footer-list{
-    color: #fff !important;
+    color: #fff;
 }

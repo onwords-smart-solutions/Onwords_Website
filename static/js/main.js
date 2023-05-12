@@ -67,11 +67,19 @@ function dayMode(){
   const BodyTag = document.getElementById('bodyTag')
   const footer = document.querySelectorAll('.footer-list')
   const dayBright = document.getElementById('daybright')
+  // const moduleborder = document.getElementById('.module-border-wrap')
+  // const module = document.getElementById('.module')
+  // const secondSection = document.querySelector('.second-section')
   const moon = document.getElementById('moon')
   BodyTag.style.backgroundColor='#f0f0f0'
-  dayBright.style.display='none'
-  moon.style.display='block'
   BodyTag.style.color='#232323'
+  dayBright.style.display='none'
+  // module.style.backgroundColor='none'
+  // moduleborder.style.background='none'
+  // secondSection.style.backgroundColor='#f0f0f0'
+  // secondSection.style.color='#232323'
+  moon.style.display='block'
+  
   for (const footers of footer) {
     footers.style.color ='#232323'
   }

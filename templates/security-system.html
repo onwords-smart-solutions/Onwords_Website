@@ -44,6 +44,10 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/"><img src="{% static 'images/logos.png' %}" alt="logo"
                             class="img-fluid logo"></a>
+                            <div class="darkmodeMob">
+                                <img src="{% static 'images/sun-wh.svg' %}" alt="" id="daybright" onclick="dayMode()">
+                                <img src="{% static 'images/moon-wh.svg' %}" alt="" class= "img-fluid"  id="moon" onclick="nightMode()">
+                            </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -94,6 +98,10 @@
                             </div>
                         </form>
                     </div>
+                    <div class="darkmode">
+                        <img src="{% static 'images/sun-wh.svg' %}" alt=""  id="daybright" onclick="dayMode()">
+                        <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid"  id="moon" onclick="nightMode()">
+                    </div>
                 </div>
             </nav>
         </header>
@@ -123,10 +131,10 @@
             </div>
         </section>
         <section class="second-ajax-sec reveal fade-bottom " data-wow-delay="0.1s"></section>
-        <div class="sec-title reveal fade-left text-white" data-wow-delay="0.1s">
+        <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
             <h2>Innovation to protect</h2>
         </div>
-        <section class="third-ajax-sec reveal fade-top " data-wow-delay="0.1s">
+        <section class="third-ajax-sec reveal fade-top text-white " data-wow-delay="0.1s">
             <div class="container">
                 <div class="row dg-col">
                     <div class="col-md-2">
@@ -183,7 +191,7 @@
                 </div>
             </div>
         </section>
-        <div class="sec-title reveal fade-left text-white" data-wow-delay="0.1s">
+        <div class="sec-title reveal fade-left " data-wow-delay="0.1s">
             <h2>Our Products</h2>
             <h4>Wireless security devices of the Ajax system</h4>
         </div>
@@ -259,47 +267,47 @@
     <section class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-sm-12 col-md-3">
                     <img src="{% static 'images/logos.png' %}" alt="" class="img-fluid sdf">
-                    <p class="text-white">Onwords Smart Solutions <br>
+                    <p>Onwords Smart Solutions <br>
                         RR Garden, Zamin Muthur, <br>
                         Pollachi,
                         Coimbatore, IN - 642 005 <br>
                     <div class="fgh">
-                        <span><a href="tel:7708630275"><i class="fa-solid fa-phone"></i> 77086 30275</a></span>
+                        <span><a href="tel:7708630275" class="footer-list"><i class="fa-solid fa-phone"></i> 77086 30275</a></span>
                         <br><br>
-                        <span><a href="mailto:cs@onwords.in"><i
+                        <span><a href="mailto:cs@onwords.in"class="footer-list"><i
                                     class="fa-solid fa-envelope"></i>cs@onwords.in</a></span>
                     </div>
                     </p>
                 </div>
-                <div class="col-md-2">
-
+                <div class="col-sm-6 col-md-2">
                     <ul class="listx">
-                        <h5 class="text-white">Quick Links</h5>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/ourservices">Our Services</a></li>
-                        <li><a href="">Security System</a></li>
-                        <li><a href="">Our App</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Contact</a></li>
+                        <h5>Quick Links</h5>
+                        <li><a href="/" class="footer-list">Home</a></li>
+                        <li><a href="/ourservices" class="footer-list">Our Services</a></li>
+                        <li><a href="" class="footer-list">Security System</a></li>
+                        <li><a href="" class="footer-list">Our App</a></li>
+                        <li><a href="" class="footer-list">About Us</a></li>
+                        <li><a href="" class="footer-list">Contact</a></li>
+                        
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-6 col-md-3">
                     <ul class="listx">
-                        <h5 class="text-white">Our Services</h5>
-                        <li><a href="/ourservices">Smart Home</a></li>
-                        <li><a href="">Web /App Devlopment</a></li>
-                        <li><a href="">Digital Marketing</a></li>
-                        <li><a href="">UI & UX Designing</a></li>
-                        <li><a href="">Graphic Designing</a></li>
-                        <li><a href="">Construction</a></li>
+                        <h5>Our Services</h5>
+                        <li><a href="" class="footer-list">Smart Home</a></li>
+                        <li><a href="" class="footer-list">Web /App Devlopment</a></li>
+                        <li><a href="" class="footer-list">Digital Marketing</a></li>
+                        <li><a href="" class="footer-list">UI & UX Designing</a></li>
+                        <li><a href="" class="footer-list">Graphic Designing</a></li>
+                        <li><a href="" class="footer-list">Construction</a></li>
                     </ul>
 
                 </div>
 
-                <div class="col-md-4">
-                    <h5 class="text-white">Subscribe Us</h5>
+                <div class="col-sm-12 col-md-4">
+                    <h5 >Subscribe Us</h5>
                     <input type="email" name="" id="" class="mails" placeholder="Enter Your Email"><br>
                     <button type="submit" class="sub">Subscribe</button>
                     <div class="row my-4">
@@ -331,20 +339,17 @@
                             </a>
                         </div>
                         <div class="jg">
-                            <div class="jg">
-                                <a href="https://play.google.com/store/apps/details?id=com.onwords.smarthome">
-                                    <img src="{% static 'images/play.png' %}" alt="df" class="img-fluid">
-                                </a>
-                                <a href="https://apps.apple.com/in/app/onwords-smart-home/id1598367434"><img
-                                        src="{% static 'images/apple.png' %}" alt="" class="img-fluid"></a>
-
-                            </div>
+                            <a href="https://play.google.com/store/apps/details?id=com.onwords.smarthome">
+                                <img src="{% static 'images/play.png' %}" alt="df" class="img-fluid">
+                            </a>
+                            <a href="https://apps.apple.com/in/app/onwords-smart-home/id1598367434"><img
+                                    src="{% static 'images/apple.png' %}" alt="" class="img-fluid"></a>
 
                         </div>
                     </div>
                 </div>
                 <hr class="text-white">
-                <span class="text-center" style="text-align: center;color: #ccc !important;"> © Copyright ©2023
+                <span class="text-center" style="text-align: center;"> © Copyright ©2023
                     Onwords. All Rights Reserved | Privacy Policy</span>
             </div>
 
