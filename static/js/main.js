@@ -67,12 +67,7 @@ function dayMode(){
   const BodyTag = document.getElementById('bodyTag')
   const footer = document.querySelectorAll('.footer-list')
   const dayBright = document.getElementById('daybright')
-  // const moduleborder = document.getElementById('.module-border-wrap')
-  // const module = document.getElementById('.module')
-  // const secondSection = document.querySelector('.second-section')
   const module = document.querySelectorAll('.module')
-  // const sticky = document.querySelector('.sticky')
-  // const navLink = document.querySelectorAll('.nav-link')
   const moon = document.getElementById('moon')
   BodyTag.style.backgroundColor='#f0f0f0'
   BodyTag.style.color='#232323'
@@ -82,14 +77,6 @@ function dayMode(){
   modules.style.backgroundColor='#f0f0f0'
   modules.style.color='#040507'
   }
-  // for (const navbar of navLink) {
-  //  navbar.style.color='#040507'
-  // }
- 
-  // module.style.backgroundColor='none'
-  // moduleborder.style.background='none'
-  // secondSection.style.backgroundColor='#f0f0f0'
-  // secondSection.style.color='#232323'
   moon.style.display='block'
   
   for (const footers of footer) {
@@ -109,3 +96,61 @@ function nightMode(){
     footers.style.color ='#fff'
   }
 }
+
+
+function getUserPreference() {
+  return localStorage.getItem("theme") || "system";
+}
+function saveUserPreference(userPreference) {
+  localStorage.setItem("theme", userPreference);
+}
+
+function getAppliedMode(userPreference) {
+  if (userPreference === "light") {
+    return "light";
+  }
+  if (userPreference === "dark") {
+    return "dark";
+  }
+  // system
+  if (matchMedia("(prefers-color-scheme: light)").matches) {
+    return "light";
+  }
+  return "dark";
+}
+
+function setAppliedMode(mode) {
+  document.documentElement.dataset.appliedMode = mode;
+}
+
+function rotatePreferences(userPreference) {
+  if (userPreference === "system") {
+    return "light";
+  }
+  if (userPreference === "light") {
+    return "dark";
+  }
+  if (userPreference === "dark") {
+    return "system";
+  }
+  // for invalid values, just in case
+  return "system";
+}
+
+const themeDisplay = document.getElementById("mode");
+const themeToggler = document.getElementById("theme-toggle");
+
+// Mimic heavy load done by other JS scripts
+setTimeout(() => {
+  let userPreference = getUserPreference();
+  setAppliedMode(getAppliedMode(userPreference));
+  themeDisplay.innerText = userPreference;
+
+  themeToggler.onclick = () => {
+    const newUserPref = rotatePreferences(userPreference);
+    userPreference = newUserPref;
+    saveUserPreference(newUserPref);
+    themeDisplay.innerText = newUserPref;
+    setAppliedMode(getAppliedMode(newUserPref));
+  };
+}, 1000);
