@@ -39,9 +39,11 @@
    .product-para {
       font-size: 12px;
    }
-   .navbar{
+
+   .navbar {
       width: 100%;
    }
+
    /* .adv-img{
       width: 70%;
       margin-left:20px;
@@ -49,7 +51,7 @@
       align-items: center;
       justify-content: center;
    } */
-   .blob{
+   .blob {
       display: none;
    }
 
@@ -110,68 +112,74 @@
    .c-prev {
       margin-left: 20px;
    }
-   
-#withlight {
-   background-image:url(../images//ons.png);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   min-width: 100%;
-   height: 46vh;
-   object-fit: contain;
-   transform-origin: center;
-   position: relative;
-   /* animation: img-change infinite 5s; */
-   image-rendering: pixelated;
-   /* animation-iteration-count: 2; */
-}
 
-#withoutlight {
-   background-image:url(../images/offs.png);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   width: 100%;
-   height: 46vh;
-   object-fit: contain;
-   transform-origin: center;
-   position: relative;
-   /* animation: img-change infinite 5s; */
-   image-rendering: pixelated;
-   /* animation-iteration-count: 2; */
-   display: none;
-}
-.main-bgs {
-   position: absolute;
-   top: 0;
-   left: 0;
-   height: 66vh!important;
-   width: 100%;
-}
-#mydiv{
-   /* padding-left: 30px; */
-   position: absolute;
-   top:-700px;
-   left: 180px;
-   opacity:0;
-   
-}
-.home-main-con h1{
-   font-size: 40px;
-}
-.font-anim{
-   width: 100%;
-}
-.font-anim span{
-   font-size: 40px;
-   
-}
-.message{
-   font-size: 40px;
-   padding-left: 0;
-   left: 180px;
-   padding-top: 10px;
-}
+   #withlight {
+      background-image: url(../images//ons.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-width: 100%;
+      height: 46vh;
+      object-fit: contain;
+      transform-origin: center;
+      position: relative;
+      /* animation: img-change infinite 5s; */
+      image-rendering: pixelated;
+      /* animation-iteration-count: 2; */
+   }
+
+   #withoutlight {
+      background-image: url(../images/offs.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 46vh;
+      object-fit: contain;
+      transform-origin: center;
+      position: relative;
+      /* animation: img-change infinite 5s; */
+      image-rendering: pixelated;
+      /* animation-iteration-count: 2; */
+      display: none;
+   }
+
+   .main-bgs {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 66vh !important;
+      width: 100%;
+   }
+
+   #mydiv {
+      /* padding-left: 30px; */
+      position: absolute;
+      top: -700px;
+      left: 180px;
+      opacity: 0;
+
+   }
+
+   .home-main-con h1 {
+      font-size: 40px;
+   }
+
+   .font-anim {
+      width: 100%;
+   }
+
+   .font-anim span {
+      font-size: 40px;
+
+   }
+
+   .message {
+      font-size: 40px;
+      padding-left: 0;
+      left: 180px;
+      padding-top: 10px;
+   }
 
    #whatsapp {
       display: none !important;
@@ -180,10 +188,11 @@
    #btn-back-to-top {
       display: none !important;
    }
+
    .df,
-.sf {
-    width: 100px;
-}
+   .sf {
+      width: 100px;
+   }
 
    nav {
       width: 100%;
@@ -221,17 +230,20 @@
       height: 27vh;
    }
 
-.mob-demo{
-   height: 140vh !important;
-}
+   .mob-demo {
+      height: 140vh !important;
+   }
+
    .hov-serv {
       height: 5vh;
    }
-   .sf{
+
+   .sf {
       margin-top: 100px;
       width: 100%;
    }
-   .jh{
+
+   .jh {
       position: inherit;
       margin-top: 325px;
       width: 100%;
@@ -241,38 +253,45 @@
       justify-content: space-between;
       z-index: 100;
    }
-   .blurred-box{
+
+   .blurred-box {
       width: 50%;
       display: flex;
       align-items: center;
       margin: 0px 5px;
       color: #fff;
    }
-   .title-word{
+
+   .title-word {
       font-size: 12px !important;
       text-align: end;
    }
-   .jh h6{
+
+   .jh h6 {
       font-size: 14px;
       padding-right: 20px;
       display: none;
    }
-   .night{
+
+   .night {
       display: none;
    }
-   .hue{
+
+   .hue {
       display: none;
    }
-   .curtain-home{
+
+   .curtain-home {
       width: 100%;
       height: 50vh;
       /* object-fit: contain; */
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
-      
+
    }
-   .security-home{
+
+   .security-home {
       width: 100%;
       height: auto !important;
       background-position: center;
@@ -280,62 +299,77 @@
       margin-top: 80px;
       background-repeat: no-repeat;
    }
-   .security-home video{
+
+   .security-home video {
       height: 100%;
       width: 50%;
    }
-   .second-ajax-sec{
+
+   .second-ajax-sec {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       width: 100%;
-     height: 28vh !important;
+      height: 28vh !important;
    }
-   .third-ajax-sec{
+
+   .third-ajax-sec {
       height: 70vh !important;
    }
-   .fourth-ajax{
-   height: 30vh;
-    object-fit: contain;
-    width: 100%;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover;
-    
+
+   .fourth-ajax {
+      height: 30vh;
+      object-fit: contain;
+      width: 100%;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      background-size: cover;
+
    }
-   .secure-video{
+
+   .secure-video {
       /* height: 50vh; */
       width: 100%;
    }
-   .last-ajax{
+
+   .last-ajax {
       height: 26vh !important;
    }
-   .secure-video video{
+
+   .secure-video video {
       width: 100%;
       height: 100%;
    }
-   .e-ajx{
+
+   .e-ajx {
       width: 100%;
       height: 30vh;
    }
-   .dg-ajax{
+
+   .dg-ajax {
       font-size: 20px !important;
    }
-   .dg-col{
+
+   .dg-col {
       height: 28vh !important;
    }
-   .e-ajx img{
+
+   .e-ajx img {
       width: 290px !important;
    }
+
    .left-ajax {
       left: 10px !important;
    }
-   .right-ajax{
+
+   .right-ajax {
       right: 5px !important;
    }
-   .advantages{
+
+   .advantages {
       margin-top: 200px;
    }
+
    .font-anim {
       color: #333;
       font-family: tahoma;
@@ -350,20 +384,25 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
-  }
-  .footer{
-   height: auto;
-  }
-  .modalopen{
-   width: 100%;
-   padding: 0px 20px;
-  }
-  .darkmodeMob{
-   display: block;
-}
-.darkmode{
-   display: none;
-}
+   }
+
+   .footer {
+      height: auto;
+   }
+
+   .modalopen {
+      width: 100%;
+      padding: 0px 20px;
+   }
+
+   .darkmodeMob {
+      display: block;
+   }
+
+   .darkmode {
+      display: none;
+   }
+
    /* ---our services end */
 
 
