@@ -79,8 +79,8 @@ function dayMode(){
   dayBright.style.display='none'
   // sticky.style.backgroundColor='#f0f0f0'
   for (const modules of module) {
-    modules.style.backgroundColor='#f0f0f0'
-   modules.style.color='#040507'
+  modules.style.backgroundColor='#f0f0f0'
+  modules.style.color='#040507'
   }
   // for (const navbar of navLink) {
   //  navbar.style.color='#040507'
