@@ -70,10 +70,22 @@ function dayMode(){
   // const moduleborder = document.getElementById('.module-border-wrap')
   // const module = document.getElementById('.module')
   // const secondSection = document.querySelector('.second-section')
+  const module = document.querySelectorAll('.module')
+  // const sticky = document.querySelector('.sticky')
+  // const navLink = document.querySelectorAll('.nav-link')
   const moon = document.getElementById('moon')
   BodyTag.style.backgroundColor='#f0f0f0'
   BodyTag.style.color='#232323'
   dayBright.style.display='none'
+  // sticky.style.backgroundColor='#f0f0f0'
+  for (const modules of module) {
+    modules.style.backgroundColor='#f0f0f0'
+   modules.style.color='#040507'
+  }
+  // for (const navbar of navLink) {
+  //  navbar.style.color='#040507'
+  // }
+ 
   // module.style.backgroundColor='none'
   // moduleborder.style.background='none'
   // secondSection.style.backgroundColor='#f0f0f0'

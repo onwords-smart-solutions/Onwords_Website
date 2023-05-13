@@ -255,7 +255,7 @@ color: #fff;
 .module-border-wrap {
     cursor: pointer;
     position: relative;
-    background: linear-gradient(to right, red, purple);
+    background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
     padding: 1px;
     border-radius: 50px;
     border: none;
@@ -277,18 +277,17 @@ color: #fff;
 .module {
     background: #040507;
     color: white;
-    padding: 7px 14px;
-    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
+    padding: 10px 19px;
+     /* box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5); */
     border-radius: 50px;
 }
 
-.module {
-    background: #040507;
-}
+
 
 .module:hover {
     background: linear-gradient(to right, #7353ef, #ce4da4);
     border: 0;
+    
 }
 
 @keyframes img-change {
@@ -539,7 +538,7 @@ section {
     /* margin: 0px 20px; */
     text-align: left;
     background: linear-gradient(to right, #7353ef, #ce4da4);
-    border-radius: 50%;
+    border-radius: 10px;
     height: 50px;
     /* padding: 3px; */
     position: relative;
