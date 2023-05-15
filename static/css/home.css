@@ -196,6 +196,7 @@ nav {
 
 #mydiv {
     position: relative;
+    margin-top: -15px;
 }
 
 #mydiv button {
@@ -1781,3 +1782,37 @@ footer {
 .footer-list{
     color: #fff;
 }
+.press-button{
+    font-size: 14px;
+    color: #040507;
+    text-align: center;
+    padding-top: 40px;
+    animation: pressBtn 2s linear infinite;
+}
+.grow, .grow-small{
+    transform: scale(4);
+    background: white;
+    mix-blend-mode: difference; 
+    border: none;
+  }
+  
+  .grow-small{
+    transform: scale(2);
+  }
+@keyframes pressBtn {
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(none);
+   
+    }
+
+}
+
+/* .cursor-scale:hover{
+transform: scale(1.2);    
+} */

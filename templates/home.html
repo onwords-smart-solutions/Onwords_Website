@@ -46,10 +46,10 @@
                     <a class="navbar-brand" href="/"><img src="{% static 'images/logos.png' %}" alt="logo"
                             class="img-fluid logo"></a>
                    
-                            <div class="darkmodeMob">
+                            <!-- <div class="darkmodeMob">
                                 <img src="{% static 'images/sun-wh.svg' %}" alt="" id="daybright" onclick="dayMode()">
                                 <img src="{% static 'images/moon-wh.svg' %}" alt="" class= "img-fluid"  id="moon" onclick="nightMode()">
-                            </div>
+                            </div> -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -166,11 +166,11 @@
                         <div class="col-md-6">
                             <div class="main-bg-size">
                                 <div class="home-main-con">
-                                    <h1 class="cursor-scale">In Sync With</h1>
+                                    <h1 class="cursor-scale small">In Sync With</h1>
                                     <div class="font-anim">
-                                        <span>
+                                        <span class="cursor-scale small">
                                             Smarter</span>
-                                        <div class="message">
+                                        <div class="message cursor-scale small">
                                             <div class="word1">World</div>
                                         </div>
                                     </div>
@@ -195,6 +195,7 @@
                         </div>
                         <div class=" col-sm-12 col-md-6 g">
                             <div id="mydiv">
+                                <h2 class="press-button">Press the button</h2>
                                 <span id="lightonBtn" class="btns-on">
                                     <img src="{% static 'images/button-off.png' %}" alt="s" class="sf">
                                 </span>
@@ -635,7 +636,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
         <section class="works-with" id="wrk-with">
             <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
@@ -882,33 +882,6 @@
             </div>
         </section>
     </div>
-
-    <!-- <div class="popup-form">
-        <div class="" style="cursor: pointer;" onclick="closepopup()">
-            <i class="fa-solid fa-xmark"></i>
-        </div>
-        <div class="contact-form">
-
-            <h2>Enquery Now</h2>
-
-            
-            <form action="">
-                <input type="text" placeholder="Enter Your Full Name"><br>
-                <input type="email" placeholder="Enter Your Email"><br>
-                <input type="number" placeholder="Enter Your Number"><br>
-                <button class="module-border-wrap text-center closepopup">
-                    <div class="module">
-                        Submit
-                    </div>
-                </button>
-            </form>
-        </div>
-
-    </div> -->
-
-
-
-
     <!-- Preloader -->
 
 
@@ -1045,63 +1018,21 @@
     </script>
     <script>
         const blob = document.querySelector('.blob');
+        const cursorScale = document.querySelectorAll('.cursor-scale')
         window.addEventListener('pointermove', (e) => {
             const { clientX, clientY } = e;
-            console.log(clientX, clientY)
+            // console.log(clientX, clientY)
             blob.animate({
                 left: `${clientX}px`,
                 top: `${clientY}px`
             }, { duration: 3000, fill: "forwards" })
         })
-        // var cursor = document.querySelector('.cursor'),
-        //     mouseX = 0,
-        //     mouseY = 0
-        // gsap.to({}, 0.016, {
-        //     repeat: -1,
-        //     onRepeat: function () {
-        //         gsap.set(cursor, {
-        //             css: {
-        //                 left: mouseX,
-        //                 top: mouseY
-        //             }
-        //         })
-        //     }
-        // });
+        
         window.addEventListener("mousemove", function (e) {
             mouseX = e.clientX;
             mouseY = e.clientY
         })
-
-
-
-        // cursorScale.forEach(link => {
-        //     link.addEventListener('mouseleave', () => {
-        //         cursor.classList.remove('grow');
-        //     })
-        //     link.addEventListener('mousemove', () => {
-        //         cursor.classList.add('grow');
-
-        //     })
-        // })
-
     </script>
-   <script>
-    // function dayMode(){
-    //     const BodyTag = document.getElementById('bodyTag')
-    //     const section = document.querySelectorAll('section')
-    //     BodyTag.style.backgroundColor='#fff'
-    //     BodyTag.style.color='#000'
-       
-    // }
-    // function nightMode(){
-    //     const BodyTag = document.getElementById('bodyTag')
-    //     const section = document.getElementsByTagName('section')
-    //     BodyTag.style.backgroundColor='#040507'
-    //     BodyTag.style.color='#fff'
-    // }
-   
-    
-   </script>
 </body>
 
 </html>
