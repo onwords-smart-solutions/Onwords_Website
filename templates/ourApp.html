@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
     <link rel="stylesheet" href="{% static 'css/demo.css' %}">
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/security-system.css' %}">
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <!-- bs-4 -->
@@ -28,11 +29,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
     <!-- carousel -->
 
-    <!-- cdn link -->
-
-
-
-    <!-- cdn link -->
+   
     <title>Onwords</title>
 </head>
 
@@ -47,10 +44,10 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/"><img src="{% static 'images/logos.png' %}" alt="logo"
                             class="img-fluid logo"></a>
-                    <div class="darkmodeMob">
-                        <img src="{% static 'images/sun-wh.svg' %}" alt="" id="daybright" onclick="dayMode()">
-                        <img src="{% static 'images/moon-wh.svg' %}" alt="" class= "img-fluid"  id="moon" onclick="nightMode()">
-                    </div>
+                            <div class="darkmodeMob">
+                                <img src="{% static 'images/sun-wh.svg' %}" alt="" id="daybright" onclick="dayMode()">
+                                <img src="{% static 'images/moon-wh.svg' %}" alt="" class= "img-fluid"  id="moon" onclick="nightMode()">
+                            </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -62,8 +59,8 @@
                                 <a class="nav-link" aria-current="page" href="/">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active-nav" href="#" id="navbarDropdown"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     Our Services
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -82,8 +79,8 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/securitySystem">Security System</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/ourApp">Our App</a>
+                            <li class="nav-item active-nav">
+                                <a class="nav-link" href="#">Our App</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">About Us</a>
@@ -109,153 +106,13 @@
             </nav>
         </header>
         <!-- navbar end -->
-        <div class="curtain-home"></div>
-        <section class="fg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-1"></div>
-                  
-                    <div class="col-md-10 text-center">
-                        <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
-                            <h2>Advantage of making smart Curtain</h2>
-                        </div>
-                        <p>
-                            Smart curtains are automated window coverings that can be opened, closed, and adjusted via
-                            remote control or integrated with home automation systems. They can help save energy by
-                            managing the amount of sunlight that enters your home while also improving your home
-                            security.
-                        </p>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
-
-            </div>
-        </section>
-        <section class="blursd">
-            <div class="container">
-                <div class="row my-4">
-                    <div class="col-md-6">
-                        <h2>Smart home at your command</h2>
-                        <p>
-                            People who are physically challenged and handicapped can also operate the curtains
-                            effortlessly. The onwords Curtain Controller integrated device could also be operated using
-                            the Voice-control assistants like Alexa and Siri.
-                        </p>
-                        <div class="curtain-work">
-                            <div class="d-sds curtain-texs  reveal fade-left" data-wow-delay="0.1s">
-                                <span><img src="{% static 'images/g-logo.png' %}" alt="" class="img-fluid"></span><span
-                                    class="tex curtain-tex">Google</span>
-                            </div>
-                            <div class="d-sds curtain-texs">
-                                <span><img src="{% static 'images/alexa-logo.png' %}" alt=""
-                                        class="img-fluid"></span><span class="tex curtain-tex">Alexa</span>
-                            </div>
-                            <div class="d-sds curtain-texs reveal fade-right" data-wow-delay="0.1s">
-                                <span><img src="{% static 'images/siri-logo.png' %}" alt="5t"
-                                        class="img-fluid"></span><span class="tex curtain-tex">Siri</span>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-5">
-                        <div class="col-banner curtain-command">
-                            <img src="{% static 'images/yourcommand.png' %}" alt="sh" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="container">
-            <div class="center-head">
-                <h2 class="">“Hey Google, Close the curtain in the living room”
-                </h2>
-            </div>
-        </div>
-        <section class="img-handphone reveal fade-bottom" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="row my-4">
-                    <div class="col-xs-12 col-sm-12 col-md-6"></div>
-                    <div class="col-xs-12 col-sm-12 col-md-6">
-                        <h2>Control From Anywhere</h2>
-                        <p>
-                            Access your smart home from anywhere in the world. Create unique scenes, define your
-                            ambience, schedules your routines, control all devices and elevate your living experience
-                            with the Onwords smart things app.
-                        </p>
-                        <div class="curtain-work">
-                            <div class="d-sds curtain-texs  reveal fade-left" data-wow-delay="0.1s">
-                                <span><img src="{% static 'images/g-logo.png' %}" alt="" class="img-fluid"></span><span
-                                    class="tex curtain-tex">Google</span>
-                            </div>
-                            <div class="d-sds curtain-texs">
-                                <span><img src="{% static 'images/alexa-logo.png' %}" alt=""
-                                        class="img-fluid"></span><span class="tex curtain-tex">Alexa</span>
-                            </div>
-                            <div class="d-sds curtain-texs reveal fade-right" data-wow-delay="0.1s">
-                                <span><img src="{% static 'images/siri-logo.png' %}" alt="5t"
-                                        class="img-fluid"></span><span class="tex curtain-tex">Siri</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <section class="blursd">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="text-left reveal fade-left" data-wow-delay="0.1s">
-                            <h2>Soft Touch Start</h2>
-                        </div>
-                        <p>
-                            Pull the curtain down gently, smart curtain motor will be activated
-                            to work, and support manually control when power off
-                        </p>
-                    </div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-5">
-                        <img src="{% static 'images/softtouch.png' %}" alt="softtocuh" class="img-fluid hgf">
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <section class="blursdleft">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-5">
-                        <img src="{% static 'images/schedule.png' %}" alt="softtocuh" class="img-fluid hgf">
-                    </div>
-
-                    <div class="col-md-1"></div>
-                    <div class="col-md-6">
-                        <div class="text-left reveal fade-left" data-wow-delay="0.1s">
-                            <h2>Set Schedules</h2>
-                        </div>
-                        <p>
-                            Start your day feeling refreshed and ready to tackle anything with the subtle automation of
-                            our smart curtains. Program them to gently wake you up each morning, so you can begin your
-                            day feeling invigorated and ready for anything.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <div class="container">
-            <div class="center-head">
-                <h2 class="">“OK Google, turn off the curtain in the living room”
-
-                </h2>
-            </div>
-        </div>
-
-
     </div>
+    <section>
+        <h2>Our App</h2>
+    </section>
+    <section>
+        <img src="{% static 'images/new-app.webp' %}" alt="">
+    </section>
     <section class="footer">
         <div class="container">
             <div class="row">
@@ -382,6 +239,35 @@
             $('#toggle-one').bootstrapToggle();
         })
     </script>
+    <!-- <script>
+        let constrain = 20;
+let mouseOverContainer = document.getElementById("ex1");
+let ex1Layer = document.getElementById("ex1-layer");
+
+function transforms(x, y, el) {
+  let box = el.getBoundingClientRect();
+  let calcX = -(y - box.y - (box.height / 2)) / constrain;
+  let calcY = (x - box.x - (box.width / 2)) / constrain;
+  
+  return "perspective(100px) "
+    + "   rotateX("+ calcX +"deg) "
+    + "   rotateY("+ calcY +"deg) ";
+};
+
+ function transformElement(el, xyEl) {
+  el.style.transform  = transforms.apply(null, xyEl);
+}
+
+mouseOverContainer.onmousemove = function(e) {
+  let xy = [e.clientX, e.clientY];
+  let position = xy.concat([ex1Layer]);
+
+  window.requestAnimationFrame(function(){
+    transformElement(ex1Layer, position);
+  });
+};
+
+    </script> -->
 
     <!-- bs-4 -->
 </body>

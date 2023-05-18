@@ -8,5 +8,6 @@ urlpatterns=[
     path('agriautomation',views.agriautomation, name='agriautomation'),
     path('seedemo',views.seedemo,name='seedemo'),
     path('curtain',views.curtain,name='curtain'),
-    path('securitySystem',views.securitySystem,name='securitySystem')
+    path('securitySystem',views.securitySystem,name='securitySystem'),
+    path('ourApp',views.ourApp,name='ourApp')
 ]

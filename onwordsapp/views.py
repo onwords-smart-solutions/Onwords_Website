@@ -15,3 +15,5 @@ def curtain(request):
     return render(request,'curtain.html')
 def securitySystem(request):
     return render(request,'security-system.html')
+def ourApp(request):
+    return render(request,'ourApp.html')
