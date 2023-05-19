@@ -68,8 +68,10 @@ function dayMode(){
   const footer = document.querySelectorAll('.footer-list')
   const dayBright = document.getElementById('daybright')
   const module = document.querySelectorAll('.module')
+  const mails = document.querySelector('.mails')
   const moon = document.getElementById('moon')
   BodyTag.style.backgroundColor='#f0f0f0'
+  mails.style.color='#000'
   BodyTag.style.color='#232323'
   dayBright.style.display='none'
   // sticky.style.backgroundColor='#f0f0f0'
@@ -87,11 +89,13 @@ function nightMode(){
   const BodyTag = document.getElementById('bodyTag')
   const dayBright = document.getElementById('daybright')
   const moon = document.getElementById('moon')
+  const mails = document.querySelector('.mails')
   const footer = document.querySelectorAll('.footer-list')
   BodyTag.style.backgroundColor='#040507'
   BodyTag.style.color='#fff'
   dayBright.style.display='block'
   moon.style.display='none'
+  mails.style.color='#000'
   for (const footers of footer) {
     footers.style.color ='#fff'
   }
