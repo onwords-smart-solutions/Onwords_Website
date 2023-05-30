@@ -9,5 +9,6 @@ urlpatterns=[
     path('seedemo',views.seedemo,name='seedemo'),
     path('curtain',views.curtain,name='curtain'),
     path('securitySystem',views.securitySystem,name='securitySystem'),
-    path('ourApp',views.ourApp,name='ourApp')
+    path('ourApp',views.ourApp,name='ourApp'),
+    path('construction',views.construction,name='construction')
 ]
