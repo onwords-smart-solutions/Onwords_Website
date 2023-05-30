@@ -1056,10 +1056,10 @@ footer {
 
 
 .container {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     padding: 40px 0;
 }
 
