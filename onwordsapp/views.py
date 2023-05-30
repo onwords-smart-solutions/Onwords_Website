@@ -19,3 +19,5 @@ def ourApp(request):
     return render(request,'ourApp.html')
 def construction(request):
     return render(request,'construction.html')
+def gallery(request):
+    return render(request,'gallery')
