@@ -20,4 +20,4 @@ def ourApp(request):
 def construction(request):
     return render(request,'construction.html')
 def gallery(request):
-    return render(request,'gallery')
+    return render(request,'gallery.html')

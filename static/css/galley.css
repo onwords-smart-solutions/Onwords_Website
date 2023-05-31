@@ -1,0 +1,25 @@
+.our-1 a {
+    background-color: red;
+}
+
+#secTwo {
+    display: none;
+}
+
+#secThree {
+    display: none;
+}
+
+.img-gallery-row img {
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px; 
+    width: 100%;
+    height: 100%;
+    margin: 5px 0;
+}
+.img-gallery-row{
+    display: flex;
+    flex-wrap: wrap;
+}
