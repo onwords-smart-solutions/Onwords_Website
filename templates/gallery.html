@@ -113,22 +113,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="our-1" id="BtnOne">
-                        <a href="#">
+                    <div class="our-1" >
+                        <a href="#"id="BtnOne" class="btn-bor-1 let-col">
                             <img src="{%static 'images/our-1.svg'%}"><span>Our Work Ambience</span>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div id="BtnTwo">
-                        <a href="#">
+                    <div >
+                        <a href="#" id="BtnTwo let-col">
                             <img src="{%static 'images/our-gate.svg'%}"><span>Gate Automations</span>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div id="BtnThree">
-                        <a href="#">
+                    <div >
+                        <a href="#" id="BtnThree let-col">
                             <img src="{%static 'images/our-video.svg'%}"><span>Pre request videos</span>
                         </a>
                     </div>
@@ -190,16 +190,27 @@
             secOne.style.display = 'block'
             secTwo.style.display = 'none'
             secThree.style.display = 'none'
+            firstbtn.classList.add('btn-bor-1')
+            sectbtn.classList.remove('btn-bor-2')
+            thirdbtn.classList.remove('btn-bor-3')
         })
         sectbtn.addEventListener('click', function () {
             secOne.style.display = 'none'
             secTwo.style.display = 'block'
             secThree.style.display = 'none'
+            firstbtn.classList.remove('btn-bor-1')
+            sectbtn.classList.add('btn-bor-2')
+            thirdbtn.classList.remove('btn-bor-3')
+        
         })
         thirdtbtn.addEventListener('click', function () {
             secOne.style.display = 'none'
             secTwo.style.display = 'none'
             secThree.style.display = 'block'
+            firstbtn.classList.remove('btn-bor-1')
+            sectbtn.classList.remove('btn-bor-2')
+            thirdbtn.classList.add('btn-bor-3')
+           
         })
 
 
