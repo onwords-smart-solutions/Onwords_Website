@@ -156,4 +156,7 @@
     top: 40px;
     font-size: 12px;
   }
+  .privacy-list li{
+    list-style: block;
+  }
   /* terms and condiation end*/
