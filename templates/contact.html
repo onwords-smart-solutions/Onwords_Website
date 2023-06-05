@@ -1,0 +1,290 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/ourservice.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/security-system.css'  %}">
+    <!-- bs-4 -->
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <!-- carousel -->
+    <title>Onwords</title>
+</head>
+
+<body id="bodyTag">
+    <!-- navbar start -->
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="{% static 'images/logos.png' %}" alt="logo"
+                        class="img-fluid logo"></a>
+                <div class="darkmodeMob">
+                    <img src="{% static 'images/sun-wh.svg' %}" alt="" id="daybright" onclick="dayMode()">
+                    <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid" id="moon"
+                        onclick="nightMode()">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 sticky">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Our Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/ourservices">Smart Home</a></li>
+                                <li><a class="dropdown-item" href="/gateautomation">Gate Automation</a></li>
+                                <li><a class="dropdown-item" href="/agriautomation">Agri Automation</a></li>
+                                <li><a class="dropdown-item" href="#">Software & Hardware</a></li>
+                                <li><a class="dropdown-item" href="#">Web/App Devlopment</a></li>
+                                <li><a class="dropdown-item" href="#">Ui&Ux Designing</a></li>
+                                <li><a class="dropdown-item" href="#">Graphics Designing</a></li>
+                                <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                                <li><a class="dropdown-item" href="/construction">Onwords Construction</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/securitySystem">Security System</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ourApp">Our App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item active-nav">
+                            <a class="nav-link" href="/contact">Contact</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex">
+                        <div class="module-border-wrap">
+                            <div class="module">
+                                Get Started
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="darkmode">
+                    <img src="{% static 'images/sun-wh.svg' %}" alt="" id="daybright" onclick="dayMode()">
+                    <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid" id="moon"
+                        onclick="nightMode()">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- navbar end -->
+    <button type="button" class="backtop" id="btn-back-to-top">
+        <a href=""> <i class="fas fa-arrow-up"></i></a>
+    </button>
+    </div>
+    <div class="wrapper">
+        <div class="contact-banner">
+            <h2>CONTACT US</h2>
+        </div>
+       <section>
+        <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="box-contact">
+                    <img src="{% static 'images/phone-icon.svg' %}" alt="" class="img-fluid">
+                    <h5>Phone</h5>
+                    <h4>77086 30275</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box-contact">
+                    <img src="{% static 'images/location-icon.svg' %}" alt="" class="img-fluid">
+                    <h5>Address</h5>
+                    <h4>Onwords Smart Solutions
+                        Coimbatore, IN - 642 005</h4>
+                  
+                </div>
+            </div>
+            <div class="col">
+                <div class="box-contacts">
+                    <img src="{% static 'images/email-icon.svg' %}" alt="" class="img-fluid">
+                    <h5>E-Mail</h5>
+                    <h4>cs@onwords.in</h4>
+                </div>
+            </div>
+        </div>
+        <div class="top-terms">
+            <div class="privacy-title">
+                <h2 style="text-transform: capitalize;">Connect With Us</h2>
+                <p>Light up your world for every occasion and emotion.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <form action="" class="contact-form">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="number" placeholder="Mobile Number"><br><br>
+                    <button class="module-border-wrap" style="width: 150px;" type="submit">
+                        <div class="module fs-6 px-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Submit
+                        </div>
+                    </button>
+                </form>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        </div>
+       </section>
+
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3">
+                        <img src="{% static 'images/logos.png' %}" alt="" class="img-fluid sdf">
+                        <p>Onwords Smart Solutions <br>
+                            RR Garden, Zamin Muthur, <br>
+                            Pollachi,
+                            Coimbatore, IN - 642 005 <br>
+                        <div class="fgh">
+                            <span><a href="tel:7708630275" class="footer-list"><i class="fa-solid fa-phone"></i> 77086
+                                    30275</a></span>
+                            <br><br>
+                            <span><a href="mailto:cs@onwords.in" class="footer-list"><i
+                                        class="fa-solid fa-envelope"></i>cs@onwords.in</a></span>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-2">
+                        <ul class="listx">
+                            <h5>Quick Links</h5>
+                            <li><a href="/" class="footer-list">Home</a></li>
+                            <li><a href="/ourservices" class="footer-list">Our Services</a></li>
+                            <li><a href="" class="footer-list">Security System</a></li>
+                            <li><a href="" class="footer-list">Our App</a></li>
+                            <li><a href="" class="footer-list">About Us</a></li>
+                            <li><a href="" class="footer-list">Contact</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="listx">
+                            <h5>Our Services</h5>
+                            <li><a href="" class="footer-list">Smart Home</a></li>
+                            <li><a href="" class="footer-list">Web /App Devlopment</a></li>
+                            <li><a href="" class="footer-list">Digital Marketing</a></li>
+                            <li><a href="" class="footer-list">UI & UX Designing</a></li>
+                            <li><a href="" class="footer-list">Graphic Designing</a></li>
+                            <li><a href="" class="footer-list">Construction</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <h5>Subscribe Us</h5>
+                        <input type="email" name="" id="" class="mails" placeholder="Enter Your Email"><br>
+                        <button type="submit" class="sub">Subscribe</button>
+                        <div class="row my-4">
+                            <div class="col df">
+                                <a href="https://www.youtube.com/@OnwordsSmartSolutions" target="_blank"><img
+                                        src="{% static 'images/youtube.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col df">
+                                <a href="https://www.facebook.com/teamonwords" target="_blank">
+                                    <img src="{% static 'images/facebook.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col df">
+                                <a href="https://www.instagram.com/team.onwords/
+                               " target="_blank">
+                                    <img src="{% static 'images/instagram.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col df">
+                                <a href="" target="_blank">
+                                    <img src="{% static 'images/linkedin.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col df">
+                                <a href="https://twitter.com/TeamOnwords
+                              " target="_blank">
+                                    <img src="{% static 'images/twitter.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="jg">
+                                <a href="https://play.google.com/store/apps/details?id=com.onwords.smarthome">
+                                    <img src="{% static 'images/play.png' %}" alt="df" class="img-fluid">
+                                </a>
+                                <a href="https://apps.apple.com/in/app/onwords-smart-home/id1598367434"><img
+                                        src="{% static 'images/apple.png' %}" alt="" class="img-fluid"></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="text-white">
+                    <span class="text-center" style="text-align: center;"> © Copyright ©2023
+                        Onwords. All Rights Reserved | Privacy Policy</span>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+
+    <!-- bootstrap js -->
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+    <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
+    <!-- bootstrap js -->
+    <script src="{%static 'js/main.js' %}"></script>
+    <script src="{% static 'js/ourservices.js' %}"></script>
+    <!-- carousel slider end -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+
+    <!-- Calling Slick Library -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- carousel slider script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- bs-4 -->
+   
+
+
+
+
+</body>
+
+</html>
