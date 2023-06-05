@@ -147,6 +147,7 @@
     position: absolute;
     top: -20px;
     text-align: center;
+    font-size: 40px;
     width: fit-content;
     height: auto;
     text-transform: uppercase;
@@ -154,12 +155,16 @@
   .privacy-title p{
     position: absolute;
     top: 40px;
-    font-size: 12px;
+    font-size: 15px;
   }
   .privacy-list li{
     list-style: block;
   }
   .privacy-p p{
     padding-left: 10px;
+  }
+  .privacy-p h6{
+    padding: 10px 0px;
+    font-size: 20px;
   }
   /* terms and condiation end*/
