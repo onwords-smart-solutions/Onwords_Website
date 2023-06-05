@@ -24,4 +24,6 @@ def gallery(request):
 def privacyPolicy(request):
     return render(request,'privacyPolicy.html')
 def disclaimer(request):
-    return render(request,'disclaimer.html')    
+    return render(request,'disclaimer.html')   
+def contact(request):
+    return render(request,'contact.html')     
