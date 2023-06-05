@@ -1,6 +1,3 @@
-.our-1 a {
-    background-color: red;
-}
 
 #secTwo {
     display: none;
@@ -20,6 +17,34 @@
     margin: 5px 0;
 }
 .img-gallery-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-gallery-row-2 img {
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px; 
+    width: 100%;
+    height: 100%;
+    margin: 5px 0;
+}
+.img-gallery-row-2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-gallery-row-3 img {
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px; 
+    width: 100%;
+    height: 100%;
+    margin: 5px 0;
+}
+.img-gallery-row-3{
     display: flex;
     flex-wrap: wrap;
 }

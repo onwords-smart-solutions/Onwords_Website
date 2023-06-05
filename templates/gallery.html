@@ -142,61 +142,67 @@
         <div class="container">
             <div class="img-gallery-row">
                 <img src="{% static 'images/galler-1-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-1-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-1-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-1-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-1-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-1-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-1-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-1-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-1-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-1-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-1-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-1-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-1-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-1-img.svg' %}" alt="" class="img-fluid">
-                
+                <img src="{% static 'images/galler-2-img.svg' %}" alt="" class="img-fluid">
+                <img src="{% static 'images/galler-3-img.svg' %}" alt="" class="img-fluid">
+                <img src="{% static 'images/galler-4-img.svg' %}" alt="" class="img-fluid">
+                <img src="{% static 'images/galler-5-img.svg' %}" alt="" class="img-fluid">
+                <img src="{% static 'images/galler-6-img.svg' %}" alt="" class="img-fluid">
+
             </div>
-           
+
         </div>
     </section>
     <section id="secTwo">
         <div class="container">
-            <h2>Two</h2>
+            <div class="img-gallery-row-2">
+                <img src="{% static 'images/galler-6-img.svg' %}" alt="" class="img-fluid">
+                <img src="{% static 'images/galler-5-img.svg' %}" alt="" class="img-fluid">
+                <img src="{% static 'images/galler-4-img.svg' %}" alt="" class="img-fluid">
+                <img src="{% static 'images/galler-3-img.svg' %}" alt="" class="img-fluid">
+                <img src="{% static 'images/galler-2-img.svg' %}" alt="" class="img-fluid">
+                <img src="{% static 'images/galler-1-img.svg' %}" alt="" class="img-fluid">
+            </div>
 
         </div>
     </section>
     <section id="secThree">
         <div class="container">
-            <h2>Three</h2>
+            <div class="img-gallery-row-3">
+                <img src="{% static 'images/galler-2-img.svg' %}" alt="" class="img-fluid">
+                <img src="{% static 'images/galler-1-img.svg' %}" alt="" class="img-fluid">
+                <img src="{% static 'images/galler-4-img.svg' %}" alt="" class="img-fluid">
+                <img src="{% static 'images/galler-6-img.svg' %}" alt="" class="img-fluid">
+                <img src="{% static 'images/galler-5-img.svg' %}" alt="" class="img-fluid">
+                <img src="{% static 'images/galler-3-img.svg' %}" alt="" class="img-fluid">
+            </div>
 
         </div>
     </section>
     <script>
-        let firstbtn =document.getElementById("BtnOne")
-        let sectbtn=document.getElementById("BtnTwo")
-        let thirdtbtn=document.getElementById("BtnThree")
-        let secOne=document.getElementById("secOne")
-        let secTwo=document.getElementById("secTwo")
-        let secThree=document.getElementById("secThree")
-            
-        firstbtn.addEventListener('click',function(){
-            secOne.style.display='block'
-            secTwo.style.display='none'
-            secThree.style.display='none'
+        let firstbtn = document.getElementById("BtnOne")
+        let sectbtn = document.getElementById("BtnTwo")
+        let thirdtbtn = document.getElementById("BtnThree")
+        let secOne = document.getElementById("secOne")
+        let secTwo = document.getElementById("secTwo")
+        let secThree = document.getElementById("secThree")
+
+        firstbtn.addEventListener('click', function () {
+            secOne.style.display = 'block'
+            secTwo.style.display = 'none'
+            secThree.style.display = 'none'
         })
-        sectbtn.addEventListener('click',function(){
-            secOne.style.display='none'
-            secTwo.style.display='block'
-            secThree.style.display='none'
+        sectbtn.addEventListener('click', function () {
+            secOne.style.display = 'none'
+            secTwo.style.display = 'block'
+            secThree.style.display = 'none'
         })
-        thirdtbtn.addEventListener('click',function(){
-            secOne.style.display='none'
-            secTwo.style.display='none'
-            secThree.style.display='block'
+        thirdtbtn.addEventListener('click', function () {
+            secOne.style.display = 'none'
+            secTwo.style.display = 'none'
+            secThree.style.display = 'block'
         })
-        
-    
+
+
     </script>
 </body>
 
