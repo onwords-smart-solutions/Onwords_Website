@@ -1,0 +1,35 @@
+.our-app-banner {
+    margin-top: 100px;
+    height: 90vh;
+}
+
+.r-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.r-banner::after {
+    position: absolute;
+    content: '';
+    top: 43px;
+    right: 60px;
+    width: 800px;
+    height: 460px;
+    border: 2px solid  linear-gradient(89.98deg, #C94DA7 0.01%, #7B52DE 97.71%);
+    z-index: -1;
+}
+
+.r-banner img {
+    width: 300px;
+}
+
+.first-box {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 400px;
+    width: 500px;
+}
