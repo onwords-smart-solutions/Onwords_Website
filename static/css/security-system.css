@@ -159,4 +159,7 @@
   .privacy-list li{
     list-style: block;
   }
+  .privacy-p p{
+    padding-left: 10px;
+  }
   /* terms and condiation end*/
