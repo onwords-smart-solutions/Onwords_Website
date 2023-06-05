@@ -12,4 +12,5 @@ urlpatterns=[
     path('ourApp',views.ourApp,name='ourApp'),
     path('construction',views.construction,name='construction'),
     path('gallery',views.gallery,name='gallery'),
+    path('privacyPolicy',views.privacyPolicy,name='privacyPolicy'),
 ]

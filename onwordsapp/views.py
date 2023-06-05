@@ -21,3 +21,6 @@ def construction(request):
     return render(request,'construction.html')
 def gallery(request):
     return render(request,'gallery.html')
+
+def privacyPolicy(request):
+    return render(request,'privacyPolicy.html')
