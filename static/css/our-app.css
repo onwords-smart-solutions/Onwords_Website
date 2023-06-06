@@ -149,7 +149,37 @@
 .center-mockup{
     position: relative;
     text-align: center;
+    overflow: hidden;
 }
 .mockup-imgs{
     height: 70vh;
+    overflow: hidden;
+    position: relative;
 }
+.slid-img img{
+    position: absolute;
+    top: 10px;
+    left: 360px;
+    width: 210px;
+    height: 95%;
+    z-index: -1;
+    overflow: hidden;
+}
+.img-app-2{
+    margin-left: -300px;
+}
+.img-app-3{
+    margin-left: -220px;
+}
+.img-app-4{
+    margin-left: 300px;
+}
+.img-app-5{
+    margin-left: 220px;
+}
+
+/* ----- */
+
+
+
+
