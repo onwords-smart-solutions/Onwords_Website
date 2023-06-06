@@ -177,6 +177,12 @@ color: white;
     font-size: 24px;
     /* line-height: 128.84%; */
 }
+.gallery-cols{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+   }
 
 /* .row-gall-1:hover img{
     -webkit-animation: shine .75s;
@@ -196,3 +202,24 @@ color: white;
 
 
 /* ----------gLLERY END */
+
+
+@media screen and (max-width:1000px) {
+    .row-gall-1 img {
+       margin: 15px;
+       width: 41%;
+    }
+   .gallerBtn{
+    font-size: 10px;
+    flex-wrap: nowrap;
+   }
+   .gallerBtn img{
+    width: 10px;
+   }
+   .gallery-cols{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+   }
+ }

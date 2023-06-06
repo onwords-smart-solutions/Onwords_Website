@@ -1,4 +1,8 @@
 @media screen and (max-width:1000px) {
+   .row-gall-1 img {
+      margin: 15px;
+      width: 41%;
+   }
    .adv-box {
       margin-top: 30px;
    }
@@ -405,5 +409,8 @@
 
    /* ---our services end */
 
+/* ---------gallery start */
 
+/* ---------gallery end */
 }
+
