@@ -60,80 +60,122 @@
 /* .let-col{
 color: white;
 
-} */ 
+} */
 
 
 /* ----------gLLERY START */
-#gal-2,#gal-3{
+#gal-2,
+#gal-3 {
     display: none;
 }
-.gallerBtn{
+
+.gallerBtn {
     color: #fff;
+    font-family: Sfpro ;
+    font-weight: 400;
+    font-size: 20px;
 }
-.act-galleryOne,.act-gallery-two,.act-gallery-three{
+.gallerBtn:hover{
+    color: #ffff;
+}
+
+.act-galleryOne,
+.act-gallery-two,
+.act-gallery-three {
     border-bottom: 2px solid #fff;
-    border-image:linear-gradient(89.98deg, #C94DA7 0.01%, #7B52DE 97.71%); 
+    border-image: linear-gradient(89.98deg, #C94DA7 0.01%, #7B52DE 97.71%);
     border-image-slice: 1;
     padding: 3px 0px;
 
 }
-.row-gall-1 img{
+
+.row-gall-1 img {
     margin: 15px;
     width: 30%;
- 
+
 }
-@keyframes gall-anim{
-    0%{
+
+@keyframes gall-anim {
+    0% {
         margin-top: -20px;
     }
-    100%{
+
+    100% {
         margin-top: 10px;
     }
 }
-.row-gall-1 img:nth-child(odd){
-    margin-top: 100px;
-    animation: gall-anim 5s linear infinite;
-}
-.row-gall-2 img{
-    margin: 15px;
-    width: 30%;
- 
-}
-@keyframes gall-anim{
-    0%{
-        margin-top: -20px;
-    }
-    100%{
-        margin-top: 10px;
-    }
-}
-.row-gall-2 img:nth-child(odd){
+
+.row-gall-1 img:nth-child(odd) {
     margin-top: 100px;
     animation: gall-anim 5s linear infinite;
 }
 
-.row-gall-3 img{
+.row-gall-2 img {
     margin: 15px;
     width: 30%;
- 
+
 }
-@keyframes gall-anim{
-    0%{
+
+@keyframes gall-anim {
+    0% {
         margin-top: -20px;
     }
-    100%{
+
+    100% {
         margin-top: 10px;
     }
 }
-.row-gall-3 img:nth-child(odd){
+
+.row-gall-2 img:nth-child(odd) {
     margin-top: 100px;
     animation: gall-anim 5s linear infinite;
 }
-.ambience:focus{
+
+.row-gall-3 img {
+    margin: 15px;
+    width: 30%;
+
+}
+
+@keyframes gall-anim {
+    0% {
+        margin-top: -20px;
+    }
+
+    100% {
+        margin-top: 10px;
+    }
+}
+
+.row-gall-3 img:nth-child(odd) {
+    margin-top: 100px;
+    animation: gall-anim 5s linear infinite;
+}
+
+.ambience:focus {
     color: #ffff;
 }
-.ambience{
+
+.ambience {
     padding: 0 10px;
+}
+
+.gall-head {
+    padding-top: 90px;
+    font-family: SfPro;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    /* line-height: 82px; */
+    
+}
+
+.gall-head-2 {
+    font-family: SfPro ;
+    /* font-style: normal; */
+    font-weight: 200;
+    font-size: 24px;
+    /* line-height: 128.84%; */
 }
 
 /* .row-gall-1:hover img{
