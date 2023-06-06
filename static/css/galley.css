@@ -1,4 +1,4 @@
-#secTwo {
+/* #secTwo {
     display: none;
 }
 
@@ -60,4 +60,22 @@
 /* .let-col{
 color: white;
 
-} */
+} */ 
+
+
+/* ----------gLLERY START */
+#gal-2,#gal-3{
+    display: none;
+}
+.gallerBtn{
+    color: #fff;
+}
+.act-galleryOne,.act-gallery-two,.act-gallery-three{
+    border-bottom: 2px solid #fff;
+    border-image:linear-gradient(89.98deg, #C94DA7 0.01%, #7B52DE 97.71%); 
+    border-image-slice: 1;
+    padding: 3px 0px;
+
+}
+
+/* ----------gLLERY END */
