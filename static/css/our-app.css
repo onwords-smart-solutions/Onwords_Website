@@ -33,24 +33,123 @@
     background-color: #fff;
     border-radius: 10px;
     height: 430px;
-    width: 500px;
-    padding: 40px;
+    width: 450px;
+    padding: 30px;
 }
-.first-box h3{
+
+.first-box h3 {
     background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 40px;
 }
-.first-box h6{
+
+.first-box h6 {
     color: #000;
     font-size: 20px;
     width: 80%;
-    padding-top:40px ;
+    padding-top: 40px;
 }
-.add-download{
+
+.add-download {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 30px;
+}
+
+.iphone-13 {
+    position: relative;
+    width: 100%;
+}
+
+.iphone-13 img {
+    width: fit-content;
+    position: relative;
+    height: 80vh;
+}
+
+.span-box {
+    position: absolute;
+    content: '';
+    top: 50px;
+    right: 100px;
+    width: 170px;
+    height: 80px;
+    background: rgba(35, 34, 34, 0.3);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+.span-box img{
+    width: 50px;
+}
+.span-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.dick{
+    display: flex;
+    margin-bottom: 40px;
+    /* align-items: center; */
+}
+.dick img{
+    width: 50px;
+}
+.app-store-content{
+    margin-left: 20px;
+}
+.app-store-content h5{
+    text-transform: uppercase;
+}
+.app-store-content p{
+    color: #6C6C72;
+}
+.app-con-sec{
+    margin-top: 100px;
+}
+.app-title h2{
+    text-transform: capitalize;
+}
+.app-sec-title{
+    font-size: 45px;
+}
+.center-app-img{
+    display: flex;
+    /* width: 100%; */
+    align-items: center;
+    justify-content: center;
+}
+.center-app-img img{
+    height: 80vh;
+    /* width: 100%; */
+    text-align: center;
+}
+.l-app-feature{
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+.r-app-feature{
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+.app-feature{
+    text-align: center;
+}
+
+.center-mockup{
+    position: relative;
+    text-align: center;
+}
+.mockup-imgs{
+    height: 70vh;
 }
