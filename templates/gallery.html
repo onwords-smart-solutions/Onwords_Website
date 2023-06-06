@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +9,11 @@
     <!-- bootstrap css -->
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
     <link rel="stylesheet" href="{% static 'css/ourservice.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{%static 'css/gate.css'%}">
-    <link rel="stylesheet" href="{%static 'css/galley.css'%}">
+    <link rel="stylesheet" href="{% static 'css/security-system.css'  %}">
+    <link rel="stylesheet" href="{% static 'css/galley.css'  %}">
     <!-- bs-4 -->
     <!-- bootstrap css -->
     <link rel="stylesheet" type="text/css"
@@ -28,11 +28,6 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
     <!-- carousel -->
-    <!-- cdn link -->
-
-
-
-    <!-- cdn link -->
     <title>Onwords</title>
 </head>
 
@@ -43,6 +38,11 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="/"><img src="{% static 'images/logos.png' %}" alt="logo"
                         class="img-fluid logo"></a>
+                <div class="darkmodeMob">
+                    <img src="{% static 'images/sun-wh.svg' %}" alt="" id="daybright" onclick="dayMode()">
+                    <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid" id="moon"
+                        onclick="nightMode()">
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -59,8 +59,7 @@
                                 Our Services
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/ourservices">Smart Home</a>
-                                <li>
+                                <li><a class="dropdown-item" href="/ourservices">Smart Home</a></li>
                                 <li><a class="dropdown-item" href="/gateautomation">Gate Automation</a></li>
                                 <li><a class="dropdown-item" href="/agriautomation">Agri Automation</a></li>
                                 <li><a class="dropdown-item" href="#">Software & Hardware</a></li>
@@ -71,6 +70,7 @@
                                 <li><a class="dropdown-item" href="/construction">Onwords Construction</a></li>
                             </ul>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="/securitySystem">Security System</a>
                         </li>
@@ -83,138 +83,246 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/contact">Contact</a>
                         </li>
-
                     </ul>
+
                     <form class="d-flex">
-                        <button class="btn btn-outline-warning text-dark bg-warning fw-bold" type="submit"><i
-                                class="fa-solid fa-phone"></i>
-                            SCHEDULE A
-                            CALL</button>
+                        <div class="module-border-wrap">
+                            <div class="module">
+                                Get Started
+                            </div>
+                        </div>
                     </form>
+                </div>
+                <div class="darkmode">
+                    <img src="{% static 'images/sun-wh.svg' %}" alt="" id="daybright" onclick="dayMode()">
+                    <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid" id="moon"
+                        onclick="nightMode()">
                 </div>
             </div>
         </nav>
     </header>
     <!-- navbar end -->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="text-center">
-                        <h2>Our Gallery</h2>
-                        <h6>Check out our Portfolio Collections</h6>
+    <button type="button" class="backtop" id="btn-back-to-top">
+        <a href=""> <i class="fas fa-arrow-up"></i></a>
+    </button>
+    </div>
+    <div class="wrapper">
+        
+        <section>
+            <center>
+                <h2>Our Gallery</h2>
+                <h5>Check out our Portfolio Collections</h5>
+            </center>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div>
+                            <a href="#" id="one-gal-btn" class="gallerBtn act-galleryOne">
+                                <span><img src="{%static 'images/our-1.svg'%}"></span><span>Our Work Ambience</span>
+                            </a>
+                        </div>
                     </div>
+                    <div class="col-md-4">
+                        <div>
+                            <a href="#" id="two-gal-btn"class="gallerBtn">
+                                <span> <img src="{%static 'images/our-gate.svg'%}"></span><span>Gate Automations</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                            <a href="#" id="three-gal-btn"class="gallerBtn">
+                                <span>  <img src="{%static 'images/our-video.svg'%}"></span><span>Pre request videos</span>
+                            </a>
+                        </div>
+                    </div>
+    
                 </div>
             </div>
-        </div>
-    </section>
-    <section>
+        </section>
+        <section id="gal-1">galler-one</section>
+        <section id="gal-2">galler-two</section>
+        <section id="gal-3">galler-three</section>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="our-1">
-                        <a href="#" id="BtnOne" class="btn-bor-1 let-col">
-                            <img src="{%static 'images/our-1.svg'%}"><span>Our Work Ambience</span>
-                        </a>
+
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3">
+                        <img src="{% static 'images/logos.png' %}" alt="" class="img-fluid sdf">
+                        <p>Onwords Smart Solutions <br>
+                            RR Garden, Zamin Muthur, <br>
+                            Pollachi,
+                            Coimbatore, IN - 642 005 <br>
+                        <div class="fgh">
+                            <span><a href="tel:7708630275" class="footer-list"><i class="fa-solid fa-phone"></i> 77086
+                                    30275</a></span>
+                            <br><br>
+                            <span><a href="mailto:cs@onwords.in" class="footer-list"><i
+                                        class="fa-solid fa-envelope"></i>cs@onwords.in</a></span>
+                        </div>
+                        </p>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div>
-                        <a href="#" id="BtnTwo let-col">
-                            <img src="{%static 'images/our-gate.svg'%}"><span>Gate Automations</span>
-                        </a>
+                    <div class="col-sm-6 col-md-2">
+                        <ul class="listx">
+                            <h5>Quick Links</h5>
+                            <li><a href="/" class="footer-list">Home</a></li>
+                            <li><a href="/ourservices" class="footer-list">Our Services</a></li>
+                            <li><a href="" class="footer-list">Security System</a></li>
+                            <li><a href="" class="footer-list">Our App</a></li>
+                            <li><a href="" class="footer-list">About Us</a></li>
+                            <li><a href="" class="footer-list">Contact</a></li>
+
+                        </ul>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div>
-                        <a href="#" id="BtnThree let-col">
-                            <img src="{%static 'images/our-video.svg'%}"><span>Pre request videos</span>
-                        </a>
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="listx">
+                            <h5>Our Services</h5>
+                            <li><a href="" class="footer-list">Smart Home</a></li>
+                            <li><a href="" class="footer-list">Web /App Devlopment</a></li>
+                            <li><a href="" class="footer-list">Digital Marketing</a></li>
+                            <li><a href="" class="footer-list">UI & UX Designing</a></li>
+                            <li><a href="" class="footer-list">Graphic Designing</a></li>
+                            <li><a href="" class="footer-list">Construction</a></li>
+                        </ul>
+
                     </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <h5>Subscribe Us</h5>
+                        <input type="email" name="" id="" class="mails" placeholder="Enter Your Email"><br>
+                        <button type="submit" class="sub">Subscribe</button>
+                        <div class="row my-4">
+                            <div class="col df">
+                                <a href="https://www.youtube.com/@OnwordsSmartSolutions" target="_blank"><img
+                                        src="{% static 'images/youtube.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col df">
+                                <a href="https://www.facebook.com/teamonwords" target="_blank">
+                                    <img src="{% static 'images/facebook.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col df">
+                                <a href="https://www.instagram.com/team.onwords/
+                               " target="_blank">
+                                    <img src="{% static 'images/instagram.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col df">
+                                <a href="" target="_blank">
+                                    <img src="{% static 'images/linkedin.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col df">
+                                <a href="https://twitter.com/TeamOnwords
+                              " target="_blank">
+                                    <img src="{% static 'images/twitter.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="jg">
+                                <a href="https://play.google.com/store/apps/details?id=com.onwords.smarthome">
+                                    <img src="{% static 'images/play.png' %}" alt="df" class="img-fluid">
+                                </a>
+                                <a href="https://apps.apple.com/in/app/onwords-smart-home/id1598367434"><img
+                                        src="{% static 'images/apple.png' %}" alt="" class="img-fluid"></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="text-white">
+                    <span class="text-center" style="text-align: center;"> © Copyright ©2023
+                        Onwords. All Rights Reserved | Privacy Policy</span>
                 </div>
 
             </div>
+        </section>
+    </div>
 
-        </div>
-    </section>
-    <section id="secOne">
-        <div class="container">
-            <div class="img-gallery-row">
-                <img src="{% static 'images/galler-1-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-2-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-3-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-4-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-5-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-6-img.svg' %}" alt="" class="img-fluid">
 
-            </div>
+    <!-- bootstrap js -->
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+    <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
+    <!-- bootstrap js -->
+    <script src="{%static 'js/main.js' %}"></script>
+    <script src="{% static 'js/ourservices.js' %}"></script>
+    <script src="{% static 'js/gallery.js'%}"></script>
+    <!-- carousel slider end -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
 
-        </div>
-    </section>
-    <section id="secTwo">
-        <div class="container">
-            <div class="img-gallery-row-2">
-                <img src="{% static 'images/galler-6-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-5-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-4-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-3-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-2-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-1-img.svg' %}" alt="" class="img-fluid">
-            </div>
+    <!-- Calling Slick Library -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-        </div>
-    </section>
-    <section id="secThree">
-        <div class="container">
-            <div class="img-gallery-row-3">
-                <img src="{% static 'images/galler-2-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-1-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-4-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-6-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-5-img.svg' %}" alt="" class="img-fluid">
-                <img src="{% static 'images/galler-3-img.svg' %}" alt="" class="img-fluid">
-            </div>
-
-        </div>
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- carousel slider script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- bs-4 -->
     <script>
-        let firstbtn = document.getElementById("BtnOne")
-        let sectbtn = document.getElementById("BtnTwo")
-        let thirdtbtn = document.getElementById("BtnThree")
-        let secOne = document.getElementById("secOne")
-        let secTwo = document.getElementById("secTwo")
-        let secThree = document.getElementById("secThree")
+        const dayLight = document.getElementById('dayLight')
+        const night = document.getElementById('night')
+        const dayBtn = document.getElementById('dayBtn')
+        const nightBtn = document.getElementById('nightBtn')
 
-        firstbtn.addEventListener('click', function () {
-            secOne.style.display = 'block'
-            secTwo.style.display = 'none'
-            secThree.style.display = 'none'
-            firstbtn.classList.add('btn-bor-1')
-            sectbtn.classList.remove('btn-bor-2')
-            thirdbtn.classList.remove('btn-bor-3')
+        dayBtn.addEventListener('click', (e) => {
+            event.preventDefault();
+            dayLight.style.display = 'block'
+            night.style.display = 'none'
         })
-        sectbtn.addEventListener('click', function () {
-            secOne.style.display = 'none'
-            secTwo.style.display = 'block'
-            secThree.style.display = 'none'
-            firstbtn.classList.remove('btn-bor-1')
-            sectbtn.classList.add('btn-bor-2')
-            thirdbtn.classList.remove('btn-bor-3')
-
-        })
-        thirdtbtn.addEventListener('click', function () {
-            secOne.style.display = 'none'
-            secTwo.style.display = 'none'
-            secThree.style.display = 'block'
-            firstbtn.classList.remove('btn-bor-1')
-            sectbtn.classList.remove('btn-bor-2')
-            thirdbtn.classList.add('btn-bor-3')
-
+        nightBtn.addEventListener('click', (e) => {
+            event.preventDefault();
+            dayLight.style.display = 'none'
+            night.style.display = 'block'
         })
 
+
+        // ---topbtn start
+        //Get the button
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        // ---topbtn end
 
     </script>
+
+
+
+
 </body>
 
 </html>
+
+
+
+
+
+
