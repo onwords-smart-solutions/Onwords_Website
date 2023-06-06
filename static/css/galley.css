@@ -129,6 +129,29 @@ color: white;
     margin-top: 100px;
     animation: gall-anim 5s linear infinite;
 }
+.ambience:focus{
+    color: #ffff;
+}
+.ambience{
+    padding: 0 10px;
+}
+
+/* .row-gall-1:hover img{
+    -webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+} */
+
+
 
 
 /* ----------gLLERY END */
