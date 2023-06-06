@@ -209,6 +209,14 @@ color: white;
        margin: 15px;
        width: 41%;
     }
+    .row-gall-2 img {
+        margin: 15px;
+        width: 41%;
+     }
+     .row-gall-3 img {
+        margin: 15px;
+        width: 41%;
+     }
    .gallerBtn{
     font-size: 10px;
     flex-wrap: nowrap;
