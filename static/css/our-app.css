@@ -15,11 +15,13 @@
 .r-banner::after {
     position: absolute;
     content: '';
-    top: 43px;
+    top: 40px;
     right: 60px;
     width: 800px;
     height: 460px;
-    border: 2px solid  linear-gradient(89.98deg, #C94DA7 0.01%, #7B52DE 97.71%);
+    border: 3px solid transparent;
+    border-image: linear-gradient(to top, #C94DA7 0.01%, #7B52DE 97.71%);
+    border-image-slice: 1;
     z-index: -1;
 }
 
@@ -30,6 +32,25 @@
 .first-box {
     background-color: #fff;
     border-radius: 10px;
-    height: 400px;
+    height: 430px;
     width: 500px;
+    padding: 40px;
+}
+.first-box h3{
+    background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+}
+.first-box h6{
+    color: #000;
+    font-size: 20px;
+    width: 80%;
+    padding-top:40px ;
+}
+.add-download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
 }
