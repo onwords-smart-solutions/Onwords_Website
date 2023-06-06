@@ -77,5 +77,58 @@ color: white;
     padding: 3px 0px;
 
 }
+.row-gall-1 img{
+    margin: 15px;
+    width: 30%;
+ 
+}
+@keyframes gall-anim{
+    0%{
+        margin-top: -20px;
+    }
+    100%{
+        margin-top: 10px;
+    }
+}
+.row-gall-1 img:nth-child(odd){
+    margin-top: 100px;
+    animation: gall-anim 5s linear infinite;
+}
+.row-gall-2 img{
+    margin: 15px;
+    width: 30%;
+ 
+}
+@keyframes gall-anim{
+    0%{
+        margin-top: -20px;
+    }
+    100%{
+        margin-top: 10px;
+    }
+}
+.row-gall-2 img:nth-child(odd){
+    margin-top: 100px;
+    animation: gall-anim 5s linear infinite;
+}
+
+.row-gall-3 img{
+    margin: 15px;
+    width: 30%;
+ 
+}
+@keyframes gall-anim{
+    0%{
+        margin-top: -20px;
+    }
+    100%{
+        margin-top: 10px;
+    }
+}
+.row-gall-3 img:nth-child(odd){
+    margin-top: 100px;
+    animation: gall-anim 5s linear infinite;
+}
+
 
 /* ----------gLLERY END */
