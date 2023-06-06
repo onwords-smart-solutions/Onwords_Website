@@ -77,5 +77,81 @@ color: white;
     padding: 3px 0px;
 
 }
+.row-gall-1 img{
+    margin: 15px;
+    width: 30%;
+ 
+}
+@keyframes gall-anim{
+    0%{
+        margin-top: -20px;
+    }
+    100%{
+        margin-top: 10px;
+    }
+}
+.row-gall-1 img:nth-child(odd){
+    margin-top: 100px;
+    animation: gall-anim 5s linear infinite;
+}
+.row-gall-2 img{
+    margin: 15px;
+    width: 30%;
+ 
+}
+@keyframes gall-anim{
+    0%{
+        margin-top: -20px;
+    }
+    100%{
+        margin-top: 10px;
+    }
+}
+.row-gall-2 img:nth-child(odd){
+    margin-top: 100px;
+    animation: gall-anim 5s linear infinite;
+}
+
+.row-gall-3 img{
+    margin: 15px;
+    width: 30%;
+ 
+}
+@keyframes gall-anim{
+    0%{
+        margin-top: -20px;
+    }
+    100%{
+        margin-top: 10px;
+    }
+}
+.row-gall-3 img:nth-child(odd){
+    margin-top: 100px;
+    animation: gall-anim 5s linear infinite;
+}
+.ambience:focus{
+    color: #ffff;
+}
+.ambience{
+    padding: 0 10px;
+}
+
+/* .row-gall-1:hover img{
+    -webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+} */
+
+
+
 
 /* ----------gLLERY END */
