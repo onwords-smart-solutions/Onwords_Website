@@ -214,6 +214,30 @@ overflow-x: scroll;
 }
 
 /* ----- */
+.wrp{
+position: fixed;
+width: 100vw;
+l
+}
+.slider-gallery {
+    width: 400vw;
+    height: 300px;
+  }
+  
+  .slide {
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    float: left;
+  }
+  
+  .slide:nth-child(odd) {
+    background: blue;
+  }
+  
+  .slide:nth-child(even) {
+    background: red;
+  }
 
 
 
