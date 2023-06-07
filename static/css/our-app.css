@@ -161,121 +161,27 @@
     text-align: center;
 }
 
-.center-mockup {
+.v-slide {
     position: relative;
-    overflow: hidden;
-    height: 80vh;
+    height: 100%;
     width: 100%;
-    text-align: center;
 }
 
-.center-mockup img {
-    z-index: 10;
-    height: 100%;
-
-
+.slide-btns {
+    position:absolute;
+    bottom: 0;
+    right: 20px;
 }
 
-.center-back-img {
-    position: absolute;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
-    height: 100%;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    overflow-x: scroll;
+.slide-btns button {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 0px 20px;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(180deg, #7652E2 0%, #CB4DA6 100%);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    transform: rotate(-180deg);
 }
 
-.center-back-img img {
-    display: block;
-    height: 98%;
-    width: 100%;
-    top: 15px;
-    left: 10px;
-    /* overflow-x: scroll; */
-
-
-
-}
-
-#strip-w {
-    width: 100%;
-    height: 650px;
-    min-height: 650px;
-    margin-top: 200px;
-    display: flex;
-    flex-wrap: no-wrap;
-    align-items: flex-start;
-    overflow-x: auto;
-}
-
-#strip-w::-webkit-scrollbar {
-    display: none;
-}
-
-#strip-item {
-    height: 650px;
-    min-height: 650px;
-    width: 500px;
-    min-width: 500px;
-    margin-right: 10px;
-}
-
-#strip-item img {
-    width: 100%;
-    height: 100%;
-}
-
-/* ----- */
-.sticky-parent {
-    height: 600vh;
-}
-
-.sticky-h {
-    position: sticky;
-    top: 0px;
-    padding-top: 100px;
-    max-height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-.dim {
-    display: block;
-    min-width: 50vw;
-    height: 80vh;
-
-}
-
-.horizontal {
-    display: flex;
-    position: relative;
-}
-
-.mockup-banner {
-    margin: auto;
-    top: 50%;
-    width: 80%;
-    height: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.mockup-banner img {
-    position: fixed;
-    width: 80%;
-    height: 100%;
-
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-
-}
