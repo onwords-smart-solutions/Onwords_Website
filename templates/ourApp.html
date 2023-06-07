@@ -28,7 +28,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
     <!-- carousel -->
 
@@ -273,38 +273,56 @@
                 </h2> <br><br>
 
             </center>
-           <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <div id="carouselExampleIndicators" class="carousel slide v-slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 hgj">
+                  <div class="cbe"></div>
+                    <div class="containers">
+                        <div class="carousels">
+                            <div class="a">
+                                <div class="item">
+                                    <img src="{% static 'images/four-app.png' %}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="b">
+                                <div class="item">
+                                    <img src="{% static 'images/five-app.png' %}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="c">
+                                <div class="item">C</div>
+                            </div>
+                            <div class="d">
+                                <div class="item">D</div>
+                            </div>
+                            <div class="e">
+                                <div class="item">E</div>
+                            </div>
+                            <div class="f">
+                                <div class="item">F</div>
+                            </div>
+                            <div class="g">
+                                <div class="item">JUS</div>
+                            </div>
+                            <div class="h">
+                                <div class="item">ERNEST</div>
+                            </div>
+                            <div class="i">
+                                <div class="item">HOLA</div>
+                            </div>
+                            <div class="j">
+                                <div class="item">QUE</div>
+                            </div>
+                            <div class="k">
+                                <div class="item">TAL</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="{% static 'images/sign-in-group.png' %}" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="{% static 'images/sign-in-group.png' %}" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="{% static 'images/sign-in-group.png' %}" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <div class="slide-btns">
-                        <button class="carousel-control-prev prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span> 
-                          </button>
-                    </div>
-                  </div>
+                    <div class="nexts">Next</div>
+                    <div class="prevs">Prev</div>
+                </div>
+                <div class="col-md-1"></div>
             </div>
-            <div class="col-md-1"></div>
-           </div>
 
         </div>
     </section>
@@ -479,49 +497,62 @@ mouseOverContainer.onmousemove = function(e) {
 
         "use strict"
 
-// Adding scroll event listener
-document.addEventListener('scroll', horizontalScroll);
+        // Adding scroll event listener
+        document.addEventListener('scroll', horizontalScroll);
 
-//Selecting Elements
-let sticky = document.querySelector('.sticky-h');
-let stickyParent = document.querySelector('.sticky-parent');
+        //Selecting Elements
+        let sticky = document.querySelector('.sticky-h');
+        let stickyParent = document.querySelector('.sticky-parent');
 
-let scrollWidth = sticky.scrollWidth;
-let verticalScrollHeight = stickyParent.getBoundingClientRect().height-sticky.getBoundingClientRect().height;
+        let scrollWidth = sticky.scrollWidth;
+        let verticalScrollHeight = stickyParent.getBoundingClientRect().height - sticky.getBoundingClientRect().height;
 
-//Scroll function 
-function horizontalScroll(){
+        //Scroll function 
+        function horizontalScroll() {
 
-    //Checking whether the sticky element has entered into view or not
-    let stickyPosition = sticky.getBoundingClientRect().top;
-    if(stickyPosition > 1){
-        return;
-    }else{
-        let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
-        sticky.scrollLeft =(scrollWidth/verticalScrollHeight)*(-scrolled)*0.85;
-    
-    }
-}
+            //Checking whether the sticky element has entered into view or not
+            let stickyPosition = sticky.getBoundingClientRect().top;
+            if (stickyPosition > 1) {
+                return;
+            } else {
+                let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
+                sticky.scrollLeft = (scrollWidth / verticalScrollHeight) * (-scrolled) * 0.85;
+
+            }
+        }
 
 
-let swiperMob = new Swiper(".mySwiperMob", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      slidesPerView: 1,
 
-      autoplay: {
-        delay: 3000,
-        // disableOnInteraction:fasle,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        type: "progressbar",
-      },
+    </script>
 
-    });
+    <script>
+        var carousels = $(".carousels"),
+            items = $(".item"),
+            currdeg = 0;
 
+        $(".nexts").on("click", { d: "n" }, rotate);
+        $(".prevs").on("click", { d: "p" }, rotate);
+
+        function rotate(e) {
+            if (e.data.d == "n") {
+                currdeg = currdeg - 60;
+            }
+            if (e.data.d == "p") {
+                currdeg = currdeg + 60;
+            }
+            carousels.css({
+                "-webkit-transform": "rotateY(" + currdeg + "deg)",
+                "-moz-transform": "rotateY(" + currdeg + "deg)",
+                "-o-transform": "rotateY(" + currdeg + "deg)",
+                "transform": "rotateY(" + currdeg + "deg)"
+            });
+            items.css({
+                "-webkit-transform": "rotateY(" + (-currdeg) + "deg)",
+                "-moz-transform": "rotateY(" + (-currdeg) + "deg)",
+                "-o-transform": "rotateY(" + (-currdeg) + "deg)",
+                "transform": "rotateY(" + (-currdeg) + "deg)"
+            });
+        }
     </script>
 </body>
 

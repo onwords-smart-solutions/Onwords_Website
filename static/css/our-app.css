@@ -161,27 +161,149 @@
     text-align: center;
 }
 
-.v-slide {
+
+.containers {
+    margin: 65px auto;
+    width: 160px;
+    height: 328px;
     position: relative;
+    perspective: 1000px;
+    z-index: -100;
+    /* overflow:hidden ; */
+  }
+  
+  .carousels {
     height: 100%;
     width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+ 
+  .carousels div {
+    transform-style: preserve-3d;
+    
+  }
+  
+  .item {
+    display: block;
+    position: absolute;
+    background-image: url(../images/four-app.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 162px 328px;
+    width: 162px;
+    height: 328px;
+    margin-left: 10px;
+    line-height: 200px;
+    font-size: 5em;
+    text-align: center;
+    color: #FFF;
+    /* opacity: 0.95; */
+    border-radius: 10px;
+    transition: transform 1s;
+    z-index: -20;
+  }
+  .item img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .a {
+    transform: rotateY(0deg) translateZ(250px);
+  }
+  .a .item {
+    background: #ed1c24;
+  }
+  .b {
+    transform: rotateY(60deg) translateZ(250px) rotateY(-60deg);
+  }
+  .b .item {
+    background: #0072bc;
+  }
+  .c {
+    transform: rotateY(120deg) translateZ(250px)  rotateY(-120deg);
+  }
+  .c .item {
+    background: #39b54a;
+  }
+  .d {
+    transform: rotateY(180deg) translateZ(250px) rotateY(-180deg);
+  }
+  .d .item {
+    background: #f26522;
+  }
+  .e {
+    transform: rotateY(240deg) translateZ(250px) rotateY(-240deg);
+  } 
+  .e .item {
+    background: #630460;
+  }
+  .f {
+    transform: rotateY(300deg) translateZ(250px) rotateY(-300deg);
+  }
+  .f .item {
+    background: #8c6239;
+  }
+  
+  .next, .prev {
+    color: #444;
+    position: absolute;
+    top: 100px;
+    padding: 1em 2em;
+    cursor: pointer;
+    background: #CCC;
+    border-radius: 5px;
+    border-top: 1px solid #FFF;
+    box-shadow: 0 5px 0 #999;
+    transition: box-shadow 0.1s, top 0.1s;
+  }
+  .next:hover, .prev:hover { color: #000; }
+  .next:active, .prev:active {
+    top: 104px;
+    box-shadow: 0 1px 0 #999;
+  }
+  .next { right: 5em; }
+  .prev { left: 5em; }
+.hgj{
+    position: relative;
+    width: 100%;
+    height: 70vh;
 }
-
-.slide-btns {
-    position:absolute;
-    bottom: 0;
-    right: 20px;
-}
-
-.slide-btns button {
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    margin: 0px 20px;
-    border-radius: 50%;
-    padding: 5px;
-    background: linear-gradient(180deg, #7652E2 0%, #CB4DA6 100%);
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
-    transform: rotate(-180deg);
-}
-
+  .cbe{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/iphone13-mockup.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 100;
+  }
+  /* .cbe::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/iPhone-13-Pro.svg);
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -10;
+  } */
+  /* .cbe::after{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(../images/iphone13-mockup.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+   */
