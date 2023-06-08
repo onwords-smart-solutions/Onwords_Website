@@ -9,12 +9,30 @@
     <!-- bootstrap css -->
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
-    
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
     <link rel="stylesheet" href="{% static 'css/darkmode.css' %}">
+    <!-- bs-4 -->
     <!-- bootstrap css -->
-   
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="{% static 'fonts-6/css/all.css' %}">
+
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <!-- carousel -->
+
+    <!-- cdn link -->
+
+
+
+    <!-- cdn link -->
     <title>Onwords</title>
 </head>
 
@@ -27,16 +45,16 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/"><img src="{% static 'images/logos.png' %}" alt="logo"
                             class="img-fluid logo"></a>
-
-                    <div class="darkmodeMob">
+                   
+                            <!-- <div class="darkmodeMob">
                                 <img src="{% static 'images/sun-wh.svg' %}" alt="" id="daybright" onclick="dayMode()">
                                 <img src="{% static 'images/moon-wh.svg' %}" alt="" class= "img-fluid"  id="moon" onclick="nightMode()">
-                            </div>
+                            </div> -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-                    </button>
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 sticky">
                             <li class="nav-item">
@@ -84,9 +102,8 @@
                         </form>
                     </div>
                     <div class="darkmode">
-                        <img src="{% static 'images/sun-wh.svg' %}" alt="" id="daybright" onclick="dayMode()">
-                        <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid" id="moon"
-                            onclick="nightMode()">
+                        <img src="{% static 'images/sun-wh.svg' %}" alt=""  id="daybright" onclick="dayMode()">
+                        <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid"  id="moon" onclick="nightMode()">
                     </div>
                 </div>
             </nav>
@@ -98,8 +115,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         <center>
                             <h2 class="text-dark">Get a Quote</h2>
-                            <p class="text-dark">Onwords smart solutions helps unlock the Amazing spaces to create
-                                durable and innovative
+                            <p class="text-dark">Onwords smart solutions helps unlock the Amazing spaces to create durable and innovative
                                 experience </p>
                             <form action="" class="quot-form">
 
@@ -225,24 +241,21 @@
                     <div class="col-md-6">
                         <div class="con-adv">
                             <div class="child-adv">
-                                <span class="child-adv-icon lazy-load"><img
-                                        src="{% static 'images/interconnectivity.png' %}"
+                                <span class="child-adv-icon lazy-load"><img src="{% static 'images/interconnectivity.png' %}"
                                         alt="interconnectivity"></span>
                                 <span>Interconnectivity</span>
                             </div>
                             <div class="child-adv">
-                                <span class="child-adv-icon"><img src="{% static 'images/remote.svg' %}"
-                                        alt="interconnectivity"></span>
+                                <span class="child-adv-icon"><img src="{% static 'images/remote.svg' %}" alt="interconnectivity"></span>
                                 <span>Remote monitoring</span>
                             </div>
                             <div class="child-adv">
-                                <span class="child-adv-icon"><img src="{% static 'images/customization.png' %}"
-                                        alt="interconnectivity"></span>
+                                <span class="child-adv-icon"><img src="{% static 'images/customization.png' %}" alt="interconnectivity"></span>
                                 <span>Customization</span>
                             </div>
                         </div>
                     </div>
-
+                
                 </div>
 
             </div>
@@ -258,7 +271,7 @@
                                     <img src="{% static 'images/fully-custom.svg' %}" alt="fully-custom" class="dghj">
                                 </div>
                                 <div class="f-imgs-why why-sd">
-
+                                  
                                     <p class="stick">Automate Everything</p>
                                     <img src="{% static 'images/automate.svg' %}" alt="fully-custom" class="dghj">
                                 </div>
@@ -320,184 +333,321 @@
                     <div class="col-md-2"></div>
                 </div>
             </div> -->
-
+           
             <div class="container">
-                <div class="sticky-parent">
-                    <div class="sticky-sl">
+                <!-- <div class="sticky-parent">
+                    <div class="stickyas">
                       <div class="horizontal"> 
-                        <div class="dim">
-                        <div class="row s">
-                            <div class="col-sm-6 col-md-6">
-                                <img src="{% static 'images/smarth.png' %}" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-sm-6 col-md-6">
-                               <div class="second-roll">
-                                <div class="sticklines"></div>
-                                <h2>SMART HOME</h2>
-                                <p class="product-para">
-                                    Our Smart home Products are being enjoyed by a large
-                                    audience thus
-                                    shedding the automation experince to all the nooks of
-                                    rural
-                                    and suburban arears. we
-                                    develop our smart products by integrating intelligent
-                                    security.smart interconnectivity
-                                    and interactivity with prime focus on energy effciency
-                                </p>
-                                <a href="/ourservices"> <span class="sec-btn-test">Know More </span>
-                                    <span>
-                                        <i class="fa-solid fa-chevron-right anim-icon"></i>
-                                    </span>
-                                </a>
-                               </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="dim">
-                            <div class="row s">
-                                <div class="col-sm-6 col-md-6">
-                                    <img src="{% static 'images/gateauto.png' %}" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-sm-6 col-md-6">
-                                   <div class="second-roll">
-                                    <div class="sticklines"></div>
-                                    <h2>Gate Automation</h2>
-                                    <p class="product-para">
-                                        Our Smart Home Products are being enjoyed by a large
-                                        audience thus
-                                        shedding the automation experince to all the nooks of
-                                        rural
-                                        and suburban arears. we
-                                        develop our smart products by integrating intelligent
-                                        security.smart interconnectivity
-                                        and interactivity with prime focus on energy effciency
-                                    </p>
-                                    <a href="/ourservices"> <span class="sec-btn-test">Know More </span>
-                                        <span>
-                                            <i class="fa-solid fa-chevron-right anim-icon"></i>
-                                        </span>
-                                    </a>
-                                   </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dim">
-                            <div class="row s">
-                                <div class="col-sm-6 col-md-6">
-                                    <img src="{% static 'images/ss.png' %}" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-sm-6 col-md-6">
-                                   <div class="second-roll">
-                                    <div class="sticklines"></div>
-                                    <h2>Security System</h2>
-                                    <p class="product-para">
-                                        Our Smart Home Products are being enjoyed by a large
-                                        audience thus
-                                        shedding the automation experince to all the nooks of
-                                        rural
-                                        and suburban arears. we
-                                        develop our smart products by integrating intelligent
-                                        security.smart interconnectivity
-                                        and interactivity with prime focus on energy effciency
-                                    </p>
-                                    <a href="#"> <span class="sec-btn-test">Know More </span>
-                                        <span>
-                                            <i class="fa-solid fa-chevron-right anim-icon"></i>
-                                        </span>
-                                    </a>
-                                   </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dim">
-                            <div class="row s">
-                                <div class="col-sm-6 col-md-6">
-                                    <img src="{% static 'images/webapp.png' %}" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-sm-6 col-md-6">
-                                   <div class="second-roll">
-                                    <div class="sticklines"></div>
-                                    <h2>Web/App Devlopment</h2>
-                                    <p class="product-para">
-                                        Our Smart Home Products are being enjoyed by a large
-                                        audience thus
-                                        shedding the automation experince to all the nooks of
-                                        rural
-                                        and suburban arears. we
-                                        develop our smart products by integrating intelligent
-                                        security.smart interconnectivity
-                                        and interactivity with prime focus on energy effciency
-                                    </p>
-                                    <a href="#"> <span class="sec-btn-test">Know More </span>
-                                        <span>
-                                            <i class="fa-solid fa-chevron-right anim-icon"></i>
-                                        </span>
-                                    </a>
-                                   </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dim">
-                            <div class="row s">
-                                <div class="col-sm-6 col-md-6">
-                                    <img src="{% static 'images/onconstr.png' %}" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-sm-6 col-md-6">
-                                   <div class="second-roll">
-                                    <div class="sticklines"></div>
-                                    <h2>Onwords Construction</h2>
-                                    <p class="product-para">
-                                        Our Smart Home Products are being enjoyed by a large
-                                        audience thus
-                                        shedding the automation experince to all the nooks of
-                                        rural
-                                        and suburban arears. we
-                                        develop our smart products by integrating intelligent
-                                        security.smart interconnectivity
-                                        and interactivity with prime focus on energy effciency
-                                    </p>
-                                    <a href="#"> <span class="sec-btn-test">Know More </span>
-                                        <span>
-                                            <i class="fa-solid fa-chevron-right anim-icon"></i>
-                                        </span>
-                                    </a>
-                                   </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dim">
-                            <div class="row s">
-                                <div class="col-sm-6 col-md-6">
-                                    <img src="{% static 'images/digtal.png' %}" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-sm-6 col-md-6">
-                                   <div class="second-roll">
-                                    <div class="sticklines"></div>
-                                    <h2>Digital Marketing</h2>
-                                    <p class="product-para">
-                                        Our Smart Home Products are being enjoyed by a large
-                                        audience thus
-                                        shedding the automation experince to all the nooks of
-                                        rural
-                                        and suburban arears. we
-                                        develop our smart products by integrating intelligent
-                                        security.smart interconnectivity
-                                        and interactivity with prime focus on energy effciency
-                                    </p>
-                                    <a href="#"> <span class="sec-btn-test">Know More </span>
-                                        <span>
-                                            <i class="fa-solid fa-chevron-right anim-icon"></i>
-                                        </span>
-                                    </a>
-                                   </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="dim" style="background-color: aqua;"></div>
+                        <div class="dim" style="background-color: rgb(255, 238, 0);"></div>
+                        <div class="dim" style="background-color: rgb(81, 255, 0);"></div>
+                        <div class="dim" style="background-color: rgb(247, 0, 255);"></div>
+                        <div class="dim" style="background-color: rgb(27, 24, 179);"></div>
+                        <div class="dim" style="background-color:black"></div>
                         
                 
                       </div>
                     </div>
-                  </div>
+                  </div> -->
+                <div class="box-scroll">
+                    <div class="cards ml">
+                        <div class="row card-lis">
+                            <div class="col-sm-6 col-md-6">
+                                <div class="card-box-img">
+                                    <img src="{% static 'images/smarth.png'%}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="d-flex">
+                                    <div class="stickline"></div>
+                                    <div class="">
+                                        <h2>SMART HOME</h2>
+                                        <p class="product-para">
+                                            Our Smart home Products are being enjoyed by a large
+                                            audience thus
+                                            shedding the automation experince to all the nooks of
+                                            rural
+                                            and suburban arears. we
+                                            develop our smart products by integrating intelligent
+                                            security.smart interconnectivity
+                                            and interactivity with prime focus on energy effciency
+                                        </p>
+                                        <a href="/ourservices"> <span class="sec-btn-test">Know More </span>
+                                            <span>
+                                                <i class="fa-solid fa-chevron-right anim-icon"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards ml">
+                        <div class="row card-lis">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="card-box-img">
+                                    <img src="{% static 'images/gateauto.png'%}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="d-flex">
+                                    <div class="stickline"></div>
+                                    <div class="">
+                                        <h2>Gate Automation</h2>
+                                        <p class="product-para">
+                                            Our Smart Home Products are being enjoyed by a large
+                                            audience thus
+                                            shedding the automation experince to all the nooks of
+                                            rural
+                                            and suburban arears. we
+                                            develop our smart products by integrating intelligent
+                                            security.smart interconnectivity
+                                            and interactivity with prime focus on energy effciency
+                                        </p>
+                                        <a href="/ourservices"> <span class="sec-btn-test">Know More </span>
+                                            <span>
+                                                <i class="fa-solid fa-chevron-right anim-icon"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards ml">
+                        <div class="row card-lis">
+                            <div class="col-md-6">
+                                <div class="card-box-img">
+                                    <img src="{% static 'images/agriauto.png'%}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="stickline"></div>
+                                    <div class="">
+                                        <h2>Agri Automation</h2>
+                                        <p class="product-para">
+                                            Our Smart Home Products are being enjoyed by a large
+                                            audience thus
+                                            shedding the automation experince to all the nooks of
+                                            rural
+                                            and suburban arears. we
+                                            develop our smart products by integrating intelligent
+                                            security.smart interconnectivity
+                                            and interactivity with prime focus on energy effciency
+                                        </p>
+                                        <a href="/agriautomation"> <span class="sec-btn-test">Know More </span>
+                                            <span>
+                                                <i class="fa-solid fa-chevron-right anim-icon"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards ml">
+                        <div class="row card-lis">
+                            <div class="col-md-6">
+                                <div class="card-box-img">
+                                    <img src="{% static 'images/ss.png'%}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="stickline"></div>
+                                    <div class="">
+                                        <h2>Security System</h2>
+                                        <p class="product-para">
+                                            Our Smart Home Products are being enjoyed by a large
+                                            audience thus
+                                            shedding the automation experince to all the nooks of
+                                            rural
+                                            and suburban arears. we
+                                            develop our smart products by integrating intelligent
+                                            security.smart interconnectivity
+                                            and interactivity with prime focus on energy effciency
+                                        </p>
+                                        <a href="#"> <span class="sec-btn-test">Know More </span>
+                                            <span>
+                                                <i class="fa-solid fa-chevron-right anim-icon"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards ml">
+                        <div class="row card-lis">
+                            <div class="col-md-6">
+                                <div class="card-box-img">
+                                    <img src="{% static 'images/webapp.png'%}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="stickline"></div>
+                                    <div class="">
+                                        <h2>Web/App Devlopment</h2>
+                                        <p class="product-para">
+                                            Our Smart Home Products are being enjoyed by a large
+                                            audience thus
+                                            shedding the automation experince to all the nooks of
+                                            rural
+                                            and suburban arears. we
+                                            develop our smart products by integrating intelligent
+                                            security.smart interconnectivity
+                                            and interactivity with prime focus on energy effciency
+                                        </p>
+                                        <a href="#"> <span class="sec-btn-test">Know More </span>
+                                            <span>
+                                                <i class="fa-solid fa-chevron-right anim-icon"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards ml">
+                        <div class="row card-lis">
+                            <div class="col-md-6">
+                                <div class="card-box-img">
+                                    <img src="{% static 'images/uiuxdesign.png'%}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="stickline"></div>
+                                    <div class="">
+                                        <h2>Ui & Ux Designing</h2>
+                                        <p class="product-para">
+                                            Our Smart Home Products are being enjoyed by a large
+                                            audience thus
+                                            shedding the automation experince to all the nooks of
+                                            rural
+                                            and suburban arears. we
+                                            develop our smart products by integrating intelligent
+                                            security.smart interconnectivity
+                                            and interactivity with prime focus on energy effciency
+                                        </p>
+                                        <a href="#"> <span class="sec-btn-test">Know More </span>
+                                            <span>
+                                                <i class="fa-solid fa-chevron-right anim-icon"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards ml">
+                        <div class="row card-lis">
+                            <div class="col-md-6">
+                                <div class="card-box-img">
+                                    <img src="{% static 'images/grphi.png'%}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="stickline"></div>
+                                    <div class="">
+                                        <h2>Graphic Designing</h2>
+                                        <p class="product-para">
+                                            Our Smart Home Products are being enjoyed by a large
+                                            audience thus
+                                            shedding the automation experince to all the nooks of
+                                            rural
+                                            and suburban arears. we
+                                            develop our smart products by integrating intelligent
+                                            security.smart interconnectivity
+                                            and interactivity with prime focus on energy effciency
+                                        </p>
+                                        <a href="#"> <span class="sec-btn-test">Know More </span>
+                                            <span>
+                                                <i class="fa-solid fa-chevron-right anim-icon"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards ml">
+                        <div class="row card-lis">
+                            <div class="col-md-6">
+                                <div class="card-box-img">
+                                    <img src="{% static 'images/digtal.png'%}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="stickline"></div>
+                                    <div class="">
+                                        <h2>Digital Marketing</h2>
+                                        <p class="product-para">
+                                            Our Smart Home Products are being enjoyed by a large
+                                            audience thus
+                                            shedding the automation experince to all the nooks of
+                                            rural
+                                            and suburban arears. we
+                                            develop our smart products by integrating intelligent
+                                            security.smart interconnectivity
+                                            and interactivity with prime focus on energy effciency
+                                        </p>
+                                        <a href="#"> <span class="sec-btn-test">Know More </span>
+                                            <span>
+                                                <i class="fa-solid fa-chevron-right anim-icon"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards ml">
+                        <div class="row card-lis">
+                            <div class="col-md-6">
+                                <div class="card-box-img">
+                                    <img src="{% static 'images/onconstr.png'%}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="stickline"></div>
+                                    <div class="">
+                                        <h2>Onwords Construction</h2>
+                                        <p class="product-para">
+                                            Our Smart Home Products are being enjoyed by a large
+                                            audience thus
+                                            shedding the automation experince to all the nooks of
+                                            rural
+                                            and suburban arears. we
+                                            develop our smart products by integrating intelligent
+                                            security.smart interconnectivity
+                                            and interactivity with prime focus on energy effciency
+                                        </p>
+                                        <a href="#"> <span class="sec-btn-test">Know More </span>
+                                            <span>
+                                                <i class="fa-solid fa-chevron-right anim-icon"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="works-with" id="wrk-with">
@@ -537,22 +687,20 @@
         <section class="product">
             <div class="container">
                 <div class="row ">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
-                            <h2>“The goal as a company is to have customer service that is not just the best but
-                                legendary.”
-                            </h2>
-                        </div>
-                        <p class="text-center">
-                            Onwords , a leading provider of avant-garde technologies and services, offering scalable
-                            smart-solutions for homes and businesses is to assist its customers in syncinng-in to the
-                            evolving smartness of technology and eventually making the global smarter Curious?
-                            Then,Brace
-                            and join us in the race!!
-                        </p>
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10">
+                    <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
+                        <h2>“The goal as a company is to have customer service that is not just the best but legendary.”
+                        </h2>
                     </div>
-                    <div class="col-md-1"></div>
+                    <p class="text-center">
+                        Onwords , a leading provider of avant-garde technologies and services, offering scalable
+                        smart-solutions for homes and businesses is to assist its customers in syncinng-in to the
+                        evolving smartness of technology and eventually making the global smarter Curious? Then,Brace
+                        and join us in the race!!
+                    </p>
+                  </div>
+                  <div class="col-md-1"></div>
 
                 </div>
                 <div class="etg">
@@ -665,10 +813,9 @@
                             Pollachi,
                             Coimbatore, IN - 642 005 <br>
                         <div class="fgh">
-                            <span><a href="tel:7708630275" class="footer-list"><i class="fa-solid fa-phone"></i> 77086
-                                    30275</a></span>
+                            <span><a href="tel:7708630275" class="footer-list"><i class="fa-solid fa-phone"></i> 77086 30275</a></span>
                             <br><br>
-                            <span><a href="mailto:cs@onwords.in" class="footer-list"><i
+                            <span><a href="mailto:cs@onwords.in"class="footer-list"><i
                                         class="fa-solid fa-envelope"></i>cs@onwords.in</a></span>
                         </div>
                         </p>
@@ -683,7 +830,7 @@
                             <li><a href="" class="footer-list">About Us</a></li>
                             <li><a href="" class="footer-list">Contact</a></li>
                             <li><a href="/gallery" class="footer-list">Gallery</a></li>
-
+                            
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3">
@@ -700,7 +847,7 @@
                     </div>
 
                     <div class="col-sm-12 col-md-4">
-                        <h5>Subscribe Us</h5>
+                        <h5 >Subscribe Us</h5>
                         <input type="email" name="" id="" class="mails" placeholder="Enter Your Email"><br>
                         <button type="submit" class="sub">Subscribe</button>
                         <div class="row my-4">
@@ -743,8 +890,7 @@
                     </div>
                     <hr class="text-white">
                     <span class="text-center" style="text-align: center;"> © Copyright ©2023
-                        Onwords. All Rights Reserved | <a href="/privacyPolicy" class="text-white">Privacy
-                            Policy</a></span>
+                        Onwords. All Rights Reserved | <a href="/privacyPolicy" class="text-white">Privacy Policy</a></span>
                 </div>
 
             </div>
@@ -758,8 +904,161 @@
     <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
     <!-- bootstrap js -->
     <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'images/demo.js' %}"></script>
+    <script src="{% static 'images/darkmode.js' %}"></script>
+    <script src="{% static 'js/scroll.js' %}"></script>
     <!-- carousel slider end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
 
+    <!-- Calling Slick Library -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- carousel slider script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min"></script>
+
+    <!-- bs-4 -->
+
+    <script>
+        document.getElementById('lightonBtn').addEventListener("click", () => {
+            document.getElementById('withlight').style.display = 'block'
+            document.getElementById('withoutlight').style.display = 'none'
+            document.querySelector('.btns-on').style.display = 'none'
+            document.querySelector('.btns-off').style.display = 'block'
+
+        })
+        document.getElementById('lightoffBtn').addEventListener("click", () => {
+            document.getElementById('withlight').style.display = 'none'
+            document.getElementById('withoutlight').style.display = 'block'
+            document.querySelector('.btns-on').style.display = 'block'
+            document.querySelector('.btns-off').style.display = 'none'
+
+        })
+
+    </script>
+    <script>
+        var headBtn = document.getElementById('mydiv')
+        var btns = headBtn.getElementsByClassName('btns');
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", () => {
+                var current = document.getElementsByClassName('act-anim');
+                current[0].className = current[0].className.replace("act-anim", "");
+                this.className += "act-anim";
+            });
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            function counter(id, start, end, duration) {
+                let obj = document.getElementById(id),
+                    current = start,
+                    range = end - start,
+                    increment = end > start ? 1 : -1,
+                    step = Math.abs(Math.floor(duration / range)),
+                    timer = setInterval(() => {
+                        current += increment;
+                        obj.textContent = current;
+                        if (current == end) {
+                            clearInterval(timer);
+                        }
+                    }, step);
+            }
+            counter("count1", 0, 1500, 3000);
+            counter("count2", 100, 1000, 2500);
+            counter("count3", 0, 900, 3000);
+        });
+        // ---topbtn start
+        //Get the button
+        let mybutton = document.getElementById("btn-back-to-top");
+        let whatsapp = document.getElementById("whatsapp")
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+        
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+                whatsapp.style.display = 'block'
+            } else {
+                mybutton.style.display = "none";
+                whatsapp.style.display = 'none'
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        // ---topbtn end
+     
+// Adding scroll event listener
+document.addEventListener('scroll', horizontalScroll);
+
+//Selecting Elements
+        // ---strat mouse wheel--
+        const mouseWheel = document.querySelector('.box-scroll');
+        const boxImg = document.querySelectorAll('.card-box-img')
+
+        mouseWheel.addEventListener('wheel', function (e) {
+            const race = 15; // how many pixels to scroll
+
+            if (e.deltaY > 0){ // Scroll right
+                
+                    mouseWheel.scrollLeft += race;
+                    
+            }
+            else // Scroll left
+                mouseWheel.scrollLeft -= race;
+                
+            e.preventDefault();
+        });
+        // ---strat mouse wheel--
+
+    </script>
+    <script>
+
+    //     window.setTimeout( function reloads() {
+    //   window.location.reload();
+    // }, 20000);
+
+    </script>
+    <script>
+        const blob = document.querySelector('.blob');
+        const cursorScale = document.querySelectorAll('.cursor-scale')
+        window.addEventListener('pointermove', (e) => {
+            const { clientX, clientY } = e;
+            // console.log(clientX, clientY)
+            blob.animate({
+                left: `${clientX}px`,
+                top: `${clientY}px`
+            }, { duration: 3000, fill: "forwards" })
+        })
+        
+        window.addEventListener("mousemove", function (e) {
+            mouseX = e.clientX;
+            mouseY = e.clientY
+        })
+    </script>
+    <script>
+ 
+    </script>
 </body>
 
 </html>
