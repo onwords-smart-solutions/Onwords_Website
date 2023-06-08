@@ -275,51 +275,32 @@
             </center>
             <div class="row">
                 <div class="col-md-1"></div>
-                <div class="col-md-10 hgj">
-                  <div class="cbe"></div>
-                    <div class="containers">
-                        <div class="carousels">
-                            <div class="a">
-                                <div class="item">
-                                    <img src="{% static 'images/four-app.png' %}" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="b">
-                                <div class="item">
-                                    <img src="{% static 'images/five-app.png' %}" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="c">
-                                <div class="item">C</div>
-                            </div>
-                            <div class="d">
-                                <div class="item">D</div>
-                            </div>
-                            <div class="e">
-                                <div class="item">E</div>
-                            </div>
-                            <div class="f">
-                                <div class="item">F</div>
-                            </div>
-                            <div class="g">
-                                <div class="item">JUS</div>
-                            </div>
-                            <div class="h">
-                                <div class="item">ERNEST</div>
-                            </div>
-                            <div class="i">
-                                <div class="item">HOLA</div>
-                            </div>
-                            <div class="j">
-                                <div class="item">QUE</div>
-                            </div>
-                            <div class="k">
-                                <div class="item">TAL</div>
-                            </div>
+                <div class="col-md-10 fgh">
+                    <div class="containersa">
+                        <div class="dfc">
+                            <img src="{% static 'images/four-app.png' %}" alt="" class="">
+                        </div>
+
+                        <div class="carousela">
+                            <div class="item a"><img src="{% static 'images/mob-1.svg' %}" alt="" class=""></div>
+                            <div class="item b"><img src="{% static 'images/mob-2.svg' %}" alt="" class=""></div>
+                            <div class="item c"><img src="{% static 'images/mob-3.svg' %}" alt="" class=""></div>
+                            <div class="item d"><img src="{% static 'images/mob-4.svg' %}" alt="" class=""></div>
+                            <div class="item e"><img src="{% static 'images/mob-5.svg' %}" alt="" class=""></div>
+                            <div class="item f"><img src="{% static 'images/mob-1.svg' %}" alt="" class=""></div>
+                        </div>
+
+                        <div class="mock">
+                            <!-- <img src="{% static 'images/four-app.png' %}" alt="jhj" class="img-fluid back-im"> -->
+                            <img src="{% static 'images/iphone13-mockup.png' %}" alt="" class=""
+                                style="width:450px;height:440px;">
                         </div>
                     </div>
-                    <div class="nexts">Next</div>
-                    <div class="prevs">Prev</div>
+                    <div class="gc">
+                        <div class="nexta">Next</div>
+                        <div class="preva">Prev</div>
+                    </div>
+
                 </div>
                 <div class="col-md-1"></div>
             </div>
@@ -525,13 +506,13 @@ mouseOverContainer.onmousemove = function(e) {
 
     </script>
 
+
     <script>
-        var carousels = $(".carousels"),
-            items = $(".item"),
+        var carousel = $(".carousela"),
             currdeg = 0;
 
-        $(".nexts").on("click", { d: "n" }, rotate);
-        $(".prevs").on("click", { d: "p" }, rotate);
+        $(".nexta").on("click", { d: "n" }, rotate);
+        $(".preva").on("click", { d: "p" }, rotate);
 
         function rotate(e) {
             if (e.data.d == "n") {
@@ -540,17 +521,11 @@ mouseOverContainer.onmousemove = function(e) {
             if (e.data.d == "p") {
                 currdeg = currdeg + 60;
             }
-            carousels.css({
+            carousel.css({
                 "-webkit-transform": "rotateY(" + currdeg + "deg)",
                 "-moz-transform": "rotateY(" + currdeg + "deg)",
                 "-o-transform": "rotateY(" + currdeg + "deg)",
                 "transform": "rotateY(" + currdeg + "deg)"
-            });
-            items.css({
-                "-webkit-transform": "rotateY(" + (-currdeg) + "deg)",
-                "-moz-transform": "rotateY(" + (-currdeg) + "deg)",
-                "-o-transform": "rotateY(" + (-currdeg) + "deg)",
-                "transform": "rotateY(" + (-currdeg) + "deg)"
             });
         }
     </script>
