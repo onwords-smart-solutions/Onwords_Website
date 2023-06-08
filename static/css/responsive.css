@@ -414,3 +414,10 @@
 /* ---------gallery end */
 }
 
+.dim{
+   height: 50%;
+   margin-top: 20%;
+}
+.mob-s h2{
+   font-size: 18px;
+}
