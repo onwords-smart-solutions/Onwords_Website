@@ -9,23 +9,14 @@
     <!-- bootstrap css -->
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
     <link rel="stylesheet" href="{% static 'css/ourservice.css' %}">
+    <link rel="stylesheet" href="{% static 'css/general.css' %}">
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <!-- bs-4 -->
-    <!-- bootstrap css -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
-    <!-- fontawesome icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <!-- fontawesome icon -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
-    <!-- carousel -->
+    <link rel="stylesheet" href="{% static 'fonts/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/fonts-6/css/all.css' %}">
     <title>Onwords</title>
 </head>
 
@@ -101,7 +92,12 @@
     </header>
     <!-- navbar end -->
     <button type="button" class="backtop" id="btn-back-to-top">
-        <a href=""> <i class="fas fa-arrow-up"></i></a>
+        <a href="#"><i class="fas fa-arrow-up"></i></a>
+    </button>
+    <button id="whatsapp">
+        <a href="whatsapp:contact=0123456789@s.whatsapp.com&message='' ">
+            <img src="{% static 'images/whatsapp-ico.svg' %}" alt="whatsapp">
+        </a>
     </button>
 
     </div>
@@ -282,201 +278,6 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="ourservice-sec">
-            <div class="container">
-                <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
-                    <h2>Smart Home</h2>
-                </div>
-                <div class="row">
-                    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                                <div class="anim-style">
-                                    <div class="anim-box">
-                                        <p class="pos"> <img src="{% static 'images/fans.png' %}" alt="web"
-                                                class="img-fluid"></p>
-                                        <p class="pos-1">Fan/Light <br> Automation</p>
-                                    </div>
-                                    <div class="anim-box">
-                                        <p class="pos"> <img src="{% static 'images/watertank.png'%}" alt="web"
-                                                class="img-fluid"></p>
-                                        <p class="pos-1">Water Tank </p>
-                                    </div>
-                                    <div class="anim-box">
-                                        <p class="pos"> <img src="{% static 'images/lock.png' %}" alt="web"
-                                                class="img-fluid"></p>
-                                        <p class="pos-1">Door Lock</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="anim-style">
-                                    <div class="anim-box">
-                                        <p class="pos"> <img src="{% static 'images/vaccum.png' %}" alt="web"
-                                                class="img-fluid"></p>
-                                        <p class="pos-1">Vaccum Cleaner</p>
-                                    </div>
-                                    <div class="anim-box">
-                                        <p class="pos"> <img src="{% static 'images/ac.png' %}" alt="web"
-                                                class="img-fluid"></p>
-                                        <p class="pos-1">Ac Control</p>
-                                    </div>
-                                    <div class="anim-box">
-                                        <p class="pos"> <img src="{% static 'images/curtain-banner.png' %}" alt="web"
-                                                class="img-fluid"></p>
-                                        <p class="pos-1">Curtain</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="row my-4 align-items-center">
-                    <div class="col">
-                        <img src="{% static 'images/blackfan.png' %}" alt="" class="img-fluid jk">
-                    </div>
-                    <div class="col">
-                        <h2>Fan Automation</h2>
-                        <p>Automated fan control measures temperature and humidity at two points – the floor and the
-                            ceiling. This information is used to calculate the heat index. The heat index is the “feels
-                            like” temperature, not the actual air temperature. Based on the heat index, the automated
-                            fan speed control software identifies the best operating speed and direction. Then it runs
-                            the fans accordingly.
-                            <br><br>
-                            Using the automated fan control is as simple as selecting the desired temperature range and
-                            leaving it to do its work. When the temperature rises above the desired temperature range,
-                            the fans will automatically run in the forward direction and create a cooling effect. If the
-                            temperature drops below the desired temperature range, the automated fan control will run
-                            the fans in the reverse direction to redistribute the warm air overhead and eliminate hot
-                            and cold spots without generating a discernible breeze.
-                        </p>
-                    </div>
-                </div>
-                <div class="row my-4 align-items-center">
-                    <div class="col">
-                        <h2>Light Automation</h2>
-                        <p>“Smart lighting” is one of those things that, as trends for “smart” everything grow,
-                            electrical contractors are dealing with more and more. In fact, it’s not just smart homes,
-                            but plans for entire smart cities that represent opportunities for electrical contractors to
-                            expand their skills and sign on to new, profitable projects. According to the US-based
-                            Independent Electrical Contractors, smart lighting controls are a key to success for the
-                            people who use them, in more ways than one: “A well-chosen solution also enables superior
-                            lighting performance, code compliance, better space utilization, and delivers the right
-                            lighting environment for the people in the space.” As an area that is creating considerable
-                            new opportunities for contractors, it’s a good idea to be familiar with the various
-                            benefits. </p>
-                    </div>
-                    <div class="col">
-                        <img src="{% static 'images/lights.png' %}" alt="" class="img-fluid jk">
-                    </div>
-                </div>
-                <div class="row my-4 align-items-center">
-                    <div class="col">
-                        <img src="{% static 'images/as.jpg' %}" alt="" class="img-fluid jk">
-                    </div>
-                    <div class="col">
-                        <h2>Water Tank</h2>
-                        <p>“Smart lighting” is one of those things that, as trends for “smart” everything grow,
-                            electrical contractors are dealing with more and more. In fact, it’s not just smart homes,
-                            but plans for entire smart cities that represent opportunities for electrical contractors to
-                            expand their skills and sign on to new, profitable projects. According to the US-based
-                            Independent Electrical Contractors, smart lighting controls are a key to success for the
-                            people who use them, in more ways than one: “A well-chosen solution also enables superior
-                            lighting performance, code compliance, better space utilization, and delivers the right
-                            lighting environment for the people in the space.” As an area that is creating considerable
-                            new opportunities for contractors, it’s a good idea to be familiar with the various
-                            benefits. </p>
-                    </div>
-                </div>
-                <div class="row my-4 align-items-center">
-                    
-                    <div class="col">
-                        <h2>Door Lock</h2>
-                        <p>“Smart lighting” is one of those things that, as trends for “smart” everything grow,
-                            electrical contractors are dealing with more and more. In fact, it’s not just smart homes,
-                            but plans for entire smart cities that represent opportunities for electrical contractors to
-                            expand their skills and sign on to new, profitable projects. According to the US-based
-                            Independent Electrical Contractors, smart lighting controls are a key to success for the
-                            people who use them, in more ways than one: “A well-chosen solution also enables superior
-                            lighting performance, code compliance, better space utilization, and delivers the right
-                            lighting environment for the people in the space.” As an area that is creating considerable
-                            new opportunities for contractors, it’s a good idea to be familiar with the various
-                            benefits. </p>
-                    </div>
-                    <div class="col">
-                        <img src="{% static 'images/doorlock.png' %}" alt="" class="img-fluid jk">
-                    </div>
-
-                </div>
-                <div class="row my-4 align-items-center">
-                    <div class="col">
-                        <img src="{% static 'images/rf.jpg' %}" alt="" class="img-fluid jk">
-                    </div>
-
-                    <div class="col">
-                        <h2>Vaccum Cleaner</h2>
-                        <p>“Smart lighting” is one of those things that, as trends for “smart” everything grow,
-                            electrical contractors are dealing with more and more. In fact, it’s not just smart homes,
-                            but plans for entire smart cities that represent opportunities for electrical contractors to
-                            expand their skills and sign on to new, profitable projects. According to the US-based
-                            Independent Electrical Contractors, smart lighting controls are a key to success for the
-                            people who use them, in more ways than one: “A well-chosen solution also enables superior
-                            lighting performance, code compliance, better space utilization, and delivers the right
-                            lighting environment for the people in the space.” As an area that is creating considerable
-                            new opportunities for contractors, it’s a good idea to be familiar with the various
-                            benefits. </p>
-                    </div>
-                   
-                </div>
-                <div class="row my-4 align-items-center">
-                   
-
-                    <div class="col">
-                        <h2>Ac Control</h2>
-                        <p>“Smart lighting” is one of those things that, as trends for “smart” everything grow,
-                            electrical contractors are dealing with more and more. In fact, it’s not just smart homes,
-                            but plans for entire smart cities that represent opportunities for electrical contractors to
-                            expand their skills and sign on to new, profitable projects. According to the US-based
-                            Independent Electrical Contractors, smart lighting controls are a key to success for the
-                            people who use them, in more ways than one: “A well-chosen solution also enables superior
-                            lighting performance, code compliance, better space utilization, and delivers the right
-                            lighting environment for the people in the space.” As an area that is creating considerable
-                            new opportunities for contractors, it’s a good idea to be familiar with the various
-                            benefits. </p>
-                    </div>
-                    <div class="col">
-                        <img src="{% static 'images/acc.png' %}" alt="" class="img-fluid jk">
-                    </div>
-                </div>
-                <div class="row my-4 align-items-center">
-                    <div class="col">
-                        <img src="{% static 'images/ghj.jpg' %}" alt="" class="img-fluid jk" style="border-radius: 20px;">
-                    </div>
-
-                    <div class="col">
-                        <h2>Curtain</h2>
-                        <p>“Smart lighting” is one of those things that, as trends for “smart” everything grow,
-                            electrical contractors are dealing with more and more. In fact, it’s not just smart homes,
-                            but plans for entire smart cities that represent opportunities for electrical contractors to
-                            expand their skills and sign on to new, profitable projects. According to the US-based
-                            Independent Electrical Contractors, smart lighting controls are a key to success for the
-                            people who use them, in more ways than one: “A well-chosen solution also enables superior
-                            lighting performance, code compliance, better space utilization, and delivers the right
-                            lighting environment for the people in the space.” As an area that is creating considerable
-                            new opportunities for contractors, it’s a good idea to be familiar with the various
-                            benefits. </p>
-                    </div>
-                  
-
-                </div>
-            </div>
-        </section> -->
-
         <section class="footer">
             <div class="container">
                 <div class="row">
@@ -487,9 +288,10 @@
                             Pollachi,
                             Coimbatore, IN - 642 005 <br>
                         <div class="fgh">
-                            <span><a href="tel:7708630275" class="footer-list"><i class="fa-solid fa-phone"></i> 77086 30275</a></span>
+                            <span><a href="tel:7708630275" class="footer-list"><i class="fa-solid fa-phone"></i> 77086
+                                    30275</a></span>
                             <br><br>
-                            <span><a href="mailto:cs@onwords.in"class="footer-list"><i
+                            <span><a href="mailto:cs@onwords.in" class="footer-list"><i
                                         class="fa-solid fa-envelope"></i>cs@onwords.in</a></span>
                         </div>
                         </p>
@@ -503,7 +305,7 @@
                             <li><a href="" class="footer-list">Our App</a></li>
                             <li><a href="" class="footer-list">About Us</a></li>
                             <li><a href="" class="footer-list">Contact</a></li>
-                            
+
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3">
@@ -520,7 +322,7 @@
                     </div>
 
                     <div class="col-sm-12 col-md-4">
-                        <h5 >Subscribe Us</h5>
+                        <h5>Subscribe Us</h5>
                         <input type="email" name="" id="" class="mails" placeholder="Enter Your Email"><br>
                         <button type="submit" class="sub">Subscribe</button>
                         <div class="row my-4">
@@ -570,78 +372,20 @@
         </section>
     </div>
 
-
     <!-- bootstrap js -->
     <script src="{%static 'js/bootstrap.min.js'%}"></script>
     <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
     <!-- bootstrap js -->
-    <script src="{%static 'js/main.js' %}"></script>
+    <!-- <script src="{%static 'js/main.js' %}"></script> -->
     <script src="{% static 'js/ourservices.js' %}"></script>
+    <script src="{% static 'js/general.js' %}"></script>
     <!-- carousel slider end -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
-
-    <!-- Calling Slick Library -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- carousel slider script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="{% static 'js/all.min.js' %}"></script>
+    <script src="{% static 'js/fontawesome.min.js' %}"></script>
     <!-- bs-4 -->
-    <script>
-        const dayLight = document.getElementById('dayLight')
-        const night = document.getElementById('night')
-        const dayBtn = document.getElementById('dayBtn')
-        const nightBtn = document.getElementById('nightBtn')
-
-        dayBtn.addEventListener('click', (e) => {
-            event.preventDefault();
-            dayLight.style.display = 'block'
-            night.style.display = 'none'
-        })
-        nightBtn.addEventListener('click', (e) => {
-            event.preventDefault();
-            dayLight.style.display = 'none'
-            night.style.display = 'block'
-        })
-
-
-        // ---topbtn start
-        //Get the button
-        let mybutton = document.getElementById("btn-back-to-top");
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-            scrollFunction();
-        };
-
-        function scrollFunction() {
-            if (
-                document.body.scrollTop > 20 ||
-                document.documentElement.scrollTop > 20
-            ) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-        // When the user clicks on the button, scroll to the top of the document
-        mybutton.addEventListener("click", backToTop);
-
-        function backToTop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-        // ---topbtn end
-
-    </script>
-
 
 
 
