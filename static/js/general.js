@@ -51,6 +51,7 @@ const body = document.getElementById('bodyTag');
 const button = document.querySelector('#darkbutton');
 const nightBtn = document.querySelector('.night')
 const sunBtn = document.querySelector('.sun')
+const anchor = document.querySelector('a')
 
 function toggleDark() {
   if (body.classList.contains('dark')) {
@@ -58,13 +59,14 @@ function toggleDark() {
     localStorage.setItem("theme", "light");
     nightBtn.style.display='block'
     sunBtn.style.display='none'
-    
-    
+
+   
   } else {
     body.classList.add('dark');
     localStorage.setItem("theme", "dark");
     sunBtn.style.display='block'
     nightBtn.style.display='none'
+    
     
   }
 }
@@ -73,8 +75,6 @@ if (localStorage.getItem("theme") === "dark") {
   body.classList.add('dark');
   nightBtn.style.display='none';
   sunBtn.style.display='block'
- 
-  
 }
 
 document.querySelector('#darkbutton').addEventListener('click', toggleDark);
