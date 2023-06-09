@@ -45,9 +45,7 @@ a {
 a:hover{
     color: #ffff !important;
 }
-a.dark{
-    color: #000;
-}
+
 
 ul li {
     list-style: none;
