@@ -12,12 +12,8 @@
     position: absolute;
     bottom: 0;
     display: flex;
-   
     justify-content: space-evenly;
     width: 100%;
-    
-
- 
 }
 .control-img{
     background-image: url(../images/control-img.svg);
