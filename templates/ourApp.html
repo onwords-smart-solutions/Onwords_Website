@@ -8,29 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
-    <link rel="stylesheet" href="{% static 'css/demo.css' %}">
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
-    <link rel="stylesheet" href="{% static 'css/security-system.css' %}">
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/our-app.css' %}">
+    <link rel="stylesheet" href="{% static 'css/general.css' %}">
     <!-- bs-4 -->
-    <!-- bootstrap css -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
-    <!-- fontawesome icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
-    <!-- fontawesome icon -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
-    <!-- carousel -->
+    <link rel="stylesheet" href="{% static 'fonts/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/fonts-6/css/all.css' %}">
 
 
     <title>Onwords</title>
@@ -39,19 +25,17 @@
 <body id="bodyTag">
     <div class="wrapper">
         <!-- navbar start -->
-        <button type="button" class="backtop" id="btn-back-to-top">
-            <i class="fas fa-arrow-up"></i>
-        </button>
+        
         <header>
             <nav class="navbar navbar-expand-lg sticky-top">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/"><img src="{% static 'images/logos.png' %}" alt="logo"
                             class="img-fluid logo"></a>
-                    <div class="darkmodeMob">
+                    <!-- <div class="darkmodeMob">
                         <img src="{% static 'images/sun-wh.svg' %}" alt="" id="daybright" onclick="dayMode()">
                         <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid" id="moon"
                             onclick="nightMode()">
-                    </div>
+                    </div> -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -102,20 +86,31 @@
                             </div>
                         </form>
                     </div>
-                    <div class="darkmode">
-                        <img src="{% static 'images/sun-wh.svg' %}" alt="" id="daybright" onclick="dayMode()">
-                        <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid" id="moon"
-                            onclick="nightMode()">
+                     <div class="darkmode" id="darkbutton">
+                        <img src="{% static 'images/sun-wh.svg' %}" alt="" class="img-fluid sun">
+                        <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid night">
                     </div>
                 </div>
             </nav>
         </header>
         <!-- navbar end -->
+        <div class="down-btn">
+            <button type="button" class="backtop" id="btn-back-to-top">
+                <a href="#"><i class="fas fa-arrow-up"></i></a>
+            </button>
+            <button id="whatsapp">
+                <a href="whatsapp:contact=0123456789@s.whatsapp.com&message='' ">
+                    <img src="{% static 'images/whatsapp-ico.svg' %}" alt="whatsapp">
+                </a>
+            </button>
+        </div>
     </div>
+
     <section class="our-app-banner">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
                     <div class="r-banner">
                         <div class="first-box">
                             <h3>
@@ -139,13 +134,14 @@
                         <img src="{% static 'images/mobile.svg' %}" alt="" class="img-fluid">
                     </div>
                 </div>
+                <div class="col-md-1"></div>
             </div>
         </div>
     </section>
     <section>
         <div class="container">
             <center>
-                <div class="top-terms mt--3">
+                <div class="top-termss ">
                     <div class="privacy-title app-title">
                         <h2>About our App </h2>
                     </div>
@@ -273,38 +269,37 @@
                 </h2> <br><br>
 
             </center>
-           <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <div id="carouselExampleIndicators" class="carousel slide v-slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div class="row">
+                <!-- <div class="col-md-1"></div> -->
+                <div class="col-md-12 fgh">
+                    <div class="containersa">
+                        <div class="dfc">
+                            <img src="{% static 'images/four-app.png' %}" alt="" class="">
+                        </div>
+
+                        <div class="carousela">
+                            <div class="item a"><img src="{% static 'images/mob-1.svg' %}" alt="" class=""></div>
+                            <div class="item b"><img src="{% static 'images/mob-2.svg' %}" alt="" class=""></div>
+                            <div class="item c"><img src="{% static 'images/mob-3.svg' %}" alt="" class=""></div>
+                            <div class="item d"><img src="{% static 'images/mob-4.svg' %}" alt="" class=""></div>
+                            <div class="item e"><img src="{% static 'images/mob-5.svg' %}" alt="" class=""></div>
+                            <div class="item f"><img src="{% static 'images/mob-1.svg' %}" alt="" class=""></div>
+                        </div>
+
+                        <div class="mock">
+                            <!-- <img src="{% static 'images/four-app.png' %}" alt="jhj" class="img-fluid back-im"> -->
+                            <img src="{% static 'images/iphone13-mockup.png' %}" alt="" class=""
+                                style="width:450px;height:440px;">
+                        </div>
                     </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="{% static 'images/sign-in-group.png' %}" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="{% static 'images/sign-in-group.png' %}" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="{% static 'images/sign-in-group.png' %}" class="d-block w-100" alt="...">
-                      </div>
+                    <div class="gc">
+                        <div class="nexta"><img src="{% static 'images/right-arrow.svg' %}" alt="" class="img-fluid"></div>
+                        <div class="preva"><img src="{% static 'images/right-arrow.svg' %}" alt="" class="img-fluid left-arrow"></div>
                     </div>
-                    <div class="slide-btns">
-                        <button class="carousel-control-prev prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span> 
-                          </button>
-                    </div>
-                  </div>
+
+                </div>
+                <!-- <div class="col-md-1"></div> -->
             </div>
-            <div class="col-md-1"></div>
-           </div>
 
         </div>
     </section>
@@ -409,8 +404,10 @@
     <script src="{%static 'js/bootstrap.min.js'%}"></script>
     <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
     <!-- bootstrap js -->
-    <script src="{% static 'js/main.js' %}"></script>
-    <script src="{% static 'js/demo.js' %}"></script>
+    <script src="{% static 'js/general.js' %}"></script>
+    <script src="{% static 'js/all.min.js' %}"></script>
+    <script src="{% static 'js/fontawesome.min.js' %}"></script>
+
     <!-- carousel slider end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -418,55 +415,10 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-    <!-- Calling Slick Library -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- carousel slider script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
-    </script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-
-    <script>
-        $(function () {
-            $('#toggle-one').bootstrapToggle();
-        })
-    </script>
-    <!-- <script>
-        let constrain = 20;
-let mouseOverContainer = document.getElementById("ex1");
-let ex1Layer = document.getElementById("ex1-layer");
-
-function transforms(x, y, el) {
-  let box = el.getBoundingClientRect();
-  let calcX = -(y - box.y - (box.height / 2)) / constrain;
-  let calcY = (x - box.x - (box.width / 2)) / constrain;
+    
   
-  return "perspective(100px) "
-    + "   rotateX("+ calcX +"deg) "
-    + "   rotateY("+ calcY +"deg) ";
-};
 
- function transformElement(el, xyEl) {
-  el.style.transform  = transforms.apply(null, xyEl);
-}
-
-mouseOverContainer.onmousemove = function(e) {
-  let xy = [e.clientX, e.clientY];
-  let position = xy.concat([ex1Layer]);
-
-  window.requestAnimationFrame(function(){
-    transformElement(ex1Layer, position);
-  });
-};
-
-    </script> -->
-
-    <!-- bs-4 -->
+   
     <script>
         function scrollTo(scrolled) {
             $('.slider-gallery').css('transform', 'translateX(' + scrolled + 'px');
@@ -479,49 +431,54 @@ mouseOverContainer.onmousemove = function(e) {
 
         "use strict"
 
-// Adding scroll event listener
-document.addEventListener('scroll', horizontalScroll);
+        // Adding scroll event listener
+        document.addEventListener('scroll', horizontalScroll);
 
-//Selecting Elements
-let sticky = document.querySelector('.sticky-h');
-let stickyParent = document.querySelector('.sticky-parent');
+        //Selecting Elements
+        let sticky = document.querySelector('.sticky-h');
+        let stickyParent = document.querySelector('.sticky-parent');
 
-let scrollWidth = sticky.scrollWidth;
-let verticalScrollHeight = stickyParent.getBoundingClientRect().height-sticky.getBoundingClientRect().height;
+        let scrollWidth = sticky.scrollWidth;
+        let verticalScrollHeight = stickyParent.getBoundingClientRect().height - sticky.getBoundingClientRect().height;
 
-//Scroll function 
-function horizontalScroll(){
+        //Scroll function 
+        function horizontalScroll() {
 
-    //Checking whether the sticky element has entered into view or not
-    let stickyPosition = sticky.getBoundingClientRect().top;
-    if(stickyPosition > 1){
-        return;
-    }else{
-        let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
-        sticky.scrollLeft =(scrollWidth/verticalScrollHeight)*(-scrolled)*0.85;
-    
-    }
-}
+            //Checking whether the sticky element has entered into view or not
+            let stickyPosition = sticky.getBoundingClientRect().top;
+            if (stickyPosition > 1) {
+                return;
+            } else {
+                let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
+                sticky.scrollLeft = (scrollWidth / verticalScrollHeight) * (-scrolled) * 0.85;
+
+            }
+        }
 
 
-let swiperMob = new Swiper(".mySwiperMob", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      slidesPerView: 1,
 
-      autoplay: {
-        delay: 3000,
-        // disableOnInteraction:fasle,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        type: "progressbar",
-      },
+    </script>
+    <script>
+        var carousel = $(".carousela"),
+            currdeg = 0;
 
-    });
+        $(".nexta").on("click", { d: "n" }, rotate);
+        $(".preva").on("click", { d: "p" }, rotate);
 
+        function rotate(e) {
+            if (e.data.d == "n") {
+                currdeg = currdeg - 60;
+            }
+            if (e.data.d == "p") {
+                currdeg = currdeg + 60;
+            }
+            carousel.css({
+                "-webkit-transform": "rotateY(" + currdeg + "deg)",
+                "-moz-transform": "rotateY(" + currdeg + "deg)",
+                "-o-transform": "rotateY(" + currdeg + "deg)",
+                "transform": "rotateY(" + currdeg + "deg)"
+            });
+        }
     </script>
 </body>
 

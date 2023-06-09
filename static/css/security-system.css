@@ -170,6 +170,9 @@
   height: auto;
   text-transform: uppercase;
 }
+.privacy-title h2.dark{
+  color: #fff;
+}
 
 .privacy-title p {
   position: absolute;

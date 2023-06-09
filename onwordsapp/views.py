@@ -27,3 +27,5 @@ def disclaimer(request):
     return render(request,'disclaimer.html')   
 def contact(request):
     return render(request,'contact.html')     
+def text(request):
+    return render(request,'text.html')    

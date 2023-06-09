@@ -1,0 +1,1064 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/darkmode.css' %}">
+    <!-- bs-4 -->
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="{% static 'fonts-6/css/all.css' %}">
+
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <!-- carousel -->
+
+    <!-- cdn link -->
+
+
+
+    <!-- cdn link -->
+    <title>Onwords</title>
+</head>
+
+<body id="bodyTag">
+    <div class="blob"></div>
+    <div class="wrapper" id="blur">
+        <!-- navbar start -->
+        <header>
+            <nav class="navbar navbar-expand-lg sticky-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/"><img src="{% static 'images/logos.png' %}" alt="logo"
+                            class="img-fluid logo"></a>
+                   
+                            <!-- <div class="darkmodeMob">
+                                <img src="{% static 'images/sun-wh.svg' %}" alt="" id="daybright" onclick="dayMode()">
+                                <img src="{% static 'images/moon-wh.svg' %}" alt="" class= "img-fluid"  id="moon" onclick="nightMode()">
+                            </div> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 sticky">
+                            <li class="nav-item">
+                                <a class="nav-link active-nav" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Our Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/ourservices">Smart home</a></li>
+                                    <li><a class="dropdown-item" href="/gateautomation">Gate Automation</a></li>
+                                    <li><a class="dropdown-item" href="/agriautomation">Agri Automation</a></li>
+                                    <li><a class="dropdown-item" href="#">Software & Hardware</a></li>
+                                    <li><a class="dropdown-item" href="#">Web/App Devlopment</a></li>
+                                    <li><a class="dropdown-item" href="#">Ui&Ux Designing</a></li>
+                                    <li><a class="dropdown-item" href="#">Graphics Designing</a></li>
+                                    <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                                    <li><a class="dropdown-item" href="/construction">Onwords Construction</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/securitySystem">Security System</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/ourApp">Our App</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact">Contact</a>
+                            </li>
+
+                        </ul>
+
+                        <form class="d-flex">
+                            <div class="module-border-wrap">
+                                <div class="module">
+                                    Get Started
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="darkmode">
+                        <img src="{% static 'images/sun-wh.svg' %}" alt=""  id="daybright" onclick="dayMode()">
+                        <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid"  id="moon" onclick="nightMode()">
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <center>
+                            <h2 class="text-dark">Get a Quote</h2>
+                            <p class="text-dark">Onwords smart solutions helps unlock the Amazing spaces to create durable and innovative
+                                experience </p>
+                            <form action="" class="quot-form">
+
+                                <input type="text" name="" id="username" placeholder="Full name" required><br><br>
+
+                                <input type="number" name="" id="number" placeholder="Mobile number" required><br><br>
+                                <input type="email" name="" id="email" placeholder="Email"><br><br>
+
+                                <input type="text" name="" id="location" placeholder="Location"><br><br>
+                                <textarea name="" id="" cols="12" rows="2" placeholder="Enquiry for"></textarea>
+                                <button type="submit" class="s-btn">
+                                    <div class="module-border-wrap">
+                                        <div class="module">
+                                            Get Started
+                                        </div>
+                                    </div>
+                                </button>
+                            </form>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- navbar end -->
+
+        <button type="button" class="backtop" id="btn-back-to-top">
+            <a href=""><i class="fas fa-arrow-up"></i></a>
+        </button>
+        <button id="whatsapp">
+            <a href="whatsapp:contact=0123456789@s.whatsapp.com&message='' ">
+                <img src="{% static 'images/whatsapp-ico.svg' %}" alt="whatsapp">
+            </a>
+        </button>
+
+
+        <section class="homes">
+            <div class="home" id="withlight">
+            </div>
+            <div class="homeoff" id="withoutlight"></div>
+            <div class="main-bgs">
+                <div class="container-fluid">
+                    <!-- <div class="darkmode">
+                        <label for="" id="daysBtn" onclick="dayMode()">Day</label>
+                        <label for="" id="nightsBtn" onclick="nightMode()">Night</label>
+                    </div> -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="main-bg-size">
+                                <div class="home-main-con">
+                                    <h1 class="cursor-scale small">In Sync With</h1>
+                                    <div class="font-anim">
+                                        <span class="cursor-scale small">
+                                            Smarter</span>
+                                        <div class="message cursor-scale small">
+                                            <div class="word1">World</div>
+                                        </div>
+                                    </div>
+                                    <!-- <h1>IN SYNC WITH <br>
+                                        <span class="stokes">SMARTER
+                                            <div class="message">
+                                                <div class="word1">World</div>
+                                                <div class="word2">Think</div>
+                                                <div class="word3">World</div>
+                                              </div>
+                                        </span> -->
+                                    </h1>
+                                    <p>We make technology to next level</p>
+                                    <button class="module-border-wrap">
+                                        <div class="module fs-6 px-4" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            Get a Quote
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-12 col-md-6 g">
+                            <div id="mydiv">
+                                <h2 class="press-button">Press the button</h2>
+                                <span id="lightonBtn" class="btns-on">
+                                    <img src="{% static 'images/button-off.png' %}" alt="s" class="sf">
+                                </span>
+                                <span id="lightoffBtn" class="btns-off">
+                                    <img src="{% static 'images/button-on.png' %}" alt="f" class="df">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blursd">
+            <div class="container">
+                <div class="abouts">
+                    <div class="row">
+                        <div class="text-left reveal fade-right" data-wow-delay="0.1s">
+                            <div class="text-center about-tex">
+                                <h1> Onwords , a leading provider <br> of avant-garde </h1>
+                                <p>technologies and services, offering scalable smart-solutions for homes and businesses
+                                    is to assist <br>
+                                    its customers in syncinng-in to the evolving smartness of technology and eventually
+                                    making the <br> global smarter Curious? Then,Brace and join us in the race!!</p>
+
+                                <span class="sec-btn-test">Know More </span><span><i
+                                        class="fa-solid fa-chevron-right anim-icon"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
+                <h2>ADVANTAGES OF MAKING <br> SMART HOME</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{% static 'images/adv-imgs.png' %}" alt="ad-img" class="img-fluid adv-img lazy-load">
+                    </div>
+                    <!-- <div class="col-md-1"></div> -->
+                    <div class="col-md-6">
+                        <div class="con-adv">
+                            <div class="child-adv">
+                                <span class="child-adv-icon lazy-load"><img src="{% static 'images/interconnectivity.png' %}"
+                                        alt="interconnectivity"></span>
+                                <span>Interconnectivity</span>
+                            </div>
+                            <div class="child-adv">
+                                <span class="child-adv-icon"><img src="{% static 'images/remote.svg' %}" alt="interconnectivity"></span>
+                                <span>Remote monitoring</span>
+                            </div>
+                            <div class="child-adv">
+                                <span class="child-adv-icon"><img src="{% static 'images/customization.png' %}" alt="interconnectivity"></span>
+                                <span>Customization</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="container" style="margin:50px auto;">
+                <div class="row why-onword">
+                    <div class=" col-sm-12 col-md-6">
+                        <div class="why-fix">
+                            <div class="con-box-why">
+                                <div class="f-imgs-why">
+                                    <p class="stick">Fully Customizable</p>
+                                    <img src="{% static 'images/fully-custom.svg' %}" alt="fully-custom" class="dghj">
+                                </div>
+                                <div class="f-imgs-why why-sd">
+                                  
+                                    <p class="stick">Automate Everything</p>
+                                    <img src="{% static 'images/automate.svg' %}" alt="fully-custom" class="dghj">
+                                </div>
+                            </div>
+                            <div class="con-box-why">
+                                <div class="f-imgs-why">
+                                    <p class="stick"> Device Intregrations </p>
+                                    <img src="{% static 'images/device-integrate.svg' %}" alt="fully-custom"
+                                        class="dghj">
+                                </div>
+                                <div class="f-imgs-why why-sd">
+                                    <p class="stick">Works With Offline</p>
+                                    <img src="{% static 'images/workswith.svg' %}" alt="fully-custom" class="dghj">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div style="text-align: left;" class="reveal fade-right" data-wow-delay="0.1s">
+                            <h2>Why Onwords</h2>
+                            <p>
+                                Onwords , a leading provider of avant-garde technologies and services, offering scalable
+                                smart-solutions for homes and businesses is to assist its customers in syncinng-in to
+                                the evolving smartness of technology and eventually making the global smarter Curious?
+                                Then,Brace and join us in the race!!
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit sequi
+                                ducimus dolor dicta voluptatum hic accusantium! Consectetur eveniet, dolores placeat
+                                pariatur quidem exercitationem quae quasi dolorum consequuntur natus tempore itaque,
+                                quisquam laborum minus fugiat esse distinctio incidunt molestias praesentium deserunt
+                                cupiditate error! Possimus esse omnis modi quo sunt. Aut dignissimos, architecto
+                                exercitationem voluptatem sequi corporis eius enim? Excepturi consequuntur sapiente
+                                labore! Optio molestias sunt eum quae at doloremque et aperiam exercitationem nam nulla!
+                                Officia optio labore vel totam, temporibus quos at officiis voluptates est laborum quo
+                                dolor.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product">
+            <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
+                <h2 class="text-center">PRODUCTS & SERVICES </h2>
+            </div>
+            <!-- <div class="blursdleft">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-sm-12 col-md-8">
+                        <p>
+                            Our Smart home Products are being enjoyed by a large audience ,thus shedding the automation
+                            experience to all the nooks of rural and suburban areas. We develop our smart products by
+                            integrating intelligent security, smart interconnectivity and interactivity with prime focus
+                            on
+                            energy efficiency.
+                        </p>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div> -->
+           
+            <div class="container">
+                <!-- <div class="sticky-parent">
+                    <div class="stickyas">
+                      <div class="horizontal"> 
+                        <div class="dim" style="background-color: aqua;"></div>
+                        <div class="dim" style="background-color: rgb(255, 238, 0);"></div>
+                        <div class="dim" style="background-color: rgb(81, 255, 0);"></div>
+                        <div class="dim" style="background-color: rgb(247, 0, 255);"></div>
+                        <div class="dim" style="background-color: rgb(27, 24, 179);"></div>
+                        <div class="dim" style="background-color:black"></div>
+                        
+                
+                      </div>
+                    </div>
+                  </div> -->
+                <div class="box-scroll">
+                    <div class="cards ml">
+                        <div class="row card-lis">
+                            <div class="col-sm-6 col-md-6">
+                                <div class="card-box-img">
+                                    <img src="{% static 'images/smarth.png'%}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="d-flex">
+                                    <div class="stickline"></div>
+                                    <div class="">
+                                        <h2>SMART HOME</h2>
+                                        <p class="product-para">
+                                            Our Smart home Products are being enjoyed by a large
+                                            audience thus
+                                            shedding the automation experince to all the nooks of
+                                            rural
+                                            and suburban arears. we
+                                            develop our smart products by integrating intelligent
+                                            security.smart interconnectivity
+                                            and interactivity with prime focus on energy effciency
+                                        </p>
+                                        <a href="/ourservices"> <span class="sec-btn-test">Know More </span>
+                                            <span>
+                                                <i class="fa-solid fa-chevron-right anim-icon"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards ml">
+                        <div class="row card-lis">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="card-box-img">
+                                    <img src="{% static 'images/gateauto.png'%}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="d-flex">
+                                    <div class="stickline"></div>
+                                    <div class="">
+                                        <h2>Gate Automation</h2>
+                                        <p class="product-para">
+                                            Our Smart Home Products are being enjoyed by a large
+                                            audience thus
+                                            shedding the automation experince to all the nooks of
+                                            rural
+                                            and suburban arears. we
+                                            develop our smart products by integrating intelligent
+                                            security.smart interconnectivity
+                                            and interactivity with prime focus on energy effciency
+                                        </p>
+                                        <a href="/ourservices"> <span class="sec-btn-test">Know More </span>
+                                            <span>
+                                                <i class="fa-solid fa-chevron-right anim-icon"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards ml">
+                        <div class="row card-lis">
+                            <div class="col-md-6">
+                                <div class="card-box-img">
+                                    <img src="{% static 'images/agriauto.png'%}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="stickline"></div>
+                                    <div class="">
+                                        <h2>Agri Automation</h2>
+                                        <p class="product-para">
+                                            Our Smart Home Products are being enjoyed by a large
+                                            audience thus
+                                            shedding the automation experince to all the nooks of
+                                            rural
+                                            and suburban arears. we
+                                            develop our smart products by integrating intelligent
+                                            security.smart interconnectivity
+                                            and interactivity with prime focus on energy effciency
+                                        </p>
+                                        <a href="/agriautomation"> <span class="sec-btn-test">Know More </span>
+                                            <span>
+                                                <i class="fa-solid fa-chevron-right anim-icon"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards ml">
+                        <div class="row card-lis">
+                            <div class="col-md-6">
+                                <div class="card-box-img">
+                                    <img src="{% static 'images/ss.png'%}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="stickline"></div>
+                                    <div class="">
+                                        <h2>Security System</h2>
+                                        <p class="product-para">
+                                            Our Smart Home Products are being enjoyed by a large
+                                            audience thus
+                                            shedding the automation experince to all the nooks of
+                                            rural
+                                            and suburban arears. we
+                                            develop our smart products by integrating intelligent
+                                            security.smart interconnectivity
+                                            and interactivity with prime focus on energy effciency
+                                        </p>
+                                        <a href="#"> <span class="sec-btn-test">Know More </span>
+                                            <span>
+                                                <i class="fa-solid fa-chevron-right anim-icon"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards ml">
+                        <div class="row card-lis">
+                            <div class="col-md-6">
+                                <div class="card-box-img">
+                                    <img src="{% static 'images/webapp.png'%}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="stickline"></div>
+                                    <div class="">
+                                        <h2>Web/App Devlopment</h2>
+                                        <p class="product-para">
+                                            Our Smart Home Products are being enjoyed by a large
+                                            audience thus
+                                            shedding the automation experince to all the nooks of
+                                            rural
+                                            and suburban arears. we
+                                            develop our smart products by integrating intelligent
+                                            security.smart interconnectivity
+                                            and interactivity with prime focus on energy effciency
+                                        </p>
+                                        <a href="#"> <span class="sec-btn-test">Know More </span>
+                                            <span>
+                                                <i class="fa-solid fa-chevron-right anim-icon"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards ml">
+                        <div class="row card-lis">
+                            <div class="col-md-6">
+                                <div class="card-box-img">
+                                    <img src="{% static 'images/uiuxdesign.png'%}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="stickline"></div>
+                                    <div class="">
+                                        <h2>Ui & Ux Designing</h2>
+                                        <p class="product-para">
+                                            Our Smart Home Products are being enjoyed by a large
+                                            audience thus
+                                            shedding the automation experince to all the nooks of
+                                            rural
+                                            and suburban arears. we
+                                            develop our smart products by integrating intelligent
+                                            security.smart interconnectivity
+                                            and interactivity with prime focus on energy effciency
+                                        </p>
+                                        <a href="#"> <span class="sec-btn-test">Know More </span>
+                                            <span>
+                                                <i class="fa-solid fa-chevron-right anim-icon"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards ml">
+                        <div class="row card-lis">
+                            <div class="col-md-6">
+                                <div class="card-box-img">
+                                    <img src="{% static 'images/grphi.png'%}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="stickline"></div>
+                                    <div class="">
+                                        <h2>Graphic Designing</h2>
+                                        <p class="product-para">
+                                            Our Smart Home Products are being enjoyed by a large
+                                            audience thus
+                                            shedding the automation experince to all the nooks of
+                                            rural
+                                            and suburban arears. we
+                                            develop our smart products by integrating intelligent
+                                            security.smart interconnectivity
+                                            and interactivity with prime focus on energy effciency
+                                        </p>
+                                        <a href="#"> <span class="sec-btn-test">Know More </span>
+                                            <span>
+                                                <i class="fa-solid fa-chevron-right anim-icon"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards ml">
+                        <div class="row card-lis">
+                            <div class="col-md-6">
+                                <div class="card-box-img">
+                                    <img src="{% static 'images/digtal.png'%}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="stickline"></div>
+                                    <div class="">
+                                        <h2>Digital Marketing</h2>
+                                        <p class="product-para">
+                                            Our Smart Home Products are being enjoyed by a large
+                                            audience thus
+                                            shedding the automation experince to all the nooks of
+                                            rural
+                                            and suburban arears. we
+                                            develop our smart products by integrating intelligent
+                                            security.smart interconnectivity
+                                            and interactivity with prime focus on energy effciency
+                                        </p>
+                                        <a href="#"> <span class="sec-btn-test">Know More </span>
+                                            <span>
+                                                <i class="fa-solid fa-chevron-right anim-icon"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cards ml">
+                        <div class="row card-lis">
+                            <div class="col-md-6">
+                                <div class="card-box-img">
+                                    <img src="{% static 'images/onconstr.png'%}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="stickline"></div>
+                                    <div class="">
+                                        <h2>Onwords Construction</h2>
+                                        <p class="product-para">
+                                            Our Smart Home Products are being enjoyed by a large
+                                            audience thus
+                                            shedding the automation experince to all the nooks of
+                                            rural
+                                            and suburban arears. we
+                                            develop our smart products by integrating intelligent
+                                            security.smart interconnectivity
+                                            and interactivity with prime focus on energy effciency
+                                        </p>
+                                        <a href="#"> <span class="sec-btn-test">Know More </span>
+                                            <span>
+                                                <i class="fa-solid fa-chevron-right anim-icon"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="works-with" id="wrk-with">
+            <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
+                <h2>Works with Voice Assistant</h2>
+            </div>
+            <div class="blursd dg-blur">
+                <p class="text-center">
+                    If you're wondering what a smart home assistant is, it's a device that responds to your verbal
+                    commands <br> to activate various smart appliances your home. In most cases, a digital voice
+                    assistant also audibly <br> responds to you while helping with daily tasks and scheduling.
+                </p>
+                <img src="{% static 'images/cir-black.png' %}" alt="circle" class="img-fluid">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class=" col-sm-12 col-md-12">
+                        <div class="d-sd">
+                            <div class="d-sds reveal fade-left" data-wow-delay="0.1s">
+                                <span><img src="{% static 'images/g-logo.png' %}" alt="" class="img-fluid"></span><span
+                                    class="tex">Google</span>
+                            </div>
+                            <div class="d-sds">
+                                <span><img src="{% static 'images/alexa-logo.png' %}" alt=""
+                                        class="img-fluid"></span><span class="tex">Alexa</span>
+                            </div>
+                            <div class="d-sds reveal fade-right" data-wow-delay="0.1s">
+                                <span><img src="{% static 'images/siri-logo.png' %}" alt="5t"
+                                        class="img-fluid"></span><span class="tex">Siri</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="product">
+            <div class="container">
+                <div class="row ">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10">
+                    <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
+                        <h2>“The goal as a company is to have customer service that is not just the best but legendary.”
+                        </h2>
+                    </div>
+                    <p class="text-center">
+                        Onwords , a leading provider of avant-garde technologies and services, offering scalable
+                        smart-solutions for homes and businesses is to assist its customers in syncinng-in to the
+                        evolving smartness of technology and eventually making the global smarter Curious? Then,Brace
+                        and join us in the race!!
+                    </p>
+                  </div>
+                  <div class="col-md-1"></div>
+
+                </div>
+                <div class="etg">
+                    <div class="col-sm-12 col-md-5">
+                        <img src="{% static 'images/home3d-png.png' %}" alt="" class="img-fluid etg-f-img">
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                        <div class="counter-boxs reveal fade-left" data-wow-delay="0.1s" onkeyup="reloads()">
+                            <div class="lead-boxs lead-1">
+                                <h2 id="count1" class="display-4"></h2>
+                                <h5>LEADS</h5>
+                            </div>
+                            <div class="lead-boxs lead-2">
+                                <h2 id="count2" class="display-4"></h2>
+                                <h5>REACH</h5>
+                            </div>
+                            <div class="lead-boxs lead-3">
+                                <h2 id="count3" class="display-4"></h2>
+                                <h5>CLICKS</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimoni">
+            <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
+                <h2>What Our Clients Say</h2>
+            </div>
+            <div class="container">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="box-main-con">
+                                <div class="text-containers">
+                                    <h2 class="text-center">Sushant Singh Rajput</h2>
+                                    <span class="quotesion">
+                                        <img src="{% static 'images/quotes.png' %}" alt="quotes"
+                                            class="img-fluid quotesion">
+                                    </span>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti iste ratione
+                                        esse? Aut corrupti expedita dicta, at hic veniam dignissimos sint in provident
+                                        sequi blanditiis maxime fugiat! Aperiam, molestiae corrupti.
+                                    </p>
+                                    <p class="star-rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </p>
+                                </div>
+                                <div class="testi-customer">
+                                    <img src="{% static 'images/cust-pic.png' %}" alt="" class="img-fluid">
+                                </div>
+                                <span class="f-circl"></span>
+                                <span class="s-circl"></span>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="box-main-con">
+                                <div class="text-containers">
+                                    <h2 class="text-center">Sushant Singh Rajput</h2>
+                                    <span class="quotesion">
+                                        <img src="{% static 'images/quotes.png' %}" alt="quotes"
+                                            class="img-fluid quotesion">
+                                    </span>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti iste ratione
+                                        esse? Aut corrupti expedita dicta, at hic veniam dignissimos sint in provident
+                                        sequi blanditiis maxime fugiat! Aperiam, molestiae corrupti.
+                                    </p>
+                                    <p class="star-rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </p>
+                                </div>
+                                <div class="testi-customer">
+                                    <img src="{% static 'images/cust-pic.png' %}" alt="" class="img-fluid">
+                                </div>
+                                <span class="f-circl"></span>
+                                <span class="s-circl"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev c-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="" aria-hidden="true"><i class="fas fa-arrow-left"></i></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next cn-btn" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3">
+                        <img src="{% static 'images/logos.png' %}" alt="" class="img-fluid sdf">
+                        <p>Onwords Smart Solutions <br>
+                            RR Garden, Zamin Muthur, <br>
+                            Pollachi,
+                            Coimbatore, IN - 642 005 <br>
+                        <div class="fgh">
+                            <span><a href="tel:7708630275" class="footer-list"><i class="fa-solid fa-phone"></i> 77086 30275</a></span>
+                            <br><br>
+                            <span><a href="mailto:cs@onwords.in"class="footer-list"><i
+                                        class="fa-solid fa-envelope"></i>cs@onwords.in</a></span>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-2">
+                        <ul class="listx">
+                            <h5>Quick Links</h5>
+                            <li><a href="/" class="footer-list">Home</a></li>
+                            <li><a href="/ourservices" class="footer-list">Our Services</a></li>
+                            <li><a href="/securitySystem" class="footer-list">Security System</a></li>
+                            <li><a href="" class="footer-list">Our App</a></li>
+                            <li><a href="" class="footer-list">About Us</a></li>
+                            <li><a href="" class="footer-list">Contact</a></li>
+                            <li><a href="/gallery" class="footer-list">Gallery</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="listx">
+                            <h5>Our Services</h5>
+                            <li><a href="" class="footer-list">Smart Home</a></li>
+                            <li><a href="" class="footer-list">Web /App Devlopment</a></li>
+                            <li><a href="" class="footer-list">Digital Marketing</a></li>
+                            <li><a href="" class="footer-list">UI & UX Designing</a></li>
+                            <li><a href="" class="footer-list">Graphic Designing</a></li>
+                            <li><a href="" class="footer-list">Construction</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <h5 >Subscribe Us</h5>
+                        <input type="email" name="" id="" class="mails" placeholder="Enter Your Email"><br>
+                        <button type="submit" class="sub">Subscribe</button>
+                        <div class="row my-4">
+                            <div class="col df">
+                                <a href="https://www.youtube.com/@OnwordsSmartSolutions" target="_blank"><img
+                                        src="{% static 'images/youtube.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col df">
+                                <a href="https://www.facebook.com/teamonwords" target="_blank">
+                                    <img src="{% static 'images/facebook.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col df">
+                                <a href="https://www.instagram.com/team.onwords/
+                               " target="_blank">
+                                    <img src="{% static 'images/instagram.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col df">
+                                <a href="" target="_blank">
+                                    <img src="{% static 'images/linkedin.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col df">
+                                <a href="https://twitter.com/TeamOnwords
+                              " target="_blank">
+                                    <img src="{% static 'images/twitter.png' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="jg">
+                                <a href="https://play.google.com/store/apps/details?id=com.onwords.smarthome">
+                                    <img src="{% static 'images/play.png' %}" alt="df" class="img-fluid">
+                                </a>
+                                <a href="https://apps.apple.com/in/app/onwords-smart-home/id1598367434"><img
+                                        src="{% static 'images/apple.png' %}" alt="" class="img-fluid"></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="text-white">
+                    <span class="text-center" style="text-align: center;"> © Copyright ©2023
+                        Onwords. All Rights Reserved | <a href="/privacyPolicy" class="text-white">Privacy Policy</a></span>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <!-- Preloader -->
+
+
+    <!-- bootstrap js -->
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+    <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
+    <!-- bootstrap js -->
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'images/demo.js' %}"></script>
+    <script src="{% static 'images/darkmode.js' %}"></script>
+    <script src="{% static 'js/scroll.js' %}"></script>
+    <!-- carousel slider end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+
+    <!-- Calling Slick Library -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- carousel slider script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min"></script>
+
+    <!-- bs-4 -->
+
+    <script>
+        document.getElementById('lightonBtn').addEventListener("click", () => {
+            document.getElementById('withlight').style.display = 'block'
+            document.getElementById('withoutlight').style.display = 'none'
+            document.querySelector('.btns-on').style.display = 'none'
+            document.querySelector('.btns-off').style.display = 'block'
+
+        })
+        document.getElementById('lightoffBtn').addEventListener("click", () => {
+            document.getElementById('withlight').style.display = 'none'
+            document.getElementById('withoutlight').style.display = 'block'
+            document.querySelector('.btns-on').style.display = 'block'
+            document.querySelector('.btns-off').style.display = 'none'
+
+        })
+
+    </script>
+    <script>
+        var headBtn = document.getElementById('mydiv')
+        var btns = headBtn.getElementsByClassName('btns');
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", () => {
+                var current = document.getElementsByClassName('act-anim');
+                current[0].className = current[0].className.replace("act-anim", "");
+                this.className += "act-anim";
+            });
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            function counter(id, start, end, duration) {
+                let obj = document.getElementById(id),
+                    current = start,
+                    range = end - start,
+                    increment = end > start ? 1 : -1,
+                    step = Math.abs(Math.floor(duration / range)),
+                    timer = setInterval(() => {
+                        current += increment;
+                        obj.textContent = current;
+                        if (current == end) {
+                            clearInterval(timer);
+                        }
+                    }, step);
+            }
+            counter("count1", 0, 1500, 3000);
+            counter("count2", 100, 1000, 2500);
+            counter("count3", 0, 900, 3000);
+        });
+        // ---topbtn start
+        //Get the button
+        let mybutton = document.getElementById("btn-back-to-top");
+        let whatsapp = document.getElementById("whatsapp")
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+        
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+                whatsapp.style.display = 'block'
+            } else {
+                mybutton.style.display = "none";
+                whatsapp.style.display = 'none'
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        // ---topbtn end
+     
+// Adding scroll event listener
+document.addEventListener('scroll', horizontalScroll);
+
+//Selecting Elements
+        // ---strat mouse wheel--
+        const mouseWheel = document.querySelector('.box-scroll');
+        const boxImg = document.querySelectorAll('.card-box-img')
+
+        mouseWheel.addEventListener('wheel', function (e) {
+            const race = 15; // how many pixels to scroll
+
+            if (e.deltaY > 0){ // Scroll right
+                
+                    mouseWheel.scrollLeft += race;
+                    
+            }
+            else // Scroll left
+                mouseWheel.scrollLeft -= race;
+                
+            e.preventDefault();
+        });
+        // ---strat mouse wheel--
+
+    </script>
+    <script>
+
+    //     window.setTimeout( function reloads() {
+    //   window.location.reload();
+    // }, 20000);
+
+    </script>
+    <script>
+        const blob = document.querySelector('.blob');
+        const cursorScale = document.querySelectorAll('.cursor-scale')
+        window.addEventListener('pointermove', (e) => {
+            const { clientX, clientY } = e;
+            // console.log(clientX, clientY)
+            blob.animate({
+                left: `${clientX}px`,
+                top: `${clientY}px`
+            }, { duration: 3000, fill: "forwards" })
+        })
+        
+        window.addEventListener("mousemove", function (e) {
+            mouseX = e.clientX;
+            mouseY = e.clientY
+        })
+    </script>
+    <script>
+ 
+    </script>
+</body>
+
+</html>
