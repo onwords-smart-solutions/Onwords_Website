@@ -9,11 +9,16 @@
     <!-- bootstrap css -->
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
     <link rel="stylesheet" href="{% static 'css/demo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/general.css' %}">
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <!-- bs-4 -->
-   
+    <link rel="stylesheet" href="{% static 'fonts/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/fonts-6/css/all.css' %}">
+    <title>Onwords</title>
+
 
     <!-- cdn link -->
 
@@ -26,19 +31,16 @@
 <body id="bodyTag">
     <div class="wrapper">
         <!-- navbar start -->
-        <button type="button" class="backtop" id="btn-back-to-top">
-            <i class="fas fa-arrow-up"></i>
-        </button>
         <header>
             <nav class="navbar navbar-expand-lg sticky-top">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/"><img src="{% static 'images/logos.png' %}" alt="logo"
                             class="img-fluid logo"></a>
-                            <div class="darkmodeMob">
+                    <!-- <div class="darkmodeMob">
                                 <img src="{% static 'images/sun-wh.svg' %}" alt="" id="daybright" onclick="dayMode()">
                                 <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid" id="moon"
                                     onclick="nightMode()">
-                            </div>
+                            </div> -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -89,25 +91,31 @@
                             </div>
                         </form>
                     </div>
-                    <div class="darkmode">
-                        <img src="{% static 'images/sun-wh.svg' %}" alt="" id="daybright" onclick="dayMode()">
-                        <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid" id="moon"
-                            onclick="nightMode()">
+                    <div class="darkmode" id="darkbutton">
+                        <img src="{% static 'images/sun-wh.svg' %}" alt="" class="img-fluid sun">
+                        <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid night">
                     </div>
                 </div>
             </nav>
         </header>
         <!-- navbar end -->
-
+        <div class="down-btn">
+            <button type="button" class="backtop" id="btn-back-to-top">
+                <a href="#"><i class="fas fa-arrow-up"></i></a>
+            </button>
+            <button id="whatsapp">
+                <a href="whatsapp:contact=0123456789@s.whatsapp.com&message='' ">
+                    <img src="{% static 'images/whatsapp-ico.svg' %}" alt="whatsapp">
+                </a>
+            </button>
+        </div>
         <div class="demo mob-demo">
             <div class="sf">
                 <!-- <video src="{% static 'images/anim-night.mp4' %}" class="img-fluid night-tv" muted loop
                     autoplay></video> -->
-                     <audio id="audio" src="{% static 'images/hueaudio.mp3' %}"></audio>
-                <video src="{% static 'images/day-4k.mp4' %}" class="img-fluid day" muted loop
-                    autoplay></video>
-                <video src="{% static 'images/night-out.mp4' %}" class="img-fluid night" muted loop
-                    autoplay></video>
+                <audio id="audio" src="{% static 'images/hueaudio.mp3' %}"></audio>
+                <video src="{% static 'images/day-4k.mp4' %}" class="img-fluid day" muted loop autoplay></video>
+                <video src="{% static 'images/night-out.mp4' %}" class="img-fluid night" muted loop autoplay></video>
                 <!-- <video src="{% static 'images/animation-dark.mp4' %}" class="img-fluid day" muted loop autoplay></video>
                 <video src="{% static 'images/day-tv-on.mp4' %}" class="img-fluid day-tv" muted loop autoplay></video>
                 <video src="{% static 'images/day.mp4' %}" class="img-fluid night" muted loop autoplay></video> -->
@@ -146,19 +154,19 @@
                         </p>
                     </div>
                 </div>
-                <div class="mic"onclick="play()">
+                <div class="mic" onclick="play()">
                     <img src="{% static 'images/w-volume.svg' %}" alt="" class="volume-black-slash">
                     <img src="{% static 'images/volumeup-white.svg' %}" alt="" class="volume-black">
                 </div>
-                <div class="micoff"onclick="playoff()">
+                <div class="micoff" onclick="playoff()">
                     <img src="{% static 'images/w-volume.svg' %}" alt="" class="volume-black-slash">
                 </div>
             </div>
         </div>
         <div class="second-section">
-           
+
             <div class="sec-title reveal fade-left center-tex-hue" data-wow-delay="0.1s">
-                <h2>Light your home smarter  <br> Onwords Hue</h2>
+                <h2>Light your home smarter <br> Onwords Hue</h2>
             </div>
             <section>
                 <div class="container">
@@ -170,7 +178,8 @@
                         <div class="col-md-5">
                             <h3 class="fs-1">Sync with Tv</h3>
                             <p class="fs-5">
-                                The Hue Sync TV app works with native smart apps such as Netflix and Disney+, HDMI devices, and set-top boxes. In short: anything you watch on your screen.
+                                The Hue Sync TV app works with native smart apps such as Netflix and Disney+, HDMI
+                                devices, and set-top boxes. In short: anything you watch on your screen.
                             </p>
                         </div>
                         <div class="col-md-1"></div>
@@ -179,11 +188,12 @@
             </section>
             <section>
                 <div class="container">
-                    <div class="row">      
+                    <div class="row">
                         <div class="col-md-5">
                             <h3 class="fs-1">Create the right <br> atmosphere</h3>
                             <p class="fs-5">
-                                The Hue Sync TV app works with native smart apps such as Netflix and Disney+, HDMI devices, and set-top boxes. In short: anything you watch on your screen.
+                                The Hue Sync TV app works with native smart apps such as Netflix and Disney+, HDMI
+                                devices, and set-top boxes. In short: anything you watch on your screen.
                             </p>
                         </div>
                         <div class="col-md-1"></div>
@@ -204,7 +214,8 @@
                         <div class="col-md-5">
                             <h3 class="fs-1">Gaming Mode</h3>
                             <p class="fs-5">
-                                The Hue Sync TV app works with native smart apps such as Netflix and Disney+, HDMI devices, and set-top boxes. In short: anything you watch on your screen.
+                                The Hue Sync TV app works with native smart apps such as Netflix and Disney+, HDMI
+                                devices, and set-top boxes. In short: anything you watch on your screen.
                             </p>
                         </div>
                         <div class="col-md-1"></div>
@@ -213,11 +224,13 @@
             </section>
             <section>
                 <div class="container">
-                    <div class="row">      
+                    <div class="row">
                         <div class="col-md-5">
                             <h3 class="fs-1">Party mode</h3>
                             <p class="fs-5">
-                                We use specially created algorithms to ensure that each light script, which tells your lights how to react to the music, is perfectly tuned to each song — not just the beat but the overall feeling of the music.
+                                We use specially created algorithms to ensure that each light script, which tells your
+                                lights how to react to the music, is perfectly tuned to each song — not just the beat
+                                but the overall feeling of the music.
                             </p>
                         </div>
                         <div class="col-md-1"></div>
@@ -238,7 +251,9 @@
                         <div class="col-md-5">
                             <h3 class="fs-1">Controls with</h3>
                             <p class="fs-5">
-                                Control all your onwords Hue lights, whether you use Bluetooth or Hue Bridge. The main app for the Onwords Hue system, it allows you to turn your lights on and off, create automations and timers, sync your lights to your TV and music, and even upgrade your 
+                                Control all your onwords Hue lights, whether you use Bluetooth or Hue Bridge. The main
+                                app for the Onwords Hue system, it allows you to turn your lights on and off, create
+                                automations and timers, sync your lights to your TV and music, and even upgrade your
                             </p>
                         </div>
                         <div class="col-md-1"></div>
@@ -255,9 +270,10 @@
                                 Pollachi,
                                 Coimbatore, IN - 642 005 <br>
                             <div class="fgh">
-                                <span><a href="tel:7708630275" class="footer-list"><i class="fa-solid fa-phone"></i> 77086 30275</a></span>
+                                <span><a href="tel:7708630275" class="footer-list"><i class="fa-solid fa-phone"></i>
+                                        77086 30275</a></span>
                                 <br><br>
-                                <span><a href="mailto:cs@onwords.in"class="footer-list"><i
+                                <span><a href="mailto:cs@onwords.in" class="footer-list"><i
                                             class="fa-solid fa-envelope"></i>cs@onwords.in</a></span>
                             </div>
                             </p>
@@ -271,7 +287,7 @@
                                 <li><a href="" class="footer-list">Our App</a></li>
                                 <li><a href="" class="footer-list">About Us</a></li>
                                 <li><a href="" class="footer-list">Contact</a></li>
-                                
+
                             </ul>
                         </div>
                         <div class="col-sm-6 col-md-3">
@@ -284,11 +300,11 @@
                                 <li><a href="" class="footer-list">Graphic Designing</a></li>
                                 <li><a href="" class="footer-list">Construction</a></li>
                             </ul>
-    
+
                         </div>
-    
+
                         <div class="col-sm-12 col-md-4">
-                            <h5 >Subscribe Us</h5>
+                            <h5>Subscribe Us</h5>
                             <input type="email" name="" id="" class="mails" placeholder="Enter Your Email"><br>
                             <button type="submit" class="sub">Subscribe</button>
                             <div class="row my-4">
@@ -325,7 +341,7 @@
                                     </a>
                                     <a href="https://apps.apple.com/in/app/onwords-smart-home/id1598367434"><img
                                             src="{% static 'images/apple.png' %}" alt="" class="img-fluid"></a>
-    
+
                                 </div>
                             </div>
                         </div>
@@ -333,7 +349,7 @@
                         <span class="text-center" style="text-align: center;"> © Copyright ©2023
                             Onwords. All Rights Reserved | Privacy Policy</span>
                     </div>
-    
+
                 </div>
             </section>
         </div>
@@ -348,13 +364,15 @@
     <script src="{%static 'js/bootstrap.min.js'%}"></script>
     <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
     <!-- bootstrap js -->
-    <script src="{% static 'js/main.js' %}"></script>
+    <!-- <script src="{% static 'js/main.js' %}"></script> -->
     <script src="{% static 'js/demo.js' %}"></script>
+    <script src="{% static 'js/general.js' %}"></script>
     <!-- carousel slider end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-   
+    <script src="{% static 'js/all.min.js' %}"></script>
+    <script src="{% static 'js/fontawesome.min.js' %}"></script>
 
     <!-- bs-4 -->
 </body>

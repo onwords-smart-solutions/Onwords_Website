@@ -169,6 +169,10 @@ input:checked+.slider:before {
     margin-top: 100%;
     color: #fff;
 }
+.second-section.dark{
+    background-color: #fff;
+    color: #040507;
+}
 
 .day {
     display: block;

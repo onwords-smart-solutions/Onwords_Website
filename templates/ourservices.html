@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    
+
     <!-- bs-4 -->
     <link rel="stylesheet" href="{% static 'fonts/all.min.css' %}">
     <link rel="stylesheet" href="{% static 'fonts/fontawesome.css' %}">
@@ -28,11 +28,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="/"><img src="{% static 'images/logos.png' %}" alt="logo"
                         class="img-fluid logo"></a>
-                <!-- <div class="darkmodeMob">
-                    <img src="{% static 'images/sun-wh.svg' %}" alt="" id="daybright" onclick="dayMode()">
-                    <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid" id="moon"
-                        onclick="nightMode()">
-                </div> -->
+               
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -83,7 +79,7 @@
                         </div>
                     </form>
                 </div>
-                <div  class="darkmode" id="darkbutton">
+                <div class="darkmode" id="darkbutton">
                     <img src="{% static 'images/sun-wh.svg' %}" alt="" class="img-fluid sun">
                     <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid night">
                 </div>
@@ -91,6 +87,7 @@
         </nav>
     </header>
     <!-- navbar end -->
+   <div class="down-btn">
     <button type="button" class="backtop" id="btn-back-to-top">
         <a href="#"><i class="fas fa-arrow-up"></i></a>
     </button>
@@ -99,6 +96,7 @@
             <img src="{% static 'images/whatsapp-ico.svg' %}" alt="whatsapp">
         </a>
     </button>
+   </div>
 
     </div>
     <div class="wrapper">
@@ -118,9 +116,7 @@
                             color schemes to suit your moods or automate your lighting set-up-all at the touch of a
                             button
                         </p>
-
                     </div>
-
                 </div>
             </div>
         </section>

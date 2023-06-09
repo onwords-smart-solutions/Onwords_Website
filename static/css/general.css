@@ -67,3 +67,6 @@
     color: #fff;
     cursor: pointer !important;
 }
+.down-btn{
+    z-index: 999;
+}
