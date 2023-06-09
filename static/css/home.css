@@ -9,6 +9,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+.sun{
+    display: block;
+}
+.night{
+    display: none;
+}
 
 body {
     scroll-behavior: smooth;
@@ -18,7 +24,10 @@ body {
     color: #fff;
     background: #040507;  
 }
-
+#bodyTag.dark{
+    background: #fff;
+    color: #040507;
+}
 
 body::-webkit-scrollbar {
     display: none;
@@ -35,6 +44,9 @@ a {
 }
 a:hover{
     color: #ffff !important;
+}
+a.dark{
+    color: #000;
 }
 
 ul li {

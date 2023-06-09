@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {background-color: white}
+    body.dark {background-color: black}
+    button {background-color: white; color: black}
+    body.dark button {background-color: black; color: white}
+  </style>
+</head>
+<body>
+<button id="darkbutton" class="darkmode">Turn on dark mode</button>
+<script>
+
+const body = document.querySelector('body');
+const button = document.querySelector('#darkbutton');
+function toggleDark() {
+  if (body.classList.contains('dark')) {
+    body.classList.remove('dark');
+    localStorage.setItem("theme", "light");
+    button.innerHTML = "Turn on dark mode";
+  } else {
+    body.classList.add('dark');
+    localStorage.setItem("theme", "dark");
+    button.innerHTML = "Turn off dark mode";
+  }
+}
+
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add('dark');
+  button.innerHTML = "Turn off dark mode";
+}
+
+document.querySelector('#darkbutton').addEventListener('click', toggleDark);
+</script>
+</body>
+</html>
