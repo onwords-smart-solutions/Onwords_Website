@@ -15,5 +15,5 @@ urlpatterns=[
     path('privacyPolicy',views.privacyPolicy,name='privacyPolicy'),
     path('disclaimer',views.disclaimer,name='disclaimer'),
     path('contact',views.contact,name='contact'),
-    path('text',views.text,name='text'),
+    path('aboutus',views.aboutus,name='aboutus'),
 ]
