@@ -131,10 +131,11 @@
   /* width: 100%; */
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
 .center-app-img img {
-  height: 80vh;
+  height: 100%;
   /* width: 100%; */
   text-align: center;
 }
@@ -161,7 +162,7 @@
   text-align: center;
 }
 
-.fgh {
+.fghs {
   position: relative;
 }
 

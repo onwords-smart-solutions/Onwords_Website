@@ -164,9 +164,11 @@
       opacity: 0;
 
    }
+   
 
    .home-main-con h1 {
       font-size: 40px;
+      margin-top: 10px;
    }
 
    .font-anim {
@@ -179,18 +181,14 @@
    }
 
    .message {
-      font-size: 40px;
+      font-size: 37px;
       padding-left: 0;
-      left: 180px;
-      padding-top: 10px;
+      left: 150px;
+      padding-top: 16px;
    }
 
-   #whatsapp {
-      display: none !important;
-   }
-
-   #btn-back-to-top {
-      display: none !important;
+   .child-adv{
+      margin-bottom: 10px;
    }
 
    .df,
@@ -406,7 +404,82 @@
    .darkmode {
       display: none;
    }
-
+   .r-banner::after{
+      display: none;
+   } 
+   .r-banner-img{
+      display: none;
+   }
+   .first-box{
+      width: 100%;
+   }
+   .containersa {
+      margin: 100px auto;
+      width: 120px;
+      height: 250px;
+      position: relative;
+      perspective: 1000px;
+  }
+  .item{
+   width: 100%;
+  }
+  .dfc img {
+   width: 165px;
+   height: 420px;
+   /* margin-left: -15px;
+   margin-top: -82px; */
+}
+  .fghs{
+   width: 100%;
+  }
+  .dim{
+   height: 65vh;
+   width: 95%;
+   margin: 0 10px;
+  }
+  .our-app-banner {
+   margin-top: 100px;
+   height:400px !important;
+}
+.iphone-13{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.iphone-13 img{
+   height:42vh !important;
+   margin-bottom: 20px;
+}
+.span-box{
+   display: none !important
+}
+.top-termss{
+   height: 6vh !important;
+}
+.center-app-img img {
+   height: 50% !important;
+   /* width: 100%; */
+   text-align: center;
+ }
+ nav form{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .navbar-collapse{
+   width: 50%;
+   float: right;
+   height: 100vh;
+ }
+ .box-contact{
+   border-right:1px solid #000 !important;
+   height: 50px;
+ }
+ .box-contacts{
+   border-right:1px solid #000 !important;
+   height: 50px;
+ }
    /* ---our services end */
 
 /* ---------gallery start */
@@ -414,10 +487,5 @@
 /* ---------gallery end */
 }
 
-.dim{
-   height: 50%;
-   margin-top: 20%;
-}
-.mob-s h2{
-   font-size: 18px;
-}
+
+
