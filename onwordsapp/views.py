@@ -29,3 +29,6 @@ def contact(request):
     return render(request,'contact.html')     
 def aboutus(request):
     return render(request,'aboutus.html')    
+def carrier(request):
+    return render(request,'carrier.html')    
+
