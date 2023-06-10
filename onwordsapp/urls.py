@@ -16,4 +16,6 @@ urlpatterns=[
     path('disclaimer',views.disclaimer,name='disclaimer'),
     path('contact',views.contact,name='contact'),
     path('aboutus',views.aboutus,name='aboutus'),
+    path('carrier',views.carrier,name='carrier'),
+
 ]
