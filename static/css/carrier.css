@@ -10,6 +10,34 @@
     background-position: center;
     background-size: cover;
 }
+
+
+.form-frmt input {
+    background: none;
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid #FFFF;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    color: white;
+}
+
+.form-btnzx {
+    width: 150px !important;
+    /* text-align: center !important; */
+
+}
+
+.btn-brd {
+    align-items: center;
+    margin: 10px 0;
+    /* ju/stify-content: end; */
+    
+    /* margin-left: 160px; */
+
+}
+
 /* .name{
     outline: none;
     border: none;
@@ -18,13 +46,3 @@
     
    
 } */
-.form-frmt input{
-    background: none;
-    border: 0;
-    outline: none;
-    border-bottom: 1px solid #FFFF;
-}
-.form-frmt{
-    width: 300%;
-    height: 100%;
-}
