@@ -183,7 +183,7 @@
    .message {
       font-size: 37px;
       padding-left: 0;
-      left: 150px;
+      left: 170px;
       padding-top: 16px;
    }
 
@@ -200,15 +200,33 @@
       width: 100%;
    }
 
-   .navbar-toggler-icon {
-      color: #fff;
-      background-color: transparent;
-      outline: none;
+   nav button{
       border: none;
+      outline: none;
+      background-color: transparent;
+   }
+   .navigation{
+      z-index: 99;
    }
 
    .navbar-toggler-icon i {
       color: #fff;
+   }
+   .navbar{
+      position: relative;
+      width: 100%;
+      
+      
+   }
+   .collapse{
+      position: absolute;
+      background-color: #040507;
+      padding-top:100px;
+      top: 0;
+      right: 0;
+      width: 80%;
+      height: 100vh;
+      z-index: -1;
    }
 
    .nav-item {
@@ -219,9 +237,7 @@
       text-align: center;
    }
 
-   .navbar {
-      background-color: #040507;
-   }
+ 
 
    .active-nav {
       border: none;
@@ -399,6 +415,7 @@
 
    .darkmodeMob {
       display: block;
+     
    }
 
    .darkmode {
@@ -462,16 +479,12 @@
    text-align: center;
  }
  nav form{
-   width: 100%;
+   width: 50%;
    display: flex;
    align-items: center;
    justify-content: center;
  }
- .navbar-collapse{
-   width: 50%;
-   float: right;
-   height: 100vh;
- }
+
  .box-contact{
    border-right:1px solid #000 !important;
    height: 50px;
@@ -480,9 +493,15 @@
    border-right:1px solid #000 !important;
    height: 50px;
  }
-   /* ---our services end */
-
-/* ---------gallery start */
+ .off{
+   display: none;
+ }
+.darkmodemob{
+   display: block !important;
+}
+.nightmob{
+   display: none;
+}
 
 /* ---------gallery end */
 }

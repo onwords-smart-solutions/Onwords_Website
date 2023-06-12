@@ -84,3 +84,33 @@ document.querySelector('#darkbutton').addEventListener('click', toggleDark);
 
 // ======
 
+const bodyMob = document.getElementById('bodyTag');
+const buttonMob = document.querySelector('#darkbutton');
+const nightBtnMob = document.querySelector('.nightmob')
+const sunBtnMob = document.querySelector('.sunmob')
+const anchorMob = document.querySelector('a')
+
+function toggleDark() {
+  if (bodyMob.classList.contains('dark')) {
+    bodyMob.classList.remove('dark');
+    localStorage.setItem("theme", "light");
+    nightBtnMob.style.display='block'
+    sunBtnMob.style.display='none'
+
+   
+  } else {
+    bodyMob.classList.add('dark');
+    localStorage.setItem("theme", "dark");
+    sunBtnMob.style.display='block'
+    nightBtnMob.style.display='none'
+  
+  }
+}
+
+if (localStorage.getItem("theme") === "dark") {
+  bodyMob.classList.add('dark');
+  nightBtnMob.style.display='none';
+  sunBtnMob.style.display='block'
+}
+
+document.querySelector('#darkbuttonmob').addEventListener('click', toggleDark);

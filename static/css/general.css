@@ -70,3 +70,6 @@
 .down-btn{
     z-index: 999;
 }
+.darkmodemob{
+    display: none;
+}
