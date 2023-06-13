@@ -424,6 +424,14 @@ color: #fff;
     position: relative;
  
 }
+.curtain-home{
+    background-repeat: no-repeat;
+    background-image: url(../images/curtain-bg.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
 /* #blur{
     background-color: #020b1f;
 } */

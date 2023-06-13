@@ -308,6 +308,9 @@
       background-repeat: no-repeat;
 
    }
+   .curtain-work{
+      display: flex;
+   }
 
    .security-home {
       width: 100%;
