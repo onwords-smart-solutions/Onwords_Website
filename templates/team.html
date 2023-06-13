@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
     <link rel="stylesheet" href="{% static 'css/team.css' %}">
     <link rel="stylesheet" href="{% static 'css/security-system.css'  %}">
- 
+
     <link rel="stylesheet" href="{% static 'css/general.css' %}">
     <!-- bootstrap css -->
     <!-- fontawesome -->
@@ -28,44 +28,37 @@
 
     <div class="team"></div>
     <section class="">
-       <div class="container">
-        
-        <div class="">
-            <div class="privacy-title team-onwords-title">
-                <h2>Team-Onwords</h2>
-                <p class="fs-4">The creative crew behind Onwords</p>
+        <div class="container">
+
+            <div class="">
+                <div class="privacy-title team-onwords-title">
+                    <h2>Team-Onwords</h2>
+                    <p class="fs-4">The creative crew behind Onwords</p>
+                </div>
+            </div>
+
+            <div class="team-member">
+
+                <div class="empl">
+                    <div class="f-impl">
+                        <img src="{% static 'images/ramkumar-group.png'%}" alt="" class="img-fluid img-title"
+                            data-bs-toggle="popover" title="Ramkumar" data-bs-content="kjgjfjh">
+                        <h6>P.Ramkumar </h6>
+                        <p>Designer</p>
+                    </div>
+                    <div class="after-content">
+                        <h5>Name:Ramkumar</h5>
+                        <p>Designtion:Graphic Designer</p>
+                        <p>Age:43</p>
+                    </div>
+                </div>
+
+
+
+
             </div>
         </div>
 
-        <div class="team-member">
-           <div class="empl">
-            <img src="{% static 'images/ram-designer.png' %}" alt="" class="img-fluid">
-            <h6>P.Ramkumar </h6>
-            <p>Designer</p>
-           </div>
-           <div class="empl">
-            <img src="{% static 'images/ram-designer.png' %}" alt="" class="img-fluid">
-            <h6>P.Ramkumar </h6>
-            <p>Designer</p>
-           </div>
-           <div class="empl">
-            <img src="{% static 'images/ram-designer.png' %}" alt="" class="img-fluid">
-            <h6>P.Ramkumar </h6>
-            <p>Designer</p>
-           </div>
-           <div class="empl">
-            <img src="{% static 'images/ram-designer.png' %}" alt="" class="img-fluid">
-            <h6>P.Ramkumar </h6>
-            <p>Designer</p>
-           </div>
-           <div class="empl">
-            <img src="{% static 'images/ram-designer.png' %}" alt="" class="img-fluid">
-            <h6>P.Ramkumar </h6>
-            <p>Designer</p>
-           </div>
-        </div>
-       </div>
-       
     </section>
 
 
@@ -83,6 +76,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+        var popover = new bootstrap.Popover(document.querySelector('.example-popover'), {
+            container: 'body'
+        })
+    </script>
 </body>
 
 </html>

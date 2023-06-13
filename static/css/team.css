@@ -9,8 +9,18 @@
 .team-onwords-title h2{
     text-transform: capitalize !important;
 }
-.empl img{
-    width: 100px;
+.empl{
+    position: relative;
+    width: 300px;
+}
+.f-impl img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+}
+.img-title title{
+    color: #000;
 }
 .team-member{
     text-align: center;
@@ -22,3 +32,6 @@
     flex-wrap: wrap;
     margin-top: 100px;
 }
+
+
+
