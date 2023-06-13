@@ -73,19 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
   counter("count3", 0, 900, 3000);
 });
 // -------counter start
-const onBtn = document.querySelector('.onnav')
-const offBtn = document.querySelector('.off') 
-const navbarCollapse = document.querySelector('.collapse') 
-onBtn.addEventListener('click',()=>{
-    offBtn.style.display='block'
-    onBtn.style.display='none'
-    navbarCollapse.style.display='block'
-})
-offBtn.addEventListener('click',()=>{
-    onBtn.style.display='block'
-    offBtn.style.display='none'
-    navbarCollapse.style.display='none'
-})
 
 
 

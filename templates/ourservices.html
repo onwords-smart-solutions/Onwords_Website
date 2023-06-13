@@ -28,12 +28,16 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="/"><img src="{% static 'images/logos.png' %}" alt="logo"
                         class="img-fluid logo"></a>
-               
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-                </button>
+                        <div class="darkmodemob" id="darkbuttonmob">
+                            <img src="{% static 'images/sun-wh.svg' %}" alt="" class="img-fluid sunmob">
+                            <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid nightmob">
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><span class="text-white onnav"><i class="fa-solid fa-bars"></i></span>
+                        <span class="off text-white"><i class="fa-solid fa-x"></i></span><span>
+                    </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 sticky">
                         <li class="nav-item">
@@ -71,13 +75,7 @@
                         </li>
                     </ul>
 
-                    <form class="d-flex">
-                        <div class="module-border-wrap">
-                            <div class="module">
-                                Get Started
-                            </div>
-                        </div>
-                    </form>
+                    
                 </div>
                 <div class="darkmode" id="darkbutton">
                     <img src="{% static 'images/sun-wh.svg' %}" alt="" class="img-fluid sun">
@@ -92,7 +90,7 @@
         <a href="#"><i class="fas fa-arrow-up"></i></a>
     </button>
     <button id="whatsapp">
-        <a href="whatsapp:contact=0123456789@s.whatsapp.com&message='' ">
+        <a href="https://wa.me/+917708630275" target="_blank">
             <img src="{% static 'images/whatsapp-ico.svg' %}" alt="whatsapp">
         </a>
     </button>

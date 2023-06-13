@@ -10,8 +10,14 @@
     background-position: center;
     background-size: cover;
 }
-
-
+.sec-first{
+   padding-top: 40px;
+}
+.join-head{
+    text-align: center;
+    padding: 40px 0;
+    font-size: 26px;
+}
 .form-frmt input {
     background: none;
     border: 0;
@@ -31,9 +37,12 @@
 
 .btn-brd {
     align-items: center;
+    width: 100%;
+    justify-content: center;
+    display: flex;
     margin: 10px 0;
     /* ju/stify-content: end; */
-    
+
     /* margin-left: 160px; */
 
 }

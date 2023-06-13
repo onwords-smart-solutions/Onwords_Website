@@ -36,16 +36,16 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/"><img src="{% static 'images/logos.png' %}" alt="logo"
                             class="img-fluid logo"></a>
-                    <!-- <div class="darkmodeMob">
-                                <img src="{% static 'images/sun-wh.svg' %}" alt="" id="daybright" onclick="dayMode()">
-                                <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid" id="moon"
-                                    onclick="nightMode()">
-                            </div> -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-                    </button>
+                            <div class="darkmodemob" id="darkbuttonmob">
+                                <img src="{% static 'images/sun-wh.svg' %}" alt="" class="img-fluid sunmob">
+                                <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid nightmob">
+                            </div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><span class="text-white onnav"><i class="fa-solid fa-bars"></i></span>
+                            <span class="off text-white"><i class="fa-solid fa-x"></i></span><span>
+                        </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 sticky">
                             <li class="nav-item">
@@ -91,6 +91,7 @@
                             </div>
                         </form>
                     </div>
+                   
                     <div class="darkmode" id="darkbutton">
                         <img src="{% static 'images/sun-wh.svg' %}" alt="" class="img-fluid sun">
                         <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid night">
@@ -108,7 +109,7 @@
                     <img src="{% static 'images/whatsapp-ico.svg' %}" alt="whatsapp">
                 </a>
             </button>
-        </div>
+           </div>
         <div class="demo mob-demo">
             <div class="sf">
                 <!-- <video src="{% static 'images/anim-night.mp4' %}" class="img-fluid night-tv" muted loop
