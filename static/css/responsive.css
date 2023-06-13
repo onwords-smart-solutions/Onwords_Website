@@ -505,6 +505,15 @@
 .nightmob{
    display: none;
 }
+.empl{
+   position: relative;
+   width: 100% !important;
+   height: 300px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
 
 /* ---------gallery end */
 }
