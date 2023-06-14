@@ -320,8 +320,13 @@ color: #fff;
 
 .nav-link a :hover,
 .nav-link:hover {
-    color: rgb(134, 22, 87) !important;
+    background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
     border-bottom: 2px solid rgb(134, 22, 87);
+
 }
 
 
@@ -1804,6 +1809,7 @@ transform: scale(1.2);
     justify-content: center;
     height: 100%;
   }
+  
   .second-roll{
     position: relative;
     padding-left: 20px;
