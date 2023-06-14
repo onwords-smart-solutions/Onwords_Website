@@ -18,6 +18,9 @@
 .active.fade-right {
     animation: fade-right 1s ease-in;
 }
+.active.fade-zoom{
+    animation: fade-zoom 1s ease-in;
+}
 
 @keyframes fade-bottom {
     0% {
@@ -53,6 +56,21 @@
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+@keyframes fade-zoom {
+    0%{
+           
+        width: 90%;;
+        opacity: 0;
+    
+    }
+    100%{
+        transform: scale(1.1);
+        opacity: 1;
+        transition: 2s;
+    }
+    
 }
 
 .backtop {
