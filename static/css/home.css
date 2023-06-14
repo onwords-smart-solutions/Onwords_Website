@@ -26,7 +26,7 @@ body {
 }
 #bodyTag.dark{
     background: #fff;
-    color: #040507;
+    color: #040507 !important;
 }
 
 body::-webkit-scrollbar {
@@ -161,6 +161,7 @@ nav {
     margin-top: -15px;
 }
 
+
 #mydiv button {
     position: absolute;
 }
@@ -183,6 +184,16 @@ nav {
 .df,
 .sf {
     width: 170px;
+    transition: 2s ease-in-out;
+    animation: btnsZoom 2s linear infinite;
+}
+@keyframes btnsZoom{
+    0%{
+        width: 170px;
+    }
+    100%{
+        width: 175px;
+    }
 }
 
 #btn-back-to-top {
@@ -325,7 +336,7 @@ color: #fff;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    border-bottom: 2px solid rgb(134, 22, 87);
+    border-bottom: 2px solid rgb(to right #ce4da4, to left #7353e5 );
 
 }
 
@@ -790,6 +801,10 @@ section {
 .lead-boxs h2 {
     font-size: 60px;
     font-weight: 700;
+    color: #fff;
+}
+.lead-boxs h5{
+    color: #fff;
 }
 
 .lead-1,
@@ -1814,6 +1829,10 @@ transform: scale(1.2);
     position: relative;
     padding-left: 20px;
   }
+  /* .mob-s-img{
+    width: 100%;
+    transition: 2s;
+  } */
  
   
   @media (max-width: 620px) {
