@@ -70,3 +70,7 @@ civilBtn.addEventListener('click', () => {
     pr.style.display = 'none'
     civil.style.display = 'block'
 })
+
+// --------download btn---
+
+// --------download btn---

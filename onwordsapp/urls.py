@@ -18,5 +18,6 @@ urlpatterns=[
     path('aboutus',views.aboutus,name='aboutus'),
     path('carrier',views.carrier,name='carrier'),
     path('team',views.team,name='team'),
+    path('downloads',views.downloads,name='downloads'),
 
 ]

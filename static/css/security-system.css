@@ -252,3 +252,20 @@ text-align: center;
   margin: 0;
 }
 /* terms and condiation end*/
+
+/* downloads pages */
+.download-list{
+  color: #fff;
+  
+}
+.download-list span :nth-child(1){
+  width: 20px;
+  margin-right: 20px;
+}
+.download-list span:nth-child(2){
+  font-size: 22px;
+} 
+.down-ul li{
+  margin: 10px 0px;
+}
+

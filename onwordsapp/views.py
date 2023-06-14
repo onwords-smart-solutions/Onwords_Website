@@ -33,4 +33,6 @@ def carrier(request):
     return render(request,'carrier.html')    
 def team(request):
     return render(request,'team.html')    
+def downloads(request):
+    return render(request,'downloads.html')    
 
