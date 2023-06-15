@@ -1,5 +1,6 @@
 let mybutton = document.getElementById("btn-back-to-top");
 let whatsapp = document.getElementById("whatsapp")
+var nav = document.querySelector('nav')
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -13,18 +14,20 @@ function scrollFunction() {
     ) {
         mybutton.style.display = "block";
         whatsapp.style.display = 'block'
+        nav.style.width='100%'
+        
     } else {
         mybutton.style.display = "none";
         whatsapp.style.display = 'none'
+        nav.style.width='80%'
+        
     }
 }
 
 // --------
 window.addEventListener("scroll", () => {
     var header = document.querySelector("header");
-    var navItem = document.querySelector("nav-item");
     header.classList.toggle("sticky", window.scrollY > 0)
-    navItem.classList.toogle("nav-a", window.scrollY > 0)
   })
 
 //   ------

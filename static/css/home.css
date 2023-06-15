@@ -96,8 +96,11 @@ header.sticky {
 
 
 nav {
-    width: 100%;
+    width: 80%;
+    margin: auto;
+    transition: 1s;
 }
+
 
 #withlight {
     background-image: url(../images/ons.png);
