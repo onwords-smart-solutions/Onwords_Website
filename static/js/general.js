@@ -62,6 +62,7 @@ function toggleDark() {
     localStorage.setItem("theme", "light");
     nightBtn.style.display='block'
     sunBtn.style.display='none'
+    anchor.style.color='#000'
 
    
   } else {
