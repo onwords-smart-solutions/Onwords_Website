@@ -93,6 +93,7 @@ const buttonMob = document.querySelector('#darkbutton');
 const nightBtnMob = document.querySelector('.nightmob')
 const sunBtnMob = document.querySelector('.sunmob')
 const anchorMob = document.querySelector('a')
+const footerIcon = document.querySelectorAll('.footer-social-icon')
 
 function toggleDark() {
   if (bodyMob.classList.contains('dark')) {
@@ -100,6 +101,9 @@ function toggleDark() {
     localStorage.setItem("theme", "light");
     nightBtnMob.style.display='block'
     sunBtnMob.style.display='none'
+    for(const footerIcons of footerIcon){
+      footerIcons.style.color='#fff'
+    }
 
    
   } else {
@@ -107,6 +111,9 @@ function toggleDark() {
     localStorage.setItem("theme", "dark");
     sunBtnMob.style.display='block'
     nightBtnMob.style.display='none'
+    for(const footerIcons of footerIcon){
+      footerIcons.style.color='#000'
+    }
   
   }
 }
@@ -115,6 +122,9 @@ if (localStorage.getItem("theme") === "dark") {
   bodyMob.classList.add('dark');
   nightBtnMob.style.display='none';
   sunBtnMob.style.display='block'
+  for(const footerIcons of footerIcon){
+    footerIcons.style.color='#fff'
+  }
 }
 
 document.querySelector('#darkbuttonmob').addEventListener('click', toggleDark);
