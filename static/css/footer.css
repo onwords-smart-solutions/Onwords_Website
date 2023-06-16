@@ -1,0 +1,13 @@
+.footer-foot i {
+    margin-right: 20px;
+}
+.mail-foot i{
+    margin-right: 15px;
+}
+.phone-foot i{
+    margin-right: 15px;
+}
+.company-list-1 li p{
+   cursor: pointer;
+   
+}
