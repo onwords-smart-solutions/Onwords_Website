@@ -45,39 +45,33 @@
                             <span class="off text-white"><i class="fa-solid fa-x"></i></span><span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 sticky">
+                        <ul class="navbar-nav me-auto">
                             <li class="nav-item">
-                                <a class="nav-link active-nav" aria-current="page" href="/">Home</a>
+                                <p class= "active-nav" aria-current="page" onclick="location.href='/'">Home</p>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                <p class=" dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Our Services
-                                </a>
+                                </p>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="/ourservices">Smart home</a></li>
-                                    <li><a class="dropdown-item" href="/gateautomation">Gate Automation</a></li>
-                                    <li><a class="dropdown-item" href="/agriautomation">Agri Automation</a></li>
-                                    <li><a class="dropdown-item" href="#">Software & Hardware</a></li>
-                                    <li><a class="dropdown-item" href="#">Web/App Devlopment</a></li>
-                                    <li><a class="dropdown-item" href="#">Ui&Ux Designing</a></li>
-                                    <li><a class="dropdown-item" href="#">Graphics Designing</a></li>
-                                    <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
-                                    <li><a class="dropdown-item" href="/construction">Onwords Construction</a></li>
+                                    <li><p class="dropdown-item" onclick="location.href='/ourservices'">Smart home</p></li>
+                                    <li><a class="dropdown-item" onclick="location.href='/gateautomation'">Gate Automation</a></li>
+                                    <li><a class="dropdown-item" onclick="href='/construction'">Onwords Construction</a></li>
                                 </ul>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="/securitySystem">Security System</a>
+                                <p  onclick="locaion.href='/securitySystem'">Security System</p>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/ourApp">Our App</a>
+                                <p  onclick="location.href='/ourApp'">Our App</p>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/aboutus">About Us</a>
+                                <p  onclick="locaion.href='/aboutus'">About Us</p>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/contact">Contact</a>
+                                <p  onclick="locaion.href='/contact'">Contact</p>
                             </li>
 
                         </ul>
@@ -90,6 +84,7 @@
                             </div>
                         </form> -->
                     </div>
+                    
                     <div class="darkmode" id="darkbutton">
                         <img src="{% static 'images/sun-wh.svg' %}" alt="" class="img-fluid sun">
                         <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid night">
@@ -661,7 +656,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-2">
@@ -674,13 +669,13 @@
                                 <p onclick="location.href='/contact'">Contact Us</p>
                             </li>
                             <li>
-                                <p  onclick="location.href='/ourApp'">Our App</p>
+                                <p onclick="location.href='/ourApp'">Our App</p>
                             </li>
                             <li>
-                                <p  onclick="location.href='/gallery'">Gallery</p>
+                                <p onclick="location.href='/gallery'">Gallery</p>
                             </li>
                             <li>
-                                <p  onclick="location.href='/carrier'">Carrers</p>
+                                <p onclick="location.href='/carrier'">Carrers</p>
                             </li>
 
 
@@ -721,7 +716,7 @@
                             </li>
                         </ul>
                     </div>
-                  
+
                     <div class="col-md-3">
                         <div>
                             <h5>Connect With Us</h5>
@@ -746,7 +741,7 @@
                 <hr class="text-white">
                 <p> © Copyright ©2023
                     Onwords. All Rights Reserved | </p>
-                    
+
         </section>
         <!-- <section class="footer">
             <div class="container">
