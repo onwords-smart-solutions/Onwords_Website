@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{%static 'css/footer.css' %}">
+
     <!-- bs-4 -->
     <link rel="stylesheet" href="{% static 'fonts/all.min.css' %}">
     <link rel="stylesheet" href="{% static 'fonts/fontawesome.css' %}">
@@ -249,100 +251,289 @@
 
 
     </div>
-    <section class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-3">
-                    <img src="{% static 'images/logos.png' %}" alt="" class="img-fluid sdf">
-                    <p>Onwords Smart Solutions <br>
-                        RR Garden, Zamin Muthur, <br>
-                        Pollachi,
-                        Coimbatore, IN - 642 005 <br>
-                    <div class="fgh">
-                        <span>
-                            <a href="tel:7708630275" class="footer-list"><i class="fa-solid fa-phone"></i> 77086
-                            30275</a>
-                        </span>
-                        <br><br>
-                        <span><a href="mailto:cs@onwords.in" class="footer-list"><i
-                                    class="fa-solid fa-envelope"></i>cs@onwords.in</a></span>
+           <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <ul class="company-list-1">
+                            <h5>Company</h5>
+                            <li>
+                                <p onclick="location.href='/aboutus'">About Us</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/contact'">Contact Us</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/ourApp'">Our App</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/gallery'">Gallery</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/carrier'">Carrers</p>
+                            </li>
+
+
+                        </ul>
+
                     </div>
-                    </p>
-                </div>
-                <div class="col-sm-6 col-md-2">
-                    <ul class="listx">
-                        <h5>Quick Links</h5>
-                        <li><a href="/" class="footer-list">Home</a></li>
-                        <li><a href="/ourservices" class="footer-list">Our Services</a></li>
-                        <li><a href="/Security System" class="footer-list">Security System</a></li>
-                        <li><a href="/Our App" class="footer-list">Our App</a></li>
-                        <li><a href="/aboutus" class="footer-list">About Us</a></li>
-                        <li><a href="/Contact" class="footer-list">Contact</a></li>
+                    <div class="col-md-2">
+                        <ul class="our-services-foot">
+                            <h5>Our Services</h5>
+                            <li>
+                                <p onclick="location.href='/ourservices'">Smart Home</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/gateautomation'">Gate Automation</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/securitySystem'">Security System</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/curtain'">Smart Curtain</p>
+                            </li>
+                            <li>
+                                <p> Constructions</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="quick-links-foot">
+                            <h5>Quick Links</h5>
+                            <li>
+                                <p onclick="location.href='/'"> Home</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/ourservices'">Our Services</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/securitySystem'">Security System</p>
+                            </li>
+                        </ul>
+                    </div>
 
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <ul class="listx">
-                        <h5>Our Services</h5>
-                        <li><a href="" class="footer-list">Smart Home</a></li>
-                        <li><a href="" class="footer-list">Web /App Devlopment</a></li>
-                        <li><a href="" class="footer-list">Digital Marketing</a></li>
-                        <li><a href="" class="footer-list">UI & UX Designing</a></li>
-                        <li><a href="" class="footer-list">Graphic Designing</a></li>
-                        <li><a href="" class="footer-list">Construction</a></li>
-                    </ul>
+                    <div class="col-md-3">
+                        <div class=" onwords-details-foot">
+                            <h5>Connect With Us</h5>
+                            <div class="footer-foot">
+                                <a href="https://www.linkedin.com/company/onwords-smart-solution/
+                            " target="_blank" class="footer-social-icon"></i><i class="fa-brands fa-linkedin"></i></a>
 
-                </div>
+                                <a href="https://www.instagram.com/team.onwords/
+                                " target="_blank" class="footer-social-icon"></i><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="https://https://www.facebook.com/teamonwords/
+                                " target="_blank" class="footer-social-icon"></i><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.youtube.com/@OnwordsSmartSolutions/
+                                " target="_blank" class="footer-social-icon"></i> <i
+                                        class="fa-brands fa-square-youtube"></i></i></a>
+                            </div>
 
-                <div class="col-sm-12 col-md-4">
-                    <h5>Subscribe Us</h5>
-                    <input type="email" name="" id="" class="mails" placeholder="Enter Your Email"><br>
-                    <button type="submit" class="sub">Subscribe</button>
-                    <div class="row my-4">
-                        <div class="col df">
-                            <a href="https://www.youtube.com/@OnwordsSmartSolutions" target="_blank"><img
-                                    src="{% static 'images/youtube.png' %}" alt="" class="img-fluid">
-                            </a>
+
+                            <div class="footer-foot">
+                                <!-- <i class="fa-brands fa-linkedin" onclick="location.href='/'"></i>
+                                <span onclick="location.href='www.instagram.com/team.onwords/'" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></span>
+                                <i class="fa-brands fa-facebook"></i> -->
+
+                            </div>
+                            <br>
+                            <div>
+                                <p>Onwords Smart Solutions
+                                    Coimbatore, IN - 642 005</p>
+                                <p class="mail-foot" onclick="location.href='mailto:cs@onwords.in'"><i
+                                        class="fa-solid fa-envelope"></i>cs@onwords.in</p>
+                                <p class="phone-foot" onclick="location.href='tel:7708630275'"><i
+                                        class="fa-solid fa-phone"></i> 77086
+                                    30275</p>
+                            </div>
+
                         </div>
-                        <div class="col df">
-                            <a href="https://www.facebook.com/teamonwords" target="_blank">
-                                <img src="{% static 'images/facebook.png' %}" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="col df">
-                            <a href="https://www.instagram.com/team.onwords/
-                           " target="_blank">
-                                <img src="{% static 'images/instagram.png' %}" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="col df">
-                            <a href="" target="_blank">
-                                <img src="{% static 'images/linkedin.png' %}" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="col df">
-                            <a href="https://twitter.com/TeamOnwords
-                          " target="_blank">
-                                <img src="{% static 'images/twitter.png' %}" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="jg">
-                            <a href="https://play.google.com/store/apps/details?id=com.onwords.smarthome">
-                                <img src="{% static 'images/play.png' %}" alt="df" class="img-fluid">
-                            </a>
-                            <a href="https://apps.apple.com/in/app/onwords-smart-home/id1598367434"><img
-                                    src="{% static 'images/apple.png' %}" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="our-app-foot ">
+                            <h5>Our Apps</h5>
+                            <div class="app-google-store">
+                                <a href="https://play.google.com/store/apps/details?id=com.onwords.smarthome">
+                                    <img src="{% static 'images/play.png' %}" alt="" class="img-fluid">
+                                </a>
+                                <a href="https://apps.apple.com/in/app/onwords-smart-home/id1598367434"><img
+                                        src="{% static 'images/apple.png' %}" alt="" class="img-fluid"></a>
+                            </div>
 
                         </div>
                     </div>
                 </div>
                 <hr class="text-white">
-                <span class="text-center" style="text-align: center;"> © Copyright ©2023
-                    Onwords. All Rights Reserved | Privacy Policy</span>
-            </div>
+                <div class="bootom-footer">
+                    <div>
+                        <p> © Copyright ©2023
+                            Onwords. All Rights Reserved | </p>
+                    </div>
+                    <div>
+                        <ul class="footer-bottom">
+                            <li>
+                                <p onclick="location.href='/disclaimer'">Privacy Policy</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/privacyPolicy'">Terms of Use</p>
+                            </li>
+                            <li>
+                                <p>Sales and Refunds</p>
+                            </li>
+                            <li>
+                                <p>Legal</p>
+                            </li>
+                            <li>
+                                <p>Site Map</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <ul class="company-list-1">
+                            <h5>Company</h5>
+                            <li>
+                                <p onclick="location.href='/aboutus'">About Us</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/contact'">Contact Us</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/ourApp'">Our App</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/gallery'">Gallery</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/carrier'">Carrers</p>
+                            </li>
 
-        </div>
-    </section>
+
+                        </ul>
+
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="our-services-foot">
+                            <h5>Our Services</h5>
+                            <li>
+                                <p onclick="location.href='/ourservices'">Smart Home</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/gateautomation'">Gate Automation</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/securitySystem'">Security System</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/curtain'">Smart Curtain</p>
+                            </li>
+                            <li>
+                                <p> Constructions</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="quick-links-foot">
+                            <h5>Quick Links</h5>
+                            <li>
+                                <p onclick="location.href='/'"> Home</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/ourservices'">Our Services</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/securitySystem'">Security System</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class=" onwords-details-foot">
+                            <h5>Connect With Us</h5>
+                            <div class="footer-foot">
+                                <a href="https://www.linkedin.com/company/onwords-smart-solution/
+                            " target="_blank" class="footer-social-icon"></i><i class="fa-brands fa-linkedin"></i></a>
+
+                                <a href="https://www.instagram.com/team.onwords/
+                                " target="_blank" class="footer-social-icon"></i><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="https://https://www.facebook.com/teamonwords/
+                                " target="_blank" class="footer-social-icon"></i><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.youtube.com/@OnwordsSmartSolutions/
+                                " target="_blank" class="footer-social-icon"></i> <i
+                                        class="fa-brands fa-square-youtube"></i></i></a>
+                            </div>
+
+
+                            <div class="footer-foot">
+                                <!-- <i class="fa-brands fa-linkedin" onclick="location.href='/'"></i>
+                                <span onclick="location.href='www.instagram.com/team.onwords/'" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></span>
+                                <i class="fa-brands fa-facebook"></i> -->
+
+                            </div>
+                            <br>
+                            <div>
+                                <p>Onwords Smart Solutions
+                                    Coimbatore, IN - 642 005</p>
+                                <p class="mail-foot" onclick="location.href='mailto:cs@onwords.in'"><i
+                                        class="fa-solid fa-envelope"></i>cs@onwords.in</p>
+                                <p class="phone-foot" onclick="location.href='tel:7708630275'"><i
+                                        class="fa-solid fa-phone"></i> 77086
+                                    30275</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="our-app-foot ">
+                            <h5>Our Apps</h5>
+                            <div class="app-google-store">
+                                <a href="https://play.google.com/store/apps/details?id=com.onwords.smarthome">
+                                    <img src="{% static 'images/play.png' %}" alt="" class="img-fluid">
+                                </a>
+                                <a href="https://apps.apple.com/in/app/onwords-smart-home/id1598367434"><img
+                                        src="{% static 'images/apple.png' %}" alt="" class="img-fluid"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-white">
+                <div class="bootom-footer">
+                    <div>
+                        <p> © Copyright ©2023
+                            Onwords. All Rights Reserved | </p>
+                    </div>
+                    <div>
+                        <ul class="footer-bottom">
+                            <li>
+                                <p onclick="location.href='/disclaimer'">Privacy Policy</p>
+                            </li>
+                            <li>
+                                <p onclick="location.href='/privacyPolicy'">Terms of Use</p>
+                            </li>
+                            <li>
+                                <p>Sales and Refunds</p>
+                            </li>
+                            <li>
+                                <p>Legal</p>
+                            </li>
+                            <li>
+                                <p>Site Map</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+
 
 
     <!-- Preloader -->
