@@ -15,8 +15,8 @@ function scrollFunction() {
         mybutton.style.display = "block";
         whatsapp.style.display = 'block'
         nav.style.width='100%'
-        
-    } else {
+    } 
+    else {
         mybutton.style.display = "none";
         whatsapp.style.display = 'none'
         nav.style.width='80%'
@@ -55,7 +55,7 @@ const button = document.querySelector('#darkbutton');
 const nightBtn = document.querySelector('.night')
 const sunBtn = document.querySelector('.sun')
 const anchor = document.querySelector('a')
-
+const header = document.querySelector('nav')
 function toggleDark() {
   if (body.classList.contains('dark')) {
     body.classList.remove('dark');
@@ -63,15 +63,14 @@ function toggleDark() {
     nightBtn.style.display='block'
     sunBtn.style.display='none'
     anchor.style.color='#000'
-
+    header.style.backgroundColor='#fff'
    
   } else {
     body.classList.add('dark');
     localStorage.setItem("theme", "dark");
     sunBtn.style.display='block'
     nightBtn.style.display='none'
-    
-    
+    header.style.backgroundColor='#000'
   }
 }
 
@@ -79,6 +78,7 @@ if (localStorage.getItem("theme") === "dark") {
   body.classList.add('dark');
   nightBtn.style.display='none';
   sunBtn.style.display='block'
+ 
 }
 
 document.querySelector('#darkbutton').addEventListener('click', toggleDark);
