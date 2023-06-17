@@ -113,34 +113,45 @@
                     <div class="col-md-10"></div>
                     <div class="col-md-2">
                         <div class="v-button">
-                            <p>Vol-Button</p>
-                            <p>Play Button</p>
+                            <p style="cursor: pointer;">
+                                <span id="vol-on">Vol On</span>
+                                <span><span id="vol-off">Vol Off</span>
+                            </p>
+
+                            <p>
+                                <span id="video-play">Video play</span>
+                                <span id="video-pause">Video pause</span>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-1"></div>
                     <div class="col-md-5">
-                        <h2 style="margin-top: -200px;">Sync With Tv</h2>
+                        <h2 style="margin-top: -200px; font-size: 60px;">Sync With Tv</h2>
                     </div>
                     <div class="col-md-3"></div>
-                    <div class="col-md-3" style="margin-top: -100px;">
+                    <div class="col-md-3" style="margin-top: -110px;">
+                        <center>
+                            <h6 class="anim-press-btn">Press Play Button</h6>
+                        </center>
                         <div class="press-play-btn">
                             <p class="fs-3 fw-2">Sync Hue <br>
-                            <span class="text-warning">Off</span>
+                                <span class="text-warning text-indicate" >Off</span>
                             </p>
                             <p>
                                 <label class="switch">
-                                    <input type="checkbox">
+                                    <input type="checkbox" id="demoBtn" onclick="demoPlay()">
                                     <span class="slider round"></span>
-                                  </label>
+                                </label>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="video-src">
-                <video src="{% static 'images/day-4k.mp4' %}" class="img-fluid " muted loop></video>
+                <video src="{% static 'images/demo-new-video.mp4' %}" class="img-fluid " muted loop autoplay id="video-demos"></video>
+                <video src="{% static 'images/day-4k.mp4' %}" class="img-fluid " muted loop id="front-img"></video>
             </div>
 
         </div>
