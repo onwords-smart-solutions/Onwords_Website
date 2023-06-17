@@ -320,7 +320,7 @@ color: #fff;
 }
 
 .nav-item a {
-    /* color: #ccc; */
+    color: #ccc;
     font-size: 16px;
     font-weight: 600;
 }
@@ -355,7 +355,7 @@ color: #fff;
 }
 
 .dropdown-toggle {
-    color: rgb(134, 22, 87);
+    color: #fff;
 }
 
 .act-nav {
@@ -364,7 +364,7 @@ color: #fff;
 
 .dropdown-menu {
     background-color: #040507 !important;
-    color: #fff;
+    color: #fff !important;
 }
 
 .dropdown-item {
@@ -373,6 +373,7 @@ color: #fff;
 
 .dropdown-item:hover {
     background-color:#000 !important;
+    color: #fff;
 }
 
 .home-main-con h1 {

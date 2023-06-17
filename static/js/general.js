@@ -56,8 +56,14 @@ const nightBtn = document.querySelector('.night')
 const sunBtn = document.querySelector('.sun')
 const anchor = document.querySelector('a')
 const header = document.querySelector('nav')
-function toggleDark() {
+function toggleDark(){
+
+
   if (body.classList.contains('dark')) {
+    window.addEventListener("scroll", () => {
+      var header = document.querySelector("header");
+      header.classList.toggle("light", window.scrollY > 0)
+    })
     body.classList.remove('dark');
     localStorage.setItem("theme", "light");
     nightBtn.style.display='block'
@@ -67,6 +73,11 @@ function toggleDark() {
    
   }
   else {
+    window.addEventListener("scroll", () => {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  
     body.classList.add('dark');
     localStorage.setItem("theme", "dark");
     sunBtn.style.display='block'
