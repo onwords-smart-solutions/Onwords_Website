@@ -65,7 +65,8 @@ function toggleDark() {
     anchor.style.color='#000'
     header.style.backgroundColor='#fff'
    
-  } else {
+  }
+  else {
     body.classList.add('dark');
     localStorage.setItem("theme", "dark");
     sunBtn.style.display='block'
