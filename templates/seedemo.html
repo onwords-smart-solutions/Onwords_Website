@@ -113,15 +113,15 @@
                     <div class="col-md-10"></div>
                     <div class="col-md-2">
                         <div class="v-button">
-                            <p style="cursor: pointer;">
-                                <span id="vol-on">Vol On</span>
-                                <span><span id="vol-off">Vol Off</span>
+                            <p  class="vol-group">
+                                <span class="vl-on" onclick="volon()"><img src="{% static 'images/vol-on.png' %}" alt="" class="img-fluid"></span>
+                                <span><span class="vl-off" onclick="voloff()"><img src="{% static 'images/vol-off.png' %}" alt="" class="img-fluid"></span>
                             </p>
 
-                            <p>
-                                <span id="video-play">Video play</span>
-                                <span id="video-pause">Video pause</span>
-                            </p>
+                            <!-- <p style="cursor: pointer;" id="video-pausegroup">
+                                <span id="video-play" onclick="videoplay()"><img src="{% static 'images/pause.png' %}" alt="" class="img-fluid"></span>
+                                <span id="video-pause" onclick="videopause()"><img src="{% static 'images/play.png' %}" alt="" class="img-fluid"></span>
+                            </p> -->
                         </div>
                     </div>
                 </div>
@@ -150,6 +150,7 @@
                 </div>
             </div>
             <div class="video-src">
+                <audio id="audio" src="{% static 'images/hueaudio.mp3' %}" id="audioplay"></audio>
                 <video src="{% static 'images/demo-new-video.mp4' %}" class="img-fluid " muted loop autoplay id="video-demos"></video>
                 <video src="{% static 'images/day-4k.mp4' %}" class="img-fluid " muted loop id="front-img"></video>
             </div>
@@ -422,6 +423,7 @@
     <script src="{% static 'js/fontawesome.min.js' %}"></script>
 
     <!-- bs-4 -->
+   
 </body>
 
 </html>
