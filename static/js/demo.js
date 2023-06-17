@@ -101,42 +101,24 @@ function playoff() {
 }
 
 
-
-
-
-
-
-function backToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
-    document.addEventListener('mousemove', function(e){
-	const x = e.clientX;
-	const y = e.clientY;
-
-	secondCircle.style.transform = `translate(${x}px, ${y}px)`;
-	mainCircle.style.transform = `translate(${x}px, ${y}px)`;
-
-	const hoverables = document.querySelectorAll('.hoverable');
-
-	Array.from(hoverables).forEach((hoverEl) => {
-		hoverEl.addEventListener('mouseover', (e) => {
-			mainCircle.classList.add('circle-hide');
-			secondCircle.classList.add('circle-scale');
-		})
-	})
-
-	Array.from(hoverables).forEach((hoverEl) => {
-		hoverEl.addEventListener('mouseout', (e) => {
-			mainCircle.classList.remove('circle-hide');
-			secondCircle.classList.remove('circle-scale');
-		})
-	});
-
-});
-    
 // ------
+
+function demoPlay() {
+    const DemoBtn = document.getElementById('demoBtn')
+    const TextIndicate = document.querySelector('.text-indicate')
+    const videoDemos = document.getElementById('video-demos')
+    const frontImg = document.getElementById('front-img')
+    if (DemoBtn.checked == true) {
+        videoDemos.style.display = 'block'
+        frontImg.style.display = 'none'
+        TextIndicate.innerHTML='On'
+    }
+    if (DemoBtn.checked == false) {
+        videoDemos.style.display = 'none'
+        frontImg.style.display = 'block'
+        TextIndicate.innerHTML='Off'
+    }
+}
 
 
 
