@@ -38,17 +38,16 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/"><img src="{% static 'images/logos.png' %}" alt="logo"
                             class="img-fluid logo"></a>
-                    <div class="darkmodemob" id="darkbuttonmob">
-                        <img src="{% static 'images/sun-wh.svg' %}" alt="" class="img-fluid sunmob">
-                        <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid nightmob">
-                    </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><span class="text-white onnav"><i
-                                    class="fa-solid fa-bars"></i></span>
+                            <div class="darkmodemob" id="darkbuttonmob">
+                                <img src="{% static 'images/sun-wh.svg' %}" alt="" class="img-fluid sunmob">
+                                <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid nightmob">
+                            </div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><span class="text-white onnav"><i class="fa-solid fa-bars"></i></span>
                             <span class="off text-white"><i class="fa-solid fa-x"></i></span><span>
-                    </button>
+                        </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 sticky">
                             <li class="nav-item">
@@ -85,8 +84,16 @@
                                 <a class="nav-link" href="/contact">Contact</a>
                             </li>
                         </ul>
-                    </div>
 
+                        <form class="d-flex">
+                            <div class="module-border-wrap">
+                                <div class="module">
+                                    Get Started
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                   
                     <div class="darkmode" id="darkbutton">
                         <img src="{% static 'images/sun-wh.svg' %}" alt="" class="img-fluid sun">
                         <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid night">
@@ -105,49 +112,60 @@
                 </a>
             </button>
         </div>
-
-
-        <div class="demo-section">
-            <div class=" container-fluid front-demo-section">
-                <div class="row">
-                    <div class="col-md-10"></div>
-                    <div class="col-md-2">
-                        <div class="v-button">
-                            <p>Vol-Button</p>
-                            <p>Play Button</p>
-                        </div>
+        <div class="demo mob-demo">
+            <div class="sf">
+                <!-- <video src="{% static 'images/anim-night.mp4' %}" class="img-fluid night-tv" muted loop
+                    autoplay></video> -->
+                <audio id="audio" src="{% static 'images/hueaudio.mp3' %}"></audio>
+                <video src="{% static 'images/day-4k.mp4' %}" class="img-fluid day" muted loop autoplay></video>
+                <video src="{% static 'images/night-out.mp4' %}" class="img-fluid night" muted loop autoplay></video>
+                <!-- <video src="{% static 'images/animation-dark.mp4' %}" class="img-fluid day" muted loop autoplay></video>
+                <video src="{% static 'images/day-tv-on.mp4' %}" class="img-fluid day-tv" muted loop autoplay></video>
+                <video src="{% static 'images/day.mp4' %}" class="img-fluid night" muted loop autoplay></video> -->
+                <video src="{% static 'images/nigh.mp4' %}" class="img-fluid hue" muted loop autoplay></video>
+                <!-- <video src="{% static 'images/tv-on-anim.mp4' %}" class="img-fluid hue-off" muted loop autoplay></video> -->
+            </div>
+            <div class="sfh">
+                <div class="jh">
+                    <h6 class="title-word text-white">
+                        Press play to start Syncing
+                    </h6>
+                    <div class=" blurred-box">
+                        <img src="{% static 'images/scene.png' %}" alt="scene">
+                        <p class="display">
+                            <span>Night</span>
+                            <span class="TvText">Off</span>
+                        </p>
+                        <p>
+                            <label class="switch">
+                                <input type="checkbox" onclick="tv()" id="tv">
+                                <span class="slider round"></span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class=" blurred-box">
+                        <img src="{% static 'images/hue.png' %}" alt="scene">
+                        <p class="display">
+                            <span>Hue</span>
+                            <span class="hueText">Off</span>
+                        </p>
+                        <p>
+                            <label class="switch">
+                                <input type="checkbox" onclick="hue()" id="hueBtn">
+                                <span class="slider round"></span>
+                            </label>
+                        </p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-5">
-                        <h2 style="margin-top: -200px;">Sync With Tv</h2>
-                    </div>
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3" style="margin-top: -100px;">
-                        <div class="press-play-btn">
-                            <p class="fs-3 fw-2">Sync Hue <br>
-                            <span class="text-warning">Off</span>
-                            </p>
-                            <p>
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="slider round"></span>
-                                  </label>
-                            </p>
-                        </div>
-                    </div>
+                <div class="mic" onclick="play()">
+                    <img src="{% static 'images/w-volume.svg' %}" alt="" class="volume-black-slash">
+                    <img src="{% static 'images/volumeup-white.svg' %}" alt="" class="volume-black">
+                </div>
+                <div class="micoff" onclick="playoff()">
+                    <img src="{% static 'images/w-volume.svg' %}" alt="" class="volume-black-slash">
                 </div>
             </div>
-            <div class="video-src">
-                <video src="{% static 'images/day-4k.mp4' %}" class="img-fluid " muted loop></video>
-            </div>
-
         </div>
-
-
-
-
         <div class="second-section">
 
             <div class="sec-title reveal fade-left center-tex-hue" data-wow-delay="0.1s">
@@ -266,10 +284,10 @@
                                 <li>
                                     <p onclick="location.href='/carrier'">Carrers</p>
                                 </li>
-
-
+    
+    
                             </ul>
-
+    
                         </div>
                         <div class="col-md-2">
                             <ul class="our-services-foot">
@@ -305,15 +323,14 @@
                                 </li>
                             </ul>
                         </div>
-
+    
                         <div class="col-md-3">
                             <div class=" onwords-details-foot">
                                 <h5>Connect With Us</h5>
                                 <div class="footer-foot">
                                     <a href="https://www.linkedin.com/company/onwords-smart-solution/
-                                " target="_blank" class="footer-social-icon"></i><i
-                                            class="fa-brands fa-linkedin"></i></a>
-
+                                " target="_blank" class="footer-social-icon"></i><i class="fa-brands fa-linkedin"></i></a>
+    
                                     <a href="https://www.instagram.com/team.onwords/
                                     " target="_blank" class="footer-social-icon"></i><i
                                             class="fa-brands fa-instagram"></i></a>
@@ -324,14 +341,14 @@
                                     " target="_blank" class="footer-social-icon"></i> <i
                                             class="fa-brands fa-square-youtube"></i></i></a>
                                 </div>
-
-
+    
+    
                                 <div class="footer-foot">
                                     <!-- <i class="fa-brands fa-linkedin" onclick="location.href='/'"></i>
                                     <span onclick="location.href='www.instagram.com/team.onwords/'" target="_blank"><i
                                             class="fa-brands fa-instagram"></i></span>
                                     <i class="fa-brands fa-facebook"></i> -->
-
+    
                                 </div>
                                 <br>
                                 <div>
@@ -343,7 +360,7 @@
                                             class="fa-solid fa-phone"></i> 77086
                                         30275</p>
                                 </div>
-
+    
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -356,7 +373,7 @@
                                     <a href="https://apps.apple.com/in/app/onwords-smart-home/id1598367434"><img
                                             src="{% static 'images/apple.png' %}" alt="" class="img-fluid"></a>
                                 </div>
-
+    
                             </div>
                         </div>
                     </div>
@@ -387,7 +404,7 @@
                         </div>
                     </div>
             </section>
-
+    
         </div>
 
     </div>
