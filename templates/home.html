@@ -47,7 +47,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item">
-                                <p class= "active-nav" aria-current="page" onclick="location.href='/'">Home</p>
+                                <p class="active-nav" aria-current="page" onclick="location.href='/'">Home</p>
                             </li>
                             <li class="nav-item dropdown">
                                 <p class=" dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -55,28 +55,32 @@
                                     Our Services
                                 </p>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><p class="dropdown-item" onclick="location.href='/ourservices'">Smart home</p></li>
-                                    <li><a class="dropdown-item" onclick="location.href='/gateautomation'">Gate Automation</a></li>
-                                    <li><a class="dropdown-item" onclick="href='/construction'">Onwords Construction</a></li>
+                                    <li>
+                                        <p class="dropdown-item" onclick="location.href='/ourservices'">Smart home</p>
+                                    </li>
+                                    <li><a class="dropdown-item" onclick="location.href='/gateautomation'">Gate
+                                            Automation</a></li>
+                                    <li><a class="dropdown-item" onclick="href='/construction'">Onwords Construction</a>
+                                    </li>
                                 </ul>
                             </li>
 
                             <li class="nav-item">
-                                <p  onclick="locaion.href='/securitySystem'">Security System</p>
+                                <p onclick="locaion.href='/securitySystem'">Security System</p>
                             </li>
                             <li class="nav-item">
-                                <p  onclick="location.href='/ourApp'">Our App</p>
+                                <p onclick="location.href='/ourApp'">Our App</p>
                             </li>
                             <li class="nav-item">
-                                <p  onclick="locaion.href='/aboutus'">About Us</p>
+                                <p onclick="locaion.href='/aboutus'">About Us</p>
                             </li>
                             <li class="nav-item">
-                                <p  onclick="locaion.href='/contact'">Contact</p>
+                                <p onclick="locaion.href='/contact'">Contact</p>
                             </li>
 
                         </ul>
                     </div>
-                    
+
                     <div class="darkmode" id="darkbutton">
                         <img src="{% static 'images/sun-wh.svg' %}" alt="" class="img-fluid sun">
                         <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid night">
@@ -212,7 +216,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="{% static 'images/advantage-sec-img.png' %}" alt="ad-img" class="img-fluid adv-img lazy-load">
+                        <img src="{% static 'images/advantage-sec-img.png' %}" alt="ad-img"
+                            class="img-fluid adv-img lazy-load">
                     </div>
                     <!-- <div class="col-md-1"></div> -->
                     <div class="col-md-6">
@@ -674,7 +679,7 @@
                         </ul>
 
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <ul class="our-services-foot">
                             <h5>Our Services</h5>
                             <li>
@@ -694,7 +699,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <ul class="quick-links-foot">
                             <h5>Quick Links</h5>
                             <li>
@@ -748,7 +753,20 @@
 
                         </div>
                     </div>
-                    <div class="col-md-1"></div>
+                    <div class="col-md-3">
+                        <div class="our-app-foot ">
+                            <h5>Our Apps</h5>
+                            <div class="app-google-store">
+                                <a href="https://play.google.com/store/apps/details?id=com.onwords.smarthome">
+                                    <img src="{% static 'images/play.png' %}" alt="df" class="img-fluid">
+                                </a>
+                                <a href="https://apps.apple.com/in/app/onwords-smart-home/id1598367434"><img
+                                        src="{% static 'images/apple.png' %}" alt="" class="img-fluid"></a>
+                            </div>
+
+
+                        </div>
+                    </div>
                 </div>
                 <hr class="text-white">
                 <div class="bootom-footer">

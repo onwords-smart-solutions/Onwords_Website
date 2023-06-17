@@ -71,3 +71,18 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+.our-app-foot{
+    /* margin-bottom: 20px; */
+    background: linear-gradient(180deg, #7453e4 0%, #ce4da4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.our-app-foot {
+   
+    
+}
+.app-google-store {
+    display: flex;
+
+}
