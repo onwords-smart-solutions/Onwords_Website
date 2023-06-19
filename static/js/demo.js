@@ -118,7 +118,7 @@ function demoPlay() {
 
     }
     if (DemoBtn.checked == false) {
-        videoDemos.style.display = 'none'
+        videoDemos.style.display = 'block'
         frontImg.style.display = 'block'
         TextIndicate.innerHTML = 'Off'
         // videoPauseGroup.style.display = 'none'
@@ -129,7 +129,6 @@ function volon(){
     const volOn = document.querySelector('.vl-on')
     const volOff = document.querySelector('.vl-off')
     const audio = document.getElementById('audioplay')
-
     volOn.style.display='none'
     volOff.style.display='block'
     audio.play();
@@ -138,7 +137,6 @@ function voloff(){
     const volOn = document.querySelector('.vl-on')
     const volOff = document.querySelector('.vl-off')
     const audio = document.getElementById('audioplay')
-
     volOn.style.display='block'
     volOff.style.display='none'
     audio.pause();
