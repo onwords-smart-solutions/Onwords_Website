@@ -478,7 +478,12 @@ input:checked+.slider:before {
 #video-pause{
     display: none;
 }
-
+.playVideoBtn{
+    opacity: 1;
+}
+.offVideoBtn{
+opacity: 0;
+}
 
 
 /* --------new demo section end */

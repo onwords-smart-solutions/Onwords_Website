@@ -125,24 +125,38 @@ function demoPlay() {
 
     }
 }
-function volon(){
+function volon() {
     const volOn = document.querySelector('.vl-on')
     const volOff = document.querySelector('.vl-off')
     const audio = document.getElementById('audioplay')
-    volOn.style.display='none'
-    volOff.style.display='block'
+    volOn.style.display = 'none'
+    volOff.style.display = 'block'
     audio.play();
 }
-function voloff(){
+function voloff() {
     const volOn = document.querySelector('.vl-on')
     const volOff = document.querySelector('.vl-off')
     const audio = document.getElementById('audioplay')
-    volOn.style.display='block'
-    volOff.style.display='none'
+    volOn.style.display = 'block'
+    volOff.style.display = 'none'
     audio.pause();
 }
+// 
+var ppbutton = document.getElementById("vidbutton");
+var playVideoBtn = document.querySelector('.onVideoBtn')
+var offVideoBtn = document.querySelector('.offVideoBtn')
+ppbutton.addEventListener("click", playPause);
+myVideo = document.getElementById("video-demos");
+function playPause() {
+    if (myVideo.paused) {
+        myVideo.play();
+        offVideoBtn.style.opacity = '0'
+        playVideoBtn.style.opacity = '1'
+    }
+    else {
+        myVideo.pause();
+        offVideoBtn.style.opacity = '1'
+        playVideoBtn.style.opacity = '0'
+    }
+}
 
-
-
-
-   
