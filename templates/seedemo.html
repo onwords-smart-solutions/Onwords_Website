@@ -113,14 +113,20 @@
                     <div class="col-md-10"></div>
                     <div class="col-md-2">
                         <div class="v-button">
-                            <p  class="vol-group">
-                                <span class="vl-on" onclick="volon()"><img src="{% static 'images/vol-on.png' %}" alt="" class="img-fluid"></span>
-                                <span><span class="vl-off" onclick="voloff()"><img src="{% static 'images/vol-off.png' %}" alt="" class="img-fluid"></span>
+                            <p class="vol-group">
+                                <span class="vl-on" onclick="volon()"><img src="{% static 'images/vol-on.png' %}" alt=""
+                                        class="img-fluid"></span>
+                                <span><span class="vl-off" onclick="voloff()"><img
+                                            src="{% static 'images/vol-off.png' %}" alt="" class="img-fluid"></span>
                             </p>
 
                             <p style="cursor: pointer;" id="video-pausegroup">
-                                <span id="video-play" onclick="videoplay()"><img src="{% static 'images/pause.png' %}" alt="" class="img-fluid"></span>
-                                <span id="video-pause" onclick="videopause()"><img src="{% static 'images/playBtn.png' %}" alt="" class="img-fluid"></span>
+                                <span id="vidbutton">
+                                    <img src="{% static 'images/pause.png' %}" alt="" class="img-fluid PlayvideoBtn">
+                                    <img src="{% static 'images/playBtn.png' %}" alt="" class="img-fluid offVideoBtn">
+
+                                </span>
+                                <!-- <span id="video-pause" onclick="videopause()"><img src="{% static 'images/playBtn.png' %}" alt="" class="img-fluid"></span> -->
                             </p>
                         </div>
                     </div>
@@ -137,7 +143,7 @@
                         </center>
                         <div class="press-play-btn">
                             <p class="fs-3 fw-2">Sync Hue <br>
-                                <span class="text-warning text-indicate" >Off</span>
+                                <span class="text-warning text-indicate">Off</span>
                             </p>
                             <p>
                                 <label class="switch">
@@ -149,9 +155,10 @@
                     </div>
                 </div>
             </div>
-            <div class="video-src">
-                <audio  src="{% static 'images/hueaudio.mp3' %}" id="audioplay"></audio>
-                <video src="{% static 'images/hue-final-render.mp4' %}" class="img-fluid " muted loop autoplay id="video-demos"></video>
+            <div class="video-src back-demo-section">
+                <audio src="{% static 'images/hueaudio.mp3' %}" id="audioplay"></audio>
+                <video src="{% static 'images/hue-final-render.mp4' %}" class="img-fluid " muted loop autoplay
+                    id="video-demos"></video>
                 <img src="{% static 'images/hue-tv-img.png' %}" class="img-flimg" id="front-img"></img>
             </div>
 
@@ -420,7 +427,7 @@
     <script src="{% static 'js/fontawesome.min.js' %}"></script>
 
     <!-- bs-4 -->
-   
+
 </body>
 
 </html>
