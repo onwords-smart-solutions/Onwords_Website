@@ -22,12 +22,12 @@ const pr = document.getElementById('pr')
 const civil = document.getElementById('civil')
 
 allBtn.addEventListener('click', () => {
-    all.style.display = 'block'
-    management.style.display = 'block'
-    rnd.style.display = 'block'
-    it.style.display = 'block'
-    pr.style.display = 'block'
-    civil.style.display = 'block'
+    all.style.display = 'none'
+    management.style.display = 'none'
+    rnd.style.display = 'none'
+    it.style.display = 'none'
+    pr.style.display = 'none'
+    civil.style.display = 'none'
 })
 
 managementBtn.addEventListener('click', () => {
