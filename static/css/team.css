@@ -393,10 +393,45 @@
     margin: 0;
 }
 
-.koushik img{
-    
+.koushik img {
+
     bottom: 0px;
     left: -14px;
+    padding: 0;
+    margin: 0;
+}
+
+.gokila img {
+    bottom: 0;
+    left: 3px;
+    padding: 0;
+    margin: 0;
+}
+
+.jibin img {
+    bottom: 0px;
+    left: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.mohan img {
+    bottom: 2px;
+    left: -5px;
+    padding: 0;
+    margin: 0;
+}
+
+.jothi img {
+    bottom: 0px;
+    left: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.ram-med img {
+    bottom: -1px;
+    left: 3px;
     padding: 0;
     margin: 0;
 }
