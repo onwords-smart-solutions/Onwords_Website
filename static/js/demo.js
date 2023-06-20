@@ -129,16 +129,16 @@ function volon() {
     const volOn = document.querySelector('.vl-on')
     const volOff = document.querySelector('.vl-off')
     const audio = document.getElementById('audioplay')
-    volOn.style.display = 'none'
-    volOff.style.display = 'block'
+    volOn.style.opacity = '0'
+    volOff.style.opacity = '1'
     audio.play();
 }
 function voloff() {
     const volOn = document.querySelector('.vl-on')
     const volOff = document.querySelector('.vl-off')
     const audio = document.getElementById('audioplay')
-    volOn.style.display = 'block'
-    volOff.style.display = 'none'
+    volOn.style.opacity = '1'
+    volOff.style.opacity = '0'
     audio.pause();
 }
 // 
@@ -156,8 +156,8 @@ function playPause() {
         audio.play();
         offVideoBtn.style.opacity = '0'
         playVideoBtn.style.opacity = '1'
-        volOn.style.display = 'none'
-        volOff.style.display = 'block'
+        volOn.style.opacity = '0'
+        volOff.style.opacity = '1'
 
     }
     else {
@@ -165,8 +165,8 @@ function playPause() {
         audio.pause();
         offVideoBtn.style.opacity = '1'
         playVideoBtn.style.opacity = '0'
-        volOn.style.display = 'block'
-        volOff.style.display = 'none'
+        volOn.style.opacity = '1'
+        volOff.style.opacity = '0'
 
     }
 }
