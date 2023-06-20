@@ -145,18 +145,29 @@ function voloff() {
 var ppbutton = document.getElementById("vidbutton");
 var playVideoBtn = document.querySelector('.onVideoBtn')
 var offVideoBtn = document.querySelector('.offVideoBtn')
+const volOn = document.querySelector('.vl-on')
+const volOff = document.querySelector('.vl-off')
+const audio = document.getElementById('audioplay')
 ppbutton.addEventListener("click", playPause);
 myVideo = document.getElementById("video-demos");
 function playPause() {
     if (myVideo.paused) {
         myVideo.play();
+        audio.play();
         offVideoBtn.style.opacity = '0'
         playVideoBtn.style.opacity = '1'
+        volOn.style.display = 'none'
+        volOff.style.display = 'block'
+
     }
     else {
         myVideo.pause();
+        audio.pause();
         offVideoBtn.style.opacity = '1'
         playVideoBtn.style.opacity = '0'
+        volOn.style.display = 'block'
+        volOff.style.display = 'none'
+
     }
 }
 
