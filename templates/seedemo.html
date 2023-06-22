@@ -138,17 +138,16 @@
                 <div class="row">
                     <div class="col-md-12">
                         <center>
-                            <div class="media-brd" >
-                                <p class="vol-group">
-                                    <span class="vl-on" onclick="volon()"><img src="{% static 'images/vol-on.png' %}"
-                                            alt="" class="img-fluid"></span>
-                                    <span class="vl-off" onclick="voloff()"><img
-                                                src="{% static 'images/vol-off.png' %}" alt="" class="img-fluid"></span>
+                            <div class="media-brd">
 
-                                </p>
+                                <div id="audioButton" class="vol-group">
+                                    <img src="{% static 'images/vol-on.png' %}" alt="" class="img-fluid vol-on">
+                                    <img src="{% static 'images/vol-off.png' %}" alt="" class="img-fluid vol-off">
+                                </div>
+
                                 <span id="vidbutton">
-                                    <img src="{% static 'images/pause.png' %}" alt="" class="img-fluid PlayvideoBtn">
-                                    <img src="{% static 'images/playBtn.png' %}" alt="" class="img-fluid offVideoBtn">
+                                    <img src="{% static 'images/pause.png' %}" alt="" class="img-fluid PlayvideoBtn" >
+                                    <img src="{% static 'images/playBtn.png' %}" alt="" class="img-fluid offVideoBtn" >
 
                                 </span>
 
@@ -448,6 +447,7 @@
     <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
     <!-- bootstrap js -->
     <!-- <script src="{% static 'js/main.js' %}"></script> -->
+    <script src="{%static 'js/audio.js'%}"></script>
     <script src="{% static 'js/demo.js' %}"></script>
     <script src="{% static 'js/general.js' %}"></script>
     <!-- carousel slider end -->
