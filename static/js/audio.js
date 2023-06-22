@@ -39,7 +39,7 @@ volOffBtn.addEventListener('click', () => {
 
 
 var ppbutton = document.getElementById("vidbutton");
-var playVideoBtn = document.querySelector('.onVideoBtn')
+var playVideoBtn = document.querySelector('.playVideoBtn')
 var offVideoBtn = document.querySelector('.offVideoBtn')
 const volOn = document.querySelector('.vol-on')
 const volOff = document.querySelector('.vol-off')
@@ -50,19 +50,19 @@ function playPause() {
     if (myVideo.paused) {
         myVideo.play();
         audio.play();
-        offVideoBtn.style.opacity = 'none'
-        playVideoBtn.style.opacity = 'block'
-        volOn.style.opacity = 'none'
-        volOff.style.opacity = 'block'
+        offVideoBtn.style.display = 'none'
+        playVideoBtn.style.display = 'block'
+        volOn.style.display = 'none'
+        volOff.style.display = 'block'
 
     }
     else {
         myVideo.pause();
         audio.pause();
-        offVideoBtn.style.opacity = 'block'
-        playVideoBtn.style.opacity = 'none'
-        volOn.style.opacity = 'block'
-        volOff.style.opacity = 'none'
+        offVideoBtn.style.display = 'none'
+        playVideoBtn.style.display = 'none'
+        volOn.style.display = 'block'
+        volOff.style.display = 'none'
 
     }
 }

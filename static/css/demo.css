@@ -500,9 +500,7 @@ input:checked+.slider:before {
     display: none;
 }
 
-.playVideoBtn {
-    display: block;
-}
+
 
 .offVideoBtn {
     display: none;
