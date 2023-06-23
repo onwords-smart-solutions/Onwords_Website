@@ -375,7 +375,8 @@ input:checked+.slider:before {
     margin-top: 160px;
     display: flex;
 }
-.media-brd img{
+
+.media-brd img {
     align-items: center;
     margin: 15px 30px;
 }
@@ -504,7 +505,7 @@ input:checked+.slider:before {
 
 .offVideoBtn {
     display: none;
-    
+
 
 }
 
