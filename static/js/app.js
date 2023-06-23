@@ -35,10 +35,9 @@ function horizontalScroll() {
 
 
 
-</script>
 
 
-<script>
+
 var carousel = $(".carousela"),
     currdeg = 0;
 
