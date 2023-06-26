@@ -1,5 +1,5 @@
 .main-img {
-    background-image: url(../images/gateauto-main-img.png);
+    background-image: url(../main-webp/gateauto-main-img.webp);
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@
     width: 100%;
 }
 .control-img{
-    background-image: url(../images/control-img.svg);
+    background-image: url(../main-webp/control-img.webp);
     width: 100%;
     height: 60vh;
     background-repeat: no-repeat;

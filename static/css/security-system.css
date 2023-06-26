@@ -14,7 +14,7 @@
 }
 
 .second-ajax-sec {
-  background: url(../images/second-ajax.svg);
+  background: url(../main-webp/second-ajax.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,7 +39,7 @@
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover;
-  background: url(../images/fourth-ajax.png);
+  background: url(../main-webp/fourth-ajax.webp);
 }
 
 .dg-col {

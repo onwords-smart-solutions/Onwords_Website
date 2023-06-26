@@ -449,7 +449,7 @@ color: #fff;
 }
 .curtain-home{
     background-repeat: no-repeat;
-    background-image: url(../images/curtain-bg.png);
+    background-image: url(../main-webp/curtain-bg.webp);
     background-position: center;
     background-size: cover;
     width: 100%;
