@@ -106,7 +106,7 @@ nav {
 
 
 #withlight {
-    background-image: url(../images/ons.png);
+    background-image: url(../main-webp/ons.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,7 +120,7 @@ nav {
 }
 
 #withoutlight {
-    background-image: url(../images/offs.png);
+    background-image: url(../main-webp/offs.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -662,10 +662,10 @@ section {
 /* --service and products end */
 .works-with {
     height: 80vh;
-    background-image: url(../images/voice-access.gif);
+    background-image: url(../main-webp/voice-access.gif);
     background-position: center;
     background-repeat: no-repeat;
-    background-blend-mode: lighten
+    background-blend-mode: lighten;
     /* background-color: #040507; */
     background-size: 700px;
     width: 100%;
