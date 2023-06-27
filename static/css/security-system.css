@@ -29,7 +29,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background: url(../images/third-ajax.png);
+  background: url(../main-webp/third-ajax\.webp);
 }
 
 .fourth-ajax {
@@ -195,7 +195,7 @@
 }
 
 .contact-banner {
-  background-image: url(../images/contact-banner.png);
+  background-image: url(../main-webp/contact-banner.webp);
   width: 100%;
   height: 45vh;
   margin-top: 100px;
