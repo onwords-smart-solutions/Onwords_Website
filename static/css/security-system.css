@@ -200,7 +200,7 @@
   height: 45vh;
   margin-top: 100px;
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
