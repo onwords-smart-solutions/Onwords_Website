@@ -539,6 +539,7 @@
 } 
 .main-img{
    height: 50vh;
+   background-size: 100%;
 }
 .box-contact{
    height: 150px !important;
@@ -571,6 +572,11 @@
    height: 20vh !important;
 /* ---------gallery end */
 }
+.control-img{
+   height: 30vh;
+   background-image: none;
+}
+
 }
 
 
