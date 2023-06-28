@@ -27,23 +27,23 @@
 <body id="bodyTag">
     <div class="wrapper">
         <!-- navbar start -->
-        
+
         <header>
             <nav class="navbar navbar-expand-lg sticky-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="/"><img src="{% static 'images/logos.png' %}" alt="logo"
+                    <a class="navbar-brand" href="/"><img src="{% static 'main-webp/logos-main.webp' %}" alt="logo"
                             class="img-fluid logo"></a>
-                            <div class="darkmodemob" id="darkbuttonmob">
-                                <img src="{% static 'images/sun-wh.svg' %}" alt="" class="img-fluid sunmob">
-                                <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid nightmob">
-                            </div>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"><span class="text-white onnav"><i
-                                        class="fa-solid fa-bars"></i></span>
-                                <span class="off text-white"><i class="fa-solid fa-x"></i></span><span>
-                        </button>
+                    <div class="darkmodemob" id="darkbuttonmob">
+                        <img src="{% static 'main-webp/sun-wh.webp' %}" alt="sun toggle" class="img-fluid sunmob">
+                        <img src="{% static 'main-webp/moon-wh.webp' %}" alt="moon toggle" class="img-fluid nightmob">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><span class="text-white onnav"><i
+                                    class="fa-solid fa-bars"></i></span>
+                            <span class="off text-white"><i class="fa-solid fa-x"></i></span><span>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 sticky">
                             <li class="nav-item">
@@ -81,11 +81,12 @@
                             </li>
                         </ul>
 
-                        
+
                     </div>
-                     <div class="darkmode" id="darkbutton">
-                        <img src="{% static 'images/sun-wh.svg' %}" alt="" class="img-fluid sun">
-                        <img src="{% static 'images/moon-wh.svg' %}" alt="" class="img-fluid night">
+
+                    <div class="darkmode" id="darkbutton">
+                        <img src="{% static 'main-webp/sun-wh.webp' %}" alt="sun Toggle" class="img-fluid sun">
+                        <img src="{% static 'main-webp/moon-wh.webp' %}" alt="moon toggle" class="img-fluid night">
                     </div>
                 </div>
             </nav>
@@ -128,7 +129,8 @@
 
                             </div>
                         </div>
-                        <img src="{% static 'main-webp/mobile.svg' %}" alt="smarthome-mobileapp" class="img-fluid r-banner-img">
+                        <img src="{% static 'main-webp/mobile.svg' %}" alt="smarthome-mobileapp"
+                            class="img-fluid r-banner-img">
                     </div>
                 </div>
                 <div class="col-md-1"></div>
@@ -155,7 +157,8 @@
                     <div class="iphone-13">
                         <img src="{% static 'main-webp/iphone-13-pro.svg' %}" alt="devices" class="img-fluid pro-13">
                         <div class="span-box">
-                            <p> <img src="{% static 'main-webp/bulb.svg' %}" alt="Celing-light" class="img-fluid mob-lights"></p>
+                            <p> <img src="{% static 'main-webp/bulb.svg' %}" alt="Celing-light"
+                                    class="img-fluid mob-lights"></p>
                             <p>
                                 <span>Celing Light 1</span><br>
                                 <small>Status Off</small>
@@ -275,12 +278,18 @@
                         </div>
 
                         <div class="carousela">
-                            <div class="item a"><img src="{% static 'main-webp/mob-1.svg' %}" alt="App interface-1" class=""></div>
-                            <div class="item b"><img src="{% static 'main-webp/mob-2.svg' %}" alt="App-interface-2" class=""></div>
-                            <div class="item c"><img src="{% static 'main-webp/mob-3.svg' %}" alt="App interface-3" class=""></div>
-                            <div class="item d"><img src="{% static 'main-webp/mob-4.svg' %}" alt="App interface-4" class=""></div>
-                            <div class="item e"><img src="{% static 'main-webp/mob-5.svg' %}" alt="App interface-5" class=""></div>
-                            <div class="item f"><img src="{% static 'main-webp/mob-1.svg' %}" alt="App interface-6" class=""></div>
+                            <div class="item a"><img src="{% static 'main-webp/mob-1.svg' %}" alt="App interface-1"
+                                    class=""></div>
+                            <div class="item b"><img src="{% static 'main-webp/mob-2.svg' %}" alt="App-interface-2"
+                                    class=""></div>
+                            <div class="item c"><img src="{% static 'main-webp/mob-3.svg' %}" alt="App interface-3"
+                                    class=""></div>
+                            <div class="item d"><img src="{% static 'main-webp/mob-4.svg' %}" alt="App interface-4"
+                                    class=""></div>
+                            <div class="item e"><img src="{% static 'main-webp/mob-5.svg' %}" alt="App interface-5"
+                                    class=""></div>
+                            <div class="item f"><img src="{% static 'main-webp/mob-1.svg' %}" alt="App interface-6"
+                                    class=""></div>
                         </div>
 
                         <div class="mock">
@@ -290,8 +299,10 @@
                         </div>
                     </div>
                     <div class="gc">
-                        <div class="nexta"><img src="{% static 'main-webp/right-arrow.svg' %}" alt="right arrow" class="img-fluid"></div>
-                        <div class="preva"><img src="{% static 'main-webp/right-arrow.svg' %}" alt="right arrow" class="img-fluid left-arrow"></div>
+                        <div class="nexta"><img src="{% static 'main-webp/right-arrow.svg' %}" alt="right arrow"
+                                class="img-fluid"></div>
+                        <div class="preva"><img src="{% static 'main-webp/right-arrow.svg' %}" alt="right arrow"
+                                class="img-fluid left-arrow"></div>
                     </div>
 
                 </div>
@@ -369,11 +380,9 @@
                         " target="_blank" class="footer-social-icon"></i><i class="fa-brands fa-linkedin"></i></a>
 
                             <a href="https://www.instagram.com/team.onwords/
-                            " target="_blank" class="footer-social-icon"></i><i
-                                    class="fa-brands fa-instagram"></i></a>
+                            " target="_blank" class="footer-social-icon"></i><i class="fa-brands fa-instagram"></i></a>
                             <a href="https://https://www.facebook.com/teamonwords/
-                            " target="_blank" class="footer-social-icon"></i><i
-                                    class="fa-brands fa-facebook"></i></a>
+                            " target="_blank" class="footer-social-icon"></i><i class="fa-brands fa-facebook"></i></a>
                             <a href="https://www.youtube.com/@OnwordsSmartSolutions/
                             " target="_blank" class="footer-social-icon"></i> <i
                                     class="fa-brands fa-square-youtube"></i></i></a>
@@ -405,10 +414,10 @@
                         <h5>Our Apps</h5>
                         <div class="app-google-store">
                             <a href="https://play.google.com/store/apps/details?id=com.onwords.smarthome">
-                                <img src="{% static 'images/play.png' %}" alt="" class="img-fluid">
+                                <img src="{% static 'main-webp/play.webp' %}" alt="playstore" class="img-fluid">
                             </a>
                             <a href="https://apps.apple.com/in/app/onwords-smart-home/id1598367434"><img
-                                    src="{% static 'images/apple.png' %}" alt="" class="img-fluid"></a>
+                                    src="{% static 'main-webp/apple.webp' %}" alt="apple store" class="img-fluid"></a>
                         </div>
 
                     </div>
@@ -462,10 +471,10 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
-  
 
-   
+
+
+
     <script>
         function scrollTo(scrolled) {
             $('.slider-gallery').css('transform', 'translateX(' + scrolled + 'px');
