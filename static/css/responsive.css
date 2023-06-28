@@ -82,11 +82,15 @@
 
    .counter-box {
       width: 100%;
+      height: 30px;
    }
 
    .lead-boxs {
       text-align: center;
       padding: 10px;
+   }
+   .press-play-btn{
+      width: 100%;
    }
 
    .lead-boxs h2 {
@@ -522,6 +526,15 @@
 }
 .footer-bottom{
    display: none !important;
+}
+.sticky-parent{
+   height: 350vh;
+}
+.works-with{
+   background-size: 550px;
+} 
+.main-img{
+   height: 50vh;
 }
 /* ---------gallery end */
 }
