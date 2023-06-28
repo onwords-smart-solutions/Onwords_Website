@@ -514,7 +514,12 @@
    justify-content: center;
    text-align: center;
 }
-
+.our-app-foot {
+ padding-left: 35px;   
+}
+.onwords-details-foot{
+   padding-left: 35px;
+}
 /* ---------gallery end */
 }
 
