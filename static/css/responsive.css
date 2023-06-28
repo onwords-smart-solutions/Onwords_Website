@@ -118,7 +118,7 @@
    }
 
    #withlight {
-      background-image: url(../images//ons.png);
+      background-image: url(../main-webp/ons.webp);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -133,7 +133,7 @@
    }
 
    #withoutlight {
-      background-image: url(../images/offs.png);
+      background-image: url(../main-webp/offs.webp);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -514,7 +514,15 @@
    justify-content: center;
    text-align: center;
 }
-
+.our-app-foot {
+ padding-left: 35px;   
+}
+.onwords-details-foot{
+   padding-left: 35px;
+}
+.footer-bottom{
+   display: none !important;
+}
 /* ---------gallery end */
 }
 
