@@ -305,7 +305,7 @@ input:checked+.slider:before {
 }
 
 .img-handphone {
-    background-image: url(../images/hand-phone.png);
+    background-image: url(../main-webp/hand-phone.webp);
     background-position: left;
     background-size: contain;
     height: 60vh;
