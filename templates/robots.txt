@@ -2,4 +2,4 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: http://pscastlepromoters.in/sitemap.xml
+Sitemap: http://onwords.in/sitemap.xml
