@@ -371,7 +371,7 @@ input:checked+.slider:before {
     border-radius: 10px;
     width: 200px;
     height: 60px;
-    margin-top: 160px;
+    margin-top: 250px;
     display: flex;
 }
 
@@ -511,6 +511,14 @@ input:checked+.slider:before {
 #video-pausegroup {
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+.sync-tv-demo-text{
+    margin-top: -200px;
+    font-size: 3opx;
+}
+.demo-play-btn{
+    margin-top: -110px;
 }
 
 #video-pausegroup span img {
