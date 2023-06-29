@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views.generic import TemplateView
 
 # Create your views here.
 def home(request):
@@ -36,3 +37,9 @@ def team(request):
 def downloads(request):
     return render(request,'downloads.html')    
 
+class RobotsTxtViews(TemplateView):
+    template_name ='robots.txt'
+    content_type ='text/plain'
+class SitemapXmlViews(TemplateView):
+    template_name ='sitemapXml.html'
+    content_type ='application/xml'
