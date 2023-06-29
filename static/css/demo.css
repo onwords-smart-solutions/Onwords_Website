@@ -169,7 +169,6 @@ input:checked+.slider:before {
     height: max-content;
     padding-bottom: 130px;
     background-color: #040507;
-    margin-top: 10%;
     padding: 20px 0px;
     color: #fff;
 }
