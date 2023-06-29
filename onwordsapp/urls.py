@@ -21,3 +21,4 @@ urlpatterns=[
     path('downloads',views.downloads,name='downloads'),
 
 ]
+
