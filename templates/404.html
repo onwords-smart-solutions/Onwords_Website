@@ -11,12 +11,51 @@
     <!-- custom css -->
     <link rel="stylesheet" href="{% static 'css/main.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}?{% now 'U' %}">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h2 {}
+
+        h2,
+        h6,
+        p {
+            color: white;
+            text-align: center;
+            word-spacing: 3px;
+            font-size: 20px;
+
+        }
+
+        .home-button {
+            width: 170px;
+            height: 70px;
+            text-align: center;
+            background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
+            padding: 1px;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+        }
+    </style>
 </head>
 
 <body>
     <section>
         <div class="container">
             <div class="error-page">
+                <h2>404</h2>
+                <h6>Looks Like You’re Lost</h6>
+                <p>The page you are looking for not available !</p>
+                <div class="home-button">
+                    <button class="primary-btn text-dark" onclick="location.href='/'" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Back To Home
+                    </button>
+                </div>
+            </div>
+            <!-- <div class="error-page">
                 <div class="container-line">
                     <p class="text-four">4</p>
                     <p class="img-error">
@@ -30,13 +69,12 @@
                     data-bs-target="#exampleModal">
                     Back To Home
                 </button>
-            </div>
+            </div> -->
         </div>
     </section>
-   
     <script src="{%static 'js/bootstrap.min.js'%}"></script>
     <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
-   
+
 </body>
 
 </html>
