@@ -1760,6 +1760,13 @@ section {
 	z-index: 2;
 }
 
+.margin-t{
+    margin: 50px auto;
+}
+.app-fea-mockups{
+    width: 450px;
+    height: 440px;
+}
 .circle-scale{
 	width: calc(var(--second-circle-size) * 2);
 	height: calc(var(--second-circle-size) * 2);
