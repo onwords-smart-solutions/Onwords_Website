@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="discription" content="onwords helps build functional smart homes. We provide professional home automation solutions, allowing you to fully automate and control your home.">
+    <meta name="discription"
+        content="onwords helps build functional smart homes. We provide professional home automation solutions, allowing you to fully automate and control your home.">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="{% static 'css/home.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'css/general.css' %}?{% now 'U' %}">
@@ -33,10 +34,10 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/"><img src="{% static 'main-webp/logos-main.webp' %}" alt="logo"
                             class="img-fluid logo"></a>
-                            <div class="darkmodemob" id="darkbuttonmob">
-                                <img src="{% static 'main-webp/sun-wh.webp' %}" alt="sun toggle" class="img-fluid sunmob">
-                                <img src="{% static 'main-webp/moon-wh.webp' %}" alt="moon toggle" class="img-fluid nightmob">
-                            </div>
+                    <div class="darkmodemob" id="darkbuttonmob">
+                        <img src="{% static 'main-webp/sun-wh.webp' %}" alt="sun toggle" class="img-fluid sunmob">
+                        <img src="{% static 'main-webp/moon-wh.webp' %}" alt="moon toggle" class="img-fluid nightmob">
+                    </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -116,7 +117,8 @@
                     </div>
                     <div class="col-md-4">
                         <div class="box-contact">
-                            <img src="{% static 'main-webp/location-icon.webp' %}" alt="location icon" class="img-fluid">
+                            <img src="{% static 'main-webp/location-icon.webp' %}" alt="location icon"
+                                class="img-fluid">
                             <h5>Address</h5>
                             <h4>Onwords Smart Solutions
                                 Coimbatore, IN - 642 005</h4>
@@ -175,7 +177,7 @@
                             <p onclick="location.href='/gallery'">Gallery</p>
                         </li>
                         <li>
-                            <p onclick="location.href='/carrier'">Carrers</p>
+                            <p onclick="location.href='/carrier'">carrier</p>
                         </li>
 
 
@@ -198,7 +200,7 @@
                             <p onclick="location.href='/curtain'">Smart Curtain</p>
                         </li>
                         <li>
-                            <p> Constructions</p>
+                            <p onclick="location.href='/construction'"> Constructions</p>
                         </li>
                     </ul>
                 </div>
@@ -225,11 +227,9 @@
                         " target="_blank" class="footer-social-icon"></i><i class="fa-brands fa-linkedin"></i></a>
 
                             <a href="https://www.instagram.com/team.onwords/
-                            " target="_blank" class="footer-social-icon"></i><i
-                                    class="fa-brands fa-instagram"></i></a>
+                            " target="_blank" class="footer-social-icon"></i><i class="fa-brands fa-instagram"></i></a>
                             <a href="https://https://www.facebook.com/teamonwords/
-                            " target="_blank" class="footer-social-icon"></i><i
-                                    class="fa-brands fa-facebook"></i></a>
+                            " target="_blank" class="footer-social-icon"></i><i class="fa-brands fa-facebook"></i></a>
                             <a href="https://www.youtube.com/@OnwordsSmartSolutions/
                             " target="_blank" class="footer-social-icon"></i> <i
                                     class="fa-brands fa-square-youtube"></i></i></a>
@@ -237,10 +237,7 @@
 
 
                         <div class="footer-foot">
-                            <!-- <i class="fa-brands fa-linkedin" onclick="location.href='/'"></i>
-                            <span onclick="location.href='www.instagram.com/team.onwords/'" target="_blank"><i
-                                    class="fa-brands fa-instagram"></i></span>
-                            <i class="fa-brands fa-facebook"></i> -->
+                          
 
                         </div>
                         <br>
@@ -260,13 +257,12 @@
                     <div class="our-app-foot ">
                         <h5>Our Apps</h5>
                         <div class="app-google-store">
-                                <a href="https://play.google.com/store/apps/details?id=com.onwords.smarthome">
-                                    <img src="{% static 'main-webp/play.webp' %}" alt="playstore" class="img-fluid">
-                                </a>
-                                <a href="https://apps.apple.com/in/app/onwords-smart-home/id1598367434"><img
-                                        src="{% static 'main-webp/apple.webp' %}" alt="apple store"
-                                        class="img-fluid"></a>
-                            </div>
+                            <a href="https://play.google.com/store/apps/details?id=com.onwords.smarthome">
+                                <img src="{% static 'main-webp/play.webp' %}" alt="playstore" class="img-fluid">
+                            </a>
+                            <a href="https://apps.apple.com/in/app/onwords-smart-home/id1598367434"><img
+                                    src="{% static 'main-webp/apple.webp' %}" alt="apple store" class="img-fluid"></a>
+                        </div>
 
                     </div>
                 </div>
