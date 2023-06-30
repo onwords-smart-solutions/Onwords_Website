@@ -7,7 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="{% static 'css/home.css' %}?{% now 'U' %}">
+ <link rel="stylesheet" href="{% static 'css/home.css' %}?{% now 'U' %}">
+ <link rel="stylesheet" href="{% static 'css/carrier.css' %}?{% now 'U' %}">
+    <link rel="shortcut icon" href="{% static 'main-webp/favicon.ico' %}" type="image/x-icon" />
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'css/darkmode.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'css/general.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}?{% now 'U' %}">
+    <!-- bootstrap css -->
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="{% static 'fonts/all.min.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'fonts/fontawesome.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'fonts/fonts-6/css/all.css' %}?{% now 'U' %}">
+
+
+
+    <!-- <link rel="stylesheet" href="{% static 'css/home.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'css/carrier.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}?{% now 'U' %}">
     <link rel="shortcut icon" href="{% static 'main-webp
@@ -18,7 +35,7 @@
     <link rel="stylesheet" href="{% static 'fonts/all.min.css' %} ?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'fonts/fontawesome.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'fonts/fonts-6/css/all.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{%static 'css/footer.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{%static 'css/footer.css' %}?{% now 'U' %}"> -->
 
     <title>Onwords</title>
 </head>
@@ -34,6 +51,7 @@
                     <img src="{% static 'main-webp/sun-wh.webp' %}" alt="sun toggle" class="img-fluid sunmob">
                     <img src="{% static 'main-webp/moon-wh.webp' %}" alt="moon toggle" class="img-fluid nightmob">
                 </div>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -100,22 +118,10 @@
     </div>
     </div>
     <div class="wrapper">
-        <section class="sec-first">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div>
-                            <div class="carrier-img">
-                                <div class="carrier-para">
-                                    <h2 class="text-center">Work With Us</h2>
-                                    <h6>Nothing is possible without our people</h6>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <h6 class="join-head">Join The Team</h6>
+        <section class=" sec-first-carrier">
+            <div class="carrier-para">
+                <h2 class="text-center">Work With Us</h2>
+                <h6>Nothing is possible without our people</h6>
             </div>
         </section>
         <section>
@@ -164,7 +170,7 @@
                                 <p onclick="location.href='/gallery'">Gallery</p>
                             </li>
                             <li>
-                                <p onclick="location.href='/carrier'">Carrers</p>
+                                <p onclick="location.href='/carrier'">carrier</p>
                             </li>
 
 
