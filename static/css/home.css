@@ -125,6 +125,7 @@ nav {
     /* animation: img-change infinite 5s; */
     image-rendering: pixelated;
     /* animation-iteration-count: 2; */
+
 }
 
 #withoutlight {
@@ -140,6 +141,7 @@ nav {
     image-rendering: pixelated;
     /* animation-iteration-count: 2; */
     display: none;
+    
 }
 
 .g {
@@ -1820,6 +1822,7 @@ section {
     background: white;
     mix-blend-mode: difference;
     border: none;
+    
 }
 
 .grow-small {

@@ -7,15 +7,19 @@
     background-size: 100%;
     position: relative;
 }
-.gate-para{
+
+.gate-para {
     text-align: center;
     position: absolute;
-    bottom: 0;
+    bottom: -8px;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    background-color: rgb(0, 0, 0, 0.4);
+
 }
-.control-img{
+
+.control-img {
     background-image: url(../main-webp/control-img.webp);
     width: 100%;
     height: 60vh;
@@ -24,6 +28,11 @@
     background-position: left;
 
 }
-.google-assistans{
+
+.google-assistans {
     padding: 10px;
+}
+.gates-solution{
+    text-align: center;
+    padding-top: 40px;
 }
