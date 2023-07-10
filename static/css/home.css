@@ -472,6 +472,8 @@ nav {
 
 .curtain-work {
     display: flex;
+    margin: 0 auto;
+    width: 60%;
 }
 
 /* #blur{
