@@ -141,7 +141,7 @@ nav {
     image-rendering: pixelated;
     /* animation-iteration-count: 2; */
     display: none;
-    
+
 }
 
 .g {
@@ -1014,15 +1014,56 @@ section {
     outline: none;
 }
 
-.sec-btn-test {
+/* .sec-btn-test {
     background: linear-gradient(to right, #CE4DA4,
             #7353E5);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-size: 20px;
     cursor: pointer;
+} */
+
+.sec-btn-test {
+    color: #f5ae51;
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: relative;
 }
 
+.sec-btn-test::before {
+    position: absolute;
+    content: "";
+    background: var(blue);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.sec-btn-test:hover {
+    color: white;
+  }
+  
+  .sec-btn-test:before {
+    top: 100%;
+    left: 100%;
+    transition: .3s all;
+  }
+  
+  .sec-btn-test:hover::before {
+    top: -30px;
+  left: -30px;
+  }
 .card-lis a {
     text-decoration: none;
 }
@@ -1824,7 +1865,7 @@ section {
     background: white;
     mix-blend-mode: difference;
     border: none;
-    
+
 }
 
 .grow-small {
@@ -1905,7 +1946,7 @@ transform: scale(1.2);
 
 
 /* ------------erroe page start */
-.error{
+.error {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -1917,7 +1958,8 @@ transform: scale(1.2);
     background-color: #000;
     color: #fff;
 }
-.error h2{
+
+.error h2 {
     font-size: 70px;
 }
 

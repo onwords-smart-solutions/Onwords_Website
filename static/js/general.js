@@ -178,6 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
           img.src = img.dataset.src;
           img.classList.remove('lazy');
         }
+      
       });
       if (lazyloadImages.length == 0) {
         document.removeEventListener("scroll", lazyload);
