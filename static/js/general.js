@@ -159,7 +159,10 @@ offBtn.addEventListener('click', () => {
 })
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6f75192375f5da4a6948f8a149a63edb4b12230e
   // ----------------mob nav hamburger-------------
 
 
