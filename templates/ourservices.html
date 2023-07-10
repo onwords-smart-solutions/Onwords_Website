@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="discription" content="Our products and services · Smart lights · Vacuum cleaner · Smart security · Gate Automation · Smart Curtains · Agri automation.">
+    <meta name="discription"
+        content="Our products and services · Smart lights · Vacuum cleaner · Smart security · Gate Automation · Smart Curtains · Agri automation.">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="{% static 'css/home.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'css/ourservice.css' %}?{% now 'U' %}">
@@ -31,10 +32,10 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="/"><img src="{% static 'main-webp/logos-main.webp' %}" alt="logo"
                         class="img-fluid logo"></a>
-                        <div class="darkmodemob" id="darkbuttonmob">
-                            <img src="{% static 'main-webp/sun-wh.webp' %}" alt="sun toggle" class="img-fluid sunmob">
-                            <img src="{% static 'main-webp/moon-wh.webp' %}" alt="moon toggle" class="img-fluid nightmob">
-                        </div>
+                <div class="darkmodemob" id="darkbuttonmob">
+                    <img src="{% static 'main-webp/sun-wh.webp' %}" alt="sun toggle" class="img-fluid sunmob">
+                    <img src="{% static 'main-webp/moon-wh.webp' %}" alt="moon toggle" class="img-fluid nightmob">
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -95,7 +96,7 @@
         </button>
         <button id="whatsapp">
             <a href="https://wa.me/+917708630275" target="_blank">
-                <img src="{% static 'main-webp/whatsapp-ico.webp' %}" alt="whatsapp">
+                <img data-src="{% static 'main-webp/whatsapp-ico.webp' %}" alt="whatsapp" class="lazy-load">
             </a>
         </button>
     </div>
@@ -141,7 +142,8 @@
                     </div>
                     <div class="hov-serv">
                         <div class="day click-btn" id="dayBtn" onclick="dayFun()">
-                            <div class="btns-vec"><span><img src="{% static 'main-webp/day-vector.webp' %}" alt="day scene image">Day
+                            <div class="btns-vec"><span><img src="{% static 'main-webp/day-vector.webp' %}"
+                                        alt="day scene image">Day
                                     Scene</span>
                             </div>
                         </div>
@@ -163,7 +165,8 @@
                 <div class="row my-4">
                     <div class="col-md-6">
                         <div class="col-banner">
-                            <img src="{% static 'main-webp/sh-1.webp' %}" alt="smart-home-demo" class="img-fluid">
+                            <img data-src="{% static 'main-webp/sh-1.webp' %}" alt="smart-home-demo"
+                                class="img-fluid lazy-load">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -200,7 +203,8 @@
                     </div>
                     <div class="col-md-6">
                         <div class="col-banner">
-                            <img src="{% static 'main-webp/curtains.webp' %}" alt="smart-curtain class=" img-fluid">
+                            <img data-src="{% static 'main-webp/curtains.webp' %}" alt="smart-curtain"
+                                class="img-fluid lazy-load">
                         </div>
                     </div>
                 </div>
@@ -212,8 +216,8 @@
                 <div class="row my-4">
                     <div class="col-md-6">
                         <div class="col-banner">
-                            <img src="{% static 'main-webp/vaccum-cleaner.webp' %}" alt="vaccumcleaner"
-                                class="img-fluid">
+                            <img data-src="{% static 'main-webp/vaccum-cleaner.webp' %}" alt="vaccumcleaner"
+                                class="img-fluid lazy-load">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -249,7 +253,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="col-banner">
-                            <img src="{% static 'main-webp/security.webp' %}" alt="sh" class="img-fluid">
+                            <img data-src="{% static 'main-webp/security.webp' %}" alt="sh" class="img-fluid lazy-load">
                         </div>
                     </div>
                 </div>
@@ -261,7 +265,7 @@
                 <div class="row my-4">
                     <div class="col-md-6">
                         <div class="col-banner">
-                            <img src="{% static 'main-webp/doorlock.webp' %}" alt="doorlock" class="img-fluid">
+                            <img data-src="{% static 'main-webp/doorlock.webp' %}" alt="doorlock" class="img-fluid lazy-load">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -359,7 +363,7 @@
 
 
                             <div class="footer-foot">
-                               
+
                             </div>
                             <br>
                             <div>

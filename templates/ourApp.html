@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="discription" content="Onwords Smart home app . Download our latest onwords smart home app and share your experience with us. Onwords Smart home app.">
+    <meta name="discription"
+        content="Onwords Smart home app . Download our latest onwords smart home app and share your experience with us. Onwords Smart home app.">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="{% static 'css/home.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}?{% now 'U' %}">
@@ -97,7 +98,7 @@
             </button>
             <button id="whatsapp">
                 <a href="https://wa.me/+917708630275" target="_blank">
-                    <img src="{% static 'main-webp/whatsapp-ico.webp' %}" alt="whatsapp">
+                    <img data-src="{% static 'main-webp/whatsapp-ico.webp' %}" alt="whatsapp" class="lazy-load">
                 </a>
             </button>
         </div>
@@ -120,7 +121,8 @@
                             </h6>
                             <div class="add-download">
                                 <a href="https://play.google.com/store/apps/details?id=com.onwords.smarthome">
-                                    <img src="{% static 'main-webp/googlepay.webp' %}" alt="play store" class="img-fluid">
+                                    <img src="{% static 'main-webp/googlepay.webp' %}" alt="play store"
+                                        class="img-fluid">
                                 </a>
                                 <a href="https://apps.apple.com/in/app/onwords-smart-home/id1598367434">
                                     <img src="{% static 'main-webp/appstore.webp' %}" alt="app store" class="img-fluid">
@@ -153,11 +155,12 @@
             </center>
             <div class="row app-con-sec">
                 <div class="col-md-6">
-                    <div class="iphone-13">
-                        <img src="{% static 'main-webp/iPhone-13-Pro.svg' %}" alt="devices" class="img-fluid pro-13">
-                        <div class="span-box">
-                            <p> <img src="{% static 'main-webp/bulb.svg' %}" alt="Celing-light"
-                                    class="img-fluid mob-lights"></p>
+                    <div class="iphone-13 ">
+                        <img data-src="{% static 'main-webp/iPhone-13-Pro.svg' %}" alt="devices"
+                            class="img-fluid pro-13 lazy-load">
+                        <div class="span-box ">
+                            <p> <img data-src="{% static 'main-webp/bulb.svg' %}" alt="Celing-light"
+                                    class="img-fluid mob-lights lazy-load"></p>
                             <p>
                                 <span>Ceiling Light 1</span><br>
                                 <small>Status Off</small>
@@ -240,7 +243,8 @@
                     </div>
                 </div>
                 <div class="col-md-6 center-app-img">
-                    <img src="{% static 'main-webp/app-specific.webp' %}" alt="App Features" class="img-fluid">
+                    <img data-src="{% static 'main-webp/app-specific.webp' %}" alt="App Features"
+                        class="img-fluid lazy-load">
                 </div>
                 <div class="col-md-2 r-app-feature">
                     <div class="app-feature">
@@ -269,31 +273,32 @@
 
             </center>
             <div class="row">
-               
+
                 <div class="col-md-12 fghs">
                     <div class="containersa">
                         <div class="dfc">
-                            <img src="{% static 'main-webp/four-app.webp' %}" alt="four-apps" class="">
+                            <img data-src="{% static 'main-webp/four-app.webp' %}" alt="four-apps" class="lazy-load">
                         </div>
 
                         <div class="carousela">
-                            <div class="item a"><img src="{% static 'main-webp/mob-1.svg' %}" alt="App interface-1"
-                                    class=""></div>
-                            <div class="item b"><img src="{% static 'main-webp/mob-2.svg' %}" alt="App-interface-2"
-                                    class=""></div>
-                            <div class="item c"><img src="{% static 'main-webp/mob-3.svg' %}" alt="App interface-3"
-                                    class=""></div>
-                            <div class="item d"><img src="{% static 'main-webp/mob-4.svg' %}" alt="App interface-4"
-                                    class=""></div>
-                            <div class="item e"><img src="{% static 'main-webp/mob-5.svg' %}" alt="App interface-5"
-                                    class=""></div>
-                            <div class="item f"><img src="{% static 'main-webp/mob-1.svg' %}" alt="App interface-6"
-                                    class=""></div>
+                            <div class="item a"><img data-src="{% static 'main-webp/mob-1.svg' %}" alt="App interface-1"
+                                    class="lazy-load"></div>
+                            <div class="item b"><img data-src="{% static 'main-webp/mob-2.svg' %}" alt="App-interface-2"
+                                    class="lazy-load"></div>
+                            <div class="item c"><img data-src="{% static 'main-webp/mob-3.svg' %}" alt="App interface-3"
+                                    class="lazy-load"></div>
+                            <div class="item d"><img data-src="{% static 'main-webp/mob-4.svg' %}" alt="App interface-4"
+                                    class="lazy-load"></div>
+                            <div class="item e"><img data-src="{% static 'main-webp/mob-5.svg' %}" alt="App interface-5"
+                                    class="lazy-load"></div>
+                            <div class="item f"><img data-src="{% static 'main-webp/mob-1.svg' %}" alt="App interface-6"
+                                    class="lazy-load"></div>
                         </div>
 
                         <div class="mock">
-                           
-                            <img src="{% static 'main-webp/iphone13-mockup.webp' %}" alt="app features" class="app-fea-mockups">
+
+                            <img data-src="{% static 'main-webp/iphone13-mockup.webp' %}" alt="app features"
+                                class="app-fea-mockups lazy-load">
                         </div>
                     </div>
                     <div class="gc">
@@ -304,7 +309,7 @@
                     </div>
 
                 </div>
-              
+
             </div>
 
         </div>

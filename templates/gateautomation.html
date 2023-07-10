@@ -38,10 +38,10 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/"><img src="{% static 'main-webp/logos-main.webp' %}" alt="logo"
                             class="img-fluid logo"></a>
-                            <div class="darkmodemob" id="darkbuttonmob">
-                                <img src="{% static 'main-webp/sun-wh.webp' %}" alt="sun toggle" class="img-fluid sunmob">
-                                <img src="{% static 'main-webp/moon-wh.webp' %}" alt="moon toggle" class="img-fluid nightmob">
-                            </div>
+                    <div class="darkmodemob" id="darkbuttonmob">
+                        <img src="{% static 'main-webp/sun-wh.webp' %}" alt="sun toggle" class="img-fluid sunmob">
+                        <img src="{% static 'main-webp/moon-wh.webp' %}" alt="moon toggle" class="img-fluid nightmob">
+                    </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -102,7 +102,7 @@
             </button>
             <button id="whatsapp">
                 <a href="https://wa.me/+917708630275" target="_blank">
-                    <img src="{% static 'main-webp/whatsapp-ico.webp' %}" alt="whatsapp">
+                    <img data-src="{% static 'main-webp/whatsapp-ico.webp' %}" alt="whatsapp" class="lazy-load">
                 </a>
             </button>
         </div>
@@ -119,7 +119,8 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div>
-                            <img src="{%static 'main-webp/swing-gate-1.webp' %}" alt="swin-gate" class="img-fluid">
+                            <img data-src="{%static 'main-webp/swing-gate-1.webp' %}" alt="swin-gate"
+                                class="img-fluid lazy-load">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -153,7 +154,8 @@
                     </div>
                     <div class="col-md-6">
                         <div>
-                            <img src="{%static 'main-webp/sliding-gate-2.webp'%}" alt="sliding-gate" class="img-fluid">
+                            <img data-src="{%static 'main-webp/sliding-gate-2.webp'%}" alt="sliding-gate"
+                                class="img-fluid lazy-load">
                         </div>
                     </div>
 
@@ -165,7 +167,8 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div>
-                            <img src="{%static 'main-webp/swing-gate-1.webp' %}" alt="swin-gate" class="img-fluid">
+                            <img data-src="{%static 'main-webp/swing-gate-1.webp' %}" alt="swin-gate"
+                                class="img-fluid lazy-load">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -198,7 +201,8 @@
                     </div>
                     <div class="col-md-6">
                         <div>
-                            <img src="{%static 'main-webp/boom-gate.webp'%}" alt="boombarriergate" class="img-fluid">
+                            <img data-src="{%static 'main-webp/boom-gate.webp'%}" alt="boombarriergate"
+                                class="img-fluid lazy-load">
                         </div>
                     </div>
 
@@ -211,14 +215,14 @@
                 <div class="row">
                     <div class="col-md-6"></div>
                     <div class="col-md-6">
-                        <h2 >Control From Anywhere</h2>
+                        <h2>Control From Anywhere</h2>
                         <p>Access your smart Gate from anywhere in the world. Create unique scenes, define your
                             ambience, schedules your routines, control all devices and elevate your living experience
                             with the Onwords smart things app.</p>
-                        <div class="google-assistants">
-                            <span><img src="{%static 'main-webp/Google_Assistant.webp'%}"><span><img
-                                        src="{%static 'main-webp/alexa.webp'%}"></span><span><img
-                                        src="{%static 'main-webp/siri.webp'%}"></span></span>
+                        <div class="google-assistants ">
+                            <span><img data-src="{%static 'main-webp/Google_Assistant.webp'%}"><span>
+                                    <img data-src="{%static 'main-webp/alexa.webp'%}"></span><span>
+                                    <img data-src="{%static 'main-webp/siri.webp'%}"></span></span>
                         </div>
                     </div>
                 </div>
@@ -269,7 +273,7 @@
                             <p onclick="location.href='/curtain'">Smart Curtain</p>
                         </li>
                         <li>
-                            <p  onclick="location.href='/construction'"> Constructions</p>
+                            <p onclick="location.href='/construction'"> Constructions</p>
                         </li>
                     </ul>
                 </div>
@@ -296,11 +300,9 @@
                         " target="_blank" class="footer-social-icon"></i><i class="fa-brands fa-linkedin"></i></a>
 
                             <a href="https://www.instagram.com/team.onwords/
-                            " target="_blank" class="footer-social-icon"></i><i
-                                    class="fa-brands fa-instagram"></i></a>
+                            " target="_blank" class="footer-social-icon"></i><i class="fa-brands fa-instagram"></i></a>
                             <a href="https://https://www.facebook.com/teamonwords/
-                            " target="_blank" class="footer-social-icon"></i><i
-                                    class="fa-brands fa-facebook"></i></a>
+                            " target="_blank" class="footer-social-icon"></i><i class="fa-brands fa-facebook"></i></a>
                             <a href="https://www.youtube.com/@OnwordsSmartSolutions/
                             " target="_blank" class="footer-social-icon"></i> <i
                                     class="fa-brands fa-square-youtube"></i></i></a>
@@ -308,7 +310,7 @@
 
 
                         <div class="footer-foot">
-                          
+
                         </div>
                         <br>
                         <div>
@@ -331,8 +333,7 @@
                                 <img src="{% static 'main-webp/play.webp' %}" alt="playstore" class="img-fluid">
                             </a>
                             <a href="https://apps.apple.com/in/app/onwords-smart-home/id1598367434"><img
-                                    src="{% static 'main-webp/apple.webp' %}" alt="apple store"
-                                    class="img-fluid"></a>
+                                    src="{% static 'main-webp/apple.webp' %}" alt="apple store" class="img-fluid"></a>
                         </div>
 
 
