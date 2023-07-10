@@ -159,7 +159,6 @@ offBtn.addEventListener('click', () => {
 })
 
 
-<<<<<<< HEAD
   // ----------------mob nav hamburger-------------
 
 
@@ -190,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", lazyload);
   window.addEventListener("orientationChange", lazyload);
 });
-=======
+
 // ----------------mob nav hamburger-------------
 
     document.addEventListener("DOMContentLoaded", function() {
