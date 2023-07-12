@@ -1023,7 +1023,7 @@ section {
     cursor: pointer;
 } */
 
-.sec-btn-test {
+/* .sec-btn-test {
     color: #f5ae51;
     font-family: inherit;
     display: inline-block;
@@ -1063,7 +1063,7 @@ section {
   .sec-btn-test:hover::before {
     top: -30px;
   left: -30px;
-  }
+  } */
 .card-lis a {
     text-decoration: none;
 }
@@ -1964,3 +1964,51 @@ transform: scale(1.2);
 }
 
 /* ------------erroe page end */
+
+
+/* ----see demo button----- */
+.see-demo {
+    padding: 7px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #1528d8;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    /* outline: 2px solid#1528d8; */
+    ;
+}
+
+.see-demo:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    /* outline: 2px solid#ffff; */
+    /* box-shadow: 4px 5px 17px -4px #1528d8; */
+    border: none;
+}
+
+.see-demo::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, #CE4DA4,
+            #7353E5);
+    /* -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+
+.see-demo:hover::before {
+    width: 250%;
+}
+
+/* ---see demo button end--- */
