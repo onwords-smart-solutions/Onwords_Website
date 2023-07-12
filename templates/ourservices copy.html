@@ -103,17 +103,195 @@
 
     </div>
     <div class="wrapper">
-        <div class="container">
-            <div class="card">
-              <div class="bike">
-                <div class="circle"></div>
-                <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/04/bike-repair-35-1.png" alt="image">
-              </div>
-           
+        <section class="our-service-banner">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="{% static 'main-webp/sh-cut.webp' %}" alt="smarthome" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 waviy">
+                        <h2>Smart Home</h2>
+                        <h4>
+                            Light up your world for every occasion and emotion.
+                        </h4>
+                        <p>
+                            Elevate your home ambience with eGlu’s smart lighting solutions. Manage your lights, create
+                            color schemes to suit your moods or automate your lighting set-up-all at the touch of a
+                            button
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="service-container">
+                    <div class="video-con">
+                        <div id="dayLight">
+                            <div class="video-sec">
+                                <video src="{% static 'main-webp/day-final.mp4'%}" autoplay="autoplay" muted
+                                    loop></video>
+                            </div>
+                        </div>
+                        <div id="night">
+                            <div class="video-sec">
+                                <video src="{% static 'main-webp/night-final.mp4'%}" autoplay="autoplay" muted
+                                    loop></video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hov-serv">
+                        <div class="day click-btn" id="dayBtn" onclick="dayFun()">
+                            <div class="btns-vec"><span><img src="{% static 'main-webp/day-vector.webp' %}"
+                                        alt="day scene image">Day
+                                    Scene</span>
+                            </div>
+                        </div>
+                        <div class="night click-btn" id="nightBtn" onclick="nightFun()">
+                            <div class="btns-vec"><span><img src="{% static 'main-webp/night-vector.webp' %}"
+                                        alt="night scene image">night Scene</span>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fg">
+            <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
+                <h2></h2>
+            </div>
+            <div class="container">
+                <div class="row my-4">
+                    <div class="col-md-6">
+                        <div class="col-banner">
+                            <img data-src="{% static 'main-webp/sh-1.webp' %}" alt="smart-home-demo"
+                                class="img-fluid lazy-load">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Smart Home</h2>
+                        <p>
+                            Smart homes allow you to have greater control of your
+                            energy use, all while automating things like adjusting temperature turning on and off
+                            lights, opening and closing window treatments, and adjusting irrigation based on the
+                            weather.
+                        </p>
+                        <!-- <a href="#" class="d-flex align-items-center">
+                            <p class=" sec-btn-test" onclick="location.href='/seedemo'">See Demo</p>
+                            <p><i class="fa-solid fa-chevron-right anim-icon"></i></p>
+                        </a> -->
+                        <a href="#">
+                            <button class="see-demo" onclick="location.href='/seedemo'">see demo</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row my-4">
+                    <div class="col-md-6">
+                        <h2>Smart Curtains</h2>
+                        <p>
+                            Smart curtains are automated window coverings that can be opened, closed, and adjusted via
+                            remote control or integrated with home automation systems. They can help save energy by
+                            managing the amount of sunlight that enters your home while also improving your home
+                            security.
+                        </p>
+                        <!-- <a href="#" class="d-flex align-items-center">
+                            <p class=" sec-btn-test" onclick="location.href='/curtain'">See Demo</p>
+                            <p><i class="fa-solid fa-chevron-right anim-icon"></i></p>
+                        </a> -->
+                        <a href="#">
+                            <button class="see-demo" onclick="location.href='/curtain'">see demo</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-banner">
+                            <img data-src="{% static 'main-webp/curtains.webp' %}" alt="smart-curtain"
+                                class="img-fluid lazy-load">
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row my-4">
+                    <div class="col-md-6">
+                        <div class="col-banner">
+                            <img data-src="{% static 'main-webp/vaccum-cleaner.webp' %}" alt="vaccumcleaner"
+                                class="img-fluid lazy-load">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>SMART VACCUM CLEANER</h2>
+                        <p>
+                            Smart homes allow you to have greater control of your
+                            energy use, all while automating things like adjusting temperature turning on and off
+                            lights, opening and closing window treatments, and adjusting irrigation based on the
+                            weather. Smart curtains are automated window coverings that can be opened, closed, and
+                            adjusted via remote control or integrated with home automation systems. They can help save
+                            energy by managing the amount of sunlight that enters your home while also improving your
+                            home security.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row my-4">
+                    <div class="col-md-6">
+                        <h2>Security system</h2>
+                        <p>
+                            The future of curtains and blinds is here Add a curtain controller to your curtains and have
+                            a convenient and stylish way to manage natural light and privacy in your home.
+                        </p>
+                        <!-- <a href="#" class="d-flex align-items-center">
+                            <p class=" sec-btn-test" onclick="location.href='/securitySystem'">See Demo</p>
+                            <p><i class="fa-solid fa-chevron-right anim-icon"></i></p>
+                        </a> -->
+                        <a href="#">
+                            <button class="see-demo" onclick="location.href='/securitySystem'">see demo</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-banner">
+                            <img data-src="{% static 'main-webp/security.webp' %}" alt="sh" class="img-fluid lazy-load">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row my-4">
+                    <div class="col-md-6">
+                        <div class="col-banner">
+                            <img data-src="{% static 'main-webp/doorlock.webp' %}" alt="doorlock"
+                                class="img-fluid lazy-load">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Smart door lock</h2>
+                        <p>
+                            Onwords smart locks provide superior security with features such as 360-degree fingerprint
+                            recognition, RFID card, password access, OTP, remote access and mechanical key .With our
+                            innovative and cutting-edge digital smart door locks, you can be assured of the ultimate
+                            safety solution for your home or office.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
         <section class="footer">
             <div class="container">
                 <div class="row">
@@ -261,7 +439,6 @@
     <!-- bootstrap js -->
     <!-- <script src="{%static 'js/main.js' %}"></script> -->
     <script src="{% static 'js/ourservices.js' %}"></script>
-    <script src="paralx.js"></script>
     <script src="{% static 'js/general.js' %}"></script>
     <!-- carousel slider end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -270,7 +447,9 @@
     <script src="{% static 'js/all.min.js' %}"></script>
     <script src="{% static 'js/fontawesome.min.js' %}"></script>
     <!-- bs-4 -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+
 </body>
 
 </html>
