@@ -227,33 +227,30 @@ document.addEventListener("DOMContentLoaded", function () {
     // ------------
 
     
-jQuery(document).ready(function ($) {
-  //Items
-  var $card = $(".card");
-  var $container = $(".container");
-  var $title = $(".title");
-  var $bike = $(".bike img");
-  var $purchase = $(".purchase");
-  var $description = $(".info h3");
-
-  //Moving Animation Event
-  $container.on("mousemove", function (e) {
-    let xAxis = (window.innerWidth / 2 - e.clientX) / 25;
-    let yAxis = (window.innerHeight / 2 - e.clientY) / 25;
-    $card.css("transform", `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`);
-  });
-
-  //Animate on Hover
-  $container.hover(function () {
-    $card.toggleClass("has-transform");
-    $title.toggleClass("has-transform");
-    $bike.toggleClass("has-transform");
-    $purchase.toggleClass("has-transform");
-    $description.toggleClass("has-transform");
-  });
-
-  //Pop Back on mouseleave
-  $container.on("mouseleave", function () {
-    $card.css("transform", `rotateY(0deg) rotateX(0deg)`);
-  });
-});
+    !(function ($doc, $win) {
+      var screenWidth = $win.screen.width / 2,
+        screenHeight = $win.screen.height / 2,
+        $elems = $doc.getElementsByClassName("elem"),
+        validPropertyPrefix = '',
+        otherProperty = 'perspective(1000px)',
+        elemStyle = $elems[0].style;
+    
+      if(typeof elemStyle.webkitTransform == 'string') {
+        validPropertyPrefix = 'webkitTransform';
+      } else if (typeof elemStyle.MozTransform == 'string') {
+        validPropertyPrefix = 'MozTransform';
+      }
+    
+      $doc.addEventListener('mousemove', function (e) {
+        var centroX = e.clientX - screenWidth,
+          centroY = screenHeight - (e.clientY + 13),
+          degX = centroX * 0.04,
+          degY = centroY * 0.02,
+          $elem
+    
+        for (var i = 0; i < $elems.length; i++) {
+             $elem = $elems[i];
+          $elem.style[validPropertyPrefix] = otherProperty + 'rotateY('+ degX +'deg)  rotateX('+ degY +'deg)';
+        };
+      });
+    })(document, window);
