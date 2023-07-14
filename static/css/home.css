@@ -2110,7 +2110,7 @@ transform: scale(1.2);
 }
 
 .label-focus1 {
-    padding: 0px 10px;
+    padding: 0px 20px;
     background: transparent;
     position: absolute;
     top: 0px;
@@ -2118,7 +2118,6 @@ transform: scale(1.2);
     height: 40px;
     line-height: 40px;
     font-family: openSans;
-   
     object-fit: contain;
 }
 
