@@ -160,7 +160,7 @@ offBtn.addEventListener('click', () => {
 
 
 
-  // ----------------mob nav hamburger-------------
+// ----------------mob nav hamburger-------------
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
           img.src = img.dataset.src;
           img.classList.remove('lazy');
         }
-      
+
       });
       if (lazyloadImages.length == 0) {
         document.removeEventListener("scroll", lazyload);
@@ -194,63 +194,76 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ----------------mob nav hamburger-------------
 
-    document.addEventListener("DOMContentLoaded", function() {
-    let lazyloadImages = document.querySelectorAll("img.lazy-load");
-    let lazyloadThrottleTimeout;
+document.addEventListener("DOMContentLoaded", function () {
+  let lazyloadImages = document.querySelectorAll("img.lazy-load");
+  let lazyloadThrottleTimeout;
 
-    function lazyload() {
-        if(lazyloadThrottleTimeout) {
-        clearTimeout(lazyloadThrottleTimeout);
-        }
-        lazyloadThrottleTimeout = setTimeout(function(){
-        let scrollTop = window.pageYOffset;
-        lazyloadImages.forEach(function(img) {
-            if(img.offsetTop < (window.innerHeight + scrollTop)) {
-            img.src = img.dataset.src;
-            img.classList.remove('lazy');
-            }
-        });
-        if(lazyloadImages.length == 0) {
-            document.removeEventListener("scroll", lazyload);
-            window.removeEventListener("resize", lazyload);
-            window.removeEventListener("orientationChange", lazyload);
-        }
-        }, 20);
+  function lazyload() {
+    if (lazyloadThrottleTimeout) {
+      clearTimeout(lazyloadThrottleTimeout);
     }
-    document.addEventListener("scroll", lazyload);
-    window.addEventListener("resize", lazyload);
-    window.addEventListener("orientationChange", lazyload);
-    });
-
-
-
-    // ------------
-
-    
-    !(function ($doc, $win) {
-      var screenWidth = $win.screen.width / 2,
-        screenHeight = $win.screen.height / 2,
-        $elems = $doc.getElementsByClassName("elem"),
-        validPropertyPrefix = '',
-        otherProperty = 'perspective(1000px)',
-        elemStyle = $elems[0].style;
-    
-      if(typeof elemStyle.webkitTransform == 'string') {
-        validPropertyPrefix = 'webkitTransform';
-      } else if (typeof elemStyle.MozTransform == 'string') {
-        validPropertyPrefix = 'MozTransform';
-      }
-    
-      $doc.addEventListener('mousemove', function (e) {
-        var centroX = e.clientX - screenWidth,
-          centroY = screenHeight - (e.clientY + 13),
-          degX = centroX * 0.04,
-          degY = centroY * 0.02,
-          $elem
-    
-        for (var i = 0; i < $elems.length; i++) {
-             $elem = $elems[i];
-          $elem.style[validPropertyPrefix] = otherProperty + 'rotateY('+ degX +'deg)  rotateX('+ degY +'deg)';
-        };
+    lazyloadThrottleTimeout = setTimeout(function () {
+      let scrollTop = window.pageYOffset;
+      lazyloadImages.forEach(function (img) {
+        if (img.offsetTop < (window.innerHeight + scrollTop)) {
+          img.src = img.dataset.src;
+          img.classList.remove('lazy');
+        }
       });
-    })(document, window);
+      if (lazyloadImages.length == 0) {
+        document.removeEventListener("scroll", lazyload);
+        window.removeEventListener("resize", lazyload);
+        window.removeEventListener("orientationChange", lazyload);
+      }
+    }, 20);
+  }
+  document.addEventListener("scroll", lazyload);
+  window.addEventListener("resize", lazyload);
+  window.addEventListener("orientationChange", lazyload);
+});
+
+
+
+// ------------
+
+
+!(function ($doc, $win) {
+  var screenWidth = $win.screen.width / 2,
+    screenHeight = $win.screen.height / 2,
+    $elems = $doc.getElementsByClassName("elem"),
+    validPropertyPrefix = '',
+    otherProperty = 'perspective(1000px)',
+    elemStyle = $elems[0].style;
+
+  if (typeof elemStyle.webkitTransform == 'string') {
+    validPropertyPrefix = 'webkitTransform';
+  } else if (typeof elemStyle.MozTransform == 'string') {
+    validPropertyPrefix = 'MozTransform';
+  }
+
+  $doc.addEventListener('mousemove', function (e) {
+    var centroX = e.clientX - screenWidth,
+      centroY = screenHeight - (e.clientY + 13),
+      degX = centroX * 0.04,
+      degY = centroY * 0.02,
+      $elem
+
+    for (var i = 0; i < $elems.length; i++) {
+      $elem = $elems[i];
+      $elem.style[validPropertyPrefix] = otherProperty + 'rotateY(' + degX + 'deg)  rotateX(' + degY + 'deg)';
+    };
+  });
+})(document, window);
+
+// /----form method -----
+const focusInp = document.querySelector('.focus-inp1')
+const labelFocus = document.querySelector('.label-focus1')
+
+focusInp.addEventListener('click', () => {
+  labelFocus.style.top = '-20px'
+  labelFocus.style.backgroundColor = '#fff'
+  labelFocus.style.fontSize = '13px'
+  labelFocus.style.color = 'red'
+})
+
+// /----form method/ 

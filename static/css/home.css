@@ -2025,15 +2025,17 @@ transform: scale(1.2);
     padding: 20px 0px;
     color: white;
     font-family: 'Raleway';
-  
+
 }
-.login-reg{
+
+.login-reg {
     --borderWidth: 3px;
     background: #1D1F20;
     position: relative;
     border-radius: var(--borderWidth);
-  }
-  .login-reg:after {
+}
+
+.login-reg:after {
     content: '';
     position: absolute;
     top: calc(-1 * (3px));
@@ -2045,22 +2047,80 @@ transform: scale(1.2);
     z-index: -1;
     animation: animatedgradient 3s ease alternate infinite;
     background-size: 300% 300%;
-  }
-  
-  
-  @keyframes animatedgradient {
-      0% {
-          background-position: 0% 50%;
-      }
-      50% {
-          background-position: 100% 50%;
-      }
-      100% {
-          background-position: 0% 50%;
-      }
-  }
-  
-  .fgx input{
-background: transparent;
-color: #fff;
-  }
+}
+
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.fgx input {
+    background: transparent;
+    color: #fff;
+}
+
+/* ---form start ---*/
+.modal-body {
+    background: black;
+}
+
+.quot-anim-con {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #513C25;
+    padding: 0px 30px;
+    margin: 25px 0;
+}
+
+.quot-anim-con input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+
+    background: transparent;
+    position: absolute;
+    font-family: openSans;
+    top: 0;
+    left: 0;
+}
+
+.focus-inp1 {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0px 30px;
+    background: transparent;
+    position: absolute;
+    font-family: openSans;
+    top: 0;
+    left: 0;
+}
+
+.label-focus1 {
+    padding: 0px 10px;
+    background: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 40px;
+    line-height: 40px;
+    font-family: openSans;
+    /* background-color: #fff; */
+    object-fit: contain;
+}
+
+/* ---form end---- */
