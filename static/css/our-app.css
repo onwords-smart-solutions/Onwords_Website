@@ -161,6 +161,9 @@
 .app-feature {
   text-align: center;
 }
+.app-feature img{
+  
+}
 
 .fghs {
   position: relative;
@@ -314,5 +317,30 @@
   margin-top: 100px;
   height: 20vh;
 }
+
+.mob-center-fix{
+  display: flex;
+  width: 100%;
+}
+.left-mob-fix{
+  width: 10%;
+  text-align: right;
+  align-items: end;
+}
+.center-mob-fix{
+  width: 80%;
+  text-align: center;
+}
+.center-mob-fix img{
+  object-fit: contain;
+  width: 300px;
+
+}
+.right-mob-fix{
+  width: 10%;
+  text-align: left;
+  align-items: start;
+}
+
 
 /* ---- */

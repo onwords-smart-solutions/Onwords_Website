@@ -603,6 +603,10 @@ margin-bottom: 100px;
    object-fit: contain;
    margin-top: 25%;
 }
+.center-mob-fix img {
+   object-fit: contain;
+   width: 200px !important;
+}
 }
 
 

@@ -27,3 +27,22 @@
     padding-top:20px ;
     background-color: #191919;
 }
+.img-cube-sec{
+    display: flex;
+    position: relative;
+    height: 60vh;
+}
+.img-cube-2{
+    width: 70%;
+    border-radius: 20px !important;
+    position: absolute;
+    bottom: -100px;
+    right:0;
+    object-fit: contain;
+}
+.img-cube-1{
+    width: 70%;
+    object-fit: contain;
+    border-radius: 10px !important;
+  
+}
