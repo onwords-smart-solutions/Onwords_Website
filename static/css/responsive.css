@@ -591,6 +591,18 @@ margin-bottom: 100px;
    height: 50vh;
    margin-bottom: 100px;
 }
+.top-smart-home-page{
+   margin-top: 70%;
+   position: relative;
+ }
+ .smart-home-paralx-row{
+   height: 70vh;
+ }
+ .smart-below-img {
+   width: 100%;
+   object-fit: contain;
+   margin-top: 25%;
+}
 }
 
 

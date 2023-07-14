@@ -2079,7 +2079,7 @@ transform: scale(1.2);
     width: 100%;
     height: 40px;
     border-radius: 5px;
-    border: 1px solid #513C25;
+    border: 1px solid #fff;
     padding: 0px 30px;
     margin: 25px 0;
 }
@@ -2089,9 +2089,9 @@ transform: scale(1.2);
     height: 40px;
     border: none;
     outline: none;
-
     background: transparent;
     position: absolute;
+    color: #fff;
     font-family: openSans;
     top: 0;
     left: 0;
@@ -2105,7 +2105,6 @@ transform: scale(1.2);
     padding: 0px 30px;
     background: transparent;
     position: absolute;
-    font-family: openSans;
     top: 0;
     left: 0;
 }
@@ -2119,7 +2118,7 @@ transform: scale(1.2);
     height: 40px;
     line-height: 40px;
     font-family: openSans;
-    /* background-color: #fff; */
+   
     object-fit: contain;
 }
 

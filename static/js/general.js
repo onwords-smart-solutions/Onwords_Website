@@ -256,14 +256,6 @@ document.addEventListener("DOMContentLoaded", function () {
 })(document, window);
 
 // /----form method -----
-const focusInp = document.querySelector('.focus-inp1')
-const labelFocus = document.querySelector('.label-focus1')
 
-focusInp.addEventListener('click', () => {
-  labelFocus.style.top = '-20px'
-  labelFocus.style.backgroundColor = '#fff'
-  labelFocus.style.fontSize = '13px'
-  labelFocus.style.color = 'red'
-})
 
 // /----form method/ 
