@@ -15,17 +15,17 @@ window.addEventListener("mousemove", function (e) {
 })
 
 document.getElementById('lightonBtn').addEventListener("click", () => {
-  document.getElementById('withlight').style.display = 'block'
-  document.getElementById('withoutlight').style.display = 'none'
-  document.querySelector('.btns-on').style.display = 'none'
-  document.querySelector('.btns-off').style.display = 'block'
+    document.getElementById('withlight').style.display = 'block'
+    document.getElementById('withoutlight').style.display = 'none'
+    document.querySelector('.btns-on').style.display = 'none'
+    document.querySelector('.btns-off').style.display = 'block'
 
 })
 document.getElementById('lightoffBtn').addEventListener("click", () => {
-  document.getElementById('withlight').style.display = 'none'
-  document.getElementById('withoutlight').style.display = 'block'
-  document.querySelector('.btns-on').style.display = 'block'
-  document.querySelector('.btns-off').style.display = 'none'
+    document.getElementById('withlight').style.display = 'none'
+    document.getElementById('withoutlight').style.display = 'block'
+    document.querySelector('.btns-on').style.display = 'block'
+    document.querySelector('.btns-off').style.display = 'none'
 
 })
 
@@ -36,41 +36,41 @@ let sticky = document.querySelector('.sticky-sl');
 let stickyParent = document.querySelector('.sticky-parent');
 
 let scrollWidth = sticky.scrollWidth;
-let verticalScrollHeight = stickyParent.getBoundingClientRect().height-sticky.getBoundingClientRect().height;
+let verticalScrollHeight = stickyParent.getBoundingClientRect().height - sticky.getBoundingClientRect().height;
 
 //Scroll function 
-function horizontalScroll(){
+function horizontalScroll() {
 
     //Checking whether the sticky element has entered into view or not
     let stickyPosition = sticky.getBoundingClientRect().top;
-    if(stickyPosition > 1){
+    if (stickyPosition > 1) {
         return;
-    }else{
+    } else {
         let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
-        sticky.scrollLeft =(scrollWidth/verticalScrollHeight)*(-scrolled)*0.85;
-    
+        sticky.scrollLeft = (scrollWidth / verticalScrollHeight) * (-scrolled) * 0.85;
+
     }
 }
 
 // -------counter start
 document.addEventListener("DOMContentLoaded", () => {
-  function counter(id, start, end, duration) {
-      let obj = document.getElementById(id),
-          current = start,
-          range = end - start,
-          increment = end > start ? 1 : -1,
-          step = Math.abs(Math.floor(duration / range)),
-          timer = setInterval(() => {
-              current += increment;
-              obj.textContent = current;
-              if (current == end) {
-                  clearInterval(timer);
-              }
-          }, step);
-  }
-  counter("count1", 0, 1500, 3000);
-  counter("count2", 100, 1000, 2500);
-  counter("count3", 0, 900, 3000);
+    function counter(id, start, end, duration) {
+        let obj = document.getElementById(id),
+            current = start,
+            range = end - start,
+            increment = end > start ? 1 : -1,
+            step = Math.abs(Math.floor(duration / range)),
+            timer = setInterval(() => {
+                current += increment;
+                obj.textContent = current;
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, step);
+    }
+    counter("count1", 0, 1500, 3000);
+    counter("count2", 100, 1000, 2500);
+    counter("count3", 0, 900, 3000);
 });
 // -------counter start
 
@@ -81,8 +81,9 @@ const focusInp = document.querySelector('.focus-inp1')
 const labelFocus = document.querySelector('.label-focus1')
 
 focusInp.addEventListener('click', () => {
-  labelFocus.style.top = '-20px'
-//   labelFocus.style.backgroundColor = '#fff'
-  labelFocus.style.fontSize = '13px'
-  labelFocus.style.color = '#fff'
+    labelFocus.style.top = '-20px'
+    // labelFocus.style.backgroundColor = 'black'
+    labelFocus.style.fontSize = '13px'
+    labelFocus.style.color = '#fff'
+    labelFocus.style.marginRight = '1px'
 })
