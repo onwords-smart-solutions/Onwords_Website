@@ -91,6 +91,7 @@
    }
    .press-play-btn{
       width: 100%;
+      margin: 24px 0px;
    }
 
    .lead-boxs h2 {
@@ -536,7 +537,6 @@
 .sticky-parent{
    height: 350vh;
 }
-
 .works-with{
    background-size: 550px;
 } 
@@ -598,6 +598,9 @@ margin-bottom: 100px;
  }
  .smart-home-paralx-row{
    height: 70vh;
+ }
+ .horizontal{
+   margin-top: 150px;
  }
  .smart-below-img {
    width: 100%;

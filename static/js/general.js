@@ -56,13 +56,13 @@ const nightBtn = document.querySelector('.night')
 const sunBtn = document.querySelector('.sun')
 const anchor = document.querySelector('a')
 const header = document.querySelector('nav')
-const privacy = document.querySelector('.privacy-h2')
+const privacy = document.querySelectorAll('.privacy-h2')
 function toggleDark() {
 
 
   if (body.classList.contains('dark')) {
     window.addEventListener("scroll", () => {
-      var header = document.querySelector("header");
+      var header = document.querySelectorAll("header");
       header.classList.toggle("light", window.scrollY > 0)
     })
     body.classList.remove('dark');
@@ -70,8 +70,10 @@ function toggleDark() {
     nightBtn.style.display = 'block'
     sunBtn.style.display = 'none'
     anchor.style.color = '#000'
-    header.style.backgroundColor = '#fff'
-    privacy.style.color='#fff'
+    for(const privacys in privacy){
+      privacys.backgroundColor='#fff'
+    }
+    
     
 
   }
@@ -85,7 +87,10 @@ function toggleDark() {
     localStorage.setItem("theme", "dark");
     sunBtn.style.display = 'block'
     nightBtn.style.display = 'none'
-    header.style.backgroundColor = '#000'
+    for(const privacys in privacy){
+      privacys.backgroundColor='#000'
+    }
+    
   }
 }
 
