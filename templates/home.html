@@ -118,20 +118,21 @@
                                 experience </p>
                             <form action="" class="quot-form">
                                 <div class="quot-anim-con">
-                                    <label for="fullname" class="label-focus">Full Name</label>
-                                    <input type="text" name="" id="fullname" onkeyup="textLength()" class="focus-inp1" required>
+                                    <label for="fullname" class="label-focus1"><span>Full Name</span></label>
+                                    <input type="text" name="" id="fullname" onkeyup="nameVal()" class="focus-inp1"
+                                        required>
                                 </div>
                                 <div class="quot-anim-con">
-                                    <label for="MobileNumber">Mobile Number</label>
-                                    <input type="text" name="" id="MobileNumber">
+                                    <label for="MobileNumber" class="label-focus2"><span>Mobile Number</span></label>
+                                    <input type="text" name="" id="MobileNumber" class="focus-inp2">
                                 </div>
                                 <div class="quot-anim-con">
-                                    <label for="Location">Location</label>
-                                    <input type="text" name="" id="Location">
+                                    <label for="Location" class="label-focus3"><span>Location</span></label>
+                                    <input type="text" name="" id="Location" class="focus-inp3">
                                 </div>
                                 <div class="quot-anim-con">
-                                    <label for="Description">Description</label>
-                                    <input type="text" name="" id="Description">
+                                    <label for="Description" class="label-focus4"><span>Description</span></label>
+                                    <input type="text" name="" id="Description" class="focus-inp4">
                                 </div>
 
                                 <!-- <input type="text" name="" id="username" placeholder="Full name" required><br><br> 
@@ -806,7 +807,7 @@
                 <hr class="text-white">
                 <div class="bootom-footer">
                     <div>
-                        <p> Copyright ©2023
+                        <p> © Copyright ©2023
                             Onwords. All Rights Reserved | </p>
                     </div>
                     <div>
@@ -944,8 +945,72 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script>
+        const focusInp = document.querySelector('.focus-inp1')
+        const labelFocus = document.querySelector('.label-focus1')
+        const focusInp2 = document.querySelector('.focus-inp2')
+        const labelFocus2 = document.querySelector('.label-focus2')
+        const focusInp3 = document.querySelector('.focus-inp3')
+        const labelFocus3 = document.querySelector('.label-focus3')
+        const focusInp4 = document.querySelector('.focus-inp4')
+        const labelFocus4 = document.querySelector('.label-focus4')
 
-    
+        function nameVal() {
+            if (focusInp.value.length == 1) {
+                labelFocus.style.top = '-20px'
+            }
+            else if (!focusInp.value.length == 1) {
+                labelFocus.style.top = '0px'
+                labelFocus.style.backgroundColor = 'none'
+            }
+        }
+        focusInp.addEventListener('click', () => {
+
+            labelFocus.style.top = '-20px'
+            labelFocus.style.backgroundColor = 'black'
+            labelFocus.style.fontSize = '13px'
+            labelFocus.style.color = '#fff'
+            labelFocus.style.left = '10px'
+            labelFocus.style.backgroundColor = 'none'
+
+        })
+        focusInp2.addEventListener('click', () => {
+            labelFocus2.style.top = '-20px'
+            labelFocus2.style.backgroundColor = 'black'
+            labelFocus2.style.fontSize = '13px'
+            labelFocus2.style.color = '#fff'
+            labelFocus.style.left = '10px'
+            labelFocus2.style.left = '10px'
+            labelFocus.style.backgroundColor = 'none'
+
+
+        })
+        focusInp3.addEventListener('click', () => {
+            labelFocus3.style.top = '-20px'
+            labelFocus3.style.backgroundColor = 'black'
+            labelFocus3.style.fontSize = '13px'
+            labelFocus3.style.color = '#fff'
+            labelFocus3.style.left = '10px'
+            labelFocus.style.backgroundColor = 'none'
+
+
+        })
+        focusInp4.addEventListener('click', () => {
+            labelFocus4.style.top = '-20px'
+            labelFocus4.style.backgroundColor = 'black'
+            labelFocus4.style.fontSize = '13px'
+            labelFocus4.style.color = '#fff'
+            labelFocus4.style.marginright = '2px'
+            labelFocus4.style.left = '10px'
+            labelFocus.style.backgroundColor = 'none'
+
+
+        })
+
+    </script>
+    <script>
+
+    </script>
 </body>
 
 </html>
