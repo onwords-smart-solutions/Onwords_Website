@@ -77,13 +77,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-const focusInp = document.querySelector('.focus-inp1')
-const labelFocus = document.querySelector('.label-focus1')
+// const focusInp = document.querySelector('.focus-inp1')
+// const labelFocus = document.querySelector('.label-focus1')
 
-focusInp.addEventListener('click', () => {
-    labelFocus.style.top = '-20px'
-    labelFocus.style.backgroundColor = 'black'
-    labelFocus.style.fontSize = '13px'
-    labelFocus.style.color = '#fff'
-    labelFocus.style.marginRight = '1px'
-})
+// focusInp.addEventListener('click', () => {
+//     labelFocus.style.top = '-20px'
+//     labelFocus.style.backgroundColor = 'black'
+//     labelFocus.style.fontSize = '13px'
+//     labelFocus.style.color = '#fff'
+//     labelFocus.style.marginRight = '1px'
+// })
