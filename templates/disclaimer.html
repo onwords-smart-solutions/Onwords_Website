@@ -102,7 +102,7 @@
         <div class="container">
             <div class="top-terms">
                 <div class="privacy-title">
-                    <h2>Disclaimer</h2>
+                    <h2 class="privacy-h2">Disclaimer</h2>
                     <p>Legal Information & Notices</p>
                 </div>
             </div>
@@ -272,7 +272,7 @@
                                 <p onclick="location.href='/gallery'">Gallery</p>
                             </li>
                             <li>
-                                <p onclick="location.href='/carrier'">Carrier</p>
+                                <p onclick="location.href='/carrier'">Carrers</p>
                             </li>
 
 
@@ -295,7 +295,7 @@
                                 <p onclick="location.href='/curtain'">Smart Curtain</p>
                             </li>
                             <li>
-                                <p  onclick="location.href='/construction'"> Constructions</p>
+                                <p onclick="location.href='/construction'"> Constructions</p>
                             </li>
                         </ul>
                     </div>
@@ -334,8 +334,10 @@
 
 
                             <div class="footer-foot">
-                                
-
+                                <!-- <i class="fa-brands fa-linkedin" onclick="location.href='/'"></i>
+                                <span onclick="location.href='www.instagram.com/team.onwords/'" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></span>
+                                <i class="fa-brands fa-facebook"></i> -->
                             </div>
                             <br>
                             <div>
@@ -355,11 +357,14 @@
                             <h5>Our Apps</h5>
                             <div class="app-google-store">
                                 <a href="https://play.google.com/store/apps/details?id=com.onwords.smarthome">
-                                    <img src="{% static 'images/play.png' %}" alt="" class="img-fluid">
+                                    <img data-src="{% static 'main-webp/play.webp' %}" alt="playstore"
+                                        class="img-fluid lazy-load">
                                 </a>
                                 <a href="https://apps.apple.com/in/app/onwords-smart-home/id1598367434"><img
-                                        src="{% static 'images/apple.png' %}" alt="" class="img-fluid"></a>
+                                        data-src="{% static 'main-webp/apple.webp' %}" alt="apple store"
+                                        class="img-fluid lazy-load"></a>
                             </div>
+
 
                         </div>
                     </div>

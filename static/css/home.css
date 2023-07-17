@@ -100,9 +100,20 @@ header {
 header.sticky {
     background: #040507;
 }
+.wrapper.lights{
+    background-color: #040507;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
 
 header.light {
-    background: #fff;
+    background: #fff !important;
+    width: 100%;
+    height: 70px;
+    color: #000;
 }
 
 
@@ -458,7 +469,6 @@ nav {
     width: 100%;
     height: auto;
     position: relative;
-
 }
 
 .curtain-home {
@@ -1083,11 +1093,11 @@ section {
     top: 50%;
     translate: -50% -50%;
     background: linear-gradient(to right, #7353ef, #ce4da4);
-    animation: rotate 2s ease-in-out infinite;
+    animation: rotates 2s ease-in-out infinite;
     z-index: -1;
 }
 
-@keyframes rotate {
+@keyframes rotates {
     0% {
         transform: rotate(0deg);
     }
@@ -2162,5 +2172,6 @@ transform: scale(1.2);
     font-family: openSans;
     object-fit: contain;
 }
+
 
 /* ---form end---- */

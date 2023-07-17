@@ -56,6 +56,7 @@ const nightBtn = document.querySelector('.night')
 const sunBtn = document.querySelector('.sun')
 const anchor = document.querySelector('a')
 const header = document.querySelector('nav')
+const privacy = document.querySelector('.privacy-h2')
 function toggleDark() {
 
 
@@ -70,6 +71,8 @@ function toggleDark() {
     sunBtn.style.display = 'none'
     anchor.style.color = '#000'
     header.style.backgroundColor = '#fff'
+    privacy.style.color='#fff'
+    
 
   }
   else {
