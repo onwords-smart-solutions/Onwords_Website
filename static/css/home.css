@@ -2223,7 +2223,7 @@ transform: scale(1.2);
 }
 
 /* ---form end---- */
-=======
+
 /* ---form end---- */
 .form-row {
     position: relative;
@@ -2277,4 +2277,3 @@ transform: scale(1.2);
 .input-text:active+.label-helper{
  opacity: 0;
 }
->>>>>>> dacec1b7734eb23e367fa77da89372b7eb013d6e
