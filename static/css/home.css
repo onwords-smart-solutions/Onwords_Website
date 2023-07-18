@@ -1694,7 +1694,7 @@ section {
 }
 
 .s-btn {
-    background: #fff;
+    background: black;
     color: #000;
     outline: none;
     border: none;
@@ -2223,58 +2223,112 @@ transform: scale(1.2);
 }
 
 /* ---form end---- */
-=======
+
 /* ---form end---- */
 .form-row {
     position: relative;
     width: 100%;
-    /* height: 40px; */
+    height: 40px;
     border-radius: 5px;
     border: 1px solid #fff;
     padding: 0px 5px;
     margin: 25px 0;
+   
 }
 
 .form-row input {
-    background-color: none;
+    background-color: transparent;
     outline: none;
     border: none;
-}
-
-.input-text {
-    background-color: black;
+    padding: 10px;
     color: #fff;
-    border: 1px solid #cccccc;
-    font-family: Arial;
-    margin-bottom: 8px;
-    padding: 3px 4px;
-    position: relative;
-    width: 100%;
-    z-index: 3;
 }
-
-.label-helper {
+.form-row span{
     position: absolute;
-    opacity: 1;
-    transition: .2s bottom, .2s opacity;
-    top: 10px;
-    left: 10px;
-    z-index: 10;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
 }
 
-.input-text:focus+.label-helper,
-.input-text:invalid+.label-helper {
-    bottom: 75%;
-    font-family: arial;
-    background-color: #000;
-    font-size: 15px;
-    line-height: 1;
-    opacity: 1;
-    left: 20px;
-    padding: 4px;
-    top: -10px;
+.form-row input:focus ~span,
+.form-row input:valid ~span{
+color: #07b39b;
+transform: translateY(-17px)translateX(10px);
+padding: 0px 10px;
+background-color: #040507;
 }
-.input-text:active+.label-helper{
- opacity: 0;
+
+/* ---carrier-form---- */
+.field-group{
+    width: 600px;
+    position: relative;
+    padding-top: 7px;
+
 }
->>>>>>> dacec1b7734eb23e367fa77da89372b7eb013d6e
+.input-field{
+    width: 100%;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid #9999;
+    padding: 10px 0;
+    background: transparent;
+    /* font-size: 2em; */
+    color: #fff;
+    /* transition: o.3s ease; */
+}
+
+.field-group span{
+display: none;
+position: absolute;
+top: 0;
+/* font-size: 1em; */
+columns: #999;
+text-transform: uppercase;
+transition: 0.3s ease;
+}
+.input-field::placeholder{
+    color: transparent;
+}
+.input-field:placeholder-shown ~ .input-label{
+    /* font-size: 2em; */
+    top: 20px;
+    color: #fff;
+
+}
+.input-field:focus{
+    /* border-image: linear-gradient(to right, red,blue); */
+    border-image-slice: 1;
+}
+.input-field:focus ~ .input-label{
+    display: block;
+    position: absolute;
+    top: 0;
+    /* font-size: 1em; */
+    color: #fff;
+    
+}
+/* ---carrier-form---- */
+.box-group-input{
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+.box-group-input input{
+    width: 100%;
+    border: none;
+    outline:none;
+    background: transparent;
+    color: #fff;
+}
+.box-group-input span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.box-group-input input:focus ~span,
+.box-group-input input:valid ~span{
+    transform: translateX(10px)translateY(-20px);
+
+}
