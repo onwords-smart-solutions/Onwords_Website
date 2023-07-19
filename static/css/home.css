@@ -33,6 +33,9 @@ body {
     background: #fff;
     color: #040507 !important;
 }
+button.dark{
+    color: #fff;
+}
 
 body::-webkit-scrollbar {
     display: none;
@@ -2061,7 +2064,6 @@ transform: scale(1.2);
 
 .demoBtn {
     background: transparent;
-    color: #fff;
     font-size: 17px;
     text-transform: uppercase;
     font-weight: 600;
