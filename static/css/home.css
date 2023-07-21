@@ -33,7 +33,8 @@ body {
     background: #fff;
     color: #040507 !important;
 }
-button.dark{
+
+button.dark {
     color: #fff;
 }
 
@@ -1544,7 +1545,7 @@ section {
 
 /* --popupform end */
 .font-anim {
-    color: #333;
+    /* color: #333; */
     font-family: tahoma;
     font-size: 55px;
     font-weight: 100;
@@ -1552,18 +1553,23 @@ section {
     overflow: hidden;
     position: relative;
     width: 450px;
-    background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
+    /* background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
+    background-clip: text; */
     text-fill-color: transparent;
 }
-
-.font-anim span {
-    font-size: 55px;
-    margin-left: 0px;
+.smarter{
+    font-weight: 600;
+}
+.second-text{
+    position: absolute;
+    top: 0;
+    right:10%;
     color: #fff;
-    font-weight: 700;
+    font-weight: 600;
+    display: block;
+    z-index: 10;
     background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1969,7 +1975,7 @@ transform: scale(1.2);
     font-weight: bold;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: #1528d8;
+    color: #040507;
     transition: all 1000ms;
     font-size: 15px;
     position: relative;
@@ -2322,7 +2328,9 @@ transform: scale(1.2);
     width: 80%;
     border-bottom: 1px solid #fff;
     position: relative;
-    margin: 27px;
+    /* margin: 27px; */
+    border: 0;
+    color: #fff;
 }
 
 .box-group-input input {
@@ -2335,7 +2343,7 @@ transform: scale(1.2);
 
 .box-group-input span {
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 0;
     pointer-events: none;
 }
@@ -2344,4 +2352,56 @@ transform: scale(1.2);
 .box-group-input input:valid~span {
     transform: translateX(10px)translateY(-18px);
 
+}
+
+.static-txt {
+    color: #fff !important;
+    /* font-size: 60px; */
+}
+
+.dynamic-txts {
+    margin-left: 15px;
+    height: 70px;
+    line-height: 70px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.dynamic-txts li {
+    color: pink;
+    list-style: none;
+    font-size: 40px;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -280px;
+    }
+}
+
+.dynamic-txts li span {
+    position: relative;
+}
+
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #040507;
+    border-left: 2px solid pink;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
 }

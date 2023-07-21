@@ -611,6 +611,12 @@ margin-bottom: 100px;
    object-fit: contain;
    width: 200px !important;
 }
+.img-cube-2{
+   bottom: -20px;
+}
+.img-cube-sec{
+   height: 40vh;
+}
 }
 
 
