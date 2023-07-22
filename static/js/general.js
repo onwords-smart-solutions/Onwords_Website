@@ -58,8 +58,6 @@ const anchor = document.querySelector('a')
 const header = document.querySelector('nav')
 const privacy = document.querySelectorAll('.privacy-h2')
 function toggleDark() {
-
-
   if (body.classList.contains('dark')) {
     window.addEventListener("scroll", () => {
       var header = document.querySelectorAll("header");
@@ -88,7 +86,7 @@ function toggleDark() {
     sunBtn.style.display = 'block'
     nightBtn.style.display = 'none'
     for(const privacys in privacy){
-      privacys.backgroundColor='#000'
+      privacys.backgroundColor='#fff'
     }
     
   }
@@ -98,7 +96,9 @@ if (localStorage.getItem("theme") === "dark") {
   body.classList.add('dark');
   nightBtn.style.display = 'none';
   sunBtn.style.display = 'block'
-
+  for(const privacys in privacy){
+    privacys.backgroundColor='#fff'
+  }
 }
 
 document.querySelector('#darkbutton').addEventListener('click', toggleDark);
@@ -112,6 +112,7 @@ const bodyMob = document.getElementById('bodyTag');
 const buttonMob = document.querySelector('#darkbutton');
 const nightBtnMob = document.querySelector('.nightmob')
 const sunBtnMob = document.querySelector('.sunmob')
+const dgAjax = document.querySelector('.dg-ajax')
 const anchorMob = document.querySelector('a')
 const footerIcon = document.querySelectorAll('.footer-social-icon')
 
@@ -121,6 +122,7 @@ function toggleDark() {
     localStorage.setItem("theme", "light");
     nightBtnMob.style.display = 'block'
     sunBtnMob.style.display = 'none'
+    dgAjax.style.color='#000'
     for (const footerIcons of footerIcon) {
       footerIcons.style.color = '#fff'
     }

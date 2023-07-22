@@ -617,6 +617,26 @@ margin-bottom: 100px;
 .img-cube-sec{
    height: 40vh;
 }
+.smarter{
+   font-size: 40px;
+}
+.second-text{
+   right: 30px;
+   font-size: 40px;
+}
+.privacy-h2{
+   font-size: 20px !important;
+}
+.top-terms{
+   height: 20vh !important;
+}
+.box-contact,.box-contacts{
+   height: 135px !important;
+}
+.content-smar{
+   margin-top: 50px !important;
+}
+
 }
 
 
