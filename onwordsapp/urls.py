@@ -19,7 +19,8 @@ urlpatterns=[
     path('carrier',views.carrier,name='carrier'),
     path('team',views.team,name='team'),
     path('downloads',views.downloads,name='downloads'),
+    path('animation',views.animation,name='animation'),
     path('robots.txt',views.RobotsTxtViews.as_view()),
-    path('sitemap.xml',views.SitemapXmlViews.as_view())
+    path('sitemap.xml',views.SitemapXmlViews.as_view()),
 ]
 
