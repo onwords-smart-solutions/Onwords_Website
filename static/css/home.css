@@ -2175,7 +2175,7 @@ transform: scale(1.2);
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-bottom: 2px solid #fff;
+   
 }
 
 .contact-form input {
@@ -2329,7 +2329,6 @@ transform: scale(1.2);
     width: 80%;
     border-bottom: 1px solid #fff;
     position: relative;
-    margin: 27px;
     border: 0;
     color: #fff;
 }
