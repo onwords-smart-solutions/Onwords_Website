@@ -1559,13 +1559,15 @@ section {
     background-clip: text; */
     text-fill-color: transparent;
 }
-.smarter{
+
+.smarter {
     font-weight: 600;
 }
-.second-text{
+
+.second-text {
     position: absolute;
     top: 0;
-    right:10%;
+    right: 10%;
     color: #fff;
     font-weight: 600;
     display: block;
@@ -2175,7 +2177,7 @@ transform: scale(1.2);
     align-items: center;
     justify-content: center;
     flex-direction: column;
-   
+
 }
 
 .contact-form input {
@@ -2404,4 +2406,24 @@ transform: scale(1.2);
         left: 100%;
         margin: 0 -35px 0 35px;
     }
+}
+
+.expertise {
+    width: 100%;
+    height: 100%;
+    border-radius: 46px;
+    border: 2px solid #fff;
+    /* box-shadow: 3px 1px 4px 0px rgba(178, 178, 178, 0.25), 1px 51px 4px 0px rgba(0, 0, 0, 0.25), -3px 4px 4px 0px rgba(255, 255, 255, 0.25), 0px -2px 4px 0px rgba(255, 255, 255, 0.25); */
+    justify-content: center;
+    
+}
+.exper img{
+    justify-content: center;
+    right: 50px;
+}
+.exper h5 {
+    text-align: center;
+}
+.exper p{
+    text-align: center;
 }
