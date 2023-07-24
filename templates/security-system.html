@@ -138,7 +138,7 @@
                     <div class="col-md-2">
                         <div class="d-flex my-3">
                             <span class="px-4">
-                                <img data-src="{% static 'main-webp/ajaxd.svg' %}" alt="Technologies" class="lazy-load">
+                                <img src="{% static 'main-webp/ajaxd.svg' %}" alt="Technologies" class="lazy-load">
                             </span>
                             <span>
                                 <h4>Technologies</h4>
@@ -238,6 +238,62 @@
         <section class="secure-video">
             <video src="{% static 'main-webp/secure-video.mp4' %}" muted autoplay loop></video>
         </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Motion Cam Outdoor</h2>
+                        <h6>Wireless motion detector taking photos by alarm and on demand</h6>
+
+                        <p>Special lens</p>
+                        <p>Intellect against false alarms</p>
+                        <p>Filter for thermal interferences</p>
+                        <p>Unique wireless technologies</p>
+                        <p>Sensitivity level</p>
+                        <p>More security</p>
+                        <p>Professional installation</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="{% static 'main-webp/motion-cam.png' %}" alt="motion-img" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+      <div class="main-motion-sticky">
+        <div class="right-motion-content">
+            <h1>Dual Curtain Outdoor</h1>
+            <h5>Two detectors in one</h5>
+            <h5>Masking sensors</h5>
+            <h5>Unique optical sysytems</h5>
+            <h5>Flexible settings of detection zones</h5>
+        </div>
+        <div class="sticky-container">
+           
+            <main class="main-motion">
+                <section class="section-motion-img">
+                    <img src="{% static 'main-webp/ajax-component-3.png' %}" alt="ajax-component" class="img-fluid">
+                  </section>
+                  <section class="section-motion-img">
+                    <img src="{% static 'main-webp/ajax-component-4.png' %}" alt="ajax-component" class="img-fluid">
+                  </section>
+                  <section class="section-motion-img">
+                    <img src="{% static 'main-webp/ajax-component-5.png' %}" alt="ajax-component" class="img-fluid">
+                  </section class="section-motion-img">
+                  <section class="section-motion-img">
+                    <img src="{% static 'main-webp/ajax-component-4.png' %}" alt="ajax-component" class="img-fluid">
+                  </section> 
+            </main>
+          </div>
+      </div>
+                    
+                   
+                
+            </div>
+        </section>
+
         <section class="secure-video">
             <video src="{% static 'main-webp/constructor-bg.mp4' %}" muted loop autoplay></video>
         </section>
@@ -278,8 +334,6 @@
                         <li>
                             <p onclick="location.href='/carrier'">Carrers</p>
                         </li>
-
-
                     </ul>
 
                 </div>
@@ -397,7 +451,56 @@
 
 
     <!-- Preloader -->
+<script>
+    /**
+* By Alvaro Trigo 
+* Follow me on Twitter: https://twitter.com/imac2
+*/
+(function(){
+    init();
 
+    var g_containerInViewport;
+    function init(){
+        setStickyContainersSize();
+        bindEvents();
+    }
+
+    function bindEvents(){
+        window.addEventListener("wheel", wheelHandler);        
+    }
+
+    function setStickyContainersSize(){
+        document.querySelectorAll('.sticky-container').forEach(function(container){
+            const stikyContainerHeight = container.querySelector('main').scrollWidth;
+            container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
+        });
+    }
+
+    function isElementInViewport (el) {
+        const rect = el.getBoundingClientRect();
+        return rect.top <= 0 && rect.bottom > document.documentElement.clientHeight;
+    }
+
+    function wheelHandler(evt){
+        
+        const containerInViewPort = Array.from(document.querySelectorAll('.sticky-container')).filter(function(container){
+            return isElementInViewport(container);
+        })[0];
+
+        if(!containerInViewPort){
+            return;
+        }
+
+        var isPlaceHolderBelowTop = containerInViewPort.offsetTop < document.documentElement.scrollTop;
+        var isPlaceHolderBelowBottom = containerInViewPort.offsetTop + containerInViewPort.offsetHeight > document.documentElement.scrollTop;
+        let g_canScrollHorizontally = isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
+
+        if(g_canScrollHorizontally){
+            containerInViewPort.querySelector('main').scrollLeft += evt.deltaY;
+        }
+    }
+})();
+</script>
 
     <!-- bootstrap js -->
     <script src="{%static 'js/bootstrap.min.js'%}"></script>
