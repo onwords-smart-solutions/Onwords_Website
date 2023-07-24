@@ -2452,13 +2452,9 @@ transform: scale(1.2);
 .our-story {
     width: 100%;
     height: 100%;
-}
-
-.our-story {
-    width: 100%;
-    height: 100%;
     position: relative;
 }
+
 
 .our-story::after {
     content: '';
@@ -2479,4 +2475,37 @@ transform: scale(1.2);
 .our-story img {
     width: 200px;
     height: 200px;
+}
+
+.aboutus-quote {
+    background-image: url(../main-webp/aboutus-quote-img.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.7;
+    position: relative;
+    
+}
+
+.about-schedule {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.abt-button{
+    border: none;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    background:transparent;
+    color: #fff;
+}
+.abt-button:hover{
+    
 }
