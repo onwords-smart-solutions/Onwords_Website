@@ -73,9 +73,7 @@ function toggleDark() {
     for(const privacys in privacy){
       privacys.backgroundColor='#fff'
     }
-    
-    
-
+  
   }
   else {
     window.addEventListener("scroll", () => {
