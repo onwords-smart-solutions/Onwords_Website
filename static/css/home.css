@@ -2555,14 +2555,155 @@ transform: scale(1.2);
     color: #fff;
 }
 
-.smart-text h2   {
+.smart-text h2 {
     text-align: center;
 }
-.smart-day-night{
- height: 100%;
- width: 100%;
-}
-.smart-day-night h4{
+
+.smart-day-night h4 {
     text-align: center;
-    margin-top:20px;
+    margin-top: 20px;
+}
+
+.smart-day-night {
+    height: 50vh;
+    width: 50%;
+    position: relative;
+    text-align: center;
+}
+
+.day-night-homes {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+
+    animation: change-img-anim 5s infinite;
+    background-image: url(../main-webp/smarthome-night.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.day-night-home:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+.day-night-home:nth-of-type(2) {
+    animation-delay: 2s;
+}
+
+@keyframes change-img-anim {
+    0% {
+        background-image: url(../main-webp/smarthome-day.webp);
+
+    }
+
+    50% {
+        background-image: url(../main-webp/smarthome-night.webp);
+    }
+
+    100% {
+        background-image: url(../main-webp/smarthome-day.webp);
+    }
+
+}
+
+.smart-text-home {
+    position: relative;
+    text-align: center;
+    top: 10px;
+    animation: tex 5s infinite;
+
+}
+
+.s-2 {
+    opacity: 1;
+    animation: tex 5s infinite;
+    font-size: 30px;
+    color: #000;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: block;
+    overflow: hidden;
+
+}
+
+.s-1 {
+    /* opacity: 1; */
+    animation: texe 5s infinite;
+    font-size: 30px;
+    display: block;
+    color: #000;
+    position: relative
+}
+
+@keyframes tex {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+
+    }
+
+}
+@keyframes texe {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+
+
+    }
+
+}
+
+.smart-text-home {
+    position: relative;
+}
+
+.smart-work {
+    /* display: none; */
+    animation: change-text-anim 30s infinite;
+}
+
+.smart-work:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+.smart-work:nth-of-type(2) {
+    animation-delay: 2s;
+}
+
+
+
+@keyframes change-text-anim {
+    0% {
+        display: none;
+    }
+
+    10% {
+        display: block;
+    }
+
+    90% {
+        display: block;
+        ;
+    }
+
+    100% {
+        display: none;
+    }
 }
