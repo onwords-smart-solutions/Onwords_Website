@@ -1415,6 +1415,11 @@ section {
     animation: f-circl 5s linear infinite;
 
 }
+.box-scrollers{
+    background-color: red;
+    width: 100%;
+}
+
 
 @keyframes f-circl {
     0% {
@@ -1500,7 +1505,7 @@ section {
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: rgba(255, 255, 255, 0.192);
-    height: 50vh;
+    height: 55vh;
     border-radius: 50px;
     position: relative;
 }
@@ -1634,7 +1639,6 @@ section {
         width: 0;
     }
 
-    38% {}
 
     48% {
 
@@ -2619,10 +2623,10 @@ transform: scale(1.2);
     opacity: 1;
     animation: tex 5s infinite;
     font-size: 30px;
-    color: #000;
+    /* color: #000; */
     position: relative;
     width: 100%;
-    height: 30px;
+    height: 50px;
     display: block;
     overflow: hidden;
 
@@ -2632,8 +2636,10 @@ transform: scale(1.2);
     opacity: 1;
     animation: texe 5s infinite;
     font-size: 30px;
-    color: #000;
+    /* color: #000; */
     position: absolute;
+    top: 0;
+    left: 0;
 }
 
 @keyframes tex {
