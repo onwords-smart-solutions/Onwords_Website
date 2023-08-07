@@ -2629,12 +2629,11 @@ transform: scale(1.2);
 }
 
 .s-1 {
-    /* opacity: 1; */
+    opacity: 1;
     animation: texe 5s infinite;
     font-size: 30px;
-    display: block;
     color: #000;
-    position: relative
+    position: absolute;
 }
 
 @keyframes tex {
@@ -2653,6 +2652,7 @@ transform: scale(1.2);
     }
 
 }
+
 @keyframes texe {
     0% {
         opacity: 0;

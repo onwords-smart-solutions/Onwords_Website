@@ -67,8 +67,8 @@ function toggleDark() {
     })
     body.classList.remove('dark');
     localStorage.setItem("theme", "light");
-    nightBtn.style.display = 'block'
-    sunBtn.style.display = 'none'
+    nightBtn.style.display = 'none'
+    sunBtn.style.display = 'block'
     anchor.style.color = '#000'
     for(const privacys in privacy){
       privacys.backgroundColor='#fff'
@@ -83,8 +83,8 @@ function toggleDark() {
 
     body.classList.add('dark');
     localStorage.setItem("theme", "dark");
-    sunBtn.style.display = 'block'
-    nightBtn.style.display = 'none'
+    sunBtn.style.display = 'none'
+    nightBtn.style.display = 'block'
     for(const privacys in privacy){
       privacys.backgroundColor='#000'
     }
@@ -117,8 +117,8 @@ function toggleDarkMob() {
   if (bodyMob.classList.contains('dark')) {
     bodyMob.classList.remove('dark');
     localStorage.setItem("theme", "light");
-    nightBtnMob.style.display = 'block'
-    sunBtnMob.style.display = 'none'
+    nightBtnMob.style.display = 'none'
+    sunBtnMob.style.display = 'block'
  
     for (const footerIcons of footerIcon) {
       footerIcons.style.color = '#fff'
@@ -128,8 +128,8 @@ function toggleDarkMob() {
   } else {
     bodyMob.classList.add('dark');
     localStorage.setItem("theme", "dark");
-    sunBtnMob.style.display = 'block'
-    nightBtnMob.style.display = 'none'
+    sunBtnMob.style.display = 'none'
+    nightBtnMob.style.display = 'block'
     for (const footerIcons of footerIcon) {
       footerIcons.style.color = '#000'
     }
@@ -201,35 +201,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ----------------mob nav hamburger-------------
 
-document.addEventListener("DOMContentLoaded", function () {
-  let lazyloadImages = document.querySelectorAll("img.lazy-load");
-  let lazyloadThrottleTimeout;
-
-  function lazyload() {
-    if (lazyloadThrottleTimeout) {
-      clearTimeout(lazyloadThrottleTimeout);
-    }
-    lazyloadThrottleTimeout = setTimeout(function () {
-      let scrollTop = window.pageYOffset;
-      lazyloadImages.forEach(function (img) {
-        if (img.offsetTop < (window.innerHeight + scrollTop)) {
-          img.src = img.dataset.src;
-          img.classList.remove('lazy');
-        }
-      });
-      if (lazyloadImages.length == 0) {
-        document.removeEventListener("scroll", lazyload);
-        window.removeEventListener("resize", lazyload);
-        window.removeEventListener("orientationChange", lazyload);
-      }
-    }, 20);
-  }
-  document.addEventListener("scroll", lazyload);
-  window.addEventListener("resize", lazyload);
-  window.addEventListener("orientationChange", lazyload);
-});
-
-
 
 // ------------
 
@@ -265,6 +236,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // ===============contact form  start
+
 
 
 // ===============contact form  end
