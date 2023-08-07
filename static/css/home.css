@@ -362,7 +362,10 @@ nav {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    border-bottom: 2px solid rgb(134, 22, 87);
+    border-bottom: 2px solid;
+    border-width: 2px;
+    border-image-slice: 2 !important;
+    border-image-source: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
 }
 
 .nav-link a :hover,
@@ -372,7 +375,10 @@ nav {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    border-bottom: 2px solid rgb(134, 22, 87);
+    border-bottom: 2px solid;
+    border-width: 2px;
+    border-image-slice: 2 !important;
+    border-image-source: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
 
 }
 
@@ -1971,7 +1977,7 @@ transform: scale(1.2);
 /* ----see demo button----- */
 .see-demo {
     padding: 7px 20px;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
     font-weight: bold;
     letter-spacing: 5px;
@@ -2542,4 +2548,8 @@ transform: scale(1.2);
         margin-left: 0%;
         width: 100%;
     }
+}
+.security-bg{
+    background-color: black; 
+    color: #fff;
 }

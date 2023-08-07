@@ -25,7 +25,7 @@
     <title>Ajax | onwords</title>
 </head>
 
-<body id="bodyTag">
+<body class="security-bg">
     <div class="wrapper">
         <!-- navbar start -->
         <header>
@@ -33,10 +33,6 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/"><img src="{% static 'main-webp/logos-main.webp' %}" alt="logo"
                             class="img-fluid logo"></a>
-                    <div class="darkmodemob" id="darkbuttonmob">
-                        <img src="{% static 'main-webp/sun-wh.webp' %}" alt="sun toggle" class="img-fluid sunmob">
-                        <img src="{% static 'main-webp/moon-wh.webp' %}" alt="moon toggle" class="img-fluid nightmob">
-                    </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +53,6 @@
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="/ourservices">Smart Home</a></li>
                                     <li><a class="dropdown-item" href="/gateautomation">Gate Automation</a></li>
-                                   
                                     <li><a class="dropdown-item" href="/construction">Onwords Construction</a></li>
                                 </ul>
                             </li>
@@ -78,10 +73,6 @@
 
 
                     </div>
-                    <div class="darkmode" id="darkbutton">
-                        <img src="{% static 'main-webp/sun-wh.webp' %}" alt="sun Toggle" class="img-fluid sun">
-                        <img src="{% static 'main-webp/moon-wh.webp' %}" alt="moon toggle" class="img-fluid night">
-                    </div>
                 </div>
             </nav>
         </header>
@@ -92,7 +83,7 @@
             </button>
             <button id="whatsapp">
                 <a href="https://wa.me/+917708630275" target="_blank">
-                    <img data-src="{% static 'main-webp/whatsapp-ico.webp' %}" alt="whatsapp" class="lazy-load">
+                    <img src="{% static 'main-webp/whatsapp-ico.webp' %}" alt="whatsapp">
                 </a>
             </button>
         </div>
