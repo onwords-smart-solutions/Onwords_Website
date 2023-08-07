@@ -1,4 +1,4 @@
-.sec-first-carrier{
+.sec-first-carrier {
     background-image: url(../main-webp/carrier-img.webp);
     width: 100%;
     height: 100vh;
@@ -13,13 +13,14 @@
 
 }
 
-  
-.join-head{
+
+.join-head {
     text-align: center;
     padding: 40px 0;
     font-size: 26px;
-   
+
 }
+
 .form-frmt input {
     background: none;
     border: 0;
@@ -34,6 +35,89 @@
 .form-btnzx {
     width: 150px !important;
     /* text-align: center !important; */
+
+}
+
+.carrier-form {
+    background-color: transparent;
+    color: #fff;
+}
+
+.carrier-form input {
+    width: 80%;
+    margin: 20px auto;
+    border-bottom: 12px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.carrier-form input::placeholder {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.carrier-form input::-webkit-outer-spin-button,
+.carrier-form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.carrier-form-input {
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    
+    color: #fff;
+}
+
+.carrier-form-input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+
+.carrier-form-input span {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    pointer-events: none;
+}
+
+.carrier-form-input input:focus~span,
+.carrier-form-input input:valid~span {
+    transform: translateX(10px)translateY(-18px);
+
+}
+
+.module-border {
+    cursor: pointer;
+    position: relative;
+    background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
+    padding: 1px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.modules {
+    background: #040507;
+    color: white;
+    padding: 10px 19px;
+    border-radius: 50px;
+
+}
+
+
+
+.modules:hover {
+    background: linear-gradient(to right, #7353ef, #ce4da4);
+    border: 0;
 
 }
 
