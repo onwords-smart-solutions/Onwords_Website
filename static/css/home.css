@@ -897,6 +897,7 @@ section {
 .etg {
     display: flex;
     align-items: center;
+    margin: 30px 0px;
 }
 
 /* --footer start-- */
@@ -1405,14 +1406,14 @@ section {
 
 .f-circl {
     position: absolute;
-    top: 0;
-    right: 0;
+    top:0px;
+    right:190px;
     background: linear-gradient(180deg, #B75FEC 0%, #EA7099 100%);
     width: 90px;
     height: 90px;
     z-index: -10;
     border-radius: 100%;
-    animation: f-circl 5s linear infinite;
+    /* animation: f-circl 5s linear infinite; */
 
 }
 
@@ -1444,14 +1445,14 @@ section {
 
 .s-circl {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 0px;
+    left: 190px;
     width: 90px;
     height: 90px;
     z-index: -10;
     border-radius: 100%;
     background: linear-gradient(180deg, #F19757 0%, #EA7099 100%);
-    animation: s-circle 5s linear infinite;
+    /* animation: s-circle 5s linear infinite; */
 }
 
 @keyframes s-circle {
@@ -1492,6 +1493,10 @@ section {
 
 
 /* --testimonial-box */
+.box-fiter{
+    position: relative;
+    width: 100%;
+}
 .box-main-con {
     width: 60%;
     margin: auto;
@@ -2552,4 +2557,13 @@ transform: scale(1.2);
 .security-bg{
     background-color: black; 
     color: #fff;
+}
+.sec-adv-main{
+    text-align: center;
+    height: auto;
+    position: relative;
+}
+.sec-font{
+    
+    text-transform: capitalize;
 }
