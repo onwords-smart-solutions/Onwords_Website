@@ -113,7 +113,7 @@ const sunBtnMob = document.querySelector('.sunmob')
 const anchorMob = document.querySelector('a')
 const footerIcon = document.querySelectorAll('.footer-social-icon')
 
-function toggleDark() {
+function toggleDarkMob() {
   if (bodyMob.classList.contains('dark')) {
     bodyMob.classList.remove('dark');
     localStorage.setItem("theme", "light");
@@ -146,7 +146,7 @@ if (localStorage.getItem("theme") === "dark") {
   }
 }
 
-document.querySelector('#darkbuttonmob').addEventListener('click', toggleDark);
+document.querySelector('#darkbuttonmob').addEventListener('click', toggleDarkMob);
 
 
 // ----------------mob nav hamburger-------------
