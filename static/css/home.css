@@ -2484,7 +2484,7 @@ transform: scale(1.2);
     left: -9px !important;
     height: 310px;
     width: 315px;
-   
+
     /* border-radius: 150px; */
 
 }
@@ -2549,7 +2549,20 @@ transform: scale(1.2);
         width: 100%;
     }
 }
-.security-bg{
-    background-color: black; 
+
+.security-bg {
+    background-color: black;
     color: #fff;
+}
+
+.smart-text h2   {
+    text-align: center;
+}
+.smart-day-night{
+ height: 100%;
+ width: 100%;
+}
+.smart-day-night h4{
+    text-align: center;
+    margin-top:20px;
 }
