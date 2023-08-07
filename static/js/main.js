@@ -87,3 +87,5 @@ focusInp.addEventListener('click', () => {
     labelFocus.style.color = '#fff'
     labelFocus.style.marginRight = '1px'
 })
+
+// ========
