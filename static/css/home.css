@@ -1494,7 +1494,7 @@ section {
 /* --testimonial-box */
 .box-main-con {
     width: 60%;
-    margin: auto;
+    margin: 40px auto;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -1504,7 +1504,14 @@ section {
     border-radius: 50px;
     position: relative;
 }
-
+.box-scrollers{
+    position: absolute;
+    width: 60%;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    height: 60vh;
+}
 .text-containers {
     padding: 70px 120px;
 }
@@ -2717,20 +2724,13 @@ transform: scale(1.2);
     padding: 10px;
 }
 
-/* .mobile-access {
+ .mobile-access {
     background-image: url(../main-webp/mobile-access.webp);
     width: auto;
     height: 100vh;
     background-repeat: no-repeat;
-<<<<<<< HEAD
 
 }
 .sec-font{
     text-transform: capitalize;
 }
-=======
-    position: relative;
-    background-image: fixed;
-
-} */
->>>>>>> e1ad489c26d1788a4daf8e49f164400296e687ef
