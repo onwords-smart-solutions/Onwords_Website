@@ -18,6 +18,10 @@ from django.urls import path,include
 from django.contrib.sitemaps.views import sitemap
 from onwordsapp.sitemaps import ItemSitemap
 
+
+
+
+
 sitemaps={
  'items':ItemSitemap
 }
