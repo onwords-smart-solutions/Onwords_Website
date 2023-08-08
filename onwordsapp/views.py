@@ -9,8 +9,6 @@ def ourservices(request):
     return render(request,'ourservices.html')
 def gateautomation(request):
     return render(request,'gateautomation.html')
-def agriautomation(request):
-    return render(request,'agriautomation.html')
 def seedemo(request):
     return render(request,'seedemo.html')
 def curtain(request):
@@ -37,10 +35,7 @@ def team(request):
     return render(request,'team.html')    
 def downloads(request):
     return render(request,'downloads.html')    
-def animation(request):
-    with open('static/json/onwords.json') as onwords:
-     data= json.load(onwords)
-    return render(request,'animation.html',{"onwords":onwords})    
+ 
 
 class RobotsTxtViews(TemplateView):
     template_name ='robots.txt'
