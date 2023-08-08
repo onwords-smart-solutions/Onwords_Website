@@ -215,6 +215,9 @@
   align-items: center;
   justify-content: center;
 }
+.contact-banner h2{
+  color: #fff;
+}
 
 .box-contact {
   width: 100%;

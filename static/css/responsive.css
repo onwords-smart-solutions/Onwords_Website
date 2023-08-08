@@ -641,10 +641,18 @@ margin-bottom: 100px;
 .sec-adv-main{
    margin-top: 150px;
 }
+
+.fourth-ajax{
+   background-size: contain;
+}
+.contact-form input{
+   width: 100%;
+}
 /* .box-group-input{
    margin: 27px;
 } */
 
 }
+
 
 
