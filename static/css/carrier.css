@@ -45,7 +45,7 @@
 
 .carrier-form input {
     width: 80%;
-    margin: 20px auto;
+    margin: 11px auto;
     border-bottom: 12px solid #fff;
     color: #fff;
     padding: 10px 20px;
@@ -68,7 +68,6 @@
     width: 80%;
     border-bottom: 1px solid #fff;
     position: relative;
-    
     color: #fff;
 }
 
@@ -89,7 +88,7 @@
 
 .carrier-form-input input:focus~span,
 .carrier-form-input input:valid~span {
-    transform: translateX(10px)translateY(-18px);
+    transform: translateX(10px)translateY(-25px);
 
 }
 
@@ -102,7 +101,8 @@
     border: none;
     outline: none;
     text-align: center;
-    margin-left: 100px;
+    margin-left: 130px;
+    margin-top: 10px;
 }
 
 .modules {
@@ -112,8 +112,6 @@
     border-radius: 50px;
 
 }
-
-
 
 .modules:hover {
     background: linear-gradient(to right, #7353ef, #ce4da4);
