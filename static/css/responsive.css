@@ -111,10 +111,10 @@
       width: 90%;
       height: 320px;
    }
-   .box-scroller{
-      height: 42vh;
-   }
-
+  
+.box-scrollers{
+   height: 35vh;
+}
    .box-main-con>.text-containers {
       width: 100%;
       z-index: 1 c;

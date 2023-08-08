@@ -29,28 +29,6 @@ document.getElementById('lightoffBtn').addEventListener("click", () => {
 
 })
 
-document.addEventListener('scroll', horizontalScroll);
-
-//Selecting Elements
-let sticky = document.querySelector('.sticky-sl');
-let stickyParent = document.querySelector('.sticky-parent');
-
-let scrollWidth = sticky.scrollWidth;
-let verticalScrollHeight = stickyParent.getBoundingClientRect().height - sticky.getBoundingClientRect().height;
-
-//Scroll function 
-function horizontalScroll() {
-
-    //Checking whether the sticky element has entered into view or not
-    let stickyPosition = sticky.getBoundingClientRect().top;
-    if (stickyPosition > 1) {
-        return;
-    } else {
-        let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
-        sticky.scrollLeft = (scrollWidth / verticalScrollHeight) * (-scrolled) * 0.85;
-
-    }
-}
 
 // -------counter start
 document.addEventListener("DOMContentLoaded", () => {
@@ -75,17 +53,25 @@ document.addEventListener("DOMContentLoaded", () => {
 // -------counter start
 
 
+document.addEventListener('scroll', horizontalScroll);
 
+//Selecting Elements
+let sticky = document.querySelector('.sticky-sl');
+let stickyParent = document.querySelector('.sticky-parent');
 
-const focusInp = document.querySelector('.focus-inp1')
-const labelFocus = document.querySelector('.label-focus1')
+let scrollWidth = sticky.scrollWidth;
+let verticalScrollHeight = stickyParent.getBoundingClientRect().height - sticky.getBoundingClientRect().height;
 
-focusInp.addEventListener('click', () => {
-    labelFocus.style.top = '-20px'
-    labelFocus.style.backgroundColor = 'black'
-    labelFocus.style.fontSize = '13px'
-    labelFocus.style.color = '#fff'
-    labelFocus.style.marginRight = '1px'
-})
+//Scroll function 
+function horizontalScroll() {
 
-// ========
+    //Checking whether the sticky element has entered into view or not
+    let stickyPosition = sticky.getBoundingClientRect().top;
+    if (stickyPosition > 1) {
+        return;
+    } else {
+        let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
+        sticky.scrollLeft = (scrollWidth / verticalScrollHeight) * (-scrolled) * 0.85;
+
+    }
+}
