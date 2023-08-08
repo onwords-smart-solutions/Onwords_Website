@@ -5,7 +5,6 @@ urlpatterns=[
     path('',views.home,name='home'),
     path('ourservices',views.ourservices, name='ourservices'),
     path('gateautomation',views.gateautomation, name='gateautomation'),
-    path('agriautomation',views.agriautomation, name='agriautomation'),
     path('seedemo',views.seedemo,name='seedemo'),
     path('curtain',views.curtain,name='curtain'),
     path('securitySystem',views.securitySystem,name='securitySystem'),
@@ -19,7 +18,6 @@ urlpatterns=[
     path('carrier',views.carrier,name='carrier'),
     path('team',views.team,name='team'),
     path('downloads',views.downloads,name='downloads'),
-    path('animation',views.animation,name='animation'),
     path('robots.txt',views.RobotsTxtViews.as_view()),
     path('sitemap.xml',views.SitemapXmlViews.as_view()),
 ]
