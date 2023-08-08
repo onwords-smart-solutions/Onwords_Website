@@ -842,8 +842,6 @@ section {
     }
 }
 
-.modal-body {}
-
 /* --our products start */
 .our-product {
     height: 60vh;
@@ -2127,6 +2125,7 @@ transform: scale(1.2);
 /* ---form start ---*/
 .modal-body {
     background: black;
+    color: #fff;
 }
 
 .quot-anim-con {
@@ -2452,6 +2451,7 @@ transform: scale(1.2);
     justify-content: center;
 }
 
+
 .exper h5 {
     text-align: center;
 }
@@ -2518,10 +2518,13 @@ transform: scale(1.2);
 .about-schedule {
     color: #fff;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   width: 100%;
+   flex-direction: column;
 }
 
 .abt-button {

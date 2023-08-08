@@ -642,18 +642,48 @@ margin-bottom: 100px;
    margin-top: 150px;
 }
 
-<<<<<<< HEAD
 .fourth-ajax{
    background-size: contain;
 }
 .contact-form input{
    width: 100%;
 }
-=======
->>>>>>> b5e73d71d84eaa8d65f0df3bebee54c138a38306
-/* .box-group-input{
-   margin: 27px;
-} */
+.our-story{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 80%;
+   margin: auto;
+}
+.our-story img {
+   width: 100%;
+   height: 100%;
+   margin-bottom:20px ;
+}
+.our-story-p{
+   margin-top: 20px;
+}
+.our-story img::after{
+   display: none !important;
+}
+.expertise{
+   height: 90% !important;
+   width: 90%;
+   margin: 0 auto;
+}
+.exper-smart img{
+   width: 50px !important;
+}
+.aboutus-quote{
+   height: 50vh;
+}
+.about-schedule{
+   height:50vh;
+}
+.abt-button {
+   width: 80%;
+}
+
 
 }
 
