@@ -2716,7 +2716,9 @@ transform: scale(1.2);
 .google-social img {
     padding: 10px;
 }
-
+.smart-col{
+    margin-top: 60px;
+}
 /* .mobile-access {
     background-image: url(../main-webp/mobile-access.webp);
     width: auto;
