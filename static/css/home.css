@@ -2534,10 +2534,10 @@ transform: scale(1.2);
     color: #fff;
 }
 
-.fh p {
+/* .fh p {
     animation-duration: 5s;
     animation-name: slidein;
-}
+} */
 
 @keyframes slidein {
     from {
@@ -2723,8 +2723,19 @@ transform: scale(1.2);
 .google-social img {
     padding: 10px;
 }
+.smart-col{
+    margin-top: 60px;
+}
+@media screen and (min-width: 700px){
+    .fh {
+        background-color: red;
+    }
+    h4{
+        background-color: blue;
+    }
+}
 
- .mobile-access {
+/* .mobile-access {
     background-image: url(../main-webp/mobile-access.webp);
     width: auto;
     height: 100vh;
