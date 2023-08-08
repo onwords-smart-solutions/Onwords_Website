@@ -33,8 +33,8 @@
 .first-box {
   background-color: #fff;
   border-radius: 10px;
-  height: 430px;
-  width: 584px;
+  height: 400px;
+  width: 90%;
   padding: 30px;
 }
 
@@ -361,9 +361,11 @@
 }
 .qr{
   padding-right: 30px;
+  
 }
 .qr img{
   width: 100px;
+ 
 }
 
 /* ---- */
