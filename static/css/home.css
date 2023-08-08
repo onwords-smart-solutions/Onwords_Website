@@ -1494,7 +1494,7 @@ section {
 /* --testimonial-box */
 .box-main-con {
     width: 60%;
-    margin: auto;
+    margin: 40px auto;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -1504,7 +1504,14 @@ section {
     border-radius: 50px;
     position: relative;
 }
-
+.box-scrollers{
+    position: absolute;
+    width: 60%;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    height: 60vh;
+}
 .text-containers {
     padding: 70px 120px;
 }
@@ -2527,10 +2534,10 @@ transform: scale(1.2);
     color: #fff;
 }
 
-.fh p {
+/* .fh p {
     animation-duration: 5s;
     animation-name: slidein;
-}
+} */
 
 @keyframes slidein {
     from {
@@ -2719,12 +2726,22 @@ transform: scale(1.2);
 .smart-col{
     margin-top: 60px;
 }
+@media screen and (min-width: 700px){
+    .fh {
+        background-color: red;
+    }
+    h4{
+        background-color: blue;
+    }
+}
+
 /* .mobile-access {
     background-image: url(../main-webp/mobile-access.webp);
     width: auto;
     height: 100vh;
     background-repeat: no-repeat;
-    position: relative;
-    background-image: fixed;
 
-} */
+}
+.sec-font{
+    text-transform: capitalize;
+}
