@@ -2705,13 +2705,7 @@ transform: scale(1.2);
     margin-top: 60px;
 }
 
- .mobile-access {
-    background-image: url(../main-webp/mobile-access.webp);
-    width: auto;
-    height: 100vh;
-    background-repeat: no-repeat;
-
-}
+   
 .sec-font{
     text-transform: capitalize;
 }
