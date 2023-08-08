@@ -2726,14 +2726,12 @@ transform: scale(1.2);
 .smart-col{
     margin-top: 60px;
 }
-@media screen and (min-width: 700px){
-    .fh {
-        background-color: red;
-    }
-    h4{
-        background-color: blue;
+@media only screen and (max-width: 600px){
+    .expertise{
+        margin: 20px 0 20px 0;
     }
 }
+   
 
 /* .mobile-access {
     background-image: url(../main-webp/mobile-access.webp);
