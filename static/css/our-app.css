@@ -34,7 +34,7 @@
   background-color: #fff;
   border-radius: 10px;
   height: 430px;
-  width: 450px;
+  width: 584px;
   padding: 30px;
 }
 
@@ -57,6 +57,7 @@
   align-items: center;
   justify-content: center;
   padding-top: 30px;
+  width: 50%;
 }
 
 .iphone-13 {
@@ -352,6 +353,17 @@
   width: 10%;
   text-align: left;
   align-items: start;
+}
+.bot-re{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.qr{
+  padding-right: 30px;
+}
+.qr img{
+  width: 100px;
 }
 
 /* ---- */
