@@ -39,10 +39,8 @@ volOffBtn.addEventListener('click', () => {
 
 
 var ppbutton = document.getElementById("vidbutton");
-var playVideoBtn = document.querySelector('.playVideoBtn')
+var playVideoBtn = document.querySelector('.PlayvideoBtn')
 var offVideoBtn = document.querySelector('.offVideoBtn')
-const volOn = document.querySelector('.vol-on')
-const volOff = document.querySelector('.vol-off')
 const audio = document.getElementById('audioplay')
 ppbutton.addEventListener("click", playPause);
 myVideo = document.getElementById("video-demos");
@@ -59,10 +57,36 @@ function playPause() {
     else {
         myVideo.pause();
         audio.pause();
-        offVideoBtn.style.display = 'none'
+        offVideoBtn.style.display = 'block'
         playVideoBtn.style.display = 'none'
         volOn.style.display = 'block'
         volOff.style.display = 'none'
 
     }
 }
+
+
+const videoPlayer = document.getElementById('video-demos');
+const playPauseButton = document.getElementById('vidbutton');
+const audioPlayer = document.getElementById('audio-player');
+const muteUnmuteButton = document.getElementById('mute-unmute-button');
+
+playPauseButton.addEventListener('click', () => {
+  if (videoPlayer.paused) {
+    videoPlayer.play();
+    playPauseButton.textContent = 'Pause';
+  } else {
+    videoPlayer.pause();
+    playPauseButton.textContent = 'Play';
+  }
+});
+
+muteUnmuteButton.addEventListener('click', () => {
+  if (audioPlayer.muted) {
+    audioPlayer.muted = false;
+    muteUnmuteButton.textContent = 'Mute';
+  } else {
+    audioPlayer.muted = true;
+    muteUnmuteButton.textContent = 'Unmute';
+  }
+});

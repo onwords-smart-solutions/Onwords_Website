@@ -21,7 +21,7 @@
 
 body {
     scroll-behavior: smooth;
-    font-family: 'Rancho', cursive;
+    font-family: ' SfPro', cursive;
 }
 
 #bodyTag {
@@ -269,16 +269,36 @@ nav {
 }
 
 
+.modulesd {
+
+    border-radius: 50px;
+    padding: 12px 12px;
+    width: fit-content;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #7353ef, #ce4da4);
+    border-image-slice: 1;
+    border-radius: 50px !important; 
+    cursor: pointer; 
+}
+.modulesds:hover{
+    background:linear-gradient(to right, #7353ef, #ce4da4); ;
+}
 
 .module {
-    background: #040507;
-    color: white;
+    background: transparent;
     padding: 10px 19px;
     /* box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5); */
     border-radius: 50px;
+    border: 2px;
+    border-width: 2;
+    border-image: linear-gradient(to right, #7353ef, #ce4da4);
+    ;
 }
 
 
+.module-border-wrap:hover {
+    background: none;
+}
 
 .module:hover {
     background: linear-gradient(to right, #7353ef, #ce4da4);
@@ -356,7 +376,9 @@ nav {
 }
 
 .nav-link a,
-.active-nav {
+.active-nav,
+.nav-link:focus,
+.nav-link:active {
     background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -369,7 +391,8 @@ nav {
 }
 
 .nav-link a :hover,
-.nav-link:hover {
+.nav-link:hover,
+.dropdown-item:hover {
     background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2716,6 +2739,7 @@ transform: scale(1.2);
     text-transform: capitalize;
 }
 
+<<<<<<< HEAD
 .mobile-access {
     background-image: url(../main-webp/mobile-access.webp);
     width: 100%;
@@ -2725,4 +2749,13 @@ transform: scale(1.2);
     /* background-position: contain; */
     /* background-position: center; */
     /* background-size: cover; */
+=======
+.mob-hand {
+    background-position: left;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../main-webp/mobile-access.webp);
+    background-size: 250px;
+>>>>>>> 0f8f77a698b4ec7f6e38ad309828ebf2a7ba96fd
 }
