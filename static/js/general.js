@@ -56,6 +56,7 @@ const nightBtn = document.querySelector('.night')
 const sunBtn = document.querySelector('.sun')
 const anchor = document.querySelector('a')
 const header = document.querySelector('nav')
+const module = document.querySelectorAll('.module')
 const privacy = document.querySelectorAll('.privacy-h2')
 function toggleDark() {
 
@@ -73,6 +74,7 @@ function toggleDark() {
     for(const privacys in privacy){
       privacys.backgroundColor='#fff'
     }
+    
   
   }
   else {
@@ -88,6 +90,7 @@ function toggleDark() {
     for(const privacys in privacy){
       privacys.backgroundColor='#000'
     }
+   
     
   }
 }
@@ -202,5 +205,5 @@ document.addEventListener("DOMContentLoaded", function () {
 // ----------------mob nav hamburger-------------
 
 
-// ------------
+
 

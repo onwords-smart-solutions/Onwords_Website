@@ -513,11 +513,13 @@ input:checked+.slider:before {
     align-items: center;
     cursor: pointer;
 }
-.sync-tv-demo-text{
+
+.sync-tv-demo-text {
     margin-top: -200px;
     font-size: 3opx;
 }
-.demo-play-btn{
+
+.demo-play-btn {
     margin-top: -110px;
 }
 
@@ -530,7 +532,7 @@ input:checked+.slider:before {
 }
 
 #vidbutton img {
-
+    position: absolute;
     width: 20px;
     object-fit: contain;
 }
