@@ -277,11 +277,13 @@ nav {
     border: 2px solid transparent;
     border-image: linear-gradient(to right, #7353ef, #ce4da4);
     border-image-slice: 1;
-    border-radius: 50px !important; 
-    cursor: pointer; 
+    border-radius: 50px !important;
+    cursor: pointer;
 }
-.modulesds:hover{
-    background:linear-gradient(to right, #7353ef, #ce4da4); ;
+
+.modulesds:hover {
+    background: linear-gradient(to right, #7353ef, #ce4da4);
+    ;
 }
 
 .module {
@@ -2739,23 +2741,30 @@ transform: scale(1.2);
     text-transform: capitalize;
 }
 
-<<<<<<< HEAD
 .mobile-access {
-    background-image: url(../main-webp/mobile-access.webp);
+    /* background-image: url(../main-webp/mobile-access.webp); */
     width: 100%;
     height: 100vh;
-
     background-repeat: no-repeat;
+    background-position: left;
+    background-size: 400px;
     /* background-position: contain; */
     /* background-position: center; */
     /* background-size: cover; */
-=======
-.mob-hand {
-    background-position: left;
+}
+.mobil-acces{
+    position: relative;
+    height: 60vh;
     width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-image: url(../main-webp/mobile-access.webp);
-    background-size: 250px;
->>>>>>> 0f8f77a698b4ec7f6e38ad309828ebf2a7ba96fd
+}
+.mob{
+    position: absolute;
+    top: 0;
+    
+}
+.mobil{
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: flex-start;
 }
