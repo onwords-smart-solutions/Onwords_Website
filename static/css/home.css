@@ -2712,3 +2712,12 @@ transform: scale(1.2);
 .sec-font{
     text-transform: capitalize;
 }
+
+.mob-hand{
+    background-position: left;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../main-webp/mobile-access.webp);
+    background-size: 250px;
+}
