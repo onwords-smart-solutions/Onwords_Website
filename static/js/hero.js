@@ -45,6 +45,14 @@ function bolcony(){
         parkingOffBtn.style.display='block'
         parkingOnBtn.style.display='none'
     }
+    if((bolconys.checked == true)&&(parkings.checked==true)){
+        bolconyOnBtn.style.display='block'
+        parkingOnBtn.style.display='block'
+        bolconyLights.style.display='none'
+        parkingLights.style.display='none'
+        allLightOn.style.display='block'
+    }
+    
 
 }
 // function both(){
@@ -89,5 +97,26 @@ function parking(){
         bolconyOffBtn.style.display='block'
         bolconyOnBtn.style.display='none'
     }
+    // if((parkings.checked==true)&&(bolconys.checked == true)){
+    //     bolconyOnBtn.style.display='block'
+    //     parkingOnBtn.style.display='block'
+    //     bolconyLights.style.display='none'
+    //     parkingLights.style.display='none'
+    //     allLightOn.style.display='block'
+    // }
+    // if((parkings.checked==false)&&(bolconys.checked == true)){
+    //     bolconyOnBtn.style.display='block'
+    //     parkingOnBtn.style.display='none'
+    //     bolconyLights.style.display='block'
+    //     parkingLights.style.display='none'
+    //     allLightOn.style.display='none'
+    // }
+    // if((parkings.checked==true)&&(bolconys.checked == false)){
+    //     bolconyOnBtn.style.display='none'
+    //     parkingOnBtn.style.display='block'
+    //     bolconyLights.style.display='none'
+    //     parkingLights.style.display='true'
+    //     allLightOn.style.display='none'
+    // }
 }
 

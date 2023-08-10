@@ -2839,8 +2839,8 @@ transform: scale(1.2);
 
 .btns {
     width: 100%;
-    min-width:40%;
-    max-width: 40%;
+    min-width:45%;
+    max-width: 45%;
     height: 100%;
     position: relative;
     padding: 0 10px;
@@ -2858,7 +2858,7 @@ transform: scale(1.2);
 
 .btns label img {
     object-fit: contain;
-    margin-left: 35px;
+    margin-left: 10px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
