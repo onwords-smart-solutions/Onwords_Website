@@ -2940,6 +2940,12 @@ transform: scale(1.2);
     width: 40%;
 
 }
+.times{
+    position: absolute;
+    top: -36%;
+    left: 10%;
+    font-size: 12px;
+}
 
 /* ----------home bg end */
 .custom-switch-vertical {
