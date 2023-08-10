@@ -2810,21 +2810,22 @@ transform: scale(1.2);
 }
 
 .grp-btn {
-    position: absolute;
-    top: 30%;
-    width: 80%;
+    width: 73%;
     /* height: 100%; */
     display: flex;
     flex-wrap: wrap;
-    
-   
+    position: absolute;
+    top: 30%;
+
+
 }
 
 .btns {
     width: 50%;
     height: 100%;
 }
-.btns img{
+
+.btns img {
     width: 80%;
     margin-left: 35px;
     margin-bottom: 10px;
@@ -2834,4 +2835,91 @@ transform: scale(1.2);
     cursor: pointer;
 }
 
+.d-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.doggle-btns {
+    width: 27%;
+    height: 50px;
+    right: 0;
+    top: 50%;
+    margin-right: -10px;
+    position: absolute;
+}
+.doggle-btns input{
+    background-color: #fff;
+    outline: none;
+    border: none;
+    width: 27%;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.doggules::after {
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 1px;
+    bottom: 100%;
+    left: 50%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.doggules {
+    width: 25px;
+    height: 55px;
+    border-radius: 20px;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: start;
+}
+.doggules.anim {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
 /* ----------home bg end */
+.custom-switch-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotate(90deg);
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: -20%;
+    left:-100%
+  }
+  .custom-control-input[type="checkbox"]  {
+    display: none;
+ }
+  
+  .custom-switch-vertical .custom-control-label {
+    position: relative;
+    padding: 0;
+  }
+  
+  .custom-switch-vertical .slider {
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(180deg, #BE4EAF 0%, #8751D6 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: 99;
+    transform: translateY(-50%);
+    left: calc(50% - 14px);
+    transition: left 0.3s;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .custom-switch-vertical .custom-control-input:checked ~ .custom-control-label .slider {
+    left: calc(50% - 14px + 32px); /* Adjust for the toggle size */
+  }
+  
