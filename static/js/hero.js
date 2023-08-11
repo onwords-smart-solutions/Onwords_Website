@@ -135,4 +135,5 @@ function horizontalScroll() {
 
 // ---------------curtain demos------------
 
-const curatin = document.getElementById('curtain-demos')
+
+

@@ -99,9 +99,15 @@
         </button>
     </div>
     <div class="curtain-home">
-        <img src="{% static 'main-webp/curtain-open.jpg' %}" alt="cutrain-open" class="img-fluid" id="curtainOpenImg">
+       <div class="video-group">
+         <img src="{% static 'main-webp/curtain-open.jpg' %}" alt="cutrain-open" class="img-fluid" id="curtainOpenImg">
         <img src="{% static 'main-webp/curtain-cl.jpg' %}" alt="cutrain-close" class="img-fluid" id="curtainCloseImg">
-        <video src="{% static 'main-webp/curtain-open-vid.mp4' %}" class="img-fluid " muted loop id="curtain-demos" ></video>
+        <video src="{% static 'main-webp/curtain-open-vid.mp4' %}" class="img-fluid "  id="curtain-demos" ></video>
+       </div>
+       <div class="btn-grp-curtain">
+        <button id="opencurtainBtn" onclick="openCurtain()">Open</button>
+        <button id="closeCurtainBtn" onclick="closeCurtain()">Close</button>
+       </div>
     </div>
     <section class="fg">
         <div class="container">
