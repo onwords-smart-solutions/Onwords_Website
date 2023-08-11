@@ -86,8 +86,7 @@
 }
 
 .backtop {
-    background: linear-gradient(to right, red, purple);
-    ;
+    background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
     border-radius: 100%;
     border: none;
     outline: none;

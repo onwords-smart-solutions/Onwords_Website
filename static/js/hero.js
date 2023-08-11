@@ -66,7 +66,6 @@ date = new Date()
 const timesd = date.getHours() + ":" + date.getMinutes()
 times.innerHTML = timesd
 
-
 // ===========
 
 
@@ -134,3 +133,6 @@ function horizontalScroll() {
     }
 }
 
+// ---------------curtain demos------------
+
+const curatin = document.getElementById('curtain-demos')
