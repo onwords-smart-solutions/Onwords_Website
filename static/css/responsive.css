@@ -3,6 +3,7 @@
       margin: 15px;
       width: 41%;
    }
+
    .adv-box {
       margin-top: 30px;
    }
@@ -89,7 +90,8 @@
       text-align: center;
       padding: 10px;
    }
-   .press-play-btn{
+
+   .press-play-btn {
       width: 100%;
       margin: 24px 0px;
    }
@@ -111,10 +113,11 @@
       width: 90%;
       height: 250px;
    }
-  
-.box-scrollers{
-   height: 35vh;
-}
+
+   .box-scrollers {
+      height: 35vh;
+   }
+
    .box-main-con>.text-containers {
       width: 100%;
       z-index: 1 c;
@@ -172,7 +175,7 @@
       opacity: 0;
 
    }
-   
+
 
    .home-main-con h1 {
       font-size: 40px;
@@ -195,7 +198,7 @@
       padding-top: 16px;
    }
 
-   .child-adv{
+   .child-adv {
       margin-bottom: 10px;
    }
 
@@ -208,28 +211,31 @@
       width: 100%;
    }
 
-   nav button{
+   nav button {
       border: none;
       outline: none;
       background-color: transparent;
    }
-   .navigation{
+
+   .navigation {
       z-index: 99;
    }
 
    .navbar-toggler-icon i {
       color: #fff;
    }
-   .navbar{
+
+   .navbar {
       position: relative;
       width: 100%;
-      
-      
+
+
    }
-   .collapse{
+
+   .collapse {
       position: absolute;
       background-color: #040507;
-      padding-top:100px;
+      padding-top: 100px;
       top: 0;
       right: 0;
       width: 80%;
@@ -245,7 +251,7 @@
       text-align: center;
    }
 
- 
+
 
    .active-nav {
       border: none;
@@ -316,11 +322,12 @@
       background-repeat: no-repeat;
 
    }
+
    .curtain-work {
       display: flex;
       margin: 0 auto;
       width: 100%;
-  }
+   }
 
    .security-home {
       width: 100%;
@@ -397,7 +404,7 @@
       right: 5px !important;
    }
 
-   
+
 
    .font-anim {
       color: #333;
@@ -426,298 +433,383 @@
 
    .darkmodeMob {
       display: block;
-     
+
    }
 
    .darkmode {
       display: none;
    }
-   .r-banner::after{
-      display: none;
-   } 
-   .r-banner-img{
+
+   .r-banner::after {
       display: none;
    }
-   .r-banner{
+
+   .r-banner-img {
+      display: none;
+   }
+
+   .r-banner {
       width: 90%;
       margin: 0 auto;
    }
-   .first-box{
+
+   .first-box {
       width: 100%;
    }
+
    .containersa {
       margin: 100px auto;
       width: 120px;
       height: 250px;
       position: relative;
       perspective: 1000px;
-  }
-  .item{
-   width: 100%;
-  }
-  .dfc img {
-   width: 165px;
-   height: 420px;
-   /* margin-left: -15px;
+   }
+
+   .item {
+      width: 100%;
+   }
+
+   .dfc img {
+      width: 165px;
+      height: 420px;
+      /* margin-left: -15px;
    margin-top: -82px; */
-}
-  .fghs{
-   width: 100%;
-  }
-  .dim{
-   height: 65vh;
-   width: 95%;
-   margin: 0 10px;
-  }
-  .our-app-banner {
-   margin-top: 100px;
-   height:400px !important;
-}
-.iphone-13{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-.iphone-13 img{
-   height:42vh !important;
-   margin-bottom: 20px;
-}
-.span-box{
-   display: none !important
-}
-.top-termss{
-   height: 6vh !important;
-}
-.center-app-img img {
-   height: 50% !important;
-   /* width: 100%; */
-   text-align: center;
- }
- nav form{
-   width: 50%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
+   }
 
- .box-contact{
-   border-right:1px solid #000 !important;
-   height: 50px;
- }
- .box-contacts{
-   border-right:1px solid #000 !important;
-   height: 50px;
- }
- .off{
-   display: none;
- }
-.darkmodemob{
-   display: block !important;
-}
-.nightmob{
-   display: none;
-}
-.empl{
-   position: relative;
-   width: 100% !important;
-   height: 300px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-}
-.our-app-foot {
- padding-left: 35px;   
-}
-.onwords-details-foot{
-   padding-left: 35px;
-}
-.footer-bottom{
-   display: none !important;
-}
-.sticky-parent{
-   height: 350vh;
-}
-.works-with{
-   background-size: 550px;
-} 
-.main-img{
-   height: 50vh;
-   background-size: 100%;
-}
-.box-contact{
-   height: 150px !important;
-}
-.mob-contact-terms{
-   height: 25vh !important;
-}
-.aboutus-img{
-   height: 30vh;
-}
-.b {
-   transform: rotateY(60deg) translateZ(170px) !important;
- 
- }
- 
- .c {
-   transform: rotateY(120deg) translateZ(170px) !important;
- 
- }
- .construction-img{
-   background-image: url(../main-webp/construction-main-img.webp);
-   width: 100%;
-   height: 50vh;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: 100%;
-   
-}
-.contact-banner{
-   height: 20vh !important;
-/* ---------gallery end */
-}
-.control-img{
-   height: 30vh;
-   background-image: none;
-}
-.sync-tv-demo-text {
-   margin-top: -119px;
-   font-size: 30px;
-}
-.demo-section{
-height: 50vh;
-margin-bottom: 100px;
-margin-top: 100px;
-}
-.video-src {
-   width: 100%;
-   height: 50vh;
-   margin-bottom: 100px;
-}
-.top-smart-home-page{
-   margin-top: 70%;
-   position: relative;
- }
- .smart-home-paralx-row{
-   height: 70vh;
- }
- .horizontal{
-   margin-top: 150px;
- }
- .smart-below-img {
-   width: 100%;
-   object-fit: contain;
-   margin-top: 25%;
-}
-.center-mob-fix img {
-   object-fit: contain;
-   width: 200px !important;
-}
-.img-cube-2{
-   bottom: -20px;
-}
-.img-cube-sec{
-   height: 40vh;
-}
-.smarter{
-   font-size: 40px;
-   
-}
-.second-text{
-   right: 30px;
-   font-size: 40px;
-}
-.privacy-h2{
-   font-size: 20px !important;
-}
-.top-terms{
-   height: 20vh !important;
-}
-.box-contact,.box-contacts{
-   height: 135px !important;
-}
-.content-smar{
-   margin-top: 50px !important;
-}
-.sec-adv-main{
-   margin-top: 150px;
+   .fghs {
+      width: 100%;
+   }
+
+   .dim {
+      height: 65vh;
+      width: 95%;
+      margin: 0 10px;
+   }
+
+   .our-app-banner {
+      margin-top: 100px;
+      height: 400px !important;
+   }
+
+   .iphone-13 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .iphone-13 img {
+      height: 42vh !important;
+      margin-bottom: 20px;
+   }
+
+   .span-box {
+      display: none !important
+   }
+
+   .top-termss {
+      height: 6vh !important;
+   }
+
+   .center-app-img img {
+      height: 50% !important;
+      /* width: 100%; */
+      text-align: center;
+   }
+
+   nav form {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .box-contact {
+      border-right: 1px solid #000 !important;
+      height: 50px;
+   }
+
+   .box-contacts {
+      border-right: 1px solid #000 !important;
+      height: 50px;
+   }
+
+   .off {
+      display: none;
+   }
+
+   .darkmodemob {
+      display: block !important;
+   }
+
+   .nightmob {
+      display: none;
+   }
+
+   .empl {
+      position: relative;
+      width: 100% !important;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+   }
+
+   .our-app-foot {
+      padding-left: 35px;
+   }
+
+   .onwords-details-foot {
+      padding-left: 35px;
+   }
+
+   .footer-bottom {
+      display: none !important;
+   }
+
+   .sticky-parent {
+      height: 350vh;
+   }
+
+   .works-with {
+      background-size: 400px;
+   }
+
+   .main-img {
+      height: 50vh;
+      background-size: 100%;
+   }
+
+   .box-contact {
+      height: 150px !important;
+   }
+
+   .mob-contact-terms {
+      height: 25vh !important;
+   }
+
+   .aboutus-img {
+      height: 30vh;
+   }
+
+   .b {
+      transform: rotateY(60deg) translateZ(170px) !important;
+
+   }
+
+   .c {
+      transform: rotateY(120deg) translateZ(170px) !important;
+
+   }
+
+   .construction-img {
+      background-image: url(../main-webp/construction-main-img.webp);
+      width: 100%;
+      height: 50vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+   }
+
+   .contact-banner {
+      height: 20vh !important;
+      /* ---------gallery end */
+   }
+
+   .control-img {
+      height: 30vh;
+      background-image: none;
+   }
+
+   .sync-tv-demo-text {
+      margin-top: -119px;
+      font-size: 30px;
+   }
+
+   .demo-section {
+      height: 50vh;
+      margin-bottom: 100px;
+      margin-top: 100px;
+   }
+
+   .video-src {
+      width: 100%;
+      height: 50vh;
+      margin-bottom: 100px;
+   }
+
+   .top-smart-home-page {
+      margin-top: 70%;
+      position: relative;
+   }
+
+   .smart-home-paralx-row {
+      height: 70vh;
+   }
+
+   .horizontal {
+      margin-top: 150px;
+   }
+
+   .smart-below-img {
+      width: 100%;
+      object-fit: contain;
+      margin-top: 25%;
+   }
+
+   .center-mob-fix img {
+      object-fit: contain;
+      width: 200px !important;
+   }
+
+   .img-cube-2 {
+      bottom: -20px;
+   }
+
+   .img-cube-sec {
+      height: 40vh;
+   }
+
+   .smarter {
+      font-size: 40px;
+
+   }
+
+   .second-text {
+      right: 30px;
+      font-size: 40px;
+   }
+
+   .privacy-h2 {
+      font-size: 20px !important;
+   }
+
+   .top-terms {
+      height: 20vh !important;
+   }
+
+   .box-contact,
+   .box-contacts {
+      height: 135px !important;
+   }
+
+   .content-smar {
+      margin-top: 50px !important;
+   }
+
+   .sec-adv-main {
+      margin-top: 150px;
+   }
+
+   .fourth-ajax {
+      background-size: contain;
+   }
+
+   .contact-form input {
+      width: 100%;
+   }
+
+   .our-story {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      margin: auto;
+   }
+
+   .our-story img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 20px;
+   }
+
+   .our-story-p {
+      margin-top: 20px;
+   }
+
+   .our-story img::after {
+      display: none !important;
+   }
+
+   .expertise {
+      height: 90% !important;
+      width: 90%;
+      margin: 0 auto;
+   }
+
+   .exper-smart img {
+      width: 50px !important;
+   }
+
+   .aboutus-quote {
+      height: 50vh;
+   }
+
+   .about-schedule {
+      height: 50vh;
+   }
+
+   .abt-button {
+      width: 80%;
+   }
+
+
+   /* --------home css */
+   .sec-row {
+      height: 50vh;
+      flex-direction: column;
+   }
+
+   .second-sec,
+   .third-sec,
+   .min-li-1 {
+      line-height: 50vh;
+   }
+
+   .main-bg-size {
+      height: 50vh;
+   }
+
+   .fir-sec {
+      width: 100%;
+      position: relative;
+   }
+
+   .second-sec {
+      width: 100%;
+      max-width: 30%;
+      min-width: 30%;
+      left: 0;
+   }
+
+   .third-sec {
+      width: 100%;
+      max-width: 70%;
+   }
+
+   .mob-li-1 img {
+      width: 100%;
+      height: 70%;
+   }
+
+
 }
 
-.fourth-ajax{
-   background-size: contain;
-}
-.contact-form input{
-   width: 100%;
-}
-.our-story{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 80%;
-   margin: auto;
-}
-.our-story img {
-   width: 100%;
-   height: 100%;
-   margin-bottom:20px ;
-}
-.our-story-p{
-   margin-top: 20px;
-}
-.our-story img::after{
-   display: none !important;
-}
-.expertise{
-   height: 90% !important;
-   width: 90%;
-   margin: 0 auto;
-}
-.exper-smart img{
-   width: 50px !important;
-}
-.aboutus-quote{
-   height: 50vh;
-}
-.about-schedule{
-   height:50vh;
-}
-.abt-button {
-   width: 80%;
-}
 
 
-/* --------home css */
-.sec-row{
-   height: 50vh;
-   flex-direction:column;
-}
-.second-sec,.third-sec,.min-li-1{
-   line-height: 50vh;
-}
-.main-bg-size{
-   height: 50vh;
-}
-.fir-sec{
-   width: 100%;
-   position: relative;
-}
-.second-sec{
-   width: 100%;
-   max-width: 30%;
-   min-width: 30%;
-   left: 0;
-}
-.third-sec{
-   width: 100%;
-   max-width: 70%;
-}
-.mob-li-1 img{
-   width: 100%;
-   height: 70%;
-}
+/* -===================== */
 
-
+@media only screen and (min-width:375px)and(max-width:667px) {
+   .works-with {
+      height: 72vh;
+      background-size: 300px;
+      background-color: yellow;
+   }
+   .box-scrollers{
+      height: 50vh;
+   }
+   .top-smart-home-page{
+      margin-top: 10px;
+   }
 }
-
-
-
