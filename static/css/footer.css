@@ -1,77 +1,107 @@
-.footer{
+.footer {
     height: 35vh;
 }
+
 .footer-foot i {
     margin-right: 20px;
 }
-.mail-foot i{
-    margin-right: 15px;
-}
-.phone-foot i{
-    margin-right: 15px;
-}
-.company-list-1 li p{
-   cursor: pointer;
-   
-}
-.company-list-1 h5{
-    margin-bottom: 20px;
-    background: linear-gradient( #7453e4 0%, #ce4da4 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-   
 
-.our-services-foot li{
- cursor: pointer;   
+.mail-foot i {
+    margin-right: 15px;
 }
-.our-services-foot h5{
+
+.phone-foot i {
+    margin-right: 15px;
+}
+
+.company-list-1 li p {
+    transition: .02s;
+}
+
+.company-list-1 li p:hover {
+    cursor: pointer;
+    color: #ccc;
+
+}
+
+.company-list-1 h5 {
     margin-bottom: 20px;
-    background: linear-gradient( #7453e4 0%, #ce4da4 100%);
+    background: linear-gradient(#7453e4 0%, #ce4da4 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.quick-links-foot li{
+
+
+.our-services-foot li p:hover {
+    color: #ccc;
     cursor: pointer;
 }
-.quick-links-foot h5{
+
+.our-services-foot h5 {
+    margin-bottom: 20px;
+    background: linear-gradient(#7453e4 0%, #ce4da4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.quick-links-foot li p:hover {
+    color: #ccc;
+    cursor: pointer;
+}
+.mail-foot:hover,.phone-foot:hover{
+    color: #ccc;
+    cursor: pointer;
+}
+
+.quick-links-foot h5 {
     margin-bottom: 20px;
     background: linear-gradient(180deg, #7453e4 0%, #ce4da4 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.bootom-footer{
-   
+
+.bootom-footer {
+
     display: inline-block;
     justify-content: space-between;
     display: flex;
 }
-.footer-bottom{
+
+.footer-bottom {
     display: flex;
     cursor: pointer;
-   
+
 }
-.footer-bottom li{
+
+.footer-bottom li {
     margin: 0 13px;
 }
-.onwords-details-foot{
+.footer-bottom li p:hover{
+    color: #ccc;
     cursor: pointer;
-    
 }
-.footer-social-icon{
+
+.onwords-details-foot {
+    cursor: pointer;
+
+}
+
+.footer-social-icon {
     color: #fff;
 }
-.onwords-details-foot h5{
+
+.onwords-details-foot h5 {
     margin-bottom: 20px;
     background: linear-gradient(180deg, #7453e4 0%, #ce4da4 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.our-app-foot{
+
+.our-app-foot {
     /* margin-bottom: 20px; */
     background: linear-gradient(180deg, #7453e4 0%, #ce4da4 100%);
     -webkit-background-clip: text;
