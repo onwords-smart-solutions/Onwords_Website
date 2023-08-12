@@ -761,18 +761,15 @@
       flex-direction: column;
    }
 
-   .second-sec,
-   .third-sec,
-   .min-li-1 {
-      line-height: 40vh;
-   }
+  
    
 
    .third-sec {
       width: 100%;
       max-width: 100%;
       position: relative;
-      top: 40%;
+      top: 20%;
+      height: 22vh;
       /* line-height: 50vh; */
    }
    
@@ -792,7 +789,7 @@
       max-width: 100%;
       min-width: 100%;
       left: 0;
-      top: 50%;
+      top: -50%;
    }
 
   
@@ -801,21 +798,18 @@
    }
 
    .doggle-btns {
-      width: 10%;
-      height: 900px;
-      right: 0;
-      top: 48%;
-      margin-right: -5px;
-      position: absolute;
+     display: none;
    }
-
+   .home-main-con{
+      padding-left: 2%;
+  }
    .times {
       display: none;
    }
 
    .grp-btn {
       height: 30%;
-      /* margin-left: -100px; */
+      margin-left:14px;
    }
 
    .home-bg {
@@ -832,16 +826,7 @@
    .s-btns{
       margin-left: 150px;
    }
-   .fir-sec::after{
-      position: absolute;
-      content: '';
-      top: 0;
-      right: 17px;
-      background-color: #fff;
-      width: 1px;
-      height: 90%;
-      display: block;
-  }
+
 
 }
 
