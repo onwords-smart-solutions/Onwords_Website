@@ -812,4 +812,7 @@
    .top-smart-home-page{
       margin-top: 10px;
    }
+   .mobile-access{
+      display: none;
+   }
 }
