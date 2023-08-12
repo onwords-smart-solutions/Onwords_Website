@@ -151,15 +151,12 @@
             <div class="container-fluid">
                 <div class="sec-row">
                     <div class="fir-sec">
+                        <div class="mob-stick-toggle">s</div>
                         <div class="main-bg-size">
                             <div class="home-main-con">
-                                <h1 class="cursor-scale small">In Sync With The</h1>
-                                <div class="font-anim">
-                                    <div class="smarter">Smarter</div>
-                                    <div class="second-text">World</div>
-                                </div>
-
-
+                                <h1>In Sync With The
+                                    Smarter
+                                    <span class="second-text" id="apps"></span></h1>
                                 <p>We make technology to next level</p>
                                 <div class="modulesd">
                                     <div class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -201,16 +198,18 @@
                                           <div class="slider"></div>
                                         </label>
                                       </div>
+                                     
                                 </div>
+                               
                             </div>
                         </div>
                     </div>
                     <div class="third-sec">
                         <div class="main-li-1">
-                            <img src="{% static 'main-webp/light-Off.png' %}" alt="l-1" class="img-fluid" id="allLightOff">
-                            <img src="{% static 'main-webp/all-light-on.png' %}" alt="l-1" class="img-fluid"id="alllightOn">
-                            <img src="{% static 'main-webp/balconyLights.png' %}" alt="l-1" class="img-fluid"id="bolconyLightson">
-                            <img src="{% static 'main-webp/parkingLights.png' %}" alt="l-1" class="img-fluid"id="parkingLightson">
+                            <img src="{% static 'main-webp/Light-Off.png' %}" alt="l-15" class="img-fluid" id="allLightOff">
+                            <img src="{% static 'main-webp/all-light-on.png' %}" alt="l-2" class="img-fluid"id="alllightOn">
+                            <img src="{% static 'main-webp/balconyLights.png' %}" alt="l-3" class="img-fluid"id="bolconyLightson">
+                            <img src="{% static 'main-webp/parkingLights.png' %}" alt="l-4" class="img-fluid"id="parkingLightson">
                         </div>
                     </div>
 
@@ -228,10 +227,10 @@
                     <div class="text-left reveal fade-right" data-wow-delay="0.1s">
                         <div class="text-center about-tex">
                             <h1> Onwords , a leading provider <br> of avant-garde </h1>
-                            <p>technologies and services, offering scalable smart-solutions for homes and businesses
-                                is to assist <br>
+                            <p class="about-para">technologies and services, offering scalable smart-solutions for homes and businesses
+                                is to assist 
                                 its customers in syncinng-in to the evolving smartness of technology and eventually
-                                making the <br> global smarter Curious? Then,Brace and join us in the race!!</p>
+                                making the  global smarter Curious? Then,Brace and join us in the race!!</p>
 
                             <span class="sec-btn-test">Know More </span><span><i
                                     class="fa-solid fa-chevron-right anim-icon"></i></span>
@@ -961,6 +960,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+       <script>
+        var app = document.getElementById('apps');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('<strong>World</strong>')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('<strong>Home</strong>')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('<strong>Life</strong>')
+    .pauseFor(2500)
+    .start();
+
+       </script>
 </body>
 
 </html>

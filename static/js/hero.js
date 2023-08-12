@@ -135,5 +135,3 @@ function horizontalScroll() {
 
 // ---------------curtain demos------------
 
-
-
