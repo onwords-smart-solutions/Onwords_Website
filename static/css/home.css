@@ -2838,8 +2838,8 @@ transform: scale(1.2);
 }
 
 .mob-li-1 {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     position: relative;
 }
 
@@ -2907,8 +2907,8 @@ transform: scale(1.2);
     width: 27%;
     height: 50px;
     right: 0;
-    top: 50%;
-    margin-right: -10px;
+    top: 48%;
+    margin-right: -5px;
     position: absolute;
 }
 
@@ -2970,9 +2970,9 @@ transform: scale(1.2);
 }
 .times{
     position: absolute;
-    top: -36%;
+    top: -32%;
     left: 10%;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 /* ----------home bg end */
