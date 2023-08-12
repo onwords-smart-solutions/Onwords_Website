@@ -445,6 +445,9 @@ nav {
     background-color: #000 !important;
     color: #fff;
 }
+.home-main-con{
+    padding-left: 20px;
+}
 
 .home-main-con h1 {
     font-size: 55px;
@@ -453,11 +456,7 @@ nav {
     /* color: #fff; */
 }
 
-.home-main-con h2 {
-    font-size: 50px;
-    font-weight: 600;
-    /* color: #fff; */
-}
+
 
 .home-main-con p {
     /* color: #fff; */
@@ -1630,22 +1629,23 @@ section {
 .smarter {
     font-weight: 600;
 }
-
+.mob-stick-toggle{
+    display: none;
+}
 .second-text {
-    position: absolute;
-    top: 0;
-    right: 10%;
-    color: #fff;
-    font-weight: 600;
-    display: block;
-    z-index: 10;
     background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
 }
 
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
 .message {
     background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
     -webkit-background-clip: text;
@@ -2795,9 +2795,13 @@ transform: scale(1.2);
 }
 
 .fir-sec {
+    position: relative;
     /* background-color: #07b39b; */
     height: 100%;
     width: 40%;
+}
+.fir-sec::after{
+   display: none;
 }
 
 .second-sec {
