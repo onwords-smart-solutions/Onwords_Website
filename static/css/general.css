@@ -10,6 +10,10 @@
 .active.fade-bottom {
     animation: fade-bottom 3s ease-in;
 }
+.active.fade-lef{
+    animation: fade-lef 2s ease-in;
+    transition: 2ms;
+}
 
 .active.fade-left {
     animation: fade-left 1s ease-in;
@@ -32,6 +36,19 @@
     opacity: 1;
   }
   
+}
+
+@keyframes fade-lef {
+    0%{
+        opacity: 0;
+        left: -100%;
+        
+    }
+    100%{
+        opacity: 1;
+        left: 0%;
+        
+    }
 }
 
 @keyframes fade-bottom {

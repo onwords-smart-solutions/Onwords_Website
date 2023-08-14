@@ -576,7 +576,7 @@ nav {
 .curtain-home img {
     width: 100%;
     width: auto;
-    display: none;
+    
 }
 
 #curtainOpenImg {
@@ -585,6 +585,12 @@ nav {
 
 #curtainCloseImg {
     display: block;
+}
+#curtain-demos{
+    display: none;
+}
+#curtain-open{
+    display: none;
 }
 
 .curtain-work {
@@ -976,7 +982,7 @@ section {
 
 /* --our products end*/
 .counter-boxs {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     height: 170px;
     background: linear-gradient(180deg, #BE4EAF 0%, #8751D6 100%);
@@ -990,6 +996,7 @@ section {
 .etg {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 /* --footer start-- */
@@ -1483,8 +1490,7 @@ section {
 
 .c-prev i,
 .cn-btn i {
-    background: linear-gradient(to right, red, purple);
-    ;
+    background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
     border-radius: 100%;
     border: none;
     outline: none;
@@ -1500,7 +1506,7 @@ section {
     position: absolute;
     top: 0;
     right: 0;
-    background: linear-gradient(180deg, #B75FEC 0%, #EA7099 100%);
+    background: linear-gradient(180deg, #F19757 0%, #EA7099 100%);
     width: 90px;
     height: 90px;
     z-index: -10;
