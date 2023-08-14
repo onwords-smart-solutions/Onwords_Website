@@ -394,7 +394,7 @@ nav {
 }
 
 .nav-link a :hover,
-.nav-link:hover{
+.nav-link:hover {
     background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -407,7 +407,7 @@ nav {
 
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
     background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -445,7 +445,8 @@ nav {
     background-color: #000 !important;
     color: #fff;
 }
-.home-main-con{
+
+.home-main-con {
     padding-left: 16%;
 }
 
@@ -521,27 +522,69 @@ nav {
     height: 100vh;
     position: relative;
 }
-#cutain-demos{
+
+#cutain-demos {
     width: 100%;
     width: auto;
     /* height: 100vh; */
 }
-.video-group{
+
+.video-group {
     position: absolute;
     top: 0;
 }
-.btn-grp-curtain{
+
+.btn-grp-curtain {
     position: absolute;
+    padding: 10px 20px;
     bottom: 70px;
     right: 80px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.192);
+    border-radius: 10px;
 }
-.curtain-home img{
+#opencurtainBtn,#closecurtainBtn{
+    border-radius: 41px;
+    background: none;
+    border: none;
+    outline: none;
+    color: #ffff;
+    font-size: 15px;
+    padding: 6px 12px;
+    
+}
+#opencurtainBtn:hover,#opencurtainBtn.actcurtain,#closecurtainBtn:hover,#closecurtainBtn.actcurtain{
+    background: linear-gradient(90deg, #7353E5 0%, #CE4DA4 100%);
+}
+.pop-btnsd{
+    position: absolute;
+    top: -30px;
+    font-size: 16px;
+    animation: propmet 2s infinite;
+}
+@keyframes propmet {
+    0%{
+        transform: scaleX(1.1);
+    }
+    100%{
+        transform: scaleX(1.2);
+    }
+}
+.curtain-home img {
     width: 100%;
     width: auto;
     display: none;
 }
-#curtainOpenImg{
+
+#curtainOpenImg {
     display: none;
+}
+
+#curtainCloseImg {
+    display: block;
 }
 
 .curtain-work {
@@ -1629,9 +1672,11 @@ section {
 .smarter {
     font-weight: 600;
 }
-.mob-stick-toggle{
+
+.mob-stick-toggle {
     display: none;
 }
+
 .second-text {
     background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
     -webkit-background-clip: text;
@@ -1643,9 +1688,10 @@ section {
 
 @keyframes textclip {
     to {
-      background-position: 200% center;
+        background-position: 200% center;
     }
-  }
+}
+
 .message {
     background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
     -webkit-background-clip: text;
@@ -2800,8 +2846,9 @@ transform: scale(1.2);
     height: 100%;
     width: 40%;
 }
-.fir-sec::after{
-   display: none;
+
+.fir-sec::after {
+    display: none;
 }
 
 .second-sec {
@@ -2871,16 +2918,18 @@ transform: scale(1.2);
 
 .btns {
     width: 100%;
-    min-width:45%;
+    min-width: 45%;
     max-width: 45%;
     height: 100%;
     position: relative;
     padding: 0 10px;
 }
-.s-btns{
-    margin:0 9px ;
+
+.s-btns {
+    margin: 0 9px;
 }
-.btns label{
+
+.btns label {
     width: 90%;
     height: 100%;
     object-fit: contain;
@@ -2972,16 +3021,18 @@ transform: scale(1.2);
     width: 40%;
 
 }
-.times{
+
+.times {
     position: absolute;
     top: -32%;
     left: 10%;
     font-size: 11px;
 }
 
-.about-para{
+.about-para {
     max-width: 70%;
 }
+
 /* ----------home bg end */
 .custom-switch-vertical {
     display: flex;
@@ -2995,7 +3046,8 @@ transform: scale(1.2);
     left: -100%
 }
 
-.custom-control-input[type="checkbox"],.checkbox[type='checkbox'] {
+.custom-control-input[type="checkbox"],
+.checkbox[type='checkbox'] {
     display: none;
 }
 
