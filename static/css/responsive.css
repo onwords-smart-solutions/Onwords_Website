@@ -698,7 +698,7 @@
       margin-top: 50px !important;
    }
 
-  
+
 
    .fourth-ajax {
       background-size: contain;
@@ -759,8 +759,8 @@
       flex-direction: column;
    }
 
-  
-   
+
+
 
    .third-sec {
       width: 100%;
@@ -770,7 +770,7 @@
       height: 22vh;
       /* line-height: 50vh; */
    }
-   
+
 
    .main-bg-size {
       height: 50vh;
@@ -790,24 +790,26 @@
       top: -50%;
    }
 
-  
-   .mob-li-1 img{
+
+   .mob-li-1 img {
       display: none;
    }
 
    .doggle-btns {
-     display: none;
+      display: none;
    }
-   .home-main-con{
+
+   .home-main-con {
       padding-left: 2%;
-  }
+   }
+
    .times {
       display: none;
    }
 
    .grp-btn {
       height: 30%;
-      margin-left:14px;
+      margin-left: 14px;
    }
 
    .home-bg {
@@ -821,7 +823,7 @@
       display: block;
    }
 
-   .s-btns{
+   .s-btns {
       margin-left: 150px;
    }
 
@@ -846,19 +848,20 @@
    .top-smart-home-page {
       margin-top: 10px;
    }
-<<<<<<< HEAD
-   .mobile-access{
+
+   .mobile-access {
       display: none;
    }
-=======
-   .mob-stick-toggle{
-      position: absolute;
-      display: block;
-      width: 100%;
-      z-index: 10;
-      height: 100%;
-      background-color: #fff;
 
-  }
->>>>>>> 78b2c3ad1415c6fb0a1e937054720793a765cf43
+   .box-scrollers {
+      height: 48vh;
+      left: -5px;
+   }
+
+   .f-circl {
+
+      height: 48vh;
+      left: -5px;
+
+   }
 }
