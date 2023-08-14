@@ -827,6 +827,15 @@
       margin-left: 150px;
    }
 
+   .smarthome-services {
+      padding-top: 30px;
+
+   }
+
+   .top-smart-home-page {
+      margin-top: -30%;
+      position: relative;
+   }
 
 }
 
@@ -859,9 +868,30 @@
    }
 
    .f-circl {
-
       height: 48vh;
       left: -5px;
 
+   }
+
+   .smarthome {
+      padding-top: 30px;
+      display: none;
+   }
+
+   .smart-day-night {
+      display: none;
+   }
+
+   .day-night-homes {
+      display: none;
+   }
+
+   .smart-text {
+      display: none;
+   }
+
+   .top-smart-home-page {
+      margin-top: -90%;
+      position: relative;
    }
 }
