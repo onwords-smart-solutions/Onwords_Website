@@ -114,9 +114,7 @@
       height: 250px;
    }
 
-   .box-scrollers {
-      height: 35vh;
-   }
+  
 
    .box-main-con>.text-containers {
       width: 100%;
@@ -836,7 +834,13 @@
       margin-top: -30%;
       position: relative;
    }
-
+   .box-scrollers {
+      height: 50vh;
+      width: 80%;
+      left: 0%;
+      right: 0%;
+      /* top: -20px; */
+   }
 }
 
 
@@ -850,9 +854,7 @@
       background-color: yellow;
    }
 
-   .box-scrollers {
-      height: 50vh;
-   }
+   
 
    .top-smart-home-page {
       margin-top: 10px;
@@ -860,17 +862,6 @@
 
    .mobile-access {
       display: none;
-   }
-
-   .box-scrollers {
-      height: 48vh;
-      left: -5px;
-   }
-
-   .f-circl {
-      height: 48vh;
-      left: -5px;
-
    }
 
    .smarthome {
