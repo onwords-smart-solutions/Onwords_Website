@@ -114,7 +114,7 @@
       height: 250px;
    }
 
-  
+
 
    .box-main-con>.text-containers {
       width: 100%;
@@ -834,6 +834,7 @@
       margin-top: -30%;
       position: relative;
    }
+
    .box-scrollers {
       height: 50vh;
       width: 80%;
@@ -841,27 +842,45 @@
       right: 0%;
       /* top: -20px; */
    }
+
+   .mobil-acces img {
+     
+   }
+
+   .gate-para {
+      font-size: 20px;
+      height: 77px;
+   }
+
+   .gate-footer {
+      margin-bottom: 30px;
+   }
+
+   .mobil-acces {
+      height: 30vh;
+   }
 }
 
 
 
 /* -===================== */
+@media screen and (min-width : 375px) and (max-width : 667px) {
 
-@media only screen and (min-width:375px)and(max-width:667px) {
+
    .works-with {
       height: 72vh;
       background-size: 300px;
-      background-color: yellow;
+
    }
 
-   
+
 
    .top-smart-home-page {
       margin-top: 10px;
    }
 
    .mobile-access {
-      display: none;
+    
    }
 
    .smarthome {
@@ -869,20 +888,28 @@
       display: none;
    }
 
-   .smart-day-night {
+   /* .smart-day-night {
       display: none;
    }
 
    .day-night-homes {
       display: none;
-   }
+   } */
 
-   .smart-text {
+   /* .smart-text {
       display: none;
-   }
+   } */
 
    .top-smart-home-page {
       margin-top: -90%;
       position: relative;
+   }
+
+   .mobile-acces img {
+      display: none;
+   }
+
+   .gate-para {
+      font-size: 10px !important;
    }
 }
