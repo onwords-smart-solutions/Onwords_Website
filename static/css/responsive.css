@@ -842,27 +842,8 @@
       right: 0%;
       /* top: -20px; */
    }
-<<<<<<< HEAD
    .pull-text{
       display: none;
-=======
-
-   .mobil-acces img {
-     
-   }
-
-   .gate-para {
-      font-size: 20px;
-      height: 77px;
-   }
-
-   .gate-footer {
-      margin-bottom: 30px;
-   }
-
-   .mobil-acces {
-      height: 30vh;
->>>>>>> abd69f07595e56874ca90a8e2658969d76fc4ef0
    }
 }
 
