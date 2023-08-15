@@ -33,6 +33,7 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/"><img src="{% static 'main-webp/onwords-logo.svg' %}" alt="logo"
                             class="img-fluid logo"></a>
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -248,35 +249,39 @@
         </section>
         <section>
             <div class="container">
-      <div class="main-motion-sticky">
-        <div class="right-motion-content">
-            <h1>Dual Curtain Outdoor</h1>
-            <h5>Two detectors in one</h5>
-            <h5>Masking sensors</h5>
-            <h5>Unique optical sysytems</h5>
-            <h5>Flexible settings of detection zones</h5>
-        </div>
-        <div class="sticky-container">
-           
-            <main class="main-motion">
-                <section class="section-motion-img">
-                    <img src="{% static 'main-webp/ajax-component-3.png' %}" alt="ajax-component" class="img-fluid">
-                  </section>
-                  <section class="section-motion-img">
-                    <img src="{% static 'main-webp/ajax-component-4.png' %}" alt="ajax-component" class="img-fluid">
-                  </section>
-                  <section class="section-motion-img">
-                    <img src="{% static 'main-webp/ajax-component-5.png' %}" alt="ajax-component" class="img-fluid">
-                  </section class="section-motion-img">
-                  <section class="section-motion-img">
-                    <img src="{% static 'main-webp/ajax-component-4.png' %}" alt="ajax-component" class="img-fluid">
-                  </section> 
-            </main>
-          </div>
-      </div>
-                    
-                   
-                
+                <div class="main-motion-sticky">
+                    <div class="right-motion-content">
+                        <h1>Dual Curtain Outdoor</h1>
+                        <h5>Two detectors in one</h5>
+                        <h5>Masking sensors</h5>
+                        <h5>Unique optical sysytems</h5>
+                        <h5>Flexible settings of detection zones</h5>
+                    </div>
+                    <div class="sticky-container">
+
+                        <main class="main-motion">
+                            <section class="section-motion-img">
+                                <img src="{% static 'main-webp/ajax-component-3.png' %}" alt="ajax-component"
+                                    class="img-fluid">
+                            </section>
+                            <section class="section-motion-img">
+                                <img src="{% static 'main-webp/ajax-component-4.png' %}" alt="ajax-component"
+                                    class="img-fluid">
+                            </section>
+                            <section class="section-motion-img">
+                                <img src="{% static 'main-webp/ajax-component-5.png' %}" alt="ajax-component"
+                                    class="img-fluid">
+                            </section class="section-motion-img">
+                            <section class="section-motion-img">
+                                <img src="{% static 'main-webp/ajax-component-4.png' %}" alt="ajax-component"
+                                    class="img-fluid">
+                            </section>
+                        </main>
+                    </div>
+                </div>
+
+
+
             </div>
         </section>
 
@@ -437,56 +442,56 @@
 
 
     <!-- Preloader -->
-<script>
-    /**
-* By Alvaro Trigo 
-* Follow me on Twitter: https://twitter.com/imac2
-*/
-(function(){
-    init();
+    <script>
+        /**
+    * By Alvaro Trigo 
+    * Follow me on Twitter: https://twitter.com/imac2
+    */
+        (function () {
+            init();
 
-    var g_containerInViewport;
-    function init(){
-        setStickyContainersSize();
-        bindEvents();
-    }
+            var g_containerInViewport;
+            function init() {
+                setStickyContainersSize();
+                bindEvents();
+            }
 
-    function bindEvents(){
-        window.addEventListener("wheel", wheelHandler);        
-    }
+            function bindEvents() {
+                window.addEventListener("wheel", wheelHandler);
+            }
 
-    function setStickyContainersSize(){
-        document.querySelectorAll('.sticky-container').forEach(function(container){
-            const stikyContainerHeight = container.querySelector('main').scrollWidth;
-            container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
-        });
-    }
+            function setStickyContainersSize() {
+                document.querySelectorAll('.sticky-container').forEach(function (container) {
+                    const stikyContainerHeight = container.querySelector('main').scrollWidth;
+                    container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
+                });
+            }
 
-    function isElementInViewport (el) {
-        const rect = el.getBoundingClientRect();
-        return rect.top <= 0 && rect.bottom > document.documentElement.clientHeight;
-    }
+            function isElementInViewport(el) {
+                const rect = el.getBoundingClientRect();
+                return rect.top <= 0 && rect.bottom > document.documentElement.clientHeight;
+            }
 
-    function wheelHandler(evt){
-        
-        const containerInViewPort = Array.from(document.querySelectorAll('.sticky-container')).filter(function(container){
-            return isElementInViewport(container);
-        })[0];
+            function wheelHandler(evt) {
 
-        if(!containerInViewPort){
-            return;
-        }
+                const containerInViewPort = Array.from(document.querySelectorAll('.sticky-container')).filter(function (container) {
+                    return isElementInViewport(container);
+                })[0];
 
-        var isPlaceHolderBelowTop = containerInViewPort.offsetTop < document.documentElement.scrollTop;
-        var isPlaceHolderBelowBottom = containerInViewPort.offsetTop + containerInViewPort.offsetHeight > document.documentElement.scrollTop;
-        let g_canScrollHorizontally = isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
+                if (!containerInViewPort) {
+                    return;
+                }
 
-        if(g_canScrollHorizontally){
-            containerInViewPort.querySelector('main').scrollLeft += evt.deltaY;
-        }
-    }
-})();
-</script>
+                var isPlaceHolderBelowTop = containerInViewPort.offsetTop < document.documentElement.scrollTop;
+                var isPlaceHolderBelowBottom = containerInViewPort.offsetTop + containerInViewPort.offsetHeight > document.documentElement.scrollTop;
+                let g_canScrollHorizontally = isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
+
+                if (g_canScrollHorizontally) {
+                    containerInViewPort.querySelector('main').scrollLeft += evt.deltaY;
+                }
+            }
+        })();
+    </script>
 
     <!-- bootstrap js -->
     <script src="{%static 'js/bootstrap.min.js'%}"></script>
