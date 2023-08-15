@@ -842,7 +842,8 @@
       right: 0%;
       /* top: -20px; */
    }
-   .pull-text{
+
+   .pull-text {
       display: none;
    }
 }
@@ -851,9 +852,9 @@
 
 /* -===================== */
 @media screen and (min-width : 375px) and (max-width : 667px) {
-.about-para{
-   font-size: 14px;
-}
+   .about-para {
+      font-size: 14px;
+   }
 
    .works-with {
       height: 72vh;
@@ -861,32 +862,29 @@
 
    }
 
+   .first-box{
+      width: 100% !important;
+   }
 
+   .first-box h3{
+      font-size: 20px !important;
+   }
 
+   .first-box h6{
+      font-size: 16px !important;
+   }
    .top-smart-home-page {
       margin-top: 10px;
    }
-
-  
 
    .smarthome {
       padding-top: 30px;
       display: none;
    }
+
    .day-night-homes {
       height: 50vh;
    }
-   /* .smart-day-night {
-      display: none;
-   }
-
-   .day-night-homes {
-      display: none;
-   } */
-
-   /* .smart-text {
-      display: none;
-   } */
 
    .top-smart-home-page {
       margin-top: -22%;
@@ -914,51 +912,64 @@
 /* ============================tab======= */
 @media screen and (min-width : 820px) and (max-width : 1180px) {
 
-   .fir-sec{
+   .fir-sec {
       width: 100%;
    }
-   .s-btns{
+
+   .s-btns {
       margin-left: 400px;
    }
-   .grp-btn{
+
+   .grp-btn {
       margin-top: 60px;
    }
-   .advantages{
+
+   .advantages {
       min-height: 45vh;
    }
+
    .horizontal {
       margin-top: 50px;
-  }
-  .box-scrollers {
-   height: 27vh;
-   width: 95%;
-   left: 0%;
-   right: 0%;
-   /* top: -20px; */
-}
-.home-main-con h1 {
-   font-size: 65px;
-}
-.second-text{
-   font-size: 65px;
-}
-.top-smart-home-page{
-   margin-top: 0%;
-}
-.mobil-acces{
-   height: 40vh;
-}
-.dg-col{
-   width: 80%;
-}
-.img-cube-2 {
-   bottom: 35px;
-}
-.our-story::after{
-   display: none;
-}
-.contact-banner{
-   margin-bottom: 40px;
-}
+   }
+
+   .box-scrollers {
+      height: 27vh;
+      width: 95%;
+      left: 0%;
+      right: 0%;
+      /* top: -20px; */
+   }
+
+   .home-main-con h1 {
+      font-size: 65px;
+   }
+
+   .second-text {
+      font-size: 65px;
+   }
+
+   .top-smart-home-page {
+      margin-top: 0%;
+   }
+
+   .mobil-acces {
+      height: 40vh;
+   }
+
+   .dg-col {
+      width: 80%;
+   }
+
+   .img-cube-2 {
+      bottom: 35px;
+   }
+
+   .our-story::after {
+      display: none;
+   }
+
+   .contact-banner {
+      margin-bottom: 40px;
+   }
 
 }
