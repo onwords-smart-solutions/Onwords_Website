@@ -248,11 +248,13 @@ nav {
 
 
 
+
 .module-border-wrap {
     cursor: pointer;
     position: relative;
     background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
     padding: 1px;
+    width: fit-content;
     border-radius: 50px;
     border: none;
     outline: none;
@@ -3099,3 +3101,34 @@ transform: scale(1.2);
     left: calc(50% - 14px + 32px);
     /* Adjust for the toggle size */
 }
+
+
+.go{
+    float:none;
+    width:100%;
+    margin:0 auto;
+    clear:both;
+  }
+  
+  .gradient-button{
+    padding: 12px 18px;
+    height:4em;
+    border-radius:3em;
+    border:none;
+  /*   box-shadow: 1px 1px 4px #eee; */
+    color:#fff;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:.75em;
+    font-weight: 600;
+    cursor:pointer;
+    background: linear-gradient(150deg, #746eff 0%, #ff00bb 51%,#746eff 100%);
+    background-size: 200% auto;
+    transition: 0.5s;
+  }
+  
+  .gradient-button:hover{
+    background-position: right center;
+  }
+  /* ============== */
+  
