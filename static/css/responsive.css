@@ -841,6 +841,9 @@
       right: 0%;
       /* top: -20px; */
    }
+   .pull-text{
+      display: none;
+   }
 }
 
 

@@ -248,7 +248,6 @@ nav {
 
 
 
-
 .module-border-wrap {
     cursor: pointer;
     position: relative;
@@ -270,20 +269,15 @@ nav {
 }
 
 
-.modulesd {
-
-    padding: 12px 12px;
-    width: fit-content;
-    border: 2px solid transparent;
-    border-image: linear-gradient(to right, #7353ef, #ce4da4);
-    border-image-slice: 1;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.modulesds:hover {
-    background: linear-gradient(to right, #7353ef, #ce4da4);
-    ;
+.new-module{
+     background-image: url(../main-webp/bor-button.svg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     object-fit: contain;
+     width: fit-content;
+     height: 20px;
+     
 }
 
 .module {
