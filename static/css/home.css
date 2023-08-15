@@ -2500,7 +2500,8 @@ transform: scale(1.2);
 
 .expertise {
     position: relative;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     height: 100%;
 }
 

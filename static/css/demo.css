@@ -329,6 +329,7 @@ input:checked+.slider:before {
     height: 100vh;
     /* background-color: #2196F3; */
     position: relative;
+    /* z-index: -1; */
 }
 
 .video-src {

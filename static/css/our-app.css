@@ -174,6 +174,7 @@
 
 .fghs {
   position: relative;
+  /* z-index: -1; */
 }
 
 .containersa {
@@ -360,11 +361,13 @@
   justify-content: space-between;
 }
 .qr{
-  padding-right: 30px;
+  /* padding-right: 30px; */
   
 }
 .qr img{
   width: 100px;
+  text-align: center;
+
  
 }
 
