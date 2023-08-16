@@ -433,18 +433,10 @@
   /* width: 100%; */
   
 }
-.section-motion-img::after{
-  top:0;
-  position: absolute;
-  content: '';
-  right: 0;
-  width: 50%;
-  height: 100%;
-  background-color: #040507;
-}
+
 .section-motion-img {
-  min-width: 100vw;
-  min-height: 100vh;
+  /* min-width: 100vw; */
+  /* min-height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -466,11 +458,5 @@
     transform: rotate(360deg); 
 }
 }
-.section-motion-img:nth-child(even) {
-  background-color: #040507;
-  color: white;
-}
-.sj{
- padding-left: 10px;
-}
+
 /* ----------end  motion images */

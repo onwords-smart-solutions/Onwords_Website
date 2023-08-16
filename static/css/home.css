@@ -31,7 +31,7 @@ body {
 
 #bodyTag.dark {
     background: #f0f0f0;
-    color: #040507 !important;
+    color:#292929 !important;
 }
 
 button.dark {
@@ -3130,6 +3130,9 @@ transform: scale(1.2);
   
   .gradient-button:hover{
     background-position: right center;
+  }
+  .pointer{
+    cursor: pointer;
   }
   /* ============== */
   

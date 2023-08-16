@@ -890,18 +890,17 @@
     .consc-banner-title {
       font-size: 34px;
   }
+  .fourth-ajax{
+   height: 40vh;
+  }
+  .our-story::after {
+   display: none;
+}
    }
 
    
 
-   /* .media-brd {
-      margin-top: 161px;
-   }
-
-   .sync-tv-demo-text {
-      margin-top: -118px;
-      font-size: 13px;
-   } */
+  
 
 
 
@@ -911,6 +910,18 @@
    .about-para {
       font-size: 14px;
    }
+   .our-story::after {
+      display: none;
+   }
+   .expertise {
+      height: 100% !important;
+      width: 80%;
+      margin: 20px auto;
+   }
+   .expertise::before{
+      margin-bottom: 10px;
+   }
+  
 
    .works-with {
       height: 72vh;
