@@ -852,8 +852,20 @@
       width: fit-content;
    }
 
-   .
-   .title-aboutus {}
+   .gate-para {
+      font-size: 17px !important;
+      height: 73px;
+   }
+
+   .mobil-acces {
+      height: 24vh;
+   }
+
+   .mobil-acces img {
+      display: none;
+   }
+
+   . .title-aboutus {}
 }
 
 
@@ -870,22 +882,21 @@
 
    }
 
-   .first-box{
+   .first-box {
       width: 100% !important;
    }
 
-   .first-box h3{
+   .first-box h3 {
       font-size: 20px !important;
    }
 
-   .first-box h6{
+   .first-box h6 {
       font-size: 16px !important;
    }
+
    .top-smart-home-page {
       margin-top: 10px;
    }
-
-
 
    .smarthome {
       padding-top: 30px;
@@ -918,8 +929,18 @@
    }
 
    .gate-para {
-      font-size: 10px !important;
+      font-size: 17px !important;
+      height: 73px;
    }
+
+   .mobil-acces img {
+      display: none;
+   }
+
+   .mobil-acces {
+      height: 24vh;
+   }
+
 }
 
 
