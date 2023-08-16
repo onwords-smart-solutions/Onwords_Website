@@ -114,8 +114,13 @@
       height: 250px;
    }
 
-
-
+   .counter-boxs{
+      width: 100%;
+      height: 130px;
+   }
+   #targetElement{
+      width: 100%;
+   }
    .box-main-con>.text-containers {
       width: 100%;
       z-index: 1 c;
@@ -479,7 +484,7 @@
    }
 
    .dim {
-      height: 65vh;
+      height: 70vh;
       width: 95%;
       margin: 0 10px;
    }
@@ -836,7 +841,7 @@
    }
 
    .box-scrollers {
-      height: 50vh;
+      height: 45vh;
       width: 80%;
       left: 0%;
       right: 0%;
@@ -924,7 +929,13 @@
    .title-aboutus{
       display: none;
    }
-  
+  .c-prev{
+   top:-60px;
+  }
+  .cn-btn{
+   top: -60px;
+  }
+   
 
    .works-with {
       height: 72vh;
@@ -957,17 +968,7 @@
       height: 50vh;
    }
 
-   /* .smart-day-night {
-      display: none;
-   }
-
-   .day-night-homes {
-      display: none;
-   } */
-
-   /* .smart-text {
-      display: none;
-   } */
+   
 
    .top-smart-home-page {
       margin-top: -22%;
@@ -1021,11 +1022,11 @@
    .slider .wrapper .left>div p {
       font-size: 1rem;
    }
+   .margin-t{
+      margin: -60px 0px;
+   }
 
-   /* .sync-tv-demo-text {
-      margin-top: -118px;
-      font-size: 13px;
-   } */
+
 }
 
 
@@ -1035,7 +1036,21 @@
 
 
 
-
+/* ================== */
+@media screen and (min-width : 414px) and (max-width : 896px){
+   .box-scrollers{
+      height: 35vh;
+   }
+   .c-prev{
+      top:-60px ;
+   }
+   .cn-btn{
+      top: -60px;
+   }
+   .works-with{
+      background-size: 500px;
+   }
+} 
 
 /* ============================tab======= */
 @media screen and (min-width : 820px) and (max-width : 1180px) {
