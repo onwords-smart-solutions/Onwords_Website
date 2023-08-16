@@ -874,33 +874,38 @@
       margin-right: 10%;
       margin-top: 10px;
       margin-bottom: 10px;
-      
-    }
-    .consc-banner{
+
+   }
+
+   .consc-banner {
       height: 50vh;
       margin-bottom: 30px;
-    }
-    .consc-banner-top-bg{
-      background-color: rgb(0,0,0,0.4);
+   }
+
+   .consc-banner-top-bg {
+      background-color: rgb(0, 0, 0, 0.4);
       width: 100%;
       height: 100%;
       padding: 20px;
       color: #fff;
-    }
-    .consc-banner-title {
-      font-size: 34px;
-  }
-  .fourth-ajax{
-   height: 40vh;
-  }
-  .our-story::after {
-   display: none;
-}
    }
 
-   
+   .consc-banner-title {
+      font-size: 34px;
+   }
 
-  
+   .fourth-ajax {
+      height: 40vh;
+   }
+
+   .our-story::after {
+      display: none;
+   }
+}
+
+
+
+
 
 
 
@@ -910,21 +915,25 @@
    .about-para {
       font-size: 14px;
    }
+
    .our-story::after {
       display: none;
    }
+
    .expertise {
       height: 100% !important;
       width: 80%;
       margin: 20px auto;
    }
-   .expertise::before{
+
+   .expertise::before {
       margin-bottom: 10px;
    }
-   .title-aboutus{
+
+   .title-aboutus {
       display: none;
    }
-  
+
 
    .works-with {
       height: 72vh;
@@ -1022,83 +1031,86 @@
       font-size: 1rem;
    }
 
-   /* .sync-tv-demo-text {
+   .dim {
+      height: 77vh;
+   }
+      /* .sync-tv-demo-text {
       margin-top: -118px;
       font-size: 13px;
    } */
-}
-
-
-
-
-
-
-
-
-
-
-/* ============================tab======= */
-@media screen and (min-width : 820px) and (max-width : 1180px) {
-
-   .fir-sec {
-      width: 100%;
-   }
-
-   .s-btns {
-      margin-left: 400px;
-   }
-
-   .grp-btn {
-      margin-top: 60px;
-   }
-
-   .advantages {
-      min-height: 45vh;
-   }
-
-   .horizontal {
-      margin-top: 50px;
-   }
-
-   .box-scrollers {
-      height: 27vh;
-      width: 95%;
-      left: 0%;
-      right: 0%;
-      /* top: -20px; */
-   }
-
-   .home-main-con h1 {
-      font-size: 65px;
-   }
-
-   .second-text {
-      font-size: 65px;
-   }
-
-   .top-smart-home-page {
-      margin-top: 0%;
-   }
-
-   .mobil-acces {
-      height: 40vh;
-   }
-
-   .dg-col {
-      width: 80%;
-   }
-
-   .img-cube-2 {
-      bottom: 35px;
-   }
-
-   .our-story::after {
-      display: none;
-   }
-
-   .contact-banner {
-      margin-bottom: 40px;
    }
 
 
-}
+
+
+
+
+
+
+
+
+   /* ============================tab======= */
+   @media screen and (min-width : 820px) and (max-width : 1180px) {
+
+      .fir-sec {
+         width: 100%;
+      }
+
+      .s-btns {
+         margin-left: 400px;
+      }
+
+      .grp-btn {
+         margin-top: 60px;
+      }
+
+      .advantages {
+         min-height: 45vh;
+      }
+
+      .horizontal {
+         margin-top: 50px;
+      }
+
+      .box-scrollers {
+         height: 27vh;
+         width: 95%;
+         left: 0%;
+         right: 0%;
+         /* top: -20px; */
+      }
+
+      .home-main-con h1 {
+         font-size: 65px;
+      }
+
+      .second-text {
+         font-size: 65px;
+      }
+
+      .top-smart-home-page {
+         margin-top: 0%;
+      }
+
+      .mobil-acces {
+         height: 40vh;
+      }
+
+      .dg-col {
+         width: 80%;
+      }
+
+      .img-cube-2 {
+         bottom: 35px;
+      }
+
+      .our-story::after {
+         display: none;
+      }
+
+      .contact-banner {
+         margin-bottom: 40px;
+      }
+
+
+   }
