@@ -921,6 +921,9 @@
    .expertise::before{
       margin-bottom: 10px;
    }
+   .title-aboutus{
+      display: none;
+   }
   
 
    .works-with {
