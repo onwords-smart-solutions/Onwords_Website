@@ -55,7 +55,7 @@
   .slider .controls > .down {
     bottom: 0px;
     left: 0px;
-    background: linear-gradient(#0cbaba, #380036);
+    background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
     color: #fff;
     border-radius: 5px 0 0 5px;
   }
@@ -90,7 +90,7 @@
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 25px;
-    background: -webkit-linear-gradient(#0cbaba, #380036);
+    background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -99,7 +99,6 @@
   .slider .wrapper .left > div p {
     font-size: 1.125rem;
     font-weight: 300;
-    color: #555;
     text-align: justify;
   }
   
