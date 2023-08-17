@@ -940,6 +940,11 @@
       animation-delay: 3s;
       margin: 0 auto;
   }
+  .box-about{
+   width: 80%;
+   height: 200px;
+   margin: 10px auto;
+}
 }
 
 
@@ -1111,6 +1116,11 @@
       height: 35vh;
       width: 100%;
    }
+   .box-about{
+      width: 80%;
+      height: 200px;
+      margin: 10px auto;
+   }
    .slider .controls{
       top: 90%;
    }
@@ -1168,6 +1178,11 @@
   .mobil-acces img{
    display: block;
   }
+  .box-about{
+   width: 40%;
+   height: 280px;
+   margin: 10px auto;
+}
    .fir-sec {
       width: 100%;
    }

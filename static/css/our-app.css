@@ -166,10 +166,10 @@
   text-align: center;
 }
 
-.app-feature i {
-  display: block;
-  font-size: 40px;
-  text-align: center;
+.app-feature img {
+ width: 30px;
+ object-fit: contain;
+ h30px
 }
 
 .fghs {
@@ -334,13 +334,15 @@
 }
 
 .left-mob-fix {
-  width: 10%;
-  text-align: right;
-  align-items: end;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .center-mob-fix {
-  width: 80%;
+  width: 60%;
   text-align: center;
 }
 
@@ -351,24 +353,28 @@
 }
 
 .right-mob-fix {
-  width: 10%;
+  width: 20%;
   text-align: left;
-  align-items: start;
+  align-items: left;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  
+}
+.right-mob-fix .app-feature img{
+  align-items: left;
 }
 .bot-re{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.qr{
-  /* padding-right: 30px; */
-  
-}
+
 .qr img{
   width: 100px;
   text-align: center;
 
- 
 }
+
 
 /* ---- */
