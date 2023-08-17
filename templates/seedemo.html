@@ -167,8 +167,7 @@
                 </div>
             </div>
             <div class="video-src back-demo-section">
-                <audio src="{% static 'main-webp/hueaudio.mp3' %}" id="audioplay"></audio>
-                <video src="{% static 'main-webp/hue-final-render.mp4' %}" class="img-fluid " muted loop autoplay
+                <video src="{% static 'main-webp/hue-final-render.mp4' %}" class="img-fluid " loop autoplay
                     id="video-demos"></video>
                 <img src="{% static 'main-webp/hue-tv-img.webp' %}" alt="background tv" class="img-flimg"
                     id="front-img"></img>
@@ -440,24 +439,18 @@
                 videoDemos.style.display = 'block'
                 frontImg.style.display = 'none'
                 TextIndicate.innerHTML = 'On'
-                // videoPauseGroup.style.display = 'block'
-
             }
             if (DemoBtn.checked == false) {
                 videoDemos.style.display = 'block'
                 frontImg.style.display = 'block'
                 TextIndicate.innerHTML = 'Off'
-                // videoPauseGroup.style.display = 'none'
-
             }
         }
 
 
         const videoPlayer = document.getElementById('video-demos');
         const playPauseButton = document.getElementById('vidbutton');
-        const audioPlayer = document.getElementById('audioplay');
         const muteUnmuteButton = document.getElementById('audioButton');
-
         var playVideoBtn = document.querySelector('.PlayvideoBtn')
         var offVideoBtn = document.querySelector('.offVideoBtn')
         const volOn = document.querySelector('.vol-on')
@@ -476,14 +469,14 @@
         });
 
         muteUnmuteButton.addEventListener('click', () => {
-            if (audioPlayer.muted) {
-                audioPlayer.muted = false;
-                volOff.style.display = 'block'
-                volOn.style.display = 'none'
-            } else {
-                audioPlayer.muted = true;
+            if (videoPlayer.muted) {
+                videoPlayer.muted = false;
                 volOff.style.display = 'none'
                 volOn.style.display = 'block'
+            } else {
+                videoPlayer.muted = true;
+                volOff.style.display = 'block'
+                volOn.style.display = 'none'
             }
         });
 

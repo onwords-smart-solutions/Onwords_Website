@@ -1025,7 +1025,9 @@
    .margin-t{
       margin: -60px 0px;
    }
-
+   .box-scrollers{
+      height: 41vh;
+   }
 
 }
 

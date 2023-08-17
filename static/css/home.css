@@ -1480,7 +1480,7 @@ margin: 0 auto;
     width: 4px;
     height: 133px;
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 0;
     background: linear-gradient(180deg, #7353E5 0%, #CE4DA4 100%);
 }
