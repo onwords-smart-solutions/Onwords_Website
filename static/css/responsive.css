@@ -114,13 +114,15 @@
       height: 250px;
    }
 
-   .counter-boxs{
+   .counter-boxs {
       width: 100%;
       height: 130px;
    }
-   #targetElement{
+
+   #targetElement {
       width: 100%;
    }
+
    .box-main-con>.text-containers {
       width: 100%;
       z-index: 1 c;
@@ -879,33 +881,42 @@
       margin-right: 10%;
       margin-top: 10px;
       margin-bottom: 10px;
-      
-    }
-    .consc-banner{
+
+   }
+
+   .consc-banner {
       height: 50vh;
       margin-bottom: 30px;
-    }
-    .consc-banner-top-bg{
-      background-color: rgb(0,0,0,0.4);
+   }
+
+   .consc-banner-top-bg {
+      background-color: rgb(0, 0, 0, 0.4);
       width: 100%;
       height: 100%;
       padding: 20px;
       color: #fff;
-    }
-    .consc-banner-title {
-      font-size: 34px;
-  }
-  .fourth-ajax{
-   height: 40vh;
-  }
-  .our-story::after {
-   display: none;
-}
    }
 
-   
+   .consc-banner-title {
+      font-size: 34px;
+   }
 
-  
+   .fourth-ajax {
+      height: 40vh;
+   }
+
+   .our-story::after {
+      display: none;
+   }
+
+   header {
+      z-index: 9999;
+   }
+}
+
+
+
+
 
 
 
@@ -915,27 +926,33 @@
    .about-para {
       font-size: 14px;
    }
+
    .our-story::after {
       display: none;
    }
+
    .expertise {
       height: 100% !important;
       width: 80%;
       margin: 20px auto;
    }
-   .expertise::before{
+
+   .expertise::before {
       margin-bottom: 10px;
    }
-   .title-aboutus{
+
+   .title-aboutus {
       display: none;
    }
-  .c-prev{
-   top:-60px;
-  }
-  .cn-btn{
-   top:-60px;
-  }
-   
+
+   .c-prev {
+      top: -60px;
+   }
+
+   .cn-btn {
+      top: -60px;
+   }
+
 
    .works-with {
       height: 72vh;
@@ -968,16 +985,14 @@
       height: 50vh;
    }
 
-   
+
 
    .top-smart-home-page {
       margin-top: -22%;
       position: relative;
    }
 
-   .mobile-acces img {
-      display: none;
-   }
+   
 
    .gate-para {
       font-size: 17px !important;
@@ -1022,10 +1037,14 @@
    .slider .wrapper .left>div p {
       font-size: 1rem;
    }
-   .margin-t{
+
+   .margin-t {
       margin: -60px 0px;
    }
 
+   header {
+      z-index: 9999;
+   }
 
 }
 
@@ -1036,23 +1055,30 @@
 
 
 
-/* ================== */
-@media screen and (min-width : 414px) and (max-width : 896px){
-   .box-scrollers{
+/* ================== iphone XR */
+@media screen and (min-width : 414px) and (max-width : 896px) {
+   .box-scrollers {
       height: 35vh;
    }
-   .c-prev{
-      top:-60px ;
-   }
-   .cn-btn{
+
+   .c-prev {
       top: -60px;
    }
-   .works-with{
+
+   .cn-btn {
+      top: -60px;
+   }
+
+   .works-with {
       background-size: 500px;
    }
-} 
 
-/* ============================tab======= */
+   header {
+      z-index: 9999;
+   }
+}
+
+/* ============================tab IPAD AIR======= */
 @media screen and (min-width : 820px) and (max-width : 1180px) {
 
    .fir-sec {
@@ -1115,5 +1141,8 @@
       margin-bottom: 40px;
    }
 
+   header {
+      z-index: 9999;
+   }
 
 }
