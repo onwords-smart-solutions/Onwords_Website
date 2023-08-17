@@ -203,9 +203,10 @@
 
 
 /* -------smart--------*/
-.waviy{
+.waviy {
     position: re;
 }
+
 .waviy h2 {
     position: relative;
     display: inline-block;
@@ -225,14 +226,15 @@
 }
 
 /* ----------- start */
-.block{
+.block {
     width: 100%;
     height: 100%;
     position: relative;
     overflow: hidden;
     font-size: 16px;
-  }
-  .block h2{
+}
+
+.block h2 {
     position: relative;
     display: block;
     text-align: center;
@@ -242,23 +244,30 @@
     font-size: 10vw;
     color: white;
     font-weight: 400;
-  }
-  .img-parallax {
+}
+
+.img-parallax {
     width: 100vmax;
     z-index: -1;
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
     pointer-events: none
-  }
+}
+
 /* ----------- End */
 
-.main-pagination-process{
+.main-pagination-process {
     height: auto;
     width: 100%;
 }
-.section-1,.section-2,.section-3,.section-4,.section-5{
+
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5 {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -270,16 +279,17 @@
     margin: 10px 0px;
 }
 
-.text-cont-pagination{
+.text-cont-pagination {
     height: 50vh;
-    background-color:aqua;
+    background-color: aqua;
     width: 100%;
     margin-top: 300px;
     position: sticky;
     font-size: 18px;
 
 }
-.img-cont-pagination{
+
+.img-cont-pagination {
     height: 50vh;
     /* background-color: blue; */
     width: 100%;
@@ -287,8 +297,126 @@
     position: sticky;
 
 }
-.img-cont-pagination img{
+
+.img-cont-pagination img {
     width: 200px;
     height: 200px;
 }
 
+/* =============samrt home animation */
+.smarthome-anim {
+    width: 100%;
+    height: 100vh;
+}
+
+.img-smart-anim {
+    height: 70vh;
+    width: 80%;
+    object-fit: contain;
+    margin: 20px auto 0;
+    position: relative;
+}
+.sm-titl{
+    margin-top: 20px;
+}
+.animation-img {
+    width: 100%;
+    height: 70vh;
+    /* background-image: url(../main-webp/smarthome-night.webp); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    animation: img-sm 10s infinite;
+    animation-delay: 3s;
+}
+
+.smart-home-p {
+    font-size: 20px;
+}
+
+.day-imgs {
+    display: none;
+}
+
+.night-texs {
+    opacity: 0;
+}
+
+.text-ce {
+    position: absolute;
+    bottom: 10px;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.single-con {
+    position: relative;
+    height: 30px;
+    width: 100%;
+    margin: 0 auto 15px;
+}
+
+.single-con h2 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    text-align: center;
+
+}
+
+.night-texs {
+    animation: nightsm 10s infinite;
+}
+
+@keyframes nightsm {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.day-texs {
+    animation: daysm 10s infinite;
+    animation-delay: 3s;
+}
+
+@keyframes daysm {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+
+        opacity: 0;
+    }
+}
+
+@keyframes img-sm {
+    0% {
+        background-image: url(../main-webp/smarthome-night.webp);
+    }
+
+    50% {
+        background-image: url(../main-webp/smarthome-day.webp);
+    }
+
+    100% {
+        background-image: url(../main-webp/smarthome-night.webp);
+    }
+
+}
