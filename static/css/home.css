@@ -962,7 +962,7 @@ section {
     position: absolute;
     content: '';
     width: 1px;
-    height: 90%;
+    height: 50%;
     background-color: #fff;
     right: 0;
 }
