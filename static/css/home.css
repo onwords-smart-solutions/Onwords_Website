@@ -2051,6 +2051,7 @@ transform: scale(1.2);
 
 .horizontal {
     display: flex;
+    align-items: center;
 
 }
 
