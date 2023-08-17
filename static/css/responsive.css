@@ -925,6 +925,12 @@
    .our-story::after {
       display: none;
    }
+   .mobil-acces img{
+      display: none;
+   }
+   .mobil-acces{
+      height: 30vh;
+   }
 
    .expertise {
       height: 100% !important;
@@ -1054,7 +1060,12 @@
    .box-scrollers {
       height: 35vh;
    }
-
+   .mobil-acces img{
+      display: none;
+   }
+   .mobil-acces{
+     height: 25vh;
+   }
    .c-prev {
       top: -60px;
    }
