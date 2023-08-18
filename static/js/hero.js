@@ -28,16 +28,85 @@ const parkings = document.getElementById('parkings')
 //         parkingOnBtn.style.display = 'none'
 //     }
 // }
-function lightmain(){
-    if (toggle.checked == true)  {
+// function lightmain(){
+//     if (toggle.checked == true)  {
+//         bolconyOnBtn.style.display = 'block'
+//         parkingOnBtn.style.display = 'block'
+//         bolconyLights.style.display = 'none'
+//         parkingLights.style.display = 'none'
+//         allLightOn.style.display = 'block'
+
+//     }
+//     if (toggle.checked == false)  {
+//         bolconyOnBtn.style.display = 'none'
+//         parkingOnBtn.style.display = 'none'
+//         bolconyLights.style.display = 'none'
+//         parkingLights.style.display = 'none'
+//         allLightOn.style.display = 'none'
+
+//     }
+// }
+// function both() {
+//         if (toggle.checked == true)  {
+//             bolconyOnBtn.style.display = 'block'
+//             parkingOnBtn.style.display = 'block'
+//             bolconyLights.style.display = 'none'
+//             parkingLights.style.display = 'none'
+//             allLightOn.style.display = 'block'
+
+//         }
+//         if (toggle.checked == false)  {
+//             bolconyOnBtn.style.display = 'none'
+//             parkingOnBtn.style.display = 'none'
+//             bolconyLights.style.display = 'none'
+//             parkingLights.style.display = 'none'
+//             allLightOn.style.display = 'none'
+
+//         }
+//         if ((bolconys.checked == false) && (parkings.checked == true)) {
+//             bolconyOnBtn.style.display = 'none'
+//             parkingOnBtn.style.display = 'block'
+//             bolconyLights.style.display = 'none'
+//             parkingLights.style.display = 'block'
+//             allLightOn.style.display = 'none'
+//         }
+
+//     if ((bolconys.checked == true) && (parkings.checked == true)) {
+//         bolconyOnBtn.style.display = 'block'
+//         parkingOnBtn.style.display = 'block'
+//         bolconyLights.style.display = 'none'
+//         parkingLights.style.display = 'none'
+//         allLightOn.style.display = 'block'
+//     }
+
+//     if ((bolconys.checked == true) && (parkings.checked == false)) {
+//         bolconyOnBtn.style.display = 'block'
+//         parkingOnBtn.style.display = 'none'
+//         bolconyLights.style.display = 'block'
+//         parkingLights.style.display = 'none'
+//         allLightOn.style.display = 'none'
+//     }
+//     if ((bolconys.checked == false) && (parkings.checked == true)) {
+//         bolconyOnBtn.style.display = 'none'
+//         parkingOnBtn.style.display = 'block'
+//         bolconyLights.style.display = 'none'
+//         parkingLights.style.display = 'block'
+//         allLightOn.style.display = 'none'
+//     }
+
+// }
+
+
+function both() {
+    if (toggle.checked == true) {
         bolconyOnBtn.style.display = 'block'
         parkingOnBtn.style.display = 'block'
         bolconyLights.style.display = 'none'
         parkingLights.style.display = 'none'
         allLightOn.style.display = 'block'
-        
+
     }
-    if (toggle.checked == false)  {
+    if (toggle.checked == false) {
         bolconyOnBtn.style.display = 'none'
         parkingOnBtn.style.display = 'none'
         bolconyLights.style.display = 'none'
@@ -46,62 +115,59 @@ function lightmain(){
 
     }
 }
-function both() {
-        if (toggle.checked == true)  {
-            bolconyOnBtn.style.display = 'block'
-            parkingOnBtn.style.display = 'block'
-            bolconyLights.style.display = 'none'
-            parkingLights.style.display = 'none'
-            allLightOn.style.display = 'block'
-            
-        }
-        if (toggle.checked == false)  {
-            bolconyOnBtn.style.display = 'none'
-            parkingOnBtn.style.display = 'none'
-            bolconyLights.style.display = 'none'
-            parkingLights.style.display = 'none'
-            allLightOn.style.display = 'none'
-    
-        }
-        if ((bolconys.checked == false) && (parkings.checked == true)) {
-            bolconyOnBtn.style.display = 'none'
-            parkingOnBtn.style.display = 'block'
-            bolconyLights.style.display = 'none'
-            parkingLights.style.display = 'block'
-            allLightOn.style.display = 'none'
-        }
-    
-    if ((bolconys.checked == true) && (parkings.checked == true)) {
-        bolconyOnBtn.style.display = 'block'
-        parkingOnBtn.style.display = 'block'
-        bolconyLights.style.display = 'none'
-        parkingLights.style.display = 'none'
-        allLightOn.style.display = 'block'
-    }
-    
-    if ((bolconys.checked == true) && (parkings.checked == false)) {
+
+function bolconymain() {
+    if (bolconys.checked == true) {
         bolconyOnBtn.style.display = 'block'
         parkingOnBtn.style.display = 'none'
         bolconyLights.style.display = 'block'
         parkingLights.style.display = 'none'
         allLightOn.style.display = 'none'
     }
-    if ((bolconys.checked == false) && (parkings.checked == true)) {
+    else {
+        bolconyOnBtn.style.display = 'none'
+        parkingOnBtn.style.display = 'none'
+        bolconyLights.style.display = 'none'
+        parkingLights.style.display = 'none'
+        allLightOn.style.display = 'none'
+    }
+}
+
+function parkingmain() {
+    if (parkings.checked == true) {
         bolconyOnBtn.style.display = 'none'
         parkingOnBtn.style.display = 'block'
         bolconyLights.style.display = 'none'
         parkingLights.style.display = 'block'
         allLightOn.style.display = 'none'
     }
-    // if ((bolconys.checked == false) && (parkings.checked == false)) {
-    //     bolconyOnBtn.style.display = 'none'
-    //     parkingOnBtn.style.display = 'none'
-    //     bolconyLights.style.display = 'none'
-    //     parkingLights.style.display = 'none'
-    //     allLightOn.style.display = 'none'
-
-    // }
+    else {
+        bolconyOnBtn.style.display = 'none'
+        parkingOnBtn.style.display = 'none'
+        bolconyLights.style.display = 'none'
+        parkingLights.style.display = 'none'
+        allLightOn.style.display = 'none'
+    }
 }
+bolconys.addEventListener('change',()=>{
+    if(parkingmain.checked=true){
+        bolconymain.checked=true
+    }
+})
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
 const times = document.querySelector('.times')
 date = new Date()
