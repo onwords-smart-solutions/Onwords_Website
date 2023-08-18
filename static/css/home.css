@@ -739,9 +739,7 @@ section {
     margin: 40px 20px;
 }
 
-.f-imgs-why:hover {
-    border: 2px solid #13111A;
-}
+
 
 .why-sd {
     /* position: absolute; */
@@ -761,11 +759,7 @@ section {
     top: -30px;
 }
 
-.dghj:hover {
-    left: 0;
-    top: 0;
 
-}
 
 .stick {
     position: absolute;
@@ -977,7 +971,7 @@ section {
     position: absolute;
     content: '';
     width: 1px;
-    height: 90%;
+    height: 50%;
     background-color: #fff;
     right: 0;
 }
