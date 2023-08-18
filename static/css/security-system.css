@@ -25,11 +25,11 @@
 .third-ajax-sec {
   width: 100%;
   height: 100vh;
-  object-fit: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   background-position: center;
   background-size: cover;
-  background: url(../main-webp/third-ajax\.webp);
+  background: url(../main-webp/third-ajax.webp);
+  margin: 0 auto;
 }
 
 .fourth-ajax {

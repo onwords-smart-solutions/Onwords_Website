@@ -372,7 +372,7 @@ input:checked+.sliders:before {
     border-radius: 10px;
     width: 200px;
     height: 60px;
-    margin-top: 250px;
+    margin-top: 270px;
     display: flex;
 }
 
@@ -443,6 +443,7 @@ input:checked+.sliders:before {
 
 .anim-press-btn {
     animation: anim-press-btn 2s linear infinite;
+    margin-left: 10%;
 }
 
 @keyframes anim-press-btn {

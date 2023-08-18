@@ -28,7 +28,24 @@ const parkings = document.getElementById('parkings')
 //         parkingOnBtn.style.display = 'none'
 //     }
 // }
+function lightmain(){
+    if (toggle.checked == true)  {
+        bolconyOnBtn.style.display = 'block'
+        parkingOnBtn.style.display = 'block'
+        bolconyLights.style.display = 'none'
+        parkingLights.style.display = 'none'
+        allLightOn.style.display = 'block'
+        
+    }
+    if (toggle.checked == false)  {
+        bolconyOnBtn.style.display = 'none'
+        parkingOnBtn.style.display = 'none'
+        bolconyLights.style.display = 'none'
+        parkingLights.style.display = 'none'
+        allLightOn.style.display = 'none'
 
+    }
+}
 function both() {
         if (toggle.checked == true)  {
             bolconyOnBtn.style.display = 'block'
