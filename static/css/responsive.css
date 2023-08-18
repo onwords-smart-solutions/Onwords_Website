@@ -7,7 +7,7 @@
    .adv-box {
       margin-top: 30px;
    }
-
+   
    .f-imgs-why {
       width: 120px;
       height: 120px;
@@ -51,7 +51,16 @@
    .navbar {
       width: 100%;
    }
+   .btn-grp-curtain{
+      left: 50%;
+      top: 80%;
+      transform: translate(-50%,-50%);
+      display: flex;
+      align-items: center;
+      height: 20%;
+      width: 40%;
 
+   }
    .blob {
       display: none;
    }
@@ -317,7 +326,7 @@
    .curtain-home {
       width: 100%;
       height: 50vh;
-      /* object-fit: contain; */
+      margin-top: 100px;
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
@@ -1113,7 +1122,7 @@
 /* ================== iphone XR */
 @media screen and (min-width : 414px) and (max-width : 896px) {
    .box-scrollers {
-      height: 35vh;
+      height: 30vh;
       width: 100%;
    }
    .box-about{
