@@ -266,6 +266,20 @@
    .active-nav {
       border: none;
    }
+   .nav-link a,
+.active-nav,
+.nav-link:focus,
+.nav-link:active {
+    background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    /* border-bottom: 2px solid; */
+    /* border-width: 2px; */
+    /* border-image-slice: 2 !important; */
+    /* border-image-source: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%); */
+}
 
    /* ---our services start */
    .service-container {
@@ -848,7 +862,7 @@
    }
 
    .box-scrollers {
-      height: 45vh;
+      height: 35vh;
       width: 80%;
       left: 0%;
       right: 0%;

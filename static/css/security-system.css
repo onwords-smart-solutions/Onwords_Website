@@ -246,8 +246,14 @@
 }
 
 .contact-form {
-  background-color: transparent;
+  background-color: rgb(0,0,0,0.4);
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .contact-form input {

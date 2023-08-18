@@ -39,8 +39,14 @@
 }
 
 .carrier-form {
-    background-color: transparent;
+    background-color: rgb(0,0,0,0.4);
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .carrier-form input {
@@ -88,7 +94,7 @@
 
 .carrier-form-input input:focus~span,
 .carrier-form-input input:valid~span {
-    transform: translateX(10px)translateY(-25px);
+    transform: translateX(10px)translateY(-20px);
 
 }
 
