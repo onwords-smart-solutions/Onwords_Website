@@ -343,7 +343,13 @@
 
 .center-mob-fix {
   width: 60%;
-  text-align: center;
+  text-align: center;margin: 0;padding: 0;
+  
+}
+.center-mob-fix video{
+  background-blend-mode:screen;
+  padding: 0;
+  margin: 0;
 }
 
 .center-mob-fix img {

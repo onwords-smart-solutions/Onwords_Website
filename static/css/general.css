@@ -72,11 +72,11 @@
 @keyframes fade-b-l {
     0%{
         opacity: 0;
-        margin-bottom: 40px;
+        margin-top: 40px;
     }
     100%{
         opacity: 1;
-        margin-bottom: 0px;
+        margin-top: 0px;
         
     }
 }
