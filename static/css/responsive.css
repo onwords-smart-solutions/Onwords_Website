@@ -1109,7 +1109,10 @@
   .construc-demo{
    height: 50vh;
   }
-
+.modal-content{
+   margin-top: 100px;
+   width: 75%;
+}
 }
 
 
