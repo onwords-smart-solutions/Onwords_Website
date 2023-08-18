@@ -166,9 +166,7 @@
     right: 0;
 
 }
-.carrer-opt select option{
-    
-}
+
 .carrer-opt select [option= "value"]{
 color: #fff;
 }
