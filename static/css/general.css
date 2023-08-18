@@ -18,6 +18,14 @@
 .active.fade-left {
     animation: fade-left 1s ease-in;
 }
+.active.fade-l {
+    animation: fade-t-l 1s ease-in;
+    margin-top: 0px;
+}
+.active.fade-b {
+    animation: fade-b-l 1s ease-in;
+    
+}
 
 .active.fade-right {
     animation: fade-right 1s ease-in;
@@ -50,6 +58,29 @@
         
     }
 }
+@keyframes fade-t-l {
+    0%{
+        opacity: 0;
+        margin-top: -40px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0px;
+        
+    }
+}
+@keyframes fade-b-l {
+    0%{
+        opacity: 0;
+        margin-bottom: 40px;
+    }
+    100%{
+        opacity: 1;
+        margin-bottom: 0px;
+        
+    }
+}
+
 
 @keyframes fade-bottom {
     0% {
