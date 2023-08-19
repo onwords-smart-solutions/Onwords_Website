@@ -372,13 +372,24 @@ input:checked+.sliders:before {
     border-radius: 10px;
     width: 200px;
     height: 60px;
-    margin-top: 270px;
+    /* margin-top: 300px; */
     display: flex;
 }
-
+.anim-press{
+    
+   
+}
 .media-brd img {
     align-items: center;
     margin: 15px 30px;
+}
+.main-anim{
+    display: flex;
+    align-items: end;
+    padding-bottom: 50px;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
 }
 
 
