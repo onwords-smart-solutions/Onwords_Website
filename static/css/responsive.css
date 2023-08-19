@@ -972,17 +972,13 @@
    }
 
    .box-about {
-      width: 80%;
+      width: 80% !important;
       height: 200px;
-      margin: 10px auto;
+      margin: 40px auto;
    }
   }
-  .box-about{
-   width: 80%;
-   height: 200px;
-   margin:30px auto;
-}
-}
+ 
+
 
 
 
