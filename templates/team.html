@@ -50,10 +50,15 @@
 
             <div class="team-member allview">
                 <section id="all">
-                    <!-- all emply -->
-                    <div class="d-flex w-100">
-                        <!-- all emply -->
-                      </div>
+                    <p>hello</p>
+                  <div>
+                    {%for name,email,department,profile in allteamsdetails%}
+                    <h2>{{name}}</h2>
+                    <h2>{{email}}</h2>
+                    <h2>{{department}}</h2>
+                    <h2>{{profile}}</h2>
+                    {%endfor%}
+                  </div>
                 </section>
 
                 <section id="rnd">
