@@ -566,7 +566,6 @@ nav {
     top: -30px;
     font-size: 16px;
     animation: propmet 2s infinite;
-    white-space: nowrap;
 }
 
 @keyframes propmet {
@@ -633,7 +632,7 @@ section {
 
 .sec-title {
     text-align: center;
-    
+    text-transform: capitalize !important;
 }
 
 
@@ -740,7 +739,9 @@ section {
     margin: 40px 20px;
 }
 
-
+.f-imgs-why:hover {
+    border: 2px solid #13111A;
+}
 
 .why-sd {
     /* position: absolute; */
@@ -760,7 +761,11 @@ section {
     top: -30px;
 }
 
+.dghj:hover {
+    left: 0;
+    top: 0;
 
+}
 
 .stick {
     position: absolute;
@@ -972,7 +977,7 @@ section {
     position: absolute;
     content: '';
     width: 1px;
-    height: 50%;
+    height: 90%;
     background-color: #fff;
     right: 0;
 }
@@ -1108,7 +1113,9 @@ section {
     position: relative;
 }
 
-
+.about-tex {
+    position: relative;
+}
 
 .blursd {
     position: relative;
@@ -1639,7 +1646,7 @@ section {
     top: 0;
     left: 20%;
     right: 20%;
-    height: 58vh;
+    height: 60vh;
 }
 
 .text-containers {
@@ -1866,12 +1873,12 @@ section {
 }
 
 .modal-dialog {
-
+    padding-top: 100px;
     width: 400px !important;
     height: 400px !important;
-    transform: translate(-50%, -50%);
-   
-    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 999;
 }
 
@@ -2062,7 +2069,6 @@ transform: scale(1.2);
 
 .horizontal {
     display: flex;
-    align-items: center;
 
 }
 
@@ -2532,31 +2538,52 @@ transform: scale(1.2);
     }
 }
 
-.row-col {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+.expertise {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.expertise::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 30px;
+    padding: 2px;
+    background: linear-gradient(45deg, #7752E1, #BC4DB0);
+    -webkit-mask:
+        linear-gradient(red 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.exper {
+    padding: 10px;
     width: 100%;
 }
 
-.box-about {
-    width: 32%;
-    height: 350px;
-    /* background-color: #07b39b; */
-    margin: 5px;
-    text-align: center;
+.exper-smart {
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 40px;
 }
 
-.box-about img {
-    width: 50px;
+
+.exper h5 {
+    text-align: center;
 }
 
-.our-story {
+.exper p {
+    text-align: center;
+}
+
+.abt-sec-row {
+    padding-top: 50px;
+}
+
+/* .our-story {
     width: 100%;
     height: 100%;
     position: relative;
@@ -2571,7 +2598,7 @@ transform: scale(1.2);
     border-style: solid;
     border-width: 4px;
     border-image: linear-gradient(45deg, #7752E1, #BC4DB0) 1;
-    /* border: 2px solid #fff; */
+    
     width: 300px;
     height: 330px;
     z-index: -1;
@@ -2584,16 +2611,15 @@ transform: scale(1.2);
     height: 310px;
     width: 315px;
 
-    /* border-radius: 150px; */
+ 
 
 }
 
 .our-story img {
     width: 300px;
     height: 300px;
-}
-
-.aboutus-quote {
+} */
+. .aboutus-quote {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%,
             rgba(0, 0, 0, 0.7)), url(../main-webp/aboutus-quote-img.webp);
 
@@ -3033,7 +3059,7 @@ transform: scale(1.2);
 .pull-text {
     position: absolute;
     bottom: -120px;
-    right: 10%;
+    right: 16px;
     transform: rotate(90deg);
 }
 
@@ -3048,7 +3074,6 @@ transform: scale(1.2);
 
 .pull-text p {
     animation: pop 2s infinite;
-    color: #fff;
 }
 
 @keyframes pop {
@@ -3076,7 +3101,6 @@ transform: scale(1.2);
     top: -32%;
     left: 10%;
     font-size: 11px;
-    color: #fff;
 }
 
 .about-para {
@@ -3158,23 +3182,14 @@ transform: scale(1.2);
     cursor: pointer;
 }
 
-/* ============== */
+.smile {
+    margin-top: 40px !important;
+}
 
-.profile-sec img{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 5px;
+.onwords-paraz {
+    font-size: 24px;
+    font-style: normal;
 }
-#team-s-main{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-.team-row{
-    width: 24%;
-    margin: 20px 5px;
-    text-align: center;
-    /* background-color: red; */
-    height: 200px;
-}
+
+
+/* ============== */
