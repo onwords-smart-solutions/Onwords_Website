@@ -493,8 +493,11 @@
    .dim {
       height: 70vh;
       width: 95%;
-      margin: 0 10px;
+      margin: 0 25px;
    }
+   .product-sec {
+      height: 60vh;
+  }
 
    .our-app-banner {
       margin-top: 100px;
