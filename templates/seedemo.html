@@ -104,56 +104,30 @@
 
         <div class="demo-section">
             <div class=" container-fluid front-demo-section">
-                <div class="row">
-                    <div class="col-md-10"></div>
-                    <div class="col-md-2">
-                        <div class="v-button">
 
-                            <p id="video-pausegroup">
+                <div class="main-anim">
+                    <div class=""></div>
+                    <div class=""></div>
+                    <div class="media-brd">
 
-
-                            </p>
+                        <div id="audioButton" class="vol-group">
+                            <img src="{% static 'main-webp/vol-on.webp' %}" alt="volume on" class="img-fluid vol-on">
+                            <img src="{% static 'main-webp/vol-off.webp' %}" alt="volume off" class="img-fluid vol-off">
                         </div>
+    
+                        <span id="vidbutton">
+                            <img src="{% static 'main-webp/pause.webp' %}" alt="pause" class="img-fluid PlayvideoBtn">
+                            <img src="{% static 'main-webp/playBtn.webp' %}" alt="play" class="img-fluid offVideoBtn">
+    
+                        </span>
+    
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <center>
-                            <div class="media-brd">
-
-                                <div id="audioButton" class="vol-group">
-                                    <img src="{% static 'main-webp/vol-on.webp' %}" alt="volume on"
-                                        class="img-fluid vol-on">
-                                    <img src="{% static 'main-webp/vol-off.webp' %}" alt="volume off"
-                                        class="img-fluid vol-off">
-                                </div>
-
-                                <span id="vidbutton">
-                                    <img src="{% static 'main-webp/pause.webp' %}" alt="pause"
-                                        class="img-fluid PlayvideoBtn">
-                                    <img src="{% static 'main-webp/playBtn.webp' %}" alt="play"
-                                        class="img-fluid offVideoBtn">
-
-                                </span>
-
-                            </div>
-                        </center>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-5">
-                        <h2 class="sync-tv-demo-text">Sync With Tv</h2>
-                    </div>
-                    <div class="col-md-3">
-
-                    </div>
-                    <div class="col-md-3">
-                        
-                            <h6 class="anim-press-btn">Press Play Button</h6>
-                        
+                    <div class="anim-press">
+    
+                        <h6 class="anim-press-btn">Press Play Button</h6>
+    
                         <div class="press-play-btn">
-                            
+    
                             <p class="synhue-text">Sync Hue <br>
                                 <span class="text-warning text-indicate">Off</span>
                             </p>
@@ -164,8 +138,11 @@
                                 </label>
                             </p>
                         </div>
+    
                     </div>
                 </div>
+
+               
             </div>
             <div class="video-src back-demo-section">
                 <video src="{% static 'main-webp/hue-final-render.mp4' %}" class="img-fluid " loop autoplay
@@ -183,7 +160,7 @@
             <div class="sec-title reveal fade-left center-tex-hue" data-wow-delay="0.1s">
                 <h2>Light your home smarter <br> Onwords Hue</h2>
             </div>
-           
+
             <!-- aniation -->
             <section class="top-smart-home-page">
                 <div class="container">
@@ -211,9 +188,7 @@
                             <div class="content-smart reveal fade-opacity" data-wow-delay="0.2s">
                                 <h2>Create the right <br> atmosphere</h2>
                                 <p>
-                                    The Hue Sync TV app works with native smart apps such as Netflix and Disney+,
-                                    HDMI
-                                    devices, and set-top boxes. In short: anything you watch on your screen.
+                                    Elevate your entertainment experience with Hue Sync. Watch your lights sync and dance in harmony with movies, music, and games, adding a new dimension to your viewing and listening pleasure
                                 </p>
 
                             </div>
@@ -225,8 +200,7 @@
                             <div class="content-smart reveal fade-opacity" data-wow-delay="0.2s">
                                 <h2>Gaming Mode</h2>
                                 <p>
-                                    The Hue Sync TV app works with native smart apps such as Netflix and Disney+, HDMI
-                                    devices, and set-top boxes. In short: anything you watch on your screen.
+                                    Elevate your gaming experience to new heights by syncing your lights to the action, creating an immersive atmosphere that pulls you into the heart of the game. Whether you're exploring distant galaxies or battling on epic battlegrounds, Hue Gaming Mode takes your gameplay to the next level.
                                 </p>
                             </div>
                         </div>
@@ -244,11 +218,7 @@
                             <div class="content-smart reveal fade-opacity" data-wow-delay="0.2s">
                                 <h2>Party Mode</h2>
                                 <p>
-                                    We use specially created algorithms to ensure that each light script, which tells
-                                    your
-                                    lights how to react to the music, is perfectly tuned to each song — not just the
-                                    beat
-                                    but the overall feeling of the music.
+                                    Set the stage for unforgettable parties with Hue Smart Lighting  With Party Mode, your room transforms into a dynamic dance floor, pulsating with vibrant colors and rhythmic light effects that synchronize with the music. Get ready to unleash your inner DJ and create a party atmosphere that will have everyone on their feet and grooving to the beat.
                                 </p>
 
                             </div>
@@ -260,12 +230,7 @@
                             <div class="content-smart reveal fade-opacity" data-wow-delay="0.2s">
                                 <h2>Controls with</h2>
                                 <p>
-                                    Control all your onwords Hue lights, whether you use Bluetooth or Hue Bridge.
-                                    The main
-                                    app for the Onwords Hue system, it allows you to turn your lights on and off,
-                                    create
-                                    automations and timers, sync your lights to your TV and music, and even upgrade
-                                    your
+                                    Control all your onwords Hue lights, whether you use Bluetooth or Hue Bridge. The main app for the Onwords Hue system, it allows you to turn your lights on and off, create automations and timers, sync your lights to your TV and music, and even upgrade your controls 
                                 </p>
                             </div>
                         </div>
@@ -350,8 +315,8 @@
                                     <p onclick="location.href='//www.facebook.com/teamonwords/'
                                         " target="_blank"><i class="fa-brands fa-facebook"></i>
                                     </p>
-                                    <p onclick="location.href='//www.youtube.com/@OnwordsSmartSolutions/'" target=" _blank"
-                                       ><i class="fa-brands fa-square-youtube"></i></p>
+                                    <p onclick="location.href='//www.youtube.com/@OnwordsSmartSolutions/'"
+                                        target=" _blank"><i class="fa-brands fa-square-youtube"></i></p>
                                 </div>
 
                                 <div class="footer-foot">
