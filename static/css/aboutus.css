@@ -1,26 +1,21 @@
  .aboutus-img {
-    /* background-image: url(../images/aboutus-img.png); */
-    width: 100%;
-    height: 60vh;
-    position: relative;
+     /* background-image: url(../images/aboutus-img.png); */
+     width: 100%;
+     height: 60vh;
+     position: relative;
 
-}
-.title-aboutus{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.title-aboutus h2{
-    color: #fff;
-}
+ }
 
-.aboutus-img img {
-    width: fit-content;
-    height: 100%;
-    float: right;
+ .title-aboutus {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
 
-}
+ .title-aboutus h2 {
+     color: #fff;
+ }
 
 .about-para {
     text-align: center;
@@ -49,6 +44,56 @@
     border-radius: 10px !important;
   
 }
+.row-col{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.box-about{
+    width: 32%;
+    text-align: center;
+    padding: 5px 20px;
+}
+ .aboutus-img img {
+     width: fit-content;
+     height: 100%;
+     float: right;
+
+ }
+
+ .about-para {
+     text-align: center;
+ }
+
+ .abt-sec-first {
+     margin-top: 100px;
+     padding-top: 20px;
+     background-color: #191919;
+ }
+
+ .img-cube-sec {
+     display: flex;
+     position: relative;
+     height: 60vh;
+ }
+
+ .img-cube-2 {
+     width: 70%;
+     border-radius: 20px !important;
+     position: absolute;
+     bottom: -100px;
+     right: 0;
+     object-fit: contain;
+ }
+
+ .img-cube-1 {
+     width: 70%;
+     object-fit: contain;
+     border-radius: 10px !important;
+
+ }
+
 .row-col{
     display: flex;
     align-items: center;
