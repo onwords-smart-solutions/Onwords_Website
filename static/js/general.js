@@ -58,13 +58,14 @@ const anchor = document.querySelector('a')
 const header = document.querySelector('nav')
 const module = document.querySelectorAll('.module')
 const privacy = document.querySelectorAll('.privacy-h2')
+var headers = document.querySelectorAll("header");
 function toggleDark() {
 
 
   if (body.classList.contains('dark')) {
     window.addEventListener("scroll", () => {
       var header = document.querySelectorAll("header");
-      header.classList.toggle("light", window.scrollY > 0)
+      header.classList.toggle("sticky", window.scrollY > 0)
     })
     body.classList.remove('dark');
     localStorage.setItem("theme", "light");
@@ -74,7 +75,7 @@ function toggleDark() {
     for(const privacys in privacy){
       privacys.backgroundColor='#fff'
     }
-    
+   
   
   }
   else {
