@@ -50,359 +50,116 @@
 
             <div class="team-member allview">
                 <section id="all">
-                    <p>hello</p>
-                  <div>
-                    {%for name,email,department,profile in allteamsdetails%}
-                    <h2>{{name}}</h2>
-                    <h2>{{email}}</h2>
-                    <h2>{{department}}</h2>
-                    <h2>{{profile}}</h2>
-                    {%endfor%}
-                  </div>
+              <div class="" id="team-s-main">
+                {%for name,email,department,profile in allteamsdetails%}
+                <div class="team-row">
+                   
+                    <div class="profile-sec">
+                        <img src="{{profile}}" alt="">
+                    </div>
+                    <h6>{{name}}</h6>
+                    <p>{{email}}</p>
+                    <p>{{department}}</p>
+                </div>
+                {%endfor%}
+              </div>    
+              
                 </section>
 
                 <section id="rnd">
-                    <!-- rnd emply -->
-
-                    <!-- rnd emply -->
-
-                    <!-- <div class="d-f">
-                        <div class="empls">
-                            <div class="shape-line ram">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/ram-bro.png' %}" alt="Ramkumar R&D" class="img-fluid">
-
-                            </div>
-                            <div class="shape-text-con">
-                                <h6>Raamkumar</h6>
-                                <p>R&D</p>
-                                <p class="email-link" onclick="location.href='mailto:raamkumar@onwords.in'">
-                                    ram@onwords.in</p>
-                            </div>
-
-                        </div>
-                        <div class="empls">
-                            <div class="shape-line prem">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/prem-r&d.png' %}" alt="preamkumar R&D" class="img-fluid">
-
-                            </div>
-                            <div class="shape-text-con">
-                                <h6>Preamkumar</h6>
-                                <p>R&D</p>
-                                <p class="email-link" onclick="location.href='mailto:prem@onwords.in'">
-                                    prem@onwords.in</p>
-                            </div>
-
-                        </div>
-
-                        <div class="empls">
-                            <div class="shape-line yugan">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/yugan-r&d.png' %}" alt="yugan R&D" class="img-fluid">
-
-                            </div>
-                            <div class="shape-text-con">
-                                <h6>yugan</h6>
-                                <p>R&D</p>
-                                <p class="email-link" onclick="location.href='mailto:yugan@onwords.in'">
-                                    yugan@onwords.in</p>
-                            </div>
-
-                        </div>
-                        <div class="empls">
-                            <div class="shape-line sathish">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/sathish-r&d.png' %}" alt="sathish R&D" class="img-fluid">
-
-                            </div>
-                            <div class="shape-text-con">
-                                <h6>Sathish Charles</h6>
-                                <p>R&D</p>
-                                <p class="email-link" onclick="location.href='mailto:sathish@onwords.in'">
-                                    sathish@onwords.in</p>
-                            </div>
-
-                        </div>
-                        <div class="empls">
-                            <div class="shape-line sp">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/sp-r&d.png' %}" alt="santhaprasanth R&D" class="img-fluid">
-
-                            </div>
-                            <div class="shape-text-con">
-                                <h6>Santha Prasanth</h6>
-                                <p>R&D</p>
-                                <p class="email-link" onclick="location.href='mailto:santhaprasanth@onwords.in'">
-                                    santhaprasanth@onwords.in</p>
-                            </div>
-
-                        </div>
-                        <div class="empls">
-                            <div class="shape-line mohan">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/mohan-r&d.png' %}" alt="Mohankumar R&D" class="img-fluid">
-
-                            </div>
-                            <div class="shape-text-con">
-                                <h6>Mohan kumar</h6>
-                                <p>R&D</p>
-                                <p class="email-link" onclick="location.href='mailto:Mohankumar.k@onwords.in'">
-                                    Mohankumar.k@onwords.in</p>
-                            </div>
-
-                        </div>
-                        <div class="empls">
-                            <div class="shape-line anwar">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/anwar-r&d.png' %}" alt="Anwar R&D" class="img-fluid">
-
-                            </div>
-                            <div class="shape-text-con">
-                                <h6>Ahamed Anwar</h6>
-                                <p>R&D</p>
-                                <p class="email-link" onclick="location.href='mailto:ahamed.anwar.k@onwords.in'">
-                                    ahamed.anwar.k@onwords.in</p>
-                            </div>
-
-                        </div>
-                        <div class="empls">
-                            <div class="shape-line ramprasath">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/ramkumar-r&di.png' %}" alt="raamprasath R&D" class="img-fluid">
-
-                            </div>
-                            <div class="shape-text-con">
-                                <h6>Ramprasath</h6>
-                                <p>R&D Installation</p>
-                                <p class="email-link" onclick="location.href='mailto:raamprasath@onwords.in'">
-                                    ramprasath@onwords.in</p>
-                            </div>
-
-                        </div>
-                        <div class="empls">
-                            <div class="shape-line aravind">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/aravind-r&di.png' %}" alt="aravind R&D" class="img-fluid">
-
-                            </div>
-                            <div class="shape-text-con">
-                                <h6>Aravinthan</h6>
-                                <p>R&D Installation</p>
-                                <p class="email-link" onclick="location.href='mailto:aravinthan@onwords.in'">
-                                    aravinthan@onwords.in</p>
-                            </div>
-
-                        </div>
-
-                        <div class="empls">
-                            <div class="shape-line haresh">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/haresh-r&di.png' %}" alt="Haresh R&D" class="img-fluid">
-
-                            </div>
-                            <div class="shape-text-con">
-                                <h6>Haresh</h6>
-                                <p>R&D Installation</p>
-                                <p class="email-link" onclick="location.href='mailto:haresh.s@onwords.in'">
-                                    haresh.s@onwords.in</p>
-                            </div>
-
-                        </div>
-                        <div class="empls">
-                            <div class="shape-line gokul">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/gokul-r&di.png' %}" alt="gokul R&D" class="img-fluid">
-
-                            </div>
-                            <div class="shape-text-con">
-                                <h6>GokulRaj</h6>
-                                <p>R&D Installation</p>
-                                <p class="email-link" onclick="location.href='mailto:gokulraj@onwords.in'">
-                                    gokulraj@onwords.in</p>
-                            </div>
-
-                        </div>
-                        <div class="empls">
-                            <div class="shape-line naveen">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/navin-r&di.png' %}" alt="NAvin R&D" class="img-fluid">
-
-                            </div>
-                            <div class="shape-text-con">
-                                <h6>Naveen</h6>
-                                <p>R&D Installation</p>
-                                <p class="email-link" onclick="location.href='mailto:naveen.s@onwords.in'">
-                                    naveen.s@onwords.in</p>
-                            </div>
-
-                        </div>
-                        <div class="empls">
-                            <div class="shape-line santhosh">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/santhosh-r&di.png' %}" alt="Santhosh R&D" class="img-fluid">
-
-                            </div>
-                            <div class="shape-text-con">
-                                <h6>Santhosh</h6>
-                                <p>R&D Installation</p>
-                                <p class="email-link" onclick="location.href='mailto:santhosh.k@onwords.in'">
-                                    santhosh.k@onwords.in</p>
-                            </div>
-
-                        </div>
-
-                    </div> -->
-
-
-
+                      <div class="" id="team-s-main">
+                {%for name,email,department,profile in rndteam %}
+                <div class="team-row">
+                   
+                    <div class="profile-sec">
+                        <img src="{{profile}}" alt="">
+                    </div>
+                    <h6>{{name}}</h6>
+                    <p>{{email}}</p>
+                    <p>{{department}}</p>
+                </div>
+                {%endfor%}
+              </div>  
 
 
                 </section>
 
 
                 <section id="management">
-                    <!-- admin -->
-                    Management
+                    <div class="" id="team-s-main">
+                        {%for name,email,department,profile in adminteam%}
+                        <div class="team-row">
+                           
+                            <div class="profile-sec">
+                                <img src="{{profile}}" alt="">
+                            </div>
+                            <h6>{{name}}</h6>
+                            <p>{{email}}</p>
+                            <p>{{department}}</p>
+                        </div>
+                        {%endfor%}
+                      </div>  
                 </section>
 
                 <section id="it">
-                    <!-- it empl -->
-                    
-                    <!-- it empl -->
-                    <!-- <div class="d-f">
-                        <div class="empls">
-                            <div class="shape-line koushik">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/koushik-it.png' %}" alt="Koushik IT" class="img-fluid">
-
+                    <div class="" id="team-s-main">
+                        {%for name,email,department,profile in webteam%}
+                        <div class="team-row">
+                           
+                            <div class="profile-sec">
+                                <img src="{{profile}}" alt="">
                             </div>
-                            <div class="shape-text-con">
-                                <h6>Koushik Romel</h6>
-                                <p>Web Development</p>
-                                <p class="email-link" onclick="location.href='mailto:koushik@onwords.in'">
-                                    koushik@onwords.in</p>
-                            </div>
-
+                            <h6>{{name}}</h6>
+                            <p>{{email}}</p>
+                            <p>{{department}}</p>
                         </div>
-                        <div class="empls">
-                            <div class="shape-line ">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/vinith-it.png' %}" alt="Vinith IT" class="img-fluid">
-
+                        {%endfor%}
+                      </div>  
+                    <div class="" id="team-s-main">
+                        {%for name,email,department,profile in appteam%}
+                        <div class="team-row">
+                           
+                            <div class="profile-sec">
+                                <img src="{{profile}}" alt="">
                             </div>
-                            <div class="shape-text-con">
-                                <h6>Vinith</h6>
-                                <p>Web Development</p>
-                                <p class="email-link" onclick="location.href='mailto:Vinith@onwords.in'">
-                                    vinith@onwords.in</p>
-                            </div>
-
+                            <h6>{{name}}</h6>
+                            <p>{{email}}</p>
+                            <p>{{department}}</p>
                         </div>
-                        <div class="empls">
-                            <div class="shape-line ">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/-it.png' %}" alt="sanjeev IT" class="img-fluid">
-
+                        {%endfor%}
+                      </div>  
+                    <div class="" id="team-s-main">
+                        {%for name,email,department,profile in mediateam%}
+                        <div class="team-row">
+                           
+                            <div class="profile-sec">
+                                <img src="{{profile}}" alt="">
                             </div>
-                            <div class="shape-text-con">
-                                <h6>Sanjeev</h6>
-                                <p>Web Development</p>
-                                <p class="email-link" onclick="location.href='mailto:sanjeev@onwords.in'">
-                                    sanjeev@onwords.in</p>
-                            </div>
-
+                            <h6>{{name}}</h6>
+                            <p>{{email}}</p>
+                            <p>{{department}}</p>
                         </div>
-                        <div class="empls">
-                            <div class="shape-line gokila">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/gokila-it.png' %}" alt="gokila IT" class="img-fluid">
-
-                            </div>
-                            <div class="shape-text-con">
-                                <h6>Gokilavani</h6>
-                                <p>Web Development</p>
-                                <p class="email-link" onclick="location.href='mailto:gokilavani@onwords.in'">
-                                    gokilavani@onwords.in</p>
-                            </div>
-
-                        </div>
-                        <div class="empls">
-                            <div class="shape-line jibin">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/jibin-it.png' %}" alt="Jibin IT" class="img-fluid">
-
-                            </div>
-                            <div class="shape-text-con">
-                                <h6>Jibin k.John</h6>
-                                <p>App Development</p>
-                                <p class="email-link" onclick="location.href='mailto:jibin@onwords.in'">
-                                    jibin@onwords.in</p>
-                            </div>
-
-                        </div>
-                        <div class="empls">
-                            <div class="shape-line mohan">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/mohan-it.png' %}" alt="mohan IT" class="img-fluid">
-
-                            </div>
-                            <div class="shape-text-con">
-                                <h6>Mohan</h6>
-                                <p>App Development</p>
-                                <p class="email-link" onclick="location.href='mailto:mohan@onwords.in'">
-                                    mohan@onwords.in</p>
-                            </div>
-
-                        </div>
-                        <div class="empls">
-                            <div class="shape-line ">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/ganesh-med.png' %}" alt="Ganesh IT" class="img-fluid">
-
-                            </div>
-                            <div class="shape-text-con">
-                                <h6>Ganesh</h6>
-                                <p>Graphics Designer</p>
-                                <p class="email-link" onclick="location.href='mailto:ganesh@onwords.in'">
-                                    ganesh@onwords.in</p>
-                            </div>
-
-                        </div>
-                        <div class="empls">
-                            <div class="shape-line jothi">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/jothi-med.png' %}" alt="jothi IT" class="img-fluid">
-
-                            </div>
-                            <div class="shape-text-con">
-                                <h6>Jothiprakash</h6>
-                                <p>Graphics Designer</p>
-                                <p class="email-link" onclick="location.href='mailto:jothiprakash@onwords.in'">
-                                    jothiprakash@onwords.in</p>
-                            </div>
-
-                        </div>
-                        <div class="empls">
-                            <div class="shape-line ram-med">
-                                <div class="shape-box"></div>
-                                <img src="{% static 'main-webp/ram-med.png' %}" alt="ram IT" class="img-fluid">
-
-                            </div>
-                            <div class="shape-text-con">
-                                <h6>Ramkumar</h6>
-                                <p>Graphics Designer</p>
-                                <p class="email-link" onclick="location.href='mailto:ramkumar@onwords.in'">
-                                    ramkumar@onwords.in</p>
-                            </div>
-
-                        </div>
-                    </div> -->
+                        {%endfor%}
+                      </div>  
                 </section>
 
-                <section id="pr">PR</section>
+                <section id="pr">
+                    <div class="" id="team-s-main">
+                        {%for name,email,department,profile in prteam%}
+                        <div class="team-row">
+                           
+                            <div class="profile-sec">
+                                <img src="{{profile}}" alt="">
+                            </div>
+                            <h6>{{name}}</h6>
+                            <p>{{email}}</p>
+                            <p>{{department}}</p>
+                        </div>
+                        {%endfor%}
+                      </div>  
+                </section>
 
-                <section id="civil">civil</section>
+                <!-- <section id="civil">civil</section> -->
             </div>
         </div>
 

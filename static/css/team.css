@@ -436,6 +436,7 @@
     margin: 0;
 }
 
+
 @media screen and (max-width:1000px) {
     .empls {
         width: 80% !important;

@@ -136,10 +136,20 @@ def team(request):
                 
     allteamsdetails=zip(name,email,department,profile)
     webteam=zip(webname,webemail,webdepartment,webprofile)
+    appteam=zip(appname,appemail,appdepartment,appprofile)
+    mediateam=zip(medianame,mediaemail,mediadepartment,mediaprofile)
+    rndteam=zip(rndname,rndemail,rnddepartment,rndprofile)
     prteam=zip(prname,premail,prdepartment,prprofile)
+    adminteam=zip(adminname,adminemail,admindepartment,adminprofile)
 
     context={
-       "allteamsdetails":allteamsdetails 
+       "allteamsdetails":allteamsdetails,
+       "webteam":webteam,
+       "appteam":appteam,
+       "mediateam":mediateam,
+       "rndteam":rndteam,
+       "prteam":prteam,
+       "adminteam":adminteam 
     }
     return render(request,'team.html',context)    
 def downloads(request):

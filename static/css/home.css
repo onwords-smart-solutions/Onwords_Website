@@ -3159,3 +3159,22 @@ transform: scale(1.2);
 }
 
 /* ============== */
+
+.profile-sec img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+#team-s-main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.team-row{
+    width: 24%;
+    margin: 20px 5px;
+    text-align: center;
+    /* background-color: red; */
+    height: 200px;
+}
