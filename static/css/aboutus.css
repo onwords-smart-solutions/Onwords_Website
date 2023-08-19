@@ -105,3 +105,8 @@
     text-align: center;
     padding: 5px 20px;
 }
+.aboutus-quote{
+    background: url(../main-webp/aboutus-quote-img.webp);
+    background-repeat: no-repeat;
+    
+}
