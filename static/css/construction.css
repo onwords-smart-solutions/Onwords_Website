@@ -88,7 +88,7 @@
   
   .slider .wrapper .left > div h2 {
     font-size: 3rem;
-    font-weight: 700;
+    /* font-weight: 700; */
     margin-bottom: 25px;
    color: #fff;
   }
@@ -189,6 +189,13 @@ object-fit: contain;
   flex-direction: column;
   }
   .text-const h2{
-    font-size: 54px;
-    margin-bottom: 40px;
+    font-size: 2rem;
+    margin-bottom: 10px;
   }
+  .text-const p{
+    font-size: 18px;
+  }
+  .cons-p-text{
+    font-size: 18px;
+  }
+  
