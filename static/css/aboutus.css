@@ -49,3 +49,14 @@
     border-radius: 10px !important;
   
 }
+.row-col{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.box-about{
+    width: 32%;
+    text-align: center;
+    padding: 5px 20px;
+}
