@@ -132,12 +132,14 @@ def team(request):
             try:
                 adminprofile.append(staff[uid]["profileImage"])
             except:
-                adminprofile.append("False")                                                                      
+                adminprofile.append("False")
+                
+    allteamsdetails=zip(name,email,department,profile)
+    webteam=zip(webname,webemail,webdepartment,webprofile)
+    prteam=zip(prname,premail,prdepartment,prprofile)
+
     context={
-        "name":name,
-        "email":email,
-        "department":department,
-        "profile":profile
+       "allteamsdetails":allteamsdetails 
     }
     return render(request,'team.html',context)    
 def downloads(request):
