@@ -347,7 +347,7 @@ input:checked+.sliders:before {
     /* align-items: center; */
     justify-content: space-between;
     flex-direction: column;
-    z-index: 999;
+    z-index: 99;
 }
 
 .v-button {

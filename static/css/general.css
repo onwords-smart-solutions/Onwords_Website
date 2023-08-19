@@ -186,4 +186,14 @@
 }
 
 /* --------- */
-
+#preloade {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../main-webp/preloader-gif.gif);
+    background-color: #040504;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    z-index: 1040;
+    position: fixed;
+}

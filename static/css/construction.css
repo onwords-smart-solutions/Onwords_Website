@@ -87,7 +87,7 @@
   }
   
   .slider .wrapper .left > div h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     /* font-weight: 700; */
     margin-bottom: 25px;
    color: #fff;
@@ -129,7 +129,7 @@
     position: relative;
   }
   .consc-banner-title{
-    font-size: 54px;
+    font-size: 2rem;
   }
   
   .consc-banner-top-bg{
@@ -138,7 +138,7 @@
     height: auto;
     top: -20px;
     padding: 20px 0px;
-    color: #000;
+    color: #040507;
   }
  
   .consc-banner-top-bg p{

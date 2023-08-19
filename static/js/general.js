@@ -205,3 +205,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ----------------mob nav hamburger-------------
 
+const loaders = document.getElementById('preloade')
+
+window.addEventListener('load',()=>{
+  loaders.style.display="none"
+})
