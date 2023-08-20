@@ -349,9 +349,10 @@
     bottom: 10px;
     align-items: center;
     width: 100%;
-    left: 12%;
+    /* left: 8%; */
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .single-con {
@@ -410,15 +411,15 @@
 
 @keyframes img-sm {
     0% {
-        background-image: url(../main-webp/smarthome-night.webp);
+        background-image: url(../main-webp/nig-png.png);
     }
 
     50% {
-        background-image: url(../main-webp/smarthome-day.webp);
+        background-image: url(../main-webp/day-png.png);
     }
 
     100% {
-        background-image: url(../main-webp/smarthome-night.webp);
+        background-image: url(../main-webp/nig-png.png);
     }
 
 }

@@ -13,7 +13,29 @@
    .demo-cons{
       height: 50vh;
    }
-   
+   .modal-body {
+     width: 100%;
+      height: auto;
+      margin:0;
+      background: radial-gradient(#fff2 30%, #fff4);
+      border-radius: 20px;
+      box-shadow: 5px 5px 10px #0007, -1px -1px 2px #fff, 1px 1px 2px #555;
+      backdrop-filter: blur(5px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transform: translateY(25px);
+      transition: transform .25s;
+      /* padding: 50px 200px !important; */
+      /* padding-bottom: 20px;
+      p */
+      padding: 0;
+  }
+  .btn-close{
+   right: -11px;
+  }
    .anim-press-btn{
       white-space: nowrap;
       font-size: 16px;
@@ -798,7 +820,7 @@
       width: 100%;
       max-width: 100%;
       position: relative;
-      top: 20%;
+      top: 24%;
       height: 22vh;
       /* line-height: 50vh; */
    }
@@ -842,6 +864,7 @@
    .grp-btn {
       height: 30%;
       margin-left: 14px;
+      top: 35px;
    }
 
    .home-bg {
@@ -1159,7 +1182,9 @@
 
    .modal-content {
       margin-top: 100px;
-      width: 75%;
+      width: 56%;
+      margin-left: -225px;
+      
    }
    .about-quote{
       height: 50vh;
