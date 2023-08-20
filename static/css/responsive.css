@@ -379,11 +379,11 @@
 
    .fourth-ajax {
       height: 30vh;
-      object-fit: contain;
+/* object-fit: contain; */
       width: 100%;
       background-position: center !important;
       background-repeat: no-repeat !important;
-      background-size: cover;
+      background-size: 50%;
 
    }
 
@@ -726,9 +726,7 @@
 
 
 
-   .fourth-ajax {
-      background-size: contain;
-   }
+   
 
    .contact-form input {
       width: 100%;
@@ -925,9 +923,7 @@
       font-size: 34px;
    }
 
-   .fourth-ajax {
-      height: 40vh;
-   }
+  
 
    .our-story::after {
       display: none;
@@ -1095,7 +1091,7 @@
    }
 
    .slider .wrapper .left {
-      width: 70%;
+      width: 60%;
       overflow: hidden;
    }
 

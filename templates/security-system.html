@@ -98,10 +98,10 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
                         <div class="security-sec">
-                            <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
+                            <div class="sec-title">
                                 <h2>Your Protection in an imperfection world </h2>
                             </div>
-                            <p class="text-center">
+                            <p class="text-center reveal fade-b" data-wow-delay="0.1s">
                                 At Ajax, we believe that people shouldn’t have to live in fear in today's world. Our
                                 continually
                                 evolving security system gives people peace of mind. When you're under the reliable
@@ -120,7 +120,11 @@
         <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
             <h2>Innovation to protect</h2>
         </div>
-        <section class="third-ajax-sec reveal fade-top text-white " data-wow-delay="0.1s">
+        <section class="third">
+            <video src="{% static 'main-webp/ajax-1.webm' %}" loop autoplay muted></video>
+        </section>
+
+        <!-- <section class="third-ajax-sec reveal fade-top text-white " data-wow-delay="0.1s">
             <div class="container">
                 <div class="row dg-col">
                     <div class="col-md-2">
@@ -176,7 +180,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <div class="sec-title reveal fade-left " data-wow-delay="0.1s">
             <h2>Our Products</h2>
             <h4>Wireless security devices of the Ajax system</h4>
@@ -225,22 +229,26 @@
         </section>
         <section class="secure-video">
             <video src="{% static 'main-webp/secure-video.mp4' %}" muted autoplay loop></video>
+           
         </section>
 
         <section>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h2>Motion Cam Outdoor</h2>
-                        <h6>Wireless motion detector taking photos by alarm and on demand</h6>
-
-                        <p>Special lens</p>
-                        <p>Intellect against false alarms</p>
-                        <p>Filter for thermal interferences</p>
-                        <p>Unique wireless technologies</p>
-                        <p>Sensitivity level</p>
-                        <p>More security</p>
-                        <p>Professional installation</p>
+                        <div class="motion-secure">
+                            <h2>Motion Cam Outdoor</h2>
+                            <h6>Wireless motion detector taking photos by alarm and on demand</h6>
+                            <ul class="li-sec">
+                                <li>Special lens</li>
+                                <li>Intellect against false alarms</li>
+                                <li>Filter for thermal interferences</li>
+                                <li>Unique wireless technologies</li>
+                                <li>Sensitivity level</li>
+                                <li>More security</li>
+                                <li>Professional installation</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <img src="{% static 'main-webp/motion-cam.png' %}" alt="motion-img" class="img-fluid">
@@ -252,20 +260,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="right-motion-content">
-                            <h1>Dual Curtain Outdoor</h1>
-                            <h5>Two detectors in one</h5>
-                            <h5>Masking sensors</h5>
-                            <h5>Unique optical sysytems</h5>
-                            <h5>Flexible settings of detection zones</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="section-motion-img">
+                        <div class="section-motion-img  reveal fade-opacity" data-wow-delay="0.1s">
                             <img src="{% static 'main-webp/ajax-component-3.png' %}" alt="ajax-component"
                                 class="img-fluid">
                         </div>
                     </div>
+                    <div class="col-md-6">
+                        <div class="right-motion-content">
+                            <h1>Dual Curtain Outdoor</h1>
+                            <p>Two detectors in one</p>
+                            <p>Masking sensors</p>
+                            <p>Unique optical sysytems</p>
+                            <p>Flexible settings of detection zones</p>
+                        </div>
+                    </div>
+                   
                 </div>
 
             </div>
@@ -273,6 +282,9 @@
 
         <section class="secure-video">
             <video src="{% static 'main-webp/constructor-bg.mp4' %}" muted loop autoplay></video>
+            <div class="secure-video-text">
+                <h2>Choose the most suitable Ajax set in 2 <br> minutes</h2>
+            </div>
         </section>
         <section>
             <div class="last-ajax">
@@ -361,8 +373,8 @@
                             <p onclick="location.href='//www.facebook.com/teamonwords/'
                                 " target="_blank"><i class="fa-brands fa-facebook"></i>
                             </p>
-                            <p onclick="location.href='//www.youtube.com/@OnwordsSmartSolutions/'" target=" _blank"
-                               ><i class="fa-brands fa-square-youtube"></i></p>
+                            <p onclick="location.href='//www.youtube.com/@OnwordsSmartSolutions/'" target=" _blank"><i
+                                    class="fa-brands fa-square-youtube"></i></p>
                         </div>
 
                         <div class="footer-foot">
