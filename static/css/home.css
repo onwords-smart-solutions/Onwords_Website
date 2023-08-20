@@ -2632,6 +2632,7 @@ transform: scale(1.2);
    justify-content: center;
    text-align: center;
    flex-direction: column;
+   color: #fff;
 }
 
 .abt-button {
@@ -3153,7 +3154,7 @@ transform: scale(1.2);
     border: none;
     /*   box-shadow: 1px 1px 4px #eee; */
     color: #fff;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 2px;
     font-size: .75em;
     font-weight: 600;

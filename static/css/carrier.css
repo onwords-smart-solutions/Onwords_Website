@@ -2,15 +2,24 @@
     background-image: url(../main-webp/carrier-img.webp);
     width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    flex-direction: column;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 140px;
+    position: relative;
 
+}
+.carrier-para{
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.carrier-para h2{
+    font-size: 24px;
+}
+.carrier-para p{
+    font-size: 18px;
 }
 
 
@@ -129,14 +138,17 @@
     display: block;
     margin-bottom:30px;
     padding-top: 0px;
-    border-bottom: 1px solid #fff;
+    
 }
 .upload-resume input{
-    /* margin-left: 100px; */
+    margin-left: 100px;
     visibility: hidden;
 }
 .upload-resume label{
-    margin:20px 0px;
+    margin-left: 50px;
+    border-bottom: 1px solid #fff;
+    width: 85%;
+    padding-bottom: 20px;
 } 
 .plus{
    font-size: 20px;

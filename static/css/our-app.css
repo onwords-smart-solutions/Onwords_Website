@@ -110,13 +110,14 @@
   margin-left: 20px;
 }
 
+.our-app-p{
+  font-size: 18px;
+}
 .app-store-content h5 {
-  text-transform: uppercase;
+  text-transform: capitalize !important;
 }
 
-.app-store-content p {
-  color: #6C6C72;
-}
+
 
 .app-con-sec {
   margin-top: 100px;
@@ -255,7 +256,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1em;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   background: linear-gradient(180deg, #7652E2 0%, #CB4DA6 100%);
   border-radius: 50%;
@@ -350,6 +353,7 @@
   background-blend-mode:screen;
   padding: 0;
   margin: 0;
+  height: 100%;
 }
 
 .center-mob-fix img {
@@ -374,6 +378,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.qr{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .qr img{
