@@ -886,7 +886,7 @@ section {
     width: 60px;
     /* background-color: #fff; */
     border-radius: 100%;
-    margin: 0px 30px;
+    margin: 0px 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2278,7 +2278,7 @@ transform: scale(1.2);
     transition: transform .25s;
     /* padding: 50px 200px !important; */
     padding-bottom: 20px;
-    color: #fff;
+    color: #fff !important;
 }
 .modal-body button:active,
 .modal-body button:focus{
@@ -2297,11 +2297,10 @@ transform: scale(1.2);
     background: none;
     outline: none !important;
     border: none;
-    box-shadow: none;
-}
-.btn-close i{
+    box-shadow: none; 
     color: #ffff !important;
 }
+
 
 .btn-close:focus,
 .btn-close:active {
@@ -2309,6 +2308,7 @@ transform: scale(1.2);
     outline: none !important;
     box-shadow: none;
     border: none;
+    color: #fff !important;
 }
 
 .modal-body p {

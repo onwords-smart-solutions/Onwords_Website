@@ -132,7 +132,10 @@ function toggleDarkMob() {
     localStorage.setItem("theme", "light");
     nightBtnMob.style.display = 'none'
     sunBtnMob.style.display = 'block'
- 
+    borLf.style.border='2px solid #040507'
+    borLs.style.border='2px solid #040507'
+    borLt.style.border='2px solid #040507'
+    borLfo.style.border='2px solid #040507'
     for (const footerIcons of footerIcon) {
       footerIcons.style.color = '#fff'
     }

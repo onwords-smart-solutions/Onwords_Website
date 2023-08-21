@@ -165,12 +165,13 @@
 
 .app-feature {
   text-align: center;
+  margin: 20px 0px;
 }
 
 .app-feature img {
  width: 30px;
  object-fit: contain;
- h30px
+ height: 30px;
 }
 
 .fghs {

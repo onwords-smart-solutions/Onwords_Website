@@ -245,5 +245,34 @@
     height: auto;
     text-transform: capitalize;
   }
+  .contact-lin{
+    padding: 0px 20px;
+    position: absolute;
+    top: -20px;
+    text-align: center;
+    font-size: 2rem;
+    width: fit-content;
+    height: auto;
+    text-transform: capitalize;
+  }
+  
+  .contact-lin::after {
+    position: absolute;
+    content: '';
+    width: 39%;
+    height: 2px;
+    left: 0;
+    background: linear-gradient(89.98deg, #C94DA7 0.01%, #7B52DE 97.71%);
+    z-index: -1;
+  }
+  .contact-lin::before {
+    position: absolute;
+    content: '';
+    width: 39%;
+    height: 2px;
+    right: 0;
+    background: linear-gradient(89.98deg, #C94DA7 0.01%, #7B52DE 97.71%);
+    z-index: -1;
+  }
   
   

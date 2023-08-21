@@ -10,6 +10,41 @@
       white-space: nowrap;
       font-size: 18px;
    }
+   .mob-mock-adjus{
+      width: 215px !important;
+      height: 355px !important;
+      margin-left: -20px;
+      margin-top: -20px;
+   }
+   .mob-center-fix{
+      display: flex;
+      flex-direction: column;
+      height: 85vh;
+      position: relative;
+     }
+     .left-mob-fix{
+      flex-direction: row !important;
+      display: flex;
+      width: 100% !important;
+      position: absolute;
+      bottom: 20px;
+      margin: 10px 0px;
+     }
+     .center-mob-fix{
+      width: 100% !important;
+      /* height: 30vh; */
+      /* position: absolute; */
+      top: 0;
+     }
+     .right-mob-fix{
+      flex-direction: row !important;
+      display: flex;
+      width: 100% !important;
+
+     }
+   .onwords-paraz{
+      font-size: 12px;
+   }
    .demo-cons{
       height: 50vh;
    }
@@ -565,6 +600,13 @@
       margin-top: 100px;
       height: 400px !important;
    }
+   .app-feature img {
+      width: 20px;
+      object-fit: contain;
+      height: 20px;
+     }
+
+    
 
    .iphone-13 {
       display: flex;
@@ -1240,7 +1282,9 @@
    .slider .wrapper .right>div img{
       margin-top: 260px;
    }
-   
+   .mob-center-fix{
+      height: 70vh;
+   }
 
    .box-about {
       width: 80%;
