@@ -59,6 +59,10 @@ const header = document.querySelector('nav')
 const module = document.querySelectorAll('.module')
 const privacy = document.querySelectorAll('.privacy-h2')
 var headers = document.querySelectorAll("header");
+const borLf = document.querySelector('.bor-l')
+const borLs = document.querySelector('.bor-l2')
+const borLt = document.querySelector('.bor-l3')
+const borLfo = document.querySelector('.bor-l4')
 function toggleDark() {
 
 
@@ -67,6 +71,10 @@ function toggleDark() {
       var header = document.querySelectorAll("header");
       header.classList.toggle("sticky", window.scrollY > 0)
     })
+    borLf.style.border='2px solid #040507'
+    borLs.style.border='2px solid #040507'
+    borLt.style.border='2px solid #040507'
+    borLfo.style.border='2px solid #040507'
     body.classList.remove('dark');
     localStorage.setItem("theme", "light");
     nightBtn.style.display = 'none'
@@ -75,6 +83,7 @@ function toggleDark() {
     for(const privacys in privacy){
       privacys.backgroundColor='#fff'
     }
+   
    
   
   }

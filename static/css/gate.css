@@ -11,7 +11,7 @@
 .gate-para {
     text-align: center;
     position: absolute;
-    bottom: 8px;
+    bottom: 20px;
     display: flex;
     justify-content: space-evenly;
     width: 100%;

@@ -2093,6 +2093,7 @@ transform: scale(1.2);
 
 .horizontal {
     display: flex;
+    margin-top: 120px;
 
 }
 
@@ -2211,7 +2212,7 @@ transform: scale(1.2);
 
 }
 
-.login-reg {}
+
 
 
 .fgx input {
@@ -2297,6 +2298,9 @@ transform: scale(1.2);
     outline: none !important;
     border: none;
     box-shadow: none;
+}
+.btn-close i{
+    color: #ffff !important;
 }
 
 .btn-close:focus,
