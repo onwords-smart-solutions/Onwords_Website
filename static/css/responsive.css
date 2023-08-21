@@ -10,6 +10,10 @@
       white-space: nowrap;
       font-size: 18px;
    }
+
+   .text-const h2 {
+      font-size: 24px;
+   }
    .mob-mock-adjus{
       width: 215px !important;
       height: 355px !important;
@@ -350,6 +354,9 @@
    .nav-item {
       margin: 0px 2px;
    }
+   .nav-item:focus{
+      border: none !important;
+   }
 
    .dropdown-menu li {
       text-align: center;
@@ -358,7 +365,7 @@
 
 
    .active-nav {
-      border: none;
+      border: none !important;
    }
 
    /* ---our services start */
@@ -1296,9 +1303,7 @@
       top: 80%;
    }
 
-   .text-const h2 {
-      font-size: 34px;
-   }
+   
 
    .mobil-acces img {
       display: none;

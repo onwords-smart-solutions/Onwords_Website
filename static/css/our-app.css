@@ -58,6 +58,12 @@
   justify-content: center;
   padding-top: 30px;
   width: 50%;
+  cursor: pointer;
+  /* background-color: #7353E5; */
+}
+.add-download p{
+  cursor: pointer;
+  z-index: 1;
 }
 
 .iphone-13 {
@@ -379,13 +385,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 .qr{
-  width: 100%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column !important;
 }
 
 .qr img{

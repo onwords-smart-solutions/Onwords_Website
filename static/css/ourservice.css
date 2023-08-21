@@ -414,15 +414,15 @@
 
 @keyframes img-sm {
     0% {
-        background-image: url(../main-webp/nig-png.png);
-    }
-
-    50% {
         background-image: url(../main-webp/day-png.png);
     }
 
-    100% {
+    50% {
         background-image: url(../main-webp/nig-png.png);
+    }
+
+    100% {
+        background-image: url(../main-webp/day-png.png);
     }
 
 }

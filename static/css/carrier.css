@@ -6,6 +6,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    top: -50px;
 
 }
 .carrier-para{
@@ -16,7 +17,7 @@
     transform: translate(-50%,-50%)
 }
 .carrier-para h2{
-    font-size: 24px;
+    font-size: 2rem;
 }
 .carrier-para p{
     font-size: 18px;
@@ -170,12 +171,13 @@
 .carrer-opt select{
     width: 80%;
     height: 100%;
-    background-color: transparent;
+    background-color:#000;
     outline: none;
     border: none;
     position: absolute;
     top: 0;
     right: 0;
+    color: #fff;
 
 }
 
