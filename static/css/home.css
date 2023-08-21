@@ -690,6 +690,7 @@ section {
 
 .child-adv span {
     margin: 0px 20px;
+    font-size: 18px;
 }
 
 .child-adv-icon {
@@ -1008,7 +1009,7 @@ section {
 }
 
 .lead-boxs h2 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
     color: #fff;
 }
@@ -1882,11 +1883,11 @@ section {
 }
 
 .s-btn {
-   background: none;
-   outline: none;
-   border: none;
-   margin-bottom: 40px;
-   margin-top: 10px;
+    background: none;
+    outline: none;
+    border: none;
+    margin-bottom: 40px;
+    margin-top: 10px;
 }
 
 .modal {
@@ -2097,9 +2098,12 @@ transform: scale(1.2);
 
 .s {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     height: 100%;
+}
+.s img{
+    border-radius: 10px;
 }
 
 .second-roll {
@@ -2207,10 +2211,7 @@ transform: scale(1.2);
 
 }
 
-.login-reg {
-   
-
-}
+.login-reg {}
 
 
 .fgx input {
@@ -2265,7 +2266,7 @@ transform: scale(1.2);
     height: auto;
     background: radial-gradient(#fff2 30%, #fff4);
     border-radius: 20px;
-    box-shadow: 5px 5px 10px #0007, -1px -1px 2px #fff, 1px 1px 2px #555;
+    box-shadow: 5px 5px 10px #0007, -1px -1px 2px #fff, 1px 1px 2px #fff;
     backdrop-filter: blur(5px);
     display: flex;
     flex-direction: column;
@@ -2278,28 +2279,39 @@ transform: scale(1.2);
     padding-bottom: 20px;
     color: #fff;
 }
-.modal-body h2{
+.modal-body button:active,
+.modal-body button:focus{
+    outline: none;
+}
+.modal-body h2 {
     font-size: 24px;
     margin: 20px 0px;
 }
-.btn-close{
+
+.btn-close {
     right: 20px;
     position: absolute;
     top: 10px;
     margin: 0 20px;
     background: none;
-    outline: none;
+    outline: none !important;
     border: none;
+    box-shadow: none;
 }
-.btn-close:focus,.btn-close:focus-visible{
+
+.btn-close:focus,
+.btn-close:active {
     background: none;
-    outline: none;
+    outline: none !important;
+    box-shadow: none;
     border: none;
 }
-.modal-body p{
+
+.modal-body p {
     font-size: 12px;
 }
-.modal-content{
+
+.modal-content {
     background-color: transparent !important;
 }
 
@@ -2448,7 +2460,7 @@ transform: scale(1.2);
     position: absolute;
     top: 0;
     left: 0;
-    font-size:12px;
+    font-size: 12px;
     padding: 10px;
     pointer-events: none;
 }
@@ -2459,7 +2471,7 @@ transform: scale(1.2);
     transform: translateY(-13px)translateX(10px);
     padding: 0px 10px;
     border-radius: 3px;
-    background: radial-gradient(#fff2 30%, #fff4);
+    background: radial-gradient(#fff2 100%, #fff4);
 }
 
 /* ---carrier-form---- */
@@ -2998,13 +3010,15 @@ transform: scale(1.2);
     height: 100%;
     position: relative;
     padding: 0 10px;
+    margin: 0px 4px;
 }
 
 
 
-.go{
-    background:transparent !important;
+.go {
+    background: transparent !important;
 }
+
 .btns label {
     width: 90%;
     height: 100%;

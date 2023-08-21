@@ -213,7 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     counter("count1", 0, 1500, 3000);
     counter("count2", 100, 1000, 2500);
-    counter("count3", 0, 900, 3000);
+    counter("count3", 0, 10000, 3000);
 });
 // -------counter start
 

@@ -36,6 +36,9 @@
   .btn-close{
    right: -11px;
   }
+  .mob-cons-pag{
+   display: none;
+  }
    .anim-press-btn{
       white-space: nowrap;
       font-size: 16px;
