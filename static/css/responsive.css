@@ -10,10 +10,17 @@
       white-space: nowrap;
       font-size: 18px;
    }
-
+   
+   
    .text-const h2 {
       font-size: 24px;
    }
+   .text-const p{
+      font-size: 12px;
+   }
+   .cons-p-text {
+      font-size: 12px;
+  }
    .mob-mock-adjus{
       width: 215px !important;
       height: 355px !important;
@@ -702,7 +709,9 @@
    .main-img {
       height: 50vh;
       background-size: 100%;
+      position: relative;
    }
+
 
    .box-contact {
       height: 150px !important;
@@ -1106,9 +1115,7 @@
       border: none;
    }
 
-   .text-const h2 {
-      font-size: 34px;
-   }
+  
 
    .our-story::after {
       display: none;
@@ -1186,11 +1193,13 @@
       position: relative;
    }
 
-
+   .content-smart p{
+      font-size: 12px;
+   }
 
    .gate-para {
       font-size: 17px !important;
-      height: 73px;
+      top: 70%;
    }
 
    .slider .wrapper .left>div {

@@ -2535,7 +2535,7 @@ transform: scale(1.2);
 
 /* ---carrier-form---- */
 .box-group-input {
-    width: 80%;
+    width: 100%;
     border-bottom: 1px solid #fff;
     position: relative;
     border: 0;
@@ -3283,6 +3283,9 @@ transform: scale(1.2);
     top: -40px;
 }
 
+.contact-sub{
+    padding: 0px 60px;
+}
 
 
 /* ============== */
