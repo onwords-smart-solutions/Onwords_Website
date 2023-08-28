@@ -3287,5 +3287,17 @@ transform: scale(1.2);
     padding: 0px 60px;
 }
 
+.accordion-button:not(.collapsed){
+    background-color: #000 !important;
+    color: #fff !important;
+}
+.accordion-body{
+    background-color: #000 !important;
+    color: #fff !important;
+}
+.accordion-button {
+    background-color: #000 !important;
+    color: #fff !important;
+}
 
 /* ============== */
