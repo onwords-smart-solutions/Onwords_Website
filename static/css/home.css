@@ -3299,5 +3299,8 @@ transform: scale(1.2);
     background-color: #000 !important;
     color: #fff !important;
 }
+.accordion-header h6{
+    text-transform: capitalize !important;
+}
 
 /* ============== */
