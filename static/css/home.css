@@ -3302,5 +3302,8 @@ transform: scale(1.2);
 .accordion-header h6{
     text-transform: capitalize !important;
 }
+.interface-hid{
+    overflow: hidden;
+}
 
 /* ============== */
