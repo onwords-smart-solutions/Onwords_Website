@@ -47,31 +47,34 @@ const parkings = document.getElementById('parkings')
 //     }
 // }
 function both() {
-        if (toggle.checked == true)  {
-            bolconyOnBtn.style.display = 'block'
-            parkingOnBtn.style.display = 'block'
-            bolconyLights.style.display = 'none'
-            parkingLights.style.display = 'none'
-            allLightOn.style.display = 'block'
+    if (toggle.checked == true) {
+        bolconyOnBtn.style.display = 'block'
+        parkingOnBtn.style.display = 'block'
+        bolconyLights.style.display = 'none'
+        parkingLights.style.display = 'none'
+        allLightOn.style.display = 'block'
 
-        }
-        if (toggle.checked == false)  {
-            bolconyOnBtn.style.display = 'none'
-            parkingOnBtn.style.display = 'none'
-            bolconyLights.style.display = 'none'
-            parkingLights.style.display = 'none'
-            allLightOn.style.display = 'none'
+    }
 
-        }
-        if ((bolconys.checked == false) && (parkings.checked == true)) {
-            bolconyOnBtn.style.display = 'none'
-            parkingOnBtn.style.display = 'block'
-            bolconyLights.style.display = 'none'
-            parkingLights.style.display = 'block'
-            allLightOn.style.display = 'none'
-        }
+    if (toggle.checked == false) {
+        bolconyOnBtn.style.display = 'none'
+        parkingOnBtn.style.display = 'none'
+        bolconyLights.style.display = 'none'
+        parkingLights.style.display = 'none'
+        allLightOn.style.display = 'none'
+
+    }
+    if ((bolconys.checked == false) && (parkings.checked == true)) {
+        toggle.checked=false
+        bolconyOnBtn.style.display = 'none'
+        parkingOnBtn.style.display = 'block'
+        bolconyLights.style.display = 'none'
+        parkingLights.style.display = 'block'
+        allLightOn.style.display = 'none'
+    }
 
     if ((bolconys.checked == true) && (parkings.checked == true)) {
+        toggle.checked=true
         bolconyOnBtn.style.display = 'block'
         parkingOnBtn.style.display = 'block'
         bolconyLights.style.display = 'none'
@@ -80,21 +83,16 @@ function both() {
     }
 
     if ((bolconys.checked == true) && (parkings.checked == false)) {
+        toggle.checked=false
         bolconyOnBtn.style.display = 'block'
         parkingOnBtn.style.display = 'none'
         bolconyLights.style.display = 'block'
         parkingLights.style.display = 'none'
         allLightOn.style.display = 'none'
     }
-    if ((bolconys.checked == false) && (parkings.checked == true)) {
-        bolconyOnBtn.style.display = 'none'
-        parkingOnBtn.style.display = 'block'
-        bolconyLights.style.display = 'none'
-        parkingLights.style.display = 'block'
-        allLightOn.style.display = 'none'
-    }
-
+  
 }
+
 
 
 // function both() {
@@ -155,7 +153,7 @@ function both() {
 //     }
 // })
 
-    
+
 
 
 
