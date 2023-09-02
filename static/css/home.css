@@ -2103,7 +2103,8 @@ transform: scale(1.2);
     justify-content: center;
     height: 100%;
 }
-.s img{
+
+.s img {
     border-radius: 10px;
 }
 
@@ -2280,10 +2281,12 @@ transform: scale(1.2);
     padding-bottom: 20px;
     color: #fff !important;
 }
+
 .modal-body button:active,
-.modal-body button:focus{
+.modal-body button:focus {
     outline: none;
 }
+
 .modal-body h2 {
     font-size: 24px;
     margin: 20px 0px;
@@ -2297,7 +2300,7 @@ transform: scale(1.2);
     background: none;
     outline: none !important;
     border: none;
-    box-shadow: none; 
+    box-shadow: none;
     color: #ffff !important;
 }
 
@@ -3283,26 +3286,30 @@ transform: scale(1.2);
     top: -40px;
 }
 
-.contact-sub{
+.contact-sub {
     padding: 0px 60px;
 }
 
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
     background-color: #000 !important;
     color: #fff !important;
 }
-.accordion-body{
+
+.accordion-body {
     background-color: #000 !important;
     color: #fff !important;
 }
+
 .accordion-button {
     background-color: #000 !important;
     color: #fff !important;
 }
-.accordion-header h6{
+
+.accordion-header h6 {
     text-transform: capitalize !important;
 }
-.interface-hid{
+
+.interface-hid {
     overflow: hidden;
 }
 
