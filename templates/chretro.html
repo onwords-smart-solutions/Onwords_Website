@@ -91,15 +91,23 @@
         </button>
     </div>
     </div>
-    <div class="container">
-        <div class="chetro-container">
-            <video controls loop>
-                <source src="{% static 'main-webp/launch-vid.mp4' %}" type="video/mp4">
-            </video>
-            <!-- -->
-        </div>
-        <center><a href="{%static 'downloadsFiles/texts.zip' %}" download><button class="btn btn-secondary">manual</button></a></center>
+    <div class="chetro-container">
+        <video autoplay muted loop>
+            <source src="{% static 'main-webp/launch-vid.mp4' %}" type="video/mp4">
+        </video>
     </div>
+  <center>
+    <div class="manual">
+        <a href="{%static 'downloadsFiles/texts.zip' %}" download> <button type="submit" class="s-btn ">
+            <div class="go">
+                <div class="gradient-button px-3">
+                    <h5>Manual</h5>
+                </div>
+            </div>
+        </button></a>
+       </div>
+  </center>
+   
 
 
 
