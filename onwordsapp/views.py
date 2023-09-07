@@ -156,6 +156,10 @@ def team(request):
     return render(request,'team.html',context)    
 def downloads(request):
     return render(request,'downloads.html')    
+def onwordsSmartThingsApp(request):
+    return render(request,'onwordsSmartThingsApp.html')    
+def chretro(request):
+    return render(request,'chretro.html')    
  
 
 class RobotsTxtViews(TemplateView):

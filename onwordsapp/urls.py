@@ -19,7 +19,10 @@ urlpatterns=[
     path('carrier',views.carrier,name='carrier'),
     path('team',views.team,name='team'),
     path('downloads',views.downloads,name='downloads'),
+    path('onwords-smart-things-app',views.onwordsSmartThingsApp,name='onwordsSmartThingsApp'),
+    path('3chretro',views.chretro,name='chretro'),
     path('robots.txt',views.RobotsTxtViews.as_view()),
     path('sitemap.xml',views.SitemapXmlViews.as_view()),
+    
 ]
 

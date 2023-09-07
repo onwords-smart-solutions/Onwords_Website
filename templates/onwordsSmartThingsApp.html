@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{% static 'css/home.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}?{% now 'U' %}">
+    <link rel="shortcut icon" href="{% static 'main-webp/favicon.ico' %}" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'css/security-system.css'  %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'css/general.css'  %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'fonts/all.min.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'fonts/fontawesome.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'fonts/fonts-6/css/all.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{%static 'css/footer.css' %}?{% now 'U' %}">
+
+    <title>Onwords</title>
+</head>
+
+<body id="bodyTag">
+    <!-- navbar start -->
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="{% static 'main-webp/onwords-logo.svg' %}" alt="logo"
+                        class="img-fluid logo"></a>
+                <div class="darkmodemob" id="darkbuttonmob">
+                    <img src="{% static 'main-webp/sun-wh.webp' %}" alt="sun toggle" class="img-fluid sunmob">
+                    <img src="{% static 'main-webp/moon-wh.webp' %}" alt="moon toggle" class="img-fluid nightmob">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><span class="text-white onnav"><i
+                                class="fa-solid fa-bars"></i></span>
+                        <span class="off text-white"><i class="fa-solid fa-x"></i></span><span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 sticky">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Our Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/ourservices">Smart Home</a></li>
+                                <li><a class="dropdown-item" href="/gateautomation">Gate Automation</a></li>
+
+                                <li><a class="dropdown-item" href="/construction">Onwords Construction</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/securitySystem">Security System</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ourApp">Our App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/About Us">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact</a>
+                        </li>
+                    </ul>
+
+
+                    <div class="darkmode" id="darkbutton">
+                        <img src="{% static 'main-webp/sun-wh.webp' %}" alt="sun Toggle" class="img-fluid sun">
+                        <img src="{% static 'main-webp/moon-wh.webp' %}" alt="moon toggle" class="img-fluid night">
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <!-- navbar end -->
+    <div class="down-btn">
+        <button type="button" class="backtop" id="btn-back-to-top">
+            <a href="#"><i class="fas fa-arrow-up"></i></a>
+        </button>
+        <button id="whatsapp">
+            <a href="https://wa.me/+917708630275" target="_blank">
+                <img data-src="{% static 'main-webp/whatsapp-ico.webp' %}" alt="whatsapp" class="lazy-load">
+            </a>
+        </button>
+    </div>
+    </div>
+    <div class="container">
+        <div class="chetro-container">
+            <h2>onwords SmartThings App</h2>
+        </div>
+    </div>
+
+
+
+    <!-- bootstrap js -->
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+    <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
+    <!-- bootstrap js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+    <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
+    <script src="{%static 'js/general.js'%}"></script>
+
+
+
+</body>
+
+</html>
