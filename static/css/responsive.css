@@ -10,7 +10,24 @@
       white-space: nowrap;
       font-size: 18px;
    }
+   #parkingtogg{
+      display: none !important;
+      position: absolute;
+      top: 51%;
+      left: 50%;
+      z-index: 2;
+  }
+  #bolconytogg{
+      display: none !important;
+      position: absolute;
+      top: 51%;
+      z-index: 2;
+  
+  }
    
+   .s-btns{
+      display: none;
+   }
    
    .text-const h2 {
       font-size: 24px;
