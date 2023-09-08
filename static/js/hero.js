@@ -68,6 +68,8 @@ function both() {
         allLightOn.style.display = 'none'
         bolconytagg.style.display='none'
         parkingtogg.style.display='none'
+        
+
 
     }
     if ((bolconys.checked == false) && (parkings.checked == true)) {
