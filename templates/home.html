@@ -177,21 +177,37 @@
                         <div class="d-btn" onclick="both()">
                             <div class="times">time</div>
                             <div class="grp-btn">
-                                <div class="btns">
+                                <div class="btns" id="bolconytogg">
+                                   <label for="">
+                                    <img src="{% static 'main-webp/balcony-light-on.png' %}" alt="btn-1"
+                                    class="img-fluid" >
+                                   </label>
+                                </div>
+                                <div class="btns s-btns" id="parkingtogg">
+                                   <label for="">
+                                    <img src="{% static 'main-webp/parking-light-on.png' %}" alt="btn-1"
+                                    class="img-fluid">
+                                   </label>
+                                </div>
+                                <div class="btns" id="bolconybtn">
                                     <label for="bolconys">
                                         <img src="{% static 'main-webp/balcony-light-off.png' %}" alt="btn-1"
                                             class="img-fluid" id="bolconyOffBtn">
                                         <img src="{% static 'main-webp/balcony-light-on.png' %}" alt="btn-1"
                                             class="img-fluid" id="bolconyOnBtn">
+                                        <img src="{% static 'main-webp/balcony-light-on.png' %}" alt="btn-2"
+                                            class="img-fluid" id="bolconytogg">
                                         <input type="checkbox" class="checkbox" id="bolconys" />
                                     </label>
                                 </div>
-                                <div class="btns s-btns">
+                                <div class="btns s-btns" id="parkbtn">
                                     <label for="parkings">
                                         <img src="{% static 'main-webp/parking-light-off.png' %}" alt="btn-1"
                                             class="img-fluid" id="parkingOffBtn">
                                         <img src="{% static 'main-webp/parking-light-on.png' %}" alt="btn-1"
                                             class="img-fluid" id="parkingonBtn">
+                                        <img src="{% static 'main-webp/parking-light-on.png' %}" alt="btn-3"
+                                            class="img-fluid" id="parkingtogg">
                                         <input type="checkbox" class="checkbox" id="parkings" />
                                     </label>
                                 </div>

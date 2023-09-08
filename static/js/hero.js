@@ -9,6 +9,8 @@ const parkingOnBtn = document.getElementById('parkingonBtn')
 const parkingOffBtn = document.getElementById('parkingOffBtn')
 const bolconys = document.getElementById('bolconys')
 const parkings = document.getElementById('parkings')
+const bolconytagg = document.getElementById('bolconytogg')
+const parkingtogg = document.getElementById('parkingtogg')
 
 // function allLightson() {
 //     if (toggle.checked == true) {
@@ -48,8 +50,10 @@ const parkings = document.getElementById('parkings')
 // }
 function both() {
     if (toggle.checked == true) {
-        bolconyOnBtn.style.display = 'block'
-        parkingOnBtn.style.display = 'block'
+        bolconytagg.style.display='block'
+        parkingtogg.style.display='block'
+        bolconyOnBtn.style.display = 'none'
+        parkingOnBtn.style.display = 'none'
         bolconyLights.style.display = 'none'
         parkingLights.style.display = 'none'
         allLightOn.style.display = 'block'
@@ -62,6 +66,8 @@ function both() {
         bolconyLights.style.display = 'none'
         parkingLights.style.display = 'none'
         allLightOn.style.display = 'none'
+        bolconytagg.style.display='none'
+        parkingtogg.style.display='none'
 
     }
     if ((bolconys.checked == false) && (parkings.checked == true)) {
@@ -71,6 +77,8 @@ function both() {
         bolconyLights.style.display = 'none'
         parkingLights.style.display = 'block'
         allLightOn.style.display = 'none'
+        bolconytagg.style.display='none'
+        parkingtogg.style.display='none'
     }
 
     if ((bolconys.checked == true) && (parkings.checked == true)) {
@@ -80,6 +88,8 @@ function both() {
         bolconyLights.style.display = 'none'
         parkingLights.style.display = 'none'
         allLightOn.style.display = 'block'
+        bolconytagg.style.display='none'
+        parkingtogg.style.display='none'
     }
 
     if ((bolconys.checked == true) && (parkings.checked == false)) {
@@ -89,6 +99,8 @@ function both() {
         bolconyLights.style.display = 'block'
         parkingLights.style.display = 'none'
         allLightOn.style.display = 'none'
+        bolconytagg.style.display='none'
+        parkingtogg.style.display='none'
     }
   
 }
