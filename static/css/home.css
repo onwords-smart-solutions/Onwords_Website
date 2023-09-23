@@ -3391,3 +3391,8 @@ width: fit-content;
     z-index: 2;
 
 }
+
+.sub-head-privacy{
+    font-weight: 600;
+    font-size: 15px;
+}
