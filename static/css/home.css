@@ -3373,9 +3373,11 @@ width: fit-content;
     position: relative;
 }
 .manual{
-    position: relative;
-    margin-top: 150px;
+    position: absolute;
+    /* margin-top: 150px; */
     height: 100px;
+    top: 6%;
+    right: 5%;
 }
 #parkingtogg{
     display: none;
