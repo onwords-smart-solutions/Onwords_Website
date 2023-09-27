@@ -10,6 +10,25 @@
       white-space: nowrap;
       font-size: 18px;
    }
+   .manual{
+      right: 35%;
+   }
+   .mob-li-app{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 50px;
+   }
+   .smartThingsApp{
+      height: 60vh;
+      margin-top: 20%;
+   }
+   .mob-li-app a{
+     width: 50%;
+     height: 90px;
+   }
+  
    #parkingtogg{
       display: none !important;
       position: absolute;
@@ -1490,5 +1509,6 @@
    .header {
       z-index: 9999;
    }
+
   
 }
