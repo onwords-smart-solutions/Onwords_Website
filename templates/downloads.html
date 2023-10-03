@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'css/security-system.css'  %}?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'css/general.css'  %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'css/galley.css'  %}?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'fonts/all.min.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'fonts/fontawesome.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'fonts/fonts-6/css/all.css' %}?{% now 'U' %}">
@@ -52,7 +53,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="/ourservices">Smart Home</a></li>
                                 <li><a class="dropdown-item" href="/gateautomation">Gate Automation</a></li>
-                               
+
                                 <li><a class="dropdown-item" href="/construction">Onwords Construction</a></li>
                             </ul>
                         </li>
@@ -99,13 +100,167 @@
         </section>
         <section>
             <div class="container">
+                <div class="gallery-cols">
+                    <div class=" ">
+                        <div>
+                            <a href="#" id="video-down-btn" class="gallerBtn act-galleryOne">
+                                <span><img src="{%static 'main-webp/our-video.webp'%}" alt="Ambience"></span><span
+                                    class="ambience">Videos</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div>
+                            <a href="#" id="broucher-down-btn" class="gallerBtn">
+                                <span> <img src="{%static 'main-webp/our-1.webp'%}" alt="gate automation"></span><span
+                                    class="ambience">Brouchers</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div>
+                            <a href="#" id="logo-down-btn" class="gallerBtn">
+                                <span> <img src="{%static 'main-webp/our-gate.webp'%}"
+                                        alt="pre request videoes"></span><span class="ambience">Logo</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="videosDown">
+        <div class="container">
+            <div class="video-row">
+
+                <div class="video-list">
+                    <a href="../static/downloadsFiles/video/Behind-the-Scenes-of-Modern-Gate-Automation.mp4"
+                        download><video src=""  poster="../static/downloadsFiles/video/vid-1.png"
+                            class="img-fluid vide-thumb"></video>
+                        <div class="desc">
+                            <p>Modern Gate Automation</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-list">
+                    <a href="../static/downloadsFiles/video/Deepan-Home-Gate-Automation.mp4"
+                        download><video src="" poster="../static/downloadsFiles/video/vid-2.png"
+                            class="img-fluid vide-thumb"></video>
+                        <div class="desc">
+                            <p>Deepan Home Gate Automation</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-list">
+                    <a href="../static/downloadsFiles/video/Discover-the-Future-of-Home-Security _ Swing-Gate-Automation-Onwords.mp4"
+                        download><video src=""  poster="../static/downloadsFiles/video/vid-3.png"
+                            class="img-fluid vide-thumb"></video>
+                        <div class="desc">
+                            <p>Discover the Future of Home Security_Swing Gate Automation Onwords</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-list">
+                    <a href="../static/downloadsFiles/video/Increase-Property-Value-with-High-Quality-Sliding-Gate-Automation_Onwords.mp4"
+                        download><video src=""  poster="../static/downloadsFiles/video/vid-4.png"
+                            class="img-fluid"></video>
+                        <div class="desc">
+                            <p>Increase Property Value with High-Quality Sliding Gate Automation _ Onwords</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-list">
+                    <a href="../static/downloadsFiles/video/lakshmanan-sir-gate-automation.mp4"
+                        download><video src=""  poster="../static/downloadsFiles/video/vid-5.png"
+                            class="img-fluid"></video>
+                        <div class="desc">
+                            <p>lakshmanan sir gate automation</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-list">
+                    <a href="../static/downloadsFiles/video/mohan-sir-gate-automation-landscape.mp4"
+                        download><video src=""  poster="../static/downloadsFiles/video/vid-6.png"
+                            class="img-fluid"></video>
+                        <div class="desc">
+                            <p>mohan sir gate automation landscape</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-list">
+                    <a href="../static/downloadsFiles/video/Ram-Doctor-Home-gate-Automation.mp4"
+                        download><video src=""  poster="../static/downloadsFiles/video/vid-7.png"
+                            class="img-fluid"></video>
+                        <div class="desc">
+                            <p>Ram Doctor Home gate Automation</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-list">
+                    <a href="../static/downloadsFiles/video/shivesh-gate-automation-landscape.mp4"
+                        download><video src=""  poster="../static/downloadsFiles/video/vid-8.png"
+                            class="img-fluid"></video>
+                        <div class="desc">
+                            <p>shivesh gate automation landscape</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="video-list">
+                    <a href="../static/downloadsFiles/video/Sliding-Gate-With-Roller-Motor-Explanation-video.mp4"
+                        download><video src=""  poster="../static/downloadsFiles/video/vid-9.png"
+                            class="img-fluid"></video>
+                        <div class="desc">
+                            <p>Sliding Gate With Roller Motor Explanation video</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-list">
+                    <a href="../static/downloadsFiles/video/The-Future-of-Home-Security_Gate-Automation-in-Coimbatore.mp4"
+                        download><video src=""  poster="../static/downloadsFiles/video/vid-11.png"
+                            class="img-fluid"></video>
+                        <div class="desc">
+                            <p>The Future of Home Security_ Gate Automation in Coimbatore</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-list">
+                    <a href="../static/downloadsFiles/video/Ultimate-Sliding-Gate-Automation_Upgrade-Your-Home-Security_Onwords.mp4"
+                        download><video src=""  poster="../static/downloadsFiles/video/vid-7.png"
+                            class="img-fluid"></video>
+                        <div class="desc">
+                            <p>Ultimate Sliding Gate Automation _ Upgrade Your Home Security _ Onwords</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-list">
+                    <a href="../static/downloadsFiles/video/Varun-Sir-Home-Gate-Horizontal.mp4"
+                        download><video src=""  poster="../static/downloadsFiles/video/vid-12.png"
+                            class="img-fluid"></video>
+                        <div class="desc">
+                            <p>Varun Sir Home Gate Horizontal</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        </section>
+        <section id="BrouchersDown">
+            <div class="container">
+                <h2>Broucher</h2>
+                <h2>check</h2>
+            </div>
+        </section>
+        <section id="logos">
+            <div class="container">
                 <div class="row d-flex align-items-center">
                     <div class="col-md-6">
                         <img src="{% static 'main-webp/files-gradient.svg' %}" alt="download banner" class="img-fluid">
                     </div>
                     <div class="col-md-6">
                         <ul class="down-ul">
-                            <li class="fcre">
+                            <!-- <li class="fcre">
                                 <p>
                                     <a href="#" class="btn-slide2">
                                         <span class="circle2"><i class="fa fa-download"></i></span>
@@ -114,7 +269,7 @@
                                     </a>
                                 </p>
                                 <p class="fs-3 fw-1">Logo Files</p>
-                            </li>
+                            </li> -->
                             <li class="fcre">
                                 <p>
                                     <a href="{% static 'downloadsFiles/text-with-logos.zip' %}" download
@@ -136,7 +291,7 @@
                                 </p>
                                 <p class="fs-3 fw-1">Onwords Text</p>
                             </li>
-                            <li class="fcre">
+                            <!-- <li class="fcre">
                                 <p>
                                     <a href="{% static 'downloadsFiles/others-logos.zip' %}" download
                                         class="btn-slide2">
@@ -146,8 +301,8 @@
                                     </a>
                                 </p>
                                 <p class="fs-3 fw-1"> Onwords Other Logos</p>
-                            </li>
-                            <li class="fcre">
+                            </li> -->
+                            <!-- <li class="fcre">
                                 <p>
                                     <a href="#" download class="btn-slide2">
                                         <span class="circle2"><i class="fa fa-download"></i></span>
@@ -156,7 +311,7 @@
                                     </a>
                                 </p>
                                 <p class="fs-3 fw-1"> Gate videos</p>
-                            </li>
+                            </li> -->
 
 
                         </ul>
@@ -239,8 +394,8 @@
                                 <p onclick="location.href='//www.facebook.com/teamonwords/'
                                     " target="_blank"><i class="fa-brands fa-facebook"></i>
                                 </p>
-                                <p onclick="location.href='//www.youtube.com/@OnwordsSmartSolutions/'" target=" _blank"
-                                   ><i class="fa-brands fa-square-youtube"></i></p>
+                                <p onclick="location.href='//www.youtube.com/@OnwordsSmartSolutions/'" target=" _blank">
+                                    <i class="fa-brands fa-square-youtube"></i></p>
                             </div>
 
 
@@ -268,12 +423,14 @@
                         <div class="our-app-foot onwords-details-foot ">
                             <h5>Our Apps</h5>
                             <div class="app-google-store">
-                                <a href="https://play.google.com/store/apps/details?id=com.onwords.smart_things&hl=en_IN&gl=US">
-                                  <img src="{% static 'main-webp/play.webp' %}" alt="play store" class="img-fluid">
+                                <a
+                                    href="https://play.google.com/store/apps/details?id=com.onwords.smart_things&hl=en_IN&gl=US">
+                                    <img src="{% static 'main-webp/play.webp' %}" alt="play store" class="img-fluid">
                                 </a>
                                 <a href="https://apps.apple.com/in/app/onwords-smart-things/id6449142647"><img
-                                    src="{% static 'main-webp/apple.webp' %}" alt="apple storw" class="img-fluid"></a>
-                              </div>
+                                        src="{% static 'main-webp/apple.webp' %}" alt="apple storw"
+                                        class="img-fluid"></a>
+                            </div>
 
                         </div>
                     </div>
@@ -321,9 +478,41 @@
     <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
     <script src="{%static 'js/general.js'%}"></script>
     <script src="{%static 'js/data.js'%}"></script>
+    <script src="{% static 'js/gallery.js' %}"></script>
 
     <script>
+        // ===============down load list==========
+        const videoBtn = document.getElementById('video-down-btn')
+        const broucherBtn = document.getElementById('broucher-down-btn')
+        const logobtn = document.getElementById('logo-down-btn')
+        const videosDown = document.getElementById('videosDown')
+        const broucherDown = document.getElementById('BrouchersDown')
+        const logoDown = document.getElementById('logos')
 
+        videoBtn.addEventListener('click', () => {
+            videosDown.style.display = 'block'
+            broucherDown.style.display = 'none'
+            logoDown.style.display = 'none'
+            videoBtn.classList.add('act-galleryOne')
+            broucherBtn.classList.remove('act-gallery-two')
+            logobtn.classList.remove('act-gallery-three')
+        })
+        broucherBtn.addEventListener('click', () => {
+            videosDown.style.display = 'none'
+            broucherDown.style.display = 'block'
+            logoDown.style.display = 'none'
+            videoBtn.classList.remove('act-galleryOne')
+            broucherBtn.classList.add('act-gallery-two')
+            logobtn.classList.remove('act-gallery-three')
+        })
+        logobtn.addEventListener('click', () => {
+            videosDown.style.display = 'none'
+            broucherDown.style.display = 'none'
+            logoDown.style.display = 'block'
+            videoBtn.classList.remove('act-galleryOne')
+            broucherBtn.classList.remove('act-gallery-two')
+            logobtn.classList.add('act-gallery-three')
+        })
     </script>
 </body>
 
