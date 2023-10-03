@@ -263,6 +263,10 @@ color: white;
 .vide-thumb {
     width: 100%;
     height: 100%;
+    border-radius: 10px !important;
+}
+.vide-thumbs{
+    border-radius: 20px !important;
 }
 
 .desc p {
