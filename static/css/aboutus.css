@@ -110,3 +110,14 @@
     background-repeat: no-repeat;
 
 }
+
+
+/* ===========refund con ==========*/
+.refund-con{
+    width: 80%;
+    padding-top: 10%;
+    margin: 0 auto;
+}
+.delivery-li li{
+    list-style: circle;
+}
