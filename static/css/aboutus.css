@@ -118,6 +118,8 @@
     padding-top: 10%;
     margin: 0 auto;
 }
+
 .delivery-li li{
     list-style: circle;
+    margin: 20px 0px;
 }
