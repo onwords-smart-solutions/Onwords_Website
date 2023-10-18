@@ -19,7 +19,6 @@ urlpatterns=[
     path('carrier',views.carrier,name='carrier'),
     path('team',views.team,name='team'),
     path('downloads',views.downloads,name='downloads'),
-    path('shippingDelivery',views.shippingDelivery,name='shippingDelivery'),
     path('refund',views.refund,name='refund'),
     path('onwords-smart-things-app',views.onwordsSmartThingsApp,name='onwordsSmartThingsApp'),
     path('3chretro',views.chretro,name='chretro'),

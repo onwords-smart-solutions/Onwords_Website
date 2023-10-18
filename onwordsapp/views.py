@@ -42,8 +42,6 @@ def aboutus(request):
     return render(request,'aboutus.html')    
 def carrier(request):
     return render(request,'carrier.html')    
-def shippingDelivery(request):
-    return render(request,'shippingDelivery.html')    
 def refund(request):
     return render(request,'refund.html')    
 def team(request):
