@@ -22,6 +22,6 @@ urlpatterns=[
     path('refund',views.refund,name='refund'),
     path('onwords-smart-things-app',views.onwordsSmartThingsApp,name='onwordsSmartThingsApp'),
     path('3chretro',views.chretro,name='chretro'),
-    path('robots.txt',views.robots.as_view()),
-    path('sitemap.xml',views.sitemap.as_view()),
+    path('robots.txt',views.robots, name='robots'),
+    path('sitemap.xml',views.sitemap, name='sitemap'),
 ]
