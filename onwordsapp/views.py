@@ -32,7 +32,7 @@ def disclaimer(request):
 def faq(request):
     return render(request,'faq.html')
 def contact(request):
-    return render(request,'contact.html')     
+    return render(request,'contact-9.html')     
 def aboutus(request):
     return render(request,'aboutus.html')    
 def careers(request):
