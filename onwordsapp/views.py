@@ -38,7 +38,11 @@ def aboutus(request):
 def careers(request):
     return render(request,'careers.html')    
 def refund(request):
-    return render(request,'refund.html')    
+    return render(request,'refund.html')
+def sitemap(request):
+    return render(request,'sitemap.xml')
+def robots(request):
+    return render(request,'robots.txt')          
 def team(request):
     name=[]
     email=[]
