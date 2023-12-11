@@ -1,7 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,15 +15,12 @@
     <link rel="shortcut icon" href="{% static 'main-webp/favicon.ico' %}" type="image/x-icon" />
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{%static 'css/footer.css' %}?{% now 'U' %}">
-
-
     <!-- bs-4 -->
     <link rel="stylesheet" href="{% static 'fonts/all.min.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'fonts/fontawesome.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'fonts/fonts-6/css/all.css' %}?{% now 'U' %}">
     <title>Our Service | onwords</title>
 </head>
-
 <body id="bodyTag">
     <!-- navbar start -->
     <header>
@@ -60,7 +56,6 @@
                                 <li><a class="dropdown-item" href="/construction">Onwords Construction</a></li>
                             </ul>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="/securitySystem">Security System</a>
                         </li>
@@ -306,7 +301,7 @@
                                 <p onclick="location.href='/gallery'">Gallery</p>
                             </li>
                             <li>
-                                <p onclick="location.href='/carrier'">Career</p>
+                                <p onclick="location.href='/careers'">Careers</p>
                             </li>
 
 
@@ -423,9 +418,7 @@
                     </div>
                 </div>
         </section>
-
     </div>
-
     <!-- bootstrap js -->
     <script src="{%static 'js/bootstrap.min.js'%}"></script>
     <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
@@ -440,9 +433,5 @@
     <script src="{% static 'js/all.min.js' %}"></script>
     <script src="{% static 'js/fontawesome.min.js' %}"></script>
     <!-- bs-4 -->
-
-
-
 </body>
-
 </html>

@@ -1,7 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,30 +10,20 @@
     <!-- custom css -->
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'css/home.css' %}?{% now 'U' %}">
-    
-   
 </head>
-
 <body>
-
     <div class="error">
         <h2>404</h2>
         <p>We're sorry but it looks like that page doesn't exist anymore.</p>
-
         <button class="module-border-wrap">
             <div class="module fs-6 px-4" onclick="location.href='/'" data-bs-toggle="modal"
                 data-bs-target="#exampleModal">
                 Back To Home
             </div>
         </button>
-       
-
     </div>
-
     </section>
     <script src="{%static 'js/bootstrap.min.js'%}"></script>
     <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
-
 </body>
-
 </html>

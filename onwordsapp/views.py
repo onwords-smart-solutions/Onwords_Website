@@ -2,12 +2,7 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 import pyrebase
 
-Config = {
-    "apiKey": "AIzaSyCCTeiCYTB_npcWKKxl-Oj0StQLTmaFOaE",
-    "authDomain": "marketing-data-d141d.firebaseapp.com",
-    "databaseURL": "https://marketing-data-d141d-default-rtdb.firebaseio.com/",
-    "storageBucket": "marketing-data-d141d.appspot.com",
-}
+Config = {"apiKey": "AIzaSyCCTeiCYTB_npcWKKxl-Oj0StQLTmaFOaE","authDomain": "marketing-data-d141d.firebaseapp.com","databaseURL": "https://marketing-data-d141d-default-rtdb.firebaseio.com/","storageBucket": "marketing-data-d141d.appspot.com",}
 
 firebase = pyrebase.initialize_app(Config)
 db = firebase.database()
@@ -40,8 +35,8 @@ def contact(request):
     return render(request,'contact.html')     
 def aboutus(request):
     return render(request,'aboutus.html')    
-def carrier(request):
-    return render(request,'carrier.html')    
+def careers(request):
+    return render(request,'careers.html')    
 def refund(request):
     return render(request,'refund.html')    
 def team(request):
@@ -74,6 +69,7 @@ def team(request):
     admindepartment=[]
     adminprofile=[]
     staff=db.child("staff").get().val()
+    
     for uid in staff:
         name.append(staff[uid]["name"])
         email.append(staff[uid]["email"])
@@ -146,15 +142,7 @@ def team(request):
     prteam=zip(prname,premail,prdepartment,prprofile)
     adminteam=zip(adminname,adminemail,admindepartment,adminprofile)
 
-    context={
-       "allteamsdetails":allteamsdetails,
-       "webteam":webteam,
-       "appteam":appteam,
-       "mediateam":mediateam,
-       "rndteam":rndteam,
-       "prteam":prteam,
-       "adminteam":adminteam 
-    }
+    context={"allteamsdetails":allteamsdetails,"webteam":webteam,"appteam":appteam,"mediateam":mediateam,"rndteam":rndteam,"prteam":prteam,"adminteam":adminteam }
     return render(request,'team.html',context)    
 def downloads(request):
     return render(request,'downloads.html')    
@@ -162,7 +150,6 @@ def onwordsSmartThingsApp(request):
     return render(request,'onwordsSmartThingsApp.html')    
 def chretro(request):
     return render(request,'chretro.html')    
- 
 
 class RobotsTxtViews(TemplateView):
     template_name ='robots.txt'

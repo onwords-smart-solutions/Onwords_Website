@@ -1,7 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,22 +13,15 @@
     <link rel="shortcut icon" href="{% static 'main-webp/favicon.ico' %}" type="image/x-icon" />
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{%static 'css/footer.css' %}?{% now 'U' %}">
-
     <!-- bs-4 -->
     <link rel="stylesheet" href="{% static 'fonts/all.min.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'fonts/fontawesome.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'fonts/fonts-6/css/all.css' %}?{% now 'U' %}">
     <title>Onwords</title>
-
-
     <!-- cdn link -->
-
-
-
     <!-- cdn link -->
     <title>Onwords</title>
 </head>
-
 <body id="bodyTag">
     <div id="preloader"></div>
     <div class="wrapper">
@@ -67,7 +59,6 @@
                                     <li><a class="dropdown-item" href="/construction">Onwords Construction</a></li>
                                 </ul>
                             </li>
-
                             <li class="nav-item">
                                 <a class="nav-link" href="/securitySystem">Security System</a>
                             </li>
@@ -101,8 +92,6 @@
                 </a>
             </button>
         </div>
-
-
         <div class="demo-section">
             <div class=" container-fluid front-demo-section">
 
@@ -121,14 +110,10 @@
                             <img src="{% static 'main-webp/playBtn.webp' %}" alt="play" class="img-fluid offVideoBtn">
     
                         </span>
-    
                     </div>
                     <div class="anim-press">
-    
                         <h6 class="anim-press-btn">Press Play Button</h6>
-    
                         <div class="press-play-btn">
-    
                             <p class="synhue-text">Sync Hue <br>
                                 <span class="text-warning text-indicate">Off</span>
                             </p>
@@ -139,29 +124,20 @@
                                 </label>
                             </p>
                         </div>
-    
                     </div>
                 </div>
-
-               
             </div>
             <div class="video-src back-demo-section">
                 <video src="{% static 'main-webp/hue-final-render.mp4' %}" class="img-fluid " loop autoplay
                     id="video-demos"></video>
                 <img src="{% static 'main-webp/hue-tv-img.webp' %}" alt="background tv" class="img-flimg"
                     id="front-img"></img>
-
             </div>
-
-
         </div>
-
         <div class="second-section">
-
             <div class="sec-title reveal fade-left center-tex-hue" data-wow-delay="0.1s">
                 <h2>Light your home smarter <br> Onwords Hue</h2>
             </div>
-
             <!-- aniation -->
             <section class="top-smart-home-page">
                 <div class="container">
@@ -262,12 +238,9 @@
                                     <p onclick="location.href='/gallery'">Gallery</p>
                                 </li>
                                 <li>
-                                    <p onclick="location.href='/carrier'">Career</p>
+                                    <p onclick="location.href='/careers'">Careers</p>
                                 </li>
-
-
                             </ul>
-
                         </div>
                         <div class="col-md-2">
                             <ul class="our-services-foot">
@@ -307,7 +280,6 @@
                                   
                             </ul>
                         </div>
-
                         <div class="col-md-3">
                             <div class=" onwords-details-foot">
                                 <h5>Connect With Us</h5>
@@ -323,10 +295,7 @@
                                     <p onclick="location.href='//www.youtube.com/@OnwordsSmartSolutions/'"
                                         target=" _blank"><i class="fa-brands fa-square-youtube"></i></p>
                                 </div>
-
                                 <div class="footer-foot">
-
-
                                 </div>
                                 <br>
                                 <div>
@@ -338,7 +307,6 @@
                                             class="fa-solid fa-phone"></i> 77086
                                         30275</p>
                                 </div>
-
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -351,7 +319,6 @@
                                     <a href="https://apps.apple.com/in/app/onwords-smart-things/id6449142647"><img
                                         src="{% static 'main-webp/apple.webp' %}" alt="apple storw" class="img-fluid"></a>
                                   </div>
-
                             </div>
                         </div>
                     </div>
@@ -363,19 +330,12 @@
                             </p>
                         </div>
                         <div>
-
                         </div>
                     </div>
             </section>
-
         </div>
-
     </div>
-
-
     <!-- Preloader -->
-
-
     <!-- bootstrap js -->
     <script src="{%static 'js/bootstrap.min.js'%}"></script>
     <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
@@ -409,7 +369,6 @@
             }
         }
 
-
         const videoPlayer = document.getElementById('video-demos');
         const playPauseButton = document.getElementById('vidbutton');
         const muteUnmuteButton = document.getElementById('audioButton');
@@ -441,12 +400,7 @@
                 volOn.style.display = 'none'
             }
         });
-
-
     </script>
-
     <!-- bs-4 -->
-
 </body>
-
 </html>

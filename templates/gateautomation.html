@@ -1,7 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,25 +14,18 @@
     <link rel="shortcut icon" href="{% static 'main-webp/favicon.ico' %}" type="image/x-icon" />
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{%static 'css/footer.css' %}?{% now 'U' %}">
-
     <!-- bs-4 -->
     <link rel="stylesheet" href="{% static 'fonts/all.min.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'fonts/fontawesome.css' %}?{% now 'U' %}">
     <link rel="stylesheet" href="{% static 'fonts/fonts-6/css/all.css' %}?{% now 'U' %}">
     <!-- bootstrap css -->
-
-
-
-
     <!-- cdn link -->
     <title>Onwords</title>
 </head>
-
 <body id="bodyTag">
     <div id="preloader"></div>
     <div class="wrapper">
         <!-- navbar start -->
-
         <header>
             <nav class="navbar navbar-expand-lg sticky-top">
                 <div class="container-fluid">
@@ -67,7 +59,6 @@
                                     <li><a class="dropdown-item" href="/construction">Onwords Construction</a></li>
                                 </ul>
                             </li>
-
                             <li class="nav-item">
                                 <a class="nav-link" href="/securitySystem">Security System</a>
                             </li>
@@ -81,8 +72,6 @@
                                 <a class="nav-link" href="/contact">Contact</a>
                             </li>
                         </ul>
-
-
                     </div>
                     <div class="darkmode" id="darkbutton">
                         <img src="{% static 'main-webp/sun-wh.webp' %}" alt="sun Toggle" class="img-fluid sun">
@@ -113,9 +102,6 @@
             </h2>
         </div>
     </div>
-
-
-
     <section class="top-smart-home-page">
         <div class="container">
             <div class="row smarthome-parlarx-row">
@@ -237,7 +223,7 @@
                             <p onclick="location.href='/gallery'">Gallery</p>
                         </li>
                         <li>
-                            <p onclick="location.href='/carrier'">Career</p>
+                            <p onclick="location.href='/careers'">Careers</p>
                         </li>
 
 
@@ -342,11 +328,7 @@
                 </div>
             </div>
     </section>
-
-
     <!-- Preloader -->
-
-
     <!-- bootstrap js -->
     <script src="{%static 'js/bootstrap.min.js'%}"></script>
     <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
@@ -357,11 +339,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-
     <script src="{% static 'js/all.min.js' %}"></script>
     <script src="{% static 'js/fontawesome.min.js' %}"></script>
-
-
 </body>
-
 </html>

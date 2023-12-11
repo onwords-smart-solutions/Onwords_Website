@@ -14,9 +14,9 @@ urlpatterns=[
     path('privacyPolicy',views.privacyPolicy,name='privacyPolicy'),
     path('disclaimer',views.disclaimer,name='disclaimer'),
     path('faq',views.faq,name='faq'),
-    path('contact',views.contact,name='contact'),
+    path('contact',views.contact,name='contact-9'),
     path('aboutus',views.aboutus,name='aboutus'),
-    path('carrier',views.carrier,name='carrier'),
+    path('careers',views.careers,name='careers'),
     path('team',views.team,name='team'),
     path('downloads',views.downloads,name='downloads'),
     path('refund',views.refund,name='refund'),
@@ -24,6 +24,4 @@ urlpatterns=[
     path('3chretro',views.chretro,name='chretro'),
     path('robots.txt',views.RobotsTxtViews.as_view()),
     path('sitemap.xml',views.SitemapXmlViews.as_view()),
-    
 ]
-
