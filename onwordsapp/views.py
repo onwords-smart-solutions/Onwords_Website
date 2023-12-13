@@ -8,7 +8,7 @@ firebase = pyrebase.initialize_app(Config)
 db = firebase.database()
 ## Create your views here.
 def home(request):
-    return render(request,'home.html')
+    return render(request,'index.html')
 def ourservices(request):
     return render(request,'ourservices.html')
 def gateautomation(request):
