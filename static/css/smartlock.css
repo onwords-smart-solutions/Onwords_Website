@@ -45,7 +45,7 @@ body {
 
 .countdown-container {
     background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: auto;
@@ -65,7 +65,7 @@ body {
 
 .product-specs {
     border: 1px solid #f5f5f5;
-    padding: 25px;
+    padding: 15px;
     margin: auto;
     background-color: #2b2b2b;
     border-radius: 10px;
@@ -74,7 +74,7 @@ body {
 }
 .product-specs ul {
     list-style: none;
-    padding: 0;
+    padding: 10px;
 }
 .product-specs h1 {
     padding-bottom: 20px;
@@ -84,7 +84,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .spec-key {
@@ -125,7 +125,7 @@ body {
         margin: 5% auto; /* Less vertical margin on mobile */
         padding: 10px;
         max-width: 150px;
-        max-height: 150px;/* Adjust padding for smaller screens */
+        max-height: 150px;
     }
 }
 
