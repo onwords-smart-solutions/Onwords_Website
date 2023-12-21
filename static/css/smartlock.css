@@ -4,11 +4,16 @@ body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-col
 
 .carousel-slide img {width: 100%;display: block;}
 
-.countdown {color: #000000;background-color: #e5e5e5;padding: 10px;text-align: center;position: relative;display: flex;justify-content: center;align-items: center;gap: 10px;}
+.countdown {display: flex;justify-content: center;align-items: center;gap: 10px;}
 
-.countdown .hurry {color: red;position: absolute;left: 280px;top: 50%;transform: translateY(-50%);font-weight: bold;}
+.countdown .time-unit {display: flex;flex-direction: row;align-items: baseline;color: black;}
 
-.countdown .time-unit {display: flex;flex-direction: column;color: black; align-items: flex-start;}
+.countdown .time-unit span {font-size: 24px;font-weight: bold;margin-right: 4px;}
+
+.countdown .time-unit .days,
+.countdown .time-unit .hours,
+.countdown .time-unit .minutes,
+.countdown .time-unit .seconds {font-size: 14px;}
 
 .product-title {font-size: 24px;font-weight: bold;padding: 16px;background-color: #000000;margin: 0;color: #bb880b;}
 
