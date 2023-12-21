@@ -1,6 +1,6 @@
 body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-color: #000000;}
 
-.carousel-container {max-width: 360px;margin: 0 auto;background-color: #000000;overflow: hidden;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);border-radius: 10px;border: 2px solid #4d4d4d;padding: 10px;}
+.carousel-container {max-width: 300px; max-height: 200px;margin: 0 auto;background-color: #000000;overflow: hidden;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);border-radius: 10px;border: 2px solid #4d4d4d;padding: 10px;}
 
 .carousel-slide img {width: 100%;display: block;}
 
@@ -12,7 +12,7 @@ body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-col
 
 .countdown .time-unit span {font-size: 24px;font-weight: bold;}
 
-.countdown .time-unit .label {font-size: 14px; color: #000000; text-transform: uppercase; }
+.countdown .time-unit .label {font-size: 14px; color: #676767; }
 
 .product-title {font-size: 24px;font-weight: bold;padding: 16px;background-color: #000000;margin: 0;color: #bb880b;}
 
@@ -42,6 +42,6 @@ body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-col
 
 .modal-content {background-color: #000000;margin: 15% auto;padding: 20px;border: 1px solid #888;width: 80%;color: #FFFFFF;border-radius: 20px;}
 
-.close {color: #aaa; float: right;font-size: 28px;font-weight: bold;}
+.close {color: #c29b00; float: right;font-size: 28px;font-weight: bold;}
 
 .close:hover, .close:focus {color: #ffffff;text-decoration: none;cursor: pointer;}
