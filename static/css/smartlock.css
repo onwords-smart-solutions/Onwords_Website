@@ -2,7 +2,7 @@ body {
     text-align: center;
 }
 
-.carousel1 {
+.carousel {
     max-width: 500px;
     margin: auto;
     background-color: transparent;
@@ -10,7 +10,7 @@ body {
 .hero{
     margin-top: 20px;
 }
-.carousel1-item img {
+.carousel-item img {
     width: 70%;
     height: auto;
     object-fit: cover;
@@ -18,11 +18,11 @@ body {
 }
 
 @media (max-width: 768px) {
-    .carousel1 {
+    .carousel {
         max-width: 300px;
     }
 
-    .carousel1-item img {
+    .carousel-item img {
         width: 100%;
     }
 
