@@ -30,10 +30,10 @@
     </div>
   </div>
   <div class="countdown" id="countdown1">
-    <div class="time-unit">03 d</div>
-    <div class="time-unit">00 h</div>
-    <div class="time-unit">00 m</div>
-    <div class="time-unit">00 s</div>
+    <div class="time-unit"><span class="days">03</span> d</div>
+    <div class="time-unit"><span class="hours">00</span> h</div>
+    <div class="time-unit"><span class="minutes">00</span> m</div>
+    <div class="time-unit"><span class="seconds">00</span> s</div>
     <span class="hurry">Hurry Up!</span>
   </div>
   <div class="price">
@@ -114,13 +114,11 @@
   }
 
   function calculateEndTime() {
-    // Check if the end time is already stored
     let endTime = localStorage.getItem('countdownEndTime');
     if (!endTime) {
-      // If not, calculate and store it
       const now = new Date();
       now.setDate(now.getDate() + 3);
-      endTime = now;
+      endTime = now.toISOString();
       localStorage.setItem('countdownEndTime', endTime);
     }
     return new Date(endTime);
