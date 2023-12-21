@@ -6,10 +6,6 @@ body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-col
 
 .countdown {display: flex;justify-content: center;align-items: center;gap: 10px;}
 
-.countdown .time-unit {display: flex;flex-direction: column;}
-
-.countdown .time-unit span {font-size: 24px;font-weight: bold;margin-right: 4px;}
-
 .time-unit span {display: inline-block;margin-right: 4px;font-size: 24px;font-weight: bold;}
 
 .label {font-size: 8px;color: goldenrod;}
