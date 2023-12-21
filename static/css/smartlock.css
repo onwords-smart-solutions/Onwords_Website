@@ -8,14 +8,6 @@ body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-col
 
 .countdown .hurry {color: red;position: absolute;left: 280px;top: 50%;transform: translateY(-50%);font-weight: bold;}
 
-.countdown { display: flex; justify-content: space-between!important; align-items: flex-start!important; gap: 10px;}
-
-.time-unit span { display: inline-block; margin-right: 4px; font-size: 24px; font-weight: bold; color: #000000!important; }
-
-.label { font-size: 18px; color: goldenrod!important; }
-
-.days, .hours, .minutes, .seconds { font-weight: bold; }
-
 .countdown .time-unit {display: flex;flex-direction: column;color: black;}
 
 .countdown .time-unit span {font-size: 24px;font-weight: bold;}
@@ -32,7 +24,7 @@ body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-col
 
 .specs-table th {font-weight: normal;color: #4d4d4d;}
 
-.price {background-color: #000;color: #fff;padding: 20px;position: relative;font-size: 18px;text-align: left;border-radius: 10px; border: 2px solid grey; }
+.price {background-color: #000;color: #fff;padding: 20px;position: relative;font-size: 18px;text-align: left; }
 
 .price h4 {color: #FFFFFF;font-size: 20px;margin-bottom: 10px;}
 
