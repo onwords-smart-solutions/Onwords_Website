@@ -1,0 +1,43 @@
+body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-color: #000000; max-height: 768px}
+
+.carousel-container {max-width: 360px; max-height: 100%;margin: 0 auto;background-color: #000000;overflow: hidden;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);border-radius: 10px;border: 2px solid #4d4d4d;padding: 10px;}
+
+.carousel-slide img {width: 100%;display: block;}
+
+.countdown { display: flex; justify-content: space-between!important; align-items: flex-start!important; gap: 10px;}
+
+.label { font-size: 8px; color: goldenrod!important; }
+
+.days, .hours, .minutes, .seconds { font-weight: bold; color: black!important; }
+
+.price {background-color: #000;color: #fff;padding: 8px;position: relative;font-size: 18px;text-align: left; }
+
+.price p {color: #FFFFFF;font-size: 30px;margin-bottom: 10px; margin-top: -10px; font-weight: bold;}
+
+.price .original-price {font-size: 24px;color: #ff0000;text-decoration: line-through;margin-right: 10px;}
+
+.price .sale-price {color: #54ff24;font-size: 24px;font-weight: bold;}
+
+.price .in-stock {position: absolute;right: 20px;color: #54ff24;font-size: 20px;}
+
+.product-title {font-size: 24px;font-weight: bold;padding: 16px;background-color: #000000;margin: 0;color: #bb880b;}
+
+.specs {padding: 16px;background-color: #000000;color:white;border: 1px solid #4d4d4d;border-radius: 10px;margin-bottom: 10px;}
+
+.specs-table {width: 100%;border-collapse: collapse;}
+
+.specs-table th, .specs-table td {text-align: left;padding: 8px 0;}
+
+.specs-table th {font-weight: normal;color: #4d4d4d;}
+
+.buy-now-button {padding: 16px;display: block;text-align: center;border-radius: 10px;cursor: pointer;}
+
+.view-details {display: block;text-align: center;color: #007bff;padding: 16px;text-decoration: none;background-color: #000000;font-size: 16px;}
+
+.modal {display: none;position: fixed;z-index: 1;left: 0;top: 0;width: 100%;height: 100%;overflow: auto;background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.4);}
+
+.modal-content {background-color: #000000;margin: 15% auto;padding: 20px;border: 1px solid #888;width: 80%;color: #FFFFFF;border-radius: 20px;}
+
+.close {color: #c29b00; float: right;font-size: 28px;font-weight: bold;}
+
+.close:hover, .close:focus {color: #ffffff;text-decoration: none;cursor: pointer;}
