@@ -10,18 +10,9 @@ body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-col
 
 .countdown .time-unit span {font-size: 24px;font-weight: bold;margin-right: 4px;}
 
-.time-unit span {
-    display: inline-block;
-    margin-right: 4px;
-    font-size: 24px;
-    font-weight: bold;
-}
+.time-unit span {display: inline-block;margin-right: 4px;font-size: 24px;font-weight: bold;}
 
-.label {
-    font-size: 8px;
-    color: goldenrod;
-}
-
+.label {font-size: 8px;color: goldenrod;}
 
 .product-title {font-size: 24px;font-weight: bold;padding: 16px;background-color: #000000;margin: 0;color: #bb880b;}
 
