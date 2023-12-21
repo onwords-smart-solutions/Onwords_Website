@@ -4,11 +4,11 @@ body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-col
 
 .carousel-slide img {width: 100%;display: block;}
 
-.countdown {display: flex;justify-content: space-between; /* Align items to opposite ends */align-items: flex-start;gap: 10px;}
+.countdown {display: flex;justify-content: space-between!important; align-items: flex-start;gap: 10px;}
 
-.time-unit span {display: inline-block;margin-right: 4px;font-size: 24px;font-weight: bold;color: #000000; /* Set a darker color */}
+.time-unit span {display: inline-block;margin-right: 4px;font-size: 24px;font-weight: bold;color: #000000!important; }
 
-.label {font-size: 8px;color: goldenrod;}
+.label {font-size: 8px;color: goldenrod!important;}
 
 .days, .hours, .minutes, .seconds {font-weight: bold;}
 
@@ -32,7 +32,7 @@ body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-col
 
 .price .in-stock {position: absolute;right: 20px;color: #54ff24;font-size: 20px;}
 
-.buy-now-button {padding: 16px;display: block;text-align: center;border-radius: 10px;cursor: pointer; tab-size: initial;}
+.buy-now-button {padding: 16px;display: block;text-align: center;border-radius: 10px;cursor: pointer;}
 
 .view-details {display: block;text-align: center;color: #007bff;padding: 16px;text-decoration: none;background-color: #000000;font-size: 16px;}
 
