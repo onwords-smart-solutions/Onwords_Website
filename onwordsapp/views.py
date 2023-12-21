@@ -43,7 +43,7 @@ def sitemap(request):
     return render(request,'sitemap.xml')
 def robots(request):
     return render(request,'robots.txt')
-def refund(request):
+def smartlock(request):
     return render(request,'smartlock.html')
 def team(request):
     name=[]
@@ -161,5 +161,5 @@ class RobotsTxtViews(TemplateView):
     template_name ='robots.txt'
     content_type ='text/plain'
 class SitemapXmlViews(TemplateView):
-    template_name ='sitemapXml.html'
+    template_name ='sitemap.xml'
     content_type ='application/xml'
