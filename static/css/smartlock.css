@@ -4,15 +4,15 @@ body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-col
 
 .carousel-slide img {width: 100%;display: block;}
 
-.countdown {color: #000000;background-color: #e5e5e5;padding: 10px;text-align: center;position: relative;display: flex;justify-content: center;align-items: center;gap: 10px;}
+.countdown {color: #000000;background-color: #e5e5e5;padding: 10px;text-align: center;position: relative;display: flex;justify-content: center;align-items: center;gap: 5px; }
 
 .countdown .hurry {color: red;position: absolute;left: 280px;top: 50%;transform: translateY(-50%);font-weight: bold;}
 
-.countdown .time-unit {display: flex;flex-direction: column;color: black;}
+.countdown .time-unit {display: flex;flex-direction: row; align-items: baseline; }
 
-.countdown .time-unit span {font-size: 24px;font-weight: bold;}
+.countdown .time-unit span {font-size: 24px;font-weight: bold;color: black;}
 
-.countdown .time-unit .label {font-size: 14px; color: #c29b00; position: absolute }
+.countdown .time-unit .label {font-size: 14px;color: #c29b00;margin-left: 2px;}
 
 .product-title {font-size: 24px;font-weight: bold;padding: 16px;background-color: #000000;margin: 0;color: #bb880b;}
 
