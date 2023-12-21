@@ -4,13 +4,13 @@ body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-col
 
 .carousel-slide img {width: 100%;display: block;}
 
-.countdown {display: flex;justify-content: space-between!important; align-items: flex-start;gap: 10px;}
+.countdown { display: flex; justify-content: space-between!important; align-items: flex-start!important; gap: 10px;}
 
-.time-unit span {display: inline-block;margin-right: 4px;font-size: 24px;font-weight: bold;color: #000000!important; }
+.time-unit span { display: inline-block; margin-right: 4px; font-size: 24px; font-weight: bold; color: #000000!important; }
 
-.label {font-size: 8px;color: goldenrod!important;}
+.label { font-size: 8px; color: goldenrod!important; }
 
-.days, .hours, .minutes, .seconds {font-weight: bold;}
+.days, .hours, .minutes, .seconds { font-weight: bold; }
 
 .product-title {font-size: 24px;font-weight: bold;padding: 16px;background-color: #000000;margin: 0;color: #bb880b;}
 
