@@ -10,6 +10,10 @@ body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-col
 
 .countdown .time-unit {display: flex;flex-direction: column;color: black;}
 
+.countdown .time-unit span {font-size: 24px;font-weight: bold;}
+
+.countdown .time-unit .label {font-size: 14px; color: #c29b00; position: absolute }
+
 .product-title {font-size: 24px;font-weight: bold;padding: 16px;background-color: #000000;margin: 0;color: #bb880b;}
 
 .specs {padding: 16px;background-color: #000000;color:white;border: 1px solid #4d4d4d;border-radius: 10px;margin-bottom: 10px;}
@@ -20,15 +24,15 @@ body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-col
 
 .specs-table th {font-weight: normal;color: #4d4d4d;}
 
-.price {background-color: #000;color: #fff;padding: 10px;position: relative;font-size: 18px;text-align: left;border-radius: 10px;margin: 10px 0; border: 2px solid grey; }
+.price {background-color: #000;color: #fff;padding: 20px;position: relative;font-size: 18px;text-align: left;border-radius: 10px;margin: 10px 0; border: 2px solid grey; }
 
 .price h4 {color: #FFFFFF;font-size: 20px;margin-bottom: 10px;}
 
 .price .original-price {font-size: 24px;color: #ff0000;text-decoration: line-through;margin-right: 10px;}
 
-.price .sale-price {color: #54ff24;font-size: 34px;font-weight: bold;}
+.price .sale-price {color: #54ff24;font-size: 24px;font-weight: bold;}
 
-.price .in-stock {position: absolute;right: 20px;transform: translateY(-50%);background: #54ff24;color: #000;padding: 5px 10px;font-size: 14px;border-radius: 5px;}
+.price .in-stock {position: absolute;top: 50%;right: 20px;transform: translateY(-50%);background: #54ff24;color: #000;padding: 5px 10px;font-size: 14px;border-radius: 5px;}
 
 .buy-now-button {padding: 16px;display: block;text-align: center;border-radius: 10px;cursor: pointer;}
 
