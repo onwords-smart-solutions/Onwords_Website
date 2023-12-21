@@ -42,7 +42,9 @@ def refund(request):
 def sitemap(request):
     return render(request,'sitemap.xml')
 def robots(request):
-    return render(request,'robots.txt')          
+    return render(request,'robots.txt')
+def refund(request):
+    return render(request,'smartlock.html')
 def team(request):
     name=[]
     email=[]

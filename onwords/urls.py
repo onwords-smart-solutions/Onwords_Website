@@ -35,4 +35,5 @@ urlpatterns = [
      path('https://www.onwords.in/our-app', lambda request: redirect('http://3.110.161.248/ourApp', permanent=True)),
      path('https://www.onwords.in/contact-9', lambda request: redirect('http://3.110.161.248/contact-9', permanent=True)),
      path('https://www.onwords.in/gallery', lambda request: redirect('http://3.110.161.248/gallery', permanent=True)),
+     path('https://www.onwords.in/smartlock', lambda request: redirect('http://3.110.161.248/smartlock', permanent=True)),
 ]

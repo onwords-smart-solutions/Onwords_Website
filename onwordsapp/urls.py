@@ -18,6 +18,7 @@ urlpatterns=[
     path('aboutus',views.aboutus,name='aboutus'),
     path('careers',views.careers,name='careers'),
     path('team',views.team,name='team'),
+    path('smartlock',views.smartlock, name='smartlock'),
     path('downloads',views.downloads,name='downloads'),
     path('refund',views.refund,name='refund'),
     path('onwords-smart-things-app',views.onwordsSmartThingsApp,name='onwordsSmartThingsApp'),
