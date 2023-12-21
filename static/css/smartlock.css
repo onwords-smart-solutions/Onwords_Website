@@ -4,7 +4,27 @@ body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-col
 
 .carousel-slide img {width: 100%;display: block;}
 
-.countdown {justify-content: center;align-items: center;gap: 10px;}
+.countdown {
+    /* ... existing styles ... */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.countdown .time-unit {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    align-items: baseline; /* Align the baseline of the items */
+    color: black;
+}
+
+.countdown .time-unit span {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 4px; /* Add a small space between the number and label */
+}
+
 
 .product-title {font-size: 24px;font-weight: bold;padding: 16px;background-color: #000000;margin: 0;color: #bb880b;}
 
