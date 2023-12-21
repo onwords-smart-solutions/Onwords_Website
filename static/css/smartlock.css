@@ -8,11 +8,7 @@ body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-col
 
 .countdown .hurry {color: red;position: absolute;left: 280px;top: 50%;transform: translateY(-50%);font-weight: bold;}
 
-.countdown .time-unit {display: flex;flex-direction: column;color: black;}
-
-.countdown .time-unit span {font-size: 24px;font-weight: bold;}
-
-.countdown .time-unit .label {font-size: 14px; color: #c29b00; position: absolute }
+.countdown .time-unit {display: flex;flex-direction: column;color: black; align-items: flex-start;}
 
 .product-title {font-size: 24px;font-weight: bold;padding: 16px;background-color: #000000;margin: 0;color: #bb880b;}
 
@@ -24,7 +20,7 @@ body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-col
 
 .specs-table th {font-weight: normal;color: #4d4d4d;}
 
-.price {background-color: #000;color: #fff;padding: 20px;position: relative;font-size: 18px;text-align: left;border-radius: 10px; border: 2px solid grey; }
+.price {background-color: #000;color: #fff;padding: 10px;position: relative;font-size: 18px;text-align: left;border-radius: 10px; border: 2px solid grey; }
 
 .price h4 {color: #FFFFFF;font-size: 20px;margin-bottom: 10px;}
 
@@ -32,7 +28,7 @@ body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-col
 
 .price .sale-price {color: #54ff24;font-size: 24px;font-weight: bold;}
 
-.price .in-stock {position: absolute;top: 50%;right: 20px;transform: translateY(-50%);color: #54ff24;padding: 5px 10px;font-size: 14px;border-radius: 5px;}
+.price .in-stock {position: absolute;top: 50%;right: 20px;transform: translateY(-50%);color: #54ff24;font-size: 20px;}
 
 .buy-now-button {padding: 16px;display: block;text-align: center;border-radius: 10px;cursor: pointer;}
 
