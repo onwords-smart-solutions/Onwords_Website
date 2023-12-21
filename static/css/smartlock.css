@@ -44,7 +44,7 @@ body {
 
 
 .countdown-container {
-    background: linear-gradient(90deg, green 0%, limegreen 100%);
+    background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -95,7 +95,7 @@ body {
 
 .spec-value {
     text-align: right;
-    color: antiquewhite;
+    color: #CE4DA4;
 }
 
 .modal {
