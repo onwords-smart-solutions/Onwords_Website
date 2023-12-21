@@ -10,6 +10,8 @@ body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-col
 
 .label {font-size: 8px;color: goldenrod;}
 
+.days, .hours, .minutes, .seconds{ font-weight: bold;}
+
 .product-title {font-size: 24px;font-weight: bold;padding: 16px;background-color: #000000;margin: 0;color: #bb880b;}
 
 .specs {padding: 16px;background-color: #000000;color:white;border: 1px solid #4d4d4d;border-radius: 10px;margin-bottom: 10px;}
