@@ -1,16 +1,14 @@
 body, html {margin: 0;padding: 0;font-family: 'Arial', sans-serif;background-color: #000000; max-height: 768px}
 
-.carousel-container {max-width: 300px; max-height: 100%;margin: 0 auto;background-color: #000000;overflow: hidden;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);border-radius: 10px;border: 2px solid #4d4d4d;padding: 10px;}
+.carousel-container {max-width: 360px; max-height: 100%;margin: 0 auto;background-color: #000000;overflow: hidden;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);border-radius: 10px;border: 2px solid #4d4d4d;padding: 10px;}
 
 .carousel-slide img {width: 100%;display: block;}
 
 .countdown { display: flex; justify-content: space-between!important; align-items: flex-start!important; gap: 10px;}
 
-.time-unit span { display: inline-block; margin-right: 4px; font-size: 24px; font-weight: bold; color: #000000!important; }
-
 .label { font-size: 8px; color: goldenrod!important; }
 
-.days, .hours, .minutes, .seconds { font-weight: bold; }
+.days, .hours, .minutes, .seconds { font-weight: bold; color: black!important; }
 
 .product-title {font-size: 24px;font-weight: bold;padding: 16px;background-color: #000000;margin: 0;color: #bb880b;}
 
