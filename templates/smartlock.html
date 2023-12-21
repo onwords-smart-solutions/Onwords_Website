@@ -43,7 +43,6 @@
     <span class="in-stock">In stock</span>
   </div>
   <a href="#buy-now" class="buy-now-button"><form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_NEfDnmreQEsGn0" async> </script> </form></a>
-</div>
   <h1 class="product-title">Padlock with Fingerprint</h1>
   <div class="specs">
     <header style="font-size: 20px; margin-bottom: 20px;">Specifications</header>
@@ -96,6 +95,7 @@
       </p>
     </div>
   </div>
+</div>
 <script>
   let slideIndex = 0;
   const slides = document.querySelectorAll('.carousel-slide');
@@ -114,9 +114,16 @@
   }
 
   function calculateEndTime() {
-    const now = new Date();
-    now.setDate(now.getDate() + 3);
-    return now;
+    // Check if the end time is already stored
+    let endTime = localStorage.getItem('countdownEndTime');
+    if (!endTime) {
+      // If not, calculate and store it
+      const now = new Date();
+      now.setDate(now.getDate() + 3);
+      endTime = now;
+      localStorage.setItem('countdownEndTime', endTime);
+    }
+    return new Date(endTime);
   }
 
   function startCountdown(endTime) {
