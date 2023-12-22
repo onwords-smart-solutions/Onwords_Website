@@ -7,7 +7,7 @@
     url('https://cdn.jsdelivr.net/gh/LazerPay-Finance/Sohne-font/Sohne-Buch.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
-:root {--pink: #FEEFDF;--primary: #072654;--gray-50 : #A5A5A5;--gray-100 : #959595;--gray-200 : #666666;--black: #000000;--black-2: #ffffff;--green: #37C978;--white: #000000;--xxs: 12px;--xs: 14px;--sm: 16px;--md: 18px;--lg: 18px;--xl: 24px;--bold: 600;--normal: 500
+:root {--pink: #FEEFDF;--primary: #072654;--gray-50 : #A5A5A5;--gray-100 : #959595;--gray-200 : #666666;--black: #000000;--black-2: #ffffff;--green: #37C978;--white: #696969;--xxs: 12px;--xs: 14px;--sm: 16px;--md: 18px;--lg: 18px;--xl: 24px;--bold: 600;--normal: 500
 }
 
 body {font-family: 'Sohne-Buchin', Lato;height: 100vh;overflow: hidden;padding: 0;margin: 0;
