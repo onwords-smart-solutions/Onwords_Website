@@ -7,7 +7,7 @@
     url('https://cdn.jsdelivr.net/gh/LazerPay-Finance/Sohne-font/Sohne-Buch.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
-:root {--pink: #FEEFDF;--primary: #003585;--gray-50 : #A5A5A5;--gray-100 : #959595;--gray-200 : #666666;--black: #000000;--black-2: #2B2B2B;--green: #37C978;--white: #FFFFFF;--xxs: 12px;--xs: 14px;--sm: 16px;--md: 18px;--lg: 18px;--xl: 24px;--bold: 600;--normal: 500
+:root {--pink: #FEEFDF;--primary: #072654;--gray-50 : #A5A5A5;--gray-100 : #959595;--gray-200 : #666666;--black: #000000;--black-2: #ffffff;--green: #37C978;--white: #000000;--xxs: 12px;--xs: 14px;--sm: 16px;--md: 18px;--lg: 18px;--xl: 24px;--bold: 600;--normal: 500
 }
 
 body {font-family: 'Sohne-Buchin', Lato;height: 100vh;overflow: hidden;padding: 0;margin: 0;
@@ -127,7 +127,7 @@ p {margin: 0;padding: 0;
 
 .container .product .item .img {
     overflow: hidden;
-    max-width: 380px;
+    max-width: 360px;
 }
 
 .container .product .item .img img {
@@ -180,7 +180,7 @@ p {margin: 0;padding: 0;
 .container .bg-cover {
     max-width: 50%;
     overflow: hidden;
-    min-width: 400px;
+    min-width: 360px;
 }
 
 .container .bg-cover .slider {
@@ -201,7 +201,7 @@ p {margin: 0;padding: 0;
     height: 54px;
     width: 54px;
     border: none;
-    background-color: var(--black-2);
+    background-color: transparent;
     border-radius: 100%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
