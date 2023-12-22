@@ -257,7 +257,7 @@ p {margin: 0;padding: 0;
     }
 
     .container .bg-cover {
-        max-width: 100%;
+        max-width: 70%;
         min-width: 0;
     }
 
@@ -265,7 +265,6 @@ p {margin: 0;padding: 0;
         height: 40px;
         width: 40px;
     }
-
 
     .btn.paynow {
         position: fixed;
