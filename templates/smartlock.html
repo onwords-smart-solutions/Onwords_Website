@@ -16,58 +16,58 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
-<div id="countdown">
-    <span id="time"></span>
-</div>
-<div class="container">
-    <div class="product">
-        <div class="item">
-            <div class="description">
-                <h2 class="body-xl">Fingerprint Padlock with USB charging cable</h2>
-                <div class="flex items-center price">
-                    <b class="body-sm">₹ 999</b>
-                    <span class="strike body-xs">₹ 2999</span>
+    <div id="countdown">
+        <span id="time"></span>
+    </div>
+    <div class="container">
+        <div class="product">
+            <div class="item">
+                <div class="description">
+                    <h2 class="body-xl">Fingerprint Padlock with USB charging cable</h2>
+                    <div class="flex items-center price">
+                        <b class="body-sm">₹ 999</b>
+                        <span class="strike body-xs">₹ 2999</span>
+                    </div>
+                    <p class="body-sm extra">
+                    <h4>About This Item</h4>
+                    <p>
+                        <strong>Advanced Fingerprint Recognition:</strong>
+                        Unlock with just a touch using state-of-the-art fingerprint technology. Ideal for both indoor and outdoor applications.
+                    </p>
+                    <p>
+                        <strong>Portable and Convenient:</strong>
+                        Compact and lightweight, perfect for securing your luggage, gym locker, or toolbox.
+                    </p>
+                    <p>
+                        <strong>Anti-Theft Security:</strong>
+                        Enhanced security with smart fingerprint technology to prevent unauthorized access.
+                    </p>
+                    <p>
+                        <strong>Simple Charging:</strong>
+                        Easy USB charging for quick power-ups.
+                    </p>
+                    <p>
+                        Package includes 1 Fingerprint Lock and 1 USB Cable.
+                    </p>
                 </div>
-                <p class="body-sm extra">
-                <h4>About This Item</h4>
-                <p>
-                    <strong>Advanced Fingerprint Recognition:</strong>
-                    Unlock with just a touch using state-of-the-art fingerprint technology. Ideal for both indoor and outdoor applications.
-                </p>
-                <p>
-                    <strong>Portable and Convenient:</strong>
-                    Compact and lightweight, perfect for securing your luggage, gym locker, or toolbox.
-                </p>
-                <p>
-                    <strong>Anti-Theft Security:</strong>
-                    Enhanced security with smart fingerprint technology to prevent unauthorized access.
-                </p>
-                <p>
-                    <strong>Simple Charging:</strong>
-                    Easy USB charging for quick power-ups.
-                </p>
-                <p>
-                    Package includes 1 Fingerprint Lock and 1 USB Cable.
-                </p>
+                <button class="btn paynow"><form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_NFKNs6taMy5qhI" async> </script> </form></button>
+                <p class="body-xxs excerpt">Settle payment with cash and UPI</p>
             </div>
-            <button class="btn paynow"><form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_NFKNs6taMy5qhI" async> </script> </form></button>
-            <p class="body-xxs excerpt">Settle payment with cash and UPI</p>
         </div>
-    </div>
-    <div class="bg-cover">
-        <div class="slider">
-            <div class="slide">
-                <img src="{% static 'main-webp/lock.png' %}" />
-            </div>
-            <div class="slide">
-                <img src="{% static 'main-webp/lock1.png' %}" />
-            </div>
-            <div class="slide">
-                <img src="{% static 'main-webp/lock2.png' %}" />
+        <div class="bg-cover">
+            <div class="slider">
+                <div class="slide">
+                    <img src="{% static 'main-webp/lock.png' %}" />
+                </div>
+                <div class="slide">
+                    <img src="{% static 'main-webp/lock1.png' %}" />
+                </div>
+                <div class="slide">
+                    <img src="{% static 'main-webp/lock2.png' %}" />
+                </div>
             </div>
         </div>
     </div>
-</div>
 <script>
     const myButton = document.querySelector(".paynow");
     $('.slider').slick({
