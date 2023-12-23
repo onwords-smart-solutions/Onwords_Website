@@ -3,7 +3,6 @@
      width: 100%;
      height: 60vh;
      position: relative;
-
  }
 
  .title-aboutus {
@@ -59,7 +58,6 @@
      width: fit-content;
      height: 100%;
      float: right;
-
  }
 
  .about-para {
@@ -108,11 +106,8 @@
 .aboutus-quote{
     background: url(../main-webp/aboutus-quote-img.webp);
     background-repeat: no-repeat;
-
 }
 
-
-/* ===========refund con ==========*/
 .refund-con{
     width: 80%;
     padding-top: 10%;

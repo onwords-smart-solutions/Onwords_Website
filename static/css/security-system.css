@@ -1,7 +1,6 @@
 .security-home {
   width: 100%;
   height: 100vh;
-  /* background-image: url(../images/ajax-main.png); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -77,8 +76,6 @@
   font-size: 75px;
   opacity: 0.3;
   text-overflow: initial;
-  /* line-height: 40vh; */
-
 }
 
 .d-gif {
@@ -117,7 +114,6 @@
   position: relative;
   width: 100%;
   height: 60vh;
-  /* column-gap: 10cm;  */
 }
 
 .e-ajx img {
@@ -131,15 +127,6 @@
   width: 200px;
   height: 200px;
 }
-
-
-
-
-
-
-
-/* terms and condiation start */
-
 
 .privacy-title p {
   position: absolute;
@@ -393,7 +380,6 @@
   background-color: #0099cc;
 }
 
-/* ----------start motion images */
 .main-motion {
   overflow-x: hidden;
   display: flex;
@@ -454,5 +440,3 @@ list-style: circle;
   text-align: center;
   color: white;
 }
-
-/* ----------end  motion images */

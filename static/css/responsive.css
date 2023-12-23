@@ -1313,21 +1313,8 @@
    .center-schedule{
       height: 50vh;
    }
-   /* .our-story-border {
-      height: 46vh;
-   } */
-
-
 }
 
-
-
-
-
-
-
-
-/* ================== iphone XR */
 @media screen and (min-width : 414px) and (max-width : 896px) {
    .box-scrollers {
       height: 30vh;
