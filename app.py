@@ -207,6 +207,10 @@ def onwordsSmartThingsApp():
 def chretro():
     return render_template('chretro.html')
 
+@app.route('/smartlock')
+def chretro():
+    return render_template('smartlock.html')
+
 @app.route('/robots')
 def robots():
     return render_template('robots.txt')
