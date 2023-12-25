@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,18 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="P-q3zgP0sKvn7G_VKaSmU0C-btvY8WETXwF6yJr0VAU" />
     <meta name="description" content="Secure your world with cutting-edge security systems from onwords, proudly partnered with AJAX. Our range of advanced security solutions, featuring state-of-the-art AJAX technology, ensures unparalleled protection and peace of mind. From sophisticated surveillance to responsive alarms, we offer reliable and intelligent security tailored to modern needs. Trust onwords and AJAX to safeguard what matters most to you.">
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="{% static 'css/home.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'css/general.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'css/responsive.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'css/security-system.css' %}?{% now 'U' %}">
-    <link rel="shortcut icon" href="{% static 'main-webp/favicon.ico' %}?{% now 'U' %}" type="image/x-icon" />
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{%static 'css/footer.css' %}?{% now 'U' %}">
-    <!-- bs-4 -->
-    <link rel="stylesheet" href="{% static 'fonts/all.min.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'fonts/fontawesome.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'fonts/fonts-6/css/all.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="../static/css/general.css">
+    <link rel="stylesheet" href="../static/css/responsive.css">
+    <link rel="stylesheet" href="../static/css/security-system.css">
+    <link rel="shortcut icon" href="../static/main-webp/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/fonts/all.min.css">
+    <link rel="stylesheet" href="../static/fonts/fontawesome.css">
+    <link rel="stylesheet" href="../static/fonts/fonts-6/css/all.css">
     <title>Onwords x Ajax | Security Systems | Advanced Surveillance | Intelligent Alarms | Advanced Surveillance | Safety Solutions | Smart Security | Reliable Protection | Integrated Security | High-Tech Safety
     </title>
 </head>
@@ -29,7 +26,7 @@
         <header>
             <nav class="navbar navbar-expand-lg sticky-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="/"><img src="{% static 'main-webp/onwords-logo.svg' %}" alt="logo"
+                    <a class="navbar-brand" href="/"><img src="../static/main-webp/onwords-logo.svg" alt="logo"
                             class="img-fluid logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -78,12 +75,12 @@
             </button>
             <button id="whatsapp">
                 <a href="https://wa.me/+917708630275" target="_blank">
-                    <img src="{% static 'main-webp/whatsapp-ico.webp' %}" alt="whatsapp">
+                    <img src="../static/main-webp/whatsapp-ico.webp" alt="whatsapp">
                 </a>
             </button>
         </div>
         <div class="security-home">
-            <video src="{% static 'main-webp/ajax-video.mp4'%}" muted autoplay loop></video>
+            <video src="../static/main-webp/ajax-video.mp4" muted autoplay loop></video>
         </div>
         <section>
             <div class="container">
@@ -114,7 +111,7 @@
             <h2>Innovation to protect</h2>
         </div>
         <section class="third">
-            <video src="{% static 'main-webp/ajax-1.webm' %}" loop autoplay muted></video>
+            <video src="../static/main-webp/ajax-1.webm" loop autoplay muted></video>
         </section>
         <div class="sec-title reveal fade-left " data-wow-delay="0.1s">
             <h2>Our Products</h2>
@@ -163,7 +160,7 @@
             </div>
         </section>
         <section class="secure-video">
-            <video src="{% static 'main-webp/secure-video.mp4' %}" muted autoplay loop></video>
+            <video src="../static/main-webp/secure-video.mp4" muted autoplay loop></video>
         </section>
         <section>
             <div class="container">
@@ -184,7 +181,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img src="{% static 'main-webp/motion-cam.png' %}" alt="motion-img" class="img-fluid">
+                        <img src="../static/main-webp/motion-cam.png" alt="motion-img" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -194,7 +191,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="section-motion-img  reveal fade-opacity" data-wow-delay="0.1s">
-                            <img src="{% static 'main-webp/ajax-component-3.png' %}" alt="ajax-component"
+                            <img src="../static/main-webp/ajax-component-3.png" alt="ajax-component"
                                 class="img-fluid">
                         </div>
                     </div>
@@ -211,7 +208,7 @@
             </div>
         </section>
         <section class="secure-video">
-            <video src="{% static 'main-webp/constructor-bg.mp4' %}" muted loop autoplay></video>
+            <video src="../static/main-webp/constructor-bg.mp4" muted loop autoplay></video>
             <div class="secure-video-text">
                 <h2>Choose the most suitable Ajax set in 2 <br> minutes</h2>
             </div>
@@ -222,7 +219,7 @@
                     <div class="row">
                         <div class="col-md-12 d-flex align-items-center justify-content-center e-ajx">
                             <p class="dg-ajax left-ajax">We stand</p>
-                            <img src="{% static 'main-webp/lastajax-gif.gif' %}" alt="lastajax" class=" img-fluid">
+                            <img src="../static/main-webp/lastajax-gif.gif" alt="lastajax" class=" img-fluid">
                             <p class="dg-ajax right-ajax">against evil </p>
                         </div>
                     </div>
@@ -311,10 +308,10 @@
                         <h5>Our Apps</h5>
                         <div class="app-google-store">
                             <a href="https://play.google.com/store/apps/details?id=com.onwords.smart_things&hl=en_IN&gl=US">
-                              <img src="{% static 'main-webp/play.webp' %}" alt="play store" class="img-fluid">
+                              <img src="../static/main-webp/play.webp" alt="play store" class="img-fluid">
                             </a>
                             <a href="https://apps.apple.com/in/app/onwords-smart-things/id6449142647"><img
-                                src="{% static 'main-webp/apple.webp' %}" alt="apple storw" class="img-fluid"></a>
+                                src="../static/main-webp/apple.webp" alt="apple storw" class="img-fluid"></a>
                           </div>
                     </div>
                 </div>
@@ -374,13 +371,13 @@
             }
         })();
     </script>
-    <script src="{%static 'js/bootstrap.min.js'%}"></script>
-    <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
-    <script src="{% static 'js/general.js' %}"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/bootstrap.bundle.js"></script>
+    <script src="../static/js/general.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="{% static 'js/all.min.js' %}"></script>
-    <script src="{% static 'js/fontawesome.min.js' %}"></script>
+    <script src="../static/js/all.min.js"></script>
+    <script src="../static/js/fontawesome.min.js"></script>
 </body>
 </html>

@@ -4,7 +4,5 @@ Disallow: /admin/
 Disallow: /temp/
 Disallow: /private/
 Disallow: /backend/
-Disallow: /icons/
-
 
 Sitemap: https://onwords.in/sitemap.xml
