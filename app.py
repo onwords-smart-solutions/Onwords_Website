@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from flask import Flask, render_template
 import pyrebase
 
@@ -218,6 +217,3 @@ def sitemap():
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0",port=80,debug=True)
-=======
-
->>>>>>> 9324b0b1b2d9fd2155612bf939e59779ec71b33e
