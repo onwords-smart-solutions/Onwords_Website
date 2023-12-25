@@ -208,7 +208,7 @@ def chretro():
     return render_template('chretro.html')
 
 @app.route('/smartlock')
-def chretro():
+def smartlock():
     return render_template('smartlock.html')
 
 @app.route('/robots')
