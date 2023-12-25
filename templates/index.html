@@ -1,7 +1,5 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,15 +8,15 @@
     <title>Onwords - Coimbatore | Home Automation | Smart Home | Gate Automation | ALEXA | GOOGLE | AJAX | Security Systems | Automation </title>
     <meta name="description" content="Discover premier Home Automation services in Coimbatore with Onwords. Experience seamless integration of smart home devices, voice control, and eco-friendly automation for modern living.">
     <meta name="keyword" content="Automatic lights, Automatic gate, smart door, door lock, phone control, voice control light, Ac automation, Samsung, Ajax, Smart Home, Home automation, Automated water tanks, Wireless Connectivity, Climate control automation, Mobile app controlled smart devices, Home automation with mobile devices, Tamil Nadu, Coimbatore, Automation, Without Internet, Security Systems,Guard Patrol Systems,Gate automation system ,Low cost, in Coimbatore, Tamilnadu">
-    <link rel="stylesheet" href="{% static 'css/home.css' %}?{% now 'U' %}">
-    <link rel="shortcut icon" href="{% static 'main-webp/favicon.ico' %}" type="image/x-icon" />
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'css/responsive.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'css/general.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'css/footer.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'fonts/all.min.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'fonts/fontawesome.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'fonts/fonts-6/css/all.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="shortcut icon" href="../static/main-webp/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/responsive.css">
+    <link rel="stylesheet" href="../static/css/general.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/fonts/all.min.css">
+    <link rel="stylesheet" href="../static/fonts/fontawesome.css">
+    <link rel="stylesheet" href="../static/fonts/fonts-6/css/all.css">
 </head>
 <body id="bodyTag">
 <div id="preloader"></div>
@@ -27,7 +25,7 @@
     <header>
         <nav class="navbar navbar-expand-lg sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/"><img src="{% static 'main-webp/onwords-logo.svg' %}" alt="logo"
+                <a class="navbar-brand" href="/"><img src="../static/main-webp/onwords-logo.svg" alt="logo"
                                                       class="img-fluid logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -55,7 +53,6 @@
                                 <li><a class="dropdown-item" href="/smartlock">Purchase Smart Locks</a></li>
                             </ul>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="/securitySystem">Security System</a>
                         </li>
@@ -117,10 +114,9 @@
     </button>
     <button id="whatsapp">
         <a href="https://wa.me/+917708630275" target="_blank">
-            <img src="{% static 'main-webp/whatsapp-ico.webp' %}" alt="whatsapp">
+            <img src="../static/main-webp/whatsapp-ico.webp" alt="whatsapp">
         </a>
     </button>
-
     <section class="home-bg">
         <div class="container-fluid">
             <div class="sec-row">
@@ -143,31 +139,29 @@
                     </div>
                 </div>
                 <div class="second-sec">
-
                     <div class="mob-li-1">
-                        <img src="{% static 'main-webp/mocks.png' %}" alt="mobile" class="img-fluid">
+                        <img src="../static/main-webp/mocks.png" alt="mobile" class="img-fluid">
                     </div>
-
                     <div class="d-btn" onclick="both()">
                         <div class="times">time</div>
                         <div class="grp-btn">
                             <div class="btns s-btns" id="bolconytogg">
                                 <label for="">
-                                    <img src="{% static 'main-webp/balcony-light-on.png' %}" alt="btn-1"
+                                    <img src="../static/main-webp/balcony-light-on.png" alt="btn-1"
                                          class="img-fluid" >
                                 </label>
                             </div>
                             <div class="btns s-btns" id="parkingtogg">
                                 <label for="">
-                                    <img src="{% static 'main-webp/parking-light-on.png' %}" alt="btn-1"
+                                    <img src="../static/main-webp/parking-light-on.png" alt="btn-1"
                                          class="img-fluid">
                                 </label>
                             </div>
                             <div class="btns">
                                 <label for="bolconys">
-                                    <img src="{% static 'main-webp/balcony-light-off.png' %}" alt="btn-1"
+                                    <img src="../static/main-webp/balcony-light-off.png" alt="btn-1"
                                          class="img-fluid" id="bolconyOffBtn">
-                                    <img src="{% static 'main-webp/balcony-light-on.png' %}" alt="btn-1"
+                                    <img src="../static/main-webp/balcony-light-on.png" alt="btn-1"
                                          class="img-fluid" id="bolconyOnBtn">
 
                                     <input type="checkbox" class="checkbox" id="bolconys" />
@@ -175,9 +169,9 @@
                             </div>
                             <div class="btns s-btns" id="parkbtn">
                                 <label for="parkings">
-                                    <img src="{% static 'main-webp/parking-light-off.png' %}" alt="btn-1"
+                                    <img src="../static/main-webp/parking-light-off.png" alt="btn-1"
                                          class="img-fluid" id="parkingOffBtn">
-                                    <img src="{% static 'main-webp/parking-light-on.png' %}" alt="btn-1"
+                                    <img src="../static/main-webp/parking-light-on.png" alt="btn-1"
                                          class="img-fluid" id="parkingonBtn">
 
                                     <input type="checkbox" class="checkbox" id="parkings" />
@@ -185,7 +179,7 @@
                             </div>
                         </div>
                         <div class="pull-text">
-                            <p><span><img src="{% static 'main-webp/t-arrow.svg' %}"  alt=" arrow"
+                            <p><span><img src="../static/main-webp/t-arrow.svg"  alt=" arrow"
                                           class="img-fluid"></span><span>Pull here to sync</span></p>
                         </div>
                         <div class="doggle-btns">
@@ -202,13 +196,13 @@
                 </div>
                 <div class="third-sec">
                     <div class="main-li-1">
-                        <img src="{% static 'main-webp/Light-off.webp' %}" alt="light-off" class="img-fluid"
+                        <img src="../static/main-webp/Light-off.webp" alt="light-off" class="img-fluid"
                              id="allLightOff">
-                        <img src="{% static 'main-webp/All-lights-on.webp' %}" alt="all lights on" class="img-fluid"
+                        <img src="../static/main-webp/All-lights-on.webp" alt="all lights on" class="img-fluid"
                              id="alllightOn">
-                        <img src="{% static 'main-webp/balcony-lights.webp' %}" alt="balcony-lights"
+                        <img src="../static/main-webp/balcony-lights.webp" alt="balcony-lights"
                              class="img-fluid" id="bolconyLightson">
-                        <img src="{% static 'main-webp/parking-light.webp' %}" alt="parking-lights"
+                        <img src="../static/main-webp/parking-light.webp" alt="parking-lights"
                              class="img-fluid" id="parkingLightson">
                     </div>
                 </div>
@@ -237,23 +231,23 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <img data-src="{% static 'main-webp/adv-bg-main.webp' %}" alt="adavantage-home-img"
+                <img data-src="../static/main-webp/adv-bg-main.webp" alt="adavantage-home-img"
                      class="img-fluid adv-img lazy-load">
             </div>
             <div class="col-md-6">
                 <div class="con-adv  reveal fade-b" data-wow-delay="0.1s">
                     <div class="child-adv">
-                            <span class="child-adv-icon"><img src="{% static 'main-webp/wh-ic-2.svg' %}"
+                            <span class="child-adv-icon"><img src="../static/main-webp/wh-ic-2.svg"
                                                               alt="interconnectivity" class="img-fluid"></span>
                         <span>Interconnectivity</span>
                     </div>
                     <div class="child-adv">
-                            <span class="child-adv-icon"><img src="{% static 'main-webp/wh-ic-3.svg' %}"
+                            <span class="child-adv-icon"><img src="../static/main-webp/wh-ic-3.svg"
                                                               alt="interconnectivity" class="img-fluid"></span>
                         <span>Remote monitoring</span>
                     </div>
                     <div class="child-adv">
-                            <span class="child-adv-icon"><img src="{% static 'main-webp/wh-ic-1.svg' %}"
+                            <span class="child-adv-icon"><img src="../static/main-webp/wh-ic-1.svg"
                                                               alt="interconnectivity" class="img-fluid"></span>
                         <span>Customization</span>
                     </div>
@@ -270,24 +264,24 @@
                     <div class="con-box-why">
                         <div class="f-imgs-why bor-l">
                             <p class="stick">Fully Customizable</p>
-                            <img data-src="{% static 'main-webp/fully-custom-home.webp' %}" alt="fully-custom"
+                            <img data-src="../static/main-webp/fully-custom-home.webp" alt="fully-custom"
                                  class="img-fluid dghj lazy-load">
                         </div>
                         <div class="f-imgs-why why-sd bor-l2">
                             <p class="stick">Automate Everything</p>
-                            <img data-src="{% static 'main-webp/automate-everything.webp' %}" alt="fully-custom"
+                            <img data-src="../static/main-webp/automate-everything.webp" alt="fully-custom"
                                  class="dghj img-fluid lazy-load">
                         </div>
                     </div>
                     <div class="con-box-why ">
                         <div class="f-imgs-why bor-l3">
                             <p class="stick"> Device Intregrations </p>
-                            <img data-src="{% static 'main-webp/device-ic.svg' %}" alt="fully-custom"
+                            <img data-src="../static/main-webp/device-ic.svg" alt="fully-custom"
                                  class="dghj img-fluid lazy-load">
                         </div>
                         <div class="f-imgs-why why-sd bor-l4">
                             <p class="stick">Works Offline</p>
-                            <img data-src="{% static 'main-webp/offline-sv.svg' %}" alt="fully-custom"
+                            <img data-src="../static/main-webp/offline-sv.svg" alt="fully-custom"
                                  class="dghj img-fluid lazy-load">
                         </div>
                     </div>
@@ -317,7 +311,7 @@
                     <div class="dim">
                         <div class="row s">
                             <div class="col-xs-6 col-sm-6 col-md-6 mob-s">
-                                <img data-src="{% static 'main-webp/smarth.webp' %}" alt="smart-home"
+                                <img data-src="../static/main-webp/smarth.webp" alt="smart-home"
                                      class="img-fluid lazy-load">
                             </div>
                             <div class="col-xs-6 col-sm-6 col-md-6 mob-con-s">
@@ -339,7 +333,7 @@
                     <div class="dim">
                         <div class="row s">
                             <div class="col-sm-6 col-md-6 mob-s">
-                                <img data-src="{% static 'main-webp/gateauto.webp' %}" alt="gate-auto"
+                                <img data-src="../static/main-webp/gateauto.webp" alt="gate-auto"
                                      class="img-fluid lazy-load ">
                             </div>
                             <div class="col-sm-6 col-md-6">
@@ -364,7 +358,7 @@
                     <div class="dim">
                         <div class="row s">
                             <div class="col-sm-6 col-md-6 mob-s">
-                                <img data-src="{% static 'main-webp/ajax-main.png' %}" alt="security-system"
+                                <img data-src="../static/main-webp/ajax-main.png" alt="security-system"
                                      class="img-fluid lazy-load ">
                             </div>
                             <div class="col-sm-6 col-md-6">
@@ -389,7 +383,7 @@
                     <div class="dim">
                         <div class="row s">
                             <div class="col-sm-6 col-md-6 mob-s">
-                                <img data-src="{% static 'main-webp/webapp.webp' %}" alt="web/app development"
+                                <img data-src="../static/main-webp/webapp.webp" alt="web/app development"
                                      class="img-fluid lazy-load">
                             </div>
                             <div class="col-sm-6 col-md-6">
@@ -411,7 +405,7 @@
                     <div class="dim">
                         <div class="row s">
                             <div class="col-sm-6 col-md-6 mob-s">
-                                <img data-src="{% static 'main-webp/onconstr.webp' %}" alt="onwords-construction"
+                                <img data-src="../static/main-webp/onconstr.webp" alt="onwords-construction"
                                      class="img-fluid lazy-load ">
                             </div>
                             <div class="col-sm-6 col-md-6">
@@ -439,7 +433,7 @@
                     <div class="dim">
                         <div class="row s">
                             <div class="col-sm-6 col-md-6 mob-s">
-                                <img data-src="{% static 'main-webp/marketing.png' %}" alt="digital-marketing"
+                                <img data-src="../static/main-webp/marketing.png" alt="digital-marketing"
                                      class="img-fluid rounded lazy-load ">
                             </div>
                             <div class="col-sm-6 col-md-6">
@@ -468,7 +462,7 @@
             commands <br> to activate various smart appliances your home. In most cases, a digital voice
             assistant also audibly <br> responds to you while helping with daily tasks and scheduling.
         </p>
-        <img data-src="{% static 'main-webp/cir-black.png' %}" alt="circle" class="img-fluid lazy-load">
+        <img data-src="../static/main-webp/cir-black.png" alt="circle" class="img-fluid lazy-load">
     </div>
     <div class="container">
         <div class="row">
@@ -478,15 +472,15 @@
                 </center>
                 <div class="d-sd">
                     <div class="d-sds reveal text-left fade-l" data-wow-delay="0.1s">
-                            <span><img data-src="{% static 'main-webp/g-logo.webp' %}" alt="google assistant"
+                            <span><img data-src="../static/main-webp/g-logo.webp" alt="google assistant"
                                        class="img-fluid lazy-load"></span><span class="tex">Google</span>
                     </div>
                     <div class="d-sds reveal text-left fade-l" data-wow-delay="0.1s">
-                            <span><img data-src="{% static 'main-webp/alexa.webp' %}" alt="alexa"
+                            <span><img data-src="../static/main-webp/alexa.webp" alt="alexa"
                                        class="img-fluid lazy-load"></span><span class="tex">Alexa</span>
                     </div>
                     <div class="d-sds reveal text-left fade-l" data-wow-delay="0.1s">
-                            <span><img data-src="{% static 'main-webp/siri-logo.webp' %}" alt="siri"
+                            <span><img data-src="../static/main-webp/siri-logo.webp" alt="siri"
                                        class="img-fluid lazy-load"></span><span class="tex">Siri</span>
                     </div>
                 </div>
@@ -717,10 +711,10 @@
                     <h5>Our Apps</h5>
                     <div class="app-google-store">
                         <a href="https://play.google.com/store/apps/details?id=com.onwords.smart_things&hl=en_IN&gl=US">
-                            <img src="{% static 'main-webp/play.webp' %}" alt="play store" class="img-fluid">
+                            <img src="../static/main-webp/play.webp" alt="play store" class="img-fluid">
                         </a>
                         <a href="https://apps.apple.com/in/app/onwords-smart-things/id6449142647"><img
-                                src="{% static 'main-webp/apple.webp' %}" alt="apple storw" class="img-fluid"></a>
+                                src="../static/main-webp/apple.webp" alt="apple storw" class="img-fluid"></a>
                     </div>
                 </div>
             </div>
@@ -737,15 +731,15 @@
 </div>
 <!-- Preloader -->
 <!-- bootstrap js -->
-<script src="{%static 'js/bootstrap.min.js'%}"></script>
-<script src="{%static 'js/bootstrap.bundle.js'%}"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/bootstrap.bundle.js"></script>
 <!-- bootstrap js -->
 <!-- <script src="{% static 'js/main.js' %}"></script> -->
-<script src="{% static 'js/general.js' %}"></script>
-<script src="{% static 'js/hero.js' %}"></script>
+<script src="../static/js/general.js"></script>
+<script src="../static/js/hero.js"></script>
 <!-- carousel slider end -->
-<script src="{% static 'js/all.min.js' %}"></script>
-<script src="{% static 'js/fontawesome.min.js' %}"></script>
+<script src="../static/js/all.min.js"></script>
+<script src="../static/js/fontawesome.min.js"></script>
 <!-- check -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -768,7 +762,6 @@
         .typeString('<strong>Life</strong>')
         .pauseFor(2500)
         .start();
-
 </script>
 </body>
 </html>

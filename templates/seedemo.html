@@ -1,29 +1,21 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="P-q3zgP0sKvn7G_VKaSmU0C-btvY8WETXwF6yJr0VAU" />
-    <meta name="keyword" content="Smart home,Home automation,home automation using iot,Automated living,Automated water tanks,Smart home devices with IoT,IoT home automation,Climate control automation,Mobile app controlled smart devices,Home automation with mobile devices,
-Gate automation,Remote gate control,Smart gate technology,
-Voice controlled home,Smart home voice control,Voice assisted home automation,Voice and mobile home control,
-Smart security systems,Smart locks and alarms,Wireless Security Devices,Eco friendly smart devices,
-mbient lighting for TV,Hue Sync ambient lighting,
-Web development,Website development, remote control gate, automatic gate, phone control gate,
-Internet-free home automation,IoT devices for offline use,
-">
+    <meta name="keyword" content="Smart home,Home automation,home automation using iot,Automated living,Automated water tanks,Smart home devices with IoT,IoT home automation,Climate control automation,Mobile app controlled smart devices,Home automation with mobile devices,Gate automation,Remote gate control,Smart gate technology,Voice controlled home,Smart home voice control,Voice assisted home automation,Voice and mobile home control,Smart security systems,Smart locks and alarms,Wireless Security Devices,Eco friendly smart devices,ambient lighting for TV,Hue Sync ambient lighting,Web development,Website development, remote control gate, automatic gate, phone control gate,Internet-free home automation,IoT devices for offline use,">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/home.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'css/demo.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'css/general.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'css/responsive.css' %}?{% now 'U' %}">
-    <link rel="shortcut icon" href="{% static 'main-webp/favicon.ico' %}" type="image/x-icon" />
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{%static 'css/footer.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'fonts/all.min.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'fonts/fontawesome.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'fonts/fonts-6/css/all.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="../static/css/demo.css">
+    <link rel="stylesheet" href="../static/css/general.css">
+    <link rel="stylesheet" href="../static/css/responsive.css">
+    <link rel="shortcut icon" href="../static/main-webp/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/fonts/all.min.css">
+    <link rel="stylesheet" href="../static/fonts/fontawesome.css">
+    <link rel="stylesheet" href="../static/fonts/fonts-6/css/all.css">
     <title>Onwords</title>
 </head>
 <body id="bodyTag">
@@ -33,7 +25,7 @@ Internet-free home automation,IoT devices for offline use,
         <header>
             <nav class="navbar navbar-expand-lg sticky-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="/"><img src="{% static 'main-webp/logos-main.webp' %}" alt="logo"
+                    <a class="navbar-brand" href="/"><img src="../static/main-webp/logos-main.webp" alt="logo"
                             class="img-fluid logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -83,7 +75,7 @@ Internet-free home automation,IoT devices for offline use,
             </button>
             <button id="whatsapp">
                 <a href="https://wa.me/+917708630275" target="_blank">
-                    <img data-src="{% static 'main-webp/whatsapp-ico.webp' %}" alt="whatsapp" class="lazy-load">
+                    <img data-src="../static/main-webp/whatsapp-ico.webp" alt="whatsapp" class="lazy-load">
                 </a>
             </button>
         </div>
@@ -95,13 +87,13 @@ Internet-free home automation,IoT devices for offline use,
                     <div class="media-brd">
 
                         <div id="audioButton" class="vol-group">
-                            <img src="{% static 'main-webp/vol-on.webp' %}" alt="volume on" class="img-fluid vol-on">
-                            <img src="{% static 'main-webp/vol-off.webp' %}" alt="volume off" class="img-fluid vol-off">
+                            <img src="../static/main-webp/vol-on.webp" alt="volume on" class="img-fluid vol-on">
+                            <img src="../static/main-webp/vol-off.webp" alt="volume off" class="img-fluid vol-off">
                         </div>
     
                         <span id="vidbutton">
-                            <img src="{% static 'main-webp/pause.webp' %}" alt="pause" class="img-fluid PlayvideoBtn">
-                            <img src="{% static 'main-webp/playBtn.webp' %}" alt="play" class="img-fluid offVideoBtn">
+                            <img src="../static/main-webp/pause.webp" alt="pause" class="img-fluid PlayvideoBtn">
+                            <img src="../static/main-webp/playBtn.webp" alt="play" class="img-fluid offVideoBtn">
                         </span>
                     </div>
                     <div class="anim-press">
@@ -121,9 +113,9 @@ Internet-free home automation,IoT devices for offline use,
                 </div>
             </div>
             <div class="video-src back-demo-section">
-                <video src="{% static 'main-webp/hue-final-render.mp4' %}" class="img-fluid " loop autoplay
+                <video src="../static/main-webp/hue-final-render.mp4" class="img-fluid " loop autoplay
                     id="video-demos"></video>
-                <img src="{% static 'main-webp/hue-tv-img.webp' %}" alt="background tv" class="img-flimg"
+                <img src="../static/main-webp/hue-tv-img.webp" alt="background tv" class="img-flimg"
                     id="front-img"></img>
             </div>
         </div>
@@ -145,12 +137,12 @@ Internet-free home automation,IoT devices for offline use,
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <img src="{% static 'main-webp/sync.webp' %}" alt="sync" class="img-fluid smart-below-img">
+                            <img src="../static/main-webp/sync.webp" alt="sync" class="img-fluid smart-below-img">
                         </div>
                     </div>
                     <div class="row smarthome-parlarx-row">
                         <div class="col-md-6">
-                            <img src="{% static 'main-webp/create-atmosphere.webp' %}" alt="atmosphere"
+                            <img src="../static/main-webp/create-atmosphere.webp" alt="atmosphere"
                                 class="img-fluid smart-below-img">
                         </div>
                         <div class="col-md-6">
@@ -172,13 +164,13 @@ Internet-free home automation,IoT devices for offline use,
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <img src="{% static 'main-webp/gaming-mode.webp' %}" alt="gamingmode"
+                            <img src="../static/main-webp/gaming-mode.webp" alt="gamingmode"
                                 class="img-fluid smart-below-img">
                         </div>
                     </div>
                     <div class="row smarthome-parlarx-row">
                         <div class="col-md-6">
-                            <img src="{% static 'main-webp/party-mode.webp' %}" alt="paretymode"
+                            <img src="../static/main-webp/party-mode.webp" alt="paretymode"
                                 class="img-fluid smart-below-img">
                         </div>
                         <div class="col-md-6">
@@ -200,7 +192,7 @@ Internet-free home automation,IoT devices for offline use,
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <img src="{% static 'main-webp/cntr.webp' %}" alt="controls"
+                            <img src="../static/main-webp/cntr.webp" alt="controls"
                                 class="img-fluid smart-below-img">
                         </div>
                     </div>
@@ -289,10 +281,10 @@ Internet-free home automation,IoT devices for offline use,
                                 <h5>Our Apps</h5>
                                 <div class="app-google-store">
                                     <a href="https://play.google.com/store/apps/details?id=com.onwords.smart_things&hl=en_IN&gl=US">
-                                      <img src="{% static 'main-webp/play.webp' %}" alt="play store" class="img-fluid">
+                                      <img src="../static/main-webp/play.webp" alt="play store" class="img-fluid">
                                     </a>
                                     <a href="https://apps.apple.com/in/app/onwords-smart-things/id6449142647"><img
-                                        src="{% static 'main-webp/apple.webp' %}" alt="apple storw" class="img-fluid"></a>
+                                        src="../static/main-webp/apple.webp" alt="apple storw" class="img-fluid"></a>
                                   </div>
                             </div>
                         </div>
@@ -309,14 +301,14 @@ Internet-free home automation,IoT devices for offline use,
             </section>
         </div>
     </div>
-    <script src="{%static 'js/bootstrap.min.js'%}"></script>
-    <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
-    <script src="{% static 'js/general.js' %}"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/bootstrap.bundle.js"></script>
+    <script src="../static/js/general.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="{% static 'js/all.min.js' %}"></script>
-    <script src="{% static 'js/fontawesome.min.js' %}"></script>
+    <script src="../static/js/all.min.js"></script>
+    <script src="../static/js/fontawesome.min.js"></script>
     <script>
         function demoPlay() {
             const DemoBtn = document.getElementById('demoBtn')

@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="P-q3zgP0sKvn7G_VKaSmU0C-btvY8WETXwF6yJr0VAU" />
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="{% static 'css/home.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'css/responsive.css' %}?{% now 'U' %}">
-    <link rel="shortcut icon" href="{% static 'main-webp/favicon.ico' %}" type="image/x-icon" />
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'css/security-system.css'  %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'css/general.css'  %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'fonts/all.min.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'fonts/fontawesome.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'fonts/fonts-6/css/all.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{%static 'css/footer.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="../static/css/responsive.css">
+    <link rel="shortcut icon" href="../static/main-webp/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/security-system.css">
+    <link rel="stylesheet" href="../static/css/general.css">
+    <link rel="stylesheet" href="../static/fonts/all.min.css">
+    <link rel="stylesheet" href="../static/fonts/fontawesome.css">
+    <link rel="stylesheet" href="../static/fonts/fonts-6/css/all.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
     <title>Onwords</title>
 </head>
 <body id="bodyTag">
@@ -24,7 +23,7 @@
     <header>
         <nav class="navbar navbar-expand-lg sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/"><img src="{% static 'main-webp/onwords-logo.svg' %}" alt="logo"
+                <a class="navbar-brand" href="/"><img src="../static/main-webp/onwords-logo.svg" alt="logo"
                         class="img-fluid logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -73,7 +72,7 @@
         </button>
         <button id="whatsapp">
             <a href="https://wa.me/+917708630275" target="_blank">
-                <img data-src="{% static 'main-webp/whatsapp-ico.webp' %}" alt="whatsapp" class="lazy-load">
+                <img data-src="../static/main-webp/whatsapp-ico.webp" alt="whatsapp" class="lazy-load">
             </a>
         </button>
     </div>
@@ -224,7 +223,6 @@
                     Some states do not allow the exclusion of implied warranties or limitation of liability for
                     incidental or consequential damages, which means that some of the above limitations may not apply.
                     In these states, each party's liability will be limited to the greatest extent permitted by law.
-                    ​
                 </p>
 
                 <h6>"AS IS" and "AS AVAILABLE" Disclaimer</h6>
@@ -258,7 +256,6 @@
                     The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use
                     of the Service. Your use of the Application may also be subject to other local, state, national, or
                     international laws.
-                    ​
                 </p>
                 <h6>Disputes Resolution</h6>
                 <p>
@@ -269,7 +266,6 @@
                 <p>
                     If You are a European Union consumer, you will benefit from any mandatory provisions of the law of
                     the country in which you are resident in.
-                    ​
                 </p>
 
                 <h6>United States Legal Compliance</h6>
@@ -278,7 +274,6 @@
                     States government embargo, or that has been designated by the United States government as a
                     "terrorist supporting" country, and (ii) You are not listed on any United States government list of
                     prohibited or restricted parties.
-                    ​
                 </p>
                 <h6>Severability and Waiver</h6>
                 <p>
@@ -286,7 +281,6 @@
                     If any provision of these Terms is held to be unenforceable or invalid, such provision will be
                     changed and interpreted to accomplish the objectives of such provision to the greatest extent
                     possible under applicable law and the remaining provisions will continue in full force and effect.
-                    ​
                 </p>
                 <h6>Waiver</h6>
                 <p>
@@ -294,13 +288,11 @@
                     obligation under this Terms shall not effect a party's ability to exercise such right or require
                     such performance at any time thereafter nor shall be the waiver of a breach constitute a waiver of
                     any subsequent breach.
-                    ​
                 </p>
                 <h6>Translation Interpretation</h6>
                 <p>
                     These Terms and Conditions may have been translated if We have made them available to You on our
                     Service. You agree that the original English text shall prevail in the case of a dispute.
-                    ​
                 </p>
                 <h6>Changes to These Terms and Conditions</h6>
                 <p>
@@ -406,10 +398,10 @@
                             <h5>Our Apps</h5>
                             <div class="app-google-store">
                                 <a href="https://play.google.com/store/apps/details?id=com.onwords.smart_things&hl=en_IN&gl=US">
-                                  <img src="{% static 'main-webp/play.webp' %}" alt="play store" class="img-fluid">
+                                  <img src="../static/main-webp/play.webp" alt="play store" class="img-fluid">
                                 </a>
                                 <a href="https://apps.apple.com/in/app/onwords-smart-things/id6449142647"><img
-                                    src="{% static 'main-webp/apple.webp' %}" alt="apple storw" class="img-fluid"></a>
+                                    src="../static/main-webp/apple.webp" alt="apple storw" class="img-fluid"></a>
                               </div>
                         </div>
                     </div>
@@ -425,14 +417,14 @@
         </section>
     </div>
     <!-- bootstrap js -->
-    <script src="{%static 'js/bootstrap.min.js'%}"></script>
-    <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/bootstrap.bundle.js"></script>
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="{%static 'js/bootstrap.min.js'%}"></script>
-    <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
-    <script src="{%static 'js/general.js'%}"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/bootstrap.bundle.js"></script>
+    <script src="../static/js/general.js"></script>
 </body>
 </html>

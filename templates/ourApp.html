@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,17 +8,17 @@
     <meta name="discription"
         content="Onwords Smart home app . Download our latest onwords smart home app and share your experience with us. Onwords Smart home app.">
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="{% static 'css/home.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'css/responsive.css' %}?{% now 'U' %}">
-    <link rel="shortcut icon" href="{% static 'main-webp/favicon.ico' %}" type="image/x-icon" />
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'css/our-app.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'css/general.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{%static 'css/footer.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="../static/css/responsive.css">
+    <link rel="shortcut icon" href="../static/main-webp/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/our-app.css">
+    <link rel="stylesheet" href="../static/css/general.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
     <!-- bs-4 -->
-    <link rel="stylesheet" href="{% static 'fonts/all.min.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'fonts/fontawesome.css' %}?{% now 'U' %}">
-    <link rel="stylesheet" href="{% static 'fonts/fonts-6/css/all.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="../static/fonts/all.min.css">
+    <link rel="stylesheet" href="../static/fonts/fontawesome.css">
+    <link rel="stylesheet" href="../static/fonts/fonts-6/css/all.css">
     <title>Our App | onwords</title>
 </head>
 <body id="bodyTag">
@@ -28,7 +27,7 @@
         <header class="lights">
             <nav class="navbar navbar-expand-lg sticky-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="/"><img src="{% static 'main-webp/onwords-logo.svg' %}" alt="logo"
+                    <a class="navbar-brand" href="/"><img src="../static/main-webp/onwords-logo.svg" alt="logo"
                             class="img-fluid logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -78,7 +77,7 @@
             </button>
             <button id="whatsapp">
                 <a href="https://wa.me/+917708630275" target="_blank">
-                    <img data-src="{% static 'main-webp/whatsapp-ico.webp' %}" alt="whatsapp" class="lazy-load">
+                    <img data-src="../static/main-webp/whatsapp-ico.webp" alt="whatsapp" class="lazy-load">
                 </a>
             </button>
         </div>
@@ -101,23 +100,23 @@
                             <div class="bot-re">
                                 <div class="add-download">
                                     <a href="https://play.google.com/store/apps/details?id=com.onwords.smarthome">
-                                        <img src="{% static 'main-webp/googlepay.webp' %}" alt="play store"
+                                        <img src="../static/main-webp/googlepay.webp" alt="play store"
                                             class="img-fluid">
                                     </a>
                                     <a href="https://apps.apple.com/in/app/onwords-smart-home/id1598367434">
-                                        <img src="{% static 'main-webp/appstore.webp' %}" alt="app store"
+                                        <img src="../static/main-webp/appstore.webp" alt="app store"
                                             class="img-fluid">
                                     </a>
 
                                 </div>
                                 <div class="qr">
-                                    <img src="{% static 'main-webp/qr.svg' %}" alt="QR code">
+                                    <img src="../static/main-webp/qr.svg" alt="QR code">
 
                                     <p class="text-dark text-center">Scan this QR code for <br> download our app</p>
                                 </div>
                             </div>
                         </div>
-                        <img src="{% static 'main-webp/mobile.svg' %}" alt="smarthome-mobileapp"
+                        <img src="../static/main-webp/mobile.svg" alt="smarthome-mobileapp"
                             class="img-fluid r-banner-img">
                     </div>
                 </div>
@@ -143,10 +142,10 @@
             <div class="row app-con-sec">
                 <div class="col-md-6">
                     <div class="iphone-13 ">
-                        <img data-src="{% static 'main-webp/iphone-123.svg' %}" alt="devices"
+                        <img data-src="../static/main-webp/iphone-123.svg" alt="devices"
                             class="img-fluid pro-13 lazy-load">
                         <div class="span-box ">
-                            <p> <img data-src="{% static 'main-webp/bulb.svg' %}" alt="Celing-light"
+                            <p> <img data-src="../static/main-webp/bulb.svg" alt="Celing-light"
                                     class="img-fluid mob-lights lazy-load"></p>
                             <p>
                                 <span>Ceiling Light 1</span><br>
@@ -157,7 +156,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="dick">
-                        <p><img src="{% static  'main-webp/dick-circl.svg' %}" alt="dick-circl" class="img-fluid"></p>
+                        <p><img src="../static/main-webp/dick-circl.svg" alt="dick-circl" class="img-fluid"></p>
                         <div class="app-store-content">
                             <h5>Easy Device Setup</h5>
                             <p>
@@ -169,7 +168,7 @@
                         </div>
                     </div>
                     <div class="dick">
-                        <p><img src="{% static  'main-webp/dick-circl.svg' %}" alt="tick" class="img-fluid"></p>
+                        <p><img src="../static/main-webp/dick-circl.svg" alt="tick" class="img-fluid"></p>
                         <div class="app-store-content">
                             <h5>Fully Customizable </h5>
                             <p>
@@ -181,7 +180,7 @@
                         </div>
                     </div>
                     <div class="dick">
-                        <p><img src="{% static  'main-webp/dick-circl.svg' %}" alt="tick" class="img-fluid"></p>
+                        <p><img src="../static/main-webp/dick-circl.svg" alt="tick" class="img-fluid"></p>
                         <div class="app-store-content">
                             <h5>Sharing Made Simple</h5>
                             <p>
@@ -192,7 +191,6 @@
                             </p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -211,35 +209,33 @@
             <div class="mob-center-fix">
                 <div class="left-mob-fix">
                     <div class="app-feature">
-                        <p> <img src="{%static 'main-webp/friendly-app.png' %}" alt="friendly app"></p>
+                        <p> <img src="../static/main-webp/friendly-app.png" alt="friendly app"></p>
                         <p>User-friendly app </p>
                     </div>
                     <div class="app-feature">
-                        <p> <img src="{%static 'main-webp/ic-3.svg' %}" alt="friendly app"></p>
+                        <p> <img src="../static/main-webp/ic-3.svg" alt="friendly app"></p>
                         <p>Fully Customizable</p>
                     </div>
                     <div class="app-feature">
-                        <p> <img src="{%static 'main-webp/ic-5.svg' %}" alt="friendly app"></p>
+                        <p> <img src="../static/main-webp/ic-5.svg" alt="friendly app"></p>
                         <p>Single tap control</p>
                     </div>
                 </div>
                 <div class="center-mob-fix">
-                    <video src="{% static 'main-webp/website.mov' %}" class="img-fluid" loop muted autoplay width="100%"
+                    <video src="../static/main-webp/website.mov" class="img-fluid" loop muted autoplay width="100%"
                         h100%></video>
-                    <!-- <img data-src="{% static 'main-webp/app-specific.webp' %}" alt="App Features"
-                        class="img-fluid lazy-load"> -->
                 </div>
                 <div class="right-mob-fix">
                     <div class="app-feature">
-                        <p> <img src="{%static 'main-webp/ic-19.svg' %}" alt="friendly app"></p>
+                        <p> <img src="../static/main-webp/ic-19.svg" alt="friendly app"></p>
                         <p>Ios and Android Version</p>
                     </div>
                     <div class="app-feature">
-                        <p> <img src="{%static 'main-webp/ic-4.svg' %}" alt="friendly app"></p>
+                        <p> <img src="../static/main-webp/ic-4.svg" alt="friendly app"></p>
                         <p>Secure & Safety</p>
                     </div>
                     <div class="app-feature">
-                        <p> <img src="{%static 'main-webp/ic-6.svg' %}" alt="friendly app"></p>
+                        <p> <img src="../static/main-webp/ic-6.svg" alt="friendly app"></p>
                         <p>24/7 customer support</p>
                     </div>
                 </div>
@@ -257,32 +253,29 @@
 
                 <div class="col-md-12 fghs">
                     <div class="containersa">
-                        <div class="dfc">
-                            <!-- <img data-src="{% static 'main-webp/four-app.webp' %}" alt="four-apps" class="lazy-load"> -->
-                        </div>
                         <div class="carousela">
-                            <div class="item a"><img src="{% static 'main-webp/mob-1.svg' %}" alt="App interface-1"
+                            <div class="item a"><img src="../static/main-webp/mob-1.svg" alt="App interface-1"
                                     class=""></div>
-                            <div class="item b"><img src="{% static 'main-webp/ic-123.svg' %}" alt="App-interface-2"
+                            <div class="item b"><img src="../static/main-webp/ic-123.svg" alt="App-interface-2"
                                     class="  mob-mock-adjus"></div>
-                            <div class="item c"><img src="{% static 'main-webp/ic-121.svg' %}" alt="App interface-3"
+                            <div class="item c"><img src="../static/main-webp/ic-121.svg" alt="App interface-3"
                                     class="  mob-mock-adjus"></div>
-                            <div class="item d"><img src="{% static 'main-webp/mob-4.svg' %}" alt="App interface-4"
+                            <div class="item d"><img src="../static/main-webp/mob-4.svg" alt="App interface-4"
                                     class=" "></div>
-                            <div class="item e"><img src="{% static 'main-webp/mob-5.svg' %}" alt="App interface-5"
+                            <div class="item e"><img src="../static/main-webp/mob-5.svg" alt="App interface-5"
                                     class=" "></div>
-                            <div class="item f"><img src="{% static 'main-webp/mob-12.svg' %}" alt="App interface-6"
+                            <div class="item f"><img src="../static/main-webp/mob-12.svg" alt="App interface-6"
                                     class=" "></div>
                         </div>
                         <div class="mock">
-                            <img data-src="{% static 'main-webp/iphone13-mockup.webp' %}" alt="app features"
+                            <img data-src="/static/main-webp/iphone13-mockup.webp" alt="app features"
                                 class="app-fea-mockups lazy-load">
                         </div>
                     </div>
                     <div class="gc">
-                        <div class="nexta"><img src="{% static 'main-webp/right-arrow.svg' %}" alt="right arrow"
+                        <div class="nexta"><img src="../static/main-webp/right-arrow.svg" alt="right arrow"
                                 class="img-fluid"></div>
-                        <div class="preva"><img src="{% static 'main-webp/right-arrow.svg' %}" alt="right arrow"
+                        <div class="preva"><img src="../static/main-webp/right-arrow.svg" alt="right arrow"
                                 class="img-fluid left-arrow"></div>
                     </div>
                 </div>
@@ -370,10 +363,10 @@
                         <div class="app-google-store">
                             <a
                                 href="https://play.google.com/store/apps/details?id=com.onwords.smart_things&hl=en_IN&gl=US">
-                                <img src="{% static 'main-webp/play.webp' %}" alt="play store" class="img-fluid">
+                                <img src="../static/main-webp/play.webp" alt="play store" class="img-fluid">
                             </a>
                             <a href="https://apps.apple.com/in/app/onwords-smart-things/id6449142647"><img
-                                    src="{% static 'main-webp/apple.webp' %}" alt="apple storw" class="img-fluid"></a>
+                                    src="../static/main-webp/apple.webp" alt="apple storw" class="img-fluid"></a>
                         </div>
                     </div>
                 </div>
@@ -387,12 +380,12 @@
             </div>
         </div>
     </section>
-    <script src="{%static 'js/bootstrap.min.js'%}"></script>
-    <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/bootstrap.bundle.js"></script>
     <!-- bootstrap js -->
-    <script src="{% static 'js/general.js' %}"></script>
-    <script src="{% static 'js/all.min.js' %}"></script>
-    <script src="{% static 'js/fontawesome.min.js' %}"></script>
+    <script src="../static/js/general.js"></script>
+    <script src="../static/js/all.min.js"></script>
+    <script src="../static/js/fontawesome.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
