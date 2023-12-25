@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,721 +21,757 @@
     <link rel="stylesheet" href="{% static 'fonts/fonts-6/css/all.css' %}?{% now 'U' %}">
 </head>
 <body id="bodyTag">
-    <div id="preloader"></div>
-    <div class="blob"></div>
-    <div class="wrapper" id="blur">
-        <header>
-            <nav class="navbar navbar-expand-lg sticky-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/"><img src="{% static 'main-webp/onwords-logo.svg' %}" alt="logo"
-                            class="img-fluid logo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+<div id="preloader"></div>
+<div class="blob"></div>
+<div class="wrapper" id="blur">
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="{% static 'main-webp/onwords-logo.svg' %}" alt="logo"
+                                                      class="img-fluid logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"><span class="text-white onnav"><i
-                                    class="fa-solid fa-bars"></i></span>
+                                class="fa-solid fa-bars"></i></span>
                             <span class="off text-white"><i class="fa-solid fa-x"></i></span><span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto">
-                            <li class="nav-item active-nav">
-                                <a class="nav-link" aria-current="page" href="/">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Our Services
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="/ourservices">Smart Home</a></li>
-                                    <li><a class="dropdown-item" href="/gateautomation">Gate Automation</a></li>
-                                    <li><a class="dropdown-item" href="/contact-9">Water tank Automation</a></li>
-                                    <li><a class="dropdown-item" href="/contact-9">Web/App Devlopment</a></li>
-                                    <li><a class="dropdown-item" href="/construction">Construction</a></li>
-                                    <li><a class="dropdown-item" href="/smartlock">Purchase Smart Locks</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/securitySystem">Security System</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/ourApp">Our App</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/aboutus">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/contact-9">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content login-reg ">
-                    <div class="modal-body">
-                        <div  class="btn-close btn-close-white" data-bs-dismiss="modal"></div>
-                        <center>
-                            <h2>Schedule Your Complimentary Demo Today</h2>
-                            <p>Discover how Onwords transforms ordinary spaces into remarkable, smart environments. Experience the enduring and cutting-edge innovation firsthand.</p>
-                            <form action="" class="quot-form">
-                                <div class="form-row">
-                                    <input type="text" required="required" />
-                                    <span>Name</span>
-                                </div>
-                                <div class="form-row">
-                                    <input type="number" required="required" />
-                                    <span>Mobile Number</span>
-                                </div>
-                                <div class="form-row">
-                                    <input type="text" required="required" />
-                                    <span>Location</span>
-                                </div>
-                                <div class="form-row">
-                                    <input type="text" required="required" />
-                                    <span>Message</span>
-                                </div>
-                                <button type="submit" class="s-btn ">
-                                    <div class="go">
-                                        <div class="gradient-button">
-                                            Get a Free Demo
-                                        </div>
-                                    </div>
-                                </button>
-                            </form>
-                        </center>
-                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item active-nav">
+                            <a class="nav-link" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Our Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/ourservices">Smart Home</a></li>
+                                <li><a class="dropdown-item" href="/gateautomation">Gate Automation</a></li>
+                                <li><a class="dropdown-item" href="/contact-9">Water tank Automation</a></li>
+                                <li><a class="dropdown-item" href="/contact-9">Web/App Devlopment</a></li>
+                                <li><a class="dropdown-item" href="/construction">Construction</a></li>
+                                <li><a class="dropdown-item" href="/smartlock">Purchase Smart Locks</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/securitySystem">Security System</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ourApp">Our App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/aboutus">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact-9">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <!-- navbar ends -->
-        <button type="button" class="backtop" id="btn-back-to-top">
-            <a href="#"><i class="fas fa-arrow-up"></i></a>
-        </button>
-        <button id="whatsapp">
-            <a href="https://wa.me/+917708630275" target="_blank">
-                <img src="{% static 'main-webp/whatsapp-ico.webp' %}" alt="whatsapp">
-            </a>
-        </button>
-        <section class="home-bg">
-            <div class="container-fluid">
-                <div class="sec-row">
-                    <div class="fir-sec">
-                        <div class="mob-stick-toggle">s</div>
-                        <div class="main-bg-size">
-                            <div class="home-main-con">
-                                <h1>In Sync With The <br>
-                                    Smart
-                                    <span class="second-text" id="apps"></span>
-                                </h1>
-                                <p>We make technology to next level</p>
+        </nav>
+    </header>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content login-reg ">
+                <div class="modal-body">
+                    <div  class="btn-close btn-close-white" data-bs-dismiss="modal"></div>
+                    <center>
+                        <h2>Schedule Your Complimentary Demo Today</h2>
+                        <p>Discover how Onwords transforms ordinary spaces into remarkable, smart environments. Experience the enduring and cutting-edge innovation firsthand.</p>
+                        <form action="" class="quot-form">
+                            <div class="form-row">
+                                <input type="text" required="required" />
+                                <span>Name</span>
+                            </div>
+                            <div class="form-row">
+                                <input type="number" required="required" />
+                                <span>Mobile Number</span>
+                            </div>
+                            <div class="form-row">
+                                <input type="text" required="required" />
+                                <span>Location</span>
+                            </div>
+                            <div class="form-row">
+                                <input type="text" required="required" />
+                                <span>Message</span>
+                            </div>
+                            <button type="submit" class="s-btn ">
                                 <div class="go">
-                                    <button class="gradient-button" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal">
+                                    <div class="gradient-button">
                                         Book a Free Demo
-                                    </button>
+                                    </div>
                                 </div>
+                            </button>
+                        </form>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar ends -->
+    <button type="button" class="backtop" id="btn-back-to-top">
+        <a href="#"><i class="fas fa-arrow-up"></i></a>
+    </button>
+    <button id="whatsapp">
+        <a href="https://wa.me/+917708630275" target="_blank">
+            <img src="{% static 'main-webp/whatsapp-ico.webp' %}" alt="whatsapp">
+        </a>
+    </button>
+
+    <section class="home-bg">
+        <div class="container-fluid">
+            <div class="sec-row">
+                <div class="fir-sec">
+                    <div class="mob-stick-toggle">s</div>
+                    <div class="main-bg-size">
+                        <div class="home-main-con">
+                            <h1>In Sync With The <br>
+                                Smarter
+                                <span class="second-text" id="apps"></span>
+                            </h1>
+                            <p>We make technology to next level</p>
+                            <div class="go">
+                                <button class="gradient-button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                    Book a Free Demo
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="second-sec">
-                        <div class="mob-li-1">
-                            <img src="{% static 'main-webp/mocks.png' %}" alt="mobile" class="img-fluid">
-                        </div>
-                        <div class="d-btn" onclick="both()">
-                            <div class="times">time</div>
-                            <div class="grp-btn">
-                                <div class="btns s-btns" id="bolconytogg">
-                                   <label for="">
+                </div>
+                <div class="second-sec">
+
+                    <div class="mob-li-1">
+                        <img src="{% static 'main-webp/mocks.png' %}" alt="mobile" class="img-fluid">
+                    </div>
+
+                    <div class="d-btn" onclick="both()">
+                        <div class="times">time</div>
+                        <div class="grp-btn">
+                            <div class="btns s-btns" id="bolconytogg">
+                                <label for="">
                                     <img src="{% static 'main-webp/balcony-light-on.png' %}" alt="btn-1"
-                                    class="img-fluid" >
-                                   </label>
-                                </div>
-                                <div class="btns s-btns" id="parkingtogg">
-                                   <label for="">
+                                         class="img-fluid" >
+                                </label>
+                            </div>
+                            <div class="btns s-btns" id="parkingtogg">
+                                <label for="">
                                     <img src="{% static 'main-webp/parking-light-on.png' %}" alt="btn-1"
-                                    class="img-fluid">
-                                   </label>
-                                </div>
-                                <div class="btns">
-                                    <label for="bolconys">
-                                        <img src="{% static 'main-webp/balcony-light-off.png' %}" alt="btn-1"
-                                            class="img-fluid" id="bolconyOffBtn">
-                                        <img src="{% static 'main-webp/balcony-light-on.png' %}" alt="btn-1"
-                                            class="img-fluid" id="bolconyOnBtn">
-                                   
-                                        <input type="checkbox" class="checkbox" id="bolconys" />
-                                    </label>
-                                </div>
-                                <div class="btns s-btns" id="parkbtn">
-                                    <label for="parkings">
-                                        <img src="{% static 'main-webp/parking-light-off.png' %}" alt="btn-1"
-                                            class="img-fluid" id="parkingOffBtn">
-                                        <img src="{% static 'main-webp/parking-light-on.png' %}" alt="btn-1"
-                                            class="img-fluid" id="parkingonBtn">
-                                        
-                                        <input type="checkbox" class="checkbox" id="parkings" />
-                                    </label>
-                                </div>
+                                         class="img-fluid">
+                                </label>
                             </div>
-                            <div class="pull-text">
-                                <p><span><img src="{% static 'main-webp/t-arrow.svg' %}"  alt=" arrow"
-                                            class="img-fluid"></span><span>Pull here to sync</span></p>
+                            <div class="btns">
+                                <label for="bolconys">
+                                    <img src="{% static 'main-webp/balcony-light-off.png' %}" alt="btn-1"
+                                         class="img-fluid" id="bolconyOffBtn">
+                                    <img src="{% static 'main-webp/balcony-light-on.png' %}" alt="btn-1"
+                                         class="img-fluid" id="bolconyOnBtn">
+
+                                    <input type="checkbox" class="checkbox" id="bolconys" />
+                                </label>
                             </div>
-                            <div class="doggle-btns">
-                                <div class="doggules" id="doggules">
-                                    <div class="custom-control custom-switch custom-switch-vertical">
-                                        <input type="checkbox" class="custom-control-input" id="verticalToggle">
-                                        <label class="custom-control-label" for="verticalToggle">
-                                            <div class="slider"></div>
-                                        </label>
-                                    </div>
+                            <div class="btns s-btns" id="parkbtn">
+                                <label for="parkings">
+                                    <img src="{% static 'main-webp/parking-light-off.png' %}" alt="btn-1"
+                                         class="img-fluid" id="parkingOffBtn">
+                                    <img src="{% static 'main-webp/parking-light-on.png' %}" alt="btn-1"
+                                         class="img-fluid" id="parkingonBtn">
+
+                                    <input type="checkbox" class="checkbox" id="parkings" />
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pull-text">
+                            <p><span><img src="{% static 'main-webp/t-arrow.svg' %}"  alt=" arrow"
+                                          class="img-fluid"></span><span>Pull here to sync</span></p>
+                        </div>
+                        <div class="doggle-btns">
+                            <div class="doggules" id="doggules">
+                                <div class="custom-control custom-switch custom-switch-vertical">
+                                    <input type="checkbox" class="custom-control-input" id="verticalToggle">
+                                    <label class="custom-control-label" for="verticalToggle">
+                                        <div class="slider"></div>
+                                    </label>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="third-sec">
-                        <div class="main-li-1">
-                            <img src="{% static 'main-webp/Light-off.webp' %}" alt="light-off" class="img-fluid"
-                                id="allLightOff">
-                            <img src="{% static 'main-webp/All-lights-on.webp' %}" alt="all lights on" class="img-fluid"
-                                id="alllightOn">
-                            <img src="{% static 'main-webp/balcony-lights.webp' %}" alt="balcony-lights"
-                                class="img-fluid" id="bolconyLightson">
-                            <img src="{% static 'main-webp/parking-light.webp' %}" alt="parking-lights"
-                                class="img-fluid" id="parkingLightson">
-                        </div>
+                </div>
+                <div class="third-sec">
+                    <div class="main-li-1">
+                        <img src="{% static 'main-webp/Light-off.webp' %}" alt="light-off" class="img-fluid"
+                             id="allLightOff">
+                        <img src="{% static 'main-webp/All-lights-on.webp' %}" alt="all lights on" class="img-fluid"
+                             id="alllightOn">
+                        <img src="{% static 'main-webp/balcony-lights.webp' %}" alt="balcony-lights"
+                             class="img-fluid" id="bolconyLightson">
+                        <img src="{% static 'main-webp/parking-light.webp' %}" alt="parking-lights"
+                             class="img-fluid" id="parkingLightson">
                     </div>
                 </div>
             </div>
-    </section>
-        <section class="sec-adv-main">
-            <div class="container">
-                <div class="sec-title">
-                    <h2>
-                        Onwords: Revolutionizing Home Automation
-                    </h2>
-                </div>
-                <p class="text-center about-para reveal text-left fade-b" data-wow-delay="0.1s">
-                    Step into the future with Onwords, where innovation meets convenience in home and business automation. Our state-of-the-art solutions are designed to transform your living and working environments, offering unmatched comfort and efficiency through the latest advancements in IoT and smart technology.<br><br>
-                    At Onwords, we strive to merge today's digital capabilities with the evolving needs of tomorrow. Our approach integrates cutting-edge technology into everyday life, fostering a seamlessly connected and smarter world. We believe in empowering you with tools that enhance your lifestyle, streamline your business operations, and lead to smarter, more energy-efficient living.<br><br>
-                    Embrace the future of living with Onwords. Let us guide you through a world where every interaction with your space is intuitive, efficient, and tailored to your needs. Experience the pinnacle of modern living with our bespoke automation solutions. The future is now, and it's smarter with Onwords.
-                </p>
-            </div>
-        </section>
-        <section class="advantages">
+        </div>
+</div>
+</section>
+<section class="sec-adv-main">
+    <div class="container">
         <div class="sec-title">
-            <h2>Advantages Of Making <br> Smart Home</h2>
+            <h2>
+                Onwords , Revolutionizing Home Automation
+            </h2>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img data-src="{% static 'main-webp/adv-bg-main.webp' %}" alt="adavantage-home-img"
-                        class="img-fluid adv-img lazy-load">
-                </div>
-                <!-- <div class="col-md-1"></div> -->
-                <div class="col-md-6">
-                    <div class="con-adv  reveal fade-b" data-wow-delay="0.1s">
-                        <div class="child-adv">
+        <p class="text-center about-para reveal text-left fade-b" data-wow-delay="0.1s">
+            Step into the future with Onwords, where innovation meets convenience in home and business automation. Our state-of-the-art solutions are designed to transform your living and working environments, offering unmatched comfort and efficiency through the latest advancements in IoT and smart technology.<br><br>
+            At Onwords, we strive to merge today's digital capabilities with the evolving needs of tomorrow. Our approach integrates cutting-edge technology into everyday life, fostering a seamlessly connected and smarter world. We believe in empowering you with tools that enhance your lifestyle, streamline your business operations, and lead to smarter, more efficient living.<br><br>
+            Embrace the future of living with Onwords. Let us guide you through a world where every interaction with your space is intuitive, efficient, and tailored to your needs. Experience the pinnacle of modern living with our bespoke automation solutions. The future is now, and it's smarter with Onwords.
+        </p>
+    </div>
+</section>
+<section class="advantages">
+    <div class="sec-title">
+        <h2>Advantages Of Making <br> Smart Home</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img data-src="{% static 'main-webp/adv-bg-main.webp' %}" alt="adavantage-home-img"
+                     class="img-fluid adv-img lazy-load">
+            </div>
+            <div class="col-md-6">
+                <div class="con-adv  reveal fade-b" data-wow-delay="0.1s">
+                    <div class="child-adv">
                             <span class="child-adv-icon"><img src="{% static 'main-webp/wh-ic-2.svg' %}"
-                                    alt="interconnectivity" class="img-fluid"></span>
-                            <span>Interconnectivity</span>
-                        </div>
-                        <div class="child-adv">
+                                                              alt="interconnectivity" class="img-fluid"></span>
+                        <span>Interconnectivity</span>
+                    </div>
+                    <div class="child-adv">
                             <span class="child-adv-icon"><img src="{% static 'main-webp/wh-ic-3.svg' %}"
-                                    alt="interconnectivity" class="img-fluid"></span>
-                            <span>Remote monitoring</span>
-                        </div>
-                        <div class="child-adv">
+                                                              alt="interconnectivity" class="img-fluid"></span>
+                        <span>Remote monitoring</span>
+                    </div>
+                    <div class="child-adv">
                             <span class="child-adv-icon"><img src="{% static 'main-webp/wh-ic-1.svg' %}"
-                                    alt="interconnectivity" class="img-fluid"></span>
-                            <span>Customization</span>
-                        </div>
+                                                              alt="interconnectivity" class="img-fluid"></span>
+                        <span>Customization</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section>
-        <div class="container margin-t">
-            <div class="row why-onword">
-                <div class=" col-sm-12 col-md-6">
-                    <div class="why-fix  reveal fade-opacity" data-wow-delay="0.1s">
-                        <div class="con-box-why">
-                            <div class="f-imgs-why bor-l">
-                                <p class="stick">Fully Customizable</p>
-                                <img data-src="{% static 'main-webp/fully-custom-home.webp' %}" alt="fully-custom"
-                                    class="img-fluid dghj lazy-load">
-                            </div>
-                            <div class="f-imgs-why why-sd bor-l2">
-                                <p class="stick">Automate Everything</p>
-                                <img data-src="{% static 'main-webp/automate-everything.webp' %}" alt="fully-custom"
-                                    class="dghj img-fluid lazy-load">
-                            </div>
+    </div>
+</section>
+<section>
+    <div class="container margin-t">
+        <div class="row why-onword">
+            <div class=" col-sm-12 col-md-6">
+                <div class="why-fix  reveal fade-opacity" data-wow-delay="0.1s">
+                    <div class="con-box-why">
+                        <div class="f-imgs-why bor-l">
+                            <p class="stick">Fully Customizable</p>
+                            <img data-src="{% static 'main-webp/fully-custom-home.webp' %}" alt="fully-custom"
+                                 class="img-fluid dghj lazy-load">
                         </div>
-                        <div class="con-box-why ">
-                            <div class="f-imgs-why bor-l3">
-                                <p class="stick"> Device Intregrations</p>
-                                <img data-src="{% static 'main-webp/device-ic.svg' %}" alt="fully-custom"
-                                    class="dghj img-fluid lazy-load">
-                            </div>
-                            <div class="f-imgs-why why-sd bor-l4">
-                                <p class="stick">Works Offline</p>
-                                <img data-src="{% static 'main-webp/offline-sv.svg' %}" alt="fully-custom"
-                                    class="dghj img-fluid lazy-load">
-                            </div>
+                        <div class="f-imgs-why why-sd bor-l2">
+                            <p class="stick">Automate Everything</p>
+                            <img data-src="{% static 'main-webp/automate-everything.webp' %}" alt="fully-custom"
+                                 class="dghj img-fluid lazy-load">
+                        </div>
+                    </div>
+                    <div class="con-box-why ">
+                        <div class="f-imgs-why bor-l3">
+                            <p class="stick"> Device Intregrations </p>
+                            <img data-src="{% static 'main-webp/device-ic.svg' %}" alt="fully-custom"
+                                 class="dghj img-fluid lazy-load">
+                        </div>
+                        <div class="f-imgs-why why-sd bor-l4">
+                            <p class="stick">Works Offline</p>
+                            <img data-src="{% static 'main-webp/offline-sv.svg' %}" alt="fully-custom"
+                                 class="dghj img-fluid lazy-load">
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6">
-                    <div>
-                        <h2>Why Onwords?</h2>
-                        <div class="reveal fade-l" data-wow-delay="0.1s">
-                            <p class="onwords-paraz">
-                                At Onwords, we simplify smart technology for everyone. In a world where devices are increasingly connected, we are at the forefront of innovation, ensuring that technology serves human needs effectively. Our goal is to make the integration of technology into daily life a reality for all. We understand that each individual and business has unique technological needs. This is why we focus on creating customized solutions. Whether it's turning your home into a smart sanctuary or streamlining your business processes, Onwords is here to assist. Our team works closely with you to ensure that every solution we provide aligns seamlessly with your specific requirements and vision.
-                            </p>
-                        </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div>
+                    <h2>Why Onwords</h2>
+                    <div class="reveal fade-l" data-wow-delay="0.1s">
+                        <p class="onwords-paraz">
+                            At Onwords, we simplify smart technology for everyone. In a world where devices are increasingly connected, we are at the forefront of innovation, ensuring that technology serves human needs effectively. Our goal is to make the integration of technology into daily life a reality for all. We understand that each individual and business has unique technological needs. This is why we focus on creating customized solutions. Whether it's turning your home into a smart sanctuary or streamlining your business processes, Onwords is here to assist. Our team works closely with you to ensure that every solution we provide aligns seamlessly with your specific requirements and vision.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="product">
-        <div class="container">
-            <div class="sec-title  reveal fade-b" data-wow-delay="0.1s">
-                <h2 class="text-center">Products & Services </h2>
-            </div>
-            <div class="sticky-parent">
-                <div class="sticky-sl">
-                    <div class="horizontal">
-                        <div class="dim">
-                            <div class="row s">
-                                <div class="col-xs-6 col-sm-6 col-md-6 mob-s">
-                                    <img data-src="{% static 'main-webp/smarth.webp' %}" alt="smart-home"
-                                        class="img-fluid lazy-load">
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-6 mob-con-s">
-                                    <div class="second-roll">
-                                        <div class="sticklines"></div>
-                                        <h2>Smart Home</h2>
-                                        <p class="product-para">
-                                            Experience the future of home automation with Onwords' Smart Home Products, now embraced by a diverse audience across rural and suburban areas. Our innovative solutions seamlessly blend intelligent security, advanced smart interconnectivity, and interactive features, setting a new standard in home automation.
-                                            Each product is meticulously crafted, keeping energy efficiency at the forefront. This approach not only ensures a sustainable and eco-friendly experience but also offers cost savings for homeowners. With Onwords, step into an era where technology and convenience converge, offering a smarter, safer, and more efficient lifestyle.
-                                            Our commitment to excellence and continuous innovation in smart home technology positions Onwords as a leader in transforming everyday living spaces into intuitive, smart environments. Discover the ultimate in home automation with Onwords – where technology meets efficiency.
-                                        </p>
-                                        <a href="/ourservices">
-                                            <button class="see-demo">Know more</button>
-                                        </a>
-                                    </div>
+    </div>
+</section>
+<section class="product">
+    <div class="container">
+        <div class="sec-title  reveal fade-b" data-wow-delay="0.1s">
+            <h2 class="text-center">Products & Services </h2>
+        </div>
+        <div class="sticky-parent">
+            <div class="sticky-sl">
+                <div class="horizontal">
+                    <div class="dim">
+                        <div class="row s">
+                            <div class="col-xs-6 col-sm-6 col-md-6 mob-s">
+                                <img data-src="{% static 'main-webp/smarth.webp' %}" alt="smart-home"
+                                     class="img-fluid lazy-load">
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 mob-con-s">
+                                <div class="second-roll">
+                                    <div class="sticklines"></div>
+                                    <h2>Smart Home</h2>
+                                    <p class="product-para">
+                                        Experience the future of home automation with Onwords' Smart Home Products, now embraced by a diverse audience across rural and suburban areas. Our innovative solutions seamlessly blend intelligent security, advanced smart interconnectivity, and interactive features, setting a new standard in home automation.
+                                        Each product is meticulously crafted, keeping energy efficiency at the forefront. This approach not only ensures a sustainable and eco-friendly experience but also offers cost savings for homeowners. With Onwords, step into an era where technology and convenience converge, offering a smarter, safer, and more efficient lifestyle.
+                                        Our commitment to excellence and continuous innovation in smart home technology positions Onwords as a leader in transforming everyday living spaces into intuitive, smart environments. Discover the ultimate in home automation with Onwords – where technology meets efficiency.
+                                    </p>
+                                    <a href="/ourservices">
+                                        <button class="see-demo">Know more</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="dim">
-                            <div class="row s">
-                                <div class="col-sm-6 col-md-6 mob-s">
-                                    <img data-src="{% static 'main-webp/gateauto.webp' %}" alt="gate-auto" class="img-fluid lazy-load ">
-                                </div>
-                                <div class="col-sm-6 col-md-6">
-                                    <div class="second-roll">
-                                        <div class="sticklines"></div>
-                                        <h2>Gate Automation</h2>
-                                        <p class="product-para">
-                                            Gate automation systems can be operated remotely through smartphones,
-                                            tablets, or dedicated control panels. This allows you to conveniently
-                                            open or close the gate from a distance, monitor its status, and receive
-                                            notifications or alerts regarding gate activity. Gate automation systems
-                                            can also integrate with other security or home automation systems,
-                                            providing a seamless and integrated solution for your property.
-                                        </p>
-                                        <a href="/gateautomation">
-                                            <button class="see-demo">Know more</button>
-                                        </a>
-                                    </div>
+                    </div>
+                    <div class="dim">
+                        <div class="row s">
+                            <div class="col-sm-6 col-md-6 mob-s">
+                                <img data-src="{% static 'main-webp/gateauto.webp' %}" alt="gate-auto"
+                                     class="img-fluid lazy-load ">
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="second-roll">
+                                    <div class="sticklines"></div>
+                                    <h2>Gate Automation</h2>
+                                    <p class="product-para">
+                                        Gate automation systems can be operated remotely through smartphones,
+                                        tablets, or dedicated control panels. This allows you to conveniently
+                                        open or close the gate from a distance, monitor its status, and receive
+                                        notifications or alerts regarding gate activity. Gate automation systems
+                                        can also integrate with other security or home automation systems,
+                                        providing a seamless and integrated solution for your property.
+                                    </p>
+                                    <a href="/gateautomation">
+                                        <button class="see-demo">Know more</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="dim">
-                            <div class="row s">
-                                <div class="col-sm-6 col-md-6 mob-s">
-                                    <img data-src="{% static 'main-webp/ajax-main.png' %}" alt="security-system"
-                                        class="img-fluid lazy-load ">
-                                </div>
-                                <div class="col-sm-6 col-md-6">
-                                    <div class="second-roll">
-                                        <div class="sticklines"></div>
-                                        <h2>Security System</h2>
-                                        <p class="product-para">
-                                            Automation streamlines the operation of your security system, making it
-                                            more efficient and reliable. Automated security systems can perform
-                                            tasks such as arming/disarming alarms, activating/deactivating cameras,
-                                            and controlling access points automatically, reducing the chances of
-                                            human error or oversight.
-                                        </p>
-                                        <a href="/securitySystem">
-                                            <button class="see-demo">Know more</button>
-                                        </a>
-                                    </div>
+                    </div>
+                    <div class="dim">
+                        <div class="row s">
+                            <div class="col-sm-6 col-md-6 mob-s">
+                                <img data-src="{% static 'main-webp/ajax-main.png' %}" alt="security-system"
+                                     class="img-fluid lazy-load ">
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="second-roll">
+                                    <div class="sticklines"></div>
+                                    <h2>Security System</h2>
+                                    <p class="product-para">
+                                        Automation streamlines the operation of your security system, making it
+                                        more efficient and reliable. Automated security systems can perform
+                                        tasks such as arming/disarming alarms, activating/deactivating cameras,
+                                        and controlling access points automatically, reducing the chances of
+                                        human error or oversight.
+                                    </p>
+                                    <a href="/securitySystem">
+                                        <button class="see-demo">Know more</button>
+                                    </a>
+
                                 </div>
                             </div>
                         </div>
-                        <div class="dim">
-                            <div class="row s">
-                                <div class="col-sm-6 col-md-6 mob-s">
-                                    <img data-src="{% static 'main-webp/webapp.webp' %}" alt="web/app development" class="img-fluid lazy-load">
-                                </div>
-                                <div class="col-sm-6 col-md-6">
-                                    <div class="second-roll">
-                                        <div class="sticklines"></div>
-                                        <h2>Web/App Devlopment</h2>
-                                        <p class="product-para">
-                                            we are your partners in harnessing the power of the digital landscape. We
-                                            specialize in creating cutting-edge web and mobile applications that revolutionize the
-                                            way businesses operate and engage with their audiences. Our dedicated team
-                                            of skilled developers, designers, and strategists work collaboratively to
-                                            bring your ideas to life and deliver seamless, user-centric web and app experiences.
-                                        </p>
-                                    </div>
+                    </div>
+                    <div class="dim">
+                        <div class="row s">
+                            <div class="col-sm-6 col-md-6 mob-s">
+                                <img data-src="{% static 'main-webp/webapp.webp' %}" alt="web/app development"
+                                     class="img-fluid lazy-load">
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="second-roll">
+                                    <div class="sticklines"></div>
+                                    <h2>Web/App Devlopment</h2>
+                                    <p class="product-para">
+                                        we are your partners in harnessing the power of the digital landscape. We
+                                        specialize in creating cutting-edge web and mobile applications that revolutionize the
+                                        way businesses operate and engage with their audiences. Our dedicated team
+                                        of skilled developers, designers, and strategists work collaboratively to
+                                        bring your ideas to life and deliver seamless, user-centric web and app experiences.
+                                    </p>
+
                                 </div>
                             </div>
                         </div>
-                        <div class="dim">
-                            <div class="row s">
-                                <div class="col-sm-6 col-md-6 mob-s">
-                                    <img data-src="{% static 'main-webp/onconstr.webp' %}" alt="onwords-construction"
-                                        class="img-fluid lazy-load ">
-                                </div>
-                                <div class="col-sm-6 col-md-6">
-                                    <div class="second-roll">
-                                        <div class="sticklines"></div>
-                                        <h2>Onwords Construction</h2>
-                                        <p class="product-para">
-                                            At Onwords we are dedicated to bringing your architectural dreams to life
-                                            through expert construction solutions. With a rich history of delivering
-                                            exceptional projects, we specialize in turning blueprints into reality and
-                                            creating spaces that inspire, endure, and impress.
-                                            From cozy homes to luxurious estates, <span class="mob-cons-pag">
+                    </div>
+                    <div class="dim">
+                        <div class="row s">
+                            <div class="col-sm-6 col-md-6 mob-s">
+                                <img data-src="{% static 'main-webp/onconstr.webp' %}" alt="onwords-construction"
+                                     class="img-fluid lazy-load ">
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="second-roll">
+                                    <div class="sticklines"></div>
+                                    <h2>Onwords Construction</h2>
+                                    <p class="product-para">
+                                        At Onwords we are dedicated to bringing your architectural dreams to life
+                                        through expert construction solutions. With a rich history of delivering
+                                        exceptional projects, we specialize in turning blueprints into reality and
+                                        creating spaces that inspire, endure, and impress.
+                                        From cozy homes to luxurious estates, <span class="mob-cons-pag">
                                                 we craft residential spaces that
                                             reflect your unique lifestyle and preferences. Our team focuses on every
                                             detail, ensuring your vision is meticulously executed.
                                             </span>
-                                        </p>
-                                        <a href="/construction">
-                                            <button class="see-demo">Know more</button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dim">
-                            <div class="row s">
-                                <div class="col-sm-6 col-md-6 mob-s">
-                                    <img data-src="{% static 'main-webp/marketing.png' %}" alt="digital-marketing"
-                                        class="img-fluid rounded lazy-load ">
-                                </div>
-                                <div class="col-sm-6 col-md-6">
-                                    <div class="second-roll">
-                                        <div class="sticklines"></div>
-                                        <h2>Digital Marketing</h2>
-                                        <p class="product-para">
-                                            Our digital marketing approach is rooted in strategy. We begin by understanding your unique goals and target audience. From there, we create data-driven strategies that encompass SEO optimization, captivating content creation, targeted social media campaigns, and more. Our focus is on delivering not just visibility, but meaningful results that align with your business objectives.
-                                        </p>
-                                    </div>
+                                    </p>
+                                    <a href="/construction">
+                                        <button class="see-demo">Know more</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="works-with" id="wrk-with">
-        <div class="sec-title  reveal fade-l" data-wow-delay="0.1s">
-            <h2>Works with Voice Assistant</h2>
-        </div>
-        <div class="blursd dg-blur">
-            <p class="text-center">
-                If you're wondering what a smart home assistant is, it's a device that responds to your verbal
-                commands <br> to activate various smart appliances your home. In most cases, a digital voice
-                assistant also audibly <br> responds to you while helping with daily tasks and scheduling.
-            </p>
-            <img data-src="{% static 'main-webp/cir-black.png' %}" alt="circle" class="img-fluid lazy-load">
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class=" col-sm-12 col-md-12">
-                    <center>
-                        <h2 class="mb-4 fs-1">Onyx</h2>
-                    </center>
-                    <div class="d-sd">
-                        <div class="d-sds reveal text-left fade-l" data-wow-delay="0.1s">
-                            <span><img data-src="{% static 'main-webp/g-logo.webp' %}" alt="google assistant" class="img-fluid lazy-load"></span><span class="tex">Google</span>
-                        </div>
-                        <div class="d-sds reveal text-left fade-l" data-wow-delay="0.1s">
-                            <span><img data-src="{% static 'main-webp/alexa.webp' %}" alt="alexa" class="img-fluid lazy-load"></span><span class="tex">Alexa</span>
-                        </div>
-                        <div class="d-sds reveal text-left fade-l" data-wow-delay="0.1s">
-                            <span><img data-src="{% static 'main-webp/siri-logo.webp' %}" alt="siri" class="img-fluid lazy-load"></span><span class="tex">Siri</span>
+                    <div class="dim">
+                        <div class="row s">
+                            <div class="col-sm-6 col-md-6 mob-s">
+                                <img data-src="{% static 'main-webp/marketing.png' %}" alt="digital-marketing"
+                                     class="img-fluid rounded lazy-load ">
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="second-roll">
+                                    <div class="sticklines"></div>
+                                    <h2>Digital Marketing</h2>
+                                    <p class="product-para">
+                                        Our digital marketing approach is rooted in strategy. We begin by understanding your unique goals and target audience. From there, we create data-driven strategies that encompass SEO optimization, captivating content creation, targeted social media campaigns, and more. Our focus is on delivering not just visibility, but meaningful results that align with your business objectives.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="product-sec">
-        <div class="container">
-            <div class="row ">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                    <div class="sec-title">
-                        <h2 class="etg-top-text">"Innovation distinguishes between a leader and a follower."</h2>
+    </div>
+</section>
+<section class="works-with" id="wrk-with">
+    <div class="sec-title  reveal fade-l" data-wow-delay="0.1s">
+        <h2>Works with Voice Assistant</h2>
+    </div>
+    <div class="blursd dg-blur">
+        <p class="text-center">
+            If you're wondering what a smart home assistant is, it's a device that responds to your verbal
+            commands <br> to activate various smart appliances your home. In most cases, a digital voice
+            assistant also audibly <br> responds to you while helping with daily tasks and scheduling.
+        </p>
+        <img data-src="{% static 'main-webp/cir-black.png' %}" alt="circle" class="img-fluid lazy-load">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class=" col-sm-12 col-md-12">
+                <center>
+                    <h2 class="mb-4 fs-1">Onyx</h2>
+                </center>
+                <div class="d-sd">
+                    <div class="d-sds reveal text-left fade-l" data-wow-delay="0.1s">
+                            <span><img data-src="{% static 'main-webp/g-logo.webp' %}" alt="google assistant"
+                                       class="img-fluid lazy-load"></span><span class="tex">Google</span>
                     </div>
-                </div>
-                <div class="col-md-1"></div>
-            </div>
-            <div class="etg">
-                <div class="" id=targetElement>
-                    <div class="counter-boxs" onkeyup="reloads()">
-                        <div class="lead-boxs lead-1">
-                            <h2 class="display-4"><span id="count1"></span><span>+</span></h2>
-                            <h5>Clients</h5>
-                        </div>
-                        <div class="lead-boxs lead-2">
-                            <h2  class="display-4"><span id="count2"></span><span>+</span></h2>
-                            <h5>Projects</h5>
-                        </div>
-                        <div class="lead-boxs lead-3">
-                            <h2  class="display-4"><span id="count3"></span><span>+</span></h2>
-                            <h5>Leads</h5>
-                        </div>
+                    <div class="d-sds reveal text-left fade-l" data-wow-delay="0.1s">
+                            <span><img data-src="{% static 'main-webp/alexa.webp' %}" alt="alexa"
+                                       class="img-fluid lazy-load"></span><span class="tex">Alexa</span>
+                    </div>
+                    <div class="d-sds reveal text-left fade-l" data-wow-delay="0.1s">
+                            <span><img data-src="{% static 'main-webp/siri-logo.webp' %}" alt="siri"
+                                       class="img-fluid lazy-load"></span><span class="tex">Siri</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="testimoni">
-        <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
-            <h2>What Our Clients Say</h2>
-        </div>
-        <div class="container">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active ">
-                        <div class="box-main-con">
-                            <div class="text-containers">
-                                <h2 class="text-center">Raja Sekar</h2>
-                                <p>
-                                    Smart Home Onwords has redefined modern living for me. The convenience of
-                                    controlling my entire home with my smartphone or voice commands is nothing short
-                                    of extraordinary. What truly sets them apart is their dedication to
-                                    customization – they tailored the smart technology to match my lifestyle
-                                    perfectly. The team's professionalism and attention to detail during
-                                    installation were top-notch.
-                                </p>
-                                <p class="star-rate">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </p>
-                            </div>
-                            <div class="testi-customer">
-                            </div>
-                        </div>
-                        <div class="box-scrollers">
-                            <span class="f-circl"></span>
-                            <span class="s-circl"></span>
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <div class="box-main-con">
-                            <div class="text-containers">
-                                <h2 class="text-center">Meera</h2>
-                                <p>
-                                    Living smarter has never been so rewarding! Smart Home Onwords has exceeded my
-                                    expectations in every way. From the initial consultation to the final setup,
-                                    their team displayed unparalleled expertise and passion for transforming homes
-                                    into intelligent havens.Thanks to Smart Home, my house has become an embodiment
-                                    of modern innovation.
-                                </p>
-                                <p class="star-rate">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </p>
-                            </div>
-                            <div class="testi-customer">
-                            </div>
-                        </div>
-                        <div class="box-scrollers">
-                            <span class="f-circl"></span>
-                            <span class="s-circl"></span>
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <div class="box-main-con">
-                            <div class="text-containers">
-                                <h2 class="text-center">Sounder Rajan</h2>
-                                <p>
-                                    I was initially skeptical about integrating smart technology into my home, but Smart Home Onwords completely changed my perspective.
-                                    Their team provided an end-to-end solution that made the transition seamless and enjoyable.
-                                    Now, my home is not only more efficient and secure, but it also feels like it's truly mine, thanks to the personalized setup.
-                                    The ease and convenience brought by their technology is beyond what I had imagined.
-                                </p>
-                                <p class="star-rate">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </p>
-                            </div>
-                            <div class="testi-customer">
+    </div>
 
-                            </div>
-                        </div>
-                        <div class="box-scrollers">
-                            <span class="f-circl"></span>
-                            <span class="s-circl"></span>
-                        </div>
+</section>
+<section class="product-sec">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="sec-title">
+                    <h2 class="etg-top-text">"Innovation distinguishes between a leader and a follower."
+                    </h2>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="etg">
+            <div class="" id=targetElement>
+                <div class="counter-boxs" onkeyup="reloads()">
+                    <div class="lead-boxs lead-1">
+                        <h2 class="display-4"><span id="count1"></span><span>+</span></h2>
+                        <h5>Clients</h5>
+                    </div>
+                    <div class="lead-boxs lead-2">
+                        <h2  class="display-4"><span id="count2"></span><span>+</span></h2>
+                        <h5>Projects</h5>
+                    </div>
+                    <div class="lead-boxs lead-3">
+                        <h2  class="display-4"><span id="count3"></span><span>+</span></h2>
+                        <h5>Devices</h5>
+                        <!--  -->
                     </div>
                 </div>
-                <button class="carousel-control-prev c-prev" type="button" data-bs-target="#carouselExampleControls"
+            </div>
+        </div>
+    </div>
+</section>
+<section class="testimoni">
+    <div class="sec-title reveal fade-left" data-wow-delay="0.1s">
+        <h2>What Our Clients Say</h2>
+    </div>
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <div class="box-main-con">
+                        <div class="text-containers">
+                            <h2 class="text-center">Raja Sekar</h2>
+                            <p>
+                                Onwords Smart Home has redefined modern living for me. The convenience of
+                                controlling my entire home with my smartphone or voice commands is nothing short
+                                of extraordinary. What truly sets them apart is their dedication to
+                                customization – they tailored the smart technology to match my lifestyle
+                                perfectly. The team's professionalism and attention to detail during
+                                installation were top-notch.
+                            </p>
+                            <p class="star-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box-scrollers">
+                        <span class="f-circl"></span>
+                        <span class="s-circl"></span>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="box-main-con">
+                        <div class="text-containers">
+                            <h2 class="text-center">Meera</h2>
+                            <p>
+                                Living smarter has never been so rewarding! Smart Home Onwords has exceeded my
+                                expectations in every way. From the initial consultation to the final setup,
+                                their team displayed unparalleled expertise and passion for transforming homes
+                                into intelligent havens.Thanks to Smart Home, my house has become an embodiment
+                                of modern innovation.
+                            </p>
+                            <p class="star-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box-scrollers">
+                        <span class="f-circl"></span>
+                        <span class="s-circl"></span>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="box-main-con">
+                        <div class="text-containers">
+                            <h2 class="text-center">Sounder Rajan</h2>
+                            <p>
+                                I was initially skeptical about integrating smart technology into my home, but Smart Home Onwords completely changed my perspective.
+                                Their team provided an end-to-end solution that made the transition seamless and enjoyable.
+                                Now, my home is not only more efficient and secure, but it also feels like it's truly mine, thanks to the personalized setup.
+                                The ease and convenience brought by their technology is beyond what I had imagined.
+                            </p>
+                            <p class="star-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="testi-customer">
+
+                        </div>
+                    </div>
+                    <div class="box-scrollers">
+                        <span class="f-circl"></span>
+                        <span class="s-circl"></span>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev c-prev" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="prev">
-                    <span class="" aria-hidden="true"><i class="fas fa-arrow-left"></i></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next cn-btn" type="button" data-bs-target="#carouselExampleControls"
+                <span class="" aria-hidden="true"><i class="fas fa-arrow-left"></i></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next cn-btn" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="next">
-                    <span class="" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <span class="" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="company-list-1">
+                    <h5>Company</h5>
+                    <li>
+                        <p onclick="location.href='/aboutus'">About Us</p>
+                    </li>
+                    <li>
+                        <p onclick="location.href='/contact-9'">Contact Us</p>
+                    </li>
+                    <li>
+                        <p onclick="location.href='/ourApp'">Our App</p>
+                    </li>
+                    <li>
+                        <p onclick="location.href='/gallery'">Gallery</p>
+                    </li>
+                    <li>
+                        <p onclick="location.href='/carrier'">Career</p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-md-2">
+                <ul class="our-services-foot">
+                    <h5>Our Services</h5>
+                    <li>
+                        <p onclick="location.href='/ourservices'">Smart Home</p>
+                    </li>
+                    <li>
+                        <p onclick="location.href='/gateautomation'">Gate Automation</p>
+                    </li>
+                    <li>
+                        <p onclick="location.href='/securitySystem'">Security System</p>
+                    </li>
+                    <li>
+                        <p onclick="location.href='/curtain'">Smart Curtain</p>
+                    </li>
+                    <li>
+                        <p onclick="location.href='/construction'"> Constructions</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul class="quick-links-foot">
+                    <h5>Quick Links</h5>
+                    <li>
+                        <p onclick="location.href='/'"> Home</p>
+                    </li>
+                    <li>
+                        <p onclick="location.href='/ourservices'">Our Services</p>
+                    </li>
+                    <li>
+                        <p onclick="location.href='/securitySystem'">Security System</p>
+                    </li>
+                    <li>
+                        <p onclick="location.href='/refund'">Refunds & Cancellations</p>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <div class=" onwords-details-foot">
+                    <h5>Connect With Us</h5>
+                    <div class="footer-foot icon">
+                        <p onclick="location.href='//www.linkedin.com/company/onwords-smart-solution/'"><i
+                                class="fa-brands fa-linkedin"></i></p>
+                        <p onclick="location.href='//www.instagram.com/team.onwords/'" target=" _blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </p>
+                        <p onclick="location.href='//www.facebook.com/teamonwords/'
+                                " target="_blank"><i class="fa-brands fa-facebook"></i>
+                        </p>
+                        <p onclick="location.href='//www.youtube.com/@OnwordsSmartSolutions/'" target=" _blank"
+                        ><i class="fa-brands fa-square-youtube"></i></p>
+                    </div>
+                    <br>
+                    <div>
+                        <p>Onwords, Coimbatore - 642 005</p>
+                        <p class="mail-foot" onclick="location.href='mailto:cs@onwords.in'"><i
+                                class="fa-solid fa-envelope"></i>cs@onwords.in</p>
+                        <p class="phone-foot" onclick="location.href='tel:7708630275'"><i
+                                class="fa-solid fa-phone"></i> 77086 30275</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="our-app-foot onwords-details-foot ">
+                    <h5>Our Apps</h5>
+                    <div class="app-google-store">
+                        <a href="https://play.google.com/store/apps/details?id=com.onwords.smart_things&hl=en_IN&gl=US">
+                            <img src="{% static 'main-webp/play.webp' %}" alt="play store" class="img-fluid">
+                        </a>
+                        <a href="https://apps.apple.com/in/app/onwords-smart-things/id6449142647"><img
+                                src="{% static 'main-webp/apple.webp' %}" alt="apple storw" class="img-fluid"></a>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-        <section class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2">
-                        <ul class="company-list-1">
-                            <h5>Company</h5>
-                            <li><a href="/aboutus">About Us</a></li>
-                            <li><a href="/contact-9">Contact Us</a></li>
-                            <li><a href="/ourApp">Our App</a></li>
-                            <li><a href="/gallery">Gallery</a></li>
-                            <li><a href="/careers">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2">
-                        <ul class="our-services-foot">
-                            <h5>Our Services</h5>
-                            <li>
-                                <p onclick="location.href='/ourservices'">Smart Home</p>
-                            </li>
-                            <li>
-                                <p onclick="location.href='/gateautomation'">Gate Automation</p>
-                            </li>
-                            <li>
-                                <p onclick="location.href='/securitySystem'">Security System</p>
-                            </li>
-                            <li>
-                                <p onclick="location.href='/curtain'">Smart Curtain</p>
-                            </li>
-                            <li>
-                                <p onclick="location.href='/construction'"> Constructions</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2">
-                        <ul class="quick-links-foot">
-                            <h5>Quick Links</h5>
-                            <li>
-                                <p onclick="location.href='/'"> Home</p>
-                            </li>
-                            <li>
-                                <p onclick="location.href='/ourservices'">Our Services</p>
-                            </li>
-                            <li>
-                                <p onclick="location.href='/securitySystem'">Security System</p>
-                            </li>
-                            <li>
-                                <p onclick="location.href='/refund'">Refunds & Cancellations</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <div class=" onwords-details-foot">
-                            <h5>Connect With Us</h5>
-                                <div class="footer-foot icon">
-                                    <p onclick="location.href='//www.linkedin.com/company/onwords-smart-solution/'"><i
-                                            class="fa-brands fa-linkedin"></i></p>
-                                    <p onclick="location.href='//www.instagram.com/team.onwords/'" target=" _blank">
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </p>
-                                    <p onclick="location.href='//www.facebook.com/teamonwords/'
-                                        " target="_blank"><i class="fa-brands fa-facebook"></i>
-                                    </p>
-                                    <p onclick="location.href='//www.youtube.com/@OnwordsSmartSolutions/'" target=" _blank"
-                                       ><i class="fa-brands fa-square-youtube"></i></p>
-                                </div>
-                            <br>
-                                <div>
-                                    <p>Onwords, Coimbatore - 642 005</p>
-                                    <p class="mail-foot" onclick="location.href='mailto:cs@onwords.in'"><i
-                                            class="fa-solid fa-envelope"></i>cs@onwords.in</p>
-                                    <p class="phone-foot" onclick="location.href='tel:7708630275'"><i
-                                            class="fa-solid fa-phone"></i> 77086 30275</p>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="our-app-foot onwords-details-foot ">
-                            <h5>Our Apps</h5>
-                            <div class="app-google-store">
-                                <a href="https://play.google.com/store/apps/details?id=com.onwords.smart_things&hl=en_IN&gl=US">
-                                  <img src="{% static 'main-webp/play.webp' %}" alt="play store" class="img-fluid">
-                                </a>
-                                <a href="https://apps.apple.com/in/app/onwords-smart-things/id6449142647"><img
-                                    src="{% static 'main-webp/apple.webp' %}" alt="apple storw" class="img-fluid"></a>
-                              </div>
-                        </div>
-                    </div>
-                </div>
-                <hr class="text-white">
-                <div class="bootom-footer">
-                    <div>
-                        <p class="pointer"><span>©2023 Onwords. All Rights Reserved</span> <span onclick="location.href='/disclaimer'">| Privacy Policy</span>
-                        <span onclick="location.href='/privacyPolicy'">Terms of Use</span> </p>
-                    </div>
-                </div>
+        <hr class="text-white">
+        <div class="bootom-footer">
+            <div>
+                <p class="pointer"><span>©2023 Onwords. All Rights Reserved</span> <span onclick="location.href='/disclaimer'">| Privacy Policy</span>
+                    <span onclick="location.href='/privacyPolicy'">Terms of Use</span> </p>
             </div>
-        </section>
-        <script src="{%static 'js/bootstrap.min.js'%}"></script>
-        <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
-        <script src="{% static 'js/general.js' %}"></script>
-        <script src="{% static 'js/hero.js' %}"></script>
-        <script src="{% static 'js/all.min.js' %}"></script>
-        <script src="{% static 'js/fontawesome.min.js' %}"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-        <script>
-            var app = document.getElementById('apps');
-            var typewriter = new Typewriter(app, {
-                loop: true
-            });
+        </div>
+    </div>
+</section>
+</div>
+<!-- Preloader -->
+<!-- bootstrap js -->
+<script src="{%static 'js/bootstrap.min.js'%}"></script>
+<script src="{%static 'js/bootstrap.bundle.js'%}"></script>
+<!-- bootstrap js -->
+<!-- <script src="{% static 'js/main.js' %}"></script> -->
+<script src="{% static 'js/general.js' %}"></script>
+<script src="{% static 'js/hero.js' %}"></script>
+<!-- carousel slider end -->
+<script src="{% static 'js/all.min.js' %}"></script>
+<script src="{% static 'js/fontawesome.min.js' %}"></script>
+<!-- check -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
-            typewriter.typeString('<strong>World!</strong>')
-                .pauseFor(2500)
-                .deleteAll()
-                .typeString('<strong>Home</strong>')
-                .pauseFor(2500)
-                .deleteAll()
-                .typeString('<strong>Life</strong>')
-                .pauseFor(2500)
-                .start();
-        </script>
+<script>
+    var app = document.getElementById('apps');
+
+    var typewriter = new Typewriter(app, {
+        loop: true
+    });
+
+    typewriter.typeString('<strong>World</strong>')
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString('<strong>Home</strong>')
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString('<strong>Life</strong>')
+        .pauseFor(2500)
+        .start();
+
+</script>
 </body>
 </html>
