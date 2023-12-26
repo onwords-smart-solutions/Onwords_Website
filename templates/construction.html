@@ -15,9 +15,7 @@
     <link rel="stylesheet" href="../static/fonts/all.min.css">
     <link rel="stylesheet" href="../static/fonts/fontawesome.css">
     <link rel="stylesheet" href="../static/fonts/fonts-6/css/all.css">
-    <!-- bootstrap css -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <!-- cdn link -->
     <title>Onwords - Contruction & Builders | Home Automation | Smart Home | Gate Automation | ALEXA | GOOGLE | AJAX | Security Systems | Automation</title>
 </head>
 <body id="bodyTag">
@@ -30,12 +28,14 @@
                     <a class="navbar-brand" href="/"><img src="../static/main-webp/onwords-logo.svg" alt="logo"
                             class="img-fluid logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><span class="text-white onnav"><i
-                                    class="fa-solid fa-bars"></i></span>
-                            <span class="off text-white"><i class="fa-solid fa-x"></i></span><span>
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+        <span class="text-white onnav"><i class="fa-solid fa-bars"></i></span>
+        <span class="off text-white"><i class="fa-solid fa-x"></i></span>
+    </span>
                     </button>
+
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 sticky">
                             <li class="nav-item">
@@ -52,7 +52,6 @@
                                     <li><a class="dropdown-item" href="/construction">Onwords Construction</a></li>
                                 </ul>
                             </li>
-
                             <li class="nav-item">
                                 <a class="nav-link" href="/securitySystem">Security System</a>
                             </li>
@@ -119,7 +118,6 @@
                                 class="img-fluid lazy-load f-consc-img rounded">
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -143,7 +141,6 @@
                                 and never come home to a dark house again.</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -172,7 +169,6 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-1"></div>
                 </div>
             </div>
         </section>
@@ -217,17 +213,14 @@
 
                                 </p>
                             </div>
-
                             <div>
                                 <h2>Dedicated Expert Team</h2>
                                 <p>
                                     Our team of experts, with years of experience, guides your project from conception
                                     to reality. Their dedication ensures that the finest details are brought to life,
                                     creating spaces that reflect your dreams.
-
                                 </p>
                             </div>
-
                             <div>
                                 <h2>Safety at the Core</h2>
                                 <p>
@@ -437,7 +430,6 @@
                             <a href="https://apps.apple.com/in/app/onwords-smart-things/id6449142647"><img
                                 src="../static/main-webp/apple.webp" alt="apple storw" class="img-fluid"></a>
                           </div>
-
                     </div>
                 </div>
             </div>
@@ -450,18 +442,10 @@
             <div>
         </div>
     </section>
-    <script src="../static/js/bootstrap.min.js"></script>
-    <script src="../static/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../static/js/general.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="../static/js/all.min.js"></script>
-    <script src="../static/js/fontawesome.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         let slider = document.querySelector(".slider");
-
         let currentSlide = 0;
         let totalSlides = slider.querySelectorAll(".wrapper .left > div").length - 1;
 
@@ -486,7 +470,6 @@
             slider.querySelector(".wrapper .right div").style.marginTop = `${(totalSlides - currentSlide) * -100
                 }vh`;
         });
-
     </script>
 </body>
 </html>
