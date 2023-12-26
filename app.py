@@ -3,13 +3,7 @@ import pyrebase
 
 app = Flask(__name__)
 
-Config = {
-    "apiKey": "AIzaSyCCTeiCYTB_npcWKKxl-Oj0StQLTmaFOaE",
-    "authDomain": "marketing-data-d141d.firebaseapp.com",
-    "databaseURL": "https://marketing-data-d141d-default-rtdb.firebaseio.com/",
-    "storageBucket": "marketing-data-d141d.appspot.com",
-}
-
+Config = {"apiKey": "AIzaSyCCTeiCYTB_npcWKKxl-Oj0StQLTmaFOaE","authDomain": "marketing-data-d141d.firebaseapp.com","databaseURL": "https://marketing-data-d141d-default-rtdb.firebaseio.com/","storageBucket": "marketing-data-d141d.appspot.com",}
 firebase = pyrebase.initialize_app(Config)
 db = firebase.database()
 
@@ -72,6 +66,34 @@ def aboutus():
 @app.route('/careers')
 def careers():
     return render_template('careers.html')
+
+@app.route('/downloads')
+def downloads():
+    return render_template('downloads.html')
+
+@app.route('/onwords-smart-things-app')
+def onwordsSmartThingsApp():
+    return render_template('onwordsSmartThingsApp.html')
+
+@app.route('/chretro')
+def chretro():
+    return render_template('chretro.html')
+
+@app.route('/smartlock')
+def smartlock():
+    return render_template('smartlock.html')
+
+@app.route('/robots.txt')
+def robots():
+    return render_template('robots.txt')
+
+@app.route('/sitemap.xml')
+def sitemap():
+    return render_template('sitemap.xml')
+
+@app.errorhandler(404)
+def not_found(error):
+    return render_template('404.html'), 404
 
 @app.route('/team')
 def team():
@@ -183,45 +205,8 @@ def team():
     prteam = zip(prname, premail, prdepartment, prprofile)
     adminteam = zip(adminname, adminemail, admindepartment, adminprofile)
 
-    context = {
-        "allteamsdetails": allteamsdetails,
-        "webteam": webteam,
-        "appteam": appteam,
-        "mediateam": mediateam,
-        "rndteam": rndteam,
-        "prteam": prteam,
-        "adminteam": adminteam,
-    }
-
+    context = {"allteamsdetails": allteamsdetails, "webteam": webteam, "appteam": appteam, "mediateam": mediateam,"rndteam": rndteam,"prteam": prteam,"adminteam": adminteam,}
     return render_template('team.html', context=context)
-
-@app.route('/downloads')
-def downloads():
-    return render_template('downloads.html')
-
-@app.route('/onwords-smart-things-app')
-def onwordsSmartThingsApp():
-    return render_template('onwordsSmartThingsApp.html')
-
-@app.route('/chretro')
-def chretro():
-    return render_template('chretro.html')
-
-@app.route('/smartlock')
-def smartlock():
-    return render_template('smartlock.html')
-
-@app.route('/robots')
-def robots():
-    return render_template('robots.txt')
-
-@app.route('/sitemap')
-def sitemap():
-    return render_template('sitemap.xml')
-
-@app.errorhandler(404)
-def not_found(error):
-    return render_template('404.html'), 404
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0",port=80,debug=True)
