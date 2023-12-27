@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="P-q3zgP0sKvn7G_VKaSmU0C-btvY8WETXwF6yJr0VAU" />
-    <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WXNGHSZD');</script>
-    <!-- End Google Tag Manager -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Meet the wizards of onwords who put forward thier effort make onwords">
     <link rel="stylesheet" href="../static/css/home.css">
@@ -26,11 +24,8 @@
     <title>Team Onwords</title>
 </head>
 <body id="bodyTag">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXNGHSZD"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <div id="preloader"></div>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXNGHSZD"  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div id="preloader"></div>
     <section class="">
         <div class="container">
             <div class="">
@@ -46,106 +41,131 @@
                     <button class="team-btn padding-extra rndBtn">R&D</button>
                     <button class="team-btn itBtn">Information Technology</button>
                     <button class="team-btn prBtn">Public Relations</button>
-                    <button class="team-btn padding-extra civilBtn">Civil</button>
+                    <button class="team-btn padding-extra civilBtn">HR</button>
+                    <button class="team-btn padding-extra civilBtn">Installation Engineers</button>
                 </div>
             </div>
             <div class="team-member allview">
                 <section id="all">
                     <div class="" id="team-s-main">
-                        {%for name,email,department,profile in allteamsdetails%}
-                        <div class="team-row">
-                            <div class="profile-sec">
-                                <img src="{{profile}}" alt=" profile">
+                        {% for member in departments['ALL'] %}
+                            <div class="team-row">
+                                <div class="profile-sec">
+                                    <img src="{{ member.profile }}" alt="{{ member.name }} profile">
+                                </div>
+                                <h6>{{ member.name }}</h6>
+                                <p>{{ member.email }}</p>
+                                <p>{{ member.department }}</p>
                             </div>
-                            <h6>{{name}}</h6>
-                            <p>{{email}}</p>
-                            <p>{{department}}</p>
-                        </div>
-                        {%endfor%}
+                        {% endfor %}
                     </div>
                 </section>
                 <section id="rnd">
                     <div class="" id="team-s-main">
-                        {%for name,email,department,profile in rndteam %}
-                        <div class="team-row">
-
-                            <div class="profile-sec">
-                                <img src="{{profile}}" alt="profile">
+                        {% for member in departments['RND'] %}
+                            <div class="team-row">
+                                <div class="profile-sec">
+                                    <img src="{{ member.profile }}" alt="{{ member.name }} profile">
+                                </div>
+                                <h6>{{ member.name }}</h6>
+                                <p>{{ member.email }}</p>
+                                <p>{{ member.department }}</p>
                             </div>
-                            <h6>{{name}}</h6>
-                            <p>{{email}}</p>
-                            <p>{{department}}</p>
-                        </div>
-                        {%endfor%}
+                        {% endfor %}
                     </div>
                 </section>
                 <section id="management">
                     <div class="" id="team-s-main">
-                        {%for name,email,department,profile in adminteam%}
-                        <div class="team-row">
-
-                            <div class="profile-sec">
-                                <img src="{{profile}}" alt="profile">
+                        {% for member in departments['MANAGEMENT'] %} <!-- Replace 'MANAGEMENT' with the correct key if different -->
+                            <div class="team-row">
+                                <div class="profile-sec">
+                                    <img src="{{ member.profile }}" alt="{{ member.name }} profile">
+                                </div>
+                                <h6>{{ member.name }}</h6>
+                                <p>{{ member.email }}</p>
+                                <p>{{ member.department }}</p>
                             </div>
-                            <h6>{{name}}</h6>
-                            <p>{{email}}</p>
-                            <p>{{department}}</p>
-                        </div>
-                        {%endfor%}
+                        {% endfor %}
                     </div>
                 </section>
                 <section id="it">
                     <div class="" id="team-s-main">
-                        {%for name,email,department,profile in webteam%}
+                         {% for member in departments['WEB'] %}
+                            <div class="team-row">
+                                <div class="profile-sec">
+                                    <img src="{{ member.profile }}" alt="{{ member.name }} profile">
+                                </div>
+                                <h6>{{ member.name }}</h6>
+                                <p>{{ member.email }}</p>
+                                <p>{{ member.department }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="" id="team-s-main">
+                         {% for member in departments['APP'] %}
                         <div class="team-row">
                             <div class="profile-sec">
-                                <img src="{{profile}}" alt="profile">
+                                <img src="{{ member.profile }}" alt="{{ member.name }} profile">
                             </div>
-                            <h6>{{name}}</h6>
-                            <p>{{email}}</p>
-                            <p>{{department}}</p>
+                            <h6>{{ member.name }}</h6>
+                            <p>{{ member.email }}</p>
+                            <p>{{ member.department }}</p>
                         </div>
                         {%endfor%}
                     </div>
                     <div class="" id="team-s-main">
-                        {%for name,email,department,profile in appteam%}
+                        {% for member in departments['MEDIA'] %}
                         <div class="team-row">
                             <div class="profile-sec">
-                                <img src="{{profile}}" alt="profile">
+                                 <img src="{{ member.profile }}" alt="{{ member.name }} profile">
                             </div>
-                            <h6>{{name}}</h6>
-                            <p>{{email}}</p>
-                            <p>{{department}}</p>
-                        </div>
-                        {%endfor%}
-                    </div>
-                    <div class="" id="team-s-main">
-                        {%for name,email,department,profile in mediateam%}
-                        <div class="team-row">
-
-                            <div class="profile-sec">
-                                <img src="{{profile}}" alt="profile">
-                            </div>
-                            <h6>{{name}}</h6>
-                            <p>{{email}}</p>
-                            <p>{{department}}</p>
+                            <h6>{{ member.name }}</h6>
+                            <p>{{ member.email }}</p>
+                            <p>{{ member.department }}</p>
                         </div>
                         {%endfor%}
                     </div>
                 </section>
                 <section id="pr">
                     <div class="" id="team-s-main">
-                        {%for name,email,department,profile in prteam%}
-                        <div class="team-row">
-
-                            <div class="profile-sec">
-                                <img src="{{profile}}" alt="profile">
+                        {% for member in departments['PR'] %}
+                            <div class="team-row">
+                                <div class="profile-sec">
+                                    <img src="{{ member.profile }}" alt="{{ member.name }} profile">
+                                </div>
+                                <h6>{{ member.name }}</h6>
+                                <p>{{ member.email }}</p>
+                                <p>{{ member.department }}</p>
                             </div>
-                            <h6>{{name}}</h6>
-                            <p>{{email}}</p>
-                            <p>{{department}}</p>
-                        </div>
-                        {%endfor%}
+                        {% endfor %}
+                    </div>
+                </section>
+                <section id="hr">
+                    <div class="" id="team-s-main">
+                        {% for member in departments['HR'] %}
+                            <div class="team-row">
+                                <div class="profile-sec">
+                                    <img src="{{ member.profile }}" alt="{{ member.name }} profile">
+                                </div>
+                                <h6>{{ member.name }}</h6>
+                                <p>{{ member.email }}</p>
+                                <p>{{ member.department }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+                <section id="installation">
+                    <div class="" id="team-s-main">
+                        {% for member in departments['INSTALLATION'] %}
+                            <div class="team-row">
+                                <div class="profile-sec">
+                                    <img src="{{ member.profile }}" alt="{{ member.name }} profile">
+                                </div>
+                                <h6>{{ member.name }}</h6>
+                                <p>{{ member.email }}</p>
+                                <p>{{ member.department }}</p>
+                            </div>
+                        {% endfor %}
                     </div>
                 </section>
             </div>

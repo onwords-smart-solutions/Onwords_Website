@@ -97,116 +97,38 @@ def not_found(error):
 
 @app.route('/team')
 def team():
-    name = []
-    email = []
-    department = []
-    profile = []
-    webname = []
-    webemail = []
-    webdepartment = []
-    webprofile = []
-    appname = []
-    appemail = []
-    appdepartment = []
-    appprofile = []
-    medianame = []
-    mediaemail = []
-    mediadepartment = []
-    mediaprofile = []
-    rndname = []
-    rndemail = []
-    rnddepartment = []
-    rndprofile = []
-    prname = []
-    premail = []
-    prdepartment = []
-    prprofile = []
-    adminname = []
-    adminemail = []
-    admindepartment = []
-    adminprofile = []
-
     staff = db.child("staff").get().val()
 
-    for uid in staff:
-        name.append(staff[uid]["name"])
-        email.append(staff[uid]["email"])
-        department.append(staff[uid]["department"])
-        try:
-            profile.append(staff[uid]["profileImage"])
-        except KeyError:
-            profile.append("False")
+    # Organizing staff by departments
+    departments = {
+        "WEB": [],
+        "APP": [],
+        "MEDIA": [],
+        "RND": [],
+        "PR": [],
+        "ADMIN": [],
+        "HR":[],
+        "INSTALLATION": [],
+        "ALL": []
+    }
 
-    for uid in staff:
-        if staff[uid]["department"] == "WEB":
-            webname.append(staff[uid]["name"])
-            webemail.append(staff[uid]["email"])
-            webdepartment.append(staff[uid]["department"])
-            try:
-                webprofile.append(staff[uid]["profileImage"])
-            except KeyError:
-                webprofile.append("False")
+    for uid, details in staff.items():
+        department = details["department"]
+        profile = details.get("profileImage", "default-profile.jpg")
+        member_info = {
+            "name": details["name"],
+            "email": details["email"],
+            "department": department,
+            "profile": profile
+        }
 
-    for uid in staff:
-        if staff[uid]["department"] == "APP":
-            appname.append(staff[uid]["name"])
-            appemail.append(staff[uid]["email"])
-            appdepartment.append(staff[uid]["department"])
-            try:
-                appprofile.append(staff[uid]["profileImage"])
-            except KeyError:
-                appprofile.append("False")
+        if department not in departments:
+            departments[department] = []
 
-    for uid in staff:
-        if staff[uid]["department"] == "MEDIA":
-            medianame.append(staff[uid]["name"])
-            mediaemail.append(staff[uid]["email"])
-            mediadepartment.append(staff[uid]["department"])
-            try:
-                mediaprofile.append(staff[uid]["profileImage"])
-            except KeyError:
-                mediaprofile.append("False")
+        departments[department].append(member_info)
+        departments["ALL"].append(member_info)
 
-    for uid in staff:
-        if staff[uid]["department"] == "RND":
-            rndname.append(staff[uid]["name"])
-            rndemail.append(staff[uid]["email"])
-            rnddepartment.append(staff[uid]["department"])
-            try:
-                rndprofile.append(staff[uid]["profileImage"])
-            except KeyError:
-                rndprofile.append("False")
-
-    for uid in staff:
-        if staff[uid]["department"] == "PR":
-            prname.append(staff[uid]["name"])
-            premail.append(staff[uid]["email"])
-            prdepartment.append(staff[uid]["department"])
-            try:
-                prprofile.append(staff[uid]["profileImage"])
-            except KeyError:
-                prprofile.append("False")
-
-    for uid in staff:
-        if staff[uid]["department"] == "ADMIN":
-            adminname.append(staff[uid]["name"])
-            adminemail.append(staff[uid]["email"])
-            admindepartment.append(staff[uid]["department"])
-            try:
-                adminprofile.append(staff[uid]["profileImage"])
-            except KeyError:
-                adminprofile.append("False")
-
-    allteamsdetails = zip(name, email, department, profile)
-    webteam = zip(webname, webemail, webdepartment, webprofile)
-    appteam = zip(appname, appemail, appdepartment, appprofile)
-    mediateam = zip(medianame, mediaemail, mediadepartment, mediaprofile)
-    rndteam = zip(rndname, rndemail, rnddepartment, rndprofile)
-    prteam = zip(prname, premail, prdepartment, prprofile)
-    adminteam = zip(adminname, adminemail, admindepartment, adminprofile)
-
-    context = {"allteamsdetails": allteamsdetails, "webteam": webteam, "appteam": appteam, "mediateam": mediateam,"rndteam": rndteam,"prteam": prteam,"adminteam": adminteam,}
-    return render_template('team.html', context=context)
+    return render_template('team.html', departments=departments)
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",port=80,debug=True)
+    app.run(host="0.0.0.0",port=8000,debug=True)
