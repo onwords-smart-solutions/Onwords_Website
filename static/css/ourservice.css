@@ -17,8 +17,6 @@
     min-height: 400px;
     height: 100%;
     position: relative;
-    /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
-
 }
 
 .anim-box img {
@@ -41,7 +39,6 @@
     width: 100%;
 }
 
-/*  */
 .smart-home {
     height: auto;
     position: relative;
@@ -72,9 +69,6 @@
     }
 }
 
-
-
-
 @keyframes rots {
     0% {
         transform: rotateX('45deg');
@@ -93,7 +87,6 @@
     font-size: 18px;
 }
 
-/*  */
 .web {
     height: 100vh;
 }
@@ -114,8 +107,6 @@
     height: 100vh;
 }
 
-
-/* ----------------our services start */
 .our-service-banner {
     width: 100%;
     height: auto;
@@ -198,11 +189,6 @@
     height: 100%;
 }
 
-/* --truly */
-
-
-
-/* -------smart--------*/
 .waviy {
     position: re;
 }
@@ -225,7 +211,6 @@
     }
 }
 
-/* ----------- start */
 .block {
     width: 100%;
     height: 100%;
@@ -256,8 +241,6 @@
     pointer-events: none
 }
 
-/* ----------- End */
-
 .main-pagination-process {
     height: auto;
     width: 100%;
@@ -271,8 +254,6 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     color: #fff;
     font-size: 40px;
     padding: 100px 0px;
@@ -303,7 +284,6 @@
     height: 200px;
 }
 
-/* =============samrt home animation */
 .smarthome-anim {
     width: 100%;
     height: 100vh;
@@ -327,7 +307,6 @@
     background-image: url(../main-webp/nig-png.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
     animation: img-sm 10s infinite;
@@ -352,9 +331,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    /* left: 8%; */
-    display: flex;
+    width: 100%;;
     flex-direction: column;
     text-align: center;
 }
