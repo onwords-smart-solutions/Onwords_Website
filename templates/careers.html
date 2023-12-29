@@ -51,8 +51,8 @@
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
-                            <span class="text-white onnav"><i class="fa-solid fa-bars"></i></span>
-                            <span class="off text-white"><i class="fa-solid fa-x"></i></span>
+                        <span class="text-white onnav"><i class="fa-solid fa-bars"></i></span>
+                        <span class="off text-white"><i class="fa-solid fa-x"></i></span>
                         </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -61,9 +61,7 @@
                             <a class="nav-link" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Our Services
+                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="/ourservices">Smart Home</a></li>
@@ -73,6 +71,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/securitySystem">Security System</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ourservices">Smart Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/ourApp">Our App</a>
@@ -88,7 +89,6 @@
             </div>
         </nav>
     </header>
-    <!-- navbar end -->
     <div class="down-btn">
         <button type="button" class="backtop" id="btn-back-to-top">
             <a href="#"><i class="fas fa-arrow-up"></i></a>
@@ -99,162 +99,160 @@
             </a>
         </button>
     </div>
-    </div>
     <section class="sec-first-carrier">
         <div class="carrier-para">
             <h2 class="text-center">Work With Us</h2>
-            <p>Nothing is possible without our people</p>
+            <p>Nothing is possible without people</p>
         </div>
     </section>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
-                    <form class="carrier-form">
-                        <center>
-                            <h2>Join The Team</h2>
-                        </center>
-                        <div class="carrier-form-input">
-                            <input type="text" name="" id="" required="'required">
-                            <span>Name</span>
-                        </div>
-                        <div class="carrier-form-input">
-                            <input type="text" name="" id="" required="'required">
-                            <span>E-mail</span>
-                        </div>
-                        <div class="carrier-form-input">
-                            <input type="number" name="" id="" required="'required">
-                            <span>Mobile Number</span>
-                        </div>
-                        <div class="carrier-form-input carrer-opt">
-                            <span for="carrers-option">Designation</span>
-                            <select name="cars" id="carrers-option">
-                                <option value=""></option>
-                                <option value="ui&ux Designer">UI/UX Designer</option>
-                                <option value="Web developer">Web developer</option>
-                                <option value=">App developer">App developer</option>
-                                <option value="PR">PR</option>
-                                <option value="Reasearch and development">Embeded Engineer</option>
-                            </select>
-                        </div>
-                        <div class=" upload-resume">
-                            <label for="resumeUpload"><span class="plus">+</span> Upload Resume</label>
-                            <input type="file" name="" id="resumeUpload" required="required">
-                        </div>
-                        <button type="submit" class="s-btn">
-                            <div class="go">
-                                <div class="gradient-button px-4">
-                                    submit
-                                </div>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <form class="carrier-form">
+                    <center>
+                        <h2>Join the Onwords team</h2>
+                    </center>
+                    <div class="carrier-form-input">
+                        <label for="nameInput">Name</label>
+                        <input type="text" id="nameInput" name="name" required>
+                    </div>
+                    <div class="carrier-form-input">
+                        <label for="emailInput">Email</label>
+                        <input type="text" id="emailInput" name="email" required>
+                    </div>
+                    <div class="carrier-form-input">
+                        <label for="numberInput">Phone</label>
+                        <input type="text" id="numberInput" name="number" required>
+                    </div>
+                    <label>Designation</label>
+                    <div class="carrier-form-input carrer-opt">
+                        <select name="designation" id="carrers-option">
+                            <option value=""></option>
+                            <option value="ui&ux Designer">UI/UX Designer</option>
+                            <option value="Web developer">Web developer</option>
+                            <option value="App developer">Flutter developer</option>
+                            <option value="PR">Sales Executive/ Manager</option>
+                            <option value="Research and development">Embedded Engineer</option>
+                        </select>
+                    </div>
+                    <div class="upload-resume">
+                        <label for="resumeUpload" class="resume-upload-button">
+                            <span class="plus">+</span> Upload Resume
+                        </label>
+                        <input type="file" name="resume" id="resumeUpload" required>
+                    </div>
+                    <button type="submit" class="s-btn" style="margin-top: 40px">
+                        <div class="go">
+                            <div class="gradient-button px-4">
+                                Submit
                             </div>
-                        </button>
-                    </form>
-                </div>
-                <div class="col-md-3"></div>
+                        </div>
+                    </button>
+                </form>
             </div>
         </div>
-    </section>
-    <section class="footer">
+    </div>
+</section>
+<section class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-2">
                     <ul class="company-list-1">
                         <h5>Company</h5>
-                        <li><a href="/aboutus">About Us</a></li>
-                        <li><a href="/contact-9">Contact Us</a></li>
-                        <li><a href="/ourApp">Our App</a></li>
-                        <li><a href="/gallery">Gallery</a></li>
-                        <li><a href="/careers">Careers</a></li>
+                        <li><p href="/aboutus">About Us</p></li>
+                        <li><p href="/contact-9">Contact Us</p></li>
+                        <li><p href="/ourApp">Our App</p></li>
+                        <li><p href="/gallery">Gallery</p></li>
+                        <li><p href="/careers">Careers</p></li>
                     </ul>
-                </div>
-                <div class="col-md-2">
-                    <ul class="our-services-foot">
-                        <h5>Our Services</h5>
-                        <li>
-                            <p onclick="location.href='/ourservices'">Smart Home</p>
-                        </li>
-                        <li>
-                            <p onclick="location.href='/gateautomation'">Gate Automation</p>
-                        </li>
-                        <li>
-                            <p onclick="location.href='/securitySystem'">Security System</p>
-                        </li>
-                        <li>
-                            <p onclick="location.href='/curtain'">Smart Curtain</p>
-                        </li>
-                        <li>
-                            <p onclick="location.href='/construction'"> Constructions</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <ul class="quick-links-foot">
-                        <h5>Quick Links</h5>
-                        <li>
-                            <p onclick="location.href='/'"> Home</p>
-                        </li>
-                        <li>
-                            <p onclick="location.href='/ourservices'">Our Services</p>
-                        </li>
-                        <li>
-                            <p onclick="location.href='/securitySystem'">Security System</p>
-                        </li>
-                        <li>
-                            <p onclick="location.href='/refund'">Refunds & Cancellations</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <div class=" onwords-details-foot">
-                        <h5>Connect With Us</h5>
-                        <div class="footer-foot icon">
-                            <p onclick="location.href='//www.linkedin.com/company/onwords-smart-solution/'"><i
-                                    class="fa-brands fa-linkedin"></i></p>
-                            <p onclick="location.href='//www.instagram.com/team.onwords/'" target=" _blank">
-                                <i class="fa-brands fa-instagram"></i>
-                            </p>
-                            <p onclick="location.href='//www.facebook.com/teamonwords/'
-                                " target="_blank"><i class="fa-brands fa-facebook"></i>
-                            </p>
-                            <p onclick="location.href='//www.youtube.com/@OnwordsSmartSolutions/'" target=" _blank">
-                                <i class="fa-brands fa-square-youtube"></i>
-                            </p>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="our-services-foot">
+                            <h5>Our Services</h5>
+                            <li><p onclick="location.href='/ourservices'">Smart Home</p>
+                            </li>
+                            <li><p onclick="location.href='/gateautomation'">Gate Automation</p>
+                            </li>
+                            <li><p onclick="location.href='/securitySystem'">Security System</p>
+                            </li>
+                            <li><p onclick="location.href='/curtain'">Smart Curtain</p>
+                            </li>
+                            <li><p onclick="location.href='/construction'"> Constructions</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="quick-links-foot">
+                            <h5>Quick Links</h5>
+                            <li><p onclick="location.href='/'"> Home</p>
+                            </li>
+                            <li><p onclick="location.href='/ourservices'">Our Services</p>
+                            </li>
+                            <li><p onclick="location.href='/securitySystem'">Security System</p>
+                            </li>
+                            <li><p onclick="location.href='/refund'">Refunds & Cancellations</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <div class=" onwords-details-foot">
+                            <h5>Connect With Us</h5>
+                            <div class="footer-foot icon">
+                                <p onclick="location.href='//www.linkedin.com/company/onwords-smart-solution/'"><i
+                                        class="fa-brands fa-linkedin"></i></p>
+                                <p onclick="location.href='//www.instagram.com/team.onwords/'" target=" _blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </p>
+                                <p onclick="location.href='//www.facebook.com/teamonwords/' " target="_blank"><i class="fa-brands fa-facebook"></i>
+                                </p>
+                                <p onclick="location.href='//www.youtube.com/@OnwordsSmartSolutions/'" target=" _blank">
+                                    <i class="fa-brands fa-square-youtube"></i>
+                                </p>
+                            </div>
+                            <br>
+                            <div>
+                                <p>Onwords, Coimbnatore - 642 005</p>
+                                <p class="mail-foot" onclick="location.href='mailto:cs@onwords.in'"><i class="fa-solid fa-envelope"></i>cs@onwords.in</p>
+                                <p class="phone-foot" onclick="location.href='tel:7708630275'"><i class="fa-solid fa-phone"></i> 77086 30275</p>
+                            </div>
                         </div>
-                        <br>
-                        <div>
-                            <p>Onwords, Coimbnatore - 642 005</p>
-                            <p class="mail-foot" onclick="location.href='mailto:cs@onwords.in'"><i
-                                    class="fa-solid fa-envelope"></i>cs@onwords.in</p>
-                            <p class="phone-foot" onclick="location.href='tel:7708630275'"><i
-                                    class="fa-solid fa-phone"></i> 77086
-                                30275</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="our-app-foot onwords-details-foot ">
+                            <h5>Our Apps</h5>
+                            <div class="app-google-store">
+                                <a href="https://play.google.com/store/apps/details?id=com.onwords.smart_things&hl=en_IN&gl=US">
+                                    <img src="../static/main-webp/play.webp" alt="play store" class="img-fluid">
+                                </a>
+                                <a href="https://apps.apple.com/in/app/onwords-smart-things/id6449142647"><img src="../static/main-webp/apple.webp" alt="apple storw" class="img-fluid"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="our-app-foot onwords-details-foot ">
-                        <h5>Our Apps</h5>
-                        <div class="app-google-store">
-                            <a
-                                href="https://play.google.com/store/apps/details?id=com.onwords.smart_things&hl=en_IN&gl=US">
-                                <img src="../static/main-webp/play.webp" alt="play store" class="img-fluid">
-                            </a>
-                            <a href="https://apps.apple.com/in/app/onwords-smart-things/id6449142647"><img
-                                    src="../static/main-webp/apple.webp" alt="apple storw" class="img-fluid"></a>
-                        </div>
+                <hr class="text-white">
+                <div class="bootom-footer">
+                    <div>
+                        <p class="pointer"><span>©2023 Onwords. All Rights Reserved </span><span onclick="location.href='/disclaimer'">| PrivacyPolicy</span> | <span onclick="location.href='/privacyPolicy'">Terms of Use</span> </p>
                     </div>
-                </div>
-            </div>
-            <hr class="text-white">
-            <div class="bootom-footer">
                 <div>
-                    <p class="pointer"><span>©2023 Onwords. All Rights Reserved </span><span onclick="location.href='/disclaimer'">| PrivacyPolicy</span> | <span onclick="location.href='/privacyPolicy'">Terms of Use</span> </p>
-                </div>
-            <div>
+            </div>
+          </div>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../static/js/general.js"></script>
+    <script>
+        document.querySelectorAll('.carrier-form-input input').forEach(input => {
+            input.addEventListener('input', function() {
+                if (this.value) {
+                    this.classList.add('filled');
+                } else {
+                    this.classList.remove('filled');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
