@@ -147,3 +147,15 @@
 .modules:hover, .btn-brd:hover {
     background: linear-gradient(to right, #7353ef, #ce4da4);
 }
+
+@media only screen and (max-width: 600px) {
+    .carrier-form input[type="text"],
+    .carrier-form input[type="email"],
+    .carrier-form input[type="number"],
+    .carrier-form input[type="designation"],
+    .carrier-form select,
+    .resume-upload-button {
+        width: 100%;
+        padding: 10px;
+    }
+}

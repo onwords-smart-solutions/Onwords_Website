@@ -340,8 +340,42 @@
     object-fit: cover;
 }
 .profile-sec img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .team-row {
+        width: 45%; /* Increase width to fit 2 items per row */
+        margin: 15px; /* Adjust margin for spacing */
+    }
+    .profile-sec {
+        width: 80px; /* Adjust profile size */
+        height: 80px;
+    }
+    .team-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .team-btn {
+        font-size: 16px; /* Adjust font size for better readability */
+    }
+    /* Other necessary adjustments */
+}
+
+/* Styles for small devices (phones) */
+@media only screen and (max-width: 767px) {
+    .team-row {
+        width: 90%; /* Increase width to fit 1 item per row */
+    }
+    .team-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-btn {
+        font-size: 14px; /* Further reduce font size */
+    }
+    /* Additional adjustments for smaller elements */
 }
