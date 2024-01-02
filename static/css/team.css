@@ -1,381 +1,44 @@
-.team {
-    width: 100%;
-    height: 80vh;
-    background-image: url(../main-webp/team-bg.webp);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.team-nav {
-    width: 100%;
-    height: 40px;
-    margin-top: 120px;
+.team-row {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
-.team-nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.btn {
-    border: none;
-    outline: none;
-    padding: 10px 16px;
-    background-color: #f1f1f1;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.team-btn {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: #fff;
-    font-size: 20px;
-    padding: 5px 10px;
-}
-
-/* Style the active class, and buttons on mouse-over */
-.active,
-.team-btn:hover {
-    background: linear-gradient(90deg, #CE4DA4 2.4%, #7952E0 100%);
-    border-radius: 47px;
-    color: white;
-    padding: 5px 10px;
-
-}
-
-.padding-extra {
-    padding: 3px 20px !important;
-}
-
-.team-onwords-title h2 {
-    text-transform: capitalize !important;
-}
-
-.team-member {
-    margin-top: 100px;
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-.team-member section {
-    display: flex;
-    align-items: center;
-}
-
-.empls {
-    position: relative;
-    width: 33%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-#all,
-#rnd,
-#management,
-#hr,
-#installation,
-#it,
-#pr,
-#civil {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.d-f {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.shape-line {
-    position: relative;
-    width: 200px;
-    height: 100%;
-    overflow: hidden;
-    cursor: pointer;
-    /* background-color: #7353E5; */
-}
-
-.shape-line img {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    /* transform: rotate(-3deg); */
-
-}
-
-.shape-box {
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background: linear-gradient(90.16deg, #CB4DA6 0.04%, #8351D9 99.38%);
-    border-radius: 50px;
-    transform: rotate(-45deg);
-    bottom: 62px;
-    left: 12px;
-}
-
-.shape-box::after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 80px;
-    background: linear-gradient(90.16deg, #CB4DA6 0.04%, #8351D9 99.38%);
-    border-radius: 50px;
-    transform: rotate(180deg);
-    bottom: 0;
-    left: 0;
-    display: none;
-    transition: 2s ease-in;
-}
-
-.shape-text-con {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.email-link {
-    opacity: 0;
-    overflow: hidden;
-    margin-left: -300px;
-    transition: 2s linear ease-in;
-}
-
-.empls:hover .shape-box::after {
-    display: block;
-    transition: 2s ease-in;
-}
-
-.empls:hover .email-link {
-    margin-left: 0px;
-    opacity: 1;
-    transition: 1s ease-in;
-    cursor: pointer;
-}
-
-.chg-shape {
-    bottom: 66px;
-    left: 12px;
-}
-
-.ram img {
-    bottom: 3px;
-    left: 0px;
-    padding: 0;
-    margin: 0;
-
-}
-
-.prem img {
-    bottom: -3px;
-    left: 0;
-    padding: 0;
-    margin: 0;
-}
-
-.yugan img {
-    bottom: -4px;
-    left: 0;
-    padding: 0;
-    margin: 0;
-}
-
-.sathish img {
-    bottom: -4px;
-    left: 0;
-    padding: 0;
-    margin: 0
-}
-
-.sp img {
-    bottom: 0;
-    left: -6px;
-    padding: 0;
-    margin: 0;
-}
-
-.mohan img {
-    bottom: 0px;
-    left: -13px;
-    padding: 0;
-    margin: 0;
-}
-
-.anwar img {
-    bottom: 0;
-    left: -13px;
-    padding: 0;
-    margin: 0;
-}
-
-.ramprasath img {
-    bottom: -4px;
-    left: 0px;
-    padding: 0;
-    margin: 0;
-}
-
-.aravind img {
-    bottom: 2px;
-    left: -3px;
-    padding: 0;
-    margin: 0;
-}
-
-.haresh img {
-    bottom: 0px;
-    left: 6px;
-    padding: 0;
-    margin: 0;
-}
-
-.gokul img {
-    bottom: 2px;
-    left: -9px;
-    padding: 0;
-    margin: 0
-}
-
-.naveen img {
-    bottom: 0;
-    left: -12px;
-    padding: 0;
-    margin: 0;
-}
-
-.santhosh img {
-    bottom: 0;
-    left: 5px;
-    padding: 0;
-    margin: 0;
-}
-
-.koushik img {
-
-    bottom: 0px;
-    left: -14px;
-    padding: 0;
-    margin: 0;
-}
-
-.gokila img {
-    bottom: 0;
-    left: 3px;
-    padding: 0;
-    margin: 0;
-}
-
-.jibin img {
-    bottom: 0px;
-    left: 5px;
-    padding: 0;
-    margin: 0;
-}
-
-.mohan img {
-    bottom: 2px;
-    left: -11px;
-    padding: 0;
-    margin: 0;
-}
-
-.jothi img {
-    bottom: 0px;
-    left: 5px;
-    padding: 0;
-    margin: 0;
-}
-
-.ram-med img {
-    bottom: -1px;
-    left: 3px;
-    padding: 0;
-    margin: 0;
-}
-
-
-@media screen and (max-width:1000px) {
-    .empls {
-        width: 80% !important;
-        margin: 0 auto;
-    }
-}
-
-
-#team-s-main{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-}
-.team-row{
-    width: 24%;
-    height: 200px;
-    margin: 30px 0px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.profile-sec{
+.profile-sec img {
     width: 100px;
     height: 100px;
+    border-radius: 50%;
     object-fit: cover;
 }
-.profile-sec img{
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
+
+.info-box {
+    background: linear-gradient(135deg, #6800ff, #cf14d7);
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .team-row {
-        width: 45%; /* Increase width to fit 2 items per row */
-        margin: 15px; /* Adjust margin for spacing */
-    }
-    .profile-sec {
-        width: 80px; /* Adjust profile size */
-        height: 80px;
-    }
-    .team-nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .team-btn {
-        font-size: 16px; /* Adjust font size for better readability */
-    }
-    /* Other necessary adjustments */
+.info-box h6 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
 }
 
-/* Styles for small devices (phones) */
-@media only screen and (max-width: 767px) {
+.info-box p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
     .team-row {
-        width: 90%; /* Increase width to fit 1 item per row */
-    }
-    .team-nav {
         flex-direction: column;
         align-items: center;
     }
-    .team-btn {
-        font-size: 14px; /* Further reduce font size */
+
+    .info-box {
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
     }
-    /* Additional adjustments for smaller elements */
 }
