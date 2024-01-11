@@ -1,11 +1,12 @@
 .main-img {
-    background-image: url(../main-webp/gate.webp);
+    background-image: url(../main-webp/gate-main.jpg);
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
     position: relative;
+    object-fit: contain;
 }
 
 .gate-para {
