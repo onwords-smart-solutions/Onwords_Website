@@ -81,9 +81,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/contact-9">Contact</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/team">Meet the Team</a>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -110,7 +107,18 @@
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <form class="carrier-form">
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        <div class="flash-messages">
+                            {% for message in messages %}
+                                <div class="alert alert-success">
+                                    {{ message }}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                {% endwith %}
+                <form class="carrier-form" method="post" action="/submit_resume" enctype="multipart/form-data">
                     <center>
                         <h2>Join the Onwords team</h2>
                     </center>

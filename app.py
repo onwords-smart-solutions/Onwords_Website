@@ -1,11 +1,20 @@
-from flask import Flask, render_template
 import pyrebase
+from flask import Flask, render_template, request, redirect, url_for, flash
+from flask_mail import Mail, Message
 
 app = Flask(__name__)
+app.secret_key = 'oizg ntdk nzsi csgo'
 
 Config = {"apiKey": "AIzaSyCCTeiCYTB_npcWKKxl-Oj0StQLTmaFOaE","authDomain": "marketing-data-d141d.firebaseapp.com","databaseURL": "https://marketing-data-d141d-default-rtdb.firebaseio.com/","storageBucket": "marketing-data-d141d.appspot.com",}
 firebase = pyrebase.initialize_app(Config)
 db = firebase.database()
+
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USERNAME'] = 'navin.onwords@gmail.com'
+app.config['MAIL_PASSWORD'] = 'oizg ntdk nzsi csgo'
+mail = Mail(app)
 
 @app.route('/')
 def home():
@@ -99,7 +108,6 @@ def not_found(error):
 def team():
     staff = db.child("staff").get().val()
 
-    # Organizing staff by departments
     departments = {
         "WEB": [],
         "APP": [],
@@ -129,6 +137,25 @@ def team():
         departments["ALL"].append(member_info)
 
     return render_template('team.html', departments=departments)
+
+@app.route('/submit_resume', methods=['POST'])
+def submit():
+    if request.method == 'POST':
+        name = request.form['name']
+        sender_email = request.form['email']
+        phone = request.form['number']
+        designation = request.form['designation']
+        resume = request.files['resume']
+        filename = secure_filename(resume.filename)
+
+        msg = Message('New Resume Received from onwords.in/careers',
+                      sender=sender_email,
+                      recipients=['careers@onwords.in'])
+        msg.body = f"Name: {name}\nEmail: {sender_email}\nPhone: {phone}\nDesignation: {designation}"
+        msg.attach(filename, 'application/pdf', resume.read())
+        mail.send(msg)
+        flash('Form submitted successfully!')
+        return redirect('/careers')
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0",port=80,debug=True)
