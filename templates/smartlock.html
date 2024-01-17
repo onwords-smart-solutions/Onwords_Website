@@ -51,15 +51,13 @@
 
     gtag('config', 'G-C79YW2LCJ1');
 </script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXNGHSZD"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 </head>
 <body>
-    <div id="countdown">
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXNGHSZD"
-                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-        <span id="time"></span>
-    </div>
+<!--    <div id="countdown"><span id="time"></span></div>-->
     <div class="container">
         <div class="product">
             <div class="item">
@@ -131,39 +129,38 @@
         </button>`
     });
 
-        document.addEventListener('DOMContentLoaded', function () {
-        var countdownElement = document.getElementById('time');
-        var storedTargetDate = localStorage.getItem('countdownEndDate');
-        var targetDate;
-
-        if (storedTargetDate) {
-            targetDate = new Date(storedTargetDate).getTime();
-        } else {
-            targetDate = new Date().getTime() + (3 * 24 * 60 * 60 * 1000);
-            localStorage.setItem('countdownEndDate', new Date(targetDate));
-        }
-
-        function updateCountdown() {
-            var now = new Date().getTime();
-            var distance = targetDate - now;
-
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            countdownElement.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-            if (distance < 0) {
-                clearInterval(interval);
-                countdownElement.innerHTML = "EXPIRED";
-                localStorage.removeItem('countdownEndDate');
-            }
-        }
-        updateCountdown();
-        var interval = setInterval(updateCountdown, 1000);
-    });
-
+    //     document.addEventListener('DOMContentLoaded', function () {
+    //     var countdownElement = document.getElementById('time');
+    //     var storedTargetDate = localStorage.getItem('countdownEndDate');
+    //     var targetDate;
+    //
+    //     if (storedTargetDate) {
+    //         targetDate = new Date(storedTargetDate).getTime();
+    //     } else {
+    //         targetDate = new Date().getTime() + (3 * 24 * 60 * 60 * 1000);
+    //         localStorage.setItem('countdownEndDate', new Date(targetDate));
+    //     }
+    //
+    //     function updateCountdown() {
+    //         var now = new Date().getTime();
+    //         var distance = targetDate - now;
+    //
+    //         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    //         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    //         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    //         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    //
+    //         countdownElement.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    //
+    //         if (distance < 0) {
+    //             clearInterval(interval);
+    //             countdownElement.innerHTML = "EXPIRED";
+    //             localStorage.removeItem('countdownEndDate');
+    //         }
+    //     }
+    //     updateCountdown();
+    //     var interval = setInterval(updateCountdown, 1000);
+    // });
 </script>
 </body>
 </html>
