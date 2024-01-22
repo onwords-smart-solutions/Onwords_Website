@@ -60,6 +60,10 @@ def privacyPolicy():
 def disclaimer():
     return render_template('disclaimer.html')
 
+@app.route('/refund')
+def refund():
+    return render_template('refund.html')
+
 @app.route('/faq')
 def faq():
     return render_template('faq.html')
