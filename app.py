@@ -1,6 +1,7 @@
 import pyrebase
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_mail import Mail, Message
+from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 app.secret_key = 'oizg ntdk nzsi csgo'
