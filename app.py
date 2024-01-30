@@ -1,5 +1,5 @@
-import pyrebase
-from flask import Flask, render_template, request, redirect, url_for, flash
+import pyrebase, requests
+from flask import Flask, render_template, request, redirect, url_for, flash, Response
 from flask_mail import Mail, Message
 from werkzeug.utils import secure_filename
 
