@@ -111,59 +111,64 @@ def not_found(error):
 
 @app.route('/fields')
 def Fields():
-    return redirect("https://onwords.in:8000/fields")
+    url = "http://172.31.41.29:8000/fields"
+    try:
+        response = requests.get(url)
+        return Response(response.content, content_type=response.headers['Content-Type'])
+    except requests.RequestException as e:
+        return str(e), 500
 
 @app.route('/smart_home')
 def Smart():
-    return redirect("https://onwords.in:8000/smart_home")
+    return redirect("http://172.31.41.29:8000/smart_home")
 
 @app.route('/gate_automation')
 def Gate_auto():
-    return redirect("https://onwords.in:8000/gate_automation")
+    return redirect("http://172.31.41.29:8000/gate_automation")
 
 @app.route('/security_system')
 def Security_sys():
-    return redirect("https://onwords.in:8000/security_system")
+    return redirect("http://172.31.41.29:8000/security_system")
 
 @app.route('/techease_essential')
 def Techease_essential():
-    return redirect("https://onwords.in:8000/techease_essential")
+    return redirect("http://172.31.41.29:8000/techease_essential")
 
 @app.route('/ecosmart_adapt')
 def Ecosmart_adapt():
-    return redirect("https://onwords.in:8000/ecosmart_adapt")
+    return redirect("http://172.31.41.29:8000/ecosmart_adapt")
 
 @app.route('/home_hormony')
 def Home_hormony():
-    return redirect("https://onwords.in:8000/home_hormony")
+    return redirect("http://172.31.41.29:8000/home_hormony")
 
 @app.route('/intellihome_ultimate')
 def Intellihome_ultimate():
-    return redirect("https://onwords.in:8000/intellihome_ultimate")
+    return redirect("http://172.31.41.29:8000/intellihome_ultimate")
 
 @app.route('/livingtech_premium')
 def Livingtech_premium():
-    return redirect("https://onwords.in:8000/livingtech_premium")
+    return redirect("http://172.31.41.29:8000/livingtech_premium")
 
 @app.route('/pinnacle_ecosystem')
 def Pinnacle_ecosystem():
-    return redirect("https://onwords.in:8000/pinnacle_ecosystem")
+    return redirect("http://172.31.41.29:8000/pinnacle_ecosystem")
 
 @app.route('/swinggate_armmotor')
 def Swinggate_armmotor():
-    return redirect("https://onwords.in:8000/swinggate_armmotor")
+    return redirect("http://172.31.41.29:8000/swinggate_armmotor")
 
 @app.route('/swinggate_rollermotor')
 def Swinggate_rollermotor():
-    return redirect("https://onwords.in:8000/swinggate_rollermotor")
+    return redirect("http://172.31.41.29:8000/swinggate_rollermotor")
 
 @app.route('/sliding_gate')
 def Sliding_gate():
-    return redirect("https://onwords.in:8000/sliding_gate")
+    return redirect("http://172.31.41.29:8000/sliding_gate")
 
 @app.route('/invoice')
 def Invoice():
-    return redirect("https://onwords.in:8000/invoice")
+    return redirect("http://172.31.41.29:8000/invoice")
 
 @app.route('/team')
 def team():
