@@ -111,7 +111,7 @@ def not_found(error):
 
 @app.route('/get-quote')
 def get_quote():
-    return redirect("http://172.31.41.29:8120/fields")
+    return redirect("http://172.31.41.29:8000/fields")
 
 @app.route('/team')
 def team():
