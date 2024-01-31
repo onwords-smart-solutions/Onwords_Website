@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../static/css/packages.css">
+  <link rel="icon" href="../static/img/favicon.ico" type="image/x-icon" />
+  <script src="../static/js/quotation.js"></script>
+    <title>Quotation</title>
+</head>
+<body>
+
+  <div class="container mt-1">
+    <div class="top">
+      <nav>
+        <h2 class="htitle">Choose Package</h2>
+      </nav>
+  
+      <div class="stepper-wrapper col-md-12">
+          <div class="stepper-item completed">
+            <div class="step-counter">1</div>
+            <div class="step-name">Choose Catagory</div>
+          </div>
+          <div class="stepper-item active">
+            <div class="step-counter">2</div>
+            <div class="step-name">Choose Package</div>
+          </div>
+          <div class="stepper-item ">
+            <div class="step-counter">3</div>
+            <div class="step-name">Quotation</div>
+          </div> 
+        </div>
+      </div>
+        <div class="container mt-2">
+          <a onclick="back()"><img src="../static/img/back.png" alt="back" width="11" class="back"></a>
+          <div class="row">
+              <div class="col-md-7 ">
+                <a onclick="sliding_gate()" class="grid">
+                  <img src="../static/img/Gate_automation/sliding_gate.jpg" alt="Gate Automation" class="Sliding_Gate">
+
+                    <div class="details">
+                        <span class="title">Sliding Gate</span>
+                    </div>
+                    <div class="arro">
+                      <span class="arrow"><img src="../static/img/arrow.png" alt="arrow"></span>
+                    </div>
+                </a>
+                  <a onclick="swinggate_rollermotor()" class="grid">
+                    <img src="../static/img/Gate_automation/swinggate_roller.png" alt="Gate Automation" class="Roller_Motor">
+                    <div class="details">
+                        <span class="title">Swing Gate with Roller Motor</span>
+                    </div>
+                    <div class="arro">
+                      <span class="arrow"><img src="../static/img/arrow.png" alt="arrow"></span>
+                    </div>
+                </a>
+              </div>
+              
+              <div class="col-md-5">
+                <a onclick="swinggate_armmotor()" class="grid">
+                  <img src="../static/img/Gate_automation/swinggate_arm.jpg" alt="Home Automation" class="Arm_Motor">
+                  <div class="details">
+                      <span class="title">Swing Gate with Arm Motor</span>
+                  </div>
+                  <div class="arro">
+                    <span class="arrow"><img src="../static/img/arrow.png" alt="arrow"></span>
+                  </div>
+              </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotation</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script defer src="../../static/js/Smart_home/techease_essential.js"></script>
+  <link rel="stylesheet" href="../../static/css/quotation.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+  <link rel="icon" href="../../static/img/favicon.ico" type="image/x-icon" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-alpha2/html2canvas.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css" integrity="sha512-ykRBEJhyZ+B/BIJcBuOyUoIxh0OfdICfHPnPfBy7eIiyJv536ojTCsgX8aqrLQ9VJZHGz4tvYyzOM0lkgmQZGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container col-lg-9 col-md-11 col-sm-11 col-12">
+      <a onclick="back()"><img src="../../static/img/back.png" alt="back" width="9" class="back"></a>
+        <h2 class="htitle">Your Item</h2>
+        <p class="description">The TechEase Essentials package is designed for budget-conscious customers who want to dip their toes into 
+            the world of smart home technology. Despite its affordability, it provides a solid foundation for home automation.</p>   
+          <div class="text-right">
+            <h3 class="tit">Techease Essentials</h3>
+                <div class="download" id="btn-download" onclick="downloadPDF()">
+                  <svg width="29px" height="23px" viewBox="0 0 22 16">
+                      <path d="M2,10 L6,13 L12.8760559,4.5959317 C14.1180021,3.0779974 16.2457925,2.62289624 18,3.5 L18,3.5 C19.8385982,4.4192991 21,6.29848669 21,8.35410197 L21,10 C21,12.7614237 18.7614237,15 16,15 L1,15" id="check"></path>
+                      <polyline points="4.5 8.5 8 11 11.5 8.5" class="svg-out"></polyline>
+                      <path d="M8,1 L8,11" class="svg-out"></path>
+                  </svg>
+                </div>
+          </div>
+        <div class="row 6-Light" id="item1">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-3 ">
+                <div class="col-12">
+                    <img src="../../static/img/Smart_home/6light.png" alt="6light" class="six_light">
+                </div>
+            </div>
+        
+            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+                <div class="col-12 name">
+                  <nobr><span id="nme1">6 Light 2 Fan 2 Socket </nobr>Touch Module</span> 
+                    <input type="hidden" id="unit_price1" name="unit_price1" value="&#8377; 13,800">
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-8 mt-3">
+                    <div class="qty-container">
+                        <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(1)"><i class="fa fa-minus"></i></a>
+                        <input type="text" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity1" readonly/>
+                        <a class="qty-btn-plus btn-cornered" type="button" data-item-number="1" onclick="increaseQuantity(1)"><i class="fa fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-3 col-md-3 col-sm-3 col-3 price">
+                <div class="col-12 close-icon">
+                    <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
+                </div>
+                <div class="col-12 mt-5 ">
+                  <nobr><p id="price1">&#8377; 13,800</p></nobr>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row" id="item2">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+                <div class="col-md-12">
+                    <img src="../../static/img/Smart_home/3light.png" alt="3light" class="three_light">
+                </div>
+            </div>
+        
+            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+                <div class="col-md-12 name">
+                  <nobr><span id="nme2">3 Light 1 socket </nobr>Touch Module</span>
+                    <input type="hidden" id="unit_price2" name="unit_price" value="&#8377; 8,100">
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-8 mt-3">
+                    <div class="qty-container">
+                        <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(2)"><i class="fa fa-minus"></i></a>
+                        <input type="text" name="qty" value="2" class="input-qty input-cornered quantity-input" id="quantity2" readonly/>
+                        <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(2)"><i class="fa fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-3 col-md-3 col-sm-3 col-3 price">
+                <div class="col-md-12 close-icon">
+                  <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
+                </div>
+                <div class="col-12 mt-5">
+                  <nobr><p id="price2">&#8377; 16,200</p></nobr>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row" id="item3">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+              <div class="col-md-12">
+                <img src="../../static/img/Smart_home/2light.png" alt="2light" class="two_light">
+              </div>
+            </div>
+          
+            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+              <div class="col-md-12 name">
+                <nobr><span id="nme3"> 2 Light 1 Fan 1 Socket </nobr>Touch Module</span>
+                <input type="hidden" id="unit_price3" name="unit_price3" value="&#8377; 9,600">
+              </div>
+              <div class="col-lg-4 col-md-5 col-sm-8 mt-3 ">
+                <div class="qty-container">
+                  <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(3)"><i class="fa fa-minus"></i></a>
+                  <input type="text" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity3" readonly/>
+                  <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(3)"><i class="fa fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
+              <div class="col-md-12 close-icon">
+               <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
+              </div>
+              <div class="col-md-12 mt-5">
+                <nobr><p id="price3">&#8377; 9,600</p><nobr>
+              </div>
+            </div>
+        </div>
+          
+          <div class="row labourrow" id="item4">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+              <div class="col-md-12">
+                <img src="../../static/img/Smart_home/labour.png" alt="labour" class="labour">
+              </div>
+            </div>
+          
+            <div class="col-lg-4 col-md-7 col-sm-6 col-6">
+              <div class="col-md-12 name">
+                <span id="labour"> Labour</span>
+              </div>
+            </div>
+          
+            <div class="col-lg-6 price col-md-2 col-sm-3 col-3 mt-3">
+              <div class="col-md-12">
+                <p id="laborPrice">&#8377; 5,000</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row rw">
+            <div class="col-md-4 col-sm-5 col-5">
+              <div class="col-md-12">
+                <h5 id="total_amount"class="total_amount"><nobr>Total Amount</nobr></h5>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-1 col-1">
+              <div class="col-md-12">
+                <h6></h6>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-6 price">
+              <div class="col-md-12">
+                <h5 id="total">&#8377; 44,600 + GST</h5>
+              </div>
+            </div>
+          </div>
+    </div>
+</body>
+</html>

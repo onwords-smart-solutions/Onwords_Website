@@ -1,0 +1,425 @@
+body {
+    background-color: rgb(0, 0, 0);
+    overflow-y: scroll;
+    width: thin; 
+    color: transparent transparent; 
+}
+body::-webkit-scrollbar {
+  width: 1px; 
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.htitle {
+  text-align: center;
+  margin: 30px;
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+.back { 
+  cursor: pointer;
+  position: absolute;
+  top:10px;
+  height: 15px;
+}
+
+.description{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+.text-right {
+  color: #ffffff;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content:space-between;
+}
+
+.text-right .tit {
+  color:rgb(255, 255, 255);
+}
+.text-right .download {
+   cursor: pointer;
+   margin-right: 10px;
+   color: #b8b8b8;
+}
+
+.text-right .download:hover {
+    transform: scale(1.-09); 
+    color: #ffffff;
+}
+
+.row{
+    align-items: center;
+    text-align: left;
+    color: white;
+    background: rgba(254, 254, 254, 0.10);
+    margin-bottom: 15px;
+    border-radius: 8px;
+    height: 110px;
+    font-size:medium;
+}
+
+.rw {
+    height: 56px;
+    align-items: center;
+}
+
+  .alexa{
+    width: 60px;
+  }
+  .local_server1{
+    width: 50px;
+    margin-left: 14px;
+
+  }
+  .heavytouch_module{
+    width: 60px;
+  }
+  .tab{
+    width: 60px;
+
+  }
+  .doorlock{
+    width: 70px;
+  }
+  .networking{
+    width: 80px;
+  }
+  .six_light{
+    width: 80px;
+  }
+  .three_light{
+    width: 90px;
+  }
+  .two_light{
+    width: 150px;
+    margin-left: -30px;
+
+  }
+  .security_system{
+    width: 70px;
+  }
+  .curtain{
+    width: 50px;
+  }
+  .video_door_phone{
+    width: 70px;
+  }
+  .energy_monitoring{
+    width: 60px;
+  }
+  .gate_automation{
+    width: 50px;
+    
+  }
+  .labour{
+    width: 70px;
+  }
+
+  .swinggate_dualarm_motor{
+    width: 70px;
+  }
+  .swinggaet_armmotor_controller{
+    width: 70px;
+  }
+  .wifi_module{
+    width: 120px;
+    margin-left: -24px;
+
+  }
+  .app_integration{
+    width: 40px;
+    margin-left: 15px;
+
+  }
+  .sensor{
+    width: 70px;
+  }
+  .remote{
+    width: 70px;
+  }
+  button:focus,a,a:hover{
+  text-decoration: none;
+}
+.labourrow {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+/*--------------------------*/
+
+.qty-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #2c2c2c;
+  height: 27px;
+  border-radius: 10px;
+  color: rgb(211, 211, 211);
+  cursor: pointer;
+  text-align: center;
+}
+
+.qty-container .qty-btn-minus .fa-minus:hover {
+  color: rgb(255, 255, 255);
+}
+
+.qty-container .qty-btn-plus .fa-plus:hover {
+  color: rgb(255, 255, 255);
+}
+
+.qty-container .input-qty {
+  margin-right: 11px;
+  margin-left: 11px;
+  background-color: #000000;
+  text-align: center;
+  color: white;
+  border: none;
+  font-size: 14px;
+  width: 30px;
+  height: 23px;
+}
+
+.qty-container .qty-btn-minus,
+.qty-container .qty-btn-plus {
+  padding: 10px 14px;
+  font-size: 17px;
+  height: 45px;
+  width: 52px;
+  transition: 0.3s;
+}
+
+.btn-cornered,
+.input-cornered {
+  border-radius: 4px;
+}
+
+.row p,h5{
+color: rgb(255, 255, 255);
+margin-top: 4px;
+
+}
+
+.row .price{
+    text-align: right;
+}
+
+.close-icon {
+  color: rgb(117, 117, 117);
+  position: absolute;
+  cursor: pointer;
+  top: -18%;
+  right: 2%;
+  cursor: pointer;
+  font-size: 27px;
+}
+.close-icon:hover{
+  color:rgb(255, 255, 255)
+}
+.row .total_amount{
+  color: rgb(163, 163, 163);
+  margin-top: 8px;
+}
+
+@media (max-width: 576px) { 
+  .htitle {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+  }
+  .back { 
+    top:6.3px;
+    cursor: pointer;
+    position: absolute;
+    height: 17px;
+  }
+  
+  .description{
+    text-align: center;
+    color: rgb(220, 220, 220);
+    margin-bottom: 24px;
+  }
+  .text-right {
+    margin-bottom: 13px;
+
+  }
+  .text-right .tit {
+    font-size: large;
+  }
+  .text-right .download {
+    margin-top: 1px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #b8b8b8;
+    position: relative;
+    top:-17px;
+  }
+
+  .row{
+  font-size:13px;
+  height: 120px;
+  margin-right: 1px;
+  margin-left: 1px;
+  margin-bottom: 16px;
+
+  }
+  .htitle {
+    font-size: 25px;
+    
+  }
+ 
+  .qty-container .input-qty{
+  font-size: small;
+  }
+  .description{
+    font-size: 14px;
+  }
+  .rw h5{
+    font-size: medium;
+  }
+ 
+  .qty-container {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #2c2c2c;
+    height: 27px;
+    border-radius: 10px;
+  }
+  .qty-container .input-qty {
+    margin-right: 11px;
+    margin-left: 11px;
+
+    background-color: #000000;
+    text-align: center;
+    color: white;
+    border: none;
+    font-size: 14px;
+    width: 24px;
+    height: 23px;
+  }
+  .qty-container .qty-btn-minus,
+  .qty-container .qty-btn-plus {
+    font-size: 17px;
+    height: 45px;
+    width: 52px;
+}
+#btn-download:hover {
+  transform: none;
+}
+.rw {
+  align-items: center;
+  margin: 0;
+  justify-content: space-around;
+  height: 55px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(20, 20, 20);
+}
+  .six_light{
+    width: 80px;
+    margin-left: -10px;
+
+  }
+  .three_light{
+    width: 80px;
+    margin-left: -10px;
+  }
+  .two_light{
+    width: 130px;
+    margin-left: -33px;
+
+  }
+  .alexa{
+    width: 60px;
+    margin-left: -2px;
+  }
+  .local_server1{
+    width: 50px;
+    margin-left: 6px;
+
+  }
+  .heavytouch_module{
+    width: 80px;
+    margin-left: -10px;
+  }
+  .networking{
+    width: 60px;
+  }
+  .curtain{
+    width: 60px;
+  }
+  .labourrow{
+    margin-bottom: 65px;
+    height: 80px;
+  }
+  .close-icon {
+    color: rgb(117, 117, 117);
+    position: absolute;
+    cursor: pointer;
+    top: -28%;
+    right: 6%;
+    cursor: pointer;
+    font-size: 27px;
+  }
+ 
+ }
+
+#btn-download:hover {
+  transform: scale(0.9);
+}
+
+#btn-download svg {
+  margin: 16px 0 0 16px;
+  fill: none;
+  transform: translate3d(0, 0, 0);
+}
+
+#btn-download svg polyline,
+#btn-download svg path {
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: all 0.3s ease;
+  transition-delay: 0.3s;
+}
+
+#btn-download svg path#check {
+  stroke-dasharray: 38;
+  stroke-dashoffset: 114;
+  transition: all 0.4s ease;
+}
+
+#btn-download.downloaded svg .svg-out {
+  opacity: 0;
+  animation: drop 0.3s linear;
+  transition-delay: 0.4s;
+}
+
+#btn-download.downloaded svg path#check {
+  stroke: #a93abb;
+  stroke-dashoffset: 174;
+  transition-delay: 0.4s;
+}
+
+@keyframes drop {
+  20% {
+    transform: translate(0, -3px);
+  }
+  80% {
+    transform: translate(0, 2px);
+  }
+  95% {
+    transform: translate(0, 0);
+  }
+}

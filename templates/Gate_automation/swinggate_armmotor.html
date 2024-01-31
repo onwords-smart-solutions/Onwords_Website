@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css" integrity="sha512-ykRBEJhyZ+B/BIJcBuOyUoIxh0OfdICfHPnPfBy7eIiyJv536ojTCsgX8aqrLQ9VJZHGz4tvYyzOM0lkgmQZGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../../static/img/favicon.ico" type="image/x-icon" />
+    <script defer src="../../static/js/Gate_automation/swinggate_armmotor.js"></script>
+    <link rel="stylesheet" href="../../static/css/quotation.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Quotation</title>
+</head>
+<body>
+
+    <div class="container  mt-2 col-xlg-12 col-lg-8 col-md-11 col-sm-11 col-12">
+        <a onclick="back()"><img src="../../static/img/back.png" alt="back" width="9" class="back"></a>
+        <h2 class="htitle">Your Item</h2>
+        <p class="description">Transform your home's entryway with the graceful arc
+            of Automated Swing Gates powered by our cutting edge arm motor technology. Unlike bulky, intrusive
+            systems, our solution seamlessly integrates with your
+            existing gates, gliding them open and shut with silent
+            precision.</p>
+            <div class="text-right">
+                <h3 class="tit">Swing Gate With Arm Motor</h3>
+                <div class="download" id="btn-download" onclick="downloadPDF()">
+                    <svg width="29px" height="23px" viewBox="0 0 22 16">
+                        <path d="M2,10 L6,13 L12.8760559,4.5959317 C14.1180021,3.0779974 16.2457925,2.62289624 18,3.5 L18,3.5 C19.8385982,4.4192991 21,6.29848669 21,8.35410197 L21,10 C21,12.7614237 18.7614237,15 16,15 L1,15" id="check"></path>
+                        <polyline points="4.5 8.5 8 11 11.5 8.5" class="svg-out"></polyline>
+                        <path d="M8,1 L8,11" class="svg-out"></path>
+                    </svg>
+                </div>
+              </div>
+        <div class="row 6-Light">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+                <div class="col-md-12">
+                    <img src="../../static/img/Gate_automation/swinggate_dualarm_motor.png" alt="swinggate_dualarm_motor" class="swinggate_dualarm_motor">
+                    <img src="../../static/img/Gate_automation/swinggate_dualarm_motor.png" alt="swinggate_dualarm_motor" class="swinggate_dualarm_motor">
+
+                </div>
+            </div>
+        
+            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+                <div class="col-md-12">
+                    <span id="nme1">Swing Gate Dual Arm Motor(300KG per Leaf)</span>
+                    <input type="hidden" id="unit_price1" name="unit_price1" value="&#8377;44,999">
+
+                </div>
+                <div class="col-lg-4 col-md-5  mt-3">
+                    <div class="qty-container">
+                        <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(1)"><i class="fa fa-minus"></i></a>
+                        <input type="text" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity1" readonly/>
+                        <a class="qty-btn-plus btn-cornered" type="button" data-item-number="1" onclick="increaseQuantity(1)"><i class="fa fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-3 col-md-3 col-sm-3 col-3 price">
+                
+                <div class="col-md-12">
+                    <nobr><span id="price1">&#8377;  44,999</span></nobr>
+                </div>
+            </div>
+        </div>
+        <div class="row 6-Light">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+                <div class="col-md-12">
+                    <img src="../../static/img/Gate_automation/swinggaet_armmotor_controller.jpg" alt="swinggaet_armmotoe controller" class="swinggaet_armmotor_controller">
+                </div>
+            </div>
+        
+            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+                <div class="col-md-12">
+                    <span id="nme2">Swing Gate Arm Motor Controller</span>
+                    <input type="hidden" id="unit_price2" name="unit_price2" value="&#8377;9,999">
+
+                </div>
+                <div class="col-lg-4 col-md-5  mt-3">
+                    <div class="qty-container">
+                        <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(2)"><i class="fa fa-minus"></i></a>
+                        <input type="text" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity2" readonly/>
+                        <a class="qty-btn-plus btn-cornered" type="button" data-item-number="1" onclick="increaseQuantity(2)"><i class="fa fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-3 col-md-3 col-sm-3 col-3 price">
+               
+                <div class="col-md-12">
+                    <nobr> <p id="price2">&#8377;  9,999</p></nobr>
+                </div>
+            </div>
+        </div>
+        <div class="row 6-Light">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+                <div class="col-md-12">
+                    <img src="../../static/img/Gate_automation/wifi_module.png" alt="wifi_module" class="wifi_module">
+                </div>
+            </div>
+        
+            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+                <div class="col-md-12">
+                    <span id="nme3">WiFi Module</span>
+                    <input type="hidden" id="unit_price3" name="unit_price3" value="&#8377;6,500">
+
+                </div>
+                <div class="col-lg-4 col-md-5  mt-3 ">
+                    <div class="qty-container">
+                        <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(3)"><i class="fa fa-minus"></i></a>
+                        <input type="text" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity3" readonly />
+                        <a class="qty-btn-plus btn-cornered" type="button" data-item-number="1" onclick="increaseQuantity(3)"><i class="fa fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-3 col-md-3 col-sm-3 col-3 price">
+                
+                <div class="col-md-12">
+                    <nobr><p id="price3">&#8377;  6,500</p></nobr>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+                <div class="col-md-12">
+                    <img src="../../static/img/Gate_automation/app_integration.png" alt="app_integration" class="app_integration">
+                </div>
+            </div>
+        
+            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+                <div class="col-md-12 ">
+                    <span id="nme4">App integration</span>
+                    <input type="hidden" id="unit_price4" name="unit_price4" value="&#8377;0">
+
+                </div>
+               
+            </div>
+        
+            <div class="col-lg-3 col-md-3 col-sm-3 col-3 price">
+                <div class="col-md-12 close-icon">
+                    <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
+                </div>
+                <div class="col-md-12 mt-5">
+                    <nobr><p id="price4">Free</p></nobr>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity4" readonly/>
+
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+                <div class="col-md-12">
+                    <img src="../../static/img/Gate_automation/sensor.jpg" alt="sensor" class="sensor">
+                </div>
+            </div>
+        
+            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+                <div class="col-md-12">
+                    <span id="nme5">Sensors ( 2per item ) ( if needed ) </span>
+                    <input type="hidden" id="unit_price5" name="unit_price5" value="&#8377;3300">
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8 mt-3">                    
+                    <div class="qty-container">
+                        <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(5)"><i class="fa fa-minus"></i></a>
+                        <input type="text" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity5" readonly/>
+                        <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(5)"><i class="fa fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
+                <div class="col-md-12 close-icon">
+                    <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
+                </div>
+                <div class="col-md-12 mt-5">
+                    <nobr><p id="price5">&#8377; 3300</p></nobr>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+                <div class="col-md-12">
+                    <img src="../../static/img/Gate_automation/remote.jpg" alt="remote" class="remote">
+
+                </div>
+            </div>
+        
+            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+                <div class="col-md-12">
+                    <span id="nme6">remote ( 2per item )</span>
+                    <input type="hidden" id="unit_price6" name="unit_price6" value="&#8377;0">
+
+                </div>
+                <div class="col-lg-4 col-md-6  mt-3">                    
+                    <div class="qty-container">
+                        <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(6)"><i class="fa fa-minus"></i></a>
+                        <input type="text" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity6"readonly/>
+                        <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(6)"><i class="fa fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
+                <div class="col-md-12 close-icon">
+                    <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
+                </div>
+                <div class="col-md-12 mt-5">
+                    <nobr><p id="price6">Free</p></nobr>
+                </div>
+            </div>
+        </div>
+
+        <div class="row labourrow">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+                <div class="col-md-12">
+                    <img src="../../static/img/Smart_home/labour.png" alt="labour" class="labour">
+                </div>
+            </div>
+        
+            <div class="col-lg-4 col-md-7 col-sm-6 col-6">
+                <div class="col-md-12">
+                    <span id="labour">Labour</span>
+                </div>  
+            </div>
+        
+            <div class="col-lg-6 price col-md-2 col-sm-3 col-3 mt-3">
+                <div class="col-md-12">
+                    <p id="laborPrice">&#8377; 5,000</p>
+                </div>
+            </div>
+        </div>
+        <div class="row rw">
+            <div class="col-md-4 col-sm-5 col-5">
+                <div class="col-md-12">
+                    <h5 id="total_amount" class="total_amount"><nobr>Total Amount</nobr></h5>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-1 col-1">
+                <div class="col-md-12">
+                    <h6></h6>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-6 price">
+                <div class="col-md-12">
+                    <h5 id="total">&#8377; 69,798 + GST</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

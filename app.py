@@ -109,9 +109,61 @@ def sitemap():
 def not_found(error):
     return render_template('404.html'), 404
 
-@app.route('/get-quote')
-def get_quote():
-    return redirect("http://172.31.41.29:8000/fields")
+@app.route('/fields')
+def fields():
+    return render_template("fields.html")
+
+@app.route('/smart_home')
+def smart_home():
+    return render_template("smart_home.html")
+
+@app.route('/gate_automation')
+def gate_automation():
+    return render_template("gate_automation.html")
+
+@app.route('/security_system')
+def security_system():
+    return render_template("security_system.html")
+
+@app.route('/techease_essential')
+def techease_essential():
+    return render_template("Smart_home/techease_essential.html")
+
+@app.route('/ecosmart_adapt')
+def ecosmart_adapt():
+    return render_template("Smart_home/ecosmart_adapt.html")
+
+@app.route('/home_hormony')
+def home_hormony():
+    return render_template("Smart_home/home_hormony.html")
+
+@app.route('/intellihome_ultimate')
+def intellihome_ultimate():
+    return render_template("Smart_home/intellihome_ultimate.html")
+
+@app.route('/livingtech_premium')
+def livingtech_premium():
+    return render_template("Smart_home/livingtech_premium.html")
+
+@app.route('/pinnacle_ecosystem')
+def pinnacle_ecosystem():
+    return render_template("Smart_home/pinnacle_ecosystem.html")
+
+@app.route('/swinggate_armmotor')
+def swinggate_armmotor():
+    return render_template("Gate_automation/swinggate_armmotor.html")
+
+@app.route('/swinggate_rollermotor')
+def swinggate_rollermotor():
+    return render_template("Gate_automation/swinggate_rollermotor.html")
+
+@app.route('/sliding_gate')
+def sliding_gate():
+    return render_template("Gate_automation/sliding_gate.html")
+
+@app.route('/invoice')
+def invoice():
+    return render_template("invoice.html")
 
 @app.route('/team')
 def team():

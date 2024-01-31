@@ -1,0 +1,425 @@
+.htitle {
+  text-align: center;
+  margin: 30px;
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+body{
+    background-color: black;
+    font-family: Arial;
+    overflow-y: scroll;
+    width: thin; 
+    color: transparent transparent; 
+}
+
+body::-webkit-scrollbar {
+  width: 1px; 
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+
+}
+
+.grid {
+
+  background-color: #151515;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, .05);
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 13px;
+  margin-right: -13px;
+  cursor: pointer;
+}
+
+.grid:hover img {
+  transform: scale(1.03);
+}
+.grid img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.grid .content {
+  padding: 15px;
+}
+
+.grid h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.grid p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+p {
+  color: #666;
+}
+
+.gate{
+  height: 265px;
+}
+.security{
+  height: 160px;
+}
+
+.home{
+  height: 440px;
+}
+
+.stepper-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+}
+.stepper-item {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  flex: 1;
+
+}
+.stepper-item::before {
+  position: absolute;
+  content: "";
+  border-bottom: 4px solid #ccc;
+  width: 100%;
+  top: 20px;
+  left: -50%;
+  z-index: 2;
+}
+.step-name{
+  color:rgb(115, 115, 115);
+}
+.stepper-item::after {
+  position: absolute;
+  content: "";
+  border-bottom: 4px solid #ccc;
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  z-index: 2;
+}
+
+.stepper-item .step-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background:#ffffff;
+  margin-bottom: 6px;
+}
+.stepper-item.active .step-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
+  margin-bottom: 6px;
+}
+.stepper-item.active {
+  font-weight: bold;
+  
+}
+.stepper-item.active .step-name{
+  color: #ffffff;
+}
+.stepper-item.completed .step-counter {
+  background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
+  color: #fff;
+}
+
+.stepper-item.completed::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  z-index: 3;
+}
+
+.stepper-item:first-child::before {
+  content: none;
+}
+.stepper-item:last-child::after {
+  content: none;
+}
+
+@import url(//codepen.io/chrisdothtml/pen/ojLzJK.css);
+
+:root {
+  --anim-speed: 0.3s;
+}
+
+.arrow {
+ width:20px;
+}
+
+.grid:before {
+  content: '';
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.00) 100%);
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  transition-property: top, opacity;
+  transition-duration: var(--anim-speed);
+}
+
+.grid .details {
+
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  padding: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+.grid .arro{
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  position: absolute;
+  padding: 20px;
+  color: #fff;
+  bottom: 0;
+  left: 89%;
+  z-index: 3;
+}
+.grid .arro span {
+  display: block;
+  opacity: 0;
+  top: 100px;
+  margin-right: 70px;
+
+  transition-property: top, opacity;
+  transition-duration: var(--anim-speed);
+  transition-delay: 0s;
+}
+.grid .arroo{
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  position: absolute;
+  padding: 20px;
+  color: #fff;
+  bottom: 0;
+  left: 49%;
+  z-index: 3;
+}
+.grid .arroo span {
+  display: block;
+  opacity: 0;
+  top: 100px;
+  margin-right: 70px;
+
+  transition-property: top, opacity;
+  transition-duration: var(--anim-speed);
+  transition-delay: 0s;
+}
+.grid .details span {
+  display: block;
+  opacity: 0;
+  position: relative;
+  top: 100px;
+  transition-property: top, opacity;
+  transition-duration: var(--anim-speed);
+  transition-delay: 0s;
+}
+
+.tile .details .title {
+  line-height: 1;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+.details span{
+color: rgb(255, 255, 255);
+font-weight:300;
+}
+.gate:focus,
+.grid:hover {
+  &:before,
+  span {
+      opacity: 1;
+  }
+
+  &:before {
+      top: 50%;
+  }
+
+  span {
+      top: 0;
+  }
+
+  .title {
+      transition-delay: 0.15s;
+  }
+
+  .info {
+      transition-delay: 0.25s;
+  }
+  
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  margin-bottom:1px;
+
+}
+@media (max-width: 576px) {
+  .htitle {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 14px;
+
+    margin-bottom: 34px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+  }
+   
+.grid{
+  margin: -16px;
+  margin-bottom: 30px;
+}
+
+.gate{
+  height: 217px;
+}
+.security{
+  height: 140px;
+}
+.home{
+  height: 217px;
+}
+.grid:hover img {
+  transform: scale(1.00);
+}
+.grid:before {
+  content: '';
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.00) 100%);
+  width: 100%;
+  height: 50%;
+  opacity: 1; /* Set initial opacity to 1 */
+  position: absolute;
+  top: 50%; /* Set initial top position to 50% */
+  left: 0;
+  z-index: 2;
+  transition-property: top, opacity;
+  transition-duration: var(--anim-speed);
+}
+.grid .arro span {
+  display: block;
+  opacity: 1; /* Set initial opacity to 1 */
+  position: relative;
+  top: 0; /* Set initial top position to 0 */
+  right: 10px;
+  transition-property: top, opacity;
+  transition-duration: var(--anim-speed);
+  transition-delay: 0s;
+}
+.grid .details span {
+  display: block;
+  opacity: 1; /* Set initial opacity to 1 */
+  position: relative;
+  top: 0; /* Set initial top position to 0 */
+  transition-property: top, opacity;
+  transition-duration: var(--anim-speed);
+  transition-delay: 0s;
+}
+
+.tile .details .title {
+  line-height: 1;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+.details span {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+.step-name {
+  display: none;
+}
+.stepper-item .step-counter {
+font-size: 14px;
+}
+.stepper-item.active .step-counter {
+  color: #fff;
+  font-size: 14px;
+}
+
+.stepper-item .step-counter {
+  width: 22px; /* Adjust the width for smaller size */
+  height: 22px; /* Adjust the height for smaller size */
+  border: none;
+}
+.stepper-item.active .step-counter {
+  width: 22px; /* Adjust the width for smaller size */
+  height: 22px; /* Adjust the height for smaller size */
+
+}
+.stepper-item::before,
+  .stepper-item::after {
+    border: none; /* Hide all borders */
+    width: 10%;
+  }
+  .stepper-wrapper {
+    justify-content: space-around; /* or use space-evenly for equal space */
+    width: 50%;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 30px;
+    
+  }
+  .top {
+    flex-direction: column;
+  }
+
+  nav {
+    order: 2; /* Change the order for mobile */
+  }
+  .stepper-item {
+    flex: 1;
+    position: static;
+    margin-top: 24px;
+
+  }
+}
