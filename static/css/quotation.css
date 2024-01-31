@@ -2,8 +2,9 @@ body {
     background-color: rgb(0, 0, 0);
     overflow-y: scroll;
     width: thin; 
-    color: transparent transparent; 
+    color: transparent;
 }
+
 body::-webkit-scrollbar {
   width: 1px; 
 }
