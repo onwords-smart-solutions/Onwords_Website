@@ -1,453 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="icon" href="../../static/img/favicon.ico" type="image/x-icon" />
-  <script defer src="../../static/js/Smart_home/livingtech_premium.js"></script>
-  <link rel="stylesheet" href="../../static/css/quotation.css">
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css" integrity="sha512-ykRBEJhyZ+B/BIJcBuOyUoIxh0OfdICfHPnPfBy7eIiyJv536ojTCsgX8aqrLQ9VJZHGz4tvYyzOM0lkgmQZGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../../static/img/favicon.ico" type="image/x-icon" />
+    <script defer src="../../static/js/Smart_home/livingtech_premium.js"></script>
+    <link rel="stylesheet" href="../../static/css/quotation.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <title>Quotation</title>
 </head>
 <body>
 
-    <div class="container  mt-2 col-xlg-12 col-lg-8 col-md-11 col-sm-11 col-12">
-        <a onclick="back()"><img src="../../static/img/back.png" alt="back" width="9" class="back"></a>
-        <h2 class="htitle">Your Items</h2>
-        <p class="description">Introducing "LivingTech Premium," the pinnacle of
-            Smart Home Automation tailored for 3BHK homes. This
-            package not only offers comprehensive Home
-            Automation but also provides Enhanced Security
-            features with the flexibility to choose between
-            advanced security sensors or a Smart Gate System.</p>
-            <div class="text-right">
-                <h3 class="tit">LivingTech Premium</h3>
-                <div class="download" id="btn-download" onclick="downloadPDF()">
-                    <svg width="23px" height="19px" viewBox="0 0 22 16">
-                        <path d="M2,10 L6,13 L12.8760559,4.5959317 C14.1180021,3.0779974 16.2457925,2.62289624 18,3.5 L18,3.5 C19.8385982,4.4192991 21,6.29848669 21,8.35410197 L21,10 C21,12.7614237 18.7614237,15 16,15 L1,15" id="check"></path>
-                        <polyline points="4.5 8.5 8 11 11.5 8.5" class="svg-out"></polyline>
-                        <path d="M8,1 L8,11" class="svg-out"></path>
-                    </svg>
-                </div>
-              </div>
+<div class="container  mt-2 col-xlg-12 col-lg-8 col-md-11 col-sm-11 col-12">
+    <a onclick="back()"><img src="../../static/img/back.png" alt="back" width="9" class="back"></a>
+    <h2 class="htitle">Your Items</h2>
+    <p class="description">Introducing "LivingTech Premium," the pinnacle of
+        Smart Home Automation tailored for 3BHK homes. This
+        package not only offers comprehensive Home
+        Automation but also provides Enhanced Security
+        features with the flexibility to choose between
+        advanced security sensors or a Smart Gate System.</p>
+    <div class="text-right">
+        <h3 class="tit">LivingTech Premium</h3>
+        <div class="download" id="btn-download" onclick="downloadPDF()">
+            <svg width="23px" height="19px" viewBox="0 0 22 16">
+                <path d="M2,10 L6,13 L12.8760559,4.5959317 C14.1180021,3.0779974 16.2457925,2.62289624 18,3.5 L18,3.5 C19.8385982,4.4192991 21,6.29848669 21,8.35410197 L21,10 C21,12.7614237 18.7614237,15 16,15 L1,15" id="check"></path>
+                <polyline points="4.5 8.5 8 11 11.5 8.5" class="svg-out"></polyline>
+                <path d="M8,1 L8,11" class="svg-out"></path>
+            </svg>
+        </div>
+    </div>
 
-        <div class="row 6-Light">
-            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
-                <div class="col-md-12">
-                    <img src="../../static/img/Smart_home/alexa 4th gen.jpg" alt="alexa 4th gen" class="alexa">
-                </div>
+    <div class="row 6-Light">
+        <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+            <div class="col-md-12">
+                <img src="../../static/img/Smart_home/alexa 4th gen.jpg" alt="alexa 4th gen" class="alexa">
             </div>
-        
-            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
-                <div class="col-md-12">
-                    <span id="1">Alexa 4th gen</span>
-                    <input type="hidden" id="unit_price1" name="unit_price1" value="&#8377; 4,000">
+        </div>
 
-                </div>
-                <div class="col-lg-4 col-md-5 col-sm-8 mt-3">
-                    <div class="qty-container">
-                        <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(1)"><i class="fa fa-minus"></i></a>
-                        <input type="text" name="qty" value="2" class="input-qty input-cornered quantity-input" id="quantity1" readonly/>
-                        <a class="qty-btn-plus btn-cornered" type="button" data-item-number="1" onclick="increaseQuantity(1)"><i class="fa fa-plus"></i></a>
-                    </div>
-                </div>
+        <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+            <div class="col-md-12">
+                <span id="1">Alexa 4th gen</span>
+                <input type="hidden" id="unit_price1" name="unit_price1" value="&#8377; 4,000">
+
             </div>
-        
-            <div class="col-lg-3 col-md-3 col-sm-3 col-3 price">
-                <div class="col-md-12 close-icon">
-                     <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
-                </div>
-                <div class="col-md-12 mt-5">
-                    <nobr><p id="price1">&#8377;  16,000</p></nobr>
+            <div class="col-lg-4 col-md-5 col-sm-8 mt-3">
+                <div class="qty-container">
+                    <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(1)"><i class="fa fa-minus"></i></a>
+                    <input type="text" name="qty" value="2" class="input-qty input-cornered quantity-input" id="quantity1" readonly/>
+                    <a class="qty-btn-plus btn-cornered" type="button" data-item-number="1" onclick="increaseQuantity(1)"><i class="fa fa-plus"></i></a>
                 </div>
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
-                <div class="col-md-12">
-                    <img src="../../static/img/Smart_home/local_server2.jpg" alt="local_server" class="local_server1">
-                </div>
-            </div>
-        
-            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
-                <div class="col-md-12 ">
-                    <span id="2">Local Server</span>
-                    <input type="hidden" id="unit_price2" name="unit_price2" value="&#8377; 60,000">
 
-                </div>
-                <div class="col-lg-4 col-md-5 col-sm-8 mt-3">                    
-                    <div class="qty-container">
-                        <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(2)"><i class="fa fa-minus"></i></a>
-                        <input type="text" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity2" readonly/>
-                        <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(2)"><i class="fa fa-plus"></i></a>
-                    </div>
-                </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-3 price">
+            <div class="col-md-12 close-icon">
+                <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
             </div>
-        
-            <div class="col-lg-3 col-md-3 col-sm-3 col-3 price">
-                <div class="col-md-12 close-icon">
-                     <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
-                </div>
-                <div class="col-md-12 mt-5">
-                   <nobr> <p id="price2">&#8377;60,000</p>
-</nobr>                </div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
-                <div class="col-md-12">
-                    <img src="../../static/img/Smart_home/6light.png" alt="6light" class="six_light">
-                </div>
-            </div>
-        
-            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
-                <div class="col-md-12">
-                    <nobr><span id="3">6 Light 2 Fan 2 Socket </nobr>Touch Module</span>
-                    <input type="hidden" id="unit_price3" name="unit_price3" value="&#8377;13,800">
-
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 mt-3">                    
-                    <div class="qty-container">
-                        <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(3)"><i class="fa fa-minus"></i></a>
-                        <input type="text" name="qty" value="2" class="input-qty input-cornered quantity-input" id="quantity3" readonly/>
-                        <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(3)"><i class="fa fa-plus"></i></a>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
-                <div class="col-md-12 close-icon">
-                     <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
-                </div>
-                <div class="col-md-12 mt-5">
-                    <nobr><p id="price3">&#8377; 27,600</p>
-</nobr>                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
-                <div class="col-md-12">
-                    <img src="../../static/img/Smart_home/2light.png" alt="2light" class="two_light">
-                </div>
-            </div>
-        
-            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
-                <div class="col-md-12">
-                    <nobr><span id="4">2 Light 1 Fan 1 Socket </nobr>Touch Module</span>
-                    <input type="hidden" id="unit_price4" name="unit_price4" value="&#8377; 9,600">
-
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 mt-3">                    
-                    <div class="qty-container">
-                        <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(4)"><i class="fa fa-minus"></i></a>
-                        <input type="text" name="qty" value="3" class="input-qty input-cornered quantity-input" id="quantity4" readonly/>
-                        <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(4)"><i class="fa fa-plus"></i></a>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
-                <div class="col-md-12 close-icon">
-                     <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
-                </div>
-                <div class="col-md-12 mt-5">
-                    <nobr><p id="price4">&#8377; 28,800</p>
-</nobr>                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
-                <div class="col-md-12">
-                    <img src="../../static/img/Smart_home/3light.png" alt="3light" class="three_light">
-                </div>
-            </div>
-        
-            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
-                <div class="col-md-12">
-                    <nobr><span id="5">3 Light 1 socket </nobr>Touch Module</span>
-                    <input type="hidden" id="unit_price5" name="unit_price5" value="&#8377;8,100">
-
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 mt-3">                    
-                    <div class="qty-container">
-                        <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(5)"><i class="fa fa-minus"></i></a>
-                        <input type="text" name="qty" value="4" class="input-qty input-cornered quantity-input" id="quantity5" readonly/>
-                        <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(5)"><i class="fa fa-plus"></i></a>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
-                <div class="col-md-12 close-icon">
-                     <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
-                </div>
-                <div class="col-md-12 mt-5">
-                    <nobr><p id="price5">&#8377;32,400</p>
- </nobr>               </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
-                <div class="col-md-12">
-                    <img src="../../static/img/Smart_home/heavytouch_module.png" alt="heavytouch_module" class="heavytouch_module">
-                </div>
-            </div>
-        
-            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
-                <div class="col-md-12">
-                    <nobr><span id="6">Heavy Touch Module</span></nobr>
-                    <input type="hidden" id="unit_price6" name="unit_price6" value="&#8377;9,500">
-
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 mt-3">                    
-                    <div class="qty-container">
-                        <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(6)"><i class="fa fa-minus"></i></a>
-                        <input type="text" name="qty" value="6" class="input-qty input-cornered quantity-input" id="quantity6" readonly/>
-                        <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(6)"><i class="fa fa-plus"></i></a>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
-                <div class="col-md-12 close-icon">
-                     <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
-                </div>
-                <div class="col-md-12 mt-5">
-                    <nobr><p id="price6">&#8377;  57,000</p></nobr>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
-                <div class="col-md-12">
-                    <img src="../../static/img/Smart_home/security_system.png" alt="security_system" class="security_system">
-                </div>
-            </div>
-        
-            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
-                <div class="col-md-12">
-                    <span id="7">Security system / Gate automation</span>
-                    <input type="hidden" id="unit_price7" name="unit_price7" value="&#8377;50,000">
-
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 mt-3">                    
-                    <div class="qty-container">
-                        <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(7)"><i class="fa fa-minus"></i></a>
-                        <input type="text" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity7" readonly/>
-                        <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(7)"><i class="fa fa-plus"></i></a>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
-                <div class="col-md-12 close-icon">
-                     <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
-                </div>
-                <div class="col-md-12 mt-5">
-                   <nobr> <nobr><p id="price7">&#8377;50,00</nobr>0</p>
- </nobr>               </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
-                <div class="col-md-12">
-                    <img src="../../static/img/Smart_home/curtain.png" alt="curtain" class="curtain">
-                </div>
-            </div>
-        
-            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
-                <div class="col-md-12">
-                    <p id="8">Curtain</p>
-                    <input type="hidden" id="unit_price8" name="unit_price8" value="&#8377;15,000">
-
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 mt-3">                    
-                    <div class="qty-container">
-                        <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(8)"><i class="fa fa-minus"></i></a>
-                        <input type="text" name="qty" value="2" class="input-qty input-cornered quantity-input" id="quantity8" readonly/>
-                        <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(8)"><i class="fa fa-plus"></i></a>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
-                <div class="col-md-12 close-icon">
-                     <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
-                </div>
-                <div class="col-md-12 mt-5">
-                    <nobr><p id="price8">&#8377; 30,000</p>
-</nobr>                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
-                <div class="col-md-12">
-                    <img src="../../static/img/Smart_home/tab.png" alt="tab" class="tab">
-                </div>
-            </div>
-        
-            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
-                <div class="col-md-12">
-                    <p id="9">Tab</p>
-                    <input type="hidden" id="unit_price9" name="unit_price9" value="&#8377; 20,000">
-
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 mt-3">                    
-                    <div class="qty-container">
-                        <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(9)"><i class="fa fa-minus"></i></a>
-                        <input type="text" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity9" readonly/>
-                        <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(9)"><i class="fa fa-plus"></i></a>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
-                <div class="col-md-12 close-icon">
-                     <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
-                </div>
-                <div class="col-md-12 mt-5">
-                    <nobr><p id="price9">&#8377; 20,000</p>
-</nobr>                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
-                <div class="col-md-12">
-                    <img src="../../static/img/Smart_home/doorlock.png" alt="doorlock" class="doorlock">
-                </div>
-            </div>
-        
-            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
-                <div class="col-md-12">
-                    <p id="10">Door lock</p>
-                    <input type="hidden" id="unit_price10" name="unit_price10" value="&#8377; 29,700">
-
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 mt-3">                    
-                    <div class="qty-container">
-                        <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(10)"><i class="fa fa-minus"></i></a>
-                        <input type="text" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity10" readonly/>
-                        <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(10)"><i class="fa fa-plus"></i></a>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
-                <div class="col-md-12 close-icon">
-                     <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
-                </div>
-                <div class="col-md-12 mt-5">
-                    <nobr><p id="price10">&#8377; 29,700</p></nobr>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
-                <div class="col-md-12">
-                    <img src="../../static/img/Smart_home/video_door_phone.png" alt="video_door_phone" class="video_door_phone">
-                </div>
-            </div>
-        
-            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
-                <div class="col-md-12">
-                    <span id="11">Video door phone</span>
-                    <input type="hidden" id="unit_price11" name="unit_price11" value="&#8377; 14,500">
-
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 mt-3">                    
-                    <div class="qty-container">
-                        <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(11)"><i class="fa fa-minus"></i></a>
-                        <input type="text" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity11" readonly/>
-                        <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(11)"><i class="fa fa-plus"></i></a>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
-                <div class="col-md-12 close-icon">
-                     <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
-                </div>
-                <div class="col-md-12 mt-5">
-                    <nobr><p id="price11">&#8377;  14,500</p></nobr>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
-                <div class="col-md-12">
-                    <img src="../../static/img/Smart_home/networking.png" alt="networking" class="networking">
-                </div>
-            </div>
-        
-            <div class="col-lg-7 col-md-6 col-sm-6 col-6">
-                <div class="col-md-12">
-                    <p id="12">Networking</p>
-                    <input type="hidden" id="unit_price12" name="unit_price12" value="&#8377;8,000">
-
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 mt-3">                    
-                    <div class="qty-container">
-                        <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(12)"><i class="fa fa-minus"></i></a>
-                        <input type="text" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity12" readonly/>
-                        <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(12)"><i class="fa fa-plus"></i></a>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
-                <div class="col-md-12 close-icon">
-                     <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
-                </div>
-                <div class="col-md-12 mt-5">
-                    <nobr><p id="price12">&#8377;  8,000</p></nobr>
-                </div>
-            </div>
-        </div>
-        <div class="row labourrow">
-            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
-                <div class="col-md-12">
-                    <img src="../../static/img/Smart_home/labour.png" alt="labour" class="labour">
-                </div>
-            </div>
-        
-            <div class="col-lg-4 col-md-7 col-sm-6 col-6">
-                <div class="col-md-12">
-                     <p id="labour">Labour</p>
-                </div>  
-            </div>
-        
-            <div class="col-lg-6 price col-md-2 col-sm-3 col-3 mt-3">
-                <div class="col-md-12">
-                    <nobr><p id="laborPrice">&#8377; 10,000</p></nobr>
-                </div>
-            </div>
-        </div>
-        <div class="row rw">
-            <div class="col-md-4 col-sm-5 col-5">
-                <div class="col-md-12">
-                    <h5 id="total_amount"class="total_amount"><nobr>Total Amount</nobr></h5>
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-1 col-1">
-                <div class="col-md-12">
-                    <h6></h6>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-6 price">
-                <div class="col-md-12">
-                    <h5 id="total">&#8377; 384,000 + GST</h5>
-                </div>
+            <div class="col-md-12 mt-5">
+                <nobr><p id="price1">&#8377;  16,000</p></nobr>
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+            <div class="col-md-12">
+                <img src="../../static/img/Smart_home/local_server2.jpg" alt="local_server" class="local_server1">
+            </div>
+        </div>
+
+        <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+            <div class="col-md-12 ">
+                <span id="2">Local Server</span>
+                <input type="hidden" id="unit_price2" name="unit_price2" value="&#8377; 60,000">
+
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-8 mt-3">
+                <div class="qty-container">
+                    <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(2)"><i class="fa fa-minus"></i></a>
+                    <input type="text" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity2" readonly/>
+                    <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(2)"><i class="fa fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-3 price">
+            <div class="col-md-12 close-icon">
+                <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
+            </div>
+            <div class="col-md-12 mt-5">
+                <nobr> <p id="price2">&#8377;60,000</p>
+                </nobr>                </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+            <div class="col-md-12">
+                <img src="../../static/img/Smart_home/6light.png" alt="6light" class="six_light">
+            </div>
+        </div>
+
+        <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+            <div class="col-md-12">
+                <nobr><span id="3">6 Light 2 Fan 2 Socket </nobr>Touch Module</span>
+                <input type="hidden" id="unit_price3" name="unit_price3" value="&#8377;13,800">
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8 mt-3">
+                <div class="qty-container">
+                    <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(3)"><i class="fa fa-minus"></i></a>
+                    <input type="text" name="qty" value="2" class="input-qty input-cornered quantity-input" id="quantity3" readonly/>
+                    <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(3)"><i class="fa fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
+            <div class="col-md-12 close-icon">
+                <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
+            </div>
+            <div class="col-md-12 mt-5">
+                <nobr><p id="price3">&#8377; 27,600</p>
+                </nobr>                </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+            <div class="col-md-12">
+                <img src="../../static/img/Smart_home/2light.png" alt="2light" class="two_light">
+            </div>
+        </div>
+
+        <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+            <div class="col-md-12">
+                <nobr><span id="4">2 Light 1 Fan 1 Socket </nobr>Touch Module</span>
+                <input type="hidden" id="unit_price4" name="unit_price4" value="&#8377; 9,600">
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8 mt-3">
+                <div class="qty-container">
+                    <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(4)"><i class="fa fa-minus"></i></a>
+                    <input type="text" name="qty" value="3" class="input-qty input-cornered quantity-input" id="quantity4" readonly/>
+                    <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(4)"><i class="fa fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
+            <div class="col-md-12 close-icon">
+                <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
+            </div>
+            <div class="col-md-12 mt-5">
+                <nobr><p id="price4">&#8377; 28,800</p>
+                </nobr>                </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+            <div class="col-md-12">
+                <img src="../../static/img/Smart_home/3light.png" alt="3light" class="three_light">
+            </div>
+        </div>
+
+        <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+            <div class="col-md-12">
+                <nobr><span id="5">3 Light 1 socket </nobr>Touch Module</span>
+                <input type="hidden" id="unit_price5" name="unit_price5" value="&#8377;8,100">
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8 mt-3">
+                <div class="qty-container">
+                    <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(5)"><i class="fa fa-minus"></i></a>
+                    <input type="text" name="qty" value="4" class="input-qty input-cornered quantity-input" id="quantity5" readonly/>
+                    <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(5)"><i class="fa fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
+            <div class="col-md-12 close-icon">
+                <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
+            </div>
+            <div class="col-md-12 mt-5">
+                <nobr><p id="price5">&#8377;32,400</p>
+                </nobr>               </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+            <div class="col-md-12">
+                <img src="../../static/img/Smart_home/heavytouch_module.png" alt="heavytouch_module" class="heavytouch_module">
+            </div>
+        </div>
+
+        <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+            <div class="col-md-12">
+                <nobr><span id="6">Heavy Touch Module</span></nobr>
+                <input type="hidden" id="unit_price6" name="unit_price6" value="&#8377;9,500">
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8 mt-3">
+                <div class="qty-container">
+                    <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(6)"><i class="fa fa-minus"></i></a>
+                    <input type="text" name="qty" value="6" class="input-qty input-cornered quantity-input" id="quantity6" readonly/>
+                    <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(6)"><i class="fa fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
+            <div class="col-md-12 close-icon">
+                <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
+            </div>
+            <div class="col-md-12 mt-5">
+                <nobr><p id="price6">&#8377;  57,000</p></nobr>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+            <div class="col-md-12">
+                <img src="../../static/img/Smart_home/security_system.png" alt="security_system" class="security_system">
+            </div>
+        </div>
+
+        <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+            <div class="col-md-12">
+                <span id="7">Security system / Gate automation</span>
+                <input type="hidden" id="unit_price7" name="unit_price7" value="&#8377;50,000">
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8 mt-3">
+                <div class="qty-container">
+                    <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(7)"><i class="fa fa-minus"></i></a>
+                    <input type="text" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity7" readonly/>
+                    <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(7)"><i class="fa fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
+            <div class="col-md-12 close-icon">
+                <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
+            </div>
+            <div class="col-md-12 mt-5">
+                <nobr> <nobr><p id="price7">&#8377;50,00</nobr>0</p>
+                </nobr>               </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+            <div class="col-md-12">
+                <img src="../../static/img/Smart_home/curtain.png" alt="curtain" class="curtain">
+            </div>
+        </div>
+
+        <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+            <div class="col-md-12">
+                <p id="8">Curtain</p>
+                <input type="hidden" id="unit_price8" name="unit_price8" value="&#8377;15,000">
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8 mt-3">
+                <div class="qty-container">
+                    <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(8)"><i class="fa fa-minus"></i></a>
+                    <input type="text" name="qty" value="2" class="input-qty input-cornered quantity-input" id="quantity8" readonly/>
+                    <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(8)"><i class="fa fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
+            <div class="col-md-12 close-icon">
+                <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
+            </div>
+            <div class="col-md-12 mt-5">
+                <nobr><p id="price8">&#8377; 30,000</p>
+                </nobr>                </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+            <div class="col-md-12">
+                <img src="../../static/img/Smart_home/tab.png" alt="tab" class="tab">
+            </div>
+        </div>
+
+        <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+            <div class="col-md-12">
+                <p id="9">Tab</p>
+                <input type="hidden" id="unit_price9" name="unit_price9" value="&#8377; 20,000">
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8 mt-3">
+                <div class="qty-container">
+                    <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(9)"><i class="fa fa-minus"></i></a>
+                    <input type="text" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity9" readonly/>
+                    <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(9)"><i class="fa fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
+            <div class="col-md-12 close-icon">
+                <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
+            </div>
+            <div class="col-md-12 mt-5">
+                <nobr><p id="price9">&#8377; 20,000</p>
+                </nobr>                </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+            <div class="col-md-12">
+                <img src="../../static/img/Smart_home/doorlock.png" alt="doorlock" class="doorlock">
+            </div>
+        </div>
+
+        <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+            <div class="col-md-12">
+                <p id="10">Door lock</p>
+                <input type="hidden" id="unit_price10" name="unit_price10" value="&#8377; 29,700">
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8 mt-3">
+                <div class="qty-container">
+                    <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(10)"><i class="fa fa-minus"></i></a>
+                    <input type="text" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity10" readonly/>
+                    <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(10)"><i class="fa fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
+            <div class="col-md-12 close-icon">
+                <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
+            </div>
+            <div class="col-md-12 mt-5">
+                <nobr><p id="price10">&#8377; 29,700</p></nobr>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+            <div class="col-md-12">
+                <img src="../../static/img/Smart_home/video_door_phone.png" alt="video_door_phone" class="video_door_phone">
+            </div>
+        </div>
+
+        <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+            <div class="col-md-12">
+                <span id="11">Video door phone</span>
+                <input type="hidden" id="unit_price11" name="unit_price11" value="&#8377; 14,500">
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8 mt-3">
+                <div class="qty-container">
+                    <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(11)"><i class="fa fa-minus"></i></a>
+                    <input type="text" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity11" readonly/>
+                    <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(11)"><i class="fa fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
+            <div class="col-md-12 close-icon">
+                <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
+            </div>
+            <div class="col-md-12 mt-5">
+                <nobr><p id="price11">&#8377;  14,500</p></nobr>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+            <div class="col-md-12">
+                <img src="../../static/img/Smart_home/networking.png" alt="networking" class="networking">
+            </div>
+        </div>
+
+        <div class="col-lg-7 col-md-6 col-sm-6 col-6">
+            <div class="col-md-12">
+                <p id="12">Networking</p>
+                <input type="hidden" id="unit_price12" name="unit_price12" value="&#8377;8,000">
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8 mt-3">
+                <div class="qty-container">
+                    <a class="qty-btn-minus btn-cornered" type="button" onclick="decreaseQuantity(12)"><i class="fa fa-minus"></i></a>
+                    <input type="text" name="qty" value="1" class="input-qty input-cornered quantity-input" id="quantity12" readonly/>
+                    <a class="qty-btn-plus btn-cornered" type="button" onclick="increaseQuantity(12)"><i class="fa fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 price col-md-3 col-sm-3 col-3">
+            <div class="col-md-12 close-icon">
+                <span onclick="removeDiv(this)" class="close-icon">&#215;</span>
+            </div>
+            <div class="col-md-12 mt-5">
+                <nobr><p id="price12">&#8377;  8,000</p></nobr>
+            </div>
+        </div>
+    </div>
+    <div class="row labourrow">
+        <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+            <div class="col-md-12">
+                <img src="../../static/img/Smart_home/labour.png" alt="labour" class="labour">
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-7 col-sm-6 col-6">
+            <div class="col-md-12">
+                <p id="labour">Labour</p>
+            </div>
+        </div>
+
+        <div class="col-lg-6 price col-md-2 col-sm-3 col-3 mt-3">
+            <div class="col-md-12">
+                <nobr><p id="laborPrice">&#8377; 10,000</p></nobr>
+            </div>
+        </div>
+    </div>
+    <div class="row rw">
+        <div class="col-md-4 col-sm-5 col-5">
+            <div class="col-md-12">
+                <h5 id="total_amount"class="total_amount"><nobr>Total Amount</nobr></h5>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-1 col-1">
+            <div class="col-md-12">
+                <h6></h6>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-6 price">
+            <div class="col-md-12">
+                <h5 id="total">&#8377; 384,000 + GST</h5>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
