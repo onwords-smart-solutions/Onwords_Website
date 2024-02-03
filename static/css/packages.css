@@ -168,6 +168,8 @@ a {
   color: #ffffff;
 }
 .stepper-item.completed .step-counter {
+  cursor: pointer;
+
   background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
 }
 

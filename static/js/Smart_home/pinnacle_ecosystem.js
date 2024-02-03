@@ -121,16 +121,16 @@ function updatedPrice(itemNumber, quantityId, priceId) {
 
 function updatedTotalAmount() {
 
-  var totalPrice1 = parseInt(document.getElementById("price1")?.innerHTML?.replace("₹ ", "").replace(",", "")) || 0;
-  var totalPrice2 = parseInt(document.getElementById("price2")?.innerHTML?.replace("₹ ", "").replace(",", "")) || 0;
-  var totalPrice3 = parseInt(document.getElementById("price3")?.innerHTML?.replace("₹ ", "").replace(",", "")) || 0;
-  var totalPrice4 = parseInt(document.getElementById("price4")?.innerHTML?.replace("₹ ", "").replace(",", "")) || 0;
-  var totalPrice5 = parseInt(document.getElementById("price5")?.innerHTML?.replace("₹ ", "").replace(",", "")) || 0;
-  var totalPrice6 = parseInt(document.getElementById("price6")?.innerHTML?.replace("₹ ", "").replace(",", "")) || 0;
-  var totalPrice7 = parseInt(document.getElementById("price7")?.innerHTML?.replace("₹ ", "").replace(",", "")) || 0;
-  var totalPrice8 = parseInt(document.getElementById("price8")?.innerHTML?.replace("₹ ", "").replace(",", "")) || 0;
-  var totalPrice9 = parseInt(document.getElementById("price9")?.innerHTML?.replace("₹ ", "").replace(",", "")) || 0;
-  var laborPrice = parseInt(document.getElementById("laborPrice")?.innerHTML?.replace("₹ ", "").replace(",", "")) || 0;
+  var totalPrice1 = parseFloat(document.getElementById("price1")?.innerHTML?.replace(/[^\d.]/g, '')) || 0;
+  var totalPrice2 = parseFloat(document.getElementById("price2")?.innerHTML?.replace(/[^\d.]/g, '')) || 0;
+  var totalPrice3 = parseFloat(document.getElementById("price3")?.innerHTML?.replace(/[^\d.]/g, '')) || 0;
+  var totalPrice4 = parseFloat(document.getElementById("price4")?.innerHTML?.replace(/[^\d.]/g, '')) || 0;
+  var totalPrice5 = parseFloat(document.getElementById("price5")?.innerHTML?.replace(/[^\d.]/g, '')) || 0;
+  var totalPrice6 = parseFloat(document.getElementById("price6")?.innerHTML?.replace(/[^\d.]/g, '')) || 0;
+  var totalPrice7 = parseFloat(document.getElementById("price7")?.innerHTML?.replace(/[^\d.]/g, '')) || 0;
+  var totalPrice8 = parseFloat(document.getElementById("price8")?.innerHTML?.replace(/[^\d.]/g, '')) || 0;
+  var totalPrice9 = parseFloat(document.getElementById("price9")?.innerHTML?.replace(/[^\d.]/g, '')) || 0;
+  var laborPrice = parseFloat(document.getElementById("laborPrice")?.innerHTML?.replace(/[^\d.]/g, '')) || 0;
 
   var totalAmount = totalPrice1 + totalPrice2 + totalPrice3 + totalPrice4 + totalPrice5 + totalPrice6 + totalPrice7 + totalPrice8 + totalPrice9 + laborPrice;
 

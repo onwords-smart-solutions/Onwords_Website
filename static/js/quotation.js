@@ -1,6 +1,13 @@
 function back() {
   window.history.back();
 }
+function home(){
+  window.location.href = "/";
+
+}
+function quotation_home() {
+  window.location.href = "/fields";
+}
 function smarthome() {
   window.location.href = "/smart_home";
 }

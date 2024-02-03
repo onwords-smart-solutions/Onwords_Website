@@ -105,7 +105,12 @@ header {
     transition: 0.6s;
     z-index: 999;
 }
+@media screen and (max-width:800px) {
+    header {
+        width: 100%;
 
+    }
+}
 header.sticky {
     background: #040507;
 }
@@ -1551,7 +1556,7 @@ section {
 }
 
 .c-prev {
-    margin-left: 830px;
+    margin-left: 800px;
 }
 
 .cn-btn {
@@ -2289,6 +2294,7 @@ transform: scale(1.2);
     transform: translateY(25px);
     transition: transform .25s;
     /* padding: 50px 200px !important; */
+    margin-top: 130px;
     padding-bottom: 20px;
     color: #fff !important;
 }
@@ -2300,14 +2306,13 @@ transform: scale(1.2);
 
 .modal-body h2 {
     font-size: 24px;
-    margin: 20px 0px;
+    margin: 40px 0px;
 }
 
 .btn-close {
-    right: 20px;
+    right: 10px;
     position: absolute;
     top: 10px;
-    margin: 0 20px;
     background: none;
     outline: none !important;
     border: none;
@@ -3219,9 +3224,56 @@ transform: scale(1.2);
     float: none;
     width: 100%;
     margin: 0 auto;
+    margin-top: 40px;
     clear: both;
+    display: flex;
+    justify-content:flex-start;
+    gap: 40px;
+ }
+ .get_quote {
+    padding: 12px 18px;
+    height: 4em;
+    border: 1px solid #ccc;
+    border-radius: 3em;
+    font-size: .75em;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    color: #040507;
+    transition: all 1000ms;
+    font-family: SfPro;
+    position: relative;
+    overflow: hidden;
+    /* outline: 2px solid#1528d8; */
+;
+}
+.get_quote:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    /* outline: 2px solid#ffff; */
+    /* box-shadow: 4px 5px 17px -4px #1528d8; */
+    border: none;
 }
 
+.get_quote::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, #CE4DA4,
+    #7353E5);
+    /* -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+
+.get_quote:hover::before {
+    width: 250%;
+}
 .gradient-button {
     padding: 12px 18px;
     height: 4em;

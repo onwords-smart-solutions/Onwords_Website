@@ -6,12 +6,18 @@
 }
 body{
     background-color: black;
-    font-family: Arial;
     overflow-y: scroll;
     width: thin; 
     color: transparent transparent; 
 }
+.back { 
+  cursor: pointer;
+  position: absolute;
+  top:7%;
+  height: 15px;
 
+
+}
 body::-webkit-scrollbar {
   width: 1px; 
 }
@@ -262,10 +268,10 @@ p {
   transition-delay: 0s;
 }
 
-.tile .details .title {
+.grid .details .title {
   line-height: 1;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 15px;
   color: #fff;
 }
 
@@ -421,5 +427,10 @@ font-size: 14px;
     position: static;
     margin-top: 24px;
 
+  }
+  .back { 
+    top:10%;
+   left: 30px;
+    height:17px ;
   }
 }

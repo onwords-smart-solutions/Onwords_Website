@@ -157,9 +157,9 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 70%;
   background-color: #2c2c2c;
-  height: 27px;
+  height: 25px;
   border-radius: 10px;
   color: rgb(211, 211, 211);
   cursor: pointer;
@@ -182,15 +182,15 @@ body::-webkit-scrollbar-thumb {
   color: white;
   border: none;
   font-size: 14px;
-  width: 30px;
-  height: 23px;
+  width: 25px;
+  height: 21px;
 }
 
 .qty-container .qty-btn-minus,
 .qty-container .qty-btn-plus {
   padding: 10px 14px;
-  font-size: 17px;
-  height: 45px;
+  font-size: 14px;
+  height: 42px;
   width: 52px;
   transition: 0.3s;
 }

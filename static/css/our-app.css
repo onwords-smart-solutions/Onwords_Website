@@ -270,7 +270,11 @@
   background: linear-gradient(180deg, #7652E2 0%, #CB4DA6 100%);
   border-radius: 50%;
 }
+.nexta:hover,
+.preva:hover {
+  background: linear-gradient(180deg, #3a286f 0%, #84316b 100%);
 
+}
 .left-arrow {
   transform: rotate(180deg);
 }

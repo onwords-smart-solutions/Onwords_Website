@@ -92,10 +92,15 @@
     cursor: pointer;
 }
 
-.onwords-details-foot {
+.onwords-details-foot p .phone-foot,.mail-foot {
     cursor: pointer;
-
 }
+.onwords-details-foot .footer-foot p{
+    cursor: pointer;
+}
+
+.onwords-details-foot .footer-foot p:hover{
+    color: #ccc;}
 
 .onwords-details-foot h5 {
     margin-bottom: 20px;

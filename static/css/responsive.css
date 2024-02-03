@@ -46,6 +46,7 @@
    
    .s-btns{
       display: none;
+      width:100px;
    }
    
    .text-const h2 {
@@ -108,7 +109,7 @@
    .modal-body {
      width: 100%;
       height: auto;
-      margin:0;
+      margin-top:90px;
       background: radial-gradient(#fff2 30%, #fff4);
       border-radius: 20px;
       box-shadow: 5px 5px 10px #0007, -1px -1px 2px #fff, 1px 1px 2px #555;
@@ -132,8 +133,10 @@
    padding: 10px 0px;
   }
   .btn-close{
-   right: -11px;
+   right: 10px;
+   margin-bottom: 20px;
   }
+  
   .mob-cons-pag{
    display: none;
   }
@@ -380,7 +383,7 @@
 
    .navbar {
       position: relative;
-      width: 100%;
+      width: 140%;
 
 
    }
@@ -731,7 +734,7 @@
    .onwords-details-foot {
       padding-left: 35px;
    }
-
+ 
    .footer-bottom {
       display: none !important;
    }
@@ -932,7 +935,7 @@
 
 
    .third-sec {
-      width: 100%;
+      width: 80%;
       max-width: 100%;
       position: relative;
       top: 24%;
