@@ -1,7 +1,8 @@
 import pyrebase, requests
-from flask import Flask, render_template, request, redirect, url_for, flash, Response
+from flask import Flask, jsonify, render_template, request, redirect, url_for, flash, Response
 from flask_mail import Mail, Message
 from werkzeug.utils import secure_filename
+import datetime
 
 app = Flask(__name__)
 app.secret_key = 'oizg ntdk nzsi csgo'
@@ -221,6 +222,21 @@ def submit():
         mail.send(msg)
         flash('Form submitted successfully!')
         return redirect('/careers')
+
+@app.route('/solar_query', methods=['POST'])
+def solar_query():
+    current_day = datetime.datetime.now().strftime("%d-%m-%Y")
+    if request.method == 'POST':
+        name = request.form.get('name')
+        email = request.form.get('email')
+        phone = request.form.get('mobile')
+        message = request.form.get('message')
+
+        solar_query = {"name": name, "email": email, "phone": phone, "message": message}
+        db.child("solar").child(current_day).push(solar_query)
+        return jsonify({'success': True, 'message': 'submitted successfully, we wil get abck to you shortly'})
+    else:
+        return 'Method Not Allowed'
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0",port=8080,debug=True)
