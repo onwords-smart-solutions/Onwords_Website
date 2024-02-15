@@ -165,6 +165,10 @@ def sliding_gate():
 def invoice():
     return render_template("invoice.html")
 
+@app.route('/solar')
+def Solar():
+    return render_template("solar.html")
+
 @app.route('/team')
 def team():
     staff = db.child("staff").get().val()
