@@ -618,7 +618,7 @@ justify-content: space-around;
 }
 
 .Getin_touch .right{
-  height: 661px;
+  height: 610px;
   flex-shrink: 0;
   border-radius: 16px;
   background: var(--Colors-ost-gray-10, #3D3D3D);
@@ -632,8 +632,8 @@ justify-content: space-around;
   margin-left: 13px;
   margin-bottom: 50px;
   margin-top: 50px;
-
 }
+
 .Getin_touch .get_details span{
   margin-left: 10px;
 }
@@ -746,7 +746,6 @@ form input{
     margin-bottom: 30px;
 
   }
-
 }
 
 /*     ..................       */
