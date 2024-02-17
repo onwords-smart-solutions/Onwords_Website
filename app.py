@@ -170,6 +170,10 @@ def invoice():
 def Solar():
     return render_template("solar.html")
 
+@app.route('/sound_system')
+def Sound_System():
+    return render_template('sound_system.html')
+
 @app.route('/team')
 def team():
     staff = db.child("staff").get().val()
