@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="../static/fonts/fontawesome.css">
     <link rel="stylesheet" href="../static/fonts/fonts-6/css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Construction & Builders | Home Automation | Smart Home | Gate Automation | Automation</title>
 </head>
 <!-- Facebook Pixel Code -->
@@ -339,31 +340,31 @@
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content login-reg ">
-                    <div class="modal-body ">
+                    <div class="modal-body">
                         <div type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></div>
                         <center>
                             <h2>Book A Free Demo</h2>
                             <p>Onwords smart solutions helps unlock the Amazing spaces to create
                                 durable and innovative
                                 experience </p>
-                            <form action="" class="quot-form">
+                            <form action="/free_demo" method="post" class="quot-form">
                                 <div class="form-row">
-                                    <input type="text" required="required" />
+                                    <input type="text" id="name" name="name" required="required" />
                                     <span>Name</span>
                                 </div>
                                 <div class="form-row">
-                                    <input type="number" required="required" />
+                                    <input type="tel" id="mobile" name="mobile" required="required" />
                                     <span>Mobile Number</span>
                                 </div>
                                 <div class="form-row">
-                                    <input type="text" required="required" />
+                                    <input type="text" id="location" name="location" required="required" />
                                     <span>Location</span>
                                 </div>
                                 <div class="form-row">
-                                    <input type="text" required="required" />
+                                    <input type="text" id="message" name="message" required="required" />
                                     <span>Message</span>
                                 </div>
-                                <button type="submit" class="s-btn ">
+                                <button type="submit" class="s-btn " name="submit">
                                     <div class="go">
                                         <div class="gradient-button">
                                             Get a Free Demo
@@ -371,6 +372,7 @@
                                     </div>
                                 </button>
                             </form>
+                            <span id="successMessage" style="display:none;"></span>
                         </center>
                     </div>
                 </div>
@@ -489,6 +491,25 @@
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../static/js/general.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.quot-form').submit(function(e) {
+            e.preventDefault();
+            var $form = $(this);
+
+            $.ajax({
+                type: $form.attr('method'),
+                url: $form.attr('action'),
+                data: $form.serialize(),
+                success: function(response) {
+                    if(response.success) {
+                        $form.find('+ #successMessage').text(response.message).show();
+                    }
+                }
+            });
+        });
+    });
+</script>
     <script>
         let slider = document.querySelector(".slider");
         let currentSlide = 0;

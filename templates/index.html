@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="../static/css/footer.css">
     <link rel="stylesheet" href="../static/fonts/all.min.css">
     <link rel="stylesheet" href="../static/fonts/fontawesome.css">
+    <!-- Adding jQuery from Google's CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../static/fonts/fonts-6/css/all.css">
 </head>
 <!-- Facebook Pixel Code -->
@@ -123,24 +125,24 @@
                     <center>
                         <h2>Schedule Your Complimentary Demo Today</h2>
                         <p>Discover how Onwords transforms ordinary spaces into remarkable, smart environments. Experience the enduring and cutting-edge innovation firsthand.</p>
-                        <form action="" class="quot-form">
+                        <form action="/free_demo" method="post" class="quot-form" id="freedemo">
                             <div class="form-row">
-                                <input type="text" required="required" />
+                                <input type="text" id="name" name="name" required="required" />
                                 <span>Name</span>
                             </div>
                             <div class="form-row">
-                                <input type="number" required="required" />
+                                <input type="tel" id="mobile" name="mobile"  required="required" />
                                 <span>Mobile Number</span>
                             </div>
                             <div class="form-row">
-                                <input type="text" required="required" />
+                                <input type="text" id="location" name="location" required="required" />
                                 <span>Location</span>
                             </div>
                             <div class="form-row">
-                                <input type="text" required="required" />
+                                <input type="text" id="message" name="message" required="required" />
                                 <span>Message</span>
                             </div>
-                            <button type="submit" class="s-btn ">
+                            <button type="submit" class="s-btn " name="submit">
                                 <div class="go">
                                     <div class="gradient-button">
                                         Book a Free Demo !
@@ -148,6 +150,7 @@
                                 </div>
                             </button>
                         </form>
+                        <span id="successMessage" style="display:none;"></span>
                     </center>
                 </div>
             </div>
@@ -180,7 +183,6 @@
                                     Book a Free Demo
                                 </button>
                                 <button onclick="quotation_home()" class="get_quote">Get Quote</button>
-
                             </div>
                         </div>
                     </div>
@@ -804,6 +806,26 @@
 <script src="../static/js/hero.js"></script>
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#freedemo').submit(function(e) {
+            e.preventDefault();
+            var $form = $(this);
+
+            $.ajax({
+                type: $form.attr('method'),
+                url: $form.attr('action'),
+                data: $form.serialize(),
+                success: function(response) {
+                    if(response.success) {
+                        $('#successMessage').text(response.message).show();
+                    }
+                }
+            });
+        });
+    });
+
+</script>
 <script>
     var app = document.getElementById('apps');
 
