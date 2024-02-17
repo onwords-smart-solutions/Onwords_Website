@@ -170,7 +170,7 @@ def invoice():
 def Solar():
     return render_template("solar.html")
 
-@app.route('/sound_system')
+@app.route('/Audios')
 def Sound_System():
     return render_template('sound_system.html')
 
