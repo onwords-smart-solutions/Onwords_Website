@@ -238,7 +238,7 @@ def solar_query():
 
         solar_query = {"name": name, "email": email, "phone": phone, "message": message}
         db.child("solar").child(current_day).push(solar_query)
-        return jsonify({'success': True, 'message': 'submitted successfully, we wil get abck to you shortly'})
+        return jsonify({'success': True, 'message': 'submitted successfully, we wil get back to you shortly'})
     else:
         return 'Method Not Allowed'
 
