@@ -694,10 +694,10 @@
           <div class="right">
             <div class="tit">Any Queries? reach out to us</div>
               <form id="solarQueryForm" action="/solar_query" method="post">
-                  <input type="text" id="name" name="name" placeholder="Name">
-                  <input type="email" id="email" name="email" placeholder="Email">
-                  <input type="tel" id="mobile" name="mobile" placeholder="Phone Number">
-                  <input type="text" id="message" name="message" placeholder="Drop your Message, here !">
+                  <input type="text" id="name" name="name" placeholder="Name" required>
+                  <input type="email" id="email" name="email" placeholder="Email" required>
+                  <input type="tel" id="mobile" name="mobile" placeholder="Phone Number" required>
+                  <input type="text" id="message" name="message" placeholder="Drop your Message, here !" required>
                   <input class="sub_btn" type="submit" value="Submit">
               </form>
               <span id="successMessage" style="display:none;"></span>
