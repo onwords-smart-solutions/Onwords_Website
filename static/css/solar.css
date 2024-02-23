@@ -618,7 +618,7 @@ justify-content: space-around;
 }
 
 .Getin_touch .right{
-  height: 610px;
+  height: 680px;
   flex-shrink: 0;
   border-radius: 16px;
   background: var(--Colors-ost-gray-10, #3D3D3D);
@@ -644,22 +644,24 @@ form input{
   border: none;
   color: #FEFEFE;
 }
-#name{
+
+#name, #service_no{
   border-radius: 8px;
   background: var(--Colors-ost-primary-black, #282828);
   width: 197px;
   height: 60px;
   flex-shrink: 0;
   margin-right: 30px;
-
 }
-#email{
+
+#email, #bill{
   width: 325px;
   height: 60px;
   flex-shrink: 0;
   border-radius: 8px;
   background: var(--Colors-ost-primary-black, #282828);
 }
+
 #mobile{
   width: 552px;
   height: 60px;
@@ -721,14 +723,14 @@ form input{
   .left, .right {
     width: 100%;
   }
-  #name{
+  #name, #service_no{
     width: 350px;
     height: 60px;
     margin-right: 0px;
     margin-bottom: 15px;
 
   }
-  #email{
+  #email, #bill{
     width: 350px;
     height: 60px;
     margin-bottom: 15px;
