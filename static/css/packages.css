@@ -13,7 +13,7 @@
 }
 body{
   background-color: black;
-  color: transparent transparent; 
+  color: transparent;
 }
 
 body::-webkit-scrollbar {

@@ -304,7 +304,7 @@
 .animation-img {
     width: 100%;
     height: 80vh;
-    background-image: url(../main-webp/nig-png.png);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fnig-png.png?alt=media&token=8d49845a-502c-44c9-86e7-cdfaa6d4746d);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -391,15 +391,15 @@
 
 @keyframes img-sm {
     0% {
-        background-image: url(../main-webp/day-png.png);
+        background-image: url(https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fday-png.png?alt=media&token=34c8cb59-a1be-4b15-86ff-e133f3443bad);
     }
 
     50% {
-        background-image: url(../main-webp/nig-png.png);
+        background-image: url(https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fnig-png.png?alt=media&token=8d49845a-502c-44c9-86e7-cdfaa6d4746d);
     }
 
     100% {
-        background-image: url(../main-webp/day-png.png);
+        background-image: url(https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fday-png.png?alt=media&token=34c8cb59-a1be-4b15-86ff-e133f3443bad);
     }
 
 }

@@ -1,5 +1,5 @@
 .sec-first-carrier {
-    background-image: url(../main-webp/career-img3.jpg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fcareer-img3.jpg?alt=media&token=7c72b766-8a46-44c4-8133-21faa8d5a490);
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 }
 @media screen and (max-width:800px) {
     .sec-first-carrier {
-        background-image: url(../main-webp/career-img4.jpg);
+        background-image: url(https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fcareer-img4.jpg?alt=media&token=eb7560b9-f706-4bb7-891c-f0005d851c9c);
         top: -50px;
 
     }
