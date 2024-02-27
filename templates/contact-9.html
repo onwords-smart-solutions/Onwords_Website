@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="../static/fonts/all.min.css">
     <link rel="stylesheet" href="../static/fonts/fontawesome.css">
     <link rel="stylesheet" href="../static/fonts/fonts-6/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Contact | Onwords - Home Automation | Smart Home | Gate Automation | ALEXA | GOOGLE | AJAX | Security Systems | Automation</title>
 </head>
 <!-- Facebook Pixel Code -->
@@ -170,7 +171,6 @@
                 </div>
                 <div class="container">
                     <div class="row">
-
                         <div class="col-md-6">
                             <form class="contact-form" action="/contact_us" method="post" id="contactform">
                                 <div class="box-group-input">
@@ -320,36 +320,25 @@
         <script src="../static/js/general.js"></script>
     </div>
 <script>
-    $(document).ready(function() {
-        $('#contactform').submit(function(e) {
+    $(document).ready(function(){
+        $('#contactform').submit(function(e){
             e.preventDefault(); // Prevent default form submission
-            var $form = $(this);
-
             $.ajax({
-                type: $form.attr('method'),
-                url: $form.attr('action'),
-                data: $form.serialize(),
-                dataType: 'json', // Expect JSON response from the server
-                success: function(response) {
-                    if(response.success) {
-                        // Display success message
-                        $('#successMessage').text(response.message).show();
-                        // Hide the message after 3 seconds (3000 milliseconds)
-                        setTimeout(function() {
-                            $('#successMessage').fadeOut('slow');
-                        }, 3000);
-                    } else {
-                        // Optionally handle the failure case
-                        $('#successMessage').text("An error occurred. Please try again.").show();
-                        setTimeout(function() {
-                            $('#successMessage').fadeOut('slow');
-                        }, 3000);
-                    }
+                url: '/contact_us',
+                type: 'POST',
+                data: $(this).serialize(), // Serialize form data
+                success: function(response){
+                    // Display success message
+                    $('#successMessage').text(response.message).show();
+                    // Hide success message after 3 seconds
+                    setTimeout(function(){
+                        $('#successMessage').fadeOut('slow');
+                    }, 3000);
                 },
-                error: function(xhr, status, error) {
-                    // Handle AJAX error
-                    $('#successMessage').text("An error occurred: " + error).show();
-                    setTimeout(function() {
+                error: function(){
+                    // Handle error
+                    $('#successMessage').text('An error occurred, please try again later.').show().css('color', 'red');
+                    setTimeout(function(){
                         $('#successMessage').fadeOut('slow');
                     }, 3000);
                 }
