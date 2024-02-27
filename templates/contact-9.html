@@ -329,12 +329,13 @@
                 type: $form.attr('method'),
                 url: $form.attr('action'),
                 data: $form.serialize(),
+                dataType: 'json', // Explicitly set the expected type of data to be returned from the server
                 success: function(response) {
-                    // Assuming 'response' is an object that contains a 'success' boolean and a 'message' string
+                    // Now 'response' is explicitly treated as a JSON object
                     if(response.success) {
                         $('#successMessage').text(response.message).show();
                     } else {
-                        // Handle failure case, optionally you can display an error message
+                        // Optionally handle the failure case
                         $('#successMessage').text("An error occurred. Please try again.").show();
                     }
                 },
