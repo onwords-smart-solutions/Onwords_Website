@@ -264,7 +264,7 @@ def contact_us():
     current_day = datetime.datetime.now().strftime("%d-%m-%Y")
     if request.method == 'POST':
         name = request.form.get('name')
-        phone = request.form.get('mobile')
+        phone = request.form.get('phone')
         message = request.form.get('message')
 
         demo_bookings = {"name": name, "phone": phone, "message": message }
