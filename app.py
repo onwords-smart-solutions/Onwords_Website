@@ -259,5 +259,19 @@ def demo_bookings():
     else:
         return 'Method Not Allowed'
 
+@app.route('/contact_us', methods=['POST'])
+def contact_us():
+    current_day = datetime.datetime.now().strftime("%d-%m-%Y")
+    if request.method == 'POST':
+        name = request.form.get('name')
+        phone = request.form.get('mobile')
+        message = request.form.get('message')
+
+        demo_bookings = {"name": name, "phone": phone, "message": message }
+        db.child("Demo_Bookings").child(current_day).push(demo_bookings)
+        return jsonify({'success': True, 'message': 'submitted successfully, we wil get back to you shortly'})
+    else:
+        return 'Method Not Allowed'
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0",port=8080,debug=True)
