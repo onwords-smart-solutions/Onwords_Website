@@ -43,22 +43,26 @@ body{
   line-height: normal;
 }
 .Soundsystem-home button{
-  background:none;
-  border: none;
-  font-size: small;
   position: absolute;
-  top: 42%;
-  right:49%;
+  top: 90%; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 9999; /* Ensure button is above video */
+  background:none; /* Semi-transparent background */
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #FEFEFE;
 
 }
-.Soundsystem-home button svg{
-  height: auto;
-  width:50px;
-}
+
 @media (max-width: 768px) { 
   .Soundsystem-home button{
-    right: 40%;
-    top: 40%;
+    top: 85%; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    color: #9f9f9f;
+    font-size: larger;
+
   }
     .Soundsystem-home {
         height: auto;
@@ -110,7 +114,7 @@ body{
     font-style: normal;
     font-weight: 300;
     line-height: 30px; /* 155.556% */
-    margin-bottom: 56px;
+    margin-bottom: 0;
 }
 @media (max-width: 768px) {
 
@@ -122,16 +126,17 @@ body{
 .curve{
   height: 80px;
   width: auto;
-  background-color: #000;
+  background-color: #000000;
   border-radius: 50%;
   position: relative;
   top:38px;
   z-index: 1;
+  
 }
 .curve-bottom{
   height: 80px;
   width: auto;
-  background-color: #000;
+  background-color: #000000;
   border-radius:50%;
   position: relative;
   top:-90px;
@@ -195,10 +200,11 @@ body{
     cursor: pointer;
     font-size: 38px;
     color: #e2e2e2;
-    animation: blink 2s infinite; /* Apply blinking animation */
+    animation: blink 3s infinite; /* Apply blinking animation */
 
   }
- 
+
+    
 
   .btn-next {
     top: 25%;
@@ -212,11 +218,11 @@ body{
   
   @media (max-width: 768px) { 
     .curve{
-      top: 11px;
+      top: 40px;
       height: 20px;
     }
     .curve-bottom{
-      top: -10px;
+      top: -40px;
       height: 20px;
     }
     .we_do{
@@ -252,7 +258,7 @@ body{
   position: relative;
   width: 100%;
   height: auto;
-  overflow: hidden;
+  overflow: hidden; 
 }
 .tre_d_system img{
   position: relative;
@@ -495,9 +501,9 @@ body{
     display: block;
     width: 200px;
     height: 140px;  
-    padding:5px 5px;
+    padding:18px 5px;
     top:40%;
-
+    right:40%;
   }
 
 }

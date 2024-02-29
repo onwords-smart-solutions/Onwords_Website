@@ -1,7 +1,9 @@
 import pyrebase, requests
-from flask import Flask, render_template, request, redirect, url_for, flash, Response
+from flask import Flask, jsonify, render_template, request, redirect, url_for, flash, Response
 from flask_mail import Mail, Message
 from werkzeug.utils import secure_filename
+import datetime
+import json
 
 app = Flask(__name__)
 app.secret_key = 'oizg ntdk nzsi csgo'
@@ -225,6 +227,147 @@ def submit():
         mail.send(msg)
         flash('Form submitted successfully!')
         return redirect('/careers')
+
+@app.route('/solar_query', methods=['POST'])
+def solar_query():
+    current_day = datetime.datetime.now().strftime("%d-%m-%Y")
+    if request.method == 'POST':
+        name = request.form.get('name')
+        email = request.form.get('email')
+        phone = request.form.get('mobile')
+        message = request.form.get('message')
+
+        solar_query = {"name": name, "email": email, "phone": phone, "message": message}
+        db.child("solar").child(current_day).push(solar_query)
+        return jsonify({'success': True, 'message': 'Submitted successfully, we wil get back to you shortly'})
+    else:
+        return 'Method Not Allowed'
+
+
+
+def calculate_units_from_bill_amount(type, bill_amount): 
+    unit = ""
+    if type == 1:
+        print("Unit calculation is not available for Industries.")
+
+    elif type == 2:
+        if bill_amount <= 0:
+            units=0
+            return
+
+        if bill_amount <= 100 * 0:
+            units = bill_amount / 0
+        elif bill_amount <= (100 * 0) + (200 - 100) * 2.25:
+            units = 100 + (bill_amount - (100 * 0)) / 2.25
+        elif bill_amount <= (100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5:
+            units = 200 + (bill_amount - ((100 * 0) + (200 - 100) * 2.25)) / 4.5
+        elif bill_amount <= (100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5 + (500 - 400) * 6:
+            units = 400 + (bill_amount - ((100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5)) / 6
+        elif bill_amount <= (100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5 + (500 - 400) * 6 + (600 - 500) * 8:
+            units = 500 + (bill_amount - ((100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5 + (500 - 400) * 6)) / 8
+        elif bill_amount <= (100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5 + (500 - 400) * 6 + (600 - 500) * 8 + (800 - 600) * 9:
+            units = 600 + (bill_amount - ((100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5 + (500 - 400) * 6 + (600 - 500) * 8)) / 9
+        elif bill_amount <= (100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5 + (500 - 400) * 6 + (600 - 500) * 8 + (800 - 600) * 9 + (1000 - 800) * 10:
+            units = 800 + (bill_amount - ((100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5 + (500 - 400) * 6 + (600 - 500) * 8 + (800 - 600) * 9)) / 10
+        else:
+            units = 1000 + (bill_amount - ((100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5 + (500 - 400) * 6 + (600 - 500) * 8 + (800 - 600) * 9 + (1000 - 800) * 10)) / 11
+        unit = "kWh"
+    return units, unit
+
+def estimate_solar_panels(monthly_consumption_kwh, conversion_factor, desired_coverage, peak_sun_hours, panel_efficiency, derating_factor):
+    # Convert monthly consumption to daily consumption (assuming 30 days in a month)
+    daily_consumption_in_kwh = monthly_consumption_kwh * conversion_factor / 30
+    
+    # Calculate desired daily generation
+    desired_generation = daily_consumption_in_kwh * desired_coverage / 100
+    
+    # Estimate required system capacity
+    required_capacity = desired_generation * derating_factor / peak_sun_hours
+    if required_capacity < 1:
+        required_capacity = 1
+    else: 
+        required_capacity = desired_generation * derating_factor / peak_sun_hours
+    # Estimate number of panels
+    number_of_panels = required_capacity / panel_efficiency
+    
+    # Calculate required square feet
+    required_square_feet = required_capacity * 100  # 1 kW needs 100 square feet
+    
+    # Print daily consumption, required capacity, and required square feet
+   
+    
+    return daily_consumption_in_kwh, required_capacity, required_square_feet, number_of_panels
+
+# Inside your Flask view function
+@app.route('/calculate_bill_amount', methods=['POST'])
+def handle_calculate_bill_amount():
+    type = int(request.form.get('category'))  
+    bill_amount = int(request.form.get('units')) 
+    
+    monthly_consumption_kwh, unit = calculate_units_from_bill_amount(type, bill_amount)
+    
+    # Define constants for solar panel estimation
+    conversion_factor = 1  # Conversion factor (already in kWh)
+    desired_coverage = 90  # Desired coverage as a percentage (100%)
+    peak_sun_hours = 5  # Average peak sun hours per day
+    panel_efficiency = 0.2  # Efficiency of the solar panel (20%)
+    derating_factor = 0.9  # Derating factor considering real-world conditions (90%)
+
+    # Estimate solar panels
+    daily_consumption, required_capacity, required_square_feet, number_of_panels = estimate_solar_panels(monthly_consumption_kwh, conversion_factor, desired_coverage, peak_sun_hours, panel_efficiency, derating_factor)
+
+    # Calculate units consumed in the same format as the print statement
+    units_consumed = round(monthly_consumption_kwh + 100, 2)
+
+    panel_capacity_watts = 545  # Capacity of each panel in watts
+    average_peak_sun_hours_per_day = 5  # Average peak sun hours per day
+    days_in_month = 30  # Number of days in a month (assuming 30 days)
+    system_efficiency = 0.90  # System efficiency
+
+    # Calculate daily energy generation per panel
+    daily_energy_generation_per_panel = panel_capacity_watts * average_peak_sun_hours_per_day / 1000  # in kWh
+
+    estimated_panels = number_of_panels
+    # Multiply by the number of panels to get total daily energy generation
+    total_daily_energy_generation = daily_energy_generation_per_panel * estimated_panels
+
+    # Multiply by the number of days in a month to get monthly energy generation
+    monthly_energy_generation = total_daily_energy_generation * days_in_month
+
+    # Calculate estimated monthly energy generation and potential monthly savings
+    estimated_monthly_generation_kwh = monthly_energy_generation
+    potential_monthly_savings_kwh = (estimated_monthly_generation_kwh * system_efficiency) - monthly_consumption_kwh
+
+    co2_emission_factor = 0.5  # Example value, replace with actual CO2 emission factor for your region
+
+    # Calculate monthly CO2 emission reduction (in kWh)
+    monthly_co2_reduction_kwh = (monthly_energy_generation - (monthly_consumption_kwh * conversion_factor)) * co2_emission_factor
+
+    # Calculate yearly CO2 emission reduction (in kWh)
+    yearly_co2_reduction_kwh = monthly_co2_reduction_kwh * 12
+
+    # Convert yearly CO2 emission reduction to tons
+    yearly_co2_reduction_tons = yearly_co2_reduction_kwh / 1000
+    
+    # Calculate trees added to the environment based on yearly CO2 emission reduction
+    trees_added_yearly = yearly_co2_reduction_tons / 22.6
+
+    # Prepare the response
+    result = {
+        "units_consumed": units_consumed,
+        "unit": unit,
+        "daily_consumption": round(daily_consumption, 2),
+        "required_capacity": round(required_capacity),
+        "required_square_feet": round(required_square_feet),
+        "number_of_panels": round(number_of_panels, 2),
+        "yearly_co2_reduction_kwh": round(trees_added_yearly*1000),
+        "Potential_monthly_kwh":round(potential_monthly_savings_kwh),
+        "Potential_monthly_savings":round(potential_monthly_savings_kwh*5.8),
+        "yearly_co2_reduction_tons": round(yearly_co2_reduction_tons),
+
+    }
+
+    return json.dumps(result)
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0",port=8080,debug=True)

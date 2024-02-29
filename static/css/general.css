@@ -34,7 +34,7 @@
     animation: fade-zoom 1s ease-in;
 }
 .active.fade-opacity{
-  animation: fade-opacity 2s ease-in-out;
+  animation: fade-opacity 1s ease-in-out;
 }
 @keyframes fade-opacity {
   0%{
@@ -140,7 +140,7 @@
     outline: none;
     width: 30px;
     height: 30px;
-    padding: 5px;
+    padding: 0;
     color: #fff;
     cursor: pointer !important;
 }

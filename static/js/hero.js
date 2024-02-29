@@ -107,88 +107,12 @@ function both() {
   
 }
 
-
-
-// function both() {
-//     if (toggle.checked == true) {
-//         bolconyOnBtn.style.display = 'block'
-//         parkingOnBtn.style.display = 'block'
-//         bolconyLights.style.display = 'none'
-//         parkingLights.style.display = 'none'
-//         allLightOn.style.display = 'block'
-
-//     }
-//     if (toggle.checked == false) {
-//         bolconyOnBtn.style.display = 'none'
-//         parkingOnBtn.style.display = 'none'
-//         bolconyLights.style.display = 'none'
-//         parkingLights.style.display = 'none'
-//         allLightOn.style.display = 'none'
-
-//     }
-// }
-
-// function bolconymain() {
-//     if (bolconys.checked == true) {
-//         bolconyOnBtn.style.display = 'block'
-//         parkingOnBtn.style.display = 'none'
-//         bolconyLights.style.display = 'block'
-//         parkingLights.style.display = 'none'
-//         allLightOn.style.display = 'none'
-//     }
-//     else {
-//         bolconyOnBtn.style.display = 'none'
-//         parkingOnBtn.style.display = 'none'
-//         bolconyLights.style.display = 'none'
-//         parkingLights.style.display = 'none'
-//         allLightOn.style.display = 'none'
-//     }
-// }
-
-// function parkingmain() {
-//     if (parkings.checked == true) {
-//         bolconyOnBtn.style.display = 'none'
-//         parkingOnBtn.style.display = 'block'
-//         bolconyLights.style.display = 'none'
-//         parkingLights.style.display = 'block'
-//         allLightOn.style.display = 'none'
-//     }
-//     else {
-//         bolconyOnBtn.style.display = 'none'
-//         parkingOnBtn.style.display = 'none'
-//         bolconyLights.style.display = 'none'
-//         parkingLights.style.display = 'none'
-//         allLightOn.style.display = 'none'
-//     }
-// }
-// bolconys.addEventListener('change',()=>{
-//     if(parkingmain.checked=true){
-//         bolconymain.checked=true
-//     }
-// })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const times = document.querySelector('.times')
 date = new Date()
 const timesd = date.getHours() + ":" + date.getMinutes()
 times.innerHTML = timesd
 
 // ===========
-
-
 
 const blob = document.querySelector('.blob');
 const cursorScale = document.querySelectorAll('.cursor-scale')
@@ -223,9 +147,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             }, step);
     }
-    counter("count1", 0, 1500, 3000);
-    counter("count2", 100, 1000, 2500);
-    counter("count3", 0, 10000, 3000);
+    counter("count1", 0, 150, 3000);
+    counter("count2", 0, 100, 2500);
+    counter("count3", 0, 1000, 3000);
 });
 // -------counter start
 

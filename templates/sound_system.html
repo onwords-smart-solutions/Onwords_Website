@@ -125,7 +125,8 @@
             <source src="../static/main-webp/sound_system/sound_system_head.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        
+        <button id="mute-button"><i class="fas fa-volume-up"></i></button>
+
     </div>
     
     
@@ -435,55 +436,85 @@
     ////
 
     var video = document.getElementById('sound-system-video');
-var playPauseButton = document.getElementById('play-pause-button');
-var isVideoPlaying = false;
-var pausedByTouch = false;
-
-video.addEventListener('click', function() {
-    if (video.paused) {
-        video.play();
-        isVideoPlaying = true;
-    } else {
-        video.pause();
-        isVideoPlaying = false;
+    var playPauseButton = document.getElementById('play-pause-button');
+    var muteButton = document.getElementById('mute-button'); 
+    var isVideoPlaying = false;
+    var isVideoMuted = false; // Variable to track mute state
+    var pausedByTouch = false;
+    
+    // Toggle video playback function
+    function toggleVideoPlayback() {
+        if (video.paused) {
+            video.play();
+            isVideoPlaying = true;
+        } else {
+            video.pause();
+            isVideoPlaying = false;
+        }
     }
-});
-
-// Function to check if the video is in view
-function isVideoInView() {
-    var videoOffsetTop = video.offsetTop;
-    var videoHeight = video.offsetHeight;
-    var videoBottom = videoOffsetTop + videoHeight;
-    var scrollTop = window.pageYOffset;
-    var windowHeight = window.innerHeight;
-
-    return !((scrollTop + windowHeight) < videoOffsetTop || scrollTop > videoBottom);
-}
-
-// Function to manage video playback
-function manageVideoPlayback() {
-    if (!pausedByTouch && isVideoInView() && !isVideoPlaying) {
-        video.play();
-        isVideoPlaying = true;
-    } else if ((!isVideoInView() || pausedByTouch) && isVideoPlaying) {
-        video.pause();
-        isVideoPlaying = false;
+    
+    // Toggle video mute function
+    function toggleVideoMute() {
+        if (video.muted) {
+            video.muted = false;
+            isVideoMuted = false;
+            muteButton.innerHTML = '<i class="fas fa-volume-up"></i>'; 
+        } else {
+            video.muted = true;
+            isVideoMuted = true;
+            muteButton.innerHTML = '<i class="fas fa-volume-mute"></i>'; 
+        }
     }
-}
+    
+    video.addEventListener('click', toggleVideoPlayback);
+    
+    // Event listener for mute button click
+    muteButton.addEventListener('click', function() {
+        toggleVideoMute(); // Toggle mute state
+    });
+    
+    // Function to check if the video is in view
+    function isVideoInView() {
+        var videoOffsetTop = video.offsetTop;
+        var videoHeight = video.offsetHeight;
+        var videoBottom = videoOffsetTop + videoHeight;
+        var scrollTop = window.pageYOffset;
+        var windowHeight = window.innerHeight;
+    
+        return !((scrollTop + windowHeight) < videoOffsetTop || scrollTop > videoBottom);
+    }
+    
+    function manageVideoPlayback() {
+        if (!pausedByTouch) {
+            if (isVideoInView()) {
+                if (video.paused && isVideoPlaying) { 
+                    video.play(); 
+                }
+                if (!video.paused && !isVideoPlaying) { 
+                    isVideoPlaying = true; 
+                }
+            } else {
+                if (isVideoPlaying) { 
+                    video.pause(); 
+                    isVideoPlaying = false;
+                }
+            }
+        }
+    }
 
-// Event listener for touchstart to pause the video
-video.addEventListener('touchstart', function() {
-    pausedByTouch = true;
-    video.pause();
-});
-
-// Event listener for touchend to resume the video if it's in view
-video.addEventListener('touchend', function() {
-    pausedByTouch = false;
-    manageVideoPlayback();
-});
-
-window.addEventListener('scroll', manageVideoPlayback);
+    // Event listener for touchstart to pause the video
+    video.addEventListener('touchstart', function() {
+        pausedByTouch = true;
+        video.pause();
+    });
+    
+    // Event listener for touchend to resume the video if it's in view
+    video.addEventListener('touchend', function() {
+        pausedByTouch = false;
+        manageVideoPlayback();
+    });
+    
+    window.addEventListener('scroll', manageVideoPlayback);
 
 
         //////////////////
