@@ -171,7 +171,7 @@ def invoice():
 def Solar():
     return render_template("solar.html")
 
-@app.route('/sound_system')
+@app.route('/Audios')
 def Sound_System():
     return render_template('sound_system.html')
 
@@ -236,10 +236,41 @@ def solar_query():
         email = request.form.get('email')
         phone = request.form.get('mobile')
         message = request.form.get('message')
+        bill = request.form.get('bill')
+        service_no = request.form.get('service_no')
 
-        solar_query = {"name": name, "email": email, "phone": phone, "message": message}
+        solar_query = {"name": name, "email": email, "phone": phone, "message": message, "service_no":service_no, "bill":bill}
         db.child("solar").child(current_day).push(solar_query)
-        return jsonify({'success': True, 'message': 'Submitted successfully, we wil get back to you shortly'})
+        return jsonify({'success': True, 'message': 'submitted successfully, we wil get back to you shortly'})
+    else:
+        return 'Method Not Allowed'
+
+@app.route('/free_demo', methods=['POST'])
+def demo_bookings():
+    current_day = datetime.datetime.now().strftime("%d-%m-%Y")
+    if request.method == 'POST':
+        name = request.form.get('name')
+        location = request.form.get('location')
+        phone = request.form.get('mobile')
+        message = request.form.get('message')
+
+        demo_bookings = {"name": name, "location": location, "phone": phone, "message": message }
+        db.child("Demo_Bookings").child(current_day).push(demo_bookings)
+        return jsonify({'success': True, 'message': 'submitted successfully, we wil get back to you shortly'})
+    else:
+        return 'Method Not Allowed'
+
+@app.route('/contact_us', methods=['POST'])
+def contact_us():
+    current_day = datetime.datetime.now().strftime("%d-%m-%Y")
+    if request.method == 'POST':
+        name = request.form.get('name')
+        phone = request.form.get('phone')
+        message = request.form.get('message')
+
+        demo_bookings = {"name": name, "phone": phone, "message": message }
+        db.child("Demo_Bookings").child(current_day).push(demo_bookings)
+        return jsonify({'success': True, 'message': 'submitted successfully, we wil get back to you shortly'})
     else:
         return 'Method Not Allowed'
 

@@ -290,7 +290,7 @@ input:checked+.sliders:before {
 }
 
 .img-handphone {
-    background-image: url(../main-webp/hand-phone.webp);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fhand-phone.webp?alt=media&token=d7fed07a-9fe7-4c49-88f4-43a72ebecb37);
     background-position: left;
     background-size: contain;
     height: 60vh;

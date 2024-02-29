@@ -158,7 +158,6 @@ body{
   }
   .slide {
     flex: 0 0 100%;
-
     width: 100%;
     max-width: auto;
     height: 700px;
@@ -405,8 +404,6 @@ body{
       }
 }
 
-
-
 .bottom {
     position: relative;
 }
@@ -459,15 +456,18 @@ body{
   position: absolute;
   text-align: center;
   width: 500px;
-  height: 250px;  
-  padding:45px 25px;
+  height: 250px;
+  padding: 45px 25px;
   top: 25%;
   transform: translateY(-50%);
-  left: 0;right:60%;
-  margin-left: auto;margin-right: auto;
+  left: 0;
+  right: 60%;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: var(--Spacing-space-XXXL, 16px);
   background: linear-gradient(180deg, #FEFEFE 0%, rgba(254, 254, 254, 0.50) 100%);
   font-family: "Open Sans", sans-serif;
+
   h2 {
     color: #48217A;
     font-family: Poppins;
@@ -507,4 +507,3 @@ body{
   }
 
 }
-

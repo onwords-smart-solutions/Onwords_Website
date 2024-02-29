@@ -284,7 +284,7 @@
    }
 
    #withlight {
-      background-image: url(../main-webp/ons.webp);
+      background-image: url(https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fons.webp?alt=media&token=10d2c228-21ba-4c06-a208-d1e4fe26cbfd);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -299,7 +299,7 @@
    }
 
    #withoutlight {
-      background-image: url(../main-webp/offs.webp);
+      background-image: url(https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Foffs.webp?alt=media&token=088d0e98-7a74-4f71-bc1f-9d11e523b7aa);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -777,7 +777,7 @@
    }
 
    .construction-img {
-      background-image: url(../main-webp/construction-main-img.webp);
+      background-image: url(https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fconstruction-main-img.webp?alt=media&token=0ed942ec-cefe-49ec-8af0-ba8e2c0fbaeb);
       width: 100%;
       height: 50vh;
       background-position: center;
@@ -1053,7 +1053,7 @@
    }
 
    .consc-banner {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.7)), url(../main-webp/conscu-banner.png);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.7)), url(https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fconscu-banner.png?alt=media&token=095632c7-2391-4fb1-8321-a68e447b660d);
       width: 100%;
       height: 50vh;
       margin-bottom: 30px;
@@ -1112,10 +1112,8 @@
    .animation-img {
       width: 95%;
       height: 35vh;
-      /* background-image: url(../main-webp/smarthome-night.webp); */
       background-repeat: no-repeat;
       background-position: center;
-      background-repeat: no-repeat;
       background-size: cover;
       border-radius: 10px;
       animation: img-sm 10s infinite;
@@ -1381,10 +1379,8 @@
    .animation-img {
       width: 95%;
       height: 35vh;
-      /* background-image: url(../main-webp/smarthome-night.webp); */
       background-repeat: no-repeat;
       background-position: center;
-      background-repeat: no-repeat;
       background-size: cover;
       border-radius: 10px;
       animation: img-sm 10s infinite;
@@ -1449,10 +1445,8 @@
    .animation-img {
       width: 95%;
       height: 35vh;
-      /* background-image: url(../main-webp/smarthome-night.webp); */
       background-repeat: no-repeat;
       background-position: center;
-      background-repeat: no-repeat;
       background-size: cover;
       border-radius: 10px;
       animation: img-sm 10s infinite;

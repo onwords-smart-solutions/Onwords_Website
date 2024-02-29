@@ -19,12 +19,13 @@
     <link rel="stylesheet" href="../static/css/general.css">
     <link rel="stylesheet" href="../static/css/responsive.css">
     <link rel="stylesheet" href="../static/css/security-system.css">
-    <link rel="shortcut icon" href="../static/main-webp/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Ffavicon.ico?alt=media&token=c523e1c5-6c24-48fe-84d3-6e090de9ef8c" type="image/x-icon" />
     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/css/footer.css">
     <link rel="stylesheet" href="../static/fonts/all.min.css">
     <link rel="stylesheet" href="../static/fonts/fontawesome.css">
     <link rel="stylesheet" href="../static/fonts/fonts-6/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Contact | Onwords - Home Automation | Smart Home | Gate Automation | ALEXA | GOOGLE | AJAX | Security Systems | Automation</title>
 </head>
 <!-- Facebook Pixel Code -->
@@ -66,7 +67,7 @@
         <header>
             <nav class="navbar navbar-expand-lg sticky-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="/"><img src="../static/main-webp/onwords-logo.svg" alt="logo"
+                    <a class="navbar-brand" href="/"><img src="https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fonwords-logo.svg?alt=media&token=bf6389d3-ec58-452f-8876-8b0fe6db0f01" alt="logo"
                             class="img-fluid logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -90,11 +91,8 @@
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="/ourservices">Smart Home</a></li>
                                     <li><a class="dropdown-item" href="/gateautomation">Gate Automation</a></li>
-                                    <li><a class="dropdown-item" href="/contact-9">Water tank Automation</a></li>
                                     <li><a class="dropdown-item" href="/solar">Solar</a></li>
-                                    <li><a class="dropdown-item" href="/sound_system">Sound System</a></li>
-
-                                    <li><a class="dropdown-item" href="/contact-9">Web/App Devlopment</a></li>
+                                    <li><a class="dropdown-item" href="/Audios">Sound System</a></li>
                                     <li><a class="dropdown-item" href="/construction">Construction</a></li>
                                     <li><a class="dropdown-item" href="/smartlock">Purchase Smart Locks</a></li>
                                 </ul>
@@ -130,7 +128,7 @@
             </button>
             <button id="whatsapp">
                 <a href="https://wa.me/+917708630275" target="_blank">
-                    <img src="../static/main-webp/whatsapp-ico.webp" alt="whatsapp">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fwhatsapp-ico.webp?alt=media&token=44745185-f1e5-4d37-b7b5-111fb36c81af" alt="whatsapp">
                 </a>
             </button>
         </div>
@@ -142,14 +140,14 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="box-contact">
-                            <img src="../static/main-webp/phone-icon.webp" alt="phone icon" class="img-fluid">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fphone-icon.webp?alt=media&token=aecd67ad-5f9e-4429-a2fb-e5274b8792a6" alt="phone icon" class="img-fluid">
                             <h5>Phone</h5>
                             <h4>77086 30275</h4>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="box-contact">
-                            <img src="../static/main-webp/location-icon.webp" alt="location icon"
+                            <img src="https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Flocation-icon.webp?alt=media&token=ebe31658-9daa-426d-9995-61c368f250a8" alt="location icon"
                                 class="img-fluid">
                             <h5>Address</h5>
                             <h4>Onwords Smart Solutions <br>
@@ -159,7 +157,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="box-contacts">
-                            <img src="../static/main-webp/email-icon.webp" alt="email icon" class="img-fluid">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Femail-icon.svg?alt=media&token=1cf4775f-c6d5-4330-9c1e-9fe0b5eb2387" alt="email icon" class="img-fluid">
                             <h5>E-Mail</h5>
                             <h4>cs@onwords.in</h4>
                         </div>
@@ -173,20 +171,19 @@
                 </div>
                 <div class="container">
                     <div class="row">
-
                         <div class="col-md-6">
-                            <form class="contact-form">
+                            <form class="contact-form" action="/contact_us" method="post" id="contactform">
                                 <div class="box-group-input">
-                                    <input type="text" name="" id="" required="'required">
+                                    <input type="text" name="name" id="name" required>
                                     <span>Name</span>
                                 </div>
                                 <div class="box-group-input">
-                                    <input type="text" name="" id="" required="'required">
-                                    <span>E-mail</span>
+                                    <input type="text" name="message" id="message" required>
+                                    <span>Detailed Message</span>
                                 </div>
                                 <div class="box-group-input">
-                                    <input type="number" name="" id="" required="'required">
-                                    <span>Mobile Number</span>
+                                    <input type="tel" name="phone" id="phone" required>
+                                    <span>Phone Number</span>
                                 </div>
                                 <button type="submit" class="s-btn">
                                     <div class="go contact-sub">
@@ -196,6 +193,7 @@
                                     </div>
                                 </button>
                             </form>
+                            <span id="successMessage" style="display:none;"></span>
                         </div>
                         <div class="col-md-6">
                             <p><iframe class="contact-googlemap"
@@ -301,10 +299,10 @@
                         <h5>Our Apps</h5>
                         <div class="app-google-store">
                             <a href="https://play.google.com/store/apps/details?id=com.onwords.smart_things&hl=en_IN&gl=US" target="_blank">
-                                <img src="../static/main-webp/play.webp" alt="play store" class="img-fluid">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fplay.webp?alt=media&token=f74468b9-012f-4842-9df3-edf94121667e" class="img-fluid">
                             </a>
                             <a href="https://apps.apple.com/in/app/onwords-smart-things/id6449142647" target="_blank"><img
-                                    src="../static/main-webp/apple.webp" alt="apple storw" class="img-fluid"></a>
+                                    src="https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fapple.webp?alt=media&token=ed330e85-cc5f-434e-958b-be088af30ae6" alt="apple storw" class="img-fluid"></a>
                         </div>
                     </div>
                 </div>
@@ -321,5 +319,32 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="../static/js/general.js"></script>
     </div>
+<script>
+    $(document).ready(function(){
+        $('#contactform').submit(function(e){
+            e.preventDefault(); // Prevent default form submission
+            $.ajax({
+                url: '/contact_us',
+                type: 'POST',
+                data: $(this).serialize(), // Serialize form data
+                success: function(response){
+                    // Display success message
+                    $('#successMessage').text(response.message).show();
+                    // Hide success message after 3 seconds
+                    setTimeout(function(){
+                        $('#successMessage').fadeOut('slow');
+                    }, 3000);
+                },
+                error: function(){
+                    // Handle error
+                    $('#successMessage').text('An error occurred, please try again later.').show().css('color', 'red');
+                    setTimeout(function(){
+                        $('#successMessage').fadeOut('slow');
+                    }, 3000);
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>

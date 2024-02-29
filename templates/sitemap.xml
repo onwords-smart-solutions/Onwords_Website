@@ -102,4 +102,16 @@
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
    </url>
+   <url>
+      <loc>https://www.onwords.in/solar</loc>
+      <lastmod>2024-2-17</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://www.onwords.in/Audios</loc>
+      <lastmod>2024-2-17</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.5</priority>
+   </url>
 </urlset>

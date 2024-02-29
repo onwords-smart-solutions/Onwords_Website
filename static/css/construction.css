@@ -1,5 +1,5 @@
 .construction-img {
-  background-image: url(../main-webp/construction-main-img.webp);
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fconstruction-main-img.webp?alt=media&token=0ed942ec-cefe-49ec-8af0-ba8e2c0fbaeb);
   width: 100%;
   height: 100vh;
   background-position: center;
@@ -119,7 +119,7 @@
 }
 
 .consc-banner {
-  background-image: url(../main-webp/conscu-banner.png);
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fconscu-banner.png?alt=media&token=095632c7-2391-4fb1-8321-a68e447b660d);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -172,7 +172,7 @@
 }
 
 .demo-cons {
-  background-image: url(../main-webp/construc-demo.png);
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fconstruc-demo.png?alt=media&token=1615ead6-6d88-4950-aa79-1b23b97732fd);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
