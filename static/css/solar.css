@@ -419,14 +419,7 @@ justify-content: space-around;
   overflow: hidden;
 }
 .Our_Future_Goals {
-  background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fget.jpg?alt=media&token=be53b524-1d12-4b95-b330-5fac608e071c);
-
-  
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fget.jpg?alt=media&token=1568a39f-0287-4e86-93cd-e05977ec70ac);
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
@@ -467,17 +460,11 @@ justify-content: space-around;
   .Our_Future_Goals {
     height: auto;
     margin-top: 24px;
-    background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.219),
-      rgba(0, 0, 0, 0.284)
-    ),
-    url(../main-webp/get.jpg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fget.jpg?alt=media&token=1568a39f-0287-4e86-93cd-e05977ec70ac);
   }
   .Future_Goals .row-cols-2{
     margin-top: 10px;
     padding: 1px;
-  
   }
 .Future_Goals{
   font-size: 14px;
