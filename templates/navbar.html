@@ -19,16 +19,17 @@
                     <a class="dropdown-toggle {% if request.path in ['/ourservices','/gateautomation','/solar','/Audios','/construction'] %}color{% endif %}" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Our Services
                     </a>
-
+                
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item {% if request.path in ['/ourservices','/seedemo','/curtain'] %}active{% endif %}" href="/ourservices">Smart Home</a></li>
-                        <li><a class="dropdown-item {% if request.path == '/gateautomation' %}active{% endif %}" href="/gateautomation">Gate Automation</a></li>
-                        <li><a class="dropdown-item {% if request.path == '/solar' %}active{% endif %}" href="/solar">Solar Panels</a></li>
-                        <li><a class="dropdown-item {% if request.path == '/Audios' %}active{% endif %}" href="/Audios">Sound System</a></li>
-                        <li><a class="dropdown-item {% if request.path == '/construction' %}active{% endif %}" href="/construction">Construction</a></li>
-                        <li><a class="dropdown-item {% if request.path == '/smartlock' %}active{% endif %}" href="/smartlock">Purchase Smart Locks</a></li>
+                        <li><a class="dropdown-item {% if request.path in ['/ourservices','/seedemo','/curtain'] %}color{% endif %}" href="/ourservices">Smart Home</a></li>
+                        <li><a class="dropdown-item {% if request.path == '/gateautomation' %}color{% endif %}" href="/gateautomation">Gate Automation</a></li>
+                        <li><a class="dropdown-item {% if request.path == '/solar' %}color{% endif %}" href="/solar">Solar Panels</a></li>
+                        <li><a class="dropdown-item {% if request.path == '/Audios' %}color{% endif %}" href="/Audios">Sound System</a></li>
+                        <li><a class="dropdown-item {% if request.path == '/construction' %}color{% endif %}" href="/construction">Construction</a></li>
+                        <li><a class="dropdown-item {% if request.path == '/smartlock' %}color{% endif %}" href="/smartlock">Purchase Smart Locks</a></li>
                     </ul>
                 </li>
+                
                 
                 
                 <li><a class="nav-item {% if request.path == '/securitySystem' %}color{% endif %}" href="/securitySystem">Security System</a></li>
@@ -63,7 +64,7 @@
 
    
 
-   document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     // Toggle dropdown menu on click
     var dropdownToggle = document.getElementById("navbarDropdown");
     dropdownToggle.addEventListener("click", function(event) {
@@ -76,11 +77,12 @@
     window.addEventListener("click", function(event) {
         var dropdownMenus = document.querySelectorAll(".dropdown-menu");
         dropdownMenus.forEach(function(menu) {
-            if (!menu.contains(event.target)) {
+            if (!menu.contains(event.target) && !dropdownToggle.contains(event.target)) {
                 menu.classList.remove("show");
             }
         });
     });
 });
+
 
 </script>

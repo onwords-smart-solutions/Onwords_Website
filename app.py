@@ -346,7 +346,6 @@ def handle_calculate_bill_amount():
 
     # Calculate units consumed in the same format as the print statement
     units_consumed = round(monthly_consumption_kwh,2)
-    print(units_consumed)
     panel_capacity_watts = 545  # Capacity of each panel in watts
     average_peak_sun_hours_per_day = 5  # Average peak sun hours per day
     days_in_month = 30  # Number of days in a month (assuming 30 days)

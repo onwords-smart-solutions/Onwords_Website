@@ -467,17 +467,10 @@ justify-content: space-around;
   .Our_Future_Goals {
     height: auto;
     margin-top: 24px;
-    background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.219),
-      rgba(0, 0, 0, 0.284)
-    ),
-    url(../main-webp/get.jpg);
   }
   .Future_Goals .row-cols-2{
     margin-top: 10px;
     padding: 1px;
-  
   }
 .Future_Goals{
   font-size: 14px;
@@ -564,12 +557,12 @@ main .title {
   -webkit-transform: rotate(-224deg);
   transform: rotate(-224deg);
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1000px) {
  
   .question {
     padding-right:60px;
     font-size: 14px;
-
+    margin-bottom: 15px;
   }
   
   main {
@@ -724,6 +717,9 @@ form input{
   .Getin_touch {
     margin-top: -60px;
   }
+  .Getin_touch .right{
+    height: auto;
+  }
   .Getin_touch .get_details{
     flex-direction: column;
     font-size: 14px;
@@ -743,7 +739,7 @@ form input{
   .left, .right {
     width: 100%;
   }
-  #name{
+  #name, #service_no{
     width: 350px;
     height: 60px;
     margin-right: 0px;
@@ -768,7 +764,7 @@ form input{
     margin-right: 0px;
     width: 350px;
     height: 150px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
   }
 }
@@ -807,7 +803,7 @@ form input{
 @media (max-width: 768px) { 
   .foot {
     margin-top: -20px;
-    margin-bottom: -500px;
+    margin-bottom: -400px;
   }
 
   .foot p{
