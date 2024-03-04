@@ -208,3 +208,7 @@ const loaders = document.getElementById('preloade')
 window.addEventListener('load',()=>{
   loaders.style.display="none"
 })
+
+// Cookies 
+
+//

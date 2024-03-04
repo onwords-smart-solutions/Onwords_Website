@@ -52,31 +52,9 @@ body::-webkit-scrollbar {
 
 
 /* basic css */
-a {
-    color: #fff;
-    text-decoration: none !important;
-    
-}
-
-a.dark {
-    color: #000;
-    text-decoration: none !important;
-}
-
-a:hover {
-    color: #ffff !important;
-}
 
 
-ul li {
-    list-style: none;
-}
 
-ul li a {
-    text-decoration: none;
-
-
-}
 
 
 .btns-model {
@@ -146,11 +124,7 @@ header.light {
 }
 
 
-nav {
-    width: 80%;
-    margin: auto;
-    transition: 1s;
-}
+
 
 
 #withlight {
@@ -381,90 +355,12 @@ nav {
 
 }
 
-.navbar-nav {
-    text-align: center;
-}
 
-.nav-item {
-    margin: 0px 20px;
 
-}
 
-.nav-item a {
-    color: #ccc;
-    font-size: 16px;
-    font-weight: 600;
-   
 
-}
 
-.nav-link a,
-.active-nav,
-.nav-link:focus,
-.nav-link:active {
-    background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    border-bottom: 2px solid;
-    border-width: 2px;
-    border-image-slice: 2 !important;
-    border-image-source: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
-}
 
-.nav-link a :hover,
-.nav-link:hover {
-    background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    border-bottom: 2px solid;
-    border-width: 2px;
-    border-image-slice: 2 !important;
-    border-image-source: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
-
-}
-
-.dropdown-item:hover {
-    background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    border-width: 2px;
-    border-image-slice: 2 !important;
-    border-image-source: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
-}
-
-.home-main-con button {
-    border: none;
-    outline: none;
-
-}
-
-.dropdown-toggle {
-    color: #fff;
-}
-
-.act-nav {
-    color: rgb(134, 22, 87);
-}
-
-.dropdown-menu {
-    background-color: #040507 !important;
-    color: #fff !important;
-}
-
-.dropdown-item {
-    color: #fff;
-}
-
-.dropdown-item:hover {
-    background-color: #000 !important;
-    color: #fff;
-}
 
 .home-main-con {
     padding-left: 16%;
@@ -3070,7 +2966,7 @@ transform: scale(1.2);
     border-radius: 3em;
     font-size: .75em;
     font-weight: 600;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     text-transform: capitalize;
     color: #040507;
     transition: all 1000ms;
@@ -3285,4 +3181,15 @@ transform: scale(1.2);
 }
 .privacy-font{
     font-size: 17px;
+}
+
+
+/* cookies*/
+
+.cc-btn.cc-dismiss {
+    background: linear-gradient(90deg, #7353E5 0%, #CE4DA4 100%);
+    color: #fff; /* Text color */
+    border-radius: 4px;
+    padding: 10px 20px;
+    border:none;
 }

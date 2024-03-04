@@ -1,0 +1,159 @@
+
+
+/***********  .nav   ************/
+.nav{
+    position: fixed;
+    top: 0;   left: 0;
+    height: 80px;  
+    width: 100%;  
+    z-index: 5;
+    background: none;
+    box-sizing: border-box;
+    padding: 0 110px;
+    transition: .9s;
+}
+
+.nav.active{
+    height: 80px;   
+    padding: 0 30px;
+    background-color: #040507;
+
+}
+
+/************** .nav img h1 *******************/
+.nav img{
+    position: relative;
+    width: 90px;  height: 80px;
+    background: transparent;  
+    float: left;
+    transition: .9s;
+}
+.nav.active img{
+    width: 80px;  height: 80px;
+}
+.nav button{
+    float: right;
+    display: none;
+}
+/************** .nav .menu  *******************/
+.nav ul.menu{
+    position: relative;
+    float: right;
+    top: 25%;
+}
+.nav.active ul.menu{
+    top: 20px;
+}
+.nav ul.menu li{
+    list-style: none;
+    float: left;
+}
+.nav ul.menu li a {
+    position: relative;
+    display: inline-block;
+    color: #ffffff; /* Set text color to white */
+    text-decoration: none;  
+    padding: 8px 25px;
+    box-sizing: border-box;
+    transition: color 0.2s; /* Add transition for smooth color change */
+}
+.nav ul.menu li a:hover,
+.nav ul.menu li a.color {
+    background-image: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    border-bottom: 2px solid;
+    border-width: 2px;
+    border-image-slice: 2 !important;
+    border-image-source: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
+}
+
+.nav.active ul.menu li a{
+    line-height: auto;
+}
+
+/*********** Media Queries******************/
+@media screen  and (min-width: 1000px) and (max-width: 1340px) { 
+    .nav{
+        padding: 0 10px;
+    }
+    .nav.active{
+        padding: 0 10px;
+    
+    }
+}
+@media screen  and (min-width: 1000px) and (max-width: 1144px) { 
+    .nav img{
+        width: 60px; 
+        height: 80px;
+
+    }
+}
+
+@media screen and (max-width:1000px) { 
+     .nav,.nav.active{
+        height: auto;   
+        padding: 10px 30px;
+        background-color: #040507;
+    }
+     .nav img,.nav.active img{
+        width: 80px;  height: 80px;
+        float: left;
+    }
+     .nav button{
+        float: right;
+        display: block;
+        top: 26px;
+        position: relative;
+        cursor: pointer;
+        background: none;
+        border: none;
+    }  
+     .nav ul.menu,.nav.active ul.menu{
+        clear: both;
+        margin-top: 70px; 
+        float: none;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }  
+     .nav ul.menu.display,.nav.active ul.menu.display{
+        display: block; 
+    }
+     .nav ul.menu li{
+        list-style: none;
+        float: none;
+        width: 100%;
+    }
+     .nav ul.menu li a,.nav.active ul.menu li a{
+        width: 100%;
+        line-height: 40px;
+        padding: 0;
+        height: auto;
+     }
+}
+
+/* Hide dropdown menu by default */
+.dropdown-menu {
+    display: none;
+    background-color: #040507;
+    position: absolute;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.dropdown-menu li{
+    width: 100%;
+}
+.dropdown-menu li:hover li a{
+    background: none;
+}
+/* Show dropdown menu on click */
+.dropdown-menu.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -283,26 +283,23 @@ def calculate_units_from_bill_amount(type, bill_amount):
 
     elif type == 2:
         if bill_amount <= 0:
-            units=0
-            return
-
-        if bill_amount <= 100 * 0:
-            units = bill_amount / 0
-        elif bill_amount <= (100 * 0) + (200 - 100) * 2.25:
-            units = 100 + (bill_amount - (100 * 0)) / 2.25
-        elif bill_amount <= (100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5:
-            units = 200 + (bill_amount - ((100 * 0) + (200 - 100) * 2.25)) / 4.5
-        elif bill_amount <= (100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5 + (500 - 400) * 6:
-            units = 400 + (bill_amount - ((100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5)) / 6
-        elif bill_amount <= (100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5 + (500 - 400) * 6 + (600 - 500) * 8:
-            units = 500 + (bill_amount - ((100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5 + (500 - 400) * 6)) / 8
-        elif bill_amount <= (100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5 + (500 - 400) * 6 + (600 - 500) * 8 + (800 - 600) * 9:
-            units = 600 + (bill_amount - ((100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5 + (500 - 400) * 6 + (600 - 500) * 8)) / 9
-        elif bill_amount <= (100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5 + (500 - 400) * 6 + (600 - 500) * 8 + (800 - 600) * 9 + (1000 - 800) * 10:
-            units = 800 + (bill_amount - ((100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5 + (500 - 400) * 6 + (600 - 500) * 8 + (800 - 600) * 9)) / 10
+            units = 0
+        elif bill_amount <= 100 * 2.25:
+            units = bill_amount / 2.25
+        elif bill_amount <= 100 * 2.25 + 200 * 4.5:
+            units = 100 + (bill_amount - 100 * 2.25) / 4.5
+        elif bill_amount <= 100 * 2.25 + 200 * 4.5 + 100 * 6:
+            units = 300 + (bill_amount - (100 * 2.25 + 200 * 4.5)) / 6
+        elif bill_amount <= 100 * 2.25 + 200 * 4.5 + 100 * 6 + 100 * 8:
+            units = 400 + (bill_amount - (100 * 2.25 + 200 * 4.5 + 100 * 6)) / 8
+        elif bill_amount <= 100 * 2.25 + 200 * 4.5 + 100 * 6 + 100 * 8 + 200 * 9:
+            units = 500 + (bill_amount - (100 * 2.25 + 200 * 4.5 + 100 * 6 + 100 * 8)) / 9
+        elif bill_amount <= 100 * 2.25 + 200 * 4.5 + 100 * 6 + 100 * 8 + 200 * 9 + 200 * 10:
+            units = 700 + (bill_amount - (100 * 2.25 + 200 * 4.5 + 100 * 6 + 100 * 8 + 200 * 9)) / 10
         else:
-            units = 1000 + (bill_amount - ((100 * 0) + (200 - 100) * 2.25 + (400 - 200) * 4.5 + (500 - 400) * 6 + (600 - 500) * 8 + (800 - 600) * 9 + (1000 - 800) * 10)) / 11
+            units = 900 + (bill_amount - (100 * 2.25 + 200 * 4.5 + 100 * 6 + 100 * 8 + 200 * 9 + 200 * 10)) / 11
         unit = "kWh"
+        return units, unit
     return units, unit
 
 def estimate_solar_panels(monthly_consumption_kwh, conversion_factor, desired_coverage, peak_sun_hours, panel_efficiency, derating_factor):
@@ -317,7 +314,7 @@ def estimate_solar_panels(monthly_consumption_kwh, conversion_factor, desired_co
     if required_capacity < 1:
         required_capacity = 1
     else: 
-        required_capacity = desired_generation * derating_factor / peak_sun_hours
+        required_capacity = required_capacity
     # Estimate number of panels
     number_of_panels = required_capacity / panel_efficiency
     
@@ -339,7 +336,7 @@ def handle_calculate_bill_amount():
     
     # Define constants for solar panel estimation
     conversion_factor = 1  # Conversion factor (already in kWh)
-    desired_coverage = 90  # Desired coverage as a percentage (100%)
+    desired_coverage = 100  # Desired coverage as a percentage (100%)
     peak_sun_hours = 5  # Average peak sun hours per day
     panel_efficiency = 0.2  # Efficiency of the solar panel (20%)
     derating_factor = 0.9  # Derating factor considering real-world conditions (90%)
@@ -348,8 +345,8 @@ def handle_calculate_bill_amount():
     daily_consumption, required_capacity, required_square_feet, number_of_panels = estimate_solar_panels(monthly_consumption_kwh, conversion_factor, desired_coverage, peak_sun_hours, panel_efficiency, derating_factor)
 
     # Calculate units consumed in the same format as the print statement
-    units_consumed = round(monthly_consumption_kwh + 100, 2)
-
+    units_consumed = round(monthly_consumption_kwh,2)
+    print(units_consumed)
     panel_capacity_watts = 545  # Capacity of each panel in watts
     average_peak_sun_hours_per_day = 5  # Average peak sun hours per day
     days_in_month = 30  # Number of days in a month (assuming 30 days)
@@ -393,7 +390,7 @@ def handle_calculate_bill_amount():
         "number_of_panels": round(number_of_panels, 2),
         "yearly_co2_reduction_kwh": round(trees_added_yearly*1000),
         "Potential_monthly_kwh":round(potential_monthly_savings_kwh),
-        "Potential_monthly_savings":round(potential_monthly_savings_kwh*5.8),
+        "Potential_monthly_savings":round(potential_monthly_savings_kwh*4.5),
         "yearly_co2_reduction_tons": round(yearly_co2_reduction_tons),
 
     }
