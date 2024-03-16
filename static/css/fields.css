@@ -151,6 +151,7 @@ p {
   border-radius: 50%;
   background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
   margin-bottom: 6px;
+  color: #ffffff;
 }
 .stepper-item.active {
   font-weight: bold;

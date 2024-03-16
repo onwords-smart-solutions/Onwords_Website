@@ -3,7 +3,7 @@
 
         
     <div class="nav">
-        <img src="https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fonwords-logo.svg?alt=media&token=bf6389d3-ec58-452f-8876-8b0fe6db0f01" alt="logo" class="img-fluid logo"></a>
+        <img onclick="home_page()" src="https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fonwords-logo.svg?alt=media&token=bf6389d3-ec58-452f-8876-8b0fe6db0f01" alt="logo" class="img-fluid logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><span class="text-white onnav">
                 <i class="fa-solid fa-bars"></i></span>
@@ -16,8 +16,8 @@
                 <li><a class="nav-item {% if request.path == '/' %}color{% endif %}" aria-current="page" href="/">Home</a></li>
 
                 <li class="dropdown">
-                    <a class="dropdown-toggle {% if request.path in ['/ourservices','/gateautomation','/solar','/Audios','/construction'] %}color{% endif %}" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Our Services
+                    <a class=" {% if request.path in ['/ourservices','/gateautomation','/solar','/Audios','/construction'] %}color{% endif %}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Our Services &nbsp; <i class="fa-solid fa-caret-down"></i>
                     </a>
                 
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -47,6 +47,9 @@
           
 
 <script>
+    function home_page(){
+        window.location.href="/"
+    }
     $(document).ready(function(){
         $(window).scroll(function(){
               $val = $(window).scrollTop();

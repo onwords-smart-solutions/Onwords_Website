@@ -163,38 +163,84 @@ function downloadPDF() {
 
   img.src = 'static/img/onwords.png';
   doc.addImage(img, 'PNG', 15, 5, 38, 25);
-  doc.setFontSize(15);
-  doc.text('Quotation', 165, 18);
+  doc.setFontSize(18);
+  doc.setTextColor(236, 96, 109); // Red color
+  doc.text('QUOTATION', 153, 21);
+  doc.setTextColor(0); // Reset to black color
+
   const today = new Date();
   const formattedDate = `${today.getDate()}-${today.getMonth() + 1}-${today.getFullYear()}`;
 
   // Add today's date below "Quotation" text
   doc.setFontSize(10);
+  doc.text('Date :', 165, 27);
 
-  doc.text(`${formattedDate}`, 168, 25);
+  doc.text(`${formattedDate}`, 175, 27);
   // Add additional details
   doc.setFontSize(10);
   
-  doc.text('From           :', 20, 40);
-  doc.text('Onwords Smart Sollution', 47, 40);
+ // Assuming you have already created a PDF document instance named 'doc'
 
-  doc.text('Address      :', 20, 46);
-  doc.text('1/1 RR Garden, Zamin Muthur,', 47, 46);
+// Set bold font style
+doc.setFontStyle('bold');
 
-  doc.text('Location      :', 20, 52);
-  doc.text('Pollachi, Coimbatore, Tamilnadu - 642005', 47, 52);
+// Add labels
+doc.text('From    ', 20, 40);
+doc.text('Address ', 20, 46);
+doc.text('Location', 20, 52);
+doc.text('', 20, 58);
+doc.text('Phone   ', 20, 64);
+doc.text('Email   ', 20, 70);
+doc.text('Website ', 20, 76);
+doc.text('GSTIN   ', 20, 82);
 
-  doc.text('Phone         :', 20, 58);
-  doc.text('+91 7708630275', 47, 58);
-  
-  doc.text('Email           :', 20, 64);
-  doc.text('cs@onwords.in', 47, 64);
+// Reset font style to normal
+doc.setFontStyle('normal');
+doc.text(':', 40, 40);
+doc.text(':', 40, 46);
+doc.text(':', 40, 52);
+doc.text('', 40, 58);
+doc.text(':', 40, 64);
+doc.text(':', 40, 70);
+doc.text(':', 40, 76);
+doc.text(':', 40, 82);
 
-  doc.text('Website       :', 20, 70);
-  doc.text('www.onwords.in', 47, 70);
+// Add remaining text
+doc.text('Onwords Smart Sollution', 47, 40);
+doc.text('1/1 RR Garden, Zamin Muthur,', 47, 46);
+doc.text('Pollachi, Coimbatore, Tamilnadu ', 47, 52);
+doc.text('- 642005', 47, 58);
 
-  doc.text('GSTIN         :', 20, 76);
-  doc.text('33BTUPN5784J1ZT', 47, 76);
+doc.text('+91 7708630275', 47, 64);
+doc.text('cs@onwords.in', 47, 70);
+doc.text('www.onwords.in', 47, 76);
+doc.text('33BTUPN5784J1ZT', 47, 82);
+
+
+//////// Customers Address /////////
+doc.setFontStyle('bold');
+
+// Add labels
+doc.text('To    ', 120, 40);
+doc.text('Phone ', 120, 46);
+doc.text('Location ', 120, 52);
+
+
+// Reset font style to normal
+doc.setFontStyle('normal');
+doc.text(':', 140, 40);
+doc.text(':', 140, 46);
+doc.text(':', 140, 52);
+
+var name = document.getElementById('inp_name').value;
+var phone = document.getElementById('inp_Phone').value;
+var place = document.getElementById('inp_Place').value;
+// Add remaining text
+
+// Add wrapped text to the PDF
+doc.text(name, 147, 40); // Adjust the maxWidth and lineHeight as needed
+doc.text(phone, 147, 46);
+doc.text(place, 147, 52, { maxWidth: 37 }); // Maximum width set to 67
 
 
   const headers = ['PRODUCT NAME', 'QUANTITY', 'UNIT PRICE','TOTAL'];
@@ -202,7 +248,7 @@ function downloadPDF() {
   
 
   // Set the position for the table
-  const tableTop = 85;
+  const tableTop =  90;
   const rowHeight = 10;
 
   // Calculate dynamic column widths
@@ -240,19 +286,25 @@ const totalAmountValues = getElementValues('total_amount', 'total');
 
 const totalAmount = totalAmountValues[3]; 
 
-const totalsText = ['Total              :', 'GST               :', 'Grand Total  :'];
-const totals = [totalAmount,  '18%']; 
+const totalsText = ['Total                :', '', 'Grand Total  :']; 
+
+const totals = [totalAmount,  '']; 
+const gst_total = "18%"
 const totalAmountt = parseFloat(totals[0].replace(/[^\d.]/g, ''));
-const gstPercentage = parseFloat(totals[1]);
+const gstPercentage = parseFloat(gst_total);
 
 
 // Check if both totalAmount and gstPercentage are valid numbers
 if (!isNaN(totalAmountt) && !isNaN(gstPercentage)) {
   const grandTotal = totalAmountt + (totalAmountt * (gstPercentage / 100));
+  const gst_total = totalAmountt * gstPercentage / 100;
 
   // Format total amount and update the totals array with the calculated Grand Total
-  totals[0] = totalAmount.toLocaleString('en-IN', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
-  totals[2] = grandTotal.toLocaleString('en-IN', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+  totals[0] =  'Rs :' +totalAmount.toLocaleString('en-IN', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+  totalsText[1] = 'GST ' + gstPercentage + '%        :    ' + 'Rs : '+ gst_total.toLocaleString('en-IN', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+  // Add the percentage separately
+  
+  totals[2] = 'Rs : ' + grandTotal.toLocaleString('en-IN', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
 
 
 } else {
@@ -275,7 +327,7 @@ totalsText.forEach((text, index) => {
   // Draw top border for "Grand Total"
   if (isGrandTotal) {
     doc.setLineWidth(0.1); // Decrease the border width
-    doc.line(totalsX, totalsY + index * totalsSpacing, totalsX + 43, totalsY + index * totalsSpacing);
+    doc.line(totalsX, totalsY + index * totalsSpacing, totalsX +50, totalsY + index * totalsSpacing);
 
     doc.setFontSize(11); // Adjust the font size as needed
     doc.text(' ', totalsX + 50, totalsY + index * totalsSpacing);
@@ -287,7 +339,7 @@ totalsText.forEach((text, index) => {
   // Draw bottom border for "Grand Total"
   if (isGrandTotal) {
     doc.setLineWidth(0.1); // Decrease the border width
-    doc.line(totalsX, totalsY + (index + 1) * totalsSpacing, totalsX + 43, totalsY + (index + 1) * totalsSpacing);
+    doc.line(totalsX, totalsY + (index + 1) * totalsSpacing, totalsX + 50, totalsY + (index + 1) * totalsSpacing);
   }
 
   // Reset font and font size to normal after drawing the text
@@ -301,11 +353,36 @@ doc.line(20, totalsSectionBottom, doc.internal.pageSize.width - 20, totalsSectio
 
 const additionalInfoX = 20; 
 const additionalInfoY = tableBottom + 10; 
-doc.text('Acc.Name    :    Onwords', additionalInfoX, additionalInfoY);
-doc.text('Bank            :    HDFC', additionalInfoX, additionalInfoY + 6);
-doc.text('Acc.No         :    50-2000-6540-3656', additionalInfoX, additionalInfoY + 12);
-doc.text('IFSC Code  :    HDFC0000787', additionalInfoX, additionalInfoY + 18);
-doc.text('UPI              :    onwordspay@ybi', additionalInfoX, additionalInfoY + 24);
+doc.setFontSize(10);
+  
+// Assuming you have already created a PDF document instance named 'doc'
+// Set bold font style
+doc.setFontStyle('bold');
+
+// Add labels
+const labels = ['Acc.Name', 'Bank', 'Acc.No', 'IFSC Code', 'UPI'];
+const labelWidth = labels.reduce((maxWidth, label) => Math.max(maxWidth, doc.getStringUnitWidth(label)), 0);
+const padding = 5; // Adjust padding as needed
+labels.forEach((label, index) => {
+    doc.text(label, additionalInfoX, additionalInfoY + (index * 6));
+});
+
+// Reset font style to normal
+doc.setFontStyle('normal');
+doc.text(':', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding, additionalInfoY);
+doc.text(':', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding, additionalInfoY + 6);
+doc.text(':', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding, additionalInfoY + 12);
+doc.text(':', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding, additionalInfoY + 18);
+doc.text(':', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding, additionalInfoY + 24);
+
+// Add remaining text
+doc.text('Onwords', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding + 7, additionalInfoY);
+doc.text('HDFC,', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding + 7, additionalInfoY + 6);
+doc.text('50-2000-6540-3656', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding + 7, additionalInfoY + 12);
+doc.text('HDFC0000787', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding + 7, additionalInfoY + 18);
+doc.text('onwordspay@ybi', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding + 7, additionalInfoY + 24);
+
+
 
 
 const timestamp = new Date().toISOString().replace(/[-:.]/g, ''); // Generate a timestamp in the format 'yyyyMMddTHHmmss'
@@ -357,22 +434,32 @@ function getElementValues(nameId, quantityId, unitPriceId, priceId) {
 }
 
 
-$("#btn-download").click(function() {
-  var $btnDownload = $(this);
+$(document).ready(function() {
+ 
+  $("#btn-download").click(function() {
+    
+    $("#myModal").css("display", "block");
+  });
 
-  // Check if the button is already in the "downloaded" state
-  if ($btnDownload.hasClass("downloaded")) {
-    // If yes, remove the "downloaded" class after a delay
-    setTimeout(function() {
-      $btnDownload.removeClass("downloaded");
-    }, 1000); // Adjust the delay time as needed
-  } else {
-    // If not, toggle the "downloaded" class immediately
-    $btnDownload.addClass("downloaded");
+ 
+  $(".close").click(function() {
+  
+    $("#myModal").css("display", "none");
+  });
 
-    // After a delay, remove the "downloaded" class to revert to the download symbol
-    setTimeout(function() {
-      $btnDownload.removeClass("downloaded");
-    }, 2000); // Adjust the delay time as needed
-  }
+  $("#btn-ok").click(function() {
+  
+    $("#myModal").css("display", "none");
+    
+    downloadPDF()
+      var $btnDownload = $(this);
+
+  });
+
+  
+  $("#btn-cancel").click(function() {
+    
+    $("#myModal").css("display", "none");
+    
+  });
 });

@@ -142,6 +142,7 @@ a {
   height: 40px;
   border-radius: 50%;
   background:#ffffff;
+  color: #000;
   margin-bottom: 6px;
 }
 .stepper-item .step-counter .fa-check{
@@ -159,6 +160,8 @@ a {
   border-radius: 50%;
   background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
   margin-bottom: 6px;
+  color: #fff;
+
 }
 .stepper-item.active {
   font-weight: bold;
@@ -169,7 +172,6 @@ a {
 }
 .stepper-item.completed .step-counter {
   cursor: pointer;
-
   background: linear-gradient(90deg, #CE4DA4 0%, #7353E5 100%);
 }
 

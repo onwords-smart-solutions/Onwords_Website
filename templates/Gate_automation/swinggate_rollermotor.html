@@ -17,7 +17,38 @@
     <title>Quotation</title>
 </head>
 <body>
-
+    <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+              <h5 class="modal-title" id="exampleModalLabel">Information</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="inp_name" aria-describedby="emailHelp" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" class="form-control" id="inp_Phone" placeholder="Phone Number" >
+                </div>
+                <div class="form-group">
+                  <label for="location">Location</label>
+                  <input type="text" class="form-control" id="inp_Place" placeholder="Location">
+                </div>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-center">
+                <button type="submit" id="btn-ok" class="btn">Get Quote</button>
+              </div>
+           
+          </div>
+        </div>
+      </div>
+ 
 <div class="container  mt-2 col-xlg-12 col-lg-8 col-md-11 col-sm-11 col-12">
     <a onclick="back()"><img src="../../static/img/back.png" alt="back" width="9" class="back"></a>
     <h2 class="htitle">Your Items</h2>
@@ -29,7 +60,7 @@
         your remote, smartphone</p>
     <div class="text-right">
         <h3 class="tit">Swing Gate With Roller Motor</h3>
-        <div class="download" id="btn-download" onclick="downloadPDF()">
+        <div class="download" id="btn-download" >
             <svg width="29px" height="23px" viewBox="0 0 22 16">
                 <path d="M2,10 L6,13 L12.8760559,4.5959317 C14.1180021,3.0779974 16.2457925,2.62289624 18,3.5 L18,3.5 C19.8385982,4.4192991 21,6.29848669 21,8.35410197 L21,10 C21,12.7614237 18.7614237,15 16,15 L1,15" id="check"></path>
                 <polyline points="4.5 8.5 8 11 11.5 8.5" class="svg-out"></polyline>
