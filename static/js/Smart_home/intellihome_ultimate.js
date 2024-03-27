@@ -283,8 +283,7 @@ doc.text(place, 147, 52, { maxWidth: 37 }); // Maximum width set to 67
     const headers = ['PRODUCT NAME', 'QUANTITY', 'UNIT PRICE','TOTAL'];
     const rows = ['1', '2', '3', '4','5','6','7','8','9','10', '11' ,'12','13' ,'14', 'labour'];
     
-  
-    // Set the position for the table
+// Set the position for the table
     const tableTop =  90;
     const rowHeight = 10;
   
@@ -298,90 +297,103 @@ doc.text(place, 147, 52, { maxWidth: 37 }); // Maximum width set to 67
   
     // Draw the table rows
     let currentRowTop = tableTop + rowHeight;
-    rows.forEach((rowId) => {
+    let isRed = false;
+
+    rows.forEach((rowId, index) => {
     const rowData = getElementValues(rowId, `quantity${rowId.slice(0)}`, `unit_price${rowId.slice(0)}`, `price${rowId.slice(0)}`);
-    // Skip blank rows
     if (rowData.length === 0 || rowData.every((cell) => cell === '')) {
       return;
     }
   
+    let bgColor;
+    if (index === -1 || index === -2 || index === -3 || index === -4 || index === -5 || index === -6) {
+      bgColor = [255, 255, 255]; // Set background color to white for specific rows (2, 4, 6, 8, 10, 12)
+    } else {
+      bgColor = isRed ? [255, 228, 231] : [255, 255, 255]; // Alternating background colors
+      isRed = !isRed;
+    }
+
     rowData.forEach((cell, j) => {
-      drawCell(doc, 20 + colWidth.slice(0, j).reduce((sum, width) => sum + width, 0), currentRowTop, colWidth[j], rowHeight, cell);
+      drawCell(doc, 20 + colWidth.slice(0, j).reduce((sum, width) => sum + width, 0), currentRowTop, colWidth[j], rowHeight, cell, bgColor);
     });
     
     // Adjust currentRowTop only if the row contains data
     currentRowTop += rowHeight;
   });
   
-  // Draw a line at the bottom of the table
   const tableBottom = currentRowTop;
-doc.setLineWidth(0.1);
-doc.line(20, tableBottom, 20 + colWidth.reduce((sum, width) => sum + width, 0), tableBottom);
-
-const totalAmountValues = getElementValues('total_amount', 'total');
-
-const totalAmount = totalAmountValues[3]; 
-
-const totalsText = ['Total                :', '', 'Grand Total  :']; 
-
-const totals = [totalAmount,  '']; 
-const gst_total = "18%"
-const totalAmountt = parseFloat(totals[0].replace(/[^\d.]/g, ''));
-const gstPercentage = parseFloat(gst_total);
-
-
-// Check if both totalAmount and gstPercentage are valid numbers
-if (!isNaN(totalAmountt) && !isNaN(gstPercentage)) {
-  const grandTotal = totalAmountt + (totalAmountt * (gstPercentage / 100));
-  const gst_total = totalAmountt * gstPercentage / 100;
-
-  // Format total amount and update the totals array with the calculated Grand Total
-  totals[0] =  'Rs :' +totalAmount.toLocaleString('en-IN', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
-  totalsText[1] = 'GST ' + gstPercentage + '%        :    ' + 'Rs : '+ gst_total.toLocaleString('en-IN', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
-  // Add the percentage separately
+  doc.setLineWidth(0.1);
+  doc.line(20, tableBottom, 20 + colWidth.reduce((sum, width) => sum + width, 0), tableBottom);
   
-  totals[2] = 'Rs : ' + grandTotal.toLocaleString('en-IN', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
-
-
-} else {
-  console.error("Invalid totalAmount or gstPercentage");
-}
-
+  const totalAmountValues = getElementValues('total_amount', 'total');
   
-const totalsX = 34 + colWidth.reduce((sum, width) => sum + width, 0) - 70; // Adjust the position
-const totalsY = tableBottom + 10;
-const totalsSpacing = 8;
-
-totalsText.forEach((text, index) => {
-  const isGrandTotal = index === 2;
-  // Set font to bold for "Grand Total"
-  const fontWeight = isGrandTotal ? 'bold' : 'normal';
-  const yOffset = isGrandTotal ? 5 : 0; // Adjust the vertical offset as needed
-
-  doc.setFont(undefined, fontWeight);
-
-  // Draw top border for "Grand Total"
-  if (isGrandTotal) {
-    doc.setLineWidth(0.1); // Decrease the border width
-    doc.line(totalsX, totalsY + index * totalsSpacing, totalsX +50, totalsY + index * totalsSpacing);
-
-    doc.setFontSize(11); // Adjust the font size as needed
-    doc.text(' ', totalsX + 50, totalsY + index * totalsSpacing);
+  const totalAmount = totalAmountValues[3]; 
+  
+  doc.setFontStyle('bold');
+  const totalsText = ['Total                :', 'CGST 9%        :', 'SGST 9%        :', 'Grand Total  :']; 
+  
+  const totals = [totalAmount, '', '', '']; 
+  const gst_total = "18%";
+  const totalAmountt = parseFloat(totals[0].replace(/[^\d.]/g, ''));
+  const gstPercentage = parseFloat(gst_total);
+  
+  let grandTotal;
+  
+  if (!isNaN(totalAmountt) && !isNaN(gstPercentage)) {
+    const cgstPercentage = gstPercentage / 2; // Split GST into CGST and SGST
+    const sgstPercentage = gstPercentage / 2;
+  
+    const cgstAmount = totalAmountt * (cgstPercentage / 100); // Calculate CGST amount
+    const sgstAmount = totalAmountt * (sgstPercentage / 100); // Calculate SGST amount
+  
+    grandTotal = totalAmountt + cgstAmount + sgstAmount; // Remove the 'let' keyword here
+  
+    // Format total amount and update the totals array with the calculated Grand Total
+    totals[0] =  'Rs :' + totalAmount.toLocaleString('en-IN', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+    totals[1] = 'Rs : ' + cgstAmount.toLocaleString('en-IN', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+    totals[2] = 'Rs : ' + sgstAmount.toLocaleString('en-IN', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+    totals[3] = 'Rs : ' + grandTotal.toLocaleString('en-IN', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+  
+  } else {
+    console.error("Invalid totalAmount or gstPercentage");
   }
+  
+  const totalsX = 34 + colWidth.reduce((sum, width) => sum + width, 0) - 70; // Adjust the position
+  const totalsY = tableBottom + 10;
+  const totalsSpacing = 8;
+  
+  totalsText.forEach((text, index) => {
+    const isGrandTotal = index === 3;
+    // Set font to bold for "Grand Total"
+    const fontWeight = isGrandTotal ? 'bold' : 'normal';
+    const yOffset = isGrandTotal ? 5 : 0; // Adjust the vertical offset as needed
+  
+    doc.setFont(undefined, fontWeight);
+  
+    // Draw top border for "Grand Total"
+    if (isGrandTotal) {
+      doc.setLineWidth(0.1); // Decrease the border width
+      doc.line(totalsX, totalsY + index * totalsSpacing, totalsX +50, totalsY + index * totalsSpacing);
+  
+      doc.setFontSize(11); // Adjust the font size as needed
+      doc.text(' ', totalsX + 50, totalsY + index * totalsSpacing);
+    }
+  
+    doc.text(totalsX, totalsY + index * totalsSpacing + yOffset, text);
+    doc.text(totalsX + 28, totalsY + index * totalsSpacing + yOffset, totals[index]);
+  
+    // Draw bottom border for "Grand Total"
+    if (isGrandTotal) {
+      doc.setLineWidth(0.1); // Decrease the border width
+      doc.line(totalsX, totalsY + (index + 1) * totalsSpacing, totalsX + 50, totalsY + (index + 1) * totalsSpacing);
+    }
+  
+    // Reset font and font size to normal after drawing the text
+    doc.setFont(undefined, 'normal');
+    doc.setFontSize(10); // Set the default font size
+  });
+  
 
-  doc.text(totalsX, totalsY + index * totalsSpacing + yOffset, text);
-  doc.text(totalsX + 28, totalsY + index * totalsSpacing + yOffset, totals[index]);
-
-  // Draw bottom border for "Grand Total"
-  if (isGrandTotal) {
-    doc.setLineWidth(0.1); // Decrease the border width
-    doc.line(totalsX, totalsY + (index + 1) * totalsSpacing, totalsX + 50, totalsY + (index + 1) * totalsSpacing);
-  }
-
-  // Reset font and font size to normal after drawing the text
-  doc.setFont(undefined, 'normal');
-  doc.setFontSize(10); // Set the default font size
-});
 
 const totalsSectionBottom = totalsY + (totalsText.length + 3) * totalsSpacing; // Add some padding
 doc.setLineWidth(0.1);
@@ -396,9 +408,10 @@ doc.setFontSize(10);
 doc.setFontStyle('bold');
 
 // Add labels
-const labels = ['Acc.Name', 'Bank', 'Acc.No', 'IFSC Code', 'UPI'];
+const labels = ['Acc.Name', 'Bank', 'Acc.No', 'IFSC Code', 'UPI', '','Scan to pay'];
 const labelWidth = labels.reduce((maxWidth, label) => Math.max(maxWidth, doc.getStringUnitWidth(label)), 0);
 const padding = 5; // Adjust padding as needed
+
 labels.forEach((label, index) => {
     doc.text(label, additionalInfoX, additionalInfoY + (index * 6));
 });
@@ -410,20 +423,55 @@ doc.text(':', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding,
 doc.text(':', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding, additionalInfoY + 12);
 doc.text(':', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding, additionalInfoY + 18);
 doc.text(':', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding, additionalInfoY + 24);
+doc.text('', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding, additionalInfoY + 30);
+doc.text(':', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding, additionalInfoY + 36);
+
+// Generate UPI QR code
+const upiId = "onwordspay@ybl";
+const merchantName = "Onwords Smart Solution";
+const merchantCode = "1234";
+const custTxnId = "CUSTOMER123456";
+const orderNumber = "Order123";
+const paymentDescription = "Payment for Order";
+const currency = "INR";
+
+
+var upiLink = `upi://pay?pa=${upiId}&pn=${merchantName}&mc=${merchantCode}&tid=${custTxnId}&tr=${orderNumber}&tn=${paymentDescription}&am=${grandTotal}&cu=${currency}`;
+
+var qr = qrcode(0, 'M'); // Create QR Code instance with medium error correction level
+qr.addData(upiLink);
+qr.make();
+
+// Draw QR code on the PDF
+var qrSize = 15; // Adjust size as needed
+var qrX = additionalInfoX + labelWidth * doc.internal.scaleFactor + padding + 7; // Adjust X position
+var qrY = additionalInfoY + 28; // Adjust Y position
+for (var x = 0; x < qr.getModuleCount(); x++) {
+  for (var y = 0; y < qr.getModuleCount(); y++) {
+    if (qr.isDark(x, y)) {
+      doc.setDrawColor(0);
+      doc.setFillColor(0);
+    } else {
+      doc.setDrawColor(255);
+      doc.setFillColor(255);
+    }
+    var px = qrX + (x * qrSize) / qr.getModuleCount();
+    var py = qrY + (y * qrSize) / qr.getModuleCount();
+    doc.rect(px, py, qrSize / qr.getModuleCount(), qrSize / qr.getModuleCount(), 'F');
+  }
+}
 
 // Add remaining text
 doc.text('Onwords', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding + 7, additionalInfoY);
-doc.text('HDFC,', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding + 7, additionalInfoY + 6);
+doc.text('HDFC', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding + 7, additionalInfoY + 6);
 doc.text('50-2000-6540-3656', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding + 7, additionalInfoY + 12);
 doc.text('HDFC0000787', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding + 7, additionalInfoY + 18);
 doc.text('onwordspay@ybi', additionalInfoX + labelWidth * doc.internal.scaleFactor + padding + 7, additionalInfoY + 24);
-
-
-
   
   const timestamp = new Date().toISOString().replace(/[-:.]/g, ''); // Generate a timestamp in the format 'yyyyMMddTHHmmss'
   const filename = `Quotation_${timestamp}.pdf`;
-  doc.save(filename);  }
+  doc.save(filename);  
+}
   
   function drawCell(doc, x, y, width, height, text, bgColor = null, textColor = [0, 0, 0]) {
     if (bgColor) {
