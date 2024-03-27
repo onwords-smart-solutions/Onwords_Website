@@ -229,7 +229,7 @@ def find_staff_by_username(username):
 def user_details(username):
     user_details = find_staff_by_username(username)
     if not user_details:
-        return "Staff details not found", 404
+        return render_template('404.html'), 404
     return render_template('staff_details.html', user=user_details)
 
 @app.route('/submit_resume', methods=['POST'])
@@ -296,8 +296,6 @@ def contact_us():
         return jsonify({'success': True, 'message': 'submitted successfully, we wil get back to you shortly'})
     else:
         return 'Method Not Allowed'
-
-
 
 def calculate_units_from_bill_amount(type, bill_amount): 
     unit = ""
