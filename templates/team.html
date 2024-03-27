@@ -50,35 +50,39 @@
          src="https://www.facebook.com/tr?id=1529103170856060&ev=PageView
 &noscript=1"/>
 </noscript>
-<!-- End Facebook Pixel Code -->
 <body id="bodyTag">
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXNGHSZD"  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<div id="preloader"></div>
-        <div class="container">
-            <div class="privacy-title team-onwords-title">
-                <h2>Team-Onwords</h2>
-            </div>
-            <div class="team-member">
-                <div class="" id="team-s-main">
-                    {% for member in departments['ALL'] %}
-                    <div class="team-row">
-                        <div class="profile-sec">
-                            {% if member.profile %}
-                            <img src="{{ member.profile }}">
-                            {% else %}
-                            <img src="https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fno-results.png?alt=media&token=37928458-7d6b-4a1d-9210-9c3b2ddf90aa" alt="No profile picture available">
-                            {% endif %}
-                        </div>
-                        <div class="info-box">
-                            <h6>{{ member.name }}</h6>
-                            <p>{{ member.department }}</p>
-                            <p>{{ member.email }}</p>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-8 col-lg-6">
+      <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+        <h3>Our Creative <span> Team</span></h3>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    {% for member in departments['ALL'] %}
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+        <div class="advisor_thumb">
+          {% if member.profile %}
+            <img src="{{ member.profile }}" alt="{{ member.name }}">
+          {% else %}
+            <img src="https://firebasestorage.googleapis.com/v0/b/onwords-in.appspot.com/o/images%2Fprofile-picture.png?alt=media&token=93656bcf-7861-4978-a7b4-4d1b3a38f954" alt="Default profile picture">
+          {% endif %}
         </div>
+        <div class="single_advisor_details_info">
+          <h6>{{ member.name }}</h6>
+          <p>{{ member.email }}</p>
+          <p class="designation">{{ member.department }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 <script src="../static/js/general.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -179,11 +179,20 @@ def Sound_System():
 def team():
     staff = db.child("staff").get().val()
 
+    department_names = {
+        "RND": "Research & Development",
+        "APP": "IT",
+        "WEB": "IT",
+        "PR": "Sales & Marketing",
+        "BRAVO": "Admin",
+        "INSTALLATION": "Installation Engineer"
+    }
     departments = {
         "WEB": [],
         "APP": [],
         "MEDIA": [],
         "RND": [],
+        "MANAGEMENT":[],
         "PR": [],
         "ADMIN": [],
         "HR":[],
@@ -193,11 +202,11 @@ def team():
 
     for uid, details in staff.items():
         department = details["department"]
-        profile = details.get("profileImage", "default-profile.jpg")
+        profile = details.get("profileImage")
         member_info = {
             "name": details["name"],
             "email": details["email"],
-            "department": department,
+            "department": department_names.get(department, department),
             "profile": profile
         }
 
@@ -207,7 +216,21 @@ def team():
         departments[department].append(member_info)
         departments["ALL"].append(member_info)
 
-    return render_template('team.html', departments=departments)
+    return render_template('team.html', departments=departments, department_names=department_names)
+
+def find_staff_by_username(username):
+    staff_entries = db.child("staff").get()
+    for staff in staff_entries.each():
+        if staff.val().get('name') == username:
+            return staff.val()
+    return None
+
+@app.route('/<username>')
+def user_details(username):
+    user_details = find_staff_by_username(username)
+    if not user_details:
+        return "Staff details not found", 404
+    return render_template('staff_details.html', user=user_details)
 
 @app.route('/submit_resume', methods=['POST'])
 def submit():
@@ -375,11 +398,9 @@ def handle_calculate_bill_amount():
 
     # Convert yearly CO2 emission reduction to tons
     yearly_co2_reduction_tons = yearly_co2_reduction_kwh / 1000
-    
-    # Calculate trees added to the environment based on yearly CO2 emission reduction
+
     trees_added_yearly = yearly_co2_reduction_tons / 22.6
 
-    # Prepare the response
     result = {
         "units_consumed": units_consumed,
         "unit": unit,
@@ -393,7 +414,6 @@ def handle_calculate_bill_amount():
         "yearly_co2_reduction_tons": round(yearly_co2_reduction_tons),
 
     }
-
     return json.dumps(result)
 
 if __name__ == '__main__':
